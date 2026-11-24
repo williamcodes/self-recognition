@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Explore v1 tasks · Self-Recognition</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="tasks.js"></script>
+  </head>
+  <body>
+    <header>
+      <a class="wordmark" href="./"
+        ><span aria-hidden="true">Aa</span> Self-Recognition</a
+      >
+      <nav>
+        <a href="./#results">Leaderboard</a><a href="./#method">Method</a>
+      </nav>
+    </header>
+    <main id="explorer">
+      <h1>Explore the v1 tasks</h1>
+      <p class="blurb">
+        Take the reader’s seat. Use the information the model received to guess
+        which writing came from its model version. Reveal the record to review
+        the task design.
+      </p>
+      <div id="status" role="status">Loading the saved trials…</div>
+      <div id="workspace" hidden>
+        <div class="filters">
+          <label>Reader<select id="reader"></select></label
+          ><label>Condition<select id="condition"></select></label
+          ><label>Trial<select id="item"></select></label>
+        </div>
+        <section aria-label="Task">
+          <h2>What the model saw</h2>
+          <pre id="initial"></pre>
+          <div id="files"></div>
+          <div id="choices" class="actions"></div>
+          <p id="human" aria-live="polite"></p>
+          <button class="secondary" id="reveal">Reveal trial record</button>
+        </section>
+        <section id="record" hidden>
+          <h2>Trial record</h2>
+          <p id="outcome"></p>
+          <h3>Writer inputs and authors</h3>
+          <div id="provenance"></div>
+          <h3>Reader transcript</h3>
+          <div id="messages"></div>
+          <p>
+            <a id="report" target="_blank" rel="noopener"
+              >Report a problem with this trial ↗</a
+            >
+          </p>
+        </section>
+        <p><button class="secondary" id="next">Next trial →</button></p>
+      </div>
+    </main>
+  </body>
+</html>

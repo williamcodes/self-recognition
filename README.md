@@ -46,3 +46,7 @@ Open a pull request with your verified run JSON, its model roster, and a short d
 GitHub Pages serves the static files in `docs/`. Preview them with `python3 -m http.server --directory docs 8000`. The leaderboard calculates scores directly from the published run. No service, credentials, or model calls are required to view it.
 
 Code and original project materials are released under the MIT license. The seed artifact includes model-generated passages and responses with their provenance.
+
+## Review the task design
+
+[Attempt or audit all 96 v1 trials](https://williamcodes.github.io/self-recognition/tasks.html). Each trial includes the original reader input, on-demand folder contents, writer provenance, full transcript, and both scoring decisions. [Read the design audit and reproduce the length baseline](audits/v1.md).

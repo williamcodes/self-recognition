@@ -315,3 +315,55 @@ footer {
     font-size: 12px;
   }
 }
+#explorer {
+  padding-block: 24px;
+}
+#explorer h1 {
+  margin: 0;
+  letter-spacing: -0.04em;
+}
+#explorer section {
+  padding-block: 16px;
+  border-top: 1px solid var(--line);
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-block: 22px;
+}
+.filters label {
+  font-size: 13px;
+  font-weight: 650;
+}
+.filters select {
+  display: block;
+  padding: 7px;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background: white;
+  border-radius: 5px;
+  font: inherit;
+}
+#explorer pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font:
+    15px/1.55 ui-monospace,
+    monospace;
+  background: var(--pale);
+  padding: 14px;
+  border-radius: 6px;
+}
+#files button {
+  margin: 0 8px 10px 0;
+}
+#record h3 {
+  margin-top: 20px;
+}
+#record details {
+  margin: 8px 0;
+}
+#messages h4 {
+  margin-bottom: 0;
+}
