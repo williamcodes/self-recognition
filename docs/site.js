@@ -35,6 +35,7 @@ async function load() {
             .replace("_", " / ")
             .replace("yn", "yes or no")
             .replace("ab", "A or B");
+        byId("audit-info").textContent = details.textContent;
         const items = group.map((t) => {
           const item = document.createElement("li");
           const prompt = document.createElement("span");
@@ -72,7 +73,6 @@ async function load() {
         details.textContent +=
           " · " + (reads / group.length).toFixed(1) + " reads/trial";
       }
-      cell.append(details);
     }
   }
   byId("runinfo").textContent =
@@ -82,39 +82,67 @@ async function load() {
     " judgments · Local Ollama inference · Small public pilot. Each answer changes a cell by " +
     (100 / manifest.prompts.length).toFixed(1) +
     " percentage points.";
-  let index = 0,
-    revealed = false;
+  const pairs = trials.filter((t) => t.condition === "passage_ab");
+  let index = 0;
   function display() {
-    byId("prompt").textContent = manifest.prompts[index];
+    const trial = pairs[index];
+    const authors =
+      trial.expected === "A"
+        ? [trial.model, trial.foil]
+        : [trial.foil, trial.model];
+    byId("challenge").textContent =
+      "Which passage did " + trial.model + " write in response to this prompt?";
+    byId("prompt").textContent = manifest.prompts[trial.prompt_index];
+    byId("feedback").textContent = "";
     byId("passages").replaceChildren();
-    const order = index % 2 ? [...models].reverse() : models;
-    for (const [letter, model] of order.entries()) {
-      const article = document.createElement("article");
-      const label = document.createElement("div");
-      label.className = "eyebrow";
-      label.textContent =
-        "Passage " +
-        String.fromCharCode(65 + letter) +
-        (revealed ? " · " + model : "");
-      const passage = document.createElement("p");
-      passage.textContent = corpus[model][index];
-      article.append(label, passage);
-      byId("passages").append(article);
+    function reveal(guess) {
+      byId("passages")
+        .querySelectorAll("button")
+        .forEach((button, i) => {
+          button.disabled = true;
+          button.textContent = authors[i];
+        });
+      const verdict = guess
+        ? guess === trial.expected
+          ? "Correct. "
+          : "Incorrect. "
+        : "";
+      const choice = trial.decision
+        ? " chose " + trial.decision + "."
+        : " returned an invalid answer.";
+      byId("feedback").textContent =
+        verdict +
+        trial.model +
+        " wrote passage " +
+        trial.expected +
+        ". In the same trial, the model" +
+        choice;
+      byId("reveal").disabled = true;
     }
-    byId("reveal").textContent = revealed ? "Hide authors" : "Reveal authors";
+    authors.forEach((author, i) => {
+      const letter = i === 0 ? "A" : "B";
+      const card = document.createElement("article");
+      const label = document.createElement("h3");
+      label.textContent = "Passage " + letter;
+      const body = document.createElement("p");
+      body.textContent = corpus[author][trial.prompt_index];
+      const button = document.createElement("button");
+      button.textContent = "Choose " + letter;
+      button.onclick = () => reveal(letter);
+      card.append(label, body, button);
+      byId("passages").append(card);
+    });
+    byId("reveal").disabled = false;
+    byId("reveal").onclick = () => reveal(null);
   }
-  byId("reveal").onclick = () => {
-    revealed = !revealed;
-    display();
-  };
+  byId("next").disabled = false;
   byId("next").onclick = () => {
-    index = (index + 1) % manifest.prompts.length;
-    revealed = false;
+    index = (index + 1) % pairs.length;
     display();
   };
   display();
 }
 load().catch(() => {
   byId("runinfo").textContent =
-    "The run could not be loaded. Download the JSON below to inspect it.";
+    "The run could not be loaded. Use the Run data link to inspect it.";
 });

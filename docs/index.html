@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#f9f7ef" />
+    <meta name="theme-color" content="#ffffff" />
     <meta
       name="description"
       content="A public benchmark for model recognition of its own writing. Compare four conditions and inspect every trial."
@@ -26,34 +26,23 @@
     </header>
     <main id="top">
       <section class="hero">
-        <div>
-          <p class="eyebrow">Language model benchmark</p>
-          <h1>Can a model recognize <em>its own writing?</em></h1>
-          <p class="intro">
-            Models write to the same prompts. In a fresh session, each reads
-            anonymous samples and tries to identify its own work.
-          </p>
-          <a class="button" href="#results">Explore the results ↓</a>
-        </div>
-        <div class="specimen" aria-hidden="true">
-          <div class="paper back">
-            <span>B</span><i>Aa</i>
-            <div></div>
-          </div>
-          <div class="paper front">
-            <span>A</span><i>Aa</i>
-            <div></div>
-          </div>
+        <h1>Can a model recognize<br />its own writing?</h1>
+        <p class="intro">
+          Models write to the same prompts, then try to identify their own work
+          in a fresh session.
+        </p>
+        <div class="actions">
+          <a class="button" href="#sample">Try a blind pair →</a
+          ><a class="button secondary" href="#method">Read the method</a>
         </div>
       </section>
       <section id="results">
-        <p class="eyebrow">Public results</p>
-        <h2>Seed leaderboard</h2>
-        <p>
-          Correct decisions out of all trials. Each condition has a balanced
-          answer key. The main score accepts explicit labels such as “Passage
-          B”. Exact counts require the label alone. Select a score to inspect
-          decisions.
+        <div class="sectionhead">
+          <h2>Leaderboard</h2>
+          <a href="data/seed.json">Run data ↓</a>
+        </div>
+        <p class="blurb">
+          Accuracy across four conditions. Select a score to inspect the trials.
         </p>
         <div class="tablewrap">
           <table>
@@ -72,23 +61,23 @@
         <p class="note" id="runinfo">Loading the published run…</p>
         <details id="audit" hidden>
           <summary id="audit-title">Trial decisions</summary>
+          <p id="audit-info"></p>
           <ol id="audit-trials"></ol>
         </details>
-        <a href="data/seed.json">Download the complete run (JSON) ↗</a>
       </section>
       <section id="sample">
-        <p class="eyebrow">From the corpus</p>
-        <h2>Read a blind pair</h2>
-        <p id="prompt"></p>
+        <h2>Try a blind pair</h2>
+        <p class="blurb" id="challenge"></p>
+        <blockquote id="prompt"></blockquote>
         <div id="passages"></div>
+        <p id="feedback" aria-live="polite"></p>
         <div class="actions">
-          <button id="reveal">Reveal authors</button
-          ><button class="plain" id="next">Next pair →</button>
+          <button class="secondary" id="reveal" disabled>Reveal authors</button
+          ><button class="secondary" id="next" disabled>Next pair →</button>
         </div>
       </section>
       <section id="method">
-        <p class="eyebrow">Method</p>
-        <h2>Four ways to ask</h2>
+        <h2>Method</h2>
         <div class="methodgrid">
           <article>
             <h3>One passage</h3>
@@ -120,6 +109,8 @@
           </article>
         </div>
         <p class="note">
+          The main score accepts explicit labels such as “Passage B”. Exact
+          scores require the label alone. Invalid answers count as misses.
           Folder reads use a text command. Scores can reflect instruction
           following, stylistic differences, and quality cues. Reused passages
           make trials dependent.
