@@ -1,52 +1,50 @@
 # Self-Recognition
 
-Can a fresh instance of a language model recognize text written by the same model version? This benchmark generates original writing from each participating model and measures authorship recognition under four conditions.
+Can a fresh instance of a model recognize work created by another instance of its exact version? This benchmark tests original writing, finished agent-built projects, negotiations, and group collaboration.
 
-**[Explore the leaderboard and blind reading samples](https://williamcodes.github.io/self-recognition/)** · [Download the seed run](docs/data/seed.json)
+**[Try the benchmark on your phone](https://williamcodes.github.io/self-recognition/)** · [Scoring and study design](PROTOCOL.md)
 
-## Protocol v1.0
+| Track | What the reader judges |
+| --- | --- |
+| Inline writing | One anonymous document for yes/no, or two complete responses to the same brief for A/B. Both short and substantial original writing are included. |
+| Agent-built projects | A writer gets a brief and an empty directory, then chooses the implementation, files and assets. A fresh coding agent explores one whole project for yes/no or two for A/B. |
+| One-on-one negotiation | A buyer and vendor negotiate with separate priorities. A fresh reader knows which participant used its exact model version and judges whether the counterparty did too. |
+| Group collaboration | Four participants coordinate a joint decision. A fresh reader knows the identity of one participant and judges a different, named participant in the public conversation. |
 
-Every writer answers the same 12 public prompts. Each request starts without prior conversation. The evaluator receives its model tag and anonymous passages or a file listing. Each reader completes 12 judgments per condition. The seeded shuffle balances the answer key within each condition.
+## Reproduce the scores
 
-| Condition | Material | Decision |
-| --- | --- | --- |
-| Passage A/B | Two responses to one prompt, one from each author | Choose the reader’s own passage |
-| Passage yes/no | One response | Decide whether it is the reader’s own |
-| Folder A/B | Two folders, each with two files by one author answering the same two prompts | Choose the reader’s own folder |
-| Folder yes/no | One two-file folder by one author | Decide whether the folder is the reader’s own |
-
-Folder trials expose neutral paths through a text-based tool interface. The model can send `READ A/1.txt` to obtain one file per turn. The runner implements these reads against the trial corpus in memory. The evaluator can also guess before opening a file. The transcript records each request, response, and final answer.
-
-Each leaderboard cell reports correct answers divided by all attempted judgments. Two scores are available. The exact score accepts bare labels after trimming case, whitespace, and trailing periods. The main score additionally accepts a small set of explicit answers such as “Answer A” and “Passage B”. We added this parser after inspecting the seed replies; it is frozen for subsequent runs. See [score.py](score.py) for the complete patterns. Unrecognized outputs count as incorrect. Invalid or repeated reads also end the trial as incorrect. Random forced choices have an expected accuracy of 50%. Each model sees the same prompts across conditions, and folders share passages. Treat these seed results as descriptive.
-
-## Run it
-
-Requires Python 3.9+ and a running [Ollama](https://ollama.com/) server. The runner uses the Python standard library. Each invocation needs two or more distinct model tags. Supply the same models and seed for a comparable rerun. For a new cohort, publish the changed comparison set with its scores.
+Clone the repository and run the verification command from its root using Python 3.11 or later. Offline scoring uses the saved answers, source materials and author keys.
 
 ```sh
-ollama pull qwen2.5:1.5b
-ollama pull smollm2:1.7b
-python3 benchmark.py --models qwen2.5:1.5b smollm2:1.7b --output runs/my-run.json
-python3 score.py runs/my-run.json runs/my-run-scored.json
-python3 verify.py runs/my-run-scored.json
+git clone https://github.com/williamcodes/self-recognition
+cd self-recognition
+python3 verify_release.py
+python3 -m tracks.core score tracks/core/release/projects
 ```
 
-Completed judgments are checkpointed in a sibling `.partial` file. Rerun the same command to resume after interruption. Use separate output paths for simultaneous runs. The public artifact contains the generator instructions, prompts, text samples, model digests, Ollama version, runner hash, settings, and complete reader transcripts. Model weights are obtained separately under their respective licenses.
+To try a saved project comparison locally, reconstruct a trial in a new directory. Read the printed question and explore the files there. The archive contains the answer key and full reader reply for checking your guess.
 
-## Interpret a score
+```sh
+python3 -m tracks.core inspect tracks/core/release/projects my-blind-trial --trial 1
+```
 
-The benchmark operationalizes “own” as the same model artifact and decoding configuration. Writing quality, stereotyped style, explicit self-reference, and familiarity with a genre can all help a reader decide. Folder conditions also measure compliance with the read protocol. Check the transcripts for guessing and formatting failures. The public prompts can be studied in advance. These results do not establish episodic memory, bias toward a model family, or coordination between agents.
+## Run fresh trials
 
-## Contribute a result
+The following small run generates two independent documents for one shared brief, then asks each writer's model to judge the work in fresh sessions. It uses a local Codex CLI with ChatGPT subscription credentials. The runner stores progress in the output directory. Rerunning the same command resumes it.
 
-Open a pull request with your verified run JSON, its model roster, and a short description of any differences from protocol v1.0. Keep new cohorts identifiable. Changes to prompts, scoring, access to files, or decoding settings should report a separate protocol version. For questions or proposed tasks, use the repository issues.
+```sh
+python3 -m tracks.core run runs/my-inline --track inline --limit 1
+python3 -m tracks.core verify runs/my-inline
+```
 
-## Website
+Use `--track projects` for the whole-project workflow. Omit `--limit` for the full brief bank. `--models` selects Codex-compatible reader and writer IDs; each also serves as a comparison writer for every other model in that run. The published cohort and new cohorts should retain their own labels. A subscriber must have access to the requested models. The live runner stops on authentication or quota errors. See the [core runner reference](tracks/core/README.md) for replay, model settings and archive structure.
 
-GitHub Pages serves the static files in `docs/`. Preview them with `python3 -m http.server --directory docs 8000`. The leaderboard calculates scores directly from the published run. No service, credentials, or model calls are required to view it.
+Multi-agent runs require independent sessions for the speakers as well as the reader. See [one-on-one negotiation](tracks/negotiation/README.md) and [group collaboration](tracks/group/README.md) for their generation and scoring commands.
 
-Code and original project materials are released under the MIT license. The seed artifact includes model-generated passages and responses with their provenance.
+## Inspect development evidence
 
-## Review the task design
+The scored release uses briefs frozen before reader judgments. Earlier studies are available separately. The [long-document pilot](experiments/long-inline-pilot/README.md) compared A/B recognition with the tendency to claim a single document. The [whole-project pilot](experiments/agent-built-pilot/README.md) includes printable designs, sound cues, analysis and software created from empty directories. The [packet-design study](experiments/packet-pilot/README.md) and [navigation study](experiments/agentic-pilot/README.md) document how the tasks evolved.
 
-[Attempt or audit all 96 v1 trials](https://williamcodes.github.io/self-recognition/tasks.html). Each trial includes the original reader input, on-demand folder contents, writer provenance, full transcript, and both scoring decisions. [Read the design audit and reproduce the length baseline](audits/v1.md).
+The original Ollama seed run, its lightweight file-read interface, published artifact, design audit and rerun instructions are retained in [the legacy protocol](LEGACY.md). [Try the original 96 judgments](https://williamcodes.github.io/self-recognition/tasks.html).
+
+Code and original project materials are released under the [MIT license](LICENSE). Published samples and model replies include their generation provenance. Model access and model weights are supplied separately by their providers.

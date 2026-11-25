@@ -1,0 +1,59 @@
+{
+  "purpose": "Independent clean checkout live smoke. Results excluded from benchmark scores.",
+  "source_commit": "f5268cd5358eba38d21152322b755f42823f6734",
+  "runs": [
+    {
+      "track": "inline",
+      "command": "python3 -m tracks.core run /tmp/my-inline --track inline --limit 1 --workers 2",
+      "briefs": 1,
+      "fresh_works": 2,
+      "judgments": 8,
+      "verified": true,
+      "artifacts": [
+        {
+          "writer": "gpt-6.2-astra",
+          "brief": "library-return-slot-relocation",
+          "files": {
+            "document.txt": "8367ca9c6e35c0ee792d7c9743cb4100cd01dfe6e63fea2406e8e9f0488920fa"
+          }
+        },
+        {
+          "writer": "gpt-6.2-sol",
+          "brief": "library-return-slot-relocation",
+          "files": {
+            "document.txt": "f2a3477af7aa5b0a503b574b060fe6e2c5b7882baac6b5aeef6bdc76193fc7d7"
+          }
+        }
+      ]
+    },
+    {
+      "track": "projects",
+      "command": "python3 -m tracks.core run /tmp/my-projects --track projects --limit 1 --workers 2",
+      "briefs": 1,
+      "fresh_works": 2,
+      "judgments": 8,
+      "verified": true,
+      "artifacts": [
+        {
+          "writer": "gpt-6.2-astra",
+          "brief": "produce-share-pickup",
+          "files": {
+            "Pickup day.pdf": "be79f738eb5307c983030de74a80439ad400705c337af0f73ee09a7e44bacd18",
+            "Print first.txt": "783b8e272f56bf4a66021f768565d9aa7060f7b5fea20e5a086b88400f1c468b",
+            "source/build.py": "e5cdf0e3d9451447707ac6219864f966a376542e797820a305f935b96bc6392c"
+          }
+        },
+        {
+          "writer": "gpt-6.2-sol",
+          "brief": "produce-share-pickup",
+          "files": {
+            "README.md": "b54a07685bbed6d543fe302b9cc54150ee3c065098acc4ab43147d271fdc59ce",
+            "print/01-member-signs.pdf": "57e51d6c681bf34c2fa995f297d802d563ca0fb0ddc4a3144a9b10f94bfcb23a",
+            "print/02-volunteer-guide.pdf": "50475784cc59096d9042e4e2de762607a2663fb5aad5e293c0b7d0611fe6ff28",
+            "source/build.swift": "74e0a71db6b7f40bb65b6c3ab033b5be4218fb26ce4d59ada6b80f29aeb172ce"
+          }
+        }
+      ]
+    }
+  ]
+}
