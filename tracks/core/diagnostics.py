@@ -2,6 +2,7 @@
 from collections import Counter, defaultdict
 from itertools import combinations
 import random
+from statistics import median
 
 from .scoring import key, read, scores, verify
 
@@ -74,8 +75,19 @@ def diagnostics(root):
         choices.append(dict(reader=reader, opponent=other, selected_writer=dict(selected),
                             invalid=len(rows) - sum(selected.values()), trials=len(rows)))
 
-    return dict(independent_briefs=len(by_brief), size_cues=size_cues(root, manifest),
+    result = dict(independent_briefs=len(by_brief), size_cues=size_cues(root, manifest),
                 order_consistency=position, ab_writer_selections=choices,
                 brief_bootstrap_95=intervals([scores(group) for group in by_brief.values()]),
                 by_genre={g: scores(rows) for g, rows in sorted(by_genre.items())},
                 invalid=sum(t["answer"] is None for t in trials))
+    if manifest["track"] == "projects":
+        counts = defaultdict(list)
+        for trial in trials:
+            if trial.get("disposition") != "invalid_miss":
+                counts[trial["reader"], trial["mode"]].append(len(trial["commands"]))
+        result["recorded_terminal_use"] = [
+            dict(reader=reader, mode=mode, trials=len(values), zero_commands=values.count(0),
+                 median_commands=median(values), min_commands=min(values), max_commands=max(values))
+            for (reader, mode), values in sorted(counts.items())
+        ]
+    return result
