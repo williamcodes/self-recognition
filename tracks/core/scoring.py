@@ -120,4 +120,6 @@ def verify(root):
     computed = scores(rows)
     if read(root/"scores.json") != computed:
         raise ValueError("Published scores differ from judgments")
+    from .provenance import verify_provenance
+    verify_provenance(root)
     return computed
