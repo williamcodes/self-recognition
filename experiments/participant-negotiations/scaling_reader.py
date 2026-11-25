@@ -4,15 +4,17 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 import json
 import random
+import re
 from pathlib import Path
 
 import ab
 import cross_family
-from four import LEAK,digest
+from hashlib import sha256
+LEAK=re.compile(r"\b(?:Qwen|ChatGPT|GPT-6|Anthropic|Claude|OpenAI|Alibaba|Ollama|Gemini|DeepSeek|Mistral|MiniMax|Grok|Moonshot|Kimi|Cohere|Nemotron|Hunyuan|Llama|MiMo|GLM-5|Nova Premier|StepFun|Step-5)\b",re.I)
 from router_panel import MODELS,OUT,ORDER
 from run import A,CASES,HERE,SubscriptionRunner,counts
 
-NAMES=["astra","fable","glm","mistral","gemini","qwen","deepseek","minimax","grok","kimi","cohere","llama","nemotron","hunyuan","mimo","nova"]
+NAMES=["astra","fable","glm","mistral","gemini","qwen","deepseek","minimax","grok","kimi","cohere","llama","nemotron","hunyuan","mimo","step"]
 IDS={"astra":A,"fable":ab.F,**{n:p[0] for n,p in MODELS.items()}}
 
 
@@ -52,7 +54,7 @@ def jobs(names):
                 for t in found[n]["messages"]:
                     speaker="YOUR SIDE" if t["seat"]==seat else "COUNTERPARTY"
                     prompt+=f'\n{speaker}: {t["text"]}\n'
-            yield dict(case=case_id,seat=seat,order=[IDS[n] for n in lineup],sha256=digest(prompt)),prompt
+            yield dict(case=case_id,seat=seat,order=[IDS[n] for n in lineup],sha256=sha256(prompt.encode()).hexdigest()),prompt
 
 
 def picked(r):
