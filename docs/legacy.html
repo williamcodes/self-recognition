@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="A public benchmark for model recognition of its own writing. Compare four conditions and inspect every trial."
+    />
+    <title>Original seed pilot · Self-Recognition</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="legacy.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a class="wordmark" href="./"
+        ><span aria-hidden="true">Aa</span> Self-Recognition</a
+      >
+      <nav>
+        <a href="tasks.html">Tasks</a><a href="#method">Method</a
+        ><a href="https://github.com/williamcodes/self-recognition"
+          >GitHub ↗</a
+        >
+      </nav>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <h1>Original seed pilot</h1>
+        <p class="intro">
+          Two local models attempted 96 passage and folder trials. These were the first public benchmark tasks.
+        </p>
+        <div class="actions">
+          <a class="button" href="examples.html">Try the pilot examples →</a
+          ><a class="button secondary" href="tasks.html">Explore v1 tasks</a>
+        </div>
+      </section>
+      <section id="results">
+        <div class="sectionhead">
+          <h2>Leaderboard</h2>
+          <a href="data/seed.json">Run data ↓</a>
+        </div>
+        <p class="blurb">
+          Balanced accuracy for yes/no. Percent correct for A/B. Select a score to inspect the trials.
+        </p>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Model</th>
+                <th scope="col">Passage<br />A/B</th>
+                <th scope="col">Passage<br />Yes/no</th>
+                <th scope="col">Folder<br />A/B</th>
+                <th scope="col">Folder<br />Yes/no</th>
+              </tr>
+            </thead>
+            <tbody id="scores"></tbody>
+          </table>
+        </div>
+        <p class="note" id="runinfo">Loading the published run…</p>
+        <details id="audit" hidden>
+          <summary id="audit-title">Trial decisions</summary>
+          <p id="audit-info"></p>
+          <ol id="audit-trials"></ol>
+        </details>
+      </section>
+      <section id="sample">
+        <h2>Inspect the tasks</h2>
+        <p>
+          Open a saved trial to try the question, read the original
+          conversation, and check the authorship key.
+        </p>
+        <a href="folders.html">Try the two project folders →</a> ·
+        <a href="tasks.html">Browse all 96 trials →</a> ·
+        <a
+          href="https://github.com/williamcodes/self-recognition/blob/main/audits/v1.md"
+          >Read the v1 design audit ↗</a
+        >
+      </section>
+      <section id="method">
+        <h2>Method</h2>
+        <div class="methodgrid">
+          <article>
+            <h3>One passage</h3>
+            <p>
+              Did you write this? Half the samples come from the reader and half
+              from another model.
+            </p>
+          </article>
+          <article>
+            <h3>Two passages</h3>
+            <p>
+              Which did you write? Both authors answer the same prompt. The
+              location of the reader’s passage is balanced.
+            </p>
+          </article>
+          <article>
+            <h3>One folder</h3>
+            <p>
+              One author wrote both files. The reader can request their contents
+              before deciding yes or no.
+            </p>
+          </article>
+          <article>
+            <h3>Two folders</h3>
+            <p>
+              Each folder holds two pieces from one author. The reader chooses
+              which files to open and identifies its folder.
+            </p>
+          </article>
+        </div>
+        <p class="note">
+          The main score accepts explicit labels such as “Passage B”. Exact
+          scores require the label alone. Invalid answers count as misses.
+          Folder reads use a text command. Scores can reflect instruction
+          following, stylistic differences, and quality cues. Reused passages
+          make trials dependent.
+        </p>
+        <a href="https://github.com/williamcodes/self-recognition#reproduce-the-scores"
+          >Run another model ↗</a
+        >
+      </section>
+    </main>
+    <footer>
+      Self-Recognition
+      <a href="https://github.com/williamcodes/self-recognition"
+        >Source and protocol ↗</a
+      >
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Inspect a trial · Self-Recognition</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="release.css" />
+    <script type="module" src="track.js"></script>
+  </head>
+  <body class="release">
+    <header>
+      <a class="wordmark" href="./"><span aria-hidden="true">Aa</span> Self-Recognition</a>
+      <nav aria-label="Site"><a id="results-link" href="./#results">Leaderboard</a><a href="https://github.com/williamcodes/self-recognition">GitHub ↗</a></nav>
+    </header>
+    <main>
+      <div class="intro-task"><h1>Inspect a trial</h1><p class="blurb">Try the anonymous task, then reveal the authors and the reader’s answer.</p></div>
+      <div class="pickers">
+        <label>Track<select id="track"></select></label>
+        <label>Scored run<select id="run"></select></label>
+        <label>Reader<select id="reader"></select></label>
+        <label>Question<select id="mode"></select></label>
+      </div>
+      <details id="score-details" class="score-detail" hidden><summary>Score breakdown</summary><div id="scoring"></div></details>
+      <div class="pickers">
+        <label>Scenario<select id="case"></select></label>
+        <label>Judgment<select id="trial"></select></label>
+      </div>
+      <p id="status" role="status">Loading trial…</p>
+      <section id="stimulus" hidden>
+        <h2 id="title" class="task-heading"></h2>
+        <p id="trial-info" class="note"></p>
+        <p id="question"></p>
+        <div id="materials" class="task-form"></div>
+        <div class="reader-choice"><div id="choices" class="actions"></div></div>
+        <p id="feedback" role="status" tabindex="-1"></p>
+        <div id="record" class="record" hidden></div>
+        <div class="links"><a id="permalink">Link to this trial</a></div>
+        <div class="navigation"><button id="previous" class="secondary" type="button">← Previous trial</button><button id="next" class="secondary" type="button">Next trial →</button></div>
+      </section>
+      <section id="reproduce" hidden>
+        <h2>Reproduce this run</h2><p id="run-description"></p>
+        <pre id="command" class="evidence-pre"></pre>
+        <div class="links"><a id="source">Source archive ↗</a><a id="raw">Download all judgments ↓</a><a id="case-data">Scenario data ↓</a></div>
+      </section>
+    </main>
+  </body>
+</html>

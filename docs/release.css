@@ -1,0 +1,84 @@
+.release { --track-bg: #f2f5f8; }
+.release header { min-height: 64px; }
+.release main { padding-bottom: 28px; }
+.release-hero { padding: clamp(32px,6vw,72px) 0 clamp(28px,4vw,46px); }
+.release-hero h1 { max-width: 15em; font-size: clamp(40px,5.5vw,68px); line-height: .98; letter-spacing: -.055em; margin: 0; }
+.release-hero p { max-width: 47ch; font-size: clamp(16px,2.2vw,20px); color: var(--muted); margin: 18px 0; }
+.release .actions, .links { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.links { column-gap: 20px; row-gap: 5px; margin-top: 15px; }
+.links a { font-size: 14px; font-weight: 550; display: inline-flex; align-items: center; min-height: 32px; }
+.release button, .release .button { min-height: 44px; }
+.release .button { display: inline-flex; align-items: center; }
+.release #results { padding-block: 24px 32px; }
+.track-tabs { display: flex; gap: 4px; padding: 4px; border: 1px solid var(--line); background: var(--track-bg); margin: 16px 0 22px; border-radius: 12px; }
+.track-tabs button { flex: 1; font-size: 14px; font-weight: 600; border: 1px solid transparent; border-radius: 8px; color: var(--muted); background: transparent; padding: 8px; }
+.track-tabs button[aria-pressed="true"] { background: #fff; border-color: #bdcdda; color: var(--ink); box-shadow: 0 1px 3px #23374a12; }
+.track-tabs button:hover { color: var(--ink); }
+.run-head { display: flex; align-items: start; gap: 16px; justify-content: space-between; }
+.run-head h3, .task-heading { font-size: clamp(22px,3vw,29px); letter-spacing: -.035em; line-height: 1.16; margin: 0; }
+.run-head .blurb { max-width: 60ch; margin: 5px 0 0; font-size: 16px; }
+.run-picker, .pickers label { color: var(--muted); font-size: 13px; font-weight: 600; }
+.release select { border: 1px solid var(--line); border-radius: 6px; font: inherit; font-size: 16px; color: var(--ink); background: #fff; min-height: 44px; max-width: 100%; padding: 5px; }
+.run-picker select, .pickers select { display: block; width: 100%; margin-top: 3px; }
+.run-count { font-size: 14px; font-variant-numeric: tabular-nums; color: var(--muted); margin: 18px 0 8px; }
+.scoreboard { width: 100%; font-variant-numeric: tabular-nums; table-layout: fixed; }
+.scoreboard th:first-child { width: 36%; }
+.scoreboard td, .scoreboard tbody th { padding: 10px; }
+.scoreboard a { display: inline-flex; flex-direction: column; min-height: 44px; justify-content: center; text-decoration: none; }
+.scoreboard .value { font-size: 22px; font-weight: 650; }
+.scoreboard a:hover .value { text-decoration: underline; }
+.scoreboard small { font-size: 13px; }
+.scoreboard .score-part { display: block; color: var(--muted); }
+.release [hidden] { display: none !important; }
+.release #method .note { font-size: 15px; max-width: 75ch; }
+.release .intro-task { padding-block: 26px 18px; }
+.intro-task h1 { font-size: clamp(30px,5vw,43px); line-height: 1.06; letter-spacing: -.045em; margin: 0 0 6px; }
+.pickers { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,150px),1fr)); gap: 10px; margin: 14px 0 18px; }
+.pickers label, .run-picker { min-width: 0; overflow: hidden; }
+.pickers select, .run-picker select { min-width: 0; text-overflow: ellipsis; }
+.task-heading { margin: 12px 0 4px; }
+.task-form { display: grid; gap: 16px; }
+.reading { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+.reading.side-by-side { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.material { min-width: 0; border: 1px solid var(--line); padding: 16px; border-radius: 9px; }
+.material h3 { font-size: 17px; margin: 0 0 8px; }
+.material details { border-top: 1px solid var(--line); }
+.material summary, .record summary { min-height: 44px; padding: 10px 0; overflow-wrap: anywhere; }
+.prose, .reply, .chat-text, .evidence-pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.prose { font: 17px/1.6 Georgia, serif; margin: 0; }
+.document .prose { margin: 8px 0; }
+.material .meta { font-size: 13px; color: var(--muted); margin: 0 0 8px; }
+.file-content { padding: 2px 0 10px; }
+.file-content img, .file-content audio, .file-content video { max-width: 100%; }
+.file-content iframe { display: block; width: 100%; height: 27rem; border: 1px solid var(--line); background: white; }
+.document-excerpt { font: 17px/1.6 Georgia, serif; overflow-wrap: anywhere; }
+.file-content img { height: auto; display: block; border: 1px solid var(--line); }
+.evidence-pre { font: 14px/1.45 ui-monospace, monospace; max-height: 34rem; overflow: auto; }
+.messages { display: grid; gap: 8px; }
+.turn { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; }
+.turn p { margin: 5px 0 0; }
+.turn small { font-weight: 650; color: var(--muted); }
+.reader-choice { margin-top: 4px; border-block: 1px solid var(--line); padding: 16px 0; }
+.reader-choice p { margin: 0 0 8px; }
+.record { background: var(--pale); padding: 16px; border-radius: 9px; }
+.record h3, .record h4 { margin: 0 0 4px; }
+.record details { border-top: 1px solid var(--line); }
+.score-detail { border-left: 3px solid var(--line); padding-left: 12px; color: var(--muted); }
+.score-detail p { margin: 4px 0; }
+.navigation { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+@media (max-width: 600px) {
+  .release header { min-height: 55px; flex-wrap: wrap; gap: 5px 10px; }
+  .release header nav { gap: 10px; }
+  .track-tabs { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .track-tabs button { min-height: 44px; }
+  .run-head, .reading.side-by-side { display: grid; grid-template-columns: minmax(0,1fr); }
+  .run-head { gap: 10px; }
+  .run-head .blurb { font-size: 15px; }
+  .scoreboard td, .scoreboard tbody th { padding: 6px 3px; }
+  .scoreboard th:first-child { width: 33%; }
+  .scoreboard small { font-size: 12px; }
+  .scoreboard .value { font-size: 20px; }
+}
+.sheet-preview { font-size: 13px; text-align: left; }
+.sheet-preview td { padding: 5px; max-width: 20ch; overflow-wrap: anywhere; border: 1px solid var(--line); }
+.sheet-preview tr:first-child { font-weight: 650; }

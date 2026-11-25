@@ -1,96 +1,115 @@
-const byId = (id) => document.getElementById(id);
-const conditions = ["passage_ab", "passage_yn", "folder_ab", "folder_yn"];
-async function load() {
-  const response = await fetch("data/seed.json");
-  if (!response.ok) throw Error("Run unavailable");
-  const { manifest, corpus, trials } = await response.json();
-  const models = Object.keys(corpus);
-  for (const model of models) {
-    const row = byId("scores").insertRow();
-    const name = document.createElement("th");
-    name.scope = "row";
-    name.textContent = model;
-    row.append(name);
-    for (const condition of conditions) {
-      const group = trials.filter(
-        (t) => t.condition === condition && t.model === model,
-      );
-      const correct = group.filter((t) => t.decision_correct).length;
-      const cell = row.insertCell();
-      const score = document.createElement("button");
-      score.className = "cell-score";
-      score.textContent = ((100 * correct) / group.length).toFixed(0) + "%";
-      score.setAttribute(
-        "aria-label",
-        model + ", " + condition.replace("_", " ") + ", inspect trials",
-      );
-      score.onclick = () => {
-        const panel = byId("audit");
-        panel.hidden = false;
-        panel.open = true;
-        byId("audit-title").textContent =
-          model +
-          " · " +
-          condition
-            .replace("_", " / ")
-            .replace("yn", "yes or no")
-            .replace("ab", "A or B");
-        byId("audit-info").textContent = details.textContent;
-        const items = group.map((t) => {
-          const item = document.createElement("li");
-          const prompt = document.createElement("a");
-          prompt.href =
-            "tasks.html#" +
-            new URLSearchParams({
-              reader: t.model,
-              condition: t.condition,
-              trial: t.prompt_index + 1,
-            });
-          prompt.textContent = manifest.prompts[t.prompt_index];
-          const result = document.createElement("small");
-          result.textContent =
-            "Expected " +
-            t.expected +
-            " · Answer " +
-            (t.decision || "invalid") +
-            (condition.startsWith("folder")
-              ? " · Files opened: " + (t.opened.join(", ") || "none")
-              : "");
-          item.append(prompt, result);
-          return item;
-        });
-        byId("audit-trials").replaceChildren(...items);
-        panel.scrollIntoView({ block: "nearest" });
-      };
-      const counts = document.createElement("small");
-      counts.textContent = correct + "/" + group.length;
-      cell.append(score, counts);
-      const invalid = group.filter((t) => t.decision === null).length;
-      const details = document.createElement("small");
-      details.className = "cell-detail";
-      details.textContent =
-        invalid +
-        " invalid · " +
-        group.filter((t) => t.correct).length +
-        "/" +
-        group.length +
-        " exact";
-      if (condition.startsWith("folder")) {
-        const reads = group.reduce((sum, t) => sum + t.opened.length, 0);
-        details.textContent +=
-          " · " + (reads / group.length).toFixed(1) + " reads/trial";
+import { $, element, json, fragment, options, modeName, name, rate, anchor } from "./release-ui.js";
+
+async function start() {
+  const catalog = await json("data/release/index.json");
+  const tabs = $("track-tabs");
+  const params = () => new URLSearchParams(location.hash.slice(1));
+  const select = (track, run) => {
+    location.hash = fragment({ track, run });
+  };
+  function render() {
+    const query = params();
+    const track = catalog.tracks.find((t) => t.id === query.get("track")) || catalog.tracks[0];
+    const run = track.runs.find((r) => r.id === query.get("run")) || track.runs[0];
+    tabs.replaceChildren(
+      ...catalog.tracks.map((t) => {
+        const button = element("button", t.name);
+        button.type = "button";
+        button.setAttribute("aria-pressed", String(t.id === track.id));
+        button.onclick = () => select(t.id);
+        return button;
+      }),
+    );
+    $("loading").hidden = Boolean(run);
+    $("run-view").hidden = !run;
+    if (!run) {
+      $("loading").textContent = "No scored run is published for this track.";
+      return;
+    }
+    options(
+      $("run"),
+      track.runs.map((r) => [r.id, r.title]),
+      run.id,
+    );
+    $("run").onchange = () => select(track.id, $("run").value);
+    $("track-title").textContent = track.name;
+    $("track-description").textContent = track.description;
+    $("sample-count").textContent = run.cases + " distinct scenarios · " + run.n + " reader judgments";
+    const modes = [...new Set(run.scores.flatMap((s) => Object.keys(s.modes)))].sort();
+    const wrap = element("div", undefined, "tablewrap");
+    const table = element("table", undefined, "scoreboard");
+    table.setAttribute("aria-label", track.name + ", " + run.title);
+    const header = table.createTHead().insertRow();
+    for (const label of [
+      "Reader",
+      ...modes.map((m) => (m === "yn" ? "Yes/no balanced accuracy" : "A/B accuracy")),
+    ]) {
+      const th = element("th", label);
+      th.scope = "col";
+      header.append(th);
+    }
+    const body = table.createTBody();
+    for (const score of run.scores) {
+      const row = body.insertRow();
+      const th = element("th", name(catalog, score.reader));
+      th.scope = "row";
+      row.append(th);
+      for (const mode of modes) {
+        const cell = row.insertCell();
+        const value = score.modes[mode];
+        if (!value) {
+          cell.textContent = "—";
+          continue;
+        }
+        const link = anchor(
+          "",
+          "track.html" +
+            fragment({
+              track: track.id,
+              run: run.id,
+              reader: score.reader,
+              mode,
+            }),
+        );
+        link.setAttribute(
+          "aria-label",
+          name(catalog, score.reader) +
+            ", " +
+            modeName(mode) +
+            ", " +
+            rate(value.rate) +
+            ", inspect trials",
+        );
+        link.append(
+          element("span", rate(value.rate), "value"),
+          element("small", value.cases + " scenarios · " + value.n + " judgments"),
+        );
+        cell.append(link);
+        if (mode === "yn") {
+          const own = value.cells.find((c) => c.key === "YES");
+          const other = value.cells.find((c) => c.key === "NO");
+          cell.append(
+            element("small", "Claimed own " + own.correct + "/" + own.n, "score-part"),
+            element("small", "Rejected other " + other.correct + "/" + other.n, "score-part"),
+          );
+        }
       }
     }
+    wrap.append(table);
+    $("score-table").replaceChildren(wrap);
+    $("run-note").textContent = run.note;
+    $("typography").hidden = !(track.id === "group" || (track.id === "negotiation" && run.id.startsWith("cross-family-")));
+    $("typography-note").textContent = track.id === "group"
+      ? "An apostrophe-only rule got all 32 Astra/Fable confirmation judgments right. After apostrophes were standardized, the models still got 31 of 32 right."
+      : "Astra and Fable used different harnesses and punctuation. The related group experiment tested how much apostrophe style mattered.";
+    $("browse-run").href = "track.html" + fragment({ track: track.id, run: run.id });
+    $("download-run").href = run.file;
+    $("run-source").href = run.source;
   }
-  byId("runinfo").textContent =
-    manifest.prompts.length +
-    " prompts · " +
-    trials.length +
-    " judgments · Local Ollama inference · Small public pilot. Each answer changes a cell by " +
-    (100 / manifest.prompts.length).toFixed(1) +
-    " percentage points.";
+  addEventListener("hashchange", render);
+  render();
+  if (params().has("track")) $("results").scrollIntoView({ block: "start" });
 }
-load().catch(() => {
-  byId("runinfo").textContent =
-    "The run could not be loaded. Use the Run data link to inspect it.";
+start().catch(() => {
+  $("loading").textContent = "Couldn’t load the scores. Refresh to try again.";
 });
