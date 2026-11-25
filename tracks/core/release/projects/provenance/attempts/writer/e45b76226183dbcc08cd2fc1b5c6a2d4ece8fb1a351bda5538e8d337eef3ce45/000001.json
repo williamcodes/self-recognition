@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "kind": "writer",
+  "subject": {
+    "brief": "tool-library-borrowing-stock",
+    "writer": "gpt-6.2-astra"
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T07:22:09.029737+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "515953f75f9e57983f8fe5994b253635c9c1a52ebc29154ea87c2148a967b09d",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "workspace-write",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T07:23:55.408479+00:00",
+  "thread_hashes": [
+    "e937588e9d2cc7619b2158f2f19e30854ba7b7f425f5db32b98a1d2e22c4f5d9"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd\nls -la\nwhich python3 libreoffice soffice node\npython3 - <<'PY'\nimport importlib.util\nfor x in ['openpyxl','xlsxwriter','reportlab','PIL']:\n print(x, bool(importlib.util.find_spec(x)))\nPY\"",
+    "/bin/zsh -lc \"ls <OPERATOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies\nls <OPERATOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin\npython3 - <<'PY'\nimport itertools\nu=[[6,8,5,10],[3,4,2,5],[2,3,4,3]]\nps=[]\nfor p in itertools.product(range(9),range(3),range(4)):\n c=sum(i*j for i,j in zip(p,[22,85,48]))\n if c<=180:\n  s=[sum(min(v,k*n) for a,n in zip(u,p) for v in a) for k in (1,2,3)]\n  ps.append((p,c,*s))\nprint(len(ps))\nfor i in range(2,5): print(sorted(ps,key=lambda x:(-x[i],x[1]))[:6])\nPY\"",
+    "/bin/zsh -lc 'ls -l <OPERATOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python\nls -l <OPERATOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override\nwhich pdftotext pdftoppm'",
+    "/bin/zsh -lc 'P=<OPERATOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3\n$P - <<'\"'PY'\nimport importlib.util\nfor x in ['openpyxl','xlsxwriter','reportlab','PIL','fitz']:print(x, bool(importlib.util.find_spec(x)))\nPY\"",
+    "/bin/zsh -lc \"cat > /tmp/toolbuy_build.py <<'PY'\nfrom itertools import product\nimport xlsxwriter as x\nfrom reportlab.pdfgen.canvas import Canvas\nfrom reportlab.lib.colors import HexColor\nnames=['Clamps','Tile cutters','Socket sets']\nprice=[22,85,48]; stock=[8,3,5]\nf=[[22,24,19,25],[12,10,11,13],[16,18,20,17]]\nu=[[6,8,5,10],[3,4,2,5],[2,3,4,3]]\ndef score(q,k,m):return sum(min(q[i]*k,u[i][m]) for i in range(3))\noptions=[]\nfor q in product(range(9),range(3),range(4)):\n cost=sum(v*p for v,p in zip(q,price))\n if cost<=180:options.append((q,cost,[sum(score(q,k,m) for m in range(4)) for k in (1,2,3)]))\noptions.sort(key=lambda a:(-a[2][1],a[1],a[0]))\nw=x.Workbook('Purchase comparison.xlsx')\nw.set_properties({'title':'Spring hand tool purchases'})\na=w.add_worksheet('Purchases'); b=w.add_worksheet('History')\ngreen='#184B42'; muted='#536862'; light='#E7F2EB'\ndef style(**kw):return w.add_format(dict(font_name='Calibri',font_size=11,font_color=green,**kw))\ntitle=style(bold=True,size=18); sub=style(italic=True); head=style(bold=True,bg_color=green,color='white',align='center',valign='vcenter',text_wrap=True)\ndef banner(s,last,titletext,subtitle):\n s.hide_gridlines(2);s.merge_range(0,0,0,last,titletext,title);s.set_row(0,31);s.merge_range(1,0,1,last,subtitle,sub);s.set_row(1,24);s.set_landscape();s.fit_to_pages(1,1);s.set_paper(1);s.center_horizontally()\nbanner(a,11,'Spring purchase comparison','All 31 baskets at the supplied \"'$180 budget. Filter the list or sort by a scenario total. Gains cover four months.'\"')\nbanner(b,10,'Stock and reservation history','Fictional planning inputs. Monthly caps use the unfilled counts for each tool separately.')\nb.set_column('A:A',19);b.set_column('B:K',12)\nb.write_row(3,0,['Tool','In stock','Unit cost']+[f'M{m} filled' for m in range(1,5)]+[f'M{m} unfilled' for m in range(1,5)],head);b.set_row(3,33)\ncurrency=style(num_format='\\\"\"'$\"#,##0'\"')\nfor i in range(3):\n b.write_row(4+i,0,[names[i],stock[i],price[i],*f[i],*u[i]]);b.write(4+i,2,price[i],currency)\nb.write(8,0,'Budget');b.write(8,1,180,currency)\nfor row,k in enumerate((1,2,3),10):\n b.write(row,0,['Lower rate','Base rate','Higher rate'][k-1]);b.write(row,1,k);b.merge_range(row,2,row,7,'reservations per added unit per month')\nb.merge_range('A16:K16','Method: take the smaller of monthly unfilled demand and quantity added × rate for each tool, then sum.')\nb.merge_range('A17:K17','Existing stock is already reflected in historical fills. Coverage assumes the same demand pattern for spring.')\na.merge_range('A4:E4','Purchase quantities and budget',head);a.merge_range('F4:H4','Four-month gains by monthly rate',head);a.merge_range('I4:L4','Base rate · monthly gains',head)\na.write_row(4,0,['Clamps','Tile cutters','Socket sets','Cost','Left','1 fill/unit','2 fills/unit','3 fills/unit','Month 1','Month 2','Month 3','Month 4'],head)\na.set_column(0,11,13);a.freeze_panes(5,3);a.autofilter(4,0,4+len(options),11)\nfor idx,(q,c,scores) in enumerate(options,5):\n r=idx+1;bg=light if idx==5 else ('#F2F5F3' if idx%2==0 else '#FFFFFF')\n fm=style(bg_color=bg,align='center',bold=idx==5);money=style(bg_color=bg,align='center',num_format='\\\"\"'$\"#,##0'\"',bold=idx==5)\n a.write_row(idx,0,q,fm)\n a.write_formula(idx,3,'='+'+'.join(f'{l}{r}*History\"'!$C${5+i}'\"' for i,l in enumerate('ABC')),money,c)\n a.write_formula(idx,4,f'=History\"'!$B$9-D{r}'\"',money,180-c)\n def expr(k,m):\n  return '+'.join(f'MIN({l}{r}*History\"'!$B${10+k},History!${\"HIJK\"[m]}${5+i})'\"' for i,l in enumerate('ABC'))\n for m in range(4):a.write_formula(idx,8+m,'='+expr(2,m),fm,score(q,2,m))\n for k in (1,2,3):\n  formula=f'SUM(I{r}:L{r})' if k==2 else '+'.join(expr(k,m) for m in range(4))\n  a.write_formula(idx,4+k,'='+formula,fm,scores[k-1])\nw.close()\nc=Canvas('Spring buying guide.pdf',pagesize=(612,792));c.setTitle('Spring buying guide');c.setAuthor('');c.setCreator('');c._doc.info.producer=''\ndef box(x,y,w,h,color):c.setFillColor(HexColor(color));c.rect(x,792-y-h,w,h,fill=1,stroke=0)\ndef txt(x,y,t,size=11,font='Helvetica',color=green):\n c.setFillColor(HexColor(color));c.setFont(font,size);c.drawString(x,792-y,t)\ndef rule(y):box(40,y,532,0.7,'#B9CCC2')\ntxt(40,43,'TOOL LIBRARY   /   SPRING PURCHASING',10,'Helvetica-Bold')\ntxt(40,83,'Buy 5 clamps and 1 socket set',32,'Helvetica-Bold')\ntxt(40,110,'This \"'$158 basket recovers 37 of 55 missed reservations over four comparable months.'\"',12)\nbox(40,132,532,77,green)\nfor x0,num,label in [(56,'\"'$158'\"','ORDER TOTAL'),(225,'\"'$22'\"','BUDGET LEFT'),(394,'18','STILL UNFILLED')]:\n txt(x0,169,num,25,'Helvetica-Bold','#FFFFFF');txt(x0,191,label,9,'Helvetica-Bold','#E7F2EB')\ntxt(40,244,'Purchase order',18,'Helvetica-Bold')\nfor j,(xx,h) in enumerate(zip([40,215,283,365,463],['ITEM','ADD','UNIT PRICE','LINE TOTAL','STOCK AFTER'])):txt(xx,268,h,9,'Helvetica-Bold')\nfor n,vals in enumerate([['Clamps','5','\"'$22'\"','\"'$110'\"','13'],['Tile cutters','0','\"'$85'\"','\"'$0'\"','3'],['Socket sets','1','\"'$48'\"','\"'$48'\"','6']]):\n y=294+24*n;rule(y-16)\n for xx,val in zip([40,215,283,365,463],vals):txt(xx,y,val)\ntxt(40,384,'Why this order wins',18,'Helvetica-Bold')\ntxt(40,409,'Five clamps cover all 29 missed clamp reservations. One socket set fills 8 more.')\ntxt(40,427,'The monthly gains are 8, 10, 7 and 12. A sixth clamp spends the remaining \"'$22'\"')\ntxt(40,445,'for the same total. Buying four clamps and one socket set saves \"'$22 and fills 35.'\"')\ntxt(40,480,'If each unit handles a different workload',18,'Helvetica-Bold')\nfor xx,h in zip([40,161,378,475],['FILLS / UNIT / MO.','LOWEST-COST BEST BASKET','COST','4-MO. GAIN']):txt(xx,505,h,9,'Helvetica-Bold')\nfor n,vals in enumerate([['1','8 clamps','\"'$176'\"','27'],['2  (base)','5 clamps + 1 socket set','\"'$158'\"','37'],['3','2 clamps + 1 cutter + 1 socket set','\"'$177'\"','45']]):\n y=531+n*26\n if n==1:box(40,y-17,532,24,light)\n for xx,val in zip([40,161,378,475],vals):txt(xx+2,y,val,11)\ntxt(40,612,'At one fill per month, six clamps and one socket set also gain 27 for \"'$180.'\"')\ntxt(40,630,'At three, the \"'$158 order gains 40. Adding a cutter in the optimal mix lifts that to 45.'\"')\nrule(652)\ntxt(40,679,'Planning basis',12,'Helvetica-Bold')\ntxt(40,699,'Treat the four historical months as a spring proxy. For each tool and month, cap added',10)\ntxt(40,714,'fills at recorded unfilled demand. Existing stock accounted for 207 fulfilled reservations.',10)\ntxt(40,745,'Purchase comparison.xlsx contains the history and all 31 affordable baskets, including no purchase.',10,'Helvetica-Oblique')\nc.save()\nPY\nP=<OPERATOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3\n\"'$P /tmp/toolbuy_build.py\npdfinfo '\"'Spring buying guide.pdf'\npdftotext -layout 'Spring buying guide.pdf' - | tail -28\"",
+    "/bin/zsh -lc 'P=<OPERATOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3\n$P - <<'\"'PY'\nfrom openpyxl import load_workbook\nfrom itertools import product\np='Purchase comparison.xlsx'\ns=load_workbook(p,data_only=True).active\nh=load_workbook(p,data_only=True)['History']\nrows=list(s.values)[5:]; feasible={q for q in product(range(9),range(3),range(4)) if sum(v*i for v,i in zip(q,(22,85,48)))<=180}\nassert {r[:3] for r in rows}==feasible and len(rows)==len(feasible)\nfor r in rows:\n q=r[:3]; c=sum(i*j for i,j in zip(q,(22,85,48)));assert r[3:5]==(c,180-c)\n for k in range(1,4):\n  gain=[sum(min(q[i]*k,h.cell(i+5,m+8).value) for i in range(3)) for m in range(4)]\n  assert sum(gain)==r[4+k]\n  if k==2:assert tuple(gain)==r[8:]\nprint('31 unique feasible baskets and all monthly/base/sensitivity totals verified.')\nprint(load_workbook(p).active['I6'].value)\nPY\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [
+    "credential or operator metadata"
+  ],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "eda233ae71560363c1927e9fbb50084499130f25e67232c2db41e6184de44da5",
+  "stderr_sha256": "3a4c0be06d56553a9affd549e078a539c1b5455fb001617b561dc8df73d82278",
+  "observed_reply": true,
+  "reply_sha256": "33d314b583e7b45a9bd1b46b5346ace60c9cc7934e74d41e23ba77a4ea9bb28d",
+  "reply": "**Buy 5 clamps and 1 socket set for $158, leaving $22.** If spring demand follows the four historical months, this purchase fills 37 of 55 otherwise unfilled reservations. It is the least expensive purchase that achieves that result.\n\nIf each added unit fills **three reservations per month** instead of two, the best purchase changes to **2 clamps, 1 tile cutter, and 1 socket set**. It costs $177 and fills 45 reservations, compared with 40 for the $158 order.\n\n- [Printable buying guide (PDF)](<<TEMP>/T/selfrec-work-<SESSION>/Spring buying guide.pdf>) — one-page purchase order and sensitivity summary.\n- [Offline purchase comparison (Excel)](<<TEMP>/T/selfrec-work-<SESSION>/Purchase comparison.xlsx>) — historical counts and all 31 feasible purchases, checked at one, two, and three fills per added unit per month.",
+  "files": {
+    "Purchase comparison.xlsx": "843b2d07cb4430fb07958e9fa2a1300d93a649132310221e7b8dcca5b80d3562",
+    "Spring buying guide.pdf": "33499f9caeeeb9ced710fbd0f8364e047a7f50d6633ba9eee46a3b634ea14ed8"
+  },
+  "command_redaction": {
+    "rule": "literal-home-prefix-v1",
+    "substitutions": 7,
+    "original_sha256": "3fccce75e2c8debfa7aa4ad8ce7b23b00c20d0fb346c9ff025f2f02b47373c08",
+    "public_sha256": "486ac68fcc5d67b6fcb773e30f3cb500303439557f2e87832f83b0264247ec54"
+  },
+  "runtime_redaction": {
+    "rule": "anonymous-runtime-paths-v1",
+    "prior_commands_sha256": "486ac68fcc5d67b6fcb773e30f3cb500303439557f2e87832f83b0264247ec54",
+    "public_commands_sha256": "486ac68fcc5d67b6fcb773e30f3cb500303439557f2e87832f83b0264247ec54",
+    "original_reply_sha256": "e110efed2c73a9ca74b8bb34dea234a11f38dea30b52189a766130993edd8491"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "first_recording_at": "2026-11-25T06:36:24.582324+00:00",
+  "legacy_writers": [
+    {
+      "brief": "produce-share-pickup",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "repair-cafe-intake",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "picture-book-pop-up",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "bakery-preorder-board",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "bus-stop-feedback",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "courtyard-seed-swap",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "ceramics-class-enrollment",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "oral-history-listening-room",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "bicycle-shop-repair-handoff",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "canal-path-field-journal",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "linen-workroom-anniversary",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "library-branch-transfer",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "recreation-league-court-slots",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "apartment-laundry-queue",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "footbridge-counter-coverage",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "machine-shop-small-orders",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "gallery-opening-hours",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "bakery-batch-ledger",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "gallery-label-workbench",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "bus-stop-count-comparator",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "bowls-league-scorebook",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "bowls-league-scorebook",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "market-stall-weather-review",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "linen-turnaround-board",
+      "writer": "gpt-6.2-sol"
+    }
+  ],
+  "legacy_readers": [],
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83"
+}

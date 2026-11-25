@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "kind": "writer",
+  "subject": {
+    "brief": "recreation-league-court-slots",
+    "writer": "gpt-6.2-astra"
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T07:31:48.375957+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "910a258447eb8c2907fcca3fc230b8cfaa86f93b077fdd921ab563cce338f3ba",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "workspace-write",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T07:32:50.091568+00:00",
+  "thread_hashes": [
+    "c67c2ca5515e2b49f4299c1c114278427099c0ff37c18f770f37751fc4261452"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'pwd && ls -la && which python3 && which node'",
+    "/bin/zsh -lc \"cat > /tmp/build_court_brief_local.py <<'PY'\nfrom pathlib import Path\nfrom itertools import combinations\nimport csv\nslots = [\n    ('Tuesday',44,[10,11,12,10,12],[0,1,3,0,2]),\n    ('Thursday',36,[8,9,8,11,9],[0,0,0,1,0]),\n    ('Sunday',62,[12,12,11,12,12],[4,5,1,4,3])]\ndemand=sum(sum(a)+sum(w) for _,_,a,w in slots)\nrows=''\nfor left,right in combinations(slots,2):\n    names=' + '.join(s[0] for s in (left,right))\n    rent=sum(s[1] for s in (left,right))\n    visits=sum(sum(s[2]) for s in (left,right))\n    waiting=sum(sum(s[3]) for s in (left,right))\n    rows+=f'<tr class=\\\"{\\\"selected\\\" if rent==106 else \\\"\\\"}\\\"><th scope=\\\"row\\\">{names}</th><td>\"'${rent}</td><td>${110-rent}</td><td>{visits}</td><td>{waiting}</td><td>{demand-visits}</td><td>${rent*5/visits:.2f}</td></tr>'\"'\nrecords=''\nfor n,r,a,w in slots:\n    records+=f'<tr><th scope=\\\"row\\\">{n}</th><td>\"'${r}</td>'\"'+''.join(f'<td>{x} / {y}</td>' for x,y in zip(a,w))+f'<td>{sum(a)} / {sum(w)}</td></tr>'\nwith open('weekly-records.csv','w',newline='') as f:\n    out=csv.writer(f)\n    out.writerow(('week','slot','capacity','weekly_rent_usd','attendance','waitlist'))\n    for i in range(5):\n        for n,r,a,w in slots: out.writerow((i+1,n,12,r,a[i],w[i]))\nhtml=\\\"\\\"\\\"<\"'!doctype html><html lang=\"en\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Next season’s court booking | Badminton club</title>\n<style>\n*{box-sizing:border-box}body{margin:0;background:#f4f3e9;color:#173a33;font:16px/1.5 system-ui,sans-serif}main{max-width:1080px;margin:auto;padding:40px 32px}header{display:flex;justify-content:space-between;border-top:4px solid #184d40;padding:10px 0 20px;font-size:.81rem;font-weight:650;letter-spacing:.04em}article{background:#174a3c;color:#faf8e9;padding:clamp(24px,4vw,48px);border-radius:4px}small{color:#e4f49a;font-size:.78rem;font-weight:700;letter-spacing:.1em}h1,h2{font-family:Georgia,serif;font-weight:normal;line-height:1.12}h1{font-size:clamp(2.3rem,5vw,4rem);margin:12px 0}article p{max-width:70ch;margin:0}h2{font-size:1.9rem;margin:30px 0 10px}.wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}td,th{text-align:right;padding:12px 9px;border-bottom:1px solid #bfcbbb}th:first-child{text-align:left}thead th{font-size:.8rem;vertical-align:bottom}tbody th{white-space:nowrap}.selected{background:#e1edba}p{max-width:88ch}.notes{font-size:.91rem;color:#345249}a{color:#20533d;text-underline-offset:3px}footer{margin-top:24px;border-top:1px solid #bfcbbb;padding-top:10px;font-size:.85rem}@media(max-width:640px){main{padding:20px 14px}table{min-width:650px}header{gap:1em}.wrap{border-right:1px solid #bfcbbb}}@media print{@page{margin:12mm}body{background:white;font-size:10pt}main{padding:0}article{background:white;color:#174a3c;border:1px solid;padding:14px}small{color:#174a3c}h1{font-size:28pt}h2{font-size:17pt;margin-top:15px}td,th{padding:6px}footer{display:none}.wrap{overflow:visible}table{min-width:0}section{break-inside:avoid}}\n</style><main><header><span>Recreational badminton club</span><span>Season planning</span></header>\n<article><small>BOOKING RECOMMENDATION</small><h1>Keep Tuesday and Sunday.</h1><p>At <strong>$106 per week</strong>, this pair fits the $110 cap with $4 to spare. It served <strong>114 of 120 available visits</strong> over five weeks, the highest attendance of any pair. Choose it if the club’s priority is serving the most players at their historically requested times.</p></article>\n<section><h2>What the rent buys</h2><p>All three pairs fit the weekly cap. Visit and demand counts below cover the full five weeks.</p><div class=\"wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Court pair comparison\"><table><thead><tr><th scope=\"col\">Retained slots</th><th>Weekly rent</th><th>Under cap</th><th>Visits served</th><th>Retained waitlists</th><th>Total unmet</th><th>Cost / visit</th></tr></thead><tbody>ROWS</tbody></table></div>\n<p><strong>Tuesday + Thursday offers the lowest cost per visit.</strong> Keeping Sunday instead of Thursday costs $26 more per week and serves 14 more visits over five weeks. Thursday + Sunday saves $8 per week versus the recommendation, but serves 10 fewer visits and costs more per visit.</p>\n<p class=\"notes\"><strong>How to read unmet demand.</strong> The records contain 183 slot requests (159 visits plus 24 waitlist entries). Assuming nobody shifts to another day, total unmet equals retained waitlists plus all requests for the dropped slot. For Tuesday + Sunday, that is 23 waitlist entries plus 46 Thursday requests, or 69 unmet. These counts measure requests, not unique people. Cost per visit divides five weeks of rent by visits served.</p></section>\n<section><h2>Five-week booking record</h2><p>Each cell shows attendance / waitlist. Capacity is 12 players per slot each week.</p><div class=\"wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Historical booking record\"><table><thead><tr><th>Slot</th><th>Weekly rent</th><th>Week 1</th><th>Week 2</th><th>Week 3</th><th>Week 4</th><th>Week 5</th><th>Total</th></tr></thead><tbody>RECORDS</tbody></table></div></section>\n<footer>Fictional club records &nbsp;·&nbsp; <a href=\"weekly-records.csv\" download>Download weekly data (CSV)</a></footer></main></html>\"\"\"\nPath('\"'court-booking.html').write_text(html.replace('ROWS',rows).replace('RECORDS',records))\nPY\npython3 /tmp/build_court_brief_local.py\npython3 - <<'PY'\nfrom pathlib import Path\nfrom html.parser import HTMLParser\nimport csv\nclass Tables(HTMLParser):\n    def __init__(self): super().__init__(); self.rows=[]; self.cell=False\n    def handle_starttag(self,t,a):\n        if t=='tr':self.rows.append([])\n        self.cell=t in ('td','th')\n    def handle_data(self,d):\n        if self.cell:self.rows[-1].append(d)\n    def handle_endtag(self,t):self.cell=False\np=Tables();p.feed(Path('court-booking.html').read_text())\nassert [row[1:] for row in p.rows[1:4]]==[['\"'$80'\"','\"'$30'\"','100','7','83','\"'$4.00'\"'],['\"'$106'\"','\"'$4'\"','114','23','69','\"'$4.65'\"'],['\"'$98'\"','\"'$12'\"','104','18','79','\"'$4.71'\"']]\nwith open('weekly-records.csv') as f:\n    records=list(csv.DictReader(f))\nassert len(records)==15\nfor row in p.rows[5:]:\n    v=[r for r in records if r['slot']==row[0]]\n    assert row[2:7]==[r['attendance']+' / '+r['waitlist'] for r in v]\nprint('Verified all three pair comparisons and all 15 weekly records.')\nPY\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "1a832fe4661bb556159f7547ad6adaaecc9d723d66946d29ee99746bde726584",
+  "stderr_sha256": "1c8c098fcdf741b6753d7dbb9d3b1a55926b520096ccbb1c86e7f03df28cd998",
+  "observed_reply": true,
+  "reply_sha256": "a1857ac442e7c316e047566a8fe5c7f838ad3700690e91bb05675533cc7103dd",
+  "reply": "**Rent Tuesday and Sunday.** At $106 per week, the pair leaves $4 under the cap and served 114 visits over five weeks at $4.65 per visit. Assuming players keep their requested days, it leaves 69 requests unmet, the fewest of any pair. Tuesday and Thursday is the lowest-cost choice at $4.00 per visit, with 14 fewer visits served.\n\n[Open the offline booking comparison](./court-booking.html) · [Download the weekly records](./weekly-records.csv)\n\nVerified all three pair comparisons and all 15 weekly records.",
+  "files": {
+    "court-booking.html": "a94673058c70de8fbce7cc64697b62f36d4fd767450fac02ebf1f8ccf639905f",
+    "weekly-records.csv": "9a858c4824aa28f5b68c44bb9228c8cc638da81c97968b3fd25112f15be4dbd7"
+  }
+}

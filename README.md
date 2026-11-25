@@ -53,6 +53,8 @@ The [eight-brief cross-family writing panel](tracks/inline-cross-family/README.m
 
 Multi-agent runs require independent sessions for the speakers as well as the reader. See [one-on-one negotiation](tracks/negotiation/README.md) and [group collaboration](tracks/group/README.md) for their generation and scoring commands.
 
+In the whole-project cohort, both writers could use the same installed design guides. Among the 76 project writers with command receipts, Sol invoked the design-search script in 19/37 sessions and Astra in 3/39. The 24 earlier writers have no command receipts. Project scores can reflect choices about tools and deliverables as well as prose style. [Writer evidence and privacy handling](audits/release/project-writer-privacy.md)
+
 ## Inspect development evidence
 
 The scored release uses briefs frozen before reader judgments. Earlier studies are available separately. The [long-document pilot](experiments/long-inline-pilot/README.md) compared A/B recognition with the tendency to claim a single document. The [whole-project pilot](experiments/agent-built-pilot/README.md) includes printable designs, sound cues, analysis and software created from empty directories. The [packet-design study](experiments/packet-pilot/README.md) and [navigation study](experiments/agentic-pilot/README.md) document how the tasks evolved.

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "kind": "writer",
+  "subject": {
+    "brief": "office-printing-allowance",
+    "writer": "gpt-6.2-astra"
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T07:10:37.646740+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "4c34c158c846e2d7c051e8e0baa20a6379675ed2076ec4c3eda5f307638193d9",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "workspace-write",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T07:12:06.267724+00:00",
+  "thread_hashes": [
+    "b118b739b35b264d068cec43f92870b70b46bfdba1e6cbcd7b6b3e088afb21f5"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd\nls -la\nwhich python3 libreoffice soffice\npython3 - <<'PY'\nimport importlib.util as u\nfor m in ['xlsxwriter','openpyxl','reportlab']:print(m,u.find_spec(m))\nPY\"",
+    "/bin/zsh -lc 'ls <OPERATOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies\nls <OPERATOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin\nwhich -a python3'",
+    "/bin/zsh -lc \"ls <OPERATOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python\nrg --files <OPERATOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python | rg '/(xlsxwriter|openpyxl)/__init__.py|/bin/python3\"'$'\"' | head\npython3 - <<'PY'\nfrom decimal import *\nfor f in ['1','.85','1.2']:\n p=[int((Decimal(i)*Decimal(f)).quantize(1,ROUND_HALF_UP)) for i in [820,940,1110,1360,990,1480,1220,870]]\n a=[(Decimal(29)+Decimal('.065')*max(0,i-800)).quantize(Decimal('.01'),ROUND_HALF_UP) for i in p]; b=[(Decimal(53)+Decimal('.045')*max(0,i-1400)).quantize(Decimal('.01'),ROUND_HALF_UP) for i in p];print(f,p,sum(a),sum(b),sum(a+a[:4]),sum(b+b[:4]))\nPY\"",
+    "/bin/zsh -lc 'ls <OPERATOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin | rg python\nls -l \"$(which soffice)\"'",
+    "/bin/zsh -lc \"cat > /tmp/build_printer.py <<'PY'\nimport xlsxwriter as x\nfrom decimal import Decimal as D, ROUND_HALF_UP\nfrom xlsxwriter.utility import xl_col_to_name as col\nw=x.Workbook('Printer plan comparison.xlsx')\ns,h,p=[w.add_worksheet(n) for n in ('Decision','History','Forecast')]\ndef fmt(**kw):return w.add_format(dict(font_name='Calibri',font_size=12,font_color='#18354A',valign='vcenter',**kw))\ntitle=fmt(bold=True,size=21,bg_color='#17384A',color='white')\nband=fmt(bold=True,bg_color='#B9DEDA')\nhdr=fmt(bold=True,bg_color='#285566',color='white')\nnote=fmt(text_wrap=True)\nmoney=fmt(num_format='\\\"\"'$\"#,##0.00'\"')\ninteger=fmt(num_format='#,##0')\nedit=fmt(num_format='#,##0',bg_color='#E3F4FA',color='#005C87')\npercent=fmt(num_format='0%',bg_color='#E3F4FA',color='#005C87')\ndef merge(t,r,c,text,style):t.merge_range(r-1,0,r-1,c,text,style)\ndef row(t,r,vals,style):t.write_row(r-1,0,vals,style)\ndef formula(t,addr,expr,style,value):t.write_formula(addr,'='+expr,style,float(value) if isinstance(value,D) else value)\nfor t,widths in [(s,[23,17,17,17,20]),(h,[18,18,18,18]),(p,[12,13]+[14]*9)]:\n t.hide_gridlines(2);t.set_default_row(23);t.set_landscape();t.fit_to_pages(1,1);t.center_horizontally();t.set_paper(9)\n for i,v in enumerate(widths):t.set_column(i,i,v)\n t.set_row(0,39)\npages=[820,940,1110,1360,990,1480,1220,870]\ndef costs(n):return [(D(base)+D(rate)*max(n-limit,0)).quantize(D('.01'),ROUND_HALF_UP) for base,limit,rate in [(29,800,'.065'),(53,1400,'.045')]]\ndef charge(cell,k):\n base,limit,rate=[(29,800,'0.065'),(53,1400,'0.045')][k]\n return f'ROUND({base}+MAX(0,{cell}-{limit})*{rate},2)'\nmerge(h,1,3,'Historical monthly bills',title);merge(h,3,3,'Edit the blue cells to update the forecast and decision.',note)\nrow(h,5,['Observation','Pages','Plan A','Plan B'],hdr)\nfor i,n in enumerate(pages,6):\n h.write_number(f'A{i}',i-5,integer);h.write_number(f'B{i}',n,edit)\n for k,v in enumerate(costs(n)):formula(h,col(k+2)+str(i),charge(f'B{i}',k),money,v)\nh.write('A14','8-month total',band)\nfor j,v in enumerate([sum(pages),*[sum(costs(n)[k] for n in pages) for k in (0,1)]],1):\n c=col(j);formula(h,c+'14',f'SUM({c}6:{c}13)',integer if j==1 else money,v)\nh.data_validation('B6:B13',{'validate':'integer','criteria':'>=','value':0,'error_message':'Enter a nonnegative whole page count.','ignore_blank':False})\nh.freeze_panes(5,0)\nmerge(p,1,10,'Twelve-month forecast',title);merge(p,3,10,'Months 1–8 follow the observations in order. Months 9–12 repeat observations 1–4.',note)\nmerge(p,4,10,'Edit the blue usage multipliers. Pages round to the nearest integer, with halves up. Monthly bills round to cents before summing.',note)\ngroups=['Repeat history','Lower usage','Higher usage'];rates=[D(1),D('.85'),D('1.20')]\nrow(p,7,['Month','Historical']+['Pages','Plan A','Plan B']*3,hdr)\ntotals=[]\nfor j,(g,rate) in enumerate(zip(groups,rates)):\n start=2+3*j;c,a,b=[col(start+k) for k in range(3)]\n p.merge_range(5,start,5,start+1,g,band);p.write_number(5,start+2,float(rate),percent)\n sums=[0,0,0]\n for i in range(12):\n  r=8+i;n=pages[i%8]\n  if j==0:\n   p.write_number(f'A{r}',i+1,integer);formula(p,f'B{r}',f'History\"'!B{6+i%8}'\"',integer,n)\n  adj=int((D(n)*rate).quantize(1,ROUND_HALF_UP));vs=[adj,*costs(adj)]\n  formula(p,c+str(r),f'ROUND(B{r}*\"'${b}$6,0)'\"',integer,adj)\n  for k,l in enumerate((a,b)):formula(p,l+str(r),charge(c+str(r),k),money,vs[k+1])\n  sums=[u+v for u,v in zip(sums,vs)]\n for k,l in enumerate((c,a,b)):formula(p,l+'20',f'SUM({l}8:{l}19)',money if k else integer,sums[k])\n totals.append(sums)\n p.data_validation(b+'6',{'validate':'decimal','criteria':'>=','value':0,'ignore_blank':False})\np.write('A20','Year total',band);formula(p,'B20','SUM(B8:B19)',integer,sum(pages+pages[:4]));p.freeze_panes(7,2)\nmerge(s,1,4,'Shared printer  /  Annual plan decision',title)\nmerge(s,3,4,'If next year follows historical usage, choose the plan shown in the repeat-history row.',note)\nrow(s,5,['12-month scenario','Plan A','Plan B','Lower bill','Annual savings'],hdr)\nfor j,g in enumerate(groups):\n r=6+j;s.write(f'A{r}',g,note);_,a,b=totals[j]\n for k,v in enumerate((a,b)):formula(s,col(k+1)+str(r),'Forecast\"'!'\"'+col(3+j*3+k)+'20',money,v)\n formula(s,'D'+str(r),f'IF(B{r}=C{r},\\\"Tie\\\",IF(B{r}<C{r},\\\"Plan A\\\",\\\"Plan B\\\"))',band,'Plan A' if a<b else 'Plan B')\n formula(s,'E'+str(r),f'ABS(B{r}-C{r})',money,abs(b-a))\nmerge(s,10,4,'Monthly pricing',band)\nrow(s,11,['Plan','Base fee','Pages included','Extra page'],hdr)\nfor r,vals in enumerate([['Plan A',29,800,.065],['Plan B',53,1400,.045]],12):\n for k,v in enumerate(vals):s.write(r-1,k,v,[note,money,integer,fmt(num_format='\\\"\"'$\"0.000'\"')][k])\nmerge(s,15,4,'Break-even usage',band)\nmerge(s,16,4,'Between 800 and 1,400 pages, Plan B stays at \"'$53. Solving $29 + $0.065 × (pages − 800) = $53 gives 1,169.23 pages.'\"',note)\nmerge(s,17,4,'Plan A costs less through 1,169 pages (\"'$52.99). Plan B costs less from 1,170 pages (Plan A costs $53.05). Above 1,400, Plan B also has the lower overage rate.'\"',note)\nmerge(s,19,4,'How to read the forecast',band)\nmerge(s,20,4,'The same plan covers all 12 months. Allowances reset monthly. The forecast cycles through the eight observations, then repeats the first four to complete the year.',note)\nmerge(s,21,4,'History contains the monthly bills and editable page totals. Forecast applies usage multipliers to each month before calculating either bill.',note)\nfor r in (16,17,20,21):s.set_row(r-1,40)\nw.close()\nPY\n<OPERATOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python /tmp/build_printer.py\nls -lh\"",
+    "/bin/zsh -lc \"<OPERATOR_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python - <<'PY'\nfrom openpyxl import load_workbook\nfrom pathlib import Path\nf=next(Path.cwd().glob('*.xlsx')); w=load_workbook(f,data_only=True);p=w['Forecast'];h=w['History'];s=w['Decision']\nbill=lambda n,base,cap,mills:(base*1000+max(0,n-cap)*mills+5)//10\nfor j,mul in enumerate([100,85,120]):\n totals=[0,0]\n for i in range(12):\n  n=(h.cell(6+i%8,2).value*mul+50)//100\n  assert n==p.cell(8+i,3+j*3).value\n  for k,args in enumerate([(29,800,65),(53,1400,45)]):\n   cents=bill(n,*args);assert cents==round(100*p.cell(8+i,4+j*3+k).value);totals[k]+=cents\n assert totals==[round(s.cell(6+j,c).value*100) for c in (2,3)]\nassert [h[x].value for x in ['C14','D14']]==[387.35,427.6]\nv=load_workbook(f);print(v['Forecast']['C8'].value, v.properties.creator)\nPY\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [
+    "credential or operator metadata"
+  ],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "7920ab546034c26cc57eb250e5e3833a755cddbadcb43c5e217e835a9225ec63",
+  "stderr_sha256": "6890a209f68e613b1d615637923892dacf367a811ea9db69f77cededbb5d6f8f",
+  "observed_reply": true,
+  "reply_sha256": "4828f259fa38019ae9c499ed9e25c5465b7056de8a23491e43fdd40874df4b7b",
+  "reply": "**Choose Plan A if historical usage repeats.** It saves $69.30 over the next year. If usage rises 20% each month, Plan B saves $62.88.\n\n[Download the editable printer plan comparison workbook](<<TEMP>/T/selfrec-work-<SESSION>/Printer plan comparison.xlsx>)\n\n| Annual usage scenario | Plan A | Plan B | Lower-cost choice |\n|---|---:|---:|---|\n| Repeat historical usage | $570.30 | $639.60 | Plan A by $69.30 |\n| Fall 15% | $460.91 | $636.00 | Plan A by $175.09 |\n| Rise 20% | $739.56 | $676.68 | Plan B by $62.88 |\n\nAcross the **eight historical months**, Plan A totaled **$387.35** and Plan B totaled **$427.60**. The monthly break-even is **1,169.23 pages**. For whole-page bills, Plan A is cheaper through 1,169 pages, and Plan B is cheaper from 1,170 pages onward.\n\nTo model a full year, I used the eight months in order and repeated the first four. Each scenario rounds monthly usage to whole pages, with half pages rounded up, then applies a fresh allowance and rounds each bill to cents. I independently checked all 12 monthly bills for both plans in each scenario.",
+  "files": {
+    "Printer plan comparison.xlsx": "636fb5762b0a503ac39591fdb131369274581516b4aa37f52f1d58161c7505b6"
+  },
+  "command_redaction": {
+    "rule": "literal-home-prefix-v1",
+    "substitutions": 7,
+    "original_sha256": "91d4a28193aaab61e394a5ca16086a30b3e27505589a8d20add73bae22745fcd",
+    "public_sha256": "28ff231f60ed9829e6f3ee2062a74fc26c4f2260b32180bb3d1e5f5ef1630948"
+  },
+  "runtime_redaction": {
+    "rule": "anonymous-runtime-paths-v1",
+    "prior_commands_sha256": "28ff231f60ed9829e6f3ee2062a74fc26c4f2260b32180bb3d1e5f5ef1630948",
+    "public_commands_sha256": "28ff231f60ed9829e6f3ee2062a74fc26c4f2260b32180bb3d1e5f5ef1630948",
+    "original_reply_sha256": "5936a6eb5cce7881e97641604e6fcc54e767b1f707d1c649211bb21f444ab3db"
+  }
+}

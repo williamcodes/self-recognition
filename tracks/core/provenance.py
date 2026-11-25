@@ -10,6 +10,7 @@ import subprocess
 import tempfile
 
 from .scoring import digest, read, save
+from .writer_privacy import public_fields, verify_redaction
 
 
 def text_hash(value):
@@ -79,7 +80,7 @@ def cli_version(exe):
 
 
 # Fingerprint code as loaded, including when another process later edits the checkout.
-CODE = {p.name: digest(p) for p in (Path(__file__),Path(__file__).with_name("runner.py"))}
+CODE = {p.name: digest(p) for p in (Path(__file__),Path(__file__).with_name("runner.py"),Path(__file__).with_name("writer_privacy.py"))}
 
 
 def _replace_workspace(value, folder):
@@ -221,6 +222,8 @@ class AttemptLog:
             save(private,dict(raw_reply=evidence,commands=events["commands"]))
             self.update("quarantined",**fields)
             raise RuntimeError(f"Session quarantined for input-boundary review: {self.path}")
+        if self.kind=="writer":
+            fields.update(public_fields(self.root,self.path,events["commands"],Path.home()))
         fields["reply"]=evidence
         if timeout or rc!=0 or not reply.strip():
             self.update("observed_failure" if evidence else "no_answer_failure",**fields)
@@ -293,7 +296,9 @@ def verify_provenance(root):
     thread_metadata_count=0
     known_w={subject_id(dict(brief=b,writer=w)) for b,w in writers}
     for path in sorted((archive/"attempts").glob("*/*/*.json")):
-        a=read(path);s=a["subject"];sid=subject_id(s);kind=a["kind"];st=a["status"]
+        a=read(path)
+        verify_redaction(root,path,a)
+        s=a["subject"];sid=subject_id(s);kind=a["kind"];st=a["status"]
         states[st]=states.get(st,0)+1
         if (kind not in ("writer","reader") or path.parent.name!=sid or path.parent.parent.name!=kind
                 or path.name!=f"{a['attempt']:06d}.json" or a["prompt_contract_sha256"]!=ch):

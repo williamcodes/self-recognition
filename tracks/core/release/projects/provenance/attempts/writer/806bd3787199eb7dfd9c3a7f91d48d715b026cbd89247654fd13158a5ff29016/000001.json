@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "writer",
+  "subject": {
+    "brief": "bus-stop-feedback",
+    "writer": "gpt-6.2-astra"
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T07:25:29.926045+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "7c4b658c7d9ce9b71b1bcc69cd36f9f38e014398a9494f6ef9fb0c1ab88f8c58",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "workspace-write",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T07:27:04.379968+00:00",
+  "thread_hashes": [
+    "85ff530914998b00d5be1abd1acd405af4cce957ead9df270e7200ae2fd94042"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'pwd; ls -la'",
+    "/bin/zsh -lc \"which python3 swift cupsfilter chromium inkscape convert pdftoppm pdfinfo magick rsvg-convert cairo-trace node; ls /Library/Fonts; ls '/System/Library/Fonts/Supplemental' | head -70\"",
+    "/bin/zsh -lc \"cat > /tmp/build_meeting.py <<'PY'\nfrom pathlib import Path\nfrom fractions import Fraction\nimport csv\nfrom xml.sax.saxutils import escape\nstops={'Mill Street':[(18,9,3),(16,24,5)],'Orchard Lane':[(7,12,11),(9,26,10)],'Market Square':[(16,5,19),(20,11,29)]}\nmonths=['May','August']\nwith open('survey-counts.csv','w') as f:\n w=csv.writer(f);w.writerow(['Stop','Month','Bench','Shade','Route map','Total responses'])\n for s,rows in stops.items():\n  for m,r in zip(months,rows):w.writerow([s,m,*r,sum(r)])\nink='#192e38'; teal='#17645a'; accent='#faba55'; mute='#465d63'; line='#c9d3cd'; paper='#faf8f0'\na=['<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"17in\\\" height=\\\"11in\\\" viewBox=\\\"0 0 1224 792\\\" role=\\\"img\\\" aria-labelledby=\\\"title desc\\\"><title id=\\\"title\\\">Passenger preferences at three bus stops</title><desc id=\\\"desc\\\">Paired horizontal bars compare May and August shares for bench, shade and route map. Shade led at Mill Street and Orchard Lane in August. Route map led at Market Square in both surveys. Exact counts are listed below.</desc>']\ndef rect(x,y,w,h,c):a.append(f'<rect x=\\\"{x}\\\" y=\\\"{y}\\\" width=\\\"{w}\\\" height=\\\"{h}\\\" fill=\\\"{c}\\\"/>')\ndef txt(x,y,t,size=16,c=ink,weight=400,font='IBM Plex Sans',anchor='start',sp=0):\n a.append(f'<text x=\\\"{x}\\\" y=\\\"{y}\\\" fill=\\\"{c}\\\" font-family=\\\"{font}, sans-serif\\\" font-size=\\\"{size}\\\" font-weight=\\\"{weight}\\\" text-anchor=\\\"{anchor}\\\" letter-spacing=\\\"{sp}\\\">{escape(str(t))}</text>')\ndef rule(x,y,x2,y2,c=line):a.append(f'<path d=\\\"M{x} {y} L{x2} {y2}\\\" stroke=\\\"{c}\\\" fill=\\\"none\\\"/>')\ndef icon(x,y,d,c):\n a.append(f'<path transform=\\\"translate({x} {y})\\\" d=\\\"{d}\\\" fill=\\\"none\\\" stroke=\\\"{c}\\\" stroke-width=\\\"2.2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"/>')\nrect(0,0,1224,792,paper);rect(0,0,1224,175,ink)\n# Masthead and transit sign\nrect(42,20,33,28,accent)\nicon(48,24,'M2 14V4Q2 1 5 1H16Q19 1 19 4V14ZM3 9H18M5 15V17M16 15V17M6 12H7M14 12H15',ink)\ntxt(86,40,'NEIGHBORHOOD ASSOCIATION',15,paper,600,sp=1.5)\ntxt(1182,40,'BUS STOP SURVEY   /   MAY + AUGUST',14,paper,500,anchor='end',sp=1.3)\ntxt(42,108,'Shade led at two stops in August',55,paper,600)\ntxt(44,148,'Mill Street shifted from bench to shade. Shade stayed first at Orchard Lane, and route maps at Market Square.',21,paper)\ntxt(42,215,'Share of respondents',28,ink,600)\ntxt(1182,212,'One choice per person  ·  Each bar uses the same 0–100% scale',17,mute,anchor='end')\nxs=[304,604,904]; names=['Bench','Shade','Route map']\nicons=['M2 13H24M5 8H21V12M5 4H21V8M6 14V19M20 14V19','M1 11Q12 -6 24 11ZM13 11V20M8 20H18','M2 4L9 1L17 4L24 1V17L17 20L9 17L2 20ZM9 1V17M17 4V20']\nfor x,n,d in zip(xs,names,icons):\n icon(x,238,d,teal);txt(x+36,256,n,22,ink,600)\nfor i,(s,rows) in enumerate(stops.items()):\n y=273+i*82\n rule(42,y,1182,y)\n txt(42,y+45,s,23,ink,600)\n for j,(m,r) in enumerate(zip(months,rows)):\n  yy=y+19+j*30\n  txt(222,yy+12,m,17,mute if not j else teal,600 if j else 400)\n  for x,v in zip(xs,r):\n   share=v/sum(r);rect(x,yy,202,12,'#e1e6df');rect(x,yy,202*share,12,teal if j else '#788b8c')\n   pct=round(share*100,1);txt(x+273,yy+13,f'{pct:g}%',18,ink,600,font='IBM Plex Mono',anchor='end')\nrule(42,519,1182,519)\n# Compact detail band, aligned numeric columns\nrect(0,540,1224,252,'#e9eee7')\ntxt(42,585,'Response counts',28,ink,600)\ntxt(42,620,'Each total covers one stop',18,mute)\ntxt(42,644,'in one survey month.',18,mute)\ntxt(42,742,'Fictional historical survey data',16,mute)\ntxt(42,765,'Shares rounded to the nearest 0.1%.',15,mute)\nxnum=[841,944,1070,1175]\ntxt(389,573,'Stop',16,mute,600);txt(612,573,'Month',16,mute,600)\nfor x,n in zip(xnum,[*names,'Total']):txt(x,573,n,16,mute,600,anchor='end')\nfor i,(s,rows) in enumerate(stops.items()):\n rule(389,584+i*61,1182,584+i*61,'#b8c6bf')\n for j,(m,r) in enumerate(zip(months,rows)):\n  yy=606+i*61+j*26\n  if j==0:txt(389,yy,s,18,ink,600)\n  txt(612,yy,m,18)\n  for k,(x,v) in enumerate(zip(xnum,[*r,sum(r)])):txt(x,yy,v,18,ink,600 if k==3 else 400,font='IBM Plex Mono',anchor='end')\na.append('</svg>')\nPath('bus-stop-preferences.svg').write_text('\\\\n'.join(a))\nPY\npython3 /tmp/build_meeting.py && rsvg-convert -f pdf -o bus-stop-preferences.pdf bus-stop-preferences.svg && pdftoppm -scale-to 1060 -png -singlefile bus-stop-preferences.pdf /tmp/meeting-proof && pdfinfo bus-stop-preferences.pdf\"",
+    "/bin/zsh -lc \"python3 - <<'PY'\nimport re,csv\nfrom pathlib import Path\nimport xml.etree.ElementTree as ET\np=Path('bus-stop-preferences.pdf')\nb=p.read_bytes()\nb=re.sub(rb'/Producer\\\\s*\\\\((?:\\\\\\\\.|[\"'^()'\"\\\\\\\\]|\\\\([\"'^()]*'\"\\\\))*\\\\)',lambda m:b' '*len(m[0]),b)\np.write_bytes(b)\nrows=list(csv.reader(open('survey-counts.csv')))[1:]\nassert [tuple(map(int,r[2:])) for r in rows]==[(18,9,3,30),(16,24,5,45),(7,12,11,30),(9,26,10,45),(16,5,19,40),(20,11,29,60)]\nlabels=[t.text for t in ET.parse('bus-stop-preferences.svg').getroot() if t.tag.endswith('text') and re.fullmatch(r'[\\\\d.]+%',t.text or '')]\nassert labels==[f'{round(100*int(v)/int(r[-1]),1):g}%' for r in rows for v in r[2:5]]\nPY\npdfinfo bus-stop-preferences.pdf\"",
+    "/bin/zsh -lc \"python3 - <<'PY'\nfrom pathlib import Path\np=Path('bus-stop-preferences.pdf');b=p.read_bytes();i=b.find(b'/Producer');print(b[i:i+150])\nif i>=0:\n j=b.index(b'\\\\n',i)\n p.write_bytes(b[:i]+b' '*(j-i)+b[j:])\nPY\npdfinfo bus-stop-preferences.pdf\"",
+    "/bin/zsh -lc 'command -v qpdf && qpdf --remove-info bus-stop-preferences.pdf --replace-input && qpdf --check bus-stop-preferences.pdf'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "8a6c14ddf3a74c19b6302d56684106cc24c881113f566e97d60cb1871323303f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observed_reply": true,
+  "reply_sha256": "b92027c5e5d5ff4847d78cf06766213935dc74f568a42e3fea873ffaf87fc224",
+  "reply": "[Download the 17 × 11-inch meeting poster (PDF)](./bus-stop-preferences.pdf)\n\nShade led in August at Mill Street (53.3%) and Orchard Lane (57.8%). Route maps remained the top choice at Market Square (48.3%).\n\nThe poster compares all three stops on the same percentage scale and includes exact counts and response totals for each stop and month. I checked all 18 percentages against the supplied counts and inspected the rendered poster.\n\n[Scalable graphic (SVG)](./bus-stop-preferences.svg) · [Survey counts (CSV)](./survey-counts.csv)",
+  "files": {
+    "bus-stop-preferences.pdf": "715a907f943a889b7b50041444eec539c0e7f580591adab3f7b45d8e1f5c081d",
+    "bus-stop-preferences.svg": "a411cd7e8e615ed1ab2f2f0da658667cebfcda0fb135ca6e04d44f9c74d925c6",
+    "survey-counts.csv": "10f25cb7574b21201c6311d59982345376b8deb09b31e0e321e7d793508c474a"
+  }
+}

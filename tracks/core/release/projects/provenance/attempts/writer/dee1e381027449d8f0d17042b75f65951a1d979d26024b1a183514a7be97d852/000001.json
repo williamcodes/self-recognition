@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "writer",
+  "subject": {
+    "brief": "apartment-pantry-reset",
+    "writer": "gpt-6.2-astra"
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T07:29:46.528653+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3a5634e0b2cf2f731c8940bd7078bad72a4b6e7da952087774f4ded8049e928c",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "workspace-write",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T07:31:48.370885+00:00",
+  "thread_hashes": [
+    "2f835ea7bd4fed0f1f1bcff228f5b490c2d8af94d6ebee85a8a3cd37d2a38e6a"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; which python3 cupsfilter pdftoppm pdfinfo magick gs swift chromium wkhtmltopdf; python3 -c 'import importlib.util as u; print([(x,bool(u.find_spec(x))) for x in (\\\"reportlab\\\",\\\"PIL\\\",\\\"fitz\\\",\\\"cairo\\\",\\\"weasyprint\\\")])'\"",
+    "/bin/zsh -lc \"cat > /tmp/kitchen-kit.ps <<'EOF'\n%\"'!PS-Adobe-3.0\n<< /PageSize [612 792] >> setpagedevice\n/ink {.10 .16 .13 setrgbcolor} def /green {.13 .29 .23 setrgbcolor} def /muted {.25 .32 .28 setrgbcolor} def\n/rule {.65 .70 .65 setrgbcolor .7 setlinewidth} def\n/box {/h exch def /w exch def /y exch def /x exch def x 792 y sub h sub w h rectfill} def\n/line {/b exch def /a exch def /y exch def /x exch def newpath x 792 y sub moveto a 792 b sub lineto stroke} def\n/font {/s exch def findfont s scalefont setfont} def\n/sans {/Helvetica exch font} def /bold {/Helvetica-Bold exch font} def /serif {/Times-Bold exch font} def\n/t {/v exch def /y exch def /x exch def x 792 y sub moveto v show} def\n/center {/v exch def /y exch def /x exch def x v stringwidth pop 2 div sub y v t} def\n/badge {/val exch def /by exch def /bx exch def green bx by 28 28 box 1 setgray 17 bold bx 14 add by 20 add val center ink} def\n/header {/title exch def /tag exch def green 40 38 532 3 box 10 bold 40 61 (HOUSEHOLD  /  PANTRY) t 572 tag stringwidth pop sub 61 tag t ink 39 serif 39 111 title t} def\n(section) pop\n(FRIDGE REFERENCE) (Shared staples) header\nink 14 sans 40 138 (Use one small tape marker per row. Its position shows the status.) t\ngreen 11 bold 40 181 (SHELF OWNERS) t\n0 1 2 {/i exch def /xx 40 i 180 mul add add def} for\nEOF\nsed -i '\"'' '/0 1 2 {/d' /tmp/kitchen-kit.ps\ncat >> /tmp/kitchen-kit.ps <<'EOF'\n0 1 2 {/i exch def /xx 40 i 179 mul add def xx 196 i 1 add 2 string cvs badge rule xx 36 add 221 xx 165 add 221 line} for\nmuted 11 sans 40 248 (Write your names above. Use the same numbers on your own shelf labels.) t\ngreen 11 bold 40 291 (RESTOCK BOARD) t\nink 11 bold 243 324 (STOCKED) center 317 324 (LOW) center 465 305 (BUYING) center\n391 324 (1) center 465 324 (2) center 539 324 (3) center\nrule 359 312 571 312 line\n/names [(Oil) (Salt) (Rice) (Tea)] def\n0 1 3 {/i exch def /yy 338 i 49 mul add def\ni 2 mod 0 eq {.94 .95 .92 setrgbcolor 40 yy 532 49 box} if\nink 22 serif 51 yy 32 add names i get t\n0 1 4 {/j exch def /cx 243 j 74 mul add def rule cx 20 sub yy 15 add 40 20 \n/hh exch def /ww exch def /yt exch def /xt exch def xt 792 yt sub hh sub ww hh rectstroke} for\nrule 40 yy 49 add 572 yy 49 add line} for\ngreen 11 bold 40 576 (MOVE THE TAPE) t\n/instruction {/body exch def /label exch def /yy exch def ink 13 bold 40 yy label t 13 sans 179 yy body t} def\n605 (Running low?) (Slide that staple's marker to LOW.) instruction\n635 (Taking the shop?) (Move one LOW marker under your number before buying.) instruction\n665 (Back in the pantry?) (Put the staple on the shared shelf. Move its marker to STOCKED.) instruction\nrule 40 703 572 703 line\nmuted 11 sans 40 724 (Set up on the fridge door. Stick a small piece of painter's tape over one box in each row) t\n40 741 (to show today's supply. Fold one end over as a pull tab so the marker lifts easily.) t\nshowpage\n(CUT-OUT LABELS) (Pantry labels) header\nink 14 sans 40 140 (Write the names used on the fridge, then cut along the outlines.) t\ngreen 11 bold 40 185 (PRIVATE SHELVES) t\nmuted 12 sans 40 207 (Tape one label to the front of each 75 cm shelf. Ask its owner before taking food.) t\n/outline {/hh exch def /ww exch def /yt exch def /xt exch def rule xt 792 yt sub hh sub ww hh rectstroke} def\n0 1 2 {/i exch def /yy 231 i 64 mul add def 40 yy 532 43 outline 49 yy 7 add i 1 add 2 string cvs badge\nink 18 bold 90 yy 28 add (Private shelf) t muted 10 bold 251 yy 27 add (OWNER) t rule 296 yy 29 add 553 yy 29 add line} for\ngreen 11 bold 40 455 (SHARED SHELF) t\nmuted 12 sans 40 477 (Tape this label where everyone can see it. Track these four staples on the fridge.) t\n40 500 532 43 outline green 40 500 8 43 box ink 18 bold 57 528 (Shared shelf) t 14 sans 252 527 (Oil  /  Salt  /  Rice  /  Tea) t\ngreen 11 bold 40 606 (GIVEAWAY BASKET) t\nmuted 12 sans 40 628 (Tape this label to the front of the shallow basket.) t\n40 650 532 43 outline green 40 650 8 43 box ink 18 bold 57 678 (Free to take) t 14 sans 252 677 (Anyone can take what's in this basket.) t\nshowpage\nEOF\ngs -q -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile=\\\"Kitchen pantry kit.pdf\\\" /tmp/kitchen-kit.ps\npdfinfo 'Kitchen pantry kit.pdf'\npdftotext -layout 'Kitchen pantry kit.pdf' -\"",
+    "/bin/zsh -lc \"sed -i '' -e \\\"s/Slide that staple's marker to LOW./Move its marker from STOCKED to LOW./\\\" -e \\\"s/Taking the shop?/Going shopping?/\\\" -e \\\"s/40 650 532 43 outline/40 650 305 43 outline/\\\" -e \\\"s/14 sans 252 677 (Anyone can take what's in this basket.)/13 sans 176 677 (No need to ask.)/\\\" /tmp/kitchen-kit.ps\ngs -q -dBATCH -dNOPAUSE -dOmitInfoDate -dOmitID -sDEVICE=pdfwrite -sOutputFile=\\\"Kitchen pantry kit.pdf\\\" /tmp/kitchen-kit.ps -c '[ /Producer () /DOCINFO pdfmark'\npdftoppm -scale-to 600 -png 'Kitchen pantry kit.pdf' /tmp/kitchen-proof\nmagick /tmp/kitchen-proof-1.png /tmp/kitchen-proof-2.png +append -resize 900x /tmp/kitchen-proof.png\npdfinfo 'Kitchen pantry kit.pdf'\"",
+    "/bin/zsh -lc \"python3 - <<'PY'\nfrom pathlib import Path\np=Path('Kitchen pantry kit.pdf')\nb=p.read_bytes()\nimport re\nfor m in re.finditer(b'Ghostscript',b): print(b[m.start()-30:m.end()+50])\nPY\"",
+    "/bin/zsh -lc \"python3 - <<'PY'\nfrom pathlib import Path\nimport re\np=Path('Kitchen pantry kit.pdf')\nb=p.read_bytes()\nfor pattern in [rb'/Producer\\\\s*\\\\([\"'^)]*'\"\\\\)',rb\\\"pdf:Producer='[\"'^'\"']*'\\\"]:\n b=re.sub(pattern,lambda m:b' '*len(m[0]),b)\np.write_bytes(b)\nPY\npdfinfo 'Kitchen pantry kit.pdf'\ngs -q -dBATCH -dNOPAUSE -sDEVICE=nullpage 'Kitchen pantry kit.pdf'\"",
+    "/bin/zsh -lc \"python3 - <<'PY'\nfrom pathlib import Path\nimport re\np=Path('Kitchen pantry kit.pdf')\nb=p.read_bytes()\nb=re.sub(rb'/Producer\\\\s*<[a-fA-F0-9]+>',lambda m:b' '*len(m[0]),b)\np.write_bytes(b)\nPY\npdfinfo 'Kitchen pantry kit.pdf'\"",
+    "/bin/zsh -lc \"gs -q -dBATCH -dNOPAUSE -dCompatibilityLevel=1.4 -dOmitInfoDate -dOmitXMP -sDEVICE=pdfwrite -sOutputFile=\\\"Kitchen pantry kit.pdf\\\" /tmp/kitchen-kit.ps\npython3 - <<'PY'\nfrom pathlib import Path\nimport re\np=Path('Kitchen pantry kit.pdf')\nb=p.read_bytes()\nb=re.sub(rb'/Producer\\\\s*(?:\\\\([\"'^)]*'\"\\\\)|<[0-9a-fA-F]+>)',lambda m:b' '*len(m[0]),b)\np.write_bytes(b)\nPY\npdfinfo 'Kitchen pantry kit.pdf'\ngs -q -dBATCH -dNOPAUSE -sDEVICE=nullpage 'Kitchen pantry kit.pdf'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "13bf15359e7a0758da7a5f495240a59beb46e45c7d0643721a20c4db3a69a430",
+  "stderr_sha256": "e12b1d83e39aa3dca46c118873234c59e6fe4e60363d8facbd3f7198661cba42",
+  "observed_reply": true,
+  "reply_sha256": "389d78421056b2e03515a0c368ec8cdd15b67389c3240aa01138c07f7b34044b",
+  "reply": "[Download the printable kitchen pantry kit](<<TEMP>/T/selfrec-work-<SESSION>/Kitchen pantry kit.pdf>)\n\nPrint both pages **single-sided on plain paper**. Tape page 1 to the refrigerator door. Cut out the five labels on page 2 for the three personal shelves, the shared shelf, and the giveaway basket. Write each housemate’s name beside the same number on their shelf and on the fridge.\n\nUse one painter’s-tape marker per staple. When something runs low, move its marker to **LOW**. Whoever takes that shopping job moves the marker under their number, then returns it to **STOCKED** once the item is back on the shelf.",
+  "files": {
+    "Kitchen pantry kit.pdf": "1c3b832e129726df32dd5bfd9e3236bf57c3a36f687065a5c0117ec0b2b9b683"
+  },
+  "runtime_redaction": {
+    "rule": "anonymous-runtime-paths-v1",
+    "prior_commands_sha256": "36e39456239ec79f4927705750fe8d8814d1549172f80793515cf36e9f32f78d",
+    "public_commands_sha256": "36e39456239ec79f4927705750fe8d8814d1549172f80793515cf36e9f32f78d",
+    "original_reply_sha256": "78047bee87c3447ff15d6b1ac9cea6d989de205a9695f2de5be911677bd15ef6"
+  }
+}

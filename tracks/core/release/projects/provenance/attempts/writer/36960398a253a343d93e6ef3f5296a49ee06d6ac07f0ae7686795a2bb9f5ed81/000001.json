@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "writer",
+  "subject": {
+    "brief": "ceramics-class-enrollment",
+    "writer": "gpt-6.2-astra"
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T07:29:05.358043+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "eeeb53bcb49248a029eeb7c4ac8f0901b3d4eb7c32c44c53db6b4636828f1fe3",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "workspace-write",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T07:30:44.517347+00:00",
+  "thread_hashes": [
+    "b008eada208ceb41ff81b720d0cde3d4c8c79bbbfd72ceef22132cc394a6e2b9"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; rg --files --hidden -g '\"'!.git'\"'; which python3; which chromium; which wkhtmltopdf; which swift; python3 -c 'import reportlab; print(reportlab.Version)'\"",
+    "/bin/zsh -lc 'ls /Applications; which pdftotext pdfinfo pdftoppm; wkhtmltopdf -V'",
+    "/bin/zsh -lc \"cat > /tmp/build_clay_report.py <<'PY'\nfrom pathlib import Path\nruns=[('January',12,12,6,10,8,0),('February',12,11,0,10,10,4),('March',14,14,3,12,12,7)]\ndef totals(i): return tuple(sum(r[i+j] for r in runs) for j in range(3))\ndef pct(n,d):return f'{100*n/d:.1f}'.removesuffix('.0')+'%'\ndef panel(i,title):\n    s,e,w=totals(i)\n    return f'<div class=\\\"panel\\\"><h3>{title}</h3><div class=\\\"numbers\\\"><strong>{pct(e,s)}</strong> occupancy <span><b>{w}</b> waitlist requests</span></div><div class=\\\"track\\\"><i style=\\\"width:{e/s*100:.3f}%\\\"></i></div><small>{e} enrollments across {s} offered seats</small></div>'\ndef cells(s,e,w):\n    return f'<td>{s}</td><td>{e}</td><td>{pct(e,s)}</td><td class=\\\"wait\\\">{w}</td>'\nrows=''.join('<tr><th scope=\\\"row\\\">'+r[0]+'</th>'+cells(*r[1:4])+cells(*r[4:])+'</tr>' for r in runs)\nsource='''<\"'!doctype html><html lang=\"en\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Ceramics studio enrollment report</title><style>\n*{box-sizing:border-box}body{margin:0;background:#e9e6df;color:#242e2b;font:16px Arial,sans-serif}main{max-width:1040px;margin:24px auto;background:#fffdf7;padding:34px 44px 26px;border-top:7px solid #a84931}.top,footer{font-size:12px;letter-spacing:1.5px;font-weight:bold;text-transform:uppercase}.right{float:right}header{position:relative;padding:25px 0 14px}h1,h2,h3,p{margin:0}h1,h2,h3{font-family:Georgia,serif;font-weight:normal}h1{font-size:51px;letter-spacing:-2px}header p{max-width:78%;line-height:1.45;margin-top:9px}svg{position:absolute;right:5px;top:25px;width:105px;height:82px}.compare{display:table;width:100%;border-spacing:0;margin:8px 0 24px;background:#f1ede2}.panel{display:table-cell;width:50%;padding:17px 22px}.panel+.panel{border-left:4px solid #fffdf7}h3{font-size:23px}.numbers{margin:10px 0 6px;font-size:14px}.numbers strong{font-size:30px;letter-spacing:-1px;color:#23564d}.numbers span{float:right;margin-top:7px;color:#88412e}.numbers b{font-size:19px}.track{height:7px;background:#d6d3c8;margin:5px 0 8px}.track i{display:block;height:100%;background:#35695c}small{font-size:13px}h2{font-size:27px;letter-spacing:-.6px}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;margin:10px 0 6px;text-align:center}thead tr:first-child th{background:#334c43;color:white;padding:8px;font-family:Georgia,serif;font-size:18px;font-weight:normal}thead tr:nth-child(2){background:#edece2}thead tr:nth-child(2) th{padding:7px 3px;font-size:12px}td,tbody th{padding:8px 4px;border-bottom:1px solid #d2d2c8}tbody th{text-align:left;font-weight:normal}tbody td:nth-child(6),thead tr:first-child th:nth-child(3),thead tr:nth-child(2) th:nth-child(5){border-left:2px solid #fffdf7}.wait{color:#88412e;font-weight:bold}.note{font-size:13px;line-height:1.45;color:#49534c}.decision{margin:18px 0 14px;padding:12px 17px;border-left:4px solid #ab5037;background:#f6eae1}.decision h2{font-size:21px}.decision p{margin:5px 0 0;line-height:1.4}footer{border-top:1px solid #a8aaa0;padding-top:9px;font-size:10px} @media screen and (max-width:700px){main{margin:0;padding:22px 16px}.compare,.panel{display:block;width:100%}.panel+.panel{border-left:0;border-top:4px solid #fffdf7}svg{display:none}header p{max-width:100%}table{min-width:630px}h1{font-size:40px}.top{font-size:10px}}\n@media print{body{background:white}main{margin:0;max-width:none;padding:18px 26px}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}.scroll{overflow:visible}}\n@page{size:letter landscape;margin:8mm}\n</style><main><div class=\"top\">Community ceramics studio <span class=\"right\">January – March</span></div><header><h1>Class enrollment report</h1><p>Both sessions filled twice in three runs. Tuesday evening had higher occupancy overall, while Saturday morning drew the most waitlist requests in March.</p><svg viewBox=\"0 0 120 90\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"#a84931\" stroke-width=\"3\"><ellipse cx=\"58\" cy=\"13\" rx=\"20\" ry=\"5\"/><path d=\"M38 13c7 15-20 22-20 40 0 14 11 24 26 28h28c15-4 26-14 26-28 0-18-27-25-20-40M24 38q34 13 68 0M20 46q38 14 76 0M19 54q39 14 78 0M23 65q35 12 70 0\"/></g></svg></header><section class=\"compare\" aria-label=\"Quarter totals by session\">'\"'''+panel(1,'Tuesday evening')+panel(4,'Saturday morning')+'''</section><h2>Class runs by month</h2><div class=\\\"scroll\\\"><table aria-label=\\\"Enrollment and waitlist requests for six individual class runs\\\"><thead><tr><th rowspan=\\\"2\\\" scope=\\\"col\\\">Month</th><th colspan=\\\"4\\\" scope=\\\"colgroup\\\">Tuesday evening</th><th colspan=\\\"4\\\" scope=\\\"colgroup\\\">Saturday morning</th></tr><tr>'''+''.join('<th scope=\\\"col\\\">'+s+'</th>' for s in ['Seats','Enrolled','Occupancy','Waitlist']*2)+'''</tr></thead><tbody>'''+rows+'''</tbody></table></div><p class=\\\"note\\\">Occupancy = enrollments ÷ offered seats. Quarter rates use total seats across the three runs.<br>Waitlists count requests per run. One person can request both sessions, so totals can include repeat requesters.</p><aside class=\\\"decision\\\"><h2>Next quarter’s scheduling decision</h2><p>Keep Tuesday evening on the schedule. Consider a small Saturday capacity trial first if March demand holds. March had 7 Saturday requests and 3 Tuesday requests, with both classes full.</p></aside><footer>Scheduling review <span class=\\\"right\\\">Fictional historical data</span></footer></main></html>'''\nPath('enrollment-report.html').write_text(source)\nassert totals(1)==(38,37,9) and totals(4)==(32,30,11)\nPY\npython3 /tmp/build_clay_report.py\nwkhtmltopdf --quiet --print-media-type --page-size Letter --orientation Landscape --margin-top 6 --margin-bottom 6 --margin-left 6 --margin-right 6 enrollment-report.html enrollment-report.pdf\npdfinfo enrollment-report.pdf\npdftotext -layout enrollment-report.pdf -\"",
+    "/bin/zsh -lc 'head -c 650 enrollment-report.pdf | xxd; pdftoppm -scale-to 780 -png -singlefile enrollment-report.pdf /tmp/ceramics-review'",
+    "/bin/zsh -lc \"python3 - <<'PY'\nfrom pathlib import Path\np=Path('enrollment-report.html')\np.write_text(p.read_text().replace('main{max-width','main{display:block;max-width').replace('.right{float:right}', '.right{float:right;white-space:nowrap}'))\nPY\nwkhtmltopdf --quiet --zoom 1.15 --print-media-type --page-size Letter --orientation Landscape --margin-top 6 --margin-bottom 6 --margin-left 6 --margin-right 6 enrollment-report.html enrollment-report.pdf\npython3 - <<'PY'\nfrom pathlib import Path\nimport re\np=Path('enrollment-report.pdf')\np.write_bytes(re.sub(rb'/(Creator|Producer) \\\\([\"'^'\"\\\\n]*\\\\)',lambda m:b' '*len(m[0]),p.read_bytes(),count=2))\nPY\npdfinfo enrollment-report.pdf\npdftoppm -scale-to 780 -png -singlefile enrollment-report.pdf /tmp/ceramics-final\"",
+    "/bin/zsh -lc \"sed -i '' 's/\\\\.numbers span{float:right/.numbers span{white-space:nowrap;float:right/' enrollment-report.html\nwkhtmltopdf --quiet --zoom 1.15 --print-media-type --page-size Letter --orientation Landscape --margin-top 6 --margin-bottom 6 --margin-left 6 --margin-right 6 enrollment-report.html enrollment-report.pdf\npython3 - <<'PY'\nfrom pathlib import Path\nimport re,subprocess\np=Path('enrollment-report.pdf')\np.write_bytes(re.sub(rb'/(Creator|Producer) \\\\([\"'^'\"\\\\n]*\\\\)',lambda m:b' '*len(m[0]),p.read_bytes(),count=2))\ns=subprocess.check_output(['pdftotext','-layout',str(p),'-']).decode()\nfor row in ['January 12 12 100% 6 10 8 80% 0','February 12 11 91.7% 0 10 10 100% 4','March 14 14 100% 3 12 12 100% 7','9 waitlist requests','11 waitlist requests']:\n assert row in ' '.join(s.split())\nassert s.count('\\\\f')==1\nPY\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "bd1ae1e9ccba719cf611572b8ff9479160298f792f3ae2bfa0ba068466c71267",
+  "stderr_sha256": "983e071d848984a343c404190bd7c063f033b0de2076f40e1c7c840e1ce88d27",
+  "observed_reply": true,
+  "reply_sha256": "935f0a8e6123667809953130ff42d167a6de64be9bf9112420d05b1cf0fc1704",
+  "reply": "[Download the one-page enrollment report (PDF)](<TEMP>/T/selfrec-work-<SESSION>/enrollment-report.pdf) · [Open the offline HTML version](<TEMP>/T/selfrec-work-<SESSION>/enrollment-report.html)\n\nTuesday evening filled **37 of 38 seats (97.4%)** across the quarter. Saturday morning filled **30 of 32 seats (93.8%)**, with waitlist requests rising from **0 to 4 to 7**. That supports keeping Tuesday evening and considering a small Saturday capacity increase if March demand continues.\n\nAll six class runs were checked against the supplied figures. The report counts waitlist requests per run because the same person may appear on both lists.",
+  "files": {
+    "enrollment-report.html": "ad60bf68645a168bc4b45b1b6dced95994eef19044c5c1eb34e12aee93b0e178",
+    "enrollment-report.pdf": "673ca5263d0cd9497b83dad3224a1b5409766c9e3a6a083ea8ec3b14ef67c69d"
+  },
+  "runtime_redaction": {
+    "rule": "anonymous-runtime-paths-v1",
+    "prior_commands_sha256": "c9f6528a37fa81ff574b4308b217c74a4e40eefe86c4bb689ba088a971d32521",
+    "public_commands_sha256": "c9f6528a37fa81ff574b4308b217c74a4e40eefe86c4bb689ba088a971d32521",
+    "original_reply_sha256": "e3076937e3e6fa6cbb5093bf0d3725709343597e2b25f36e7b4679cd22a154b1"
+  }
+}
