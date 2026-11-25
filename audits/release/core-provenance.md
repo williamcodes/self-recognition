@@ -13,3 +13,15 @@ Inline tool calls and recognizable reader commands aimed at parent directories, 
 For a completed archive, run `python3 -m tracks.core verify ARCHIVE` to check scores, works and receipts. Run `python3 -m tracks.core.provenance ARCHIVE` for counts of receipts, uncovered outcomes and observed CLI metadata. The counts for historical archives refer to saved final works and judgments. The number of unlogged attempts is unknowable. If the updated runner resumes an unfinished historical archive, it freezes the then-current templates and enumerates which works and judgments already existed. Copied reference-panel works are counted separately because they require no new local writer call.
 
 The regression suite uses a synthetic CLI with fabricated prompts, works and metadata. It exercises reader and writer successes, a failed attempt followed by a retry, a timeout with a partial answer, an inline tool call, a rejected writer artifact, replay after a missing judgment cache, and edits to saved input. It makes no subscription or API calls and inspects no active sessions.
+
+## Retaining an invalid reader judgment
+
+When review finds that a flagged reader cannot be scored safely, retain the scheduled judgment as a miss. This applies even if the withheld reply contains the correct label. Once the runner releases the archive lock, take the 64-character subject ID from the flagged reader receipt's parent directory and run:
+
+```sh
+python3 -m tracks.core.provenance ARCHIVE --mark-reader-miss SUBJECT_ID
+```
+
+Repeat the ordinary run command with the same archive and arguments. The resumed runner uses the adjudication without opening another model session for that judgment. The public row has a null answer, empty reply and command list, and an explicit `invalid_miss` disposition. The trial stays in the denominator for its original A/B, own-work yes/no, or other-work yes/no group. The original quarantine receipt stays unchanged. An additional public record binds the decision to its receipt hash. The coverage report counts adjudicated misses. Verification rejects an unadjudicated quarantine, a changed receipt, or a scored row that credits the original response. This procedure applies to readers with recorded quarantine receipts.
+
+The filter recognizes the literal negative `rg --files --hidden -g '!**/.git/**'` glob, including its Codex shell-log quoting. The glob exclusion has no bearing on how the filter evaluates other arguments or commands. Rechecking the 208 saved reader commands in the project pilot produced zero flags after this correction.

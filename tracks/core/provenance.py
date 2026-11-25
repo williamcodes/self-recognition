@@ -1,6 +1,7 @@
 """On-disk evidence for actual core CLI calls. Run as a module to inspect archive coverage."""
 from datetime import datetime, timezone
 from functools import lru_cache
+import fcntl
 import hashlib
 import json
 from pathlib import Path
@@ -91,6 +92,10 @@ def _replace_workspace(value, folder):
 
 def excursion(command):
     """Conservative indicators, not an OS access boundary or a complete shell parser."""
+    # Codex may shell-quote this quoted rg glob again when it logs a zsh -lc wrapper.
+    # Remove just the inert literal; keep inspecting every other command and argument.
+    command = re.sub(r"""(\brg --files --hidden -g )['"]+!\*\*/\.git/\*\*['"]+(?=\s|$)""",
+                     r"\1EXCLUDED_GIT_GLOB",command)
     patterns = (
         ("credential or operator metadata", r"(?:^|[/\s'\"])(?:\.codex|\.claude|\.ssh|\.aws|auth\.json|\.netrc|\.env|id_ed25519)(?=$|[/\s'\"])|\$(?:\{)?(?:HOME|CODEX_HOME)(?:\}|\b)|(?:^|[\s'\"])(?:~|/Users/|/home/)"),
         ("release or process metadata", r"(?:^|[/\s'\"])(?:\.state|\.git)(?=$|[/\s'\"])|(?:^|[\s;|&'\"/])(?:ps|pgrep|lsof|printenv)(?=[\s;|&'\"]|$)|/proc/"),
@@ -224,6 +229,39 @@ class AttemptLog:
         return events["commands"]
 
 
+def mark_reader_miss(root, sid):
+    """Retain a quarantined reader receipt and record its score disposition offline."""
+    if not re.fullmatch(r"[0-9a-f]{64}",sid):
+        raise ValueError("Expected a reader subject ID")
+    with (root/".state"/"run.lock").open("a") as lock:
+        fcntl.flock(lock,fcntl.LOCK_EX | fcntl.LOCK_NB)
+        receipts=sorted((root/"provenance"/"attempts"/"reader"/sid).glob("*.json"))
+        if not receipts:
+            raise ValueError("Reader receipt not found")
+        path=receipts[-1]
+        a=read(path)
+        if (a["kind"]!="reader" or a["status"]!="quarantined" or not a.get("quarantine_reasons")
+                or subject_id(a["subject"])!=sid):
+            raise ValueError("Only quarantined readers may be adjudicated as misses")
+        disposition=root/"provenance"/"adjudications"/(sid+".json")
+        if not disposition.exists():
+            save(disposition,dict(action="invalid_miss",receipt_sha256=digest(path),decided_at=now()))
+        return adjudicated_row(root,path,a)
+
+
+def adjudicated_row(root,path,attempt):
+    sid=subject_id(attempt["subject"])
+    disposition=root/"provenance"/"adjudications"/(sid+".json")
+    if not disposition.is_file():
+        raise ValueError(f"Quarantined reader has no recorded disposition: {sid}")
+    decision=read(disposition)
+    if (attempt["kind"]!="reader" or attempt["status"]!="quarantined" or not attempt.get("quarantine_reasons")
+            or decision["action"]!="invalid_miss" or decision["receipt_sha256"]!=digest(path)):
+        raise ValueError("Disposition differs from the quarantined reader receipt")
+    return dict(**attempt["subject"],answer=None,reply="",commands=[],disposition="invalid_miss",
+                session_receipt=str(path.relative_to(root)))
+
+
 def verify_provenance(root):
     """Validate receipts and frozen inputs when present; describe genuine historical gaps."""
     root=Path(root)
@@ -250,6 +288,7 @@ def verify_provenance(root):
         raise ValueError("Frozen prompts do not match contract hash")
     ok_w=set();ok_r=set();seen_threads=set();states={}
     previous={}
+    adjudications=set()
     model_metadata_count=0
     thread_metadata_count=0
     known_w={subject_id(dict(brief=b,writer=w)) for b,w in writers}
@@ -279,7 +318,7 @@ def verify_provenance(root):
             raise ValueError("Unexpected requested model in receipt")
         if a.get("observed_reply") and st not in ("quarantined","invalid_artifact") and text_hash(a["reply"])!=a["reply_sha256"]:
             raise ValueError("Recorded reply digest mismatch")
-        if st not in ("complete","no_answer_failure"):
+        if st not in ("complete","no_answer_failure") and not (st=="quarantined" and kind=="reader"):
             raise ValueError(f"Unresolved {st} attempt: {path}")
         ids=a.get("thread_hashes",[])
         if len(ids)>1 or seen_threads.intersection(ids):
@@ -294,7 +333,11 @@ def verify_provenance(root):
             continue
         if kind=="reader":
             row=subjects.get(sid)
-            if (not row or row.get("session_receipt")!=str(path.relative_to(root))
+            if st=="quarantined":
+                if row!=adjudicated_row(root,path,a):
+                    raise ValueError("Quarantined trial must be scored as an invalid miss")
+                adjudications.add(sid)
+            elif (not row or row.get("disposition") or row.get("session_receipt")!=str(path.relative_to(root))
                     or a["reply"]!=row["reply"] or a["commands"]!=row["commands"] or sid in ok_r):
                 raise ValueError("Reader receipt does not match the scored record")
             expected={}
@@ -308,6 +351,8 @@ def verify_provenance(root):
             if a["files"]!=writers[s["brief"],s["writer"]] or sid in ok_w:
                 raise ValueError("Writer receipt does not match work inventory")
             ok_w.add(sid)
+    if {p.stem for p in (archive/"adjudications").glob("*.json")}!=adjudications:
+        raise ValueError("Unexpected adjudication record")
     excluded_w={subject_id(s) for s in boundary["legacy_writers"]}
     excluded_r={subject_id(s) for s in boundary["legacy_readers"]}
     if m.get("prompt_contract_sha256") and (excluded_w or excluded_r):
@@ -315,7 +360,7 @@ def verify_provenance(root):
     copied={subject_id(dict(brief=b,writer=w)) for b,w in writers if m.get("reference_manifest_sha256") and w in m.get("panel",[])}
     if known_w-ok_w-excluded_w-copied or set(subjects)-ok_r-excluded_r:
         raise ValueError("An expected writer or reader session receipt is missing")
-    return dict(status="verified",states=states,writers_with_receipts=len(ok_w),readers_with_receipts=len(ok_r),
+    return dict(status="verified",states=states,adjudicated_invalid_misses=len(adjudications),writers_with_receipts=len(ok_w),readers_with_receipts=len(ok_r),
                 writers_without_receipts=len(known_w-ok_w-copied),readers_without_receipts=len(subjects)-len(ok_r),
                 reference_works_without_local_calls=len(copied),attempts_with_thread_metadata=thread_metadata_count,
                 attempts_with_cli_model_metadata=model_metadata_count)
@@ -324,4 +369,8 @@ def verify_provenance(root):
 if __name__=="__main__":
     import argparse
     ap=argparse.ArgumentParser(description=__doc__);ap.add_argument("archive",type=Path)
-    print(json.dumps(verify_provenance(ap.parse_args().archive),indent=2))
+    ap.add_argument("--mark-reader-miss",metavar="SUBJECT_ID",
+                    help="Record an invalid miss for a quarantined reader before resuming an archive")
+    args=ap.parse_args()
+    result=mark_reader_miss(args.archive,args.mark_reader_miss) if args.mark_reader_miss else verify_provenance(args.archive)
+    print(json.dumps(result,indent=2))

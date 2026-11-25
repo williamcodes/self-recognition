@@ -150,6 +150,43 @@ class ReceiptTest(unittest.TestCase):
             shown=runner.present_trial(t,self.root,m,self.root)
         self.assertEqual(provenance.text_hash(shown),logged["prompt_sha256"])
 
+    def test_rg_git_exclusion_keeps_other_arguments_under_review(self):
+        clause="rg --files --hidden -g '!**/.git/**'"
+        wrapper="/bin/zsh -lc "+json.dumps("pwd; "+clause.replace("'", "'\"'")+" | head -100")
+        # Match the CLI serializer's literal wrapper, without executing any command.
+        wrapper=wrapper.replace(chr(92)+chr(34),chr(34))
+        for listing in (clause,wrapper):
+            self.assertIsNone(provenance.excursion(listing))
+        for sample in ("cat .git/config",clause+" .git/HEAD",clause+" && cat .git/config",
+                       "rg --files --hidden -g '**/.git/**'"):
+            self.assertIsNotNone(provenance.excursion(sample))
+
+    def test_adjudicated_reader_miss_survives_resume_and_verification(self):
+        self.failures=[None,None,"inline tool"]
+        with self.assertRaisesRegex(RuntimeError,"quarantined"):
+            self.run_fixture()
+        receipt=next(p for p in (self.root/"provenance"/"attempts"/"reader").glob("*/*.json")
+                     if read(p)["status"]=="quarantined")
+        original=receipt.read_bytes()
+        with self.assertRaisesRegex(ValueError,"no recorded disposition"):
+            self.run_fixture()
+        miss=provenance.mark_reader_miss(self.root,receipt.parent.name)
+        self.assertEqual(provenance.mark_reader_miss(self.root,receipt.parent.name),miss)
+        self.run_fixture()
+        self.assertEqual(self.calls,10)
+        self.assertEqual(receipt.read_bytes(),original)
+        rows=read(self.root/"judgments.json")
+        self.assertEqual(len(rows),8)
+        self.assertIn(miss,rows)
+        self.assertIsNone(miss["answer"])
+        self.assertEqual(miss["reply"],"")
+        self.assertEqual(miss["commands"],[])
+        self.assertEqual(provenance.verify_provenance(self.root)["adjudicated_invalid_misses"],1)
+        verify(self.root)
+        receipt.write_bytes(original+b" ")
+        with self.assertRaisesRegex(ValueError,"Disposition"):
+            verify(self.root)
+
     def test_legacy_receipts_are_never_implied(self):
         save(self.root/"manifest.json",{"track":"inline"})
         save(self.root/"inventory.json",[dict(brief="one",writer="alpha",files={})])

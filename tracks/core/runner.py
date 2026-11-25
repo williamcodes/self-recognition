@@ -12,7 +12,7 @@ import subprocess
 import tempfile
 import time
 
-from .provenance import AttemptLog, contract_prompt, freeze, object_hash, text_hash
+from .provenance import AttemptLog, adjudicated_row, contract_prompt, freeze, object_hash, text_hash
 from .scoring import PROTOCOL, assignments, digest, parse, read, save, scores, validate_manifest, verify
 
 MAC_CODEX = Path("/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex")
@@ -200,6 +200,10 @@ def judge(t, root, manifest, env):
         spec = read(root/"frozen-prompts.json")
         audit = AttemptLog(root,"reader",t,object_hash(spec),inputs)
         audit.path, audit.data = audit.last()
+        if audit.data and audit.data["status"]=="quarantined":
+            row=adjudicated_row(root,audit.path,audit.data)
+            save(cache,row)
+            return row
         if audit.data and audit.data["status"] in ("response_recorded","complete"):
             if audit.data["prompt_sha256"] != text_hash(prompt) or audit.data["input_files"] != inputs:
                 raise ValueError("Reader inputs changed during recovery")
