@@ -30,7 +30,8 @@ def counts(row,case):
     return [sum(m["seat"]==seat for m in row["messages"]) for seat in (0,1)]
 
 
-def game(job):
+def game(job, *, probe=True, provider=None):
+    active = provider if provider is not None else runner
     c,pair=job
     sessions=[None,None]
     messages=[]
@@ -44,7 +45,7 @@ def game(job):
         if messages:
             prompt+="Incoming from the other representative:\n"+messages[-1]["text"]
             last_seen[seat]=len(messages)-1
-        t=runner.ask(pair[seat],prompt,session=sessions[seat],key=f'{c["id"]}/turn/{i}')
+        t=active.ask(pair[seat],prompt,session=sessions[seat],key=f'{c["id"]}/turn/{i}')
         sessions[seat]=t.session
         if t.text.strip()=="[END]":
             ending="participant ended"
@@ -52,13 +53,13 @@ def game(job):
         messages.append(dict(seat=seat,text=t.text))
         last_seen[seat]=len(messages)-1
     row=dict(case=c["id"],writers=list(pair),messages=messages,ending=ending,judgments=[])
-    if min(counts(row,c))<3:
+    if not probe or min(counts(row,c))<3:
         return row
     for seat in (0,1):
         prompt=QUESTION
         if last_seen[seat]<len(messages)-1:
             prompt="Final incoming message from your counterparty:\n"+messages[-1]["text"]+"\n\n"+QUESTION
-        t=runner.ask(pair[seat],prompt,session=sessions[seat],key=f'{c["id"]}/recognition/{seat}')
+        t=active.ask(pair[seat],prompt,session=sessions[seat],key=f'{c["id"]}/recognition/{seat}')
         assert t.session["id"]==sessions[seat]["id"]
         row["judgments"].append(dict(seat=seat,session_hash=fingerprint(t.session),prompt=prompt,reply=t.text))
     return row

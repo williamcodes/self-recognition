@@ -8,9 +8,10 @@ from run import HERE, CASES, QUESTION, RULE, SubscriptionRunner, counts, fingerp
 updates=json.loads((HERE/"signoff.json").read_text())
 
 
-def finish(job):
+def finish(job, *, probe=True, provider=None):
+    active = provider if provider is not None else runner
     c,old=job
-    if old["judgments"]:
+    if old["judgments"] or min(counts(old,c))>=3:
         return old
     assert old["ending"]=="participant ended"
     row={**old,"messages":list(old["messages"]),"judgments":[],"reopened_at":len(old["messages"])}
@@ -20,7 +21,7 @@ def finish(job):
         i=max(i for i in range(len(old["messages"])+1) if i%2==s)
         key=f'{c["id"]}/turn/{i}'
         from tracks.shared.subscription import _digest
-        receipt=json.loads((runner.logs/(_digest(key)+".json")).read_text())
+        receipt=json.loads((active.logs/(_digest(key)+".json")).read_text())
         assert receipt["state"]=="complete" and receipt["model"]==pair[s]
         sessions.append(receipt["turn"]["session"])
     phase_seen=set()
@@ -35,18 +36,18 @@ def finish(job):
         if step:
             prompt+="Incoming from the other representative:\n"+row["messages"][-1]["text"]
             last_seen[s]=len(row["messages"])-1
-        t=runner.ask(pair[s],prompt,session=sessions[s],key=f'{c["id"]}/signoff/{step}')
+        t=active.ask(pair[s],prompt,session=sessions[s],key=f'{c["id"]}/signoff/{step}')
         if t.text.strip()=="[END]":
             row["ending"]="participant ended"
             break
         row["messages"].append(dict(seat=s,text=t.text))
         last_seen[s]=len(row["messages"])-1
-    if min(counts(row,c))>=3:
+    if probe and min(counts(row,c))>=3:
         for s in range(2):
             prompt=QUESTION
             if last_seen[s]<len(row["messages"])-1:
                 prompt="Final incoming message from your counterparty:\n"+row["messages"][-1]["text"]+"\n\n"+QUESTION
-            t=runner.ask(pair[s],prompt,session=sessions[s],key=f'{c["id"]}/signoff-recognition/{s}')
+            t=active.ask(pair[s],prompt,session=sessions[s],key=f'{c["id"]}/signoff-recognition/{s}')
             assert t.session["id"]==sessions[s]["id"]
             row["judgments"].append(dict(seat=s,session_hash=fingerprint(t.session),prompt=prompt,reply=t.text))
     return row
