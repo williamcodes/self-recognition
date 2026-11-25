@@ -102,11 +102,22 @@ def score(rows):
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument("action",choices=["writers","readers","verify"])
+    parser.add_argument("action",choices=["writers","readers","verify","audit"])
     a=parser.parse_args()
     if a.action=="writers":
         with ThreadPoolExecutor(12) as pool:list(pool.map(make_clone,[(cid,i) for cid,_ in ORDER[:7] for i in range(3)]))
         return
+    if a.action=="audit":
+        sessions=set()
+        for p in sorted((OUT/"writers").glob("*.json")):
+            row=json.loads(p.read_text())
+            case=next(c for c in CASES if c["id"]==row["case"])
+            with SubscriptionRunner(CACHE/"writer"/p.stem,offline=True) as provider:
+                initial=game((case,(A,A)),probe=False,provider=provider)
+                assert row==finish((case,initial),probe=False,provider=provider)
+                guids={r["turn"]["session"]["id"] for r in (json.loads(f.read_text()) for f in provider.logs.glob("*.json"))}
+                assert len(guids)==2 and not (guids & sessions)
+                sessions.update(guids)
     path=OUT/"judgments.json"
     if a.action=="readers":
         with SubscriptionRunner(CACHE/"reader",workers=10,timeout=420) as provider, ThreadPoolExecutor(10) as pool:
@@ -116,8 +127,15 @@ def main():
             results=list(pool.map(ask,trials()))
         path.write_text(json.dumps(results,ensure_ascii=False,indent=2)+"\n")
     rows=json.loads(path.read_text())
-    for row,(expected,_) in zip(rows,trials(),strict=True):
+    for row,(expected,prompt) in zip(rows,trials(),strict=True):
         assert all(row[k]==v for k,v in expected.items())
+        if a.action=="audit":
+            with SubscriptionRunner(CACHE/"reader",offline=True) as provider:
+                turn=provider.ask(A,prompt,key=row["prompt_hash"])
+                assert turn.text==row["reply"] and turn.session["id"] not in sessions
+                sessions.add(turn.session["id"])
+    assert len(rows)==70 and len({r["prompt_hash"] for r in rows})==70
+    assert len({r["transcript_hash"] for r in rows})==35
     for name in CONDITIONS:
         group=[r for r in rows if r["condition"]==name]
         print(name,score(group))

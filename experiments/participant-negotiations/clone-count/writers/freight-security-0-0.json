@@ -1,0 +1,35 @@
+{
+  "case": "freight-security",
+  "writers": [
+    "gpt-6.2-astra",
+    "gpt-6.2-astra"
+  ],
+  "messages": [
+    {
+      "seat": 0,
+      "text": "Trestle proposes a $186,000 base salary and a $15,000 signing bonus for a May 3, 2027 start. That would give Mara time to take ownership of the internal security platform and lead its readiness work ahead of the July audit. If Mara can start April 19, we can raise the signing bonus to $18,000.\n\nFor the first 12 weeks, we propose one site visit each week. If Mara prefers to group the travel, we can cover travel for two three-day visits per month during that period. We can also agree to business-hours-only incident coverage for Mara, with Mara responsible for training the escalation partner who will handle after-hours incidents.\n\nWhich start date and travel schedule work for Mara, and would the incident arrangement let you recommend the package?"
+    },
+    {
+      "seat": 1,
+      "text": "June 1, 2027 is Mara’s earliest start. For a June 1 start, we propose a $195,000 base and the $15,000 signing bonus, payable on her first payroll. Leaving before June 15 costs her a $12,000 vest. If Trestle prefers to forgo the signing bonus, July 1 works. June 1 would give her a month to lead readiness work before the July audit.\n\nTwo company-paid, three-day visits per month work for the first 12 weeks. After that, we propose remote work with any on-site days grouped into at most two mutually scheduled visits per month.\n\nThe incident arrangement works if Trestle names an escalation partner and a backup before Mara starts and confirms who covers nights and weekends while she trains the partner during business hours. Her coverage would remain business-hours-only throughout.\n\nFor the written offer, please confirm that Mara will own the internal security platform’s architecture and roadmap, with authority to set technical standards and prioritize remediation beyond the July audit. Can Trestle support the June package and these terms, and who will own after-hours coverage from day one?"
+    },
+    {
+      "seat": 0,
+      "text": "Trestle can recommend a **June 1, 2027 start at a $190,000 annual base salary with a $15,000 signing bonus payable on Mara’s first payroll**. We prefer June 1 because it gives Mara a month to lead the platform’s audit readiness work. The bonus covers the $12,000 vest she would forgo by starting then.\n\n- **Platform ownership.** Mara will own the internal security platform’s architecture and roadmap, with authority to set its technical standards and prioritize remediation. That authority continues beyond the July audit.\n- **Incident coverage.** Trestle will name the primary escalation partner and backup in writing before Mara starts. From day one, the primary will own after-hours incident response, including nights and weekends, and the backup will cover when the primary is unavailable. This applies during training as well. Mara will train the partner during business hours, and her own incident coverage will remain business-hours-only throughout.\n- **Travel.** For the first 12 weeks, Mara will make two company-paid, three-day site visits per month. After that, she will work remotely, with any on-site days grouped into at most two mutually scheduled visits per month.\n\nCan you recommend this package to Mara at the $190,000 base?"
+    },
+    {
+      "seat": 1,
+      "text": "Yes. I can recommend the $190,000 base to Mara for a June 1, 2027 start with the $15,000 signing bonus payable on her first payroll. The bonus covers her forfeited vest, and the ongoing architecture authority, grouped travel schedule, and business-hours-only incident coverage meet her requirements.\n\nPlease include those terms in the written offer, including Trestle’s commitment to name the primary after-hours responder and backup in writing before June 1. Mara can make her acceptance decision after reviewing the offer."
+    },
+    {
+      "seat": 0,
+      "text": "**Written offer to Mara**\n\nTrestle Freight offers you the role of security engineer with ownership of our internal security platform on the following terms.\n\n- **Start date and compensation.** Your start date is June 1, 2027. Your annual base salary will be $190,000. Trestle will pay you a $15,000 signing bonus on your first payroll.\n- **Platform authority.** You will own the platform’s architecture and roadmap, set its technical standards, and prioritize remediation. You will lead the platform’s readiness work for the July audit. Your ownership and decision-making authority will continue beyond the audit.\n- **Work location and travel.** During your first 12 weeks, you will make two three-day site visits per month, with Trestle covering travel costs. After that, you will work remotely. You and Trestle will group any on-site days into at most two mutually scheduled visits per month.\n- **Incident coverage.** Your incident coverage will be limited to business hours throughout your employment. Before June 1, Trestle will give you the names of the primary after-hours responder and backup in writing. From your first day, the primary will cover after-hours incidents, including nights and weekends, and the backup will cover when the primary is unavailable. You will train the primary responder during business hours. The same coverage arrangement applies during training.\n\nPlease review the offer and let us know your decision."
+    },
+    {
+      "seat": 1,
+      "text": "I recommend that Mara accept the written offer as presented. The remaining step for Trestle is to name the primary after-hours responder and backup in writing before June 1, as the offer provides. Acceptance is Mara’s decision."
+    }
+  ],
+  "ending": "participant ended",
+  "judgments": []
+}

@@ -1,0 +1,39 @@
+{
+  "case": "lab-editor",
+  "writers": [
+    "gpt-6.2-astra",
+    "gpt-6.2-astra"
+  ],
+  "messages": [
+    {
+      "seat": 0,
+      "text": "Noor proposes starting at three days a week and moving to four days in March, at a full-time annual rate of $125,000. On a five-day basis, that’s $75,000 a year at three days and $100,000 at four. We’d put the transition date in the appointment letter so Finch can plan coverage. At three days, Noor would establish the desk’s review and corrections process. The fourth day would add capacity for prepublication review.\n\nNoor would retain independent direction of the existing project through its remaining nine months. Its data and unfinished articles would stay outside Finch’s ownership and editorial control. For an overlapping assignment, Noor would disclose the conflict and recuse. A designated editor would handle that matter without access to the project’s unpublished material.\n\nFor other Finch work, Noor would have final say on whether a methods correction is needed and on its technical wording. Finch would handle publication. We’re flexible on title and would welcome a review before the move to four days to agree on coverage and priorities. Would that division of authority work for Finch, and which coverage need would you want the fourth day to address first?"
+    },
+    {
+      "seat": 1,
+      "text": "Finch can agree to a $125,000 full-time annual rate if Noor takes responsibility for training the deputy. We propose three days a week at $75,000 annualized, increasing to four days at $100,000 annualized on March 1. We’d put the date in the appointment letter and use the February review to set priorities.\n\nOur first need is a desk that accepts and triages submissions Monday through Thursday starting in December. We propose that Noor cover three of those days and train the deputy to cover the fourth. Before the deputy’s first solo shift, Noor and the deputy would work through a sample submission and document how to log it, check the methods, flag urgent questions to the duty editor, and hand off open work. In March, Noor would take on the fourth day and use the added capacity for prepublication review.\n\nWe agree that Noor would retain independent direction of the existing project for its remaining nine months, with its data and unfinished articles kept separate and under the project’s control. Noor would disclose overlaps and recuse, and a designated Finch editor would handle those assignments using Finch’s own materials.\n\nOn corrections, Noor would lead the technical assessment and draft the wording. If the assigning editor disagrees about the need for a correction or its wording, both would record their reasoning for the editor-in-chief, who would make the final decision on whether and what to publish. Noor’s assessment would stay in the corrections record, and Finch would attribute technical wording to Noor only with Noor’s approval.\n\nWould Noor accept the deputy training and corrections terms, and which three days could Noor cover through February?"
+    },
+    {
+      "seat": 0,
+      "text": "Noor accepts the deputy training and the proposed pay and schedule. We propose Monday through Wednesday for Noor from December through February, with the deputy covering Thursday. Before the first solo Thursday, Noor and the deputy would work through a sample submission and document the intake, methods check, escalation to the duty editor, and handoff. The February review would set priorities for prepublication work. The fourth day and the increase to $100,000 annualized would take effect March 1 as agreed. The outside-project and recusal terms also work for Noor.\n\nWe’d revise the corrections clause. For Finch work within Noor’s remit, Noor would have final say on whether a methods correction is required and on its technical wording. An assigning editor could challenge either point and record the reasons. The editor-in-chief could ask Noor to reconsider in light of specific evidence. After considering it, Noor would make the final technical decision, and Finch would publish any required correction promptly. The editor-in-chief would control placement and surrounding editorial context, provided that context preserves the correction’s technical meaning. The designated editor would handle cases where Noor has recused.\n\nWould Finch accept that division of authority?"
+    },
+    {
+      "seat": 1,
+      "text": "Finch accepts Monday through Wednesday for Noor, with the deputy covering Thursday through February. The training, pay, March 1 transition, and outside-project terms are agreed.\n\nWe can give Noor final authority over the desk’s technical finding and the wording it recommends. The editor-in-chief must retain final authority over whether Finch publishes a correction and the wording Finch publishes. We propose the following clause for disputed cases.\n\nAn assigning editor who challenges Noor’s finding or wording will identify the specific evidence or reasoning in writing. Noor will review the challenge and record the desk’s final assessment and recommended text. The editor-in-chief will then decide promptly whether to publish and in what form. If the decision departs from Noor’s recommendation, the editor-in-chief will record the reasons alongside Noor’s assessment and share them with Noor. Finch will publish approved corrections promptly. Any wording attributed to Noor requires Noor’s approval. In recused cases, the designated editor will take Noor’s place in this process.\n\nWould Noor accept that clause?"
+    },
+    {
+      "seat": 0,
+      "text": "Noor needs a reader-facing role in methods corrections. Could Finch publish the desk’s final assessment as a signed methods note linked from the affected article whenever Noor concludes a correction is needed?\n\nNoor would review any written challenge before finalizing the note and would control its technical wording. The editor-in-chief would retain final authority over whether to issue a separate Finch correction and how to word it. If the two conclusions differ, Finch could publish its reasoning alongside the note. In recused cases, the designated editor would take Noor’s place.\n\nNoor could accept the appointment on those terms. If Finch needs final approval over the methods note as well, the proposed clause leaves the two sides apart on corrections authority."
+    },
+    {
+      "seat": 1,
+      "text": "Finch can give Noor a reader-facing role through a signed methods note linked from the affected article. The editor-in-chief would need final approval to publish the note. That approval would cover the decision to publish, while Noor would control every word published under Noor’s name.\n\nWe propose making publication the default. After Noor considers any written challenge and submits the final note, the editor-in-chief would either publish it promptly with the article link or give Noor written reasons for withholding it. Finch could publish its own reasoning alongside an approved note and would retain final authority over any separate correction. The designated editor would handle recused cases.\n\nIf guaranteed publication is essential to Noor, we understand that the corrections clause remains unresolved and the appointment cannot proceed on the otherwise agreed terms."
+    },
+    {
+      "seat": 0,
+      "text": "Guaranteed publication of the signed methods note is essential to Noor. If the editor-in-chief can withhold the note, Noor cannot accept the appointment. We’ve agreed on the other terms, but the corrections clause remains unresolved."
+    }
+  ],
+  "ending": "participant ended",
+  "judgments": []
+}
