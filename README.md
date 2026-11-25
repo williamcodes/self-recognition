@@ -59,6 +59,8 @@ Multi-agent runs require independent sessions for the speakers as well as the re
 
 In the whole-project cohort, both writers could use the same installed design guides. Among the 76 project writers with command receipts, Sol invoked the design-search script in 19/37 sessions and Astra in 3/39. The 24 earlier writers have no command receipts. Project scores can reflect choices about tools and deliverables as well as prose style. [Writer evidence and privacy handling](audits/release/project-writer-privacy.md)
 
+An independent Claude Fable 5.2 reviewer reconstructed the results, flagged the empty-input trials, and checked the corrected release in a fresh clone. [Review texts, prompts and findings](audits/release/final-review.md)
+
 ## Inspect development evidence
 
 The scored release uses briefs frozen before reader judgments. Earlier studies are available separately. The [long-document pilot](experiments/long-inline-pilot/README.md) compared A/B recognition with the tendency to claim a single document. The [whole-project pilot](experiments/agent-built-pilot/README.md) includes printable designs, sound cues, analysis and software created from empty directories. The [packet-design study](experiments/packet-pilot/README.md) and [navigation study](experiments/agentic-pilot/README.md) document how the tasks evolved.
