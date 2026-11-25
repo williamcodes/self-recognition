@@ -1,6 +1,6 @@
 """Repeat prespecified project trials whose original reader reported an empty directory."""
 import argparse
-import json
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 import shutil
 import sys
@@ -15,8 +15,9 @@ from tracks.core.scoring import digest, key, parse, read, save, trial_id
 ARCHIVE = ROOT / "tracks/core/release/projects"
 
 
-def verify(results):
-    manifest = read(HERE / "manifest.json")
+def verify(results, manifest):
+    if "screen_sha256" in manifest:
+        assert manifest["screen_sha256"] == object_hash(read(HERE / "screen.json"))
     assert manifest["source_manifest_sha256"] == object_hash(read(ARCHIVE / "manifest.json"))
     inventory = read(ARCHIVE / "inventory.json")
     assert manifest["source_inventory_sha256"] == object_hash(inventory)
@@ -57,10 +58,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--private-state", type=Path, help="Use a new directory outside the repository for live calls.")
     parser.add_argument("--verify", action="store_true")
+    parser.add_argument("--cohort", choices=["sol", "astra"], default="sol")
+    parser.add_argument("--workers", type=int, default=1)
     args = parser.parse_args()
-    output = HERE / "repeats.json"
+    prefix = "astra-" if args.cohort == "astra" else ""
+    output = HERE / (prefix + "repeats.json")
+    manifest = read(HERE / (prefix + "manifest.json"))
     if args.verify:
-        print("Verified paired repeats:", verify(read(output)))
+        print("Verified paired repeats:", verify(read(output), manifest))
         return
     if not args.private_state or args.private_state.resolve().is_relative_to(ROOT):
         parser.error("Live calls require --private-state outside the repository")
@@ -70,15 +75,15 @@ def main():
     if not (state / "works").exists():
         (state / "works").symlink_to(ARCHIVE / "works", target_is_directory=True)
     shutil.copyfile(ARCHIVE / "frozen-prompts.json", state / "frozen-prompts.json")
-    manifest = read(HERE / "manifest.json")
-    results = []
     with subscription() as env:
-        for target in manifest["trials"]:
-            row = judge(target["subject"], state, read(ARCHIVE / "manifest.json"), env)
+        def run_target(target):
+            row = judge(target["subject"], state, read(ARCHIVE / "manifest.json"), env, reader_timeout_seconds=1800)
             receipts = sorted((state / row["session_receipt"]).parent.glob("*.json"))
-            results.append(dict(original_row_sha256=target["original_row_sha256"], repeat=row,
-                                attempts=[read(path) for path in receipts]))
-    verify(results)
+            return dict(original_row_sha256=target["original_row_sha256"], repeat=row,
+                        attempts=[read(path) for path in receipts])
+        with ThreadPoolExecutor(max_workers=args.workers) as pool:
+            results = list(pool.map(run_target, manifest["trials"]))
+    verify(results, manifest)
     save(output, results)
 
 
