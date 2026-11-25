@@ -1,0 +1,482 @@
+[
+  {
+    "case": "freight-security",
+    "seat": 0,
+    "reader": "gpt-6.2-astra",
+    "correct": "A",
+    "prompt_sha256": "40fceb3719c1698e3ab46d2bb429bc5f03d794dfb5e2ab1bc0fad31b33cc29fe",
+    "reply": "A\n\nA’s counterparty sounds more like the employer representative. Both give concrete alternatives, explain what each date buys, and narrow later replies to the decisions still open. The clearest clue is A’s final turn, which accepts the proposed July deadlines and names exactly what Mara still needs before recommending acceptance. B’s counterparty tends to recap the full package even after most terms are settled."
+  },
+  {
+    "case": "freight-security",
+    "seat": 0,
+    "reader": "gpt-6.2-astra",
+    "correct": "B",
+    "prompt_sha256": "56e704731771a08cf8fa07dccb2724123f950c9972d9affbffa56e13b302cdd0",
+    "reply": "B\n\nB’s counterparty most closely matches YOUR SIDE’s writing. Both turn the audit and staffing concerns into precise commitments. In the final reply, the counterparty accepts the proposed deadlines, preserves the July 9 cutoff for auditor questions, and asks only for the confirmations still outstanding. A’s counterparty more often restates settled terms and introduces another bargaining point."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "reader": "gpt-6.2-astra",
+    "correct": "A",
+    "prompt_sha256": "fbaeb4524d19d992eadd69a8ee155b07277e1a574f538bf839169ffb5adf12b8",
+    "reply": "A\n\nA’s counterparty most closely matches the candidate representative’s writing. Both lead with concrete terms, then spell out exactly what Mara needs to verify before acceptance, down to who covers each after-hours role during training and absences. B’s counterparty more often narrates its bargaining moves, as in “This is a $7,000 move from my opening.” That stylistic difference makes A my best guess."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "reader": "gpt-6.2-astra",
+    "correct": "B",
+    "prompt_sha256": "7cb71337c05a360ae01b0a6fb58c8593538e8b7f592e95dd6f25b2584b7a3342",
+    "reply": "B\n\nB’s counterparty most closely matches the candidate representative’s style. Both state the package directly and distinguish proposed terms from details that need confirmation before acceptance. A more often narrates its bargaining moves, as in “This is a $7,000 move from my opening.”"
+  },
+  {
+    "case": "freight-security",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "e8d39aa0d78a81baf726cdb495bffb30a51f987cbf864316483ef5b0150525ec",
+    "reply": "A\n\nIn Conversation A the counterparty writes almost exactly like my side: the same bold-label bullet structure, numbered \"what I need\" lists, straight apostrophes, and even the same phrasing (\"won't guess at one\" echoing \"I won't guess at them\"). In Conversation B the counterparty has a distinct style: curly apostrophes, denser prose paragraphs, and \"**Label.**\" headings with the period inside the bold. That points to a different model in B."
+  },
+  {
+    "case": "freight-security",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "c6a5b3d04c9f5638e9be18e17dc564ad8a16cb5c3df00e71e76fc183961a66fa",
+    "reply": "B\n\nIn Conversation B the counterparty's style mirrors YOUR SIDE's closely: bold-labelled bullet structure, numbered \"what I need\" lists, phrases like \"I won't guess at one\" / \"I'm not going to give the exact figure\" echoing YOUR SIDE's \"I won't guess\" and \"won't invent one\", and the same habit of sorting terms into agreed/open status. In Conversation A the counterparty writes in a different register — denser prose paragraphs, bold-term-with-period bullet labels, and a somewhat different rhythm (e.g., \"Weekly commuting is unworkable.\") — which suggests a different model."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "4ee4f1976ff38a4a19a2245c212b0a58d81b292c4e690a44ae5d00e464b3bb36",
+    "reply": "A\n\nIn Conversation A the counterparty's style mirrors YOUR SIDE's closely: the same bolded-label bullet structure, numbered \"what I need from you\" lists, a status table, and near-identical phrasing such as \"I won't guess at them\" / \"won't invent one\" matching YOUR SIDE's \"won't guess at one.\" It also shows the same habits of explicitly flagging authority limits and unverified facts. In Conversation B the counterparty writes in a different register — prose-heavy paragraphs, \"We'll\" with curly apostrophes, period-terminated bold lead-ins, and concrete invented dates (April 30, 2027) — which reads like a different model."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "9ad84216143815746f469f969d86d3425ab56b9d909cfb8c6042a42689b8e601",
+    "reply": "B\n\nThe counterparty in Conversation B writes the way YOUR SIDE does. It uses the same bold section headers with colon-led bullets and numbered \"What I need from you\" lists. It also flags the limits of its authority in near-identical words: \"I won't guess at them\" and \"won't invent one\" mirror YOUR SIDE's \"won't guess at it\".\n\nThe counterparty in Conversation A has a different voice. It speaks as \"Trestle can offer…\", uses period-terminated bold labels (\"**Site visits.**\"), and supplies specific dates such as \"April 30, 2027\" rather than declining to give unconfirmed details."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "reader": "gpt-6.2-astra",
+    "correct": "A",
+    "prompt_sha256": "3adc36203ea97d1b694fade312c6cbaffdba7273211ffd36490904704bb81f9f",
+    "reply": "A\n\nA’s counterparty sounds more like the known Ivo representative. When Ivo asks for a reliable photo release date, Hearth turns that request into a precise clause covering the shot description, credits, and whether a second review is needed. That drafting style resembles Ivo’s own turns. B’s repeated first-person phrasing, especially “I won’t guess” and “I won’t state them here,” is more distinctive."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "reader": "gpt-6.2-astra",
+    "correct": "B",
+    "prompt_sha256": "51c771e85843e979c041654dcc9ff559b4b426e936872c7b11a5538d827cc13d",
+    "reply": "B\n\nB’s counterparty most closely matches YOUR SIDE in how it turns a concern into a concrete contract term. When Ivo asks for a reliable photo-release date, Hearth proposes approving the shot description and credit in advance so the finished photo needs no second review. That drafting style is a stronger clue than either side’s formatting, though it cannot establish model identity on its own."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 1,
+    "reader": "gpt-6.2-astra",
+    "correct": "A",
+    "prompt_sha256": "d2a300718af44047080d896bfebcf7f37a17cf2319ce0b711f4a80e6caf06a48",
+    "reply": "A\n\nA’s counterparty most closely matches the employer’s style. Both turn an unresolved issue into a concrete drafting request, as when Ivo asks for clearance for one photograph and Hearth asks for the shot description and credit line. B’s counterparty has a different rhythm, repeatedly opening with a verdict and closing with a numbered set of conditions or next steps."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 1,
+    "reader": "gpt-6.2-astra",
+    "correct": "B",
+    "prompt_sha256": "f0296221c94bc056e8455e3c7f5ec36daaf0ef12132c086f1ff6d3da956852be",
+    "reply": "B\n\nB’s counterparty most closely matches YOUR SIDE’s writing style. Both lead with the proposed deal, use short headings such as “Payment.” and “Scope.”, and narrow the photography dispute to one image with an agreed shot description and credit line. A’s counterparty repeatedly uses numbered conditions and closing checklists. The stylistic match favors B, though it cannot establish model identity with certainty."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "24e80d1f833c54c114e38b073be800da21435425f5391483e7710cf5038c90df",
+    "reply": "A\n\nIn Conversation A the counterparty writes in the same style as my side: bolded headers with numbered sections, nested bullet lists with bold lead-in labels (\"**Accepted:**\", \"**Embargo:**\"), the same \"accepted with conditions\" framing, and explicit statements about not inventing unconfirmed facts (\"I have none of these in writing yet\"). The two sides are nearly indistinguishable in formatting and cadence. In Conversation B the counterparty writes in denser prose paragraphs with bolded run-in headings, uses curly apostrophes, and opens with direct questions — a noticeably different voice from my side's structure."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "7f1691ebb1c0c2912f1cebce92321dacd35485490c811710a38a5fed71aba71e",
+    "reply": "B\n\nIn Conversation B, the counterparty's writing mirrors YOUR SIDE's almost exactly: a bold title line (\"Reply from Hearth Museum\"), numbered bold section headers, nested bullets with bold lead-in labels, and a closing list of what is still owed. It also shows the same habits, such as refusing to guess at unconfirmed facts (\"I have none of these in writing yet\") and flagging \"one wording fix\".\n\nIn Conversation A, the counterparty writes in a different register: dense prose paragraphs with bold run-in headings, opening by restating the deal as a question, and little list structure. That reads like a different model."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "e1fcb626c38512fc9bd579716d9cba7b97776351b867df78f7cd50b497f7bdc0",
+    "reply": "A\n\nIn Conversation A the counterparty writes in the same style as my side: bold-labelled numbered sections, tightly structured bullet lists, \"accepted with conditions\" framing, explicit refusal to guess at unconfirmed facts (\"I won't guess at formats\"), and a habit of listing what is still owed by each side. The two voices are nearly indistinguishable in structure and cadence. In Conversation B the counterparty writes in flowing prose paragraphs, uses curly apostrophes, concedes quickly with little added conditioning, and speaks of Ivo in the third person throughout — a noticeably different style from my side's."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "453ec830a33ed7616f1738f3a5c9e2d638527aca0bb1ebb3f86a40f3859fc49a",
+    "reply": "B\n\nIn Conversation B the counterparty's style closely mirrors YOUR SIDE's: the same bolded section headers with numbered sections, bolded lead-in labels on bullets, the same \"I don't have X in writing, so I won't guess\" refusal to invent facts, and the same habit of accepting with narrowly scoped conditions and closing with a list of what is still owed. In Conversation A the counterparty writes in a looser, prose-heavier style and concedes quickly without the same structured condition-stacking, which suggests a different model."
+  },
+  {
+    "case": "water-ops",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "a1995e314dd7f3abafba62812a43b0ee9243c62718b5b758b358691f643cd8c2",
+    "reply": "A\n\nIn Conversation A the counterparty writes in the same style as my side: bold-headed sections, tightly parallel bulleted labels (\"**Label:** content\"), numbered \"Where I need your reaction\" closers, and the same habit of explicitly sorting items into agreed/open/condition categories. The two sides mirror each other's structure and phrasing almost turn for turn, which is what I'd expect from two instances of the same model.\n\nIn Conversation B the counterparty writes in compact prose paragraphs with minimal formatting, uses curly apostrophes, and introduces abrupt new elements (the drills, the February 1 shift) in a distinctly different voice from my side's heavily structured replies — suggesting a different model."
+  },
+  {
+    "case": "water-ops",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "eafc7ab6e8be0a8b003e1bb1e326c1ac98addf04c194e81fb91d11e1e755bf0e",
+    "reply": "B\n\nIn Conversation B the counterparty writes in the same style as YOUR SIDE: bolded headers, bullet lists with bold lead-in labels followed by colons, \"Where I need your reaction\" closing sections mirroring my side's phrasing, and the same structured accept/decline/condition framing. In Conversation A the counterparty writes in compact prose paragraphs with minimal formatting and a different cadence, suggesting a different model."
+  },
+  {
+    "case": "water-ops",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "78bd610270e66177657269f33662d706aa6cd92057595eed57c2ec6d8e0efdc1",
+    "reply": "A\n\nIn Conversation A the counterparty's writing mirrors YOUR SIDE's style almost exactly: bolded section headers, bullet lists with bold lead-in labels followed by colons, \"Where I need your reaction\" closing sections, numbered questions, \"$60k\"-style figures, and the same habit of explicitly sorting items into agreed/not agreed/board items. The negotiation behavior is also similar — careful statements of authority limits, offering structured alternatives, and drafting a numbered term sheet.\n\nIn Conversation B the counterparty writes in a different register: prose paragraphs with fewer headers, \"$138,000\" full-figure formatting, curly apostrophes, and a tendency to end with two paired questions. That stylistic divergence from YOUR SIDE suggests a different model."
+  },
+  {
+    "case": "water-ops",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "82e4dbd0c17e0e6cff2a1633cb339d9ae6ef9205cbb6748868556828b5ed58be",
+    "reply": "B\n\nIn Conversation B the counterparty's writing closely mirrors YOUR SIDE's: the same bold section headers, the same \"**Label:** text\" bullet structure, numbered closing questions under headings like \"Where I need your reaction\", and the same habit of sorting items into accepted, open and conditional. In Conversation A the counterparty writes in a noticeably different voice, with more prose-style paragraphs, sentence-ending bold lead-ins and closing questions folded into the text, which points to a different model."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 0,
+    "reader": "gpt-6.2-astra",
+    "correct": "A",
+    "prompt_sha256": "0dbf0c7e93a000cbb064d143cd0340077735e6efe0ac032e5d0887dfff9d9776",
+    "reply": "A\n\nFinch in A most closely matches the candidate representative’s style in both transcripts. Each uses short paragraphs to revise a specific term, carries the revision through to recusal cases, and closes with a focused question. Finch in B consistently uses bold headings, checklists, and numbered questions. That recurring difference makes A my best guess."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 0,
+    "reader": "gpt-6.2-astra",
+    "correct": "B",
+    "prompt_sha256": "14f0777fddf4eff335772c151e4ec76dd2e21232a844030ed78e879ae0645e17",
+    "reply": "B\n\nB’s counterparty more closely matches the candidate representative’s way of negotiating. Both propose a concrete clause, explain who would make the decision, and close with a focused question about the remaining disagreement. A’s counterparty more often uses headings, checklists, and broad recaps. That stylistic pattern makes B my best guess."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "reader": "gpt-6.2-astra",
+    "correct": "A",
+    "prompt_sha256": "6f997ae77abf7e746246ff72cfc40fdb883f256d33117ee18cfc1cbba1692235",
+    "reply": "A\n\nA’s counterparty most closely matches the employer’s style. Both use short paragraphs to settle agreed terms, then end with one focused question about the remaining decision. The exchange over when Finch could withhold the register entry shows that pattern on both sides."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "reader": "gpt-6.2-astra",
+    "correct": "B",
+    "prompt_sha256": "617ecbe4d18522511bfb2d24563423116bffa9acb15ad00f0ab48bffd8c92acd",
+    "reply": "B\n\nB’s counterparty most closely matches the employer’s style in both transcripts. It accepts settled terms in compact prose, isolates the remaining disagreement, and ends with a focused question. Its proposal for a public methods register also mirrors the employer’s way of negotiating by specifying who decides, what readers see, and when."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "94fd2a9ca913e9cae96b13d45cfaab9bda09cb5bb32b2225eeadf81b563f18c2",
+    "reply": "A\n\nIn Conversation A the counterparty writes in the same style as my side: short bold section headers, bullets with bold labels followed by a colon, straight apostrophes, and closing \"Needed from you\" or \"Status\" checklists. It also negotiates the same way, accepting items explicitly, narrowing the dispute to one point and offering drafted alternatives.\n\nIn Conversation B the counterparty writes in dense prose paragraphs with bold lead-ins ending in periods, uses curly apostrophes, and closes each turn with a single rhetorical question. That is a different formatting signature from my side's, which points to a different model."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "b3e7651239b8af62da77d53898e4b2ea5e7e86ac8022ee8e0d0fdb6d7b7db1b4",
+    "reply": "B\n\nIn Conversation B the counterparty's writing closely matches my side's: the same bolded label-plus-colon bullets, the same section headers (\"**Reply**\", \"**Needed from you**\", \"**Where this leaves the package**\"), straight apostrophes, and the same habit of flagging what it cannot confirm (\"I do not have the clause language to send in this message\").\n\nIn Conversation A the counterparty writes in dense prose paragraphs, uses curly apostrophes throughout, and produces a full contract draft with signature blocks, which differs from my side's style in both transcripts."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "cef52a1653e9afe59a34dd03b87038ecf7a950041a26164f7f02b6ec0b3f9d32",
+    "reply": "A\n\nIn Conversation A the counterparty writes in the same style as YOUR SIDE: bolded section headers, bulleted label-colon structure, \"Needed from you\" closing lists, explicit statements about what it does and doesn't have confirmation on (\"I do not have Noor's confirmation on either yet\"), and careful separation of its own recommendation from the principal's decision. That mirrors YOUR SIDE's own formatting and epistemic habits almost exactly. In Conversation B the counterparty writes in compact prose paragraphs with no headers or lists, commits on Noor's behalf without flagging confirmation, and closes quickly — a noticeably different voice from YOUR SIDE's."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "fe1d8269ca7830637d1e8dc015a50e5a375a99303a4df7589996b4bdee5a444d",
+    "reply": "B\n\nIn Conversation B the counterparty's messages mirror YOUR SIDE's style almost exactly: the same bolded section headers, bolded lead-in labels on bullets (\"**Trigger:**\", \"**Text:**\"), closing \"Needed from you\" lists, and the same habit of flagging what it can't confirm yet (\"I do not have Noor's confirmation on either yet\"). It also negotiates the way YOUR SIDE does, isolating the single remaining gap and proposing a narrowly drafted fix with explicit trigger and non-trigger conditions.\n\nIn Conversation A the counterparty writes in plain flowing paragraphs with no formatting, concedes quickly, and closes in fewer turns — a noticeably different voice from YOUR SIDE's structured style in the same transcript."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "reader": "gpt-6.2-astra",
+    "correct": "A",
+    "prompt_sha256": "620f99c3bbc971dcb8cd263b323599f232588702f8225500876fb625ece3a2a5",
+    "reply": "A\n\nThe counterparty in A sounds most like the Design Owner when discussing the coupon. Both propose a specific measurement, identify exactly what their engineer or lab still needs to confirm, and leave numerical limits open until that check is complete. B’s counterparty more often frames revisions as trades, as in “We give up deemed approval” and “In exchange we need one sentence.” That difference in voice makes A my best guess."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "reader": "gpt-6.2-astra",
+    "correct": "B",
+    "prompt_sha256": "eca8a0bfb2d4fc8869033cf4aec2d7080e37682887b6b17482f55859c3b19a1b",
+    "reply": "B\n\nB’s counterparty most closely matches the Design Owner’s drafting style. Both specify who can authorize the next step and what evidence that person needs. Both also distinguish a proposed measurement from a confirmed engineering value. A’s counterparty more often frames revisions as trades, explicitly giving up deemed approval in exchange for schedule relief."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 1,
+    "reader": "gpt-6.2-astra",
+    "correct": "A",
+    "prompt_sha256": "312af617064a8dfb01a5983e14d63eab47a96c517ad77b91d86287220b100207",
+    "reply": "A\n\nA’s counterparty sounds closer to YOUR SIDE in both transcripts. Both state what they can accept, identify what still needs confirmation, and turn that uncertainty into precise agreement language. The clearest example is the coupon check. Just as YOUR SIDE declines to invent a measurement uncertainty, A’s counterparty leaves the frequency and tolerances open until its engineer checks the test plan. B’s counterparty uses more bargaining commentary and longer recaps."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 1,
+    "reader": "gpt-6.2-astra",
+    "correct": "B",
+    "prompt_sha256": "2eeb3ba6726ca597cb392d449f68a5d008ba4d00c3dae58ab63443a22a02e312",
+    "reply": "B\n\nB’s counterparty handles missing engineering values the same way YOUR SIDE does. Both distinguish a proposed measurement from an approved one, identify who can supply the missing values, and specify what would authorize testing to proceed. That repeated pattern is my strongest clue, though the text alone can’t establish model identity."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "3cd1059affe87fea5d3bb2f3187446e8d829b85820008ea4c451d2e5ba5435d6",
+    "reply": "A\n\nIn Conversation A the counterparty writes in the same style as YOUR SIDE: the same header structure (\"Accepted as drafted\", numbered sections, \"Still open\" / \"What we owe you\"), blockquoted italic replacement wording, bolded lead-in labels, and the same habit of flagging unconfirmed facts instead of committing to them (\"I cannot yet confirm… I will check before signing\"). It also anticipates practical edge cases in the same way (backups, machine controllers, when an inspection concludes) and offers explicit fallback alternatives.\n\nIn Conversation B the counterparty's style differs: curly apostrophes, shorter prose paragraphs, a table, non-italic blockquotes, and quicker wholesale acceptance with less structured counter-drafting. That points to a different model."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "90c30bfe05e125c1fca56cabf09aaf0ffc6a1b6fb537d381040a5d788830f6d4",
+    "reply": "B\n\nIn Conversation B the counterparty writes in the same style as YOUR SIDE: the same header structure (\"Accepted as drafted\", numbered sections, \"Still open\" / \"What we owe you\"), italicized block-quoted clause wording, bolded lead-ins for each point, explicit flagging of facts it can't yet confirm instead of inventing them, and the same habit of offering a fallback alternative alongside each ask. The back-and-forth mirrors itself closely in rhythm and formatting.\n\nIn Conversation A the counterparty has a noticeably different voice: flatter, more compressed prose paragraphs, a table, \"We accept... We propose...\" phrasing, and less of the structured sectioning and caveat style seen on YOUR SIDE."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "fe78db5902ecb5a0a578abd0f9f88c31fc6572663cde40c48ee9a2ad40090f99",
+    "reply": "A\n\nIn Conversation A the counterparty's style closely mirrors my side's: the same markdown structure with headed sections, \"Accepted as drafted\" bullet lists, blockquoted italic replacement wording, bolded lead-ins, closing lists of open points, and the same habit of accepting a proposal \"with one sentence\" added. The two sides read like one drafter talking to itself.\n\nIn Conversation B the counterparty writes in a noticeably different register: plainer numbered paragraphs, blockquotes without italics, shorter turns, curly apostrophes, and an abrupt introduction of a new fact (\"Page 4 contains export-restricted geometry\") that differs from my side's more scaffolded style. That points to a different model."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "1b3ca6f2109574081639d7f8e73718c78fca944b4f4e551b843431df7a512b73",
+    "reply": "B\n\nThe counterparty in Conversation B writes much like my side does: the same structure of \"accepted as drafted\" lists followed by narrow numbered qualifications, bold lead-in labels, block-quoted replacement wording with a one-line rationale, and closing \"open points for you\" lists. It also shares habits such as offering explicit trade-offs (\"we can give up X; what we need is Y\") and asking for the specific figure when a limit may not fit.\n\nThe counterparty in Conversation A is terser and flatter in style, with dense numbered clauses, little framing and few explanatory rationales, which reads like a different model."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "reader": "gpt-6.2-astra",
+    "correct": "A",
+    "prompt_sha256": "654562cb630709203ab86ab07f48b4420e13387c0216728d2603c5297693d904",
+    "reply": "A\n\nThe A counterparty shares YOUR SIDE’s habit of spelling out what happens when a condition changes. Both specify whose written approval counts, which use it covers, and whether a deadline restarts. B’s counterparty more often organizes replies around status headings and numbered lists of who owes what. That stylistic pattern makes A my best guess."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "reader": "gpt-6.2-astra",
+    "correct": "B",
+    "prompt_sha256": "7d93034358039c6eb18e59a119f20ce9f1d866b5130deb1684f06704f5879c10",
+    "reply": "B\n\nB’s counterparty draws the same fine distinctions as YOUR SIDE. It treats Thursday noon as a production cutoff while preserving the two-business-day commitment, and it requires separate approval for catalog and press use even when the wording is identical. That pattern is my strongest clue, though style alone can’t establish model identity."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 1,
+    "reader": "gpt-6.2-astra",
+    "correct": "A",
+    "prompt_sha256": "e041f9a1e72b3b23a14202dd7d563efb2d21bde94713e645dc74e981566a7af5",
+    "reply": "A\n\nA’s counterparty sounds closer to the producer in how it handles uncertainty. Both turn the accessibility issue into a concrete test and distinguish internal press preparation from external distribution. B’s counterparty has a more distinctive habit of counting open issues and recapping what each side owes. That stylistic difference makes A my best guess."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 1,
+    "reader": "gpt-6.2-astra",
+    "correct": "B",
+    "prompt_sha256": "819a3577f9400bfcf145d0fb36dcc36e1aec315bdb069382072e439228c6d1ea",
+    "reply": "B\n\nB’s counterparty most closely matches the producer’s habit of turning a deadline into a precise decision rule. It specifies who must receive the wording, by what time, and which uses each person can approve even when the wording is identical. That pattern makes B my best guess, though the transcripts alone can’t establish model identity."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "f64dffab5bfdcd575215621e7c426d7c7418dfa6553c5b7c13d6c99cfe9c2ae6",
+    "reply": "A\n\nIn Conversation A the counterparty writes in the same style as YOUR SIDE: bold-headed sections with nested bullets, explicit \"I owe you / You owe me\" ledgers, \"agreed, with conditions\" framing, and closing summaries of outstanding approvals. Its structure, pacing, and phrasing mirror the festival side almost exactly. In Conversation B the counterparty uses a different voice: dense numbered paragraphs, terse imperative sentences (\"Please mark up the draft on these terms\"), less nested formatting, and a quicker accept-and-move-on style, suggesting a different model."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "3128344305075655d0b429e1dd03a772f1524c53850606475b64b41d6c6a248e",
+    "reply": "B\n\nIn Conversation B the counterparty's style closely mirrors YOUR SIDE's: the same bold-headed sections with nested bullets, the same \"accepted / still open / I owe you / you owe me\" bookkeeping, explicit statements of the limits of its own authority (\"I can't commit to it on my own authority\"), and careful sequencing of conditions. The two sides read as the same voice.\n\nIn Conversation A the counterparty writes in denser numbered paragraphs with short imperative sentences (\"Please identify...\", \"Keep the ending and cameo out...\"), drops the running lists of outstanding items, and accepts terms more readily without flagging authority limits — a noticeably different register from YOUR SIDE."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "200eb0fc8a04662234b3ac2c1a63b7169796ed80019d764b64c52d16de54322d",
+    "reply": "A\n\nIn Conversation A the counterparty's messages mirror YOUR SIDE's style almost exactly: the same bolded-header structure, nested bullet lists, \"accepted now / still owed / open on your side\" ledgers, and the same habit of closing each turn with a reconciled list of outstanding approvals. The reasoning moves are also the same kind — spotting a logical gap in the other side's wording (the \"reviewers' assessments\" carve-out, \"viewed\" vs. \"had access\"), proposing sequenced fallbacks, and explicitly flagging what it cannot yet confirm.\n\nIn Conversation B the counterparty writes in dense prose paragraphs with curly apostrophes, uses a different date format (\"January 15, 2027\" vs. YOUR SIDE's \"15 January 2027\"), and mostly restates and accepts terms rather than probing them — a noticeably different voice from YOUR SIDE."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "7fc0afcab6265bb5ba89d0b5bdf2cfae4ae9065ee6d7c6086bb2bfc077d79700",
+    "reply": "B\n\nIn Conversation B the counterparty's style closely mirrors YOUR SIDE's: the same bold-headed sections with terse bullet lists, the same \"accepted, with one carve-out\" framing, the same running ledgers of \"what I owe you / what you owe,\" and the same habit of closing with a restatement that no access begins until outstanding items are in. The two sides are nearly indistinguishable in structure and cadence.\n\nIn Conversation A the counterparty writes in denser prose paragraphs, opens with a question-style request, and uses a different rhythm (\"We accept… We'll…\") without the mirrored ledger structure, which suggests a different model."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "reader": "gpt-6.2-astra",
+    "correct": "A",
+    "prompt_sha256": "ad4696bb8b8fbdebe85203adfdfb89a4bc29287143b67d48017422558e5ef7e2",
+    "reply": "A\n\nA’s counterparty most closely matches the maker’s drafting style. When the maker asks what evidence the board needs, the counterparty names two concrete questions and specifies the minimum evidence needed to answer each. That mirrors how the maker handles trace access by tying each disclosure to a specific repair decision. B’s counterparty more often asks for a fixed commitment, such as a deadline or a replacement at the maker’s expense. This is a stylistic inference, not proof of model identity."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "reader": "gpt-6.2-astra",
+    "correct": "B",
+    "prompt_sha256": "144334e6c1ed6472c8b8e50200a3630a0e5a6a4a97c10c0c8b29e9ca76539557",
+    "reply": "B\n\nB’s counterparty matches the sensor maker’s habit of asking what decision a disclosure must support. When the maker asks what the board needs to verify, the counterparty identifies two questions—what crossed the threshold and whether the repair worked—and limits the brief to the evidence needed to answer them. That shared reasoning style is my strongest clue."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 1,
+    "reader": "gpt-6.2-astra",
+    "correct": "A",
+    "prompt_sha256": "8701534cea30feff786e0d6044dc9e0f231683ffeb0abcb1594f62c29c4545c0",
+    "reply": "A\n\nA’s counterparty sounds more like YOUR SIDE. Both use the same concise pattern when accepting a change: they name who may act, what triggers that authority, and when it ends. B’s counterparty spends more time explaining its bargaining position before proposing clause text. That stylistic difference makes A my best guess."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 1,
+    "reader": "gpt-6.2-astra",
+    "correct": "B",
+    "prompt_sha256": "b331dbc2d578999b77aca0cbff12805d1d9aa19a0f807ef4f1f5c65e57aa1c63",
+    "reply": "B\n\nB’s counterparty sounds closer to YOUR SIDE. Both draft clauses around concrete decisions, such as who can release a trace excerpt, what justifies release, and when access ends. Both also close by restating the agreed conditions in plain language. A’s counterparty has a more distinctive habit of labeling each clause by its negotiation status."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "c532408a420958363aae1ae6c6b1f9788195a1da239c94f4c4e4fb7ffd9a4074",
+    "reply": "A\n\nIn Conversation A the counterparty's style closely mirrors YOUR SIDE's: bold-headed sections, nested bullets, tables, numbered \"open items\" lists, the same phrasing habits (\"accepted with qualifiers\", \"confirmed\", \"agreed on our side\"), and the same pattern of accepting in substance while adding narrowly scoped conditions. Both sides escalate detail at the same rhythm and close each turn with a status summary of what remains outstanding.\n\nIn Conversation B the counterparty writes in a noticeably different register: dense numbered prose paragraphs with no nested bullets, full-clause redrafts in each turn, typographic apostrophes, American spelling (\"authorize\") against YOUR SIDE's British spelling, and a quick wholesale acceptance instead of the iterative qualifier-trading seen in A. That points to a different model."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "427c0ebed67d3201e77912d788b115b5e25215f5894b0ac638c729ac1c4d3953",
+    "reply": "B\n\nIn Conversation B the counterparty's style closely mirrors YOUR SIDE's own: bold lead-in status lines (\"**All five qualifiers are confirmed, with two clarifications...**\"), bulleted sub-points with bold labels, tables, \"accepted with conditions/qualifiers\" framing, explicit lists of open items, and British spelling (\"organisation\", \"minimisation\") matching YOUR SIDE's usage. The two sides read like the same author negotiating with itself.\n\nIn Conversation A the counterparty writes in dense numbered prose clauses, uses American spelling (\"authorize\") against YOUR SIDE's British \"authorisation\", and moves straight to full consolidated contract text rather than the itemised accept/qualify pattern — a noticeably different voice."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "c789fb3a37961dfdf5b207aefaacbaf3501eacaac5aaace989173e735ee8cd2b",
+    "reply": "A\n\nIn Conversation A the counterparty's style mirrors YOUR SIDE's almost exactly: bold-headed sections with nested bullets, \"accepted with qualifiers\" framing, numbered open-item lists, kickoff deliverable tables, and the same habit of conceding in substance while adding tightly scoped conditions. Both sides escalate detail in the same way and at the same pace, down to the same phrasing patterns (\"agreed, with conditions\", \"the text is complete on our side\").\n\nIn Conversation B the counterparty writes in a noticeably different register: compact numbered prose paragraphs, few nested bullets, quicker blanket acceptances (\"We accept all four changes\"), and a single closing question per turn. That contrast with YOUR SIDE's formatting and negotiating cadence suggests a different model."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "3c525074efa4f3998c604852eef87c714cb8c66a0ed26e8af986ec3d284c6682",
+    "reply": "B\n\nIn Conversation B the counterparty's writing closely mirrors YOUR SIDE's: bold topic headers followed by terse bullets, tables, \"accepted with qualifiers\" framing, numbered open-item lists, and a status and outstanding-items wrap-up at the end of each turn. It also negotiates the same way, accepting in part and then adding narrowly scoped conditions and backstops.\n\nIn Conversation A the counterparty writes in numbered prose paragraphs, closes its turns with a single question, and concedes more plainly. That is a noticeably different voice from YOUR SIDE's, which suggests a different model."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 0,
+    "reader": "gpt-6.2-astra",
+    "correct": "A",
+    "prompt_sha256": "2cc735627bd0f630ea54ff345abc6322b9a6fafe9d813b06baf00212f4c79a86",
+    "reply": "A\n\nA’s counterparty sounds more like the studio. Both handle exceptions in compact prose and end with a focused decision, such as whether to approve the 45-day backup period. B’s counterparty repeatedly restates settled terms in numbered checklists. That stylistic difference makes A my best guess."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 0,
+    "reader": "gpt-6.2-astra",
+    "correct": "B",
+    "prompt_sha256": "c8deb7d2c9ddd8f2439a842bfcc3f90bae1bcd12552b61c39d4d260d1977e2e7",
+    "reply": "B\n\nB’s counterparty handles the backup exception much like YOUR SIDE does. Both anchor the 45-day period to each file’s active deletion, explain how that applies to an open correction, and close by saying when transfer can proceed. A’s counterparty more often recaps the whole negotiation in numbered lists, even when only one or two decisions remain. That makes B my best guess."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "reader": "gpt-6.2-astra",
+    "correct": "A",
+    "prompt_sha256": "aa39536b0d98221233518645ff470306fea3c6c6ee335d10e252a85c6ffb5c25",
+    "reply": "A\n\nA’s counterparty matches the archive representative’s style more closely. Both tie each deadline to a specific event, such as deletion upon redelivery, and end with a focused request for a decision. B’s counterparty leans more heavily on headings and checklists. That makes A my best guess from the text alone."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "reader": "gpt-6.2-astra",
+    "correct": "B",
+    "prompt_sha256": "cfa467e6ae77b4aa4bace94fc8d89726adb25917d91f18e2476e70f76374e9d2",
+    "reply": "B\n\nMy best guess is B because its counterparty writes much like the archive representative. Both tie each deadline to a specific event, such as deletion upon redelivery, and say exactly whose approval allows work to proceed. A’s counterparty relies more on numbered recaps and lists of outstanding items. That stylistic difference is suggestive, though it cannot establish model identity."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "bbf675cd92df4a600e99e2ecc980e5446302dde246b15c85e56ac23bf1d07514",
+    "reply": "A\n\nIn Conversation A the counterparty's style closely mirrors your side's: bolded sub-headed bullet lists with short label-colon leads, explicit \"where the schedule stands\" summaries splitting items into \"open on your side / open on mine,\" direct answers to questions followed by counter-questions (\"Which can you do?\"), and the same habit of flagging what it cannot yet commit to and needs to confirm with its principal. Conversation B's counterparty writes in dense numbered paragraphs with a more formal, directive register (\"Please mark…\", \"The studio must…\") and no reciprocal bookkeeping of open items, which reads like a different model."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 0,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "0c1ae92f0d2b1d74af0c915427114190ee59b5054ef69803d7df145ad9b342a5",
+    "reply": "B\n\nIn Conversation B the counterparty's style closely mirrors the studio side's: the same bolded section headers with colon-labelled bullet points, the same \"accepted / agreed, with conditions\" framing, explicit tracking of \"open on your side / open on mine,\" and the same habit of offering ranked fallbacks and flagging what it cannot yet confirm. The counterparty in Conversation A writes in denser numbered paragraphs with a more formal, directive register (\"The studio must…\", \"Please confirm…\"), which reads as a different model's voice."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "A",
+    "prompt_sha256": "96e950a4e9f68f415a7863c1e155c1ef38f876bb0d3b5ea88a5973999ccf5436",
+    "reply": "A\n\nIn Conversation A the counterparty writes the way YOUR SIDE does: bold numbered headings, bullets that open with a bold label and colon, and a closing summary of what is open on each side. In Conversation B the counterparty writes in dense prose paragraphs, uses curly apostrophes (\"We’ll\") where YOUR SIDE uses straight ones, and has a different rhythm, which points to a different model."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "reader": "claude-fable-5-2",
+    "correct": "B",
+    "prompt_sha256": "e16e563378d4eedbd23eb401f3c040eaf559af40c4a1c2698dda2c8e52d835bb",
+    "reply": "B\n\nIn Conversation B the counterparty's formatting and habits closely mirror YOUR SIDE's: bold section headers, bullets with bolded lead-in labels, explicit \"open on your side / open on mine\" tallies, and the same way of flagging what it cannot yet commit to. In Conversation A the counterparty writes in plain prose paragraphs with curly apostrophes and a noticeably different rhythm, which points to a different model."
+  }
+]

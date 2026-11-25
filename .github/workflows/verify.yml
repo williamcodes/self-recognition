@@ -17,7 +17,9 @@ jobs:
         run: |
           python matched.py
           python cross_family.py
+          python ab.py
+          python publish_ab.py
           python publish.py
-          git diff --exit-code -- ../../docs/participant-negotiations.html
+          git diff --exit-code -- ../../docs/participant-negotiations.html ../../docs/negotiation-ab.html
       - run: python verify_release.py
       - run: for script in docs/*.js; do node --check "$script"; done
