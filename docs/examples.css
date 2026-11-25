@@ -20,3 +20,13 @@
   header { flex-wrap: wrap; }
   #pilot article { padding: 16px; }
 }
+#workspace-files { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-bottom: 20px; }
+#workspace-files h2 { margin-bottom: 10px; }
+#workspace-files .file { border-top: 1px solid var(--line); }
+#workspace-files summary { padding-block: 12px; font-family: ui-monospace, monospace; }
+#workspace-files .verbatim { border-left: 3px solid var(--line); padding-left: 12px; }
+#pilot pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+#workspace-files + section .actions { margin-top: 12px; }
+@media (max-width: 600px) {
+  #workspace-files { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+}
