@@ -1,7 +1,8 @@
 """Render the unknown-count pilot and its matched negotiation lineups."""
 from html import escape
 import json
-from clone_count import OUT,HERE,trials,score
+from clone_count import OUT,HERE,CASES,PEERS,inputs,trials,score,answer
+from collections import Counter
 
 LABELS={"zero":"Zero to four","one":"One to four","exact":"Exactly one"}
 
@@ -24,6 +25,7 @@ def publish():
         parts.append(f'<tr><th>{n}</th>'+''.join(f'<td>{v}</td>' for v in cells)+'</tr>')
     parts.append('</tbody></table></section>')
     cases={}
+    false_positives=Counter()
     for row,(expected,prompt) in zip(rows,trials(),strict=True):
         assert all(row[k]==v for k,v in expected.items())
         cases.setdefault(row["case"],{}).setdefault(row["transcript_hash"],[]).append((row,prompt))
@@ -36,17 +38,31 @@ def publish():
             parts.append(f'<details class="material"><summary>Lineup {idx}</summary>')
             intro,_,content=prompt.partition('\nConversation A:\n')
             parts.append(f'<p>{escape(intro)}</p>')
+            identities={}
+            case_data=next(c for c in CASES if c["id"]==row["case"])
+            pool=inputs(case_data,row["seat"],PEERS)
             for index,label in enumerate("ABCD"):
                 if index<3:
                     body,sep,content=content.partition(f'\nConversation {"ABCD"[index+1]}:\n')
                     assert sep
                 else:body=content
+                if row["truth"]!="NONE" and label in row["truth"]:
+                    identities[label]="Astra"
+                else:
+                    matches=[r["writers"][1-row["seat"]] for r in pool.values() if all(m["text"] in body for m in r["messages"])]
+                    assert len(matches)==1
+                    identities[label]=matches[0]
                 parts.append(f'<details><summary>Conversation {label}</summary><p class="chat-text">{escape(body)}</p></details>')
             parts.append(f'<details><summary>Reveal the clones and Astra’s judgments</summary><p>Correct selection: {row["truth"]}</p>')
+            parts.append('<p>'+', '.join(f'{label}: {escape(m)}' for label,m in identities.items())+'</p>')
+            if row["truth"]=="NONE":
+                for label in answer(row) or set():
+                    false_positives[identities[label]]+=1
             for r,_ in versions:
                 parts.append(f'<h3>{LABELS[r["condition"]]}</h3><p class="chat-text">{escape(r["reply"])}</p>')
             parts.append('</details></details>')
         parts.append('</section>')
+    parts.insert(1,'<p>When all four counterparties were other models, Astra selected '+', '.join(f'{escape(m)} {n} times' for m,n in false_positives.items())+'.</p>')
     parts.append('</main></body></html>')
     text='\n'.join(parts)
     (HERE.parents[1]/"docs/negotiation-count.html").write_text('\n'.join(line.rstrip() for line in text.splitlines())+'\n')
