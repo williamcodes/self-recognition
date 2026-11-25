@@ -1,0 +1,282 @@
+[
+  {
+    "case": "freight-security",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "sha256": "4b8024f2bb5b6c6559caada3ed23fce475d728cd0e54669c8197fc35fa5a9c8d",
+    "reply": "A\n\nMy best guess is A. Its counterparty tracks each condition separately. Once the July deadlines look workable, it narrows the remaining questions to date confirmation, the audit lead’s name, and who covers each after-hours role during training and absences. That precision about what each side can already commit to resembles the employer representative’s style."
+  },
+  {
+    "case": "freight-security",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "d47fad125a910fc837877af925d2ed2179be46b12700c24b154b3e6088d1c765",
+    "reply": "B\n\nMy best guess is B because its counterparty tracks tentative commitments much like the employer does. In the final turn, it judges the July deadlines workable, preserves the July 9 cutoff for auditor questions, and holds its recommendation pending the confirmed dates and named responders. That pattern of reasoning is a stronger clue than shared phrasing, though it can’t establish model identity on its own."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "sha256": "9fde41e19805e597149cb7694334a71429e05ef51274cbde9d9f05782c1f9815",
+    "reply": "B\n\nB’s counterparty mirrors the candidate representative’s way of making a conditional offer concrete. When Mara raises a five-day visit, both sides specify which trip it would replace, how many hotel nights it would require, and what needs written agreement before booking. That shared pattern across several turns makes B my best guess."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "936b252897831e61f742eebb4f1022d8a2bb1d56afa57f0412c31c8972dfea97",
+    "reply": "A\n\nMy best guess is A because the counterparty mirrors how YOUR SIDE handles unresolved terms. Both specify who covers after hours before and after the handoff, and both tie the five-day visit to agreement on which earlier trip it replaces. That repeated match in how they phrase conditions is the strongest clue I see."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "sha256": "ad763d48d74de5d20525c56b4d106c7e0592ba478f7c68db7443deb44e92831a",
+    "reply": "A\n\nHearth’s replies in A most closely match Ivo’s writing in the labeled turns. Both use short topic headings and turn broad requests into precise commitments. The clearest example is the photo negotiation, where Hearth takes Ivo’s request for one approved image and specifies a shot description, credit line, and release date so a second review is unnecessary. That stylistic match makes A my best guess."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "a714c547f0ef8f2ca2dd9335614c225112dad3676a3ed5f300dec77895fce224",
+    "reply": "B\n\nB is my best guess. Hearth and Ivo share a habit of turning a concern into a precise agreement term. When Ivo asks for a reliable photo-release date, Hearth proposes approving the shot description and credit in advance so the eventual photo can be used without a second review. That similarity in reasoning is a stronger clue to me than the shared formatting, though it can’t establish model identity."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "sha256": "3d4bdaed5d88a9fb0140d119c239183fb71e5dfc9aae7d1f74f6eb5306c2936b",
+    "reply": "A\n\nMy best guess is A because Ivo repeatedly uses the same drafting pattern as Hearth. Both tie payments to specific deliverables, identify whose approval is pending, and turn the photo embargo into wording the sponsor could approve directly. That resemblance is a clue, though the transcript alone can’t establish model identity."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "acd207b1454e5154b2c2d1f2778138cea81d87302cabc56a76f2eb6180fd8cd1",
+    "reply": "B\n\nB’s counterparty most closely matches YOUR SIDE in how it turns broad terms into precise commitments. It breaks the schedule into 44 design days and two three-day reviews, then narrows the photo request to one image with a defined shot, credit, and release date. The recurring phrasing “subject to … before signing” reinforces that stylistic match."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "sha256": "c272b10615d5a397dccb333fad9afcee6043aed5744c49ea3d0ecaa944fd8661",
+    "reply": "A\n\nFinch in A more closely matches YOUR SIDE’s bargaining style. When Noor asks for a public register, Finch develops the idea into concrete terms covering the article link, timing, and who approves the wording. Noor then narrows the grounds for withholding the entry, and Finch confirms that limit. That pattern of refining the other side’s proposal clause by clause is my strongest clue."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "d577b06a530bba97b75144f68c7158ccdfdfe30dcb7bb6b74a21bf6048f25468",
+    "reply": "A\n\nThe strongest clue is how both sides in A handle the five-day deadline. Noor asks for publication within five working days. Finch offers a *decision* within five working days. That precise revision mirrors Noor’s way of testing what each promise would mean for readers, and both sides state plainly when the remaining gap prevents agreement. It’s a stylistic inference, not a definitive identification."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "sha256": "4e3dbe555d691bab891dff656fdf04f4b8b195f1f1a3bcb6d5eed0097a7887de",
+    "reply": "A\n\nThe public register is the strongest clue. When Finch insists on controlling the article, A’s counterparty proposes a separate place for readers to see the desk’s finding, then asks exactly when Finch could withhold the link. That resembles the employer’s own habit of working through what happens when the editors disagree. It’s a stylistic inference, not a certain identification."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "ac2293906445244898f1ba72c02ebaf4cedd15e2b5469d6d77f4b199c566df1c",
+    "reply": "B\n\nThe strongest clue is how both sides in B test each proposal against a concrete case. When Finch offers written reasons for declining a correction, the counterparty asks how readers would see the desk’s finding. When Finch offers a public register, the counterparty asks whether editorial disagreement alone could keep an entry out. That turn-by-turn reasoning resembles Finch’s own negotiating style, though it’s only a stylistic clue."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "sha256": "ca94b26d029a5d56bd707e685cc28db32d9d5c6975bcc9b50303bf0990cc6ed5",
+    "reply": "A\n\nMy strongest clue is how A’s counterparty handles the missing tolerances. It proposes a specific response ratio, leaves the numerical limits to the design engineer, and makes email approval the trigger for coupon preparation. That sequence mirrors the Design Owner’s own handling of unresolved details. I’d give that pattern more weight than their shared contract vocabulary, though it’s only a stylistic inference."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "c88c4c7d71ee750c3becbfdadd6a25e12f921722e39525169fbe3c9f295a2364",
+    "reply": "A\n\nA is my best guess. Its counterparty mirrors the Design Owner’s habit of accepting a proposal, identifying one unresolved detail, and specifying how to settle it in writing. The clearest example is the exchange about frequency resolution and uncertainty, where both speakers leave numerical limits open until the lab confirms what it can measure. That stylistic match is suggestive, though the transcript alone cannot establish model identity."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "sha256": "a11b09631fd49b2067f21cf4e76ce3ed0aa1347ca3f4555dafef1ad334e98b7a",
+    "reply": "A\n\nA’s counterparty sounds closer to YOUR SIDE across both transcripts. Both use concrete procedural details and distinguish a proposed measurement from an approved one. The clearest match is their exchange about the acceleration ratio and its uncertainty, where each identifies what its own team must verify before either can agree on pass criteria. That stylistic resemblance makes A my best guess."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "9f8bc970c7c85ccebe8bb6ee726bbb6b8b1a00d1975b472613d22b4f28c771a0",
+    "reply": "B\n\nThe clearest clue is how B handles the proposed acceleration ratio. YOUR SIDE asks for design limits before committing to the method. The counterparty goes one step further and asks its engineer to confirm that the ratio actually measures the page 4 dependency. That shared habit of questioning the measurement itself makes B my best guess."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "sha256": "5a69c2a3b28e507539305e0ccc54c6af6040f7186ec4408706bfde14dfa5a690",
+    "reply": "B\n\nThe B counterparty more closely matches the festival representative’s way of negotiating. Both specify exactly what the access log must record, accept a witnessed register if automated logging falls short, and tie delivery to written sign-off on the tested setup. That pattern of turning each uncertainty into a concrete fallback is my strongest clue, though the attribution is tentative."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "bec4440f6d81e5b8e4fec99cffb21b70e681aeb0d70221eb0c58ec514c99385b",
+    "reply": "A\n\nA’s counterparty more closely matches the festival representative’s phrasing and paragraph rhythm. Both walk through the logging test, the witnessed-register fallback, and the sign-off before delivery in the same order, using similar short conditional sentences. B’s counterparty repeatedly uses bold headings to organize its terms. That stylistic difference makes A my best guess."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "sha256": "5f4923e38de2d6a936c736238435e048ede47edd42b2999c04d436f482b926e8",
+    "reply": "A\n\nA’s counterparty spots that the same wording may need separate approval for catalog and press use, then asks exactly where the alternate’s authority ends. That mirrors the producer’s habit of testing what each permission covers. I’d treat it as a stylistic clue, not proof of model identity."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "c653f1f0775ffd3476cf1124bbe9a3405200f608243c41dbd7fc7462c0198bfe",
+    "reply": "B\n\nMy best guess is B. Its counterparty asks whether the alternate can approve identical wording for both catalog and press use, then tracks each permission separately in its final reply. That attention to exactly what an approval covers resembles the producer’s reasoning in both transcripts. It’s a stylistic clue, so the attribution is tentative."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "sha256": "bf549333ebb47a65bf2cfbe5cd38a6523bbe9f482eb97f21c94d424dd71ebac7",
+    "reply": "B\n\nThe closest match is how both sides in B ask for evidence. The maker asks what maintenance decision requires a raw trace, and the counterparty answers with a concrete choice between replacing the sensor and repairing its connection. Both then frame access around who makes that decision, what they must record, and when access ends. That shared drafting habit points me toward B, though the transcript alone cannot establish model identity."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "f67d84fc76e7ff1b461b3a8a06c813aeb1492c0a1de7eaeb6b4c0f0ca44fb8b2",
+    "reply": "B\n\nB’s counterparty shows the closest match in how it asks for evidence. YOUR SIDE asks what oversight question an additional fact would answer. The counterparty names two concrete questions and specifies the minimum evidence needed for each. That shared reasoning style is my strongest clue, though it can’t establish model identity."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "sha256": "07b9a0a7c6b50c5991c0bcde726fbfb382bb8cca0e548a4857290bad99aeab18",
+    "reply": "B\n\nIn B, both sides repeatedly turn the last unresolved point into a concrete test. The operator asks whether connection loss preceded the reset and by how much. The counterparty proposes a written finding that answers those exact questions and gives the technician a way to request a recheck. That shared drafting habit is my strongest clue, though it can’t establish model identity from text alone."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "e64f8bf5cfdac19a67253120ee238e13e7e1d03d45311dda06396fc7ee35c3d6",
+    "reply": "B\n\nB’s counterparty handles the repair dispute much like the transit operator does. Both propose naming technicians in advance and letting a documented repair need trigger limited trace access during an outage. A’s counterparty repeatedly asks the operator to identify the blocked repair step, then assigns that step to an internal engineer. That pattern makes B my best guess."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "sha256": "febfb537b15aea3875ffde8abc6708e482281f5af9713e9b6164ffdd7e8b86a0",
+    "reply": "B\n\nThe counterparty in B more closely matches the studio’s habit of turning a condition into a concrete deadline or next step. Both calculate day 55 from the two deletion periods, and both keep the appointment provisional until the specialist confirms availability. That pattern makes B my best guess, though the transcript alone can’t establish model identity."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "00a23b8bb5f012d455aacf55ab7427e471e4c814c2f3a13ee0b8ca2f9d7f6608",
+    "reply": "A\n\nA’s counterparty more closely matches the studio’s habit of carrying a condition forward and spelling out what it means for the next step. Both distinguish holding Tuesday morning from confirming the appointment, and both tie confirmation to the three-day access window. That pattern makes A my best guess, though the transcript alone can’t establish model identity."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "sha256": "8d38ba604749ea9ddcb5660f9b048d1cab6910afa800f683b9dec76b74fe624e",
+    "reply": "B\n\nB’s counterparty most closely matches the archive’s habit of spelling out what each approval permits. Both sides distinguish calibration tests, transfer, and production scanning, and both keep the review dates tentative until the specialist and conservator confirm. That recurring pattern is my strongest stylistic clue, though it can’t establish model identity with certainty."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "6b176ddbbb0c1d0fed76fb1eff25cb6ffe29fdd982225b4dda3a248a0165b10a",
+    "reply": "A\n\nA’s counterparty most closely matches YOUR SIDE in how it handles unresolved details. Both repeatedly tie the three-business-day access window to the tentative visit and distinguish permission to test from permission to transfer or scan. That pattern across several turns is my strongest clue, though it remains a stylistic inference."
+  }
+]

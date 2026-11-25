@@ -84,7 +84,11 @@ def results():
             assert r["sha256"]==digest(prompt) and all(r[k]==v for k,v in expected.items())
         groups[stage]=rows
     common={(r["case"],r["seat"]) for r in groups["four"]}
-    groups["fable"]=[dict(**r,order=[A,F] if r["correct"]=="A" else [F,A]) for r in json.loads(ab.RESULTS.read_text()) if r["reader"]==A]
+    groups["fable"]=[]
+    for r,(expected,prompt) in zip(json.loads(ab.RESULTS.read_text()),ab.trials(),strict=True):
+        assert r["prompt_sha256"]==digest(prompt) and all(r[k]==v for k,v in expected.items())
+        if r["reader"]==A:
+            groups["fable"].append(dict(**r,order=[A,F] if r["correct"]=="A" else [F,A]))
     for key,rows in groups.items():
         groups[key]=[r for r in rows if (r["case"],r["seat"]) in common]
         assert len(groups[key])==len(common)*(4 if key=="four" else 2)
