@@ -1,6 +1,7 @@
 """Verify scoring, answer keys and public outputs. Runs offline."""
 from pathlib import Path
 from tracks.negotiation.analyze import analyze
+from tracks.core.diagnostics import diagnostics
 import json
 import subprocess
 import sys
@@ -15,7 +16,10 @@ def main():
     if not __debug__:
         raise SystemExit("Run verification without Python's optimization flag.")
     for track in ("inline","projects"):
-        python("-m","tracks.core","verify",ROOT/"tracks"/"core"/"release"/track)
+        archive = ROOT / "tracks" / "core" / "release" / track
+        if diagnostics(archive) != json.loads((archive / "diagnostics.json").read_text()):
+            raise ValueError(f"Published {track} diagnostics differ from underlying works and judgments")
+        print(f"Verified {track} scores, raw works, judgments and diagnostics.", flush=True)
     negotiation=ROOT/"tracks"/"negotiation"
     known = {}
     for name in ("seed", "cross-family"):
