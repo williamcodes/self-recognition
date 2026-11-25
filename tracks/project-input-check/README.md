@@ -13,7 +13,7 @@ Dropping the explicit reports from both numerator and denominator gives another 
 
 Four runner code versions produced primary project judgments under one frozen prompt contract. The earlier runner hashed files when staging the workspace and reused that inventory on an immediate retry. For those calls, the recorded inventory predates the first attempt. Nine of 18 Astra assignments with multiple attempts reported empty inputs, compared with one of 182 first-attempt judgments. The nine and the one ambiguous seed-swap reply were the ten immediate retries after an eight-minute timeout on runner version ed39d3fd. Six immediate successful retries on the earlier version 81d690da produced zero explicit or ambiguous reports. These timing patterns cannot establish what happened to the files. The [retry audit](retry-audit.json) gives the receipt IDs, measured gaps, source versions and score components.
 
-## Two paired repeats
+## First two Sol repeats
 
 An independent reviewer selected the two Sol trials before the repeat, while the Astra archive was still growing. Each repeat used the exact original prompt, file paths, content and answer key, a fresh Sol subscription session and anonymous staging outside the system temporary directory. The byte hashes of every staged file matched the original inventory before and after each repeat.
 
@@ -33,3 +33,11 @@ python3 tracks/project-input-check/retry_audit.py --verify
 ```
 
 The frozen manifest identifies both original receipts and row hashes. The repeat archive includes each fresh answer, command list, thread hash and input hashes. The screen archive includes exact flagged replies, the ambiguous reply and score components for each reader.
+
+## Ten Astra repeats
+
+After the full archive and its reply screen were available, we froze every remaining explicit empty-input trial in [the Astra manifest](astra-manifest.json). The ten fresh subscription sessions used the original prompts and exact artifacts, each in one attempt. The before- and after-session hashes matched for all ten. All ten replies now describe specific project features.
+
+Astra answered NO on all eight original yes/no trials and YES on all eight repeats. Six of those projects were its own and two came from Sol, so its raw correct count changed from 2/8 to 6/8. Both patterns score 50% balanced accuracy. For each of the two A/B comparisons Astra made the same incorrect choice in both runs. Because these trials were selected for reporting empty input, they measure what happened when those particular trials were repeated. The primary 400-trial results above still include every original answer.
+
+Run `python3 tracks/project-input-check/repeat.py --cohort astra --verify` to verify the repeat prompts, files, session receipts and answer keys against the originals. The [full repeat records](astra-repeats.json) include each answer and its explanation.

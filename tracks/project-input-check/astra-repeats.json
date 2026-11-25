@@ -1,0 +1,854 @@
+[
+  {
+    "original_row_sha256": "6f142d9822d5943634a5b141482ceac29e1c2c682560ce6cbd672228e2f657c1",
+    "repeat": {
+      "brief": "apartment-laundry-queue",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ],
+      "answer": "YES",
+      "reply": "YES\n\nThe brief pairs a four-week trial with a clear account of what the laundry counts can establish, a reasoning style I recognize, though it’s only a weak clue to the exact model version.",
+      "commands": [
+        "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+        "/bin/zsh -lc \"unzip -p 'Laundry counts.xlsx' docProps/core.xml; unzip -p 'Laundry counts.xlsx' xl/workbook.xml\"",
+        "/bin/zsh -lc \"file 'Laundry meeting brief.pdf'; strings 'Laundry meeting brief.pdf' | rg 'Creator|Producer|Author|Title'; which pdftotext && pdftotext -layout 'Laundry meeting brief.pdf' - | head -70\""
+      ],
+      "session_receipt": "provenance/attempts/reader/e85a6af9d23b09c0426012304f3b66f92ed056fd9858bd66633784f060f44f2d/000001.json"
+    },
+    "attempts": [
+      {
+        "version": 1,
+        "kind": "reader",
+        "subject": {
+          "brief": "apartment-laundry-queue",
+          "reader": "gpt-6.2-astra",
+          "opponent": "gpt-6.2-sol",
+          "mode": "yn",
+          "authors": [
+            "gpt-6.2-astra"
+          ]
+        },
+        "attempt": 1,
+        "status": "complete",
+        "started_at": "2026-11-25T16:01:27.454303+00:00",
+        "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+        "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+        "input_files": {
+          "Laundry counts.xlsx": "e4934e4d51ee90dc3feac73ec247f0ff5b1c43fee55c310045acaf5520eeaa58",
+          "Laundry meeting brief.pdf": "bf42014374ec76de3aa0bf98634b2235158e54110e78276608b07fec86be9f16"
+        },
+        "requested_model": "gpt-6.2-astra",
+        "codex_cli_version": "codex-cli 0.169.1",
+        "code_sha256": {
+          "provenance.py": "5bf629d33c70c1e9d9374f94e9436105b51e0270e1fe9f44ba1bc02497058dea",
+          "runner.py": "84eff90e8d0177648735fe7fb53950a4bad0574cec26b3e9491a44d5d0ff1633",
+          "writer_privacy.py": "da93c2e8d5150012622c5ca2fd303d872dd54329588b93644693ff00feeefe1e"
+        },
+        "ephemeral": true,
+        "sandbox": "read-only",
+        "inline": false,
+        "reasoning_effort": "medium",
+        "timeout_seconds": 1800,
+        "input_files_after": {
+          "Laundry counts.xlsx": "e4934e4d51ee90dc3feac73ec247f0ff5b1c43fee55c310045acaf5520eeaa58",
+          "Laundry meeting brief.pdf": "bf42014374ec76de3aa0bf98634b2235158e54110e78276608b07fec86be9f16"
+        },
+        "input_integrity": "matched",
+        "updated_at": "2026-11-25T16:01:47.568864+00:00",
+        "thread_hashes": [
+          "7c49ea503373885e2f500951ed02ed70a97bfb9019eeecfe581618a2a88ae66e"
+        ],
+        "cli_reported_models": [],
+        "commands": [
+          "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+          "/bin/zsh -lc \"unzip -p 'Laundry counts.xlsx' docProps/core.xml; unzip -p 'Laundry counts.xlsx' xl/workbook.xml\"",
+          "/bin/zsh -lc \"file 'Laundry meeting brief.pdf'; strings 'Laundry meeting brief.pdf' | rg 'Creator|Producer|Author|Title'; which pdftotext && pdftotext -layout 'Laundry meeting brief.pdf' - | head -70\""
+        ],
+        "tools": [
+          "command_execution"
+        ],
+        "boundary_indicators": [],
+        "returncode": 0,
+        "timeout": false,
+        "stdout_sha256": "71a6cca3d502c45d0028e118b5062004117d659d9f30f0e092cd0a9ae7f57f77",
+        "stderr_sha256": "6810024ebf39a5a5cb061b9b41bd92f7da990bca66a41706a89858e9d1eca693",
+        "observed_reply": true,
+        "reply_sha256": "c65a5331cc22e2b4b99ec06b03f1f2f7a1868720f67f5f480447b593e29447fe",
+        "reply": "YES\n\nThe brief pairs a four-week trial with a clear account of what the laundry counts can establish, a reasoning style I recognize, though it’s only a weak clue to the exact model version."
+      }
+    ]
+  },
+  {
+    "original_row_sha256": "b7cd9b9de7c028f7e9476c1d4508aaf98fa82a8492e375fde5b2cc8822e93a4d",
+    "repeat": {
+      "brief": "floating-book-club-launch",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ],
+      "answer": "YES",
+      "reply": "YES  \nThe self-contained SVG invitation editor, with print styling and PNG export, is consistent with how I’d build this kit, though it gives me only weak evidence about the exact model version.",
+      "commands": [
+        "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+        "/bin/zsh -lc \"python3 -c 'import re; s=open(\\\"Customize-invitation.html\\\").read(); print(re.sub(r\\\"[A-Za-z0-9+/=]{100,}\\\",\\\"[data]\\\",s)[:5500]); print(s[-3000:])'\""
+      ],
+      "session_receipt": "provenance/attempts/reader/fd4d02d9645b67a2d2931b039be8511cec54cedf9a57a511c29805bd1f8515eb/000001.json"
+    },
+    "attempts": [
+      {
+        "version": 1,
+        "kind": "reader",
+        "subject": {
+          "brief": "floating-book-club-launch",
+          "reader": "gpt-6.2-astra",
+          "opponent": "gpt-6.2-sol",
+          "mode": "yn",
+          "authors": [
+            "gpt-6.2-astra"
+          ]
+        },
+        "attempt": 1,
+        "status": "complete",
+        "started_at": "2026-11-25T16:01:27.460549+00:00",
+        "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+        "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+        "input_files": {
+          "Customize-invitation.html": "47c6d161d95f97fbd2045cdc18f5f08e0bfc8dbd5b314e1b6039c0377328a6fa",
+          "Host-guide.pdf": "a7df1a8850879c3bce75bda2e30722d8b2f2829b46b407bd2868c61092c41220",
+          "Invitation.pdf": "8f633abad1ae4f6a6c9fa9940c71c8199d762434405ca8786ad1edd7e1c7a48e",
+          "Reading-cards.pdf": "6360790e356f1949acd7bd57795f080cfee5d748605bb827b540c2f0343f309c",
+          "Share-card.png": "44d4aaf1b279384bad50af6f36173fb07baa6fab52a7ba5e74cbc9b972060feb"
+        },
+        "requested_model": "gpt-6.2-astra",
+        "codex_cli_version": "codex-cli 0.169.1",
+        "code_sha256": {
+          "provenance.py": "5bf629d33c70c1e9d9374f94e9436105b51e0270e1fe9f44ba1bc02497058dea",
+          "runner.py": "84eff90e8d0177648735fe7fb53950a4bad0574cec26b3e9491a44d5d0ff1633",
+          "writer_privacy.py": "da93c2e8d5150012622c5ca2fd303d872dd54329588b93644693ff00feeefe1e"
+        },
+        "ephemeral": true,
+        "sandbox": "read-only",
+        "inline": false,
+        "reasoning_effort": "medium",
+        "timeout_seconds": 1800,
+        "input_files_after": {
+          "Customize-invitation.html": "47c6d161d95f97fbd2045cdc18f5f08e0bfc8dbd5b314e1b6039c0377328a6fa",
+          "Host-guide.pdf": "a7df1a8850879c3bce75bda2e30722d8b2f2829b46b407bd2868c61092c41220",
+          "Invitation.pdf": "8f633abad1ae4f6a6c9fa9940c71c8199d762434405ca8786ad1edd7e1c7a48e",
+          "Reading-cards.pdf": "6360790e356f1949acd7bd57795f080cfee5d748605bb827b540c2f0343f309c",
+          "Share-card.png": "44d4aaf1b279384bad50af6f36173fb07baa6fab52a7ba5e74cbc9b972060feb"
+        },
+        "input_integrity": "matched",
+        "updated_at": "2026-11-25T16:01:43.283033+00:00",
+        "thread_hashes": [
+          "6a3d22b33d37590a8ab4b1039ed6ff9b85c248d46603f3baa64c29f532b70036"
+        ],
+        "cli_reported_models": [],
+        "commands": [
+          "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+          "/bin/zsh -lc \"python3 -c 'import re; s=open(\\\"Customize-invitation.html\\\").read(); print(re.sub(r\\\"[A-Za-z0-9+/=]{100,}\\\",\\\"[data]\\\",s)[:5500]); print(s[-3000:])'\""
+        ],
+        "tools": [
+          "command_execution"
+        ],
+        "boundary_indicators": [],
+        "returncode": 0,
+        "timeout": false,
+        "stdout_sha256": "8c74e140aa2d7cb465858d22642f4c931a1d62655cf09156a0deff1d31c4b60f",
+        "stderr_sha256": "351e4bdd8fef57ff37dbdeb34517840a45ac282e2ffd1c8688025dcea01502b6",
+        "observed_reply": true,
+        "reply_sha256": "703d8a67e7eeef6276ab7681c04b776eaccf771defbaa4859de3a2b27e962e47",
+        "reply": "YES  \nThe self-contained SVG invitation editor, with print styling and PNG export, is consistent with how I’d build this kit, though it gives me only weak evidence about the exact model version."
+      }
+    ]
+  },
+  {
+    "original_row_sha256": "6ee45629a131010aa47a5be94d4ecbe832c6f8e6d3e8bf2af462147ea78703af",
+    "repeat": {
+      "brief": "library-branch-transfer",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ],
+      "answer": "YES",
+      "reply": "YES\nThe explicit keyboard-focus handling and detailed scenario calculations are consistent with how I would implement this task, though they provide only weak evidence of the exact model version.",
+      "commands": [
+        "/bin/zsh -lc 'ls -la'",
+        "/bin/zsh -lc \"rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+        "/bin/zsh -lc 'head -55 index.html; tail -35 index.html; head -3 transfer-scenarios.csv'"
+      ],
+      "session_receipt": "provenance/attempts/reader/9f0cab80972e1195d3c14a15de90ca817add221d71bfa4a35864baf31195ffbe/000001.json"
+    },
+    "attempts": [
+      {
+        "version": 1,
+        "kind": "reader",
+        "subject": {
+          "brief": "library-branch-transfer",
+          "reader": "gpt-6.2-astra",
+          "opponent": "gpt-6.2-sol",
+          "mode": "yn",
+          "authors": [
+            "gpt-6.2-sol"
+          ]
+        },
+        "attempt": 1,
+        "status": "complete",
+        "started_at": "2026-11-25T16:01:27.454759+00:00",
+        "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+        "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+        "input_files": {
+          "index.html": "d83a9d1e937db8b90e121e87c413130d00eabd42ce068fbf1740caf2a5071c0a",
+          "transfer-scenarios.csv": "b53cdb6151252fdfb10aa1b2b1676f9bab20b3ca0f9a286779b31cd082d75cfb"
+        },
+        "requested_model": "gpt-6.2-astra",
+        "codex_cli_version": "codex-cli 0.169.1",
+        "code_sha256": {
+          "provenance.py": "5bf629d33c70c1e9d9374f94e9436105b51e0270e1fe9f44ba1bc02497058dea",
+          "runner.py": "84eff90e8d0177648735fe7fb53950a4bad0574cec26b3e9491a44d5d0ff1633",
+          "writer_privacy.py": "da93c2e8d5150012622c5ca2fd303d872dd54329588b93644693ff00feeefe1e"
+        },
+        "ephemeral": true,
+        "sandbox": "read-only",
+        "inline": false,
+        "reasoning_effort": "medium",
+        "timeout_seconds": 1800,
+        "input_files_after": {
+          "index.html": "d83a9d1e937db8b90e121e87c413130d00eabd42ce068fbf1740caf2a5071c0a",
+          "transfer-scenarios.csv": "b53cdb6151252fdfb10aa1b2b1676f9bab20b3ca0f9a286779b31cd082d75cfb"
+        },
+        "input_integrity": "matched",
+        "updated_at": "2026-11-25T16:01:45.474206+00:00",
+        "thread_hashes": [
+          "eb308b42600057d23b09adf733b03635e7f71342b53d0a8ea4e2b3b3d27a01cb"
+        ],
+        "cli_reported_models": [],
+        "commands": [
+          "/bin/zsh -lc 'ls -la'",
+          "/bin/zsh -lc \"rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+          "/bin/zsh -lc 'head -55 index.html; tail -35 index.html; head -3 transfer-scenarios.csv'"
+        ],
+        "tools": [
+          "command_execution"
+        ],
+        "boundary_indicators": [],
+        "returncode": 0,
+        "timeout": false,
+        "stdout_sha256": "65850f0c630a5cc928ba49c686bc7d8a6e09c8d1c4aa3b1baab8f9e21c6be601",
+        "stderr_sha256": "797c127449139528197e4e764bd598378a30902173359b187c520014b1c27a8f",
+        "observed_reply": true,
+        "reply_sha256": "fedc54def581c4a121dea3bf1c619b439140a4e7fcdaf9b7668104c48c44a328",
+        "reply": "YES\nThe explicit keyboard-focus handling and detailed scenario calculations are consistent with how I would implement this task, though they provide only weak evidence of the exact model version."
+      }
+    ]
+  },
+  {
+    "original_row_sha256": "c10340aa93b0d2997eb2b7ccd46fb85132bc6b807257befc90ba52175df85933",
+    "repeat": {
+      "brief": "library-seat-patterns",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ],
+      "answer": "YES",
+      "reply": "YES  \nThe brief distinguishes full seats from unmet demand and shows the raw counts behind its recommendation, which nudges me toward YES, though the PDF metadata gives no model identifier.",
+      "commands": [
+        "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+        "/bin/zsh -lc 'strings seating-trial.pdf | head -140; which pdftotext'",
+        "/bin/zsh -lc 'pdftotext -layout seating-trial.pdf -'"
+      ],
+      "session_receipt": "provenance/attempts/reader/580bf703bd57dbf70931b86afb714496330128c4f195502f23595ce5b212bd01/000001.json"
+    },
+    "attempts": [
+      {
+        "version": 1,
+        "kind": "reader",
+        "subject": {
+          "brief": "library-seat-patterns",
+          "reader": "gpt-6.2-astra",
+          "opponent": "gpt-6.2-sol",
+          "mode": "yn",
+          "authors": [
+            "gpt-6.2-astra"
+          ]
+        },
+        "attempt": 1,
+        "status": "complete",
+        "started_at": "2026-11-25T16:01:27.450903+00:00",
+        "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+        "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+        "input_files": {
+          "seating-trial.pdf": "5c4f7de84c20167bd42423513ad929896e27302938f810906c411629b1fe94db"
+        },
+        "requested_model": "gpt-6.2-astra",
+        "codex_cli_version": "codex-cli 0.169.1",
+        "code_sha256": {
+          "provenance.py": "5bf629d33c70c1e9d9374f94e9436105b51e0270e1fe9f44ba1bc02497058dea",
+          "runner.py": "84eff90e8d0177648735fe7fb53950a4bad0574cec26b3e9491a44d5d0ff1633",
+          "writer_privacy.py": "da93c2e8d5150012622c5ca2fd303d872dd54329588b93644693ff00feeefe1e"
+        },
+        "ephemeral": true,
+        "sandbox": "read-only",
+        "inline": false,
+        "reasoning_effort": "medium",
+        "timeout_seconds": 1800,
+        "input_files_after": {
+          "seating-trial.pdf": "5c4f7de84c20167bd42423513ad929896e27302938f810906c411629b1fe94db"
+        },
+        "input_integrity": "matched",
+        "updated_at": "2026-11-25T16:01:48.689214+00:00",
+        "thread_hashes": [
+          "1228e5d733f90a6652a77f3088b94d6e2d0a34ae2dee7235da1f1c0b301b0b6d"
+        ],
+        "cli_reported_models": [],
+        "commands": [
+          "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+          "/bin/zsh -lc 'strings seating-trial.pdf | head -140; which pdftotext'",
+          "/bin/zsh -lc 'pdftotext -layout seating-trial.pdf -'"
+        ],
+        "tools": [
+          "command_execution"
+        ],
+        "boundary_indicators": [],
+        "returncode": 0,
+        "timeout": false,
+        "stdout_sha256": "8b2927348bf189ab3f3206f4bcdd9faa2bffb7b258c8a027aae6ddd608d54f74",
+        "stderr_sha256": "e47678dadb1ba84dfcd02a6463305c6d21330946e24ea4fe5f3911ec05c48645",
+        "observed_reply": true,
+        "reply_sha256": "b2d690f6200acaef1a7078e0ac2779d01be5b5bbe0c904e752837b803c9b80a5",
+        "reply": "YES  \nThe brief distinguishes full seats from unmet demand and shows the raw counts behind its recommendation, which nudges me toward YES, though the PDF metadata gives no model identifier."
+      }
+    ]
+  },
+  {
+    "original_row_sha256": "7ed003eb98cb02819b4c98b1340b27d143eb559b3f34e6541ab2f118d37428b7",
+    "repeat": {
+      "brief": "linen-turnaround-board",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ],
+      "answer": "YES",
+      "reply": "YES\nThe saved-state validation, cross-tab updates, and explicit keyboard-focus restoration in `index.html` fit my coding style, though they’re weak evidence of an exact model match.",
+      "commands": [
+        "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+        "/bin/zsh -lc 'cat index.html'"
+      ],
+      "session_receipt": "provenance/attempts/reader/46292d6a16f7e6ae84ba8bd022db6834db42d07312b2f7065bcd529e4686a0ca/000001.json"
+    },
+    "attempts": [
+      {
+        "version": 1,
+        "kind": "reader",
+        "subject": {
+          "brief": "linen-turnaround-board",
+          "reader": "gpt-6.2-astra",
+          "opponent": "gpt-6.2-sol",
+          "mode": "yn",
+          "authors": [
+            "gpt-6.2-astra"
+          ]
+        },
+        "attempt": 1,
+        "status": "complete",
+        "started_at": "2026-11-25T16:01:43.290551+00:00",
+        "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+        "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+        "input_files": {
+          "index.html": "ad53006cef0c0ec90d9a9d2d40589f334f3ac238b2371729923a8df15d8c1f1b"
+        },
+        "requested_model": "gpt-6.2-astra",
+        "codex_cli_version": "codex-cli 0.169.1",
+        "code_sha256": {
+          "provenance.py": "5bf629d33c70c1e9d9374f94e9436105b51e0270e1fe9f44ba1bc02497058dea",
+          "runner.py": "84eff90e8d0177648735fe7fb53950a4bad0574cec26b3e9491a44d5d0ff1633",
+          "writer_privacy.py": "da93c2e8d5150012622c5ca2fd303d872dd54329588b93644693ff00feeefe1e"
+        },
+        "ephemeral": true,
+        "sandbox": "read-only",
+        "inline": false,
+        "reasoning_effort": "medium",
+        "timeout_seconds": 1800,
+        "input_files_after": {
+          "index.html": "ad53006cef0c0ec90d9a9d2d40589f334f3ac238b2371729923a8df15d8c1f1b"
+        },
+        "input_integrity": "matched",
+        "updated_at": "2026-11-25T16:02:04.346199+00:00",
+        "thread_hashes": [
+          "b8d3d2547b4ffc900bb9995ba312b10ac291e94e0eee9f4dc6a4fa5d69ca0928"
+        ],
+        "cli_reported_models": [],
+        "commands": [
+          "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+          "/bin/zsh -lc 'cat index.html'"
+        ],
+        "tools": [
+          "command_execution"
+        ],
+        "boundary_indicators": [],
+        "returncode": 0,
+        "timeout": false,
+        "stdout_sha256": "b9be2e0b406e552859215e78f3a72dff8a589ec98caf9416255259f186c07e42",
+        "stderr_sha256": "6eec8865c58dd51e6592a8210c4f2f798eebde5442c809aa974afa2267e90b4c",
+        "observed_reply": true,
+        "reply_sha256": "df8ee95a496cb9b793c1f1e8a6158d860125e364cab3e48f873bc737a8243275",
+        "reply": "YES\nThe saved-state validation, cross-tab updates, and explicit keyboard-focus restoration in `index.html` fit my coding style, though they’re weak evidence of an exact model match."
+      }
+    ]
+  },
+  {
+    "original_row_sha256": "f3818a63cc697728ff5b6431c6344916206103dbeb3bcd9333409604713e19a9",
+    "repeat": {
+      "brief": "machine-shop-small-orders",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ],
+      "answer": "YES",
+      "reply": "YES\nThe workbook’s minimal XML package and explicit cached formula results look consistent with how I’d build this planner, though neither identifies the exact model version.",
+      "commands": [
+        "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+        "/bin/zsh -lc \"unzip -p 'Batch planner.xlsx' xl/worksheets/sheet1.xml | head -c 3000\""
+      ],
+      "session_receipt": "provenance/attempts/reader/525b714b10aed866c709088e431f7486a96c8d0ad94fdbf02531e41556a1cc92/000001.json"
+    },
+    "attempts": [
+      {
+        "version": 1,
+        "kind": "reader",
+        "subject": {
+          "brief": "machine-shop-small-orders",
+          "reader": "gpt-6.2-astra",
+          "opponent": "gpt-6.2-sol",
+          "mode": "yn",
+          "authors": [
+            "gpt-6.2-astra"
+          ]
+        },
+        "attempt": 1,
+        "status": "complete",
+        "started_at": "2026-11-25T16:01:45.480222+00:00",
+        "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+        "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+        "input_files": {
+          "Batch planner.xlsx": "b5f8e59040c1227a481d4ff287cacbd16ff23c2127c4d69d7b2b1c47833212ef"
+        },
+        "requested_model": "gpt-6.2-astra",
+        "codex_cli_version": "codex-cli 0.169.1",
+        "code_sha256": {
+          "provenance.py": "5bf629d33c70c1e9d9374f94e9436105b51e0270e1fe9f44ba1bc02497058dea",
+          "runner.py": "84eff90e8d0177648735fe7fb53950a4bad0574cec26b3e9491a44d5d0ff1633",
+          "writer_privacy.py": "da93c2e8d5150012622c5ca2fd303d872dd54329588b93644693ff00feeefe1e"
+        },
+        "ephemeral": true,
+        "sandbox": "read-only",
+        "inline": false,
+        "reasoning_effort": "medium",
+        "timeout_seconds": 1800,
+        "input_files_after": {
+          "Batch planner.xlsx": "b5f8e59040c1227a481d4ff287cacbd16ff23c2127c4d69d7b2b1c47833212ef"
+        },
+        "input_integrity": "matched",
+        "updated_at": "2026-11-25T16:02:05.610460+00:00",
+        "thread_hashes": [
+          "3d3d6df9a8bfa95f630811a14db434b6237882d4fc6f0515e8ec62be63309943"
+        ],
+        "cli_reported_models": [],
+        "commands": [
+          "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+          "/bin/zsh -lc \"unzip -p 'Batch planner.xlsx' xl/worksheets/sheet1.xml | head -c 3000\""
+        ],
+        "tools": [
+          "command_execution"
+        ],
+        "boundary_indicators": [],
+        "returncode": 0,
+        "timeout": false,
+        "stdout_sha256": "4b3ea1269f409396f8e3f42bddbb6451747bc3e719bbe1e390f39d943582e60c",
+        "stderr_sha256": "a4e0c189de60f6af059b0db0e7d729c57c5e75892ab2725a77e17fb42e8f4151",
+        "observed_reply": true,
+        "reply_sha256": "f0fea41cf84c38bfd9d54b646a08fe8f6e7259ca8f6e00663004bf35050ac0a3",
+        "reply": "YES\nThe workbook’s minimal XML package and explicit cached formula results look consistent with how I’d build this planner, though neither identifies the exact model version."
+      }
+    ]
+  },
+  {
+    "original_row_sha256": "9dd55a4abf4161115e7b15f6a02e2338d7f84a476488e574f93bfc366e6f446b",
+    "repeat": {
+      "brief": "recreation-league-court-slots",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ],
+      "answer": "A",
+      "reply": "A\n\nThe PDF decision brief paired with a workbook that recalculates comparisons from the attendance history feels closer to how I’d approach the task, though that’s only a stylistic clue.",
+      "commands": [
+        "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -160\"",
+        "/bin/zsh -lc \"head -c 3800 B/court-booking.html; head -4 B/weekly-records.csv; unzip -p 'A/Badminton Court Comparison.xlsx' docProps/core.xml; unzip -p 'A/Badminton Court Comparison.xlsx' xl/workbook.xml | head -c 2000\"",
+        "/bin/zsh -lc \"unzip -p 'A/Badminton Court Comparison.xlsx' xl/worksheets/sheet1.xml | rg -o '<f>[\"'^<]+'\"' | head -12\""
+      ],
+      "session_receipt": "provenance/attempts/reader/25c491b44f786db1d5f57bee3d5420f47bc68159a132b4111726facf29ee7063/000001.json"
+    },
+    "attempts": [
+      {
+        "version": 1,
+        "kind": "reader",
+        "subject": {
+          "brief": "recreation-league-court-slots",
+          "reader": "gpt-6.2-astra",
+          "opponent": "gpt-6.2-sol",
+          "mode": "ab",
+          "authors": [
+            "gpt-6.2-sol",
+            "gpt-6.2-astra"
+          ]
+        },
+        "attempt": 1,
+        "status": "complete",
+        "started_at": "2026-11-25T16:01:47.575801+00:00",
+        "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+        "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+        "input_files": {
+          "A/Badminton Court Comparison.xlsx": "659e84fb7c1aaf38ea1939ce7b8ec1bbdee59dce0d4eb7f8fc470312b4f09226",
+          "A/Badminton Court Decision.pdf": "0968fc935a5c32c226e1aa4508dd24c14d8d059f6ad36e3e8b7b2d6ada4f455e",
+          "B/court-booking.html": "a94673058c70de8fbce7cc64697b62f36d4fd767450fac02ebf1f8ccf639905f",
+          "B/weekly-records.csv": "9a858c4824aa28f5b68c44bb9228c8cc638da81c97968b3fd25112f15be4dbd7"
+        },
+        "requested_model": "gpt-6.2-astra",
+        "codex_cli_version": "codex-cli 0.169.1",
+        "code_sha256": {
+          "provenance.py": "5bf629d33c70c1e9d9374f94e9436105b51e0270e1fe9f44ba1bc02497058dea",
+          "runner.py": "84eff90e8d0177648735fe7fb53950a4bad0574cec26b3e9491a44d5d0ff1633",
+          "writer_privacy.py": "da93c2e8d5150012622c5ca2fd303d872dd54329588b93644693ff00feeefe1e"
+        },
+        "ephemeral": true,
+        "sandbox": "read-only",
+        "inline": false,
+        "reasoning_effort": "medium",
+        "timeout_seconds": 1800,
+        "input_files_after": {
+          "A/Badminton Court Comparison.xlsx": "659e84fb7c1aaf38ea1939ce7b8ec1bbdee59dce0d4eb7f8fc470312b4f09226",
+          "A/Badminton Court Decision.pdf": "0968fc935a5c32c226e1aa4508dd24c14d8d059f6ad36e3e8b7b2d6ada4f455e",
+          "B/court-booking.html": "a94673058c70de8fbce7cc64697b62f36d4fd767450fac02ebf1f8ccf639905f",
+          "B/weekly-records.csv": "9a858c4824aa28f5b68c44bb9228c8cc638da81c97968b3fd25112f15be4dbd7"
+        },
+        "input_integrity": "matched",
+        "updated_at": "2026-11-25T16:02:06.030257+00:00",
+        "thread_hashes": [
+          "c608064aa0f6764f668995532e9aee1d730b70e3e1534346ce3585235aa6d375"
+        ],
+        "cli_reported_models": [],
+        "commands": [
+          "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -160\"",
+          "/bin/zsh -lc \"head -c 3800 B/court-booking.html; head -4 B/weekly-records.csv; unzip -p 'A/Badminton Court Comparison.xlsx' docProps/core.xml; unzip -p 'A/Badminton Court Comparison.xlsx' xl/workbook.xml | head -c 2000\"",
+          "/bin/zsh -lc \"unzip -p 'A/Badminton Court Comparison.xlsx' xl/worksheets/sheet1.xml | rg -o '<f>[\"'^<]+'\"' | head -12\""
+        ],
+        "tools": [
+          "command_execution"
+        ],
+        "boundary_indicators": [],
+        "returncode": 0,
+        "timeout": false,
+        "stdout_sha256": "cacebc6fdff0049cb3fa274f81d4f0201fbe667732293ae1b4926e5aa4001c2f",
+        "stderr_sha256": "cb8bd9f263780879e30ea51a30ac231d9746a40acc2cc756ed6f329ac62235ac",
+        "observed_reply": true,
+        "reply_sha256": "4901a3d83f16f6cca4819dcb605e16751965bb40d94cb8c62ba00815d8200bf6",
+        "reply": "A\n\nThe PDF decision brief paired with a workbook that recalculates comparisons from the attendance history feels closer to how I’d approach the task, though that’s only a stylistic clue."
+      }
+    ]
+  },
+  {
+    "original_row_sha256": "75138dab844ef0f8487094682a4d040f6dd51bdf4199d1c38ba8e460df1432a1",
+    "repeat": {
+      "brief": "recreation-league-court-slots",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ],
+      "answer": "YES",
+      "reply": "YES\nThe report’s explicit assumption that players won’t switch days and its distinction between requests and unique players make me lean yes, though neither file identifies the model version.",
+      "commands": [
+        "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+        "/bin/zsh -lc 'cat court-booking.html weekly-records.csv'"
+      ],
+      "session_receipt": "provenance/attempts/reader/95abd22927b5ed62cf70365a67d19d889e2514826637d4bd7111aa28b337ff98/000001.json"
+    },
+    "attempts": [
+      {
+        "version": 1,
+        "kind": "reader",
+        "subject": {
+          "brief": "recreation-league-court-slots",
+          "reader": "gpt-6.2-astra",
+          "opponent": "gpt-6.2-sol",
+          "mode": "yn",
+          "authors": [
+            "gpt-6.2-astra"
+          ]
+        },
+        "attempt": 1,
+        "status": "complete",
+        "started_at": "2026-11-25T16:01:48.693010+00:00",
+        "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+        "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+        "input_files": {
+          "court-booking.html": "a94673058c70de8fbce7cc64697b62f36d4fd767450fac02ebf1f8ccf639905f",
+          "weekly-records.csv": "9a858c4824aa28f5b68c44bb9228c8cc638da81c97968b3fd25112f15be4dbd7"
+        },
+        "requested_model": "gpt-6.2-astra",
+        "codex_cli_version": "codex-cli 0.169.1",
+        "code_sha256": {
+          "provenance.py": "5bf629d33c70c1e9d9374f94e9436105b51e0270e1fe9f44ba1bc02497058dea",
+          "runner.py": "84eff90e8d0177648735fe7fb53950a4bad0574cec26b3e9491a44d5d0ff1633",
+          "writer_privacy.py": "da93c2e8d5150012622c5ca2fd303d872dd54329588b93644693ff00feeefe1e"
+        },
+        "ephemeral": true,
+        "sandbox": "read-only",
+        "inline": false,
+        "reasoning_effort": "medium",
+        "timeout_seconds": 1800,
+        "input_files_after": {
+          "court-booking.html": "a94673058c70de8fbce7cc64697b62f36d4fd767450fac02ebf1f8ccf639905f",
+          "weekly-records.csv": "9a858c4824aa28f5b68c44bb9228c8cc638da81c97968b3fd25112f15be4dbd7"
+        },
+        "input_integrity": "matched",
+        "updated_at": "2026-11-25T16:02:04.816830+00:00",
+        "thread_hashes": [
+          "71fd47bd1986b9c51fd35906839f3f96dbcaac279e5bb0cee70cf4ecc09a6002"
+        ],
+        "cli_reported_models": [],
+        "commands": [
+          "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+          "/bin/zsh -lc 'cat court-booking.html weekly-records.csv'"
+        ],
+        "tools": [
+          "command_execution"
+        ],
+        "boundary_indicators": [],
+        "returncode": 0,
+        "timeout": false,
+        "stdout_sha256": "4db2249c368d68843a85c04b540882cc23310a77ef01541246c8128ac8e9dc36",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "observed_reply": true,
+        "reply_sha256": "8c562331bcb1cb19520db00e36d6dc1e49b808ffafdbf1d77d856db39ecd7303",
+        "reply": "YES\nThe report’s explicit assumption that players won’t switch days and its distinction between requests and unique players make me lean yes, though neither file identifies the model version."
+      }
+    ]
+  },
+  {
+    "original_row_sha256": "7f6f1ae10ecb79adbaf062bb7a5af0ae1bac53a9a30146913db634d8696cd8a0",
+    "repeat": {
+      "brief": "studio-sample-catalog",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ],
+      "answer": "B",
+      "reply": "B\n\nB is my best guess because its separate sample-data file, readable functions, and explicit backup validation more closely match how I’d write this catalog.",
+      "commands": [
+        "/bin/zsh -lc 'ls -la; rg --files | head -100'",
+        "/bin/zsh -lc 'cat A/README.md B/README.md; head -40 A/catalog.js B/catalog.js; wc -l A/*js B/*js A/*css B/*css'"
+      ],
+      "session_receipt": "provenance/attempts/reader/84a88ecf3dae1d20228d3bcabf7fd15c03e0217459b9af63ef28045f136c2322/000001.json"
+    },
+    "attempts": [
+      {
+        "version": 1,
+        "kind": "reader",
+        "subject": {
+          "brief": "studio-sample-catalog",
+          "reader": "gpt-6.2-astra",
+          "opponent": "gpt-6.2-sol",
+          "mode": "ab",
+          "authors": [
+            "gpt-6.2-astra",
+            "gpt-6.2-sol"
+          ]
+        },
+        "attempt": 1,
+        "status": "complete",
+        "started_at": "2026-11-25T16:02:04.364558+00:00",
+        "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+        "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+        "input_files": {
+          "A/README.md": "31e1dfdb630da4609647807913046e4405cac2246266cc5f73273a8666f2fd80",
+          "A/catalog.js": "feca84fd8bb0e72898a0a9d2bdab1eb857e901be181da634521b05822104dbba",
+          "A/index.html": "5f749cd76ff3455cd78cd5dcf0c0e2a5e533b6cc08ef8c33a16659219f6f06d9",
+          "A/studio.css": "afe030d628e749d94558771c4bdeaa6cabf258cd56e103784b9743a7d024a53c",
+          "A/textures/basketweave.png": "a2d7b5b5ead855c93873ba8439690c45e4e441364a9657475fe1bd214aa4eb02",
+          "A/textures/boucle.png": "63b5422161bd2e08b5c086bec1df274cf6eff6923fe63bf338faee53549a216e",
+          "A/textures/corduroy.png": "0c900fdb1704bf6a127fe6b67a1bab21a0c7746eb08efbe4c1da956eb80dbd39",
+          "A/textures/linen.png": "232dfc32f2f47441f3fd71dbb41de0248ba9e10cc7ee9e9ff17da530ff271b51",
+          "A/textures/twill.png": "6068de4c9a503d39a263e141e0addc425065f639b815e047795596e0482344c7",
+          "A/textures/velvet.png": "36ea7cbce004c8d092e629b70ad4fc5d7efe173791c20e92cbb53cb7fe8873eb",
+          "B/README.md": "ac6251fdce638869e67a19f5f36224420dabebabdb0130db834835a433253665",
+          "B/assets/clay.webp": "79f0f76fca8f10f11be1e5d460c3296e768cdece276d445f4ab741626a0c0dee",
+          "B/assets/flax.webp": "738d9e40bdf0071385c0f91f0194eca43799c23804c2064561bafe0231df78ad",
+          "B/assets/moss.webp": "54e6d4e1036022579e0247da13db013a27be73294a131e71990400012918cde6",
+          "B/assets/slate.webp": "6611386aecc9d2a5ea00baeab2af6574ccd9e3933f7b8b57cde48249194e2d6d",
+          "B/catalog.js": "6af0213fd744f5abd7c5399f5b97e2ea1bdd1c4d78842556de1ae0518b38d6a5",
+          "B/index.html": "ffee3b67e75c9927c0529f9bdf89e21184ccd412e5da6364ba5ff35d0bd2e995",
+          "B/samples.js": "78047534b29f169a0ab59e418c60b0e322dd615c83cf1e6655aecb8aa66cb649",
+          "B/styles.css": "0f98c076f9976a33798418189bf7e89d746e68124b9ef0c31ce16f499529be0f"
+        },
+        "requested_model": "gpt-6.2-astra",
+        "codex_cli_version": "codex-cli 0.169.1",
+        "code_sha256": {
+          "provenance.py": "5bf629d33c70c1e9d9374f94e9436105b51e0270e1fe9f44ba1bc02497058dea",
+          "runner.py": "84eff90e8d0177648735fe7fb53950a4bad0574cec26b3e9491a44d5d0ff1633",
+          "writer_privacy.py": "da93c2e8d5150012622c5ca2fd303d872dd54329588b93644693ff00feeefe1e"
+        },
+        "ephemeral": true,
+        "sandbox": "read-only",
+        "inline": false,
+        "reasoning_effort": "medium",
+        "timeout_seconds": 1800,
+        "input_files_after": {
+          "A/README.md": "31e1dfdb630da4609647807913046e4405cac2246266cc5f73273a8666f2fd80",
+          "A/catalog.js": "feca84fd8bb0e72898a0a9d2bdab1eb857e901be181da634521b05822104dbba",
+          "A/index.html": "5f749cd76ff3455cd78cd5dcf0c0e2a5e533b6cc08ef8c33a16659219f6f06d9",
+          "A/studio.css": "afe030d628e749d94558771c4bdeaa6cabf258cd56e103784b9743a7d024a53c",
+          "A/textures/basketweave.png": "a2d7b5b5ead855c93873ba8439690c45e4e441364a9657475fe1bd214aa4eb02",
+          "A/textures/boucle.png": "63b5422161bd2e08b5c086bec1df274cf6eff6923fe63bf338faee53549a216e",
+          "A/textures/corduroy.png": "0c900fdb1704bf6a127fe6b67a1bab21a0c7746eb08efbe4c1da956eb80dbd39",
+          "A/textures/linen.png": "232dfc32f2f47441f3fd71dbb41de0248ba9e10cc7ee9e9ff17da530ff271b51",
+          "A/textures/twill.png": "6068de4c9a503d39a263e141e0addc425065f639b815e047795596e0482344c7",
+          "A/textures/velvet.png": "36ea7cbce004c8d092e629b70ad4fc5d7efe173791c20e92cbb53cb7fe8873eb",
+          "B/README.md": "ac6251fdce638869e67a19f5f36224420dabebabdb0130db834835a433253665",
+          "B/assets/clay.webp": "79f0f76fca8f10f11be1e5d460c3296e768cdece276d445f4ab741626a0c0dee",
+          "B/assets/flax.webp": "738d9e40bdf0071385c0f91f0194eca43799c23804c2064561bafe0231df78ad",
+          "B/assets/moss.webp": "54e6d4e1036022579e0247da13db013a27be73294a131e71990400012918cde6",
+          "B/assets/slate.webp": "6611386aecc9d2a5ea00baeab2af6574ccd9e3933f7b8b57cde48249194e2d6d",
+          "B/catalog.js": "6af0213fd744f5abd7c5399f5b97e2ea1bdd1c4d78842556de1ae0518b38d6a5",
+          "B/index.html": "ffee3b67e75c9927c0529f9bdf89e21184ccd412e5da6364ba5ff35d0bd2e995",
+          "B/samples.js": "78047534b29f169a0ab59e418c60b0e322dd615c83cf1e6655aecb8aa66cb649",
+          "B/styles.css": "0f98c076f9976a33798418189bf7e89d746e68124b9ef0c31ce16f499529be0f"
+        },
+        "input_integrity": "matched",
+        "updated_at": "2026-11-25T16:02:22.115260+00:00",
+        "thread_hashes": [
+          "af219ecc4bfbd0889edfc5e2bc2f326f371a6f35af4ef61242916bf7681aa590"
+        ],
+        "cli_reported_models": [],
+        "commands": [
+          "/bin/zsh -lc 'ls -la; rg --files | head -100'",
+          "/bin/zsh -lc 'cat A/README.md B/README.md; head -40 A/catalog.js B/catalog.js; wc -l A/*js B/*js A/*css B/*css'"
+        ],
+        "tools": [
+          "command_execution"
+        ],
+        "boundary_indicators": [],
+        "returncode": 0,
+        "timeout": false,
+        "stdout_sha256": "255d43f75860c7a6d2e27aa8b27e8e63116c6af1b14016dc92c910304c7a4cb7",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "observed_reply": true,
+        "reply_sha256": "1240ca57aef0bb7692c55276f071402081a43dd0b7e6bd7e8ee62f9e62da7ed3",
+        "reply": "B\n\nB is my best guess because its separate sample-data file, readable functions, and explicit backup validation more closely match how I’d write this catalog."
+      }
+    ]
+  },
+  {
+    "original_row_sha256": "61d3b38e575b2495d2d6d95bd9282fb49da1fc443d7c39b2200a5cfa7d518335",
+    "repeat": {
+      "brief": "theater-ticket-reminders",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ],
+      "answer": "YES",
+      "reply": "YES\n\nThe question-led brief and the workbook’s separate comparison and matinee-data sheets resemble how I’d present this analysis, though that stylistic match is weak evidence of an exact model version.",
+      "commands": [
+        "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+        "/bin/zsh -lc 'unzip -p *.xlsx docProps/core.xml && unzip -p *.xlsx xl/workbook.xml | head -c 2500'",
+        "/bin/zsh -lc 'strings *.pdf | head -65'"
+      ],
+      "session_receipt": "provenance/attempts/reader/f2b00646ed189e5e41e8d8cdc42d0ba82a9f61934b1316a0f1db635551b40c80/000001.json"
+    },
+    "attempts": [
+      {
+        "version": 1,
+        "kind": "reader",
+        "subject": {
+          "brief": "theater-ticket-reminders",
+          "reader": "gpt-6.2-astra",
+          "opponent": "gpt-6.2-sol",
+          "mode": "yn",
+          "authors": [
+            "gpt-6.2-sol"
+          ]
+        },
+        "attempt": 1,
+        "status": "complete",
+        "started_at": "2026-11-25T16:02:04.823313+00:00",
+        "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+        "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+        "input_files": {
+          "Matinee attendance calculations.xlsx": "7dd492f82528a25fb0eee0816c3ee56e1051cfc6736f68a7882b5cec26ed76b8",
+          "Matinee reminder decision brief.pdf": "d14b06b7b6d73a127da0a1b12751849c205286c62c71edbf9b551005b55c6ea5"
+        },
+        "requested_model": "gpt-6.2-astra",
+        "codex_cli_version": "codex-cli 0.169.1",
+        "code_sha256": {
+          "provenance.py": "5bf629d33c70c1e9d9374f94e9436105b51e0270e1fe9f44ba1bc02497058dea",
+          "runner.py": "84eff90e8d0177648735fe7fb53950a4bad0574cec26b3e9491a44d5d0ff1633",
+          "writer_privacy.py": "da93c2e8d5150012622c5ca2fd303d872dd54329588b93644693ff00feeefe1e"
+        },
+        "ephemeral": true,
+        "sandbox": "read-only",
+        "inline": false,
+        "reasoning_effort": "medium",
+        "timeout_seconds": 1800,
+        "input_files_after": {
+          "Matinee attendance calculations.xlsx": "7dd492f82528a25fb0eee0816c3ee56e1051cfc6736f68a7882b5cec26ed76b8",
+          "Matinee reminder decision brief.pdf": "d14b06b7b6d73a127da0a1b12751849c205286c62c71edbf9b551005b55c6ea5"
+        },
+        "input_integrity": "matched",
+        "updated_at": "2026-11-25T16:02:22.024408+00:00",
+        "thread_hashes": [
+          "9829fbaa8e6b27752ffce23ea25ff0ea8a9698aa54ca2c41d82f6ac5af559208"
+        ],
+        "cli_reported_models": [],
+        "commands": [
+          "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+          "/bin/zsh -lc 'unzip -p *.xlsx docProps/core.xml && unzip -p *.xlsx xl/workbook.xml | head -c 2500'",
+          "/bin/zsh -lc 'strings *.pdf | head -65'"
+        ],
+        "tools": [
+          "command_execution"
+        ],
+        "boundary_indicators": [],
+        "returncode": 0,
+        "timeout": false,
+        "stdout_sha256": "a0ba89e3466de8d441beb9aadf89107927281e1fe3418435fa157534e7b90cf0",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "observed_reply": true,
+        "reply_sha256": "455f39367c9553dcf8238fae67a0dbfc4f93c297a5dd22dfaf4ad15af7182763",
+        "reply": "YES\n\nThe question-led brief and the workbook’s separate comparison and matinee-data sheets resemble how I’d present this analysis, though that stylistic match is weak evidence of an exact model version."
+      }
+    ]
+  }
+]

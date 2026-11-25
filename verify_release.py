@@ -28,6 +28,7 @@ def main():
     python("tracks/project-input-check/screen.py", "--verify")
     python("tracks/project-input-check/retry_audit.py", "--verify")
     python("tracks/project-input-check/repeat.py", "--verify")
+    python("tracks/project-input-check/repeat.py", "--cohort", "astra", "--verify")
     python("tracks/inline-cross-family/run.py", "verify")
     python("tracks/social-typography/analyze.py", "--verify")
     negotiation=ROOT/"tracks"/"negotiation"
