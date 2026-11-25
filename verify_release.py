@@ -1,5 +1,6 @@
 """Verify scoring, answer keys and public outputs. Runs offline."""
 from pathlib import Path
+from tracks.negotiation.analyze import analyze
 import json
 import subprocess
 import sys
@@ -16,13 +17,24 @@ def main():
     for track in ("inline","projects"):
         python("-m","tracks.core","verify",ROOT/"tracks"/"core"/"release"/track)
     negotiation=ROOT/"tracks"/"negotiation"
-    archives=[negotiation/"seed.json"]
-    if not (negotiation/"seed.json").is_file():
-        raise ValueError("Missing primary negotiation archive")
-    if (negotiation/"cross-family.json").is_file():
-        archives.append(negotiation/"cross-family.json")
-    for path in archives:
-        python(negotiation/"verify.py",path)
+    known = {}
+    for name in ("seed", "cross-family"):
+        path = negotiation / (name + ".json")
+        python(negotiation / "verify.py", path)
+        archive = json.loads(path.read_text())
+        analysis = json.loads((negotiation / (name + "-analysis.json")).read_text())
+        if analyze(archive) != analysis:
+            raise ValueError(f"Published negotiation analysis differs for {name}")
+        games = {game["id"]: game for game in archive["games"]}
+        if name == "seed":
+            known = games
+        else:
+            overlap = games.keys() & known.keys()
+            if len(overlap) != 4 or any(games[k] != known[k] for k in overlap):
+                raise ValueError("Expected four identical shared negotiation games")
+    example = json.loads((negotiation / "example.json").read_text())
+    if example != known[example["id"]]:
+        raise ValueError("Published negotiation example differs from source")
     group=ROOT/"tracks"/"group"
     with tempfile.TemporaryDirectory() as t:
         python(group/"analyze.py","--export",t)
