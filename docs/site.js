@@ -99,6 +99,7 @@ async function start() {
     $("score-table").replaceChildren(wrap);
     $("run-note").textContent = run.note;
     $("project-tools").hidden = !(track.id === "projects" && run.id === "release");
+    $("project-evidence").hidden = $("project-tools").hidden;
     $("typography").hidden = !(track.id === "group" || (track.id === "negotiation" && run.id.startsWith("cross-family-")));
     $("typography-note").textContent = track.id === "group"
       ? "An apostrophe-only rule got all 32 Astra/Fable confirmation judgments right. After apostrophes were standardized, the models still got 31 of 32 right."

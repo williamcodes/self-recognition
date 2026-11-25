@@ -76,6 +76,7 @@ async function main() {
         for (const trial of subset.trials) {
           const key = trial.mode + ":" + trial.key;
           if (!categories.has(key)) categories.set(key, trial);
+          if (trial.disposition === "invalid_miss") categories.set("withheld", trial);
         }
         for (const trial of categories.values()) {
           await open(track, run, trial);
@@ -102,6 +103,8 @@ async function main() {
           assert(await page.locator("#record").isVisible());
           assert.match(await page.locator("#feedback").textContent(), /^Correct\./);
           assert.equal(await page.locator("#record > .reply").textContent(), trial.reply);
+          if (trial.disposition === "invalid_miss")
+            assert.match(await page.locator("#record").textContent(), /response withheld, scored as a miss/);
           await width(page.viewportSize().width);
           if (trial.replay) assert((await page.locator("#record").textContent()).includes(trial.replay));
           checked += 1;

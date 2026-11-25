@@ -313,14 +313,14 @@ function showTrial(catalog, track, scenario, trial, run) {
       );
     }
     const result =
-      trial.disposition === "invalid_miss" ? "excluded response, scored as a miss" : trial.answer === null
+      trial.disposition === "invalid_miss" ? "response withheld, scored as a miss" : trial.answer === null
         ? "unrecognized answer"
         : trial.answer === trial.key
           ? "correct"
           : "incorrect";
     record.append(element("h4", "Reader response · " + result), element("p", trial.reply, "reply"));
     if (trial.disposition === "invalid_miss")
-      record.append(element("p", "The run withheld this response after reviewing which inputs the reader accessed. The judgment counts in the score.", "note"));
+      record.append(element("p", "A terminal command matched the inspection filter. The benchmark counts this judgment as a miss.", "note"));
     if (trial.receipt)
       record.append(anchor("Session receipt ↗", "https://github.com/williamcodes/self-recognition/blob/main/" + run.sourceFile.replace(/judgments\.json$/, "") + trial.receipt));
     if (scenario.brief) record.append(details("Assignment", element("p", scenario.brief, "reply")));
