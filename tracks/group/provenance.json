@@ -1,0 +1,3642 @@
+[
+  {
+    "key": "group/group-1/aquarium/0/supplier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "4aa63c6030c6c2d57abc68c590979319910c6ccc778c793f66e17afcafa72158",
+    "response_sha256": "7c1821b7cc2a03a22386678587220c59873c59ed47bbcfb6e8721175a7918261",
+    "request_fingerprint": "67aa87f93808468c2b888d0d3ca3b57f7e63452ca62db8093ecc39eefcea614d"
+  },
+  {
+    "key": "group/group-1/aquarium/0/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "463cb7011856a4c851c7d6c8e05abcc583def34fa70093a19c99feb8a6a6f6eb",
+    "response_sha256": "d2b94672ade20d079fad6d617629180142d2f48d0b4ec657f6f12f5ce567d42c",
+    "request_fingerprint": "d477a71b398bcb66a9a077e847435ac30a435bcb5ae6052580dc07e77217c6d1"
+  },
+  {
+    "key": "group/group-1/aquarium/0/receiving/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "257aa28daaceadc24a59d6c6e8f5ab3adc449b6038224b8d56c3d44bde096111",
+    "response_sha256": "7859f7d667bf1766861550a5fcdcf617dd5a1437111d95cdd3c7372503c2e3f9",
+    "request_fingerprint": "d2156ea175e4c3da80fef30ca26f7aa9dd7cd1f4a5c1143097461690eead1590"
+  },
+  {
+    "key": "group/group-1/aquarium/0/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "4e34323b2b4caf43386965c2a90d5cb6354e50a7360aea5d7821ebb0c7037ec8",
+    "response_sha256": "eade9ab0586030d72792bc6e4ae20b17d5196e57fbf5dc21da23f64d713cb379",
+    "request_fingerprint": "8268b0e6979c059f950747d24f657aa08cd5383e7c0627e0fedc643ac0282dec"
+  },
+  {
+    "key": "group/group-1/aquarium/0/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "463cb7011856a4c851c7d6c8e05abcc583def34fa70093a19c99feb8a6a6f6eb",
+    "response_sha256": "28e86910a9a4d990c2f26d7cc2adbbeb173dc1a6f5472f97715028b7deffbf7f",
+    "request_fingerprint": "3a28a31639abc3e1c4d26e4b5833a01a85bc3a2086d297cd5a0d71c7de4f53b3"
+  },
+  {
+    "key": "group/group-1/aquarium/0/supplier/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "4aa63c6030c6c2d57abc68c590979319910c6ccc778c793f66e17afcafa72158",
+    "response_sha256": "f7336d61eb8edc4b2ad1fd248905f77462a32f74efac835a359674d73808265a",
+    "request_fingerprint": "9b748e242f96ebe6b6c21ded20104b89df93e97533486ab6943b247a0b522b9d"
+  },
+  {
+    "key": "group/group-1/aquarium/0/receiving/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "257aa28daaceadc24a59d6c6e8f5ab3adc449b6038224b8d56c3d44bde096111",
+    "response_sha256": "f397e2ad7d29fc9199df73cb7f1a5d5f6c5143e703c657d2bd1fea296d5edacc",
+    "request_fingerprint": "2c576c822587a207ee804aa5b24c627530fe905446c892b5bc8caeb3d075641c"
+  },
+  {
+    "key": "group/group-1/aquarium/0/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "4e34323b2b4caf43386965c2a90d5cb6354e50a7360aea5d7821ebb0c7037ec8",
+    "response_sha256": "f3f3fe9eb27ca98e6c452809f104ce253cfe5fd366f5b846d73d0933c0c05eb1",
+    "request_fingerprint": "3a6fc42a50c47e385671f635da38ab51fa41b8f6b74a5542cafacc647bd57c9f"
+  },
+  {
+    "key": "group/group-1/aquarium/0/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "463cb7011856a4c851c7d6c8e05abcc583def34fa70093a19c99feb8a6a6f6eb",
+    "response_sha256": "8554d006d198519b3e97012ec6ce5e0ea63ea6960036b32e2eb542e6dfc67fed",
+    "request_fingerprint": "8d72e328fc412089b3feb7e08fc7ed570e8bae1af9b221254830259ddd5578c6"
+  },
+  {
+    "key": "group/group-1/aquarium/0/supplier/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "4aa63c6030c6c2d57abc68c590979319910c6ccc778c793f66e17afcafa72158",
+    "response_sha256": "bad9af5510e99bedf3ae34335d811c11cb2dce193abda74b36d053f9737dafcd",
+    "request_fingerprint": "3eeaf2d57eba2841c6eb037cf43c1d226a8ede0fa40de5032af8e3cec984b450"
+  },
+  {
+    "key": "group/group-1/aquarium/0/receiving/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "257aa28daaceadc24a59d6c6e8f5ab3adc449b6038224b8d56c3d44bde096111",
+    "response_sha256": "4cb0910adbbaeb8297749996b4ab3f0bf2ebe31d17ef9bd5caa2cda663d69703",
+    "request_fingerprint": "a9cf137cab5201a74dd423b1bbfbaf2a9d297c11f776486838fb31758e3ea22d"
+  },
+  {
+    "key": "group/group-1/aquarium/0/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "4e34323b2b4caf43386965c2a90d5cb6354e50a7360aea5d7821ebb0c7037ec8",
+    "response_sha256": "63d7877cb0e269307690072cfbcdcf10794be2f378a2f4d1c4a0996e2aa4f2cc",
+    "request_fingerprint": "c3577ef10226ae7c2aff6958c141146e70eccddf7915604498a20b07e2257e34"
+  },
+  {
+    "key": "group/group-1/aquarium/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "1ebf6433d792b78280af957f3c4409ce329fc82382fd4c5d36b99f5c025238fd",
+    "response_sha256": "316e83b7abc28284198178a851fda2f30259e757cd149f0b2ab494416340d5e0",
+    "request_fingerprint": "087c0ad5c6bd5554add3bbfab552ecb8dca48ce2d771ad1ffe1f9c0067f0a73a"
+  },
+  {
+    "key": "group/group-1/aquarium/0/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "921ccd2626c32f761d5be6b8c41cb2b69780323f72720c2fc424155ea6ba3d56",
+    "response_sha256": "4124be3da0e185c6353355d229d0ac77a5aa22a34ebdc0cd041cf25c03e0af89",
+    "request_fingerprint": "2157365680c48e6e600ce9a13f489ebe0c31770bc301369272c8bdfc98944df3"
+  },
+  {
+    "key": "group/group-1/aquarium/1/supplier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "97d3b6848fa0572dd2ed720cf273c9ec847474657f5899952e10d03c4b894ab2",
+    "response_sha256": "d9c5dbf06e53e022761439ee512776357c3833061279427d63c49e3be267646b",
+    "request_fingerprint": "e7ad40f5f8aab5df033ee83b2853f265827bce59e3ef2fa96f3fedd1b8adc05e"
+  },
+  {
+    "key": "group/group-1/aquarium/1/carrier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "b6cd97b1407dbe67d12adb36ae097dcf69aa74e113d17b9e234b445e65d0053c",
+    "response_sha256": "e50e6da16aac243188798de7f0a8f34b6243da0c800eb9e69c894683cc20dad3",
+    "request_fingerprint": "3999e6b94ea7679b64582d77f3c2734fb65f6ad80af96312ee8e293519ec9397"
+  },
+  {
+    "key": "group/group-1/aquarium/1/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "e8db9ea5f542af0bf40eb730539864fe574f5108aeacec3c2acbf7ccb6267799",
+    "response_sha256": "1c49f9d0071db495f9dc108b3d9c5d42949d3143b001d33ca9be0ff7604bdbc2",
+    "request_fingerprint": "539aac45cfd8d4f12b7521ff8ca94fba78208139b3c1a079a490d3182b18bdef"
+  },
+  {
+    "key": "group/group-1/aquarium/1/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "b911339b99c493c28e1e01f8418f033aa99c3ee40a9d6fb2d4300caced31c134",
+    "response_sha256": "90c5004b4d87b000d2ec6c6cf33815a37a456d72a7e0a965245f92f90ee05773",
+    "request_fingerprint": "df3462ba4908b8e3d0305c1ffde1c27ced982bcdcf5f7f3e9422511fcd2458c6"
+  },
+  {
+    "key": "group/group-1/aquarium/1/carrier/proposal",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "b6cd97b1407dbe67d12adb36ae097dcf69aa74e113d17b9e234b445e65d0053c",
+    "response_sha256": "9e523e57e8d0c5d75aee689c4cd46d079cfcf29e0392ab56d7c969ef8917c8e1",
+    "request_fingerprint": "9b4b4b6e4ae9e34285ae4c0e8c886eceb8f7daaed9048a4b41ea78af6fd4ac8c"
+  },
+  {
+    "key": "group/group-1/aquarium/1/supplier/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "97d3b6848fa0572dd2ed720cf273c9ec847474657f5899952e10d03c4b894ab2",
+    "response_sha256": "1b28fc3efbe1557b8496196c0332b6ee01b9c71670ffc6337a853a399ef319f1",
+    "request_fingerprint": "50ff4d5ad51b7265dfcfccb0505c2f6acc5c7735fb4c42a77c04f9ac5fc5ab8d"
+  },
+  {
+    "key": "group/group-1/aquarium/1/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "e8db9ea5f542af0bf40eb730539864fe574f5108aeacec3c2acbf7ccb6267799",
+    "response_sha256": "9c6de422321e0fc46fff90652d0882f4532260a4217225ca814cc8239cdd1169",
+    "request_fingerprint": "71ec01664390aebfb00d419da791f2afc8f1c440e093ac2877c07e236a702c8a"
+  },
+  {
+    "key": "group/group-1/aquarium/1/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "b911339b99c493c28e1e01f8418f033aa99c3ee40a9d6fb2d4300caced31c134",
+    "response_sha256": "96ebfe6aafe78a10153562cc4f3fbb5be09e13c4d6c740632ff92d8e13e50e4a",
+    "request_fingerprint": "01788dc7c7e172dd45e57c82565ec0fcc3b3d65c0b7d54c7f03fc1c7605240eb"
+  },
+  {
+    "key": "group/group-1/aquarium/1/carrier/final-offer",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "b6cd97b1407dbe67d12adb36ae097dcf69aa74e113d17b9e234b445e65d0053c",
+    "response_sha256": "aee428c8e1b5a053e729dbba1391beba4c68c55ccfaa4505548c497375ad2f19",
+    "request_fingerprint": "75c2ebd91e198c407c33903313b4804148c8c90b9f2f44bf3c70883c17c8d34f"
+  },
+  {
+    "key": "group/group-1/aquarium/1/supplier/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "97d3b6848fa0572dd2ed720cf273c9ec847474657f5899952e10d03c4b894ab2",
+    "response_sha256": "6ff20d4f8289b1806601a299a9d128b6270292b515aca1573f170892790bbff5",
+    "request_fingerprint": "bd7263a287bc8f4cf3a9bd63a384a3575518cfb3a4f1441b0547ee5bff58e8b4"
+  },
+  {
+    "key": "group/group-1/aquarium/1/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "e8db9ea5f542af0bf40eb730539864fe574f5108aeacec3c2acbf7ccb6267799",
+    "response_sha256": "d652226dabae55d963eaba8a5dee618ad4988c9138f5bdbe254d77b646219d88",
+    "request_fingerprint": "3345025ca3bee9d0e4f401e9f347027381d3955a3a244ecedd541df4eab5ab57"
+  },
+  {
+    "key": "group/group-1/aquarium/1/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "b911339b99c493c28e1e01f8418f033aa99c3ee40a9d6fb2d4300caced31c134",
+    "response_sha256": "9e80dbe4f8e96ef5678e9a9fe4c99f0c838fa0803b0dd5e195a4c2f5295dbe5e",
+    "request_fingerprint": "5745ac6aa5d0a85ba8cf54bff1e1c2502e4aad3981d526f5c22314a5d27ccbfb"
+  },
+  {
+    "key": "group/group-1/aquarium/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "723771ba8554e724787c0af47ec58d312c856cd794e83147e3a2a0ad9c3bf5cc",
+    "response_sha256": "0dd79c52e196f0dd4be4036b1e476d9e066b4f33edd05a6588ae2b3baefd1a71",
+    "request_fingerprint": "b44f38890d74959dbb083058f620b4909806b18f7e1c3ea38ee92e5556e0b7ed"
+  },
+  {
+    "key": "group/group-1/aquarium/1/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "1ee1b9a374b475ec857feb75a31d2faeb63e545542b79b086d09dd59dd91759b",
+    "response_sha256": "94628e142ea0733bf769bba04eafb07dd35ad7659179dd8d438441a4197b6966",
+    "request_fingerprint": "9137d8276de2c51d59a5f662124f4e25c10fe2de53462518f0d5683c86128608"
+  },
+  {
+    "key": "group/group-1/archive/0/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "7a66b4255e711c156fac5fb0f0a6b33e8cb34edac7835fb8996227a097d448db",
+    "response_sha256": "883fca4c31afe17013983fb12b1b407a5462ee21a3e491450ad8f920ebcedf48",
+    "request_fingerprint": "bb3ce2353a5a2c6c20a0d5775f7479b66afd84fd27eda052dd937f91c117a0ff"
+  },
+  {
+    "key": "group/group-1/archive/0/carrier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "7f15456930da7ae56fe4af4a8592fd3b31c5292f9aa1b2c4236d6c67cb11a28b",
+    "response_sha256": "f1d1ac72c210f71a082fcb760631dae7a44ab4b952268e7465dd3570bd0c1ede",
+    "request_fingerprint": "e00187c855038055bc4c0aff0e770e86abc5146ec949d105a3a55fea6ce053b7"
+  },
+  {
+    "key": "group/group-1/archive/0/buyer/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "b6a88dd60be2c3f5992168c80baf725170bc25a7caeb58f08d89c1e20404f168",
+    "response_sha256": "02d25262fe6ed6ee7c6ff9e9ec617af3377cb996ff86782150cd4db817b4e252",
+    "request_fingerprint": "c3c2c45c84056917dffaebb0441889b60f940ba8e233d8b3ce8411eaeb36f6ad"
+  },
+  {
+    "key": "group/group-1/archive/0/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "96ec0c4d8c3081fa7cde222f247c3426a3e60f4faf022b13d725eb686b8864fb",
+    "response_sha256": "72099e3760aaf713ab8c8fcd5c8bc4ed27919a09abb9d2892637d6064dbf1985",
+    "request_fingerprint": "e67e62fd73ddd6f3b51730c8968da7f7df8d03b379993dcd3886d5bc3dcdebf1"
+  },
+  {
+    "key": "group/group-1/archive/0/carrier/proposal",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "7f15456930da7ae56fe4af4a8592fd3b31c5292f9aa1b2c4236d6c67cb11a28b",
+    "response_sha256": "cc3e5c8293b744167e4196f6528aa37008c8cd81633e817699dce42533ab5fea",
+    "request_fingerprint": "e20147d7da520a8c3bb03e9a01cfb05891b8ee48f882b1d21ccbd7a6ba71c6bb"
+  },
+  {
+    "key": "group/group-1/archive/0/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "7a66b4255e711c156fac5fb0f0a6b33e8cb34edac7835fb8996227a097d448db",
+    "response_sha256": "d5d494110becab33956ddf7165c004ebe7fa07ec269cc755c48d53f28c478b63",
+    "request_fingerprint": "73650455c1a9c6da042f46e3777b5949d15de3ed7296ba478c051b8fc9ae4ff0"
+  },
+  {
+    "key": "group/group-1/archive/0/buyer/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "b6a88dd60be2c3f5992168c80baf725170bc25a7caeb58f08d89c1e20404f168",
+    "response_sha256": "4afdd8f54eb529dc6f68dbe0a22090c8666c0c85092793de85d486eb2819ad30",
+    "request_fingerprint": "76c26e549832c2a79a77a2767f93e3e67c6471a62d3335dc6db20dd5e5feb98c"
+  },
+  {
+    "key": "group/group-1/archive/0/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "96ec0c4d8c3081fa7cde222f247c3426a3e60f4faf022b13d725eb686b8864fb",
+    "response_sha256": "d4b22287acc8635c1a576a01658cbf5076f84d7b98ed34ba5314878d850edaa6",
+    "request_fingerprint": "28f02ccfed1780a5c99f2df6136006d11cab41e11f67e79db89cc0df3d2a2d53"
+  },
+  {
+    "key": "group/group-1/archive/0/carrier/final-offer",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "7f15456930da7ae56fe4af4a8592fd3b31c5292f9aa1b2c4236d6c67cb11a28b",
+    "response_sha256": "6e16ee61d8fb811f8abd41a54d326654958a3d7685a01a0b8d0eba35075ba82c",
+    "request_fingerprint": "6a8a6852a1ecad21bc5ba7f96f92547382521104e2500f6dce98e6aebaf7326c"
+  },
+  {
+    "key": "group/group-1/archive/0/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "7a66b4255e711c156fac5fb0f0a6b33e8cb34edac7835fb8996227a097d448db",
+    "response_sha256": "874f6c2addcfa9e80416bb7f4b2cddeb9c15146b2175c596b4f6545f6d0b72d9",
+    "request_fingerprint": "cb6fc44566f00205cb2880785880e9be80acd5179f4ca3b9ab293cedc4b57669"
+  },
+  {
+    "key": "group/group-1/archive/0/buyer/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "b6a88dd60be2c3f5992168c80baf725170bc25a7caeb58f08d89c1e20404f168",
+    "response_sha256": "9982f8b05195805cd4106a8f6fb0978b0f310a232d64ea627bce7ec8945c7e99",
+    "request_fingerprint": "959d75b47798a28de46540ce69691a5f1578d470ae68c833398fe36060381a3b"
+  },
+  {
+    "key": "group/group-1/archive/0/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "96ec0c4d8c3081fa7cde222f247c3426a3e60f4faf022b13d725eb686b8864fb",
+    "response_sha256": "885c68506e59115a483a22ab634a9042dd7d3c42b63cd47b8f1a326899ac57d9",
+    "request_fingerprint": "93ab99c2c71e1bc80b5cac177c24eac00dfe5ba763588537541cdd870537fd7c"
+  },
+  {
+    "key": "group/group-1/archive/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "2ddbce9c28d4c064ac0596dad42769e638936ceec562f4bca86b71e2471c635d",
+    "response_sha256": "57f23ba23544fcaf9cc6837f22e16c8147e8069c75420bf58fa81ce6e8dbd6e9",
+    "request_fingerprint": "162e4712b261970fc12119a8d11e8cb678af1b4f578a6cca2badb9c5cebcc53b"
+  },
+  {
+    "key": "group/group-1/archive/0/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "b20ced259cc8427033ffa584cbbd40e7c69975d2b655faecaec1f0557b7a0f54",
+    "response_sha256": "4b6ef92e65ec604b2713353521d55be20d73f0fd8d9df611fb210bf7dd361936",
+    "request_fingerprint": "4a56fbb8c26b36031d05744bbab24a3fd049ee95462dea962444ba12320fe741"
+  },
+  {
+    "key": "group/group-1/archive/1/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "1bd931d91124ccaa84e82cea5dd7bf8d43b4a4e808c2f3313249c673c4304027",
+    "response_sha256": "ee3333b0ce1e625826ed531f27832368970b829ad1fff8395d78f1aeaa8bf4b3",
+    "request_fingerprint": "52063f44d24dcb0656ca56e6ee07535cd83b75ad6c24af48d58a393f0ed336e4"
+  },
+  {
+    "key": "group/group-1/archive/1/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "915cd5e5f9f407f90d99360f296843c3a7671514fd069ebcabf6bb66e8569cd7",
+    "response_sha256": "c63d4271e427f17731666a33e66f0909af9ea87fc458d477b986bb8a4c1cf582",
+    "request_fingerprint": "1db948fa40a0ccdede8986b7a80c20a59286e07b983d053b2ae16a979534bd4e"
+  },
+  {
+    "key": "group/group-1/archive/1/buyer/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "4b9d84b09a659ec82d3d35c5aa815a1a5e14c70fa8fd9a1bd90f99a5bf4f9ade",
+    "response_sha256": "7a6cef6e481b8e4c8ad557f4d31c157d85f5e76dd677bf7b79c5a30397694999",
+    "request_fingerprint": "c9d3335df56c1609c1ab0310b7b4378e336e7fc28eb82661653d65c570fb988f"
+  },
+  {
+    "key": "group/group-1/archive/1/supplier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "416049c28e8405ce16b0663d7d626279ac5a51318f63fcb8e852f772f54cc4e2",
+    "response_sha256": "440efb89a1e98627e72ef6de3ab7b18c4793627d9a69c777c87969463691f5a3",
+    "request_fingerprint": "37415c2f6befd679def043f09e957121c2601871238a7fa04fd78b093c9c7166"
+  },
+  {
+    "key": "group/group-1/archive/1/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "915cd5e5f9f407f90d99360f296843c3a7671514fd069ebcabf6bb66e8569cd7",
+    "response_sha256": "2796970cd1211831accde3fec4a6e8194f23640da955422211cb9037d5bea11e",
+    "request_fingerprint": "72824701d93ce0a91a2deba3f965069dc1e431728f58c8bdc514db04d87bf572"
+  },
+  {
+    "key": "group/group-1/archive/1/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "1bd931d91124ccaa84e82cea5dd7bf8d43b4a4e808c2f3313249c673c4304027",
+    "response_sha256": "a89d108f5ec04f42fd09dec46212223b69de7132474a5797c6c7b5a8d32e49c9",
+    "request_fingerprint": "6443c455b07ae9179108f55f0870092e43a141e8e260e5c7bc43b3610b5cb694"
+  },
+  {
+    "key": "group/group-1/archive/1/buyer/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "4b9d84b09a659ec82d3d35c5aa815a1a5e14c70fa8fd9a1bd90f99a5bf4f9ade",
+    "response_sha256": "b6ac1e768f64a3b18c9b275df395f9b49138c7f076c0ed56d6db9412baff37aa",
+    "request_fingerprint": "6cd4cb5e30b06f38943ec460e959d10864ee72387769c139de302175143d9bab"
+  },
+  {
+    "key": "group/group-1/archive/1/supplier/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "416049c28e8405ce16b0663d7d626279ac5a51318f63fcb8e852f772f54cc4e2",
+    "response_sha256": "3e66b80129451b59f8dbdaac6097abe5359460fa63919b47d1ddf1f2e2d34c92",
+    "request_fingerprint": "aa2d60638c97d8d091ffbc24be289a96b2a2194e6271988dacdf6ce9cb7537f4"
+  },
+  {
+    "key": "group/group-1/archive/1/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "915cd5e5f9f407f90d99360f296843c3a7671514fd069ebcabf6bb66e8569cd7",
+    "response_sha256": "b63d15435967dda49da2755c23d2a985b86dcfa2dee0355321fbbdcc17958158",
+    "request_fingerprint": "60c4b16b72cc2bb711125874874b607060aeb3febba092ec6928cc9f6a4f1e9b"
+  },
+  {
+    "key": "group/group-1/archive/1/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "1bd931d91124ccaa84e82cea5dd7bf8d43b4a4e808c2f3313249c673c4304027",
+    "response_sha256": "89e8f1cd6fc65c9db9f81d75de2a00f527aa68d8c3729baaa99e4b124e0283b1",
+    "request_fingerprint": "c17c995de4856c591c3c78cc1ad2664069a0feb7076e46f1055b48ca702b1866"
+  },
+  {
+    "key": "group/group-1/archive/1/buyer/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "4b9d84b09a659ec82d3d35c5aa815a1a5e14c70fa8fd9a1bd90f99a5bf4f9ade",
+    "response_sha256": "7877f45497a60729fef1817cbf31f90ffcbb4e343a1b0a25ae246d46a6fdcfe0",
+    "request_fingerprint": "24c61e4465b1ffa28c45a9d823eb75b1ea1acc43e47bd1bffc126029f446ee86"
+  },
+  {
+    "key": "group/group-1/archive/1/supplier/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "416049c28e8405ce16b0663d7d626279ac5a51318f63fcb8e852f772f54cc4e2",
+    "response_sha256": "40ce3b7b770caa059b08c5a013265193efe1a86d0f4521d11a3b72f8af785a3d",
+    "request_fingerprint": "c6757ad42a1a3ad8029b6c6c27e1c7a8a00a301e0b115bdb2b070cd272e1bd76"
+  },
+  {
+    "key": "group/group-1/archive/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "873cadb15a94fe8f4df87b6350ae1242ae39949652630768a7b56405cdc2cf13",
+    "response_sha256": "19d7089a8c68a7fc342b8454d26d9ebf27175b785fdfe2620e2f950d9b89de40",
+    "request_fingerprint": "1b6efb7c15391420db6a55552f4e49491f17cb237fe857d1c7e1786bb192829c"
+  },
+  {
+    "key": "group/group-1/archive/1/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "52ba4bfaf86bbc8f15ca33663a73dcc1942fd9118e7f51beff74cf001c40b8f5",
+    "response_sha256": "06910fb624992aebbcf6429046b08bdee009a2fbbdbbe211d92293db018e5f8b",
+    "request_fingerprint": "2c4f5b9424f99dd9c990fdc0c99184cf4dc12df9cefed905edd858292febeae9"
+  },
+  {
+    "key": "group/group-1/bookfair/0/receiving/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "4716670b5d74eaef05e462be90fb7ee18cc3dba5643b039462cde24fc94ded95",
+    "response_sha256": "537ea4706b1291e6d174da2aceebbdc11d19a541407dfacb7de8d488adf2de20",
+    "request_fingerprint": "cc08c44e77297b71637194a913b9dbc5bcff049c2dd43d9b7bd9797c481441c1"
+  },
+  {
+    "key": "group/group-1/bookfair/0/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "cd4a09a96e27134889649d330a207456774a1bdccea4c1da1a8ae95218848da6",
+    "response_sha256": "03aa44b5ffe419fbd82bf1048548dfd67bfa0e18836c0c334b1d8e478eeed9ef",
+    "request_fingerprint": "64c4150b73864bd9c077685ab36cc2ddcbd1007c10b99d11e8751fdfdec6afcd"
+  },
+  {
+    "key": "group/group-1/bookfair/0/supplier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "96dbc0d2c44b6a204811eba0a214942f34b795e848f3833e48a3a640b775183c",
+    "response_sha256": "e21586d43b5f01bf6989e3a21683ad95645178a6da0d89ebd9ff272977589f21",
+    "request_fingerprint": "2d9cad52339f19331a5f0d976d1ba38bda3481fe89c9111d6193b68dd4609919"
+  },
+  {
+    "key": "group/group-1/bookfair/0/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "302605da750da183b667c44faab8f31c185fcdd0691998ad6fbe82e05bc082b3",
+    "response_sha256": "d4e7df582a8967bbe1d604b839df5785ce536ec8a79aee6babffedf916f7dd4e",
+    "request_fingerprint": "09b640338259e23a3eef17c9b7184997e40b778c23899960bd400ed61259eaf9"
+  },
+  {
+    "key": "group/group-1/bookfair/0/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "cd4a09a96e27134889649d330a207456774a1bdccea4c1da1a8ae95218848da6",
+    "response_sha256": "104402c11974068ba1a310333aed458ad3138d1ddedcd9c6a76895384b1d960e",
+    "request_fingerprint": "03875c046a2ef55b8dd722fbc74f304b790ea9a37d7460d270f5a33287564289"
+  },
+  {
+    "key": "group/group-1/bookfair/0/receiving/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "4716670b5d74eaef05e462be90fb7ee18cc3dba5643b039462cde24fc94ded95",
+    "response_sha256": "df2e05f429f0a632cab77696c1efb7fa4878a23abc389664af735f6739f22b38",
+    "request_fingerprint": "4410e11a2fab2877909099b287b6efda014a7c5d06ae66a850e169bc57a1539e"
+  },
+  {
+    "key": "group/group-1/bookfair/0/supplier/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "96dbc0d2c44b6a204811eba0a214942f34b795e848f3833e48a3a640b775183c",
+    "response_sha256": "b296b2f83a514e2d9822e79613f19eb16a395a0a24bbccd0c476ad81475ff38d",
+    "request_fingerprint": "f222a0ec3d032c676481752073d2f20917638a8ac0e826357a7784b90ab151e0"
+  },
+  {
+    "key": "group/group-1/bookfair/0/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "302605da750da183b667c44faab8f31c185fcdd0691998ad6fbe82e05bc082b3",
+    "response_sha256": "f63092799be9800285dba88737057487dad5729c6febaec701ef0e4024718086",
+    "request_fingerprint": "ffd342f06896918f8d8f603a2eb2723b0548c22d62133dbc86f0a67286ea2b8c"
+  },
+  {
+    "key": "group/group-1/bookfair/0/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "cd4a09a96e27134889649d330a207456774a1bdccea4c1da1a8ae95218848da6",
+    "response_sha256": "550c73d05fcdb452c7c650a6f40bd0b7360e61200d08ec12cf62a22042bb42eb",
+    "request_fingerprint": "d9406545b285fbaa5b495b3cc5f79c2499dbc170bb0c2ef4cd652f18651d3500"
+  },
+  {
+    "key": "group/group-1/bookfair/0/receiving/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "4716670b5d74eaef05e462be90fb7ee18cc3dba5643b039462cde24fc94ded95",
+    "response_sha256": "9ee3141a7cd54587766b3310e5225eff808ff43e64d17add36c22f9eaffd22f6",
+    "request_fingerprint": "260e891d7ac59082a7c58787e3af110a75bc56c5167a03253fc7c96ce33b1d25"
+  },
+  {
+    "key": "group/group-1/bookfair/0/supplier/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "96dbc0d2c44b6a204811eba0a214942f34b795e848f3833e48a3a640b775183c",
+    "response_sha256": "66e36c6753bfe965f7d451aafb736a04a5b9d2b4e059a842267ae1aed53d52d0",
+    "request_fingerprint": "2b3002e9be3c7504febfcac35c50520c13c0b0d737314442f3b01158fb53b48a"
+  },
+  {
+    "key": "group/group-1/bookfair/0/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "302605da750da183b667c44faab8f31c185fcdd0691998ad6fbe82e05bc082b3",
+    "response_sha256": "26f8fb10f1ceb7d1400a8c3d159e1a08c7d4e72e31d6427bb8958ccf8c589ef6",
+    "request_fingerprint": "5a26679835c0338c39d85afc25ecc68cb75472f2637d7da1d90791d5f490f2c6"
+  },
+  {
+    "key": "group/group-1/bookfair/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "cb3cf4f3fde7f591b7f1d5c392b02bbcc8e905ed2300e33027e481195d77f2ce",
+    "response_sha256": "7edd2f9dbba5d38aa6afc381b53fc400e8d8e2d8b8c2011155040f97cf055571",
+    "request_fingerprint": "3899fa9f7995a770123b36548fbd58ce48708b0a9c5f58cf2984a859398c8449"
+  },
+  {
+    "key": "group/group-1/bookfair/0/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "b2329968fa7083f642231f9818bf05ca883a3495183ce0d6cd0d2c2305095f01",
+    "response_sha256": "0b03998360e13cd5ac0dc1e666e24c5d3adb9602fcb798226a769d3d6cc02a45",
+    "request_fingerprint": "369bc45c2d56abe571f24e3e51b4b8e14a28d3447a84e91dbcc52137f4d518f6"
+  },
+  {
+    "key": "group/group-1/bookfair/1/receiving/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "61e0efab6d4dc7252e57c5b959bd2c447bbc92e9075974f2a5f6923a90a57ba4",
+    "response_sha256": "6d6c7202fa21e80a4c5bf6aab058243939f4d0e61ac2c06e299632fa68e493d6",
+    "request_fingerprint": "6ba6029d8fbaa45c01ad83338e2761d44a421f9d3bb36e3d460bb1430181450d"
+  },
+  {
+    "key": "group/group-1/bookfair/1/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "d319e80506a74398b8dfc4cab983e9d45b5f57924571b7602d68c2c49b502e3c",
+    "response_sha256": "a39c497a41d166ad83d88230bb5e7e43c7b76f794423dfa7037ce550f134d489",
+    "request_fingerprint": "9ac308b8988fe3fd687c7f1510f79e0705b4a8124b2fed67d34b98bedbcc06c6"
+  },
+  {
+    "key": "group/group-1/bookfair/1/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "ac51edaf7b90cf65e71f23202048b832050e685e9f0ec95942eb9f39c70605fa",
+    "response_sha256": "f3f38419fbe6ab4f6160faa7a84b544d3ead621cee1357a5a2f8216555f6b363",
+    "request_fingerprint": "668f3282add5def0c13358a69f09812115cb15076cb60f37df37bba898fa259a"
+  },
+  {
+    "key": "group/group-1/bookfair/1/buyer/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "035f0223529aff1d36719156ab5901b8fdd086213a4047a0142ca96ef5ddb658",
+    "response_sha256": "108461350b160e0aae45cc3be025a9f1394e459dff09c00da07cd6f24dc78ba0",
+    "request_fingerprint": "8b51889113d0a8b03c3f449da509f8d6c463e531d3a2942050e7d314339b9333"
+  },
+  {
+    "key": "group/group-1/bookfair/1/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "d319e80506a74398b8dfc4cab983e9d45b5f57924571b7602d68c2c49b502e3c",
+    "response_sha256": "a90eb8cb1943c0744a4a583545b9fa0d7f472f5d641f2a74480bf122fe29d781",
+    "request_fingerprint": "c7c0110f7b505900cac8fd39796ebc6f3d1553e809ef2ba4fc3cf32e9a3686c4"
+  },
+  {
+    "key": "group/group-1/bookfair/1/receiving/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "61e0efab6d4dc7252e57c5b959bd2c447bbc92e9075974f2a5f6923a90a57ba4",
+    "response_sha256": "62ead68684989a9bd28a1f564e17af59fdf039c5ca40064232b8db6ecdeafd68",
+    "request_fingerprint": "7330b6035b2a4a56e57a06411a4f0446000d9bcdd602bd6ea9a519de975df975"
+  },
+  {
+    "key": "group/group-1/bookfair/1/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "ac51edaf7b90cf65e71f23202048b832050e685e9f0ec95942eb9f39c70605fa",
+    "response_sha256": "68615e8c447e8375d4dd7d90e6c2354b26fd8977de58fc80570dd1644fb74b3f",
+    "request_fingerprint": "1ee06409d27c092c986edc4dde2371eee2c0acf811800b32f939177a780c4d7e"
+  },
+  {
+    "key": "group/group-1/bookfair/1/buyer/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "035f0223529aff1d36719156ab5901b8fdd086213a4047a0142ca96ef5ddb658",
+    "response_sha256": "845376b98752830477ec3b1dacae2a1a315354837b6e49aa41946a20becbafe3",
+    "request_fingerprint": "ec505c3986c0eda1673aef8c35124c3f9afb12df4fff8633cbc921a4dfcc28cf"
+  },
+  {
+    "key": "group/group-1/bookfair/1/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "d319e80506a74398b8dfc4cab983e9d45b5f57924571b7602d68c2c49b502e3c",
+    "response_sha256": "329ec53b582bc4f7791eb58029a9d16e87d6f94b005b5e0d200799e25cf4aea0",
+    "request_fingerprint": "fb7e98dd25eb7dfdb3d0058e33a771ee3ed73ab9733cdfa29be911ead832aecf"
+  },
+  {
+    "key": "group/group-1/bookfair/1/receiving/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "61e0efab6d4dc7252e57c5b959bd2c447bbc92e9075974f2a5f6923a90a57ba4",
+    "response_sha256": "dfce326883773b81fda353498d1f22cd125f91377236f97c5d01cfaff0fd5fd8",
+    "request_fingerprint": "ac025174f288ad586ab71048bfc83af3b45b2e3ac2e3a4d1e565012b86246557"
+  },
+  {
+    "key": "group/group-1/bookfair/1/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "ac51edaf7b90cf65e71f23202048b832050e685e9f0ec95942eb9f39c70605fa",
+    "response_sha256": "3dcde13262e6c83f0b8178ed9253df7b86272743ed90056f4ad52f59e3a2f743",
+    "request_fingerprint": "84742f9855a0263940d255dd2dacafadb0c5a0208a133fd08c3c6a1405f758e4"
+  },
+  {
+    "key": "group/group-1/bookfair/1/buyer/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "035f0223529aff1d36719156ab5901b8fdd086213a4047a0142ca96ef5ddb658",
+    "response_sha256": "21add5eb64cd4b7e6a27e8c15b2d7c3eb0239c79391691bd3228222b15261f7e",
+    "request_fingerprint": "34fec14ac304997fec37854e3671e01e0b0198f85efb3ec5cd1f7469567210f1"
+  },
+  {
+    "key": "group/group-1/bookfair/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "e4f72de20c2c75aae2d9a4378d604867492b1bca248117610fa6087b5960cf90",
+    "response_sha256": "6b02564924b4314c0c0ee5b0c31ce9a7b92f58a39bbb45bfd10315c1749f466f",
+    "request_fingerprint": "2ae5696ab9c6367cb9f9d5279277d263363dca654b9a5b05b3c69de07c7e1ec9"
+  },
+  {
+    "key": "group/group-1/bookfair/1/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "32ae0012e06719289301211118708ade91c6adeb0c5cc114c2196a690997fede",
+    "response_sha256": "d8adabd3323c1e2fed96530549602702d697d5b4a0dee4d2a297b240f0cd9a84",
+    "request_fingerprint": "9f94c41ca4d174dc02d1ac90e54073a05d4ba6bb22a2fe1bf7b0c67659ca6300"
+  },
+  {
+    "key": "group/group-1/conference/0/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "fe3d713dd88ff86cd190b5f31a1ffe79e3f3fc61accc50137874806389c3e96e",
+    "response_sha256": "97a21b12983c52f2060925196ce78de90c8fbfca7bb1165cdf62c7233d94ed99",
+    "request_fingerprint": "f9253e5db188bb8d5d231ccb18a63b7a2cd1d0188120f20bf5c704c3b8c472c1"
+  },
+  {
+    "key": "group/group-1/conference/0/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "d13f51b905e5d2d0e0105a115ac432180b9281d9e5ff898b1faba8af10bcb8d7",
+    "response_sha256": "0decdf2cf973d3ef65b17a80568a8b5ebcf7f76d3b8eba1b90996b6ade1cd768",
+    "request_fingerprint": "dcdb95ec65759d50e461d9d75076135827b77081d6d06efeb931f884eee5f64d"
+  },
+  {
+    "key": "group/group-1/conference/0/carrier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "cd0e4c93500a0316228999c8a6fa043bc6e149e45a45be754a0ff35493c68663",
+    "response_sha256": "4644338843c5501ec9cf508490e1bb0096f8d6e3fc4b0b9dd86919385a75840c",
+    "request_fingerprint": "6daf7dc4a6aa210d8358c16a14b394693bc0fa73df46b070a494156d0ce41616"
+  },
+  {
+    "key": "group/group-1/conference/0/buyer/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "d1cc82b83b054676f7104d7bc340cc840261d03a357c0921aa0f3981108afc14",
+    "response_sha256": "229eeec0ba9d0d72bad3ef9013174c8dba3ce42cf9df42b049337f6c79bb070a",
+    "request_fingerprint": "01645c5b3d3559691d7c23986d45fadc3a163db130e5e9df750dd33ca3a1470b"
+  },
+  {
+    "key": "group/group-1/conference/0/carrier/proposal",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "cd0e4c93500a0316228999c8a6fa043bc6e149e45a45be754a0ff35493c68663",
+    "response_sha256": "fd1aeb2176a489e6bf728745ebde54fb46af03657f8d73aa894ada2da4c11970",
+    "request_fingerprint": "3419c8288149f0a0d69e3fc50415ee466c3b650703060b4d7ef7bfcbedf273ab"
+  },
+  {
+    "key": "group/group-1/conference/0/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "fe3d713dd88ff86cd190b5f31a1ffe79e3f3fc61accc50137874806389c3e96e",
+    "response_sha256": "bfcb50ee968bf48bfa8d4b283702f87b73971f5391f7ad161257460c094b57f7",
+    "request_fingerprint": "9269596b3322e39e2b2806427acec31984ca5f006d4a2e7610625e39af007c88"
+  },
+  {
+    "key": "group/group-1/conference/0/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "d13f51b905e5d2d0e0105a115ac432180b9281d9e5ff898b1faba8af10bcb8d7",
+    "response_sha256": "77557b0b09c006608c0e7d5165c3009a68208fada68888fc5b8e122e9932b73e",
+    "request_fingerprint": "ced6b3a4a8b6ab451bac0852e6621359fedd58c305dc079e5b9fbb0c48859b0f"
+  },
+  {
+    "key": "group/group-1/conference/0/buyer/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "d1cc82b83b054676f7104d7bc340cc840261d03a357c0921aa0f3981108afc14",
+    "response_sha256": "28bb8a1b53034e14d0b5b53929e283450a9e431f5fa70c74d1b010c018dc194c",
+    "request_fingerprint": "25f022f5508143f65038cd851c3f531dfec9f62093366154462bfad05290884f"
+  },
+  {
+    "key": "group/group-1/conference/0/carrier/final-offer",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "cd0e4c93500a0316228999c8a6fa043bc6e149e45a45be754a0ff35493c68663",
+    "response_sha256": "25629155e826d807e4f007610e8540e34f98d4faba2efbff4947e0d86209f4c3",
+    "request_fingerprint": "f4e6eb2461d4d880da2d7073d4852595078c7fb731f8be3f372f193b68359ca2"
+  },
+  {
+    "key": "group/group-1/conference/0/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "fe3d713dd88ff86cd190b5f31a1ffe79e3f3fc61accc50137874806389c3e96e",
+    "response_sha256": "886738044815b688d835250276df6285fce0604fe5f3a5de33c5617649075e09",
+    "request_fingerprint": "bc0183f04ebda2ec7f9d6483d3409180645baed4651e453fee76f2bf09c38804"
+  },
+  {
+    "key": "group/group-1/conference/0/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "d13f51b905e5d2d0e0105a115ac432180b9281d9e5ff898b1faba8af10bcb8d7",
+    "response_sha256": "e4b90bbe54b5b05b8a1ec2404bc0046da38d6a8f5f473d22915c4c001029f9fc",
+    "request_fingerprint": "026eab8dc4ae464077a3e4939551ca02c1e8e1b66c81d5f0b8780bb2bf7cf5e5"
+  },
+  {
+    "key": "group/group-1/conference/0/buyer/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "d1cc82b83b054676f7104d7bc340cc840261d03a357c0921aa0f3981108afc14",
+    "response_sha256": "524aca7610d9c4d8bc504d18bd3f9b8209ba25ad186a0187ea46082b3d9940ba",
+    "request_fingerprint": "a44203e7aac83f80d31b1c30fa7bc47cf741931ea46d2e773cb959c2eaafdec4"
+  },
+  {
+    "key": "group/group-1/conference/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "7d4c0d5d07da25514058868198e83768d0c77ab0d8567e5fe051907de4afbda6",
+    "response_sha256": "9e750dc1595007bd91021b2e7e0bb1fff6767e558d46b9b0822e7387de97f8c8",
+    "request_fingerprint": "6707997acfc9840413921490b8f45706e713d96922e8b44071450a1ca825e335"
+  },
+  {
+    "key": "group/group-1/conference/0/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "6c2ae2847f959459504b697e6e51e3c74e3b8b7282f10036a3c5e18f40f2ebf0",
+    "response_sha256": "b7870de7e201a64db716235582c8e38a2fc5ae9999c5b3c53d8433d9be1038fc",
+    "request_fingerprint": "734523084b55d8ed9bb20586bf1b60e76a3998db11f2ca0beb9a0de8d3e097be"
+  },
+  {
+    "key": "group/group-1/conference/1/supplier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "bd59e27a4cc0f09f861c28a05b3d947d6cd17ccafe1153ff91e1dd1561fa3f9d",
+    "response_sha256": "5cb308955f1b41030cb76cbf3e933ad702897c25b3782046beeac20417040c2c",
+    "request_fingerprint": "ba4bb725f97e43f801e18a4965de73c51617352c88aea546abb55fe3d46b9ccd"
+  },
+  {
+    "key": "group/group-1/conference/1/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "94a09b898e69a56835226f3a2d2baa73fb60cc7bc59b157aa95887bb03bf5d07",
+    "response_sha256": "387ef179cc25e96ca77eb7b0fbeb0c5c0d272774f3f3884103a434ce16207804",
+    "request_fingerprint": "33c6a6a5a8c757fc1154ab9f6576f8406cc9ca5fcbb993dcc24aa44435eb84f4"
+  },
+  {
+    "key": "group/group-1/conference/1/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "ae84d5acf824f0a89e5ec455d22c772b1eb0e553a952fddc042ad5f61a2ccfdc",
+    "response_sha256": "24c57e03bbe965a83ab342b7f9169ed31a0f3a066dca91d9dd956df5630286cf",
+    "request_fingerprint": "64f1cd1bf3f9d8e97a7d4b5bbc2d47ece46ae5ef8dc23a3bb687de1f85abb3b9"
+  },
+  {
+    "key": "group/group-1/conference/1/buyer/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "9671f28ea252d6ca51dd3f43082428e76b4d68fa8fdccafd21f0db003a46d03f",
+    "response_sha256": "3c9c40ebd18e20f5405241afe2f7336f7d814c199eaca2f563af31e3b1e063e3",
+    "request_fingerprint": "7814414a757e9b5edec4bae5ed4b46bbf0ea91dc2beabef049e61f16657b7fb1"
+  },
+  {
+    "key": "group/group-1/conference/1/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "ae84d5acf824f0a89e5ec455d22c772b1eb0e553a952fddc042ad5f61a2ccfdc",
+    "response_sha256": "4694a0b796751731ad15ba9d9dfa9abcff260db40ef7671dfa8274bfe45b5d02",
+    "request_fingerprint": "7c95b64a64546f69178a0b093e2d88ff25bee3a7494a860230dd2b0fc875035c"
+  },
+  {
+    "key": "group/group-1/conference/1/supplier/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "bd59e27a4cc0f09f861c28a05b3d947d6cd17ccafe1153ff91e1dd1561fa3f9d",
+    "response_sha256": "1375a9f03e35e400ee1478f866a057c8d503783ec2038f6080d71a6d197b5dbc",
+    "request_fingerprint": "d231bf816b165b5e5655e82f9dfb1f8b5332aa457c5892a95179f5a0da23ca94"
+  },
+  {
+    "key": "group/group-1/conference/1/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "94a09b898e69a56835226f3a2d2baa73fb60cc7bc59b157aa95887bb03bf5d07",
+    "response_sha256": "284e41d779ba2276e866b667235aa5a12ecd8ddf4042eb84f8a622e83558ac06",
+    "request_fingerprint": "ddf202340ccc0e869a459dbb58d24b3f3b37d369018224d4f3cec837ed7ba68e"
+  },
+  {
+    "key": "group/group-1/conference/1/buyer/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "9671f28ea252d6ca51dd3f43082428e76b4d68fa8fdccafd21f0db003a46d03f",
+    "response_sha256": "22d48d5df9633d33ac4bd44c40e994b447aa194dad297176ce6ce2c9b7c0cf89",
+    "request_fingerprint": "669269bdabc36c411175f06530ac7b97606bc50c9106299131cb678d4d51bda0"
+  },
+  {
+    "key": "group/group-1/conference/1/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "ae84d5acf824f0a89e5ec455d22c772b1eb0e553a952fddc042ad5f61a2ccfdc",
+    "response_sha256": "c8037165efd8467e535a70c349c06e07d05391bf30fd60ba29d8f55482dd9a50",
+    "request_fingerprint": "1d2a4283fd1fe6e85e02e4ee886e59ffc3b6ba1952b1b7c7be3964b819f313f8"
+  },
+  {
+    "key": "group/group-1/conference/1/supplier/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "bd59e27a4cc0f09f861c28a05b3d947d6cd17ccafe1153ff91e1dd1561fa3f9d",
+    "response_sha256": "84f1cfb831b2ecbb3b5d511bb3467d05128a0c9b033265a5e744e25f0af34594",
+    "request_fingerprint": "053b6085443f5691a6d2d1ff1b03fac58737163b6edc663f37abc1adb878dd64"
+  },
+  {
+    "key": "group/group-1/conference/1/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "94a09b898e69a56835226f3a2d2baa73fb60cc7bc59b157aa95887bb03bf5d07",
+    "response_sha256": "a71e23ed549025c6e817192107ff983672893d520e6302145e705bf8372eb269",
+    "request_fingerprint": "7a59a14b808927006e130131509299f199162386527805efc33fb50ac30cc4cd"
+  },
+  {
+    "key": "group/group-1/conference/1/buyer/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "9671f28ea252d6ca51dd3f43082428e76b4d68fa8fdccafd21f0db003a46d03f",
+    "response_sha256": "e3ab8e5c04da4078a4eecbf99ae791f26452dd8a70a56a6b93e54dc6a4dca4eb",
+    "request_fingerprint": "0d179902542b26a324e9150ffadf935118fab1cc01447145b402686b2f508b01"
+  },
+  {
+    "key": "group/group-1/conference/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "be5229491701a1b7bdc952b65247c906614ddb5d425f73d665dac06d698446d0",
+    "response_sha256": "2eacbf368aeb568076dfd28e59ade210abd952d1e535678ae67366d9ab2566e4",
+    "request_fingerprint": "c7710c71a54f78143beddc6a3a6603266302bac8ad7a60b2d3337a40c432636a"
+  },
+  {
+    "key": "group/group-1/conference/1/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "afaa713d30feee42d426e040bf6ba4743f8f0d25cf1b07110bb8aa34d543bd01",
+    "response_sha256": "55764c8e540fe7457d37feab42405a801e020cb9d2302946b6f686a5cdd62491",
+    "request_fingerprint": "d4ea514c6ce155cb9aac54ef9a44adf22160522f2273000af18b1e05834dd388"
+  },
+  {
+    "key": "group/group-1/fair/0/receiving/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "e1c95ae378bc6e1e6a113318e640b91b8db569383a19921004eea3188a662814",
+    "response_sha256": "ec6a092470c3ecc64d7a12fd8811b5fb8a58d5a46145df5fbfb2a3b36987bf26",
+    "request_fingerprint": "9d414b589b7a6111cbefa9be7d6e435659a2254fc99ed8b9ebe2d8275dc274e2"
+  },
+  {
+    "key": "group/group-1/fair/0/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "812591a9aac510e68de1ee272eca230310bc50804dafc18b44ecd7f8a823728b",
+    "response_sha256": "6bd226df0f8a4c2db8ed1d9e88b3925542c615096cd7f73cdae644dbcdf41069",
+    "request_fingerprint": "21524c8d416013959a95f1ad9b8a72f1446407944d837eb3252ff03d55d63a80"
+  },
+  {
+    "key": "group/group-1/fair/0/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "8612d115fd6eb053b9fa6f7d5ef6e85dd86b2832d6bdf4468f13a82ba7bc1875",
+    "response_sha256": "07a9de4e806cd179fad2f928175db3409aeedb0c9078f6df05e2b7fd03ffed18",
+    "request_fingerprint": "aa420e2a9b9a34ea873b5ce1374212e72044599bb278f299b1e6b34b3167bb9a"
+  },
+  {
+    "key": "group/group-1/fair/0/supplier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "5e56c1c00396622f18aed67f79fde0afe9cfeb3b92355e6c6a6aef4fc16d0273",
+    "response_sha256": "997dc1f402cff6c77052a649c2f0f021d42b0bc3b4a1c0445099da766ee6b497",
+    "request_fingerprint": "796d5f0e77cb1915568bba8082f3c4162a9c5e380a1212da96c08ec86d63eede"
+  },
+  {
+    "key": "group/group-1/fair/0/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "8612d115fd6eb053b9fa6f7d5ef6e85dd86b2832d6bdf4468f13a82ba7bc1875",
+    "response_sha256": "c8c78721ae286a453ff1d2deb5fa9b7e555b89de811ae33e4a07e60835538a76",
+    "request_fingerprint": "282874f1460eb5353df0d5255b7c4adaaf5221bb5f975657b0c216ecf72ab037"
+  },
+  {
+    "key": "group/group-1/fair/0/receiving/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "e1c95ae378bc6e1e6a113318e640b91b8db569383a19921004eea3188a662814",
+    "response_sha256": "97fba89481884da557d23d08f2d85020a35ef933f2ba90345c4f0a6f8671ded4",
+    "request_fingerprint": "bda54725100d6943caa09e283d2d4f8b2352a52b61f6def554189abc7c0aa834"
+  },
+  {
+    "key": "group/group-1/fair/0/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "812591a9aac510e68de1ee272eca230310bc50804dafc18b44ecd7f8a823728b",
+    "response_sha256": "168702143eb5d7b4cce0652962b6df2db8cce3838f1568a3a53359d5f380d3c5",
+    "request_fingerprint": "fcadddfba6ea5853e53615db414f167aca960b92c2dd63ea51b587d0514e7f28"
+  },
+  {
+    "key": "group/group-1/fair/0/supplier/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "5e56c1c00396622f18aed67f79fde0afe9cfeb3b92355e6c6a6aef4fc16d0273",
+    "response_sha256": "e163b883ccad3c9f646b36c68ecff0a5a0eb8dc06d0422e093dc71b4f46e20eb",
+    "request_fingerprint": "c1073e65e6e396898817d1c72063e6d5c198b5c38f49cf54ffc1431a67fece19"
+  },
+  {
+    "key": "group/group-1/fair/0/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "8612d115fd6eb053b9fa6f7d5ef6e85dd86b2832d6bdf4468f13a82ba7bc1875",
+    "response_sha256": "d6b6034655fac65f7ed37f836d2b58e78a0c85defaa90481ebc503ec715e2c59",
+    "request_fingerprint": "4ca2a31a9e54b832f2d90fc53c7c5ff4820bd211eb799ea080ae01154a10e690"
+  },
+  {
+    "key": "group/group-1/fair/0/receiving/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "e1c95ae378bc6e1e6a113318e640b91b8db569383a19921004eea3188a662814",
+    "response_sha256": "2e2ef1f94e30403f3b8e134ef5b77ba42904dd4c6476cee70685d433ee339819",
+    "request_fingerprint": "e38e2e2c90366637ffcde4a3e62396e3665efbb9a9a260fbbb0165e8ac26288a"
+  },
+  {
+    "key": "group/group-1/fair/0/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "812591a9aac510e68de1ee272eca230310bc50804dafc18b44ecd7f8a823728b",
+    "response_sha256": "644ce8a46e16b78313dbb738b4ed8f35852daaf4129f852cb28dc34591eaa8c7",
+    "request_fingerprint": "ec219529b73c3fb015f7fbd5490795e666f92a0b8e4a321fd8b2df7c57900268"
+  },
+  {
+    "key": "group/group-1/fair/0/supplier/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "5e56c1c00396622f18aed67f79fde0afe9cfeb3b92355e6c6a6aef4fc16d0273",
+    "response_sha256": "44f24404916ad00d20e4b11bd5c805bfcbec467e7bb13fee634b200adf2cf761",
+    "request_fingerprint": "f1d86c6a8165a05fa4d971779c4f6f9990ff1e28ac42179ab8c8eeecb62d6ec1"
+  },
+  {
+    "key": "group/group-1/fair/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "f6df56664764a69625c996e0981aa7c5dfc185268e4422e5e50a2bd4244583c5",
+    "response_sha256": "a02c15f40508f77570c3aee95951d881f2b9fa12aacd279dc21740afed5039eb",
+    "request_fingerprint": "870c0d97de1287464de0f9dd3f2c8bd44aa2e92bd3174c245303be1ee7518808"
+  },
+  {
+    "key": "group/group-1/fair/0/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "801372fc88a2a996c27e553a23428840c395304209a87543aa7f2d04cd46d329",
+    "response_sha256": "9bea1952461774d7d735a690be38034cdcc27bd3ac6a1656718d810d5c38df7c",
+    "request_fingerprint": "79498a78abacc990ab6bb06bbc392e6e213efe20482d1dbcae6a1645baafda07"
+  },
+  {
+    "key": "group/group-1/fair/1/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "b7b06d91cda504c9483c4b8d3e52fe6241d0b92cce7ba00f3198db952e079f88",
+    "response_sha256": "7296d7787200f9c6c299d081b3dd341d883adb5f2bc94540749ecf11727245d9",
+    "request_fingerprint": "598ac2c914a8563451a883d95808e1222e1ac3e484379d8fac02bd6044a3809c"
+  },
+  {
+    "key": "group/group-1/fair/1/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "146d6f23501173435f17d8ac0959cb9f663433ed0e8081e61331e5b51be07cfa",
+    "response_sha256": "ea46c241f3f758733dde3992c94f05307d276d09dfedbcdc604514f976a1b378",
+    "request_fingerprint": "c95574aa1cb8c5b634321d89398cc3a44365aac28018ca883c8242033e9e3911"
+  },
+  {
+    "key": "group/group-1/fair/1/carrier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "ba8216f1779cb5c5233167850b45134fdd8657dac69a3bd4a94fd13224d7e8fc",
+    "response_sha256": "46bb8750acb5ef914790d40909e2eaefe3d129d844a010e7317baed231259c9b",
+    "request_fingerprint": "4e5c7b12bb84f329829f7ab61c273250e965d3aff61328b4a6f30e0c67a0ee9a"
+  },
+  {
+    "key": "group/group-1/fair/1/supplier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "11f31a656c5585980841eb9feef01304a8a1d266235ea86543bb1001d3d3edaa",
+    "response_sha256": "9449f4d0609d30ed94d9c1aa21dd195d7e5e4b5a304f2dbd9ec2b1627ebb2b8d",
+    "request_fingerprint": "eea8db31efcda103d997ac74c89bda1170e676c2650a6533cfacdb881e552e89"
+  },
+  {
+    "key": "group/group-1/fair/1/carrier/proposal",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "ba8216f1779cb5c5233167850b45134fdd8657dac69a3bd4a94fd13224d7e8fc",
+    "response_sha256": "01785b4bbdc089357d6dc462004a2f5141e296d65f0c570ee5a0b2574e2af83e",
+    "request_fingerprint": "5a855ac1511e511d646cc6cbae883a0d79c5453fa4f8d8edd16ead0d77a3de24"
+  },
+  {
+    "key": "group/group-1/fair/1/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "b7b06d91cda504c9483c4b8d3e52fe6241d0b92cce7ba00f3198db952e079f88",
+    "response_sha256": "13927f91423dac4a4eeda8606e06c9753a04f5c77a4dd1da66b01ab9bfc37505",
+    "request_fingerprint": "003be860f992b94f5d0dbea8c05af4fd857a76ba4da7cbbc853db5551e5a88e7"
+  },
+  {
+    "key": "group/group-1/fair/1/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "146d6f23501173435f17d8ac0959cb9f663433ed0e8081e61331e5b51be07cfa",
+    "response_sha256": "bc9f2e3765e60c4196f5496295a68623c2cbf2eade59b316fb5abfb4e908e0a7",
+    "request_fingerprint": "cd098b0b06d95a0289e250809f0315a19a848d73b51524b7fe3fdaedad5345e2"
+  },
+  {
+    "key": "group/group-1/fair/1/supplier/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "11f31a656c5585980841eb9feef01304a8a1d266235ea86543bb1001d3d3edaa",
+    "response_sha256": "f41aaadd5038c95a9385fda51a96f6adcac47fcc55915bf227c07f6dbb21eefe",
+    "request_fingerprint": "e0d2e7893cc6dfc8522cd309ad1a09f5195954af3a72f1750b8c4bb3bc61c86f"
+  },
+  {
+    "key": "group/group-1/fair/1/carrier/final-offer",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "ba8216f1779cb5c5233167850b45134fdd8657dac69a3bd4a94fd13224d7e8fc",
+    "response_sha256": "9057e27ba709644f35130527d9f32ef85038fd23a36af7c8f04f5f8decd06fc5",
+    "request_fingerprint": "b4612d0c31721066d4d633d5c456821871d7e43539ae00442babc4fd85cd4a7e"
+  },
+  {
+    "key": "group/group-1/fair/1/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "b7b06d91cda504c9483c4b8d3e52fe6241d0b92cce7ba00f3198db952e079f88",
+    "response_sha256": "67db401a78c13650730f0ec43d4aa2ae6a19ee40542b27532526befd852c6521",
+    "request_fingerprint": "4dc701ff807a898c6bf2fe5e0d81526adfae1d2df4f4d5d534aec7465e6e97cb"
+  },
+  {
+    "key": "group/group-1/fair/1/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "146d6f23501173435f17d8ac0959cb9f663433ed0e8081e61331e5b51be07cfa",
+    "response_sha256": "ddd7739313015c0cd26d8a43726190d3f3ffaf37bd12a82d5a456d73e536acc2",
+    "request_fingerprint": "080feb191caf312eb73c7ab6ec1dde4c8bac77be525b9287362cb3d2e1bb48cc"
+  },
+  {
+    "key": "group/group-1/fair/1/supplier/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "11f31a656c5585980841eb9feef01304a8a1d266235ea86543bb1001d3d3edaa",
+    "response_sha256": "8eac6a47f0fc97b8aab7f1d1a4174ac91dffab1d98fac8902c8dd4bdb08b4b1d",
+    "request_fingerprint": "1d5b39c9a37f93754183d28096eb6599f09c6880fc7461a8fa5c7ea4de9ee057"
+  },
+  {
+    "key": "group/group-1/fair/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "b1cb5fef09a7c47e660ab7bddb14387dacaa18e6a29f5a9d7bb1aeb11d50e9dd",
+    "response_sha256": "6c2a403b1dd84bf2bed68e81e3b5a682f80989762eec22ab3e6bbeba9b9c24b1",
+    "request_fingerprint": "c7f3e190ab7d1ff612fd87321870dfe46d0d3bfb12d5d88511b4e982a1018c34"
+  },
+  {
+    "key": "group/group-1/fair/1/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "e2bf1a6f86aea5de5bccc4e198521d024719dc9cbaa19eb2ef873f5cdd1c3e75",
+    "response_sha256": "6faddbff32992565c938d0c75c7e4cac965e66a7acbe890c6d106890850f463a",
+    "request_fingerprint": "0e6987aa0b63903a39965baf8a70e36ab6d063ceb3af44645c37899b74835ce5"
+  },
+  {
+    "key": "group/group-1/festival/0/buyer/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "d8a6672e111ce5f35d7ea1a0dece4b2dc408ecab1b4bed7d6f2c72701469f6ee",
+    "response_sha256": "68e6d03e58f1a918d0d0e2bff5b48a71b4f8b10c93406d65d1831874c90ff8ad",
+    "request_fingerprint": "1ff87fb5bc125eb4aee615661a0d85a233837eab161c38ef33ed982a9a2044bb"
+  },
+  {
+    "key": "group/group-1/festival/0/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "94c867b6171e4fee1869d7aa3fe65c7e8932430854da1a23c98e78ba04736c08",
+    "response_sha256": "751f55cd58c3a5bb00a48907103c2b947b4d5bf2bb327549bebcad091e09225f",
+    "request_fingerprint": "ffe4cd0ec2962dd5134c1926732260b946fb1311ae59a91c265128193d41b5b6"
+  },
+  {
+    "key": "group/group-1/festival/0/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "67cc3902e121f8447efb14e83761d64c3d34a8cff963b573aa58415932e2f7d7",
+    "response_sha256": "3915d825df5c4ffcec3b2f79ce362c0871a68bec38009af1de8c4a594a30e05a",
+    "request_fingerprint": "f10d9d8083e8a0e20f6811565b2366e988d4b977032f42108e7bd2a6f0713980"
+  },
+  {
+    "key": "group/group-1/festival/0/carrier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "5e841f6e31001bede81001a8fce3459158f708e4abf5e46bcdd0047203ae517f",
+    "response_sha256": "aa29e53c8121a1a5bd095ec62f386d938e6d333ce349fb9cb9fb3f6637c77060",
+    "request_fingerprint": "517997cc3b51cacb343e5f2ed6c5ec8ca1324df97dc4b8584737eb86d8126969"
+  },
+  {
+    "key": "group/group-1/festival/0/carrier/proposal",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "5e841f6e31001bede81001a8fce3459158f708e4abf5e46bcdd0047203ae517f",
+    "response_sha256": "fe0ef65d090f1ece20827c20f9fd218818f0fc90af908d10081d20714c7c1495",
+    "request_fingerprint": "755496e8042ee699045d0406182536e6a85d62f5f9ddc0ab9edeff59d535ffaa"
+  },
+  {
+    "key": "group/group-1/festival/0/buyer/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "d8a6672e111ce5f35d7ea1a0dece4b2dc408ecab1b4bed7d6f2c72701469f6ee",
+    "response_sha256": "19155b40ca359f7b2d264bbe49e38650e9b76e11c4fa6ee5cc956501f5994951",
+    "request_fingerprint": "95ff330833b8c3cd45c9aee90e2ee5c5ea5a530c77ca8072d8bb12659914f5a6"
+  },
+  {
+    "key": "group/group-1/festival/0/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "94c867b6171e4fee1869d7aa3fe65c7e8932430854da1a23c98e78ba04736c08",
+    "response_sha256": "ba24b2f1feee0de28d923117b9af09fd2587b5d9826523fd2421616b74635e01",
+    "request_fingerprint": "ad2bea75d4734ca40f61ab85594586b7ca07b6b2d4459d3297814e67ab4941f0"
+  },
+  {
+    "key": "group/group-1/festival/0/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "67cc3902e121f8447efb14e83761d64c3d34a8cff963b573aa58415932e2f7d7",
+    "response_sha256": "70e8f02b2d5dd97b1a7a8c90cdae294562219badeb2aab7ef88dda29adaa1a99",
+    "request_fingerprint": "79d4c6321a7ad0deac56eb403621db7a90de9da1d210010f2da442b2d005695a"
+  },
+  {
+    "key": "group/group-1/festival/0/carrier/final-offer",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "5e841f6e31001bede81001a8fce3459158f708e4abf5e46bcdd0047203ae517f",
+    "response_sha256": "925cd5cd220994ab5de3a0d661270a05595fd42c648245a9ebe54036ba88329e",
+    "request_fingerprint": "f78ab22fd9873f1a900d7a7cec262677b5fda84a896a194153ae6a45079b8d39"
+  },
+  {
+    "key": "group/group-1/festival/0/buyer/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "d8a6672e111ce5f35d7ea1a0dece4b2dc408ecab1b4bed7d6f2c72701469f6ee",
+    "response_sha256": "9cfc4635596d11292bded1d1a1ce07232ee16aedf81fae75b3da9aec654b76c4",
+    "request_fingerprint": "dbe24ef7835e730aeab0e9e19bfbbd4ada2eb2f4e3b6a2e251ecbf89858b181b"
+  },
+  {
+    "key": "group/group-1/festival/0/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "94c867b6171e4fee1869d7aa3fe65c7e8932430854da1a23c98e78ba04736c08",
+    "response_sha256": "89e54a653a3aa40d7583294d40acf4f7dbf407ae5d8578edb8ef002136ef2fb0",
+    "request_fingerprint": "78e991dddf70b3c8fd4a3282c092294700a3663aa8ec64dd41adf552a9666928"
+  },
+  {
+    "key": "group/group-1/festival/0/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "67cc3902e121f8447efb14e83761d64c3d34a8cff963b573aa58415932e2f7d7",
+    "response_sha256": "ec61c0dbc1dfb301273f59a41ce55981f8a6ffbc26a0d18244344cf8b932edb3",
+    "request_fingerprint": "478248783bab82ce60b684c4e27f4cecd6c366ab84f69807812d623fb5ed540c"
+  },
+  {
+    "key": "group/group-1/festival/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "69dbdc82462c5ca285c8fad600b84ce5d95260b1a6b9c93b86a8cacc8f2ca0e1",
+    "response_sha256": "17b6ef492a4530ef5c347757c4856cea4fb14c8ec9a283c55f9ff13ba66b78a2",
+    "request_fingerprint": "4a56a666d0d0cf5e2ebe8e7a0cf7768e6987b1d5c12971cf8ac6953e967a8369"
+  },
+  {
+    "key": "group/group-1/festival/0/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "773c4d4e6903fe98bee39e437f2d06c3c95dfb494f87f4a093f7a94ea49447d6",
+    "response_sha256": "e604673dad11301f3455fc5319d9954d92bbb35672e9560c21c571726eb64330",
+    "request_fingerprint": "c600ddeffbdb657caa24081e2e3bf816c4ae2f8b226370360d13917bdf81cc13"
+  },
+  {
+    "key": "group/group-1/festival/1/buyer/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "c6542c2b49a96fd81c9e9e0b3f1b6a679ba0e37fb9e00ad0f39b9080db62cb11",
+    "response_sha256": "8c499403971e256adc073727a50bfc4501f9188fcbc78c05d8d2e989112ab306",
+    "request_fingerprint": "3925497bcde4bce56159a4075aed2ed2e1ef3510692891cdcde831ad62c2daac"
+  },
+  {
+    "key": "group/group-1/festival/1/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5ee8c2e144bacff4648e59998bbe4c927a1feeded2c6b136f20e1fb10c308189",
+    "response_sha256": "bb1117c22c45667e9856755b94af079e0cab0ff54827478b1fab7120d74b9005",
+    "request_fingerprint": "d45a70a7ce9e61203db70a72b720d136d2d791a98fbb8c5db3146948d98b1f77"
+  },
+  {
+    "key": "group/group-1/festival/1/supplier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "d46aee21bd2be73c34593a88e5e21723e4b368aa270a1c795e938609b9ca35cd",
+    "response_sha256": "10073ae22d5d26ffc30506405322e2759f80f4b755225fe2fbda67b3e66e1a93",
+    "request_fingerprint": "346ca41274a7e99f20345b35fe62d88a2f58afa244e12862f4db25c382c2fb71"
+  },
+  {
+    "key": "group/group-1/festival/1/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "f0de8510625d20a4d94f892ccff79b9438dbc459864850b7ed2b981899115b9a",
+    "response_sha256": "3703ecdd43ea6f8eb5d4f1230e3e9b3b808766c90affec226609f492046b4353",
+    "request_fingerprint": "aea949c4c214f270a75f984fa195a743c625439bb81512a98cb14dae1238c8d5"
+  },
+  {
+    "key": "group/group-1/festival/1/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "f0de8510625d20a4d94f892ccff79b9438dbc459864850b7ed2b981899115b9a",
+    "response_sha256": "204ef2239a84de5559cfb2fb90e007e24bcac3f85519471bb05c156b99512644",
+    "request_fingerprint": "7d57b6e561ea80d0142476951c2645e3fc04e4fdf8c74dd90510c4ad83ba1c5c"
+  },
+  {
+    "key": "group/group-1/festival/1/buyer/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "c6542c2b49a96fd81c9e9e0b3f1b6a679ba0e37fb9e00ad0f39b9080db62cb11",
+    "response_sha256": "f77e4889ea577fecd6a622aed967308439c59dcad92bc748e7d16f7649321bb3",
+    "request_fingerprint": "258ab25df60d882a19f39789268e069149d52f567fa5001ffacc520a1bb3b665"
+  },
+  {
+    "key": "group/group-1/festival/1/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5ee8c2e144bacff4648e59998bbe4c927a1feeded2c6b136f20e1fb10c308189",
+    "response_sha256": "f6400b073fed54e66764a7ba103646caeb29ca48a251802d42e16f7a844cb31b",
+    "request_fingerprint": "ded829080f16f42da144b1e970b2fc8600103235c9b45056e4b24ace666e57db"
+  },
+  {
+    "key": "group/group-1/festival/1/supplier/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "d46aee21bd2be73c34593a88e5e21723e4b368aa270a1c795e938609b9ca35cd",
+    "response_sha256": "6fe81f7556fd7bd0cbc9f5223057ff4145bb6f2b774b562ef11df8c09cd3ef98",
+    "request_fingerprint": "52665ffddacfa52d4fedd19ed30075db20e5849db0229edb0b6337e1f2c4d11e"
+  },
+  {
+    "key": "group/group-1/festival/1/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "f0de8510625d20a4d94f892ccff79b9438dbc459864850b7ed2b981899115b9a",
+    "response_sha256": "b9d1644ab5aa83de775d0b58066c18f8e6e857487506bb27192b22ba30ff847f",
+    "request_fingerprint": "a95f3abc6ad6b7b74ce7eadefcedfb7b8bef771804fcbb036b390e1171a2fd55"
+  },
+  {
+    "key": "group/group-1/festival/1/buyer/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "c6542c2b49a96fd81c9e9e0b3f1b6a679ba0e37fb9e00ad0f39b9080db62cb11",
+    "response_sha256": "052b521ab87ad6668e4e9be69af3344d649c4af1d022b1140462efebfbbb133e",
+    "request_fingerprint": "8482fb59f1eb21a4137f9c0af739f45f7f7fd581ce4861da6024491f39ece6d9"
+  },
+  {
+    "key": "group/group-1/festival/1/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5ee8c2e144bacff4648e59998bbe4c927a1feeded2c6b136f20e1fb10c308189",
+    "response_sha256": "06fc8a7fdd04e78167631ae05aff29ac20b12e233da6ef7d98abdcb4400f797b",
+    "request_fingerprint": "9cd6294f5d28601d9671423db86c9bbfdf413c276ee75720288757e5f4b5e656"
+  },
+  {
+    "key": "group/group-1/festival/1/supplier/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "d46aee21bd2be73c34593a88e5e21723e4b368aa270a1c795e938609b9ca35cd",
+    "response_sha256": "6c008f1e58d20cdd292fb648786028345efcd101ccc318014ab2efa7e0de3635",
+    "request_fingerprint": "06a4bc7d5eb275f40e6c945496e747d10c0cbf28ae550a2f583e7e4754f583d2"
+  },
+  {
+    "key": "group/group-1/festival/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "ce3e7103a59cc07c078254d6b59705b360b2dc6d20c99b31222fcceea3d47130",
+    "response_sha256": "8d644ab7297ac0f32dc7bc51da0401e44320c6f68d280f610c12dc4f45d03abc",
+    "request_fingerprint": "da8a4eb89920721b74a3a132ce5b70a056c9877ed34d38f746087ba0d81e77be"
+  },
+  {
+    "key": "group/group-1/festival/1/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "2e62b093cf7c4cb3f07fbffd9b41a89dc440776cdae50803a41f4145e9628411",
+    "response_sha256": "dae41a520446f058a458ad21a51f2f6f51e34c5cab47e33b255c74b388393916",
+    "request_fingerprint": "118b38a4272b4dbb74d37a843e0bf525a445235986c4338c71b7ea14f7c3df6c"
+  },
+  {
+    "key": "group/group-1/film/0/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "39c0f3e4eb54c14efd9cdf986dc7360353bd6ba896d02d6e4f2f8d38c09e515d",
+    "response_sha256": "dc1965823e5d0b1dcf274f6e7390ecd9a13b9977d23a5bcd443e9ecd2b0bc69d",
+    "request_fingerprint": "9a44d2ab0c856be3f86c422fc83f5b7666e4e573b394970d5025bee5dbea2020"
+  },
+  {
+    "key": "group/group-1/film/0/receiving/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "10f61ddb77bf677c4a952bfb67883d1e8f3b789053ee1f6187efc0c00571da52",
+    "response_sha256": "0a94a5859c50745ee7137b4a345a01d3e5c64db20675d7043fe172df42b83619",
+    "request_fingerprint": "dfb189b11cb600f79b57ade39bcb54578779b807758d48ce67905029222c5f46"
+  },
+  {
+    "key": "group/group-1/film/0/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5b87f74c1f0087cc1edd8b20ef5deb99117811812c35dc5434b92bf95c0cd302",
+    "response_sha256": "86fe9d87d69dfbbbd7d02966f858ecece2b230ad47ef728b14f76c06aa5d89c2",
+    "request_fingerprint": "fad8833036dcfe9aabed0d0ed8df03a095e220293f367b6c060105c6ee8634ff"
+  },
+  {
+    "key": "group/group-1/film/0/supplier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "afa55b5cbef20f4ff2b6d03d81f0e971309c003333dc95160d0b879a91fc1a6e",
+    "response_sha256": "61aaf122188455102ad266961445b72ad87a47d043659f0465041b9cb9af9309",
+    "request_fingerprint": "33e6032d0ce9b0e0bb9e96374771e23dc17021b849f9fcfafdab573815a4b501"
+  },
+  {
+    "key": "group/group-1/film/0/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5b87f74c1f0087cc1edd8b20ef5deb99117811812c35dc5434b92bf95c0cd302",
+    "response_sha256": "f40e79ac5c3bcfafd4de9e306110c510bead83136f289db766cde8369e7f33f3",
+    "request_fingerprint": "ea0a08f51b7bbad0bf689a9f0f9398ccf606a985754b95e9a02e39bf0023ff08"
+  },
+  {
+    "key": "group/group-1/film/0/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "39c0f3e4eb54c14efd9cdf986dc7360353bd6ba896d02d6e4f2f8d38c09e515d",
+    "response_sha256": "19677c4d12187b1a65f14d352e503ea71e55ecc7ac7bd69f0eb2c9bfe6388114",
+    "request_fingerprint": "aa5a347543154740073b5b7b1a6d821ece4f9c2ed4550ec3ce5de37f9e57689c"
+  },
+  {
+    "key": "group/group-1/film/0/receiving/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "10f61ddb77bf677c4a952bfb67883d1e8f3b789053ee1f6187efc0c00571da52",
+    "response_sha256": "f03078578e20c7852dbc4464618b05b84702b93b4b050a7f0778a5afbe18f764",
+    "request_fingerprint": "01cc1602c8c975d0a763f8707fc58eb0d70e79d7c6123de031800d78403aa1a6"
+  },
+  {
+    "key": "group/group-1/film/0/supplier/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "afa55b5cbef20f4ff2b6d03d81f0e971309c003333dc95160d0b879a91fc1a6e",
+    "response_sha256": "eb6385ac46eeb604d56cd6b540bb233ac9a5670d413eb23f2d6c195183c12012",
+    "request_fingerprint": "b81252a79a9a26bbdd93364a1807a0b6f654bafb678ddd307164e169447a70b0"
+  },
+  {
+    "key": "group/group-1/film/0/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5b87f74c1f0087cc1edd8b20ef5deb99117811812c35dc5434b92bf95c0cd302",
+    "response_sha256": "ab26a26d50329dae7e4f6daff3371b9f41179c3a16dc251ba1270249f44acc95",
+    "request_fingerprint": "313358ad27e03987fc6978df9457c10b781ff2d0de5f6f9662f1072fca4c7320"
+  },
+  {
+    "key": "group/group-1/film/0/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "39c0f3e4eb54c14efd9cdf986dc7360353bd6ba896d02d6e4f2f8d38c09e515d",
+    "response_sha256": "e87a184df066649d3079f021ea6659e4ef7843299dbf6238e23b96cb1c8d75cf",
+    "request_fingerprint": "b33600d4d94d963fffc4171bffb2a59761adf2caac81a64532fdcbfa379e9e84"
+  },
+  {
+    "key": "group/group-1/film/0/receiving/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "10f61ddb77bf677c4a952bfb67883d1e8f3b789053ee1f6187efc0c00571da52",
+    "response_sha256": "e951acfb1b31798bd8adb6aed36413682874d71b9dd4073e86e810ab20d878f5",
+    "request_fingerprint": "9fe8370fd02ad0b69952163bf58c9ebf7b242591d08c789088e4e2e9bffcbc58"
+  },
+  {
+    "key": "group/group-1/film/0/supplier/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "afa55b5cbef20f4ff2b6d03d81f0e971309c003333dc95160d0b879a91fc1a6e",
+    "response_sha256": "045a2207e59abf0a5412650014bbbad0109dd046da7f9cf5c38f62141ce286ed",
+    "request_fingerprint": "e1130d5d4eb438c241601e8913e468a48aef3551483ac765c50a78a5f60375ed"
+  },
+  {
+    "key": "group/group-1/film/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "3941e16dc95b56ec0a412a8500e7b7606b803044b73b68ebd76c78211ec8e3d0",
+    "response_sha256": "de155586510336d7b42344667d500bc8f35b35460ddc5042690df63ace535bd1",
+    "request_fingerprint": "65f4f489eb67c5bfa00bb3f374d2be60b45a1a0c9bb9471c25f570851f895562"
+  },
+  {
+    "key": "group/group-1/film/0/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "a5e434b3fb8528f7b9341977a4aecdc709791357d68d24f692b08e86bcf4e07c",
+    "response_sha256": "536f54f714b4705f0c4c94ab16f0f23af44fcf35e60791290922e1bb660b6270",
+    "request_fingerprint": "03867208c3fbfd283864fa581d47ee86bef97055c8c357173c0844baff0ee408"
+  },
+  {
+    "key": "group/group-1/film/1/buyer/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "2369cfc6f84220a6de17c0b329cfc59039f22bab5300250898fccf0bc263cbd5",
+    "response_sha256": "86b08dbb16606c838dac9fa8f645ceaff60496eb672885d08e875f251ac354ef",
+    "request_fingerprint": "e97c86f2c1c273fe509990fd9de457e8b1af2bf78aa45475bc9ba76a7f4bb5ff"
+  },
+  {
+    "key": "group/group-1/film/1/receiving/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "bd70679b8d34eb6188d97b4777af1eb8ce320b1ebe85b3147460382adf260ac4",
+    "response_sha256": "be8528ea07e29693a31a2cee5fc76f50cd34e680ef36c017192ffeaa19ed9c78",
+    "request_fingerprint": "3a1448a6cb6529f6cf402e020e760bc0ba6f3c4c3e5a622b096dd9f95574aac0"
+  },
+  {
+    "key": "group/group-1/film/1/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "590e3368d607941e5348dd3abb206970b0e3406c14b7b3192a311c5b4260d21d",
+    "response_sha256": "fb970a96960c296fccaa21019ea1aaddee31a2854cb01f849de069cb20790b7f",
+    "request_fingerprint": "e5ec7cf160cc6dfdc9c07ea0022a6537fe030b996719504583972584f629afe1"
+  },
+  {
+    "key": "group/group-1/film/1/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "dccf2d3032393bf85e753af18f52039d074462b15e7d01757f005c7d9c24136f",
+    "response_sha256": "e7004fa4feaa061282eaaa46785ecff238da80ba66cc755fef9c707a141794c3",
+    "request_fingerprint": "2a10402d73d12957b80be1ba994787750fedb651719c34410fbbf1c0ad0859e7"
+  },
+  {
+    "key": "group/group-1/film/1/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "590e3368d607941e5348dd3abb206970b0e3406c14b7b3192a311c5b4260d21d",
+    "response_sha256": "0e3fbbb6670487a11ef2b772e7b234d975e600025a6112caa3494e0271fa6ce9",
+    "request_fingerprint": "3cec3b6c59accf318056cbbea6f06c467eeb41939239018cd0221d79065122a6"
+  },
+  {
+    "key": "group/group-1/film/1/buyer/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "2369cfc6f84220a6de17c0b329cfc59039f22bab5300250898fccf0bc263cbd5",
+    "response_sha256": "d997d8811c5e319a3b2304164033c927da815b7ec722f6237e57cf17ac8fdce3",
+    "request_fingerprint": "2a7aad21f92d7543aca67b2fffa8784dead74694ac7bfbe6a4e37ddaecb9099c"
+  },
+  {
+    "key": "group/group-1/film/1/receiving/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "bd70679b8d34eb6188d97b4777af1eb8ce320b1ebe85b3147460382adf260ac4",
+    "response_sha256": "4ce52c1243e1ea340a6adf04054ea702b265814eee100877ae67cba66d1c2c7c",
+    "request_fingerprint": "5a265ed6709489a8b9715acff3ad1c2908ed3ddd3f7e4a2a854c0372ea47b846"
+  },
+  {
+    "key": "group/group-1/film/1/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "dccf2d3032393bf85e753af18f52039d074462b15e7d01757f005c7d9c24136f",
+    "response_sha256": "1053ceea6e56aae5540dedb3e2ca9791a34c95bcfc2d118bdfcdd2aca8b250f1",
+    "request_fingerprint": "4c65cfccd103be8464d0d9f0f8c120cc61caf72042b0757142f92f5c2ba184af"
+  },
+  {
+    "key": "group/group-1/film/1/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "590e3368d607941e5348dd3abb206970b0e3406c14b7b3192a311c5b4260d21d",
+    "response_sha256": "de297f768c7a7046ce5364cbe5297fb1fd162239b5b2e02998b270668dcad63a",
+    "request_fingerprint": "e762d8bd22ac0dfd05698f64e1319c14224d124c1c0a69ac7446a4e44bbb6fbe"
+  },
+  {
+    "key": "group/group-1/film/1/buyer/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "2369cfc6f84220a6de17c0b329cfc59039f22bab5300250898fccf0bc263cbd5",
+    "response_sha256": "52cf1ccba85debba9baf863aeeed27a9428e0f5993efd1b3ab987b47daa70dcc",
+    "request_fingerprint": "436f1ffc97c7a76ef9f3d6ceffae84e4d305b080e4a608f4b0432cebfdc7958a"
+  },
+  {
+    "key": "group/group-1/film/1/receiving/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "bd70679b8d34eb6188d97b4777af1eb8ce320b1ebe85b3147460382adf260ac4",
+    "response_sha256": "4d3f3e43be025bd341d82e94bf8db34faba05952ff61f6751530df7479e4a5d2",
+    "request_fingerprint": "9d4a7aad285cfd81a4f62350ba6e5e36a02513824bce5b4dfed2568138f2cdee"
+  },
+  {
+    "key": "group/group-1/film/1/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "dccf2d3032393bf85e753af18f52039d074462b15e7d01757f005c7d9c24136f",
+    "response_sha256": "04d56081bdd4afe5357dee1955645a29deb91e83880ddde15e4a3886e216cc28",
+    "request_fingerprint": "48872a9b6e57293797529e308d136307b70928dda345e50d8a75db35ee2b58c4"
+  },
+  {
+    "key": "group/group-1/film/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "b077f4476fc2e3c6a6b6b344ebe9a68d6899b6c92bc0ccbac725bc156eed9944",
+    "response_sha256": "2c3a2c22332cb8134d331ccc6506cb85f9e03ab6f786df6004fe34845eb8b3ea",
+    "request_fingerprint": "5ecc9cbdd3cbb7930799d2fec2051251f1f92fab5098434dc0089bfd990267b0"
+  },
+  {
+    "key": "group/group-1/film/1/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "5b9d490c3991d6da785b8546af125256eb812569b966f32c5cab07a0c5df6c80",
+    "response_sha256": "b992d6fbab8661be4f58ddc801497b70d5e25d28dd02af90bf23da6b2667bfd1",
+    "request_fingerprint": "c930867024ee2d6c85956ea2467c641b2378af10d6806f4c3828b87e9691612b"
+  },
+  {
+    "key": "group/group-1/gallery/0/carrier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "8aaa6e79a9cc29c3b64b5a4679e20dd6286bff36a2e867e9d1e69328935cb8ea",
+    "response_sha256": "04ff3775055576f887323b977743fbde114e58b7996eb5b8a4b03495d6563ad0",
+    "request_fingerprint": "df83df20b93fe180d7a1a6f018d3a9f0d50feb446d00a261a911e05c69fb5bbe"
+  },
+  {
+    "key": "group/group-1/gallery/0/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "f4f2c696e9ac3fadcb62a257a77de9b3e180641fac42318cb627264b0c42143b",
+    "response_sha256": "cfe08f6a904a6366e1fcee947c1630777ad74a27c4c06c2cb8e3267bbc67fa15",
+    "request_fingerprint": "d22656686f2740f8a041bcaa958ed19bed1aaded28e22a654c8501f63ae04170"
+  },
+  {
+    "key": "group/group-1/gallery/0/buyer/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "1d2a72b9c7ae334ed7cbcce9d09e1fd783c5c51ba7eaf14aef3936316cd7457f",
+    "response_sha256": "8d4ffc6ffb8942dfb0d1a6be3789b8bf95bd5977d2331409a2454694490019dd",
+    "request_fingerprint": "ed781ca57e637133b0463e19f7fc8d65faf969a612a6b7f14de1f8fcd6f71ad0"
+  },
+  {
+    "key": "group/group-1/gallery/0/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "48510e1f6f5d16c0938da547b03ae40fbc13e55911f6b2d946ee62feefe28a13",
+    "response_sha256": "6f6b562dd4a810dc0f7ee085b01e3fbc3d49e3ee0cadee954168d330126948a8",
+    "request_fingerprint": "9456ec2c3cd04afafe64c4c789ede0a8419eae11698bd09fd51e9f20bc328e77"
+  },
+  {
+    "key": "group/group-1/gallery/0/carrier/proposal",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "8aaa6e79a9cc29c3b64b5a4679e20dd6286bff36a2e867e9d1e69328935cb8ea",
+    "response_sha256": "eafcf3bca06b9d415a06eb1eff1462c7ce69c901145ce06381e18031072a5f5f",
+    "request_fingerprint": "25f9e3fc4d8a18bb2175e8ad3e1f1e8bd4ce6a850a40de040e7dc8e6ce4be276"
+  },
+  {
+    "key": "group/group-1/gallery/0/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "f4f2c696e9ac3fadcb62a257a77de9b3e180641fac42318cb627264b0c42143b",
+    "response_sha256": "f82444ec34bfd5b00d765aa9b687fa722bff0ed3108b75a3c21cd54317bf02a9",
+    "request_fingerprint": "37fd8c764e8086281036a94b231cd9838dffc629f05d118099d4fc20aceb6369"
+  },
+  {
+    "key": "group/group-1/gallery/0/buyer/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "1d2a72b9c7ae334ed7cbcce9d09e1fd783c5c51ba7eaf14aef3936316cd7457f",
+    "response_sha256": "c597341ba1bbe3a5f66823d8acc66fc037c309f17b048e0cb163ac47662b43b2",
+    "request_fingerprint": "76d0c07ba848ffa93625212ef6d37093e70668a8805755734f05f6f2eec0f3b3"
+  },
+  {
+    "key": "group/group-1/gallery/0/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "48510e1f6f5d16c0938da547b03ae40fbc13e55911f6b2d946ee62feefe28a13",
+    "response_sha256": "cedaf400487b366fe1ddca3d23bf9d40644ce38327497b282b8d799f68ca6dc2",
+    "request_fingerprint": "ae3a3d3be6357f4c85aa0468f91228c1fda7e7445cb2a01d5043f94f414d9212"
+  },
+  {
+    "key": "group/group-1/gallery/0/carrier/final-offer",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "8aaa6e79a9cc29c3b64b5a4679e20dd6286bff36a2e867e9d1e69328935cb8ea",
+    "response_sha256": "dd11e123d9720d4c085a31cc40bc0cae1f84e7c3656ab4a2bcdd2dac08fba072",
+    "request_fingerprint": "05052f1f60f44a5c526267e19331bbe21e93033a2070281cde2ea6556fcd64ad"
+  },
+  {
+    "key": "group/group-1/gallery/0/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "f4f2c696e9ac3fadcb62a257a77de9b3e180641fac42318cb627264b0c42143b",
+    "response_sha256": "4a22b288c3ac6b346c55f38e284b82d25be6bb2c742a5a2ef8f026a16d379607",
+    "request_fingerprint": "87db39b39240455057a1176f7c6588d2a9ccfedea718be047c8ab601c1a98166"
+  },
+  {
+    "key": "group/group-1/gallery/0/buyer/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "1d2a72b9c7ae334ed7cbcce9d09e1fd783c5c51ba7eaf14aef3936316cd7457f",
+    "response_sha256": "1ae79ea9685316ebe91d5343de186e0f0ee5fb4fd252bca7c671f674b11b5b1f",
+    "request_fingerprint": "ed7bf65508ca90f03380ab61e5f16638c21a3199dbe2775ee5356e01e4ee3b9e"
+  },
+  {
+    "key": "group/group-1/gallery/0/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "48510e1f6f5d16c0938da547b03ae40fbc13e55911f6b2d946ee62feefe28a13",
+    "response_sha256": "6f86efdf6d352a2e2b4a916ad988da1fec8fa340bb5fb71266228b954969a20c",
+    "request_fingerprint": "86edca18a8ae1767930a98a74debe856b2983e68ba42a54f65baba14161de256"
+  },
+  {
+    "key": "group/group-1/gallery/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "44755ba5317dccb75f027c23e8ac6dacaaa14dd40247c005262b4ead6ff3eab1",
+    "response_sha256": "ec76e399af3359a442e60697bca048c3f6ec3d4486ef5e0bd500f26f4e5402e1",
+    "request_fingerprint": "8819ee8bf41b19709362c6c00f8d4cc13f723f72ec8611e4d46d6470dcb7c211"
+  },
+  {
+    "key": "group/group-1/gallery/0/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "43da525dbfca3d479d9f736afbd12b4563814a468c45f5c8ad86400932888663",
+    "response_sha256": "201c98e221c635128a56da310d7c3a8b40e959ec16f92311d3db5f921e92df8d",
+    "request_fingerprint": "906a2e4178a4707e05e9a784c0def1969a54844a1f118e32904dfdc015e3be59"
+  },
+  {
+    "key": "group/group-1/gallery/1/carrier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "2306e083a29d11cb2866d6143d009bc21c33925cc0538e4cccacf1a0d85c6d14",
+    "response_sha256": "46a0c703aced0275f65e2f8e3075f1c8eb69e5d5e867b73b05a3117c27629737",
+    "request_fingerprint": "6b726d68f607caeee8551e2398d5fc01fd8d7304ccd77eb1f21b88f3a2be6e0e"
+  },
+  {
+    "key": "group/group-1/gallery/1/receiving/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "1cb2660dee99db82083bd627b49e19d76d173ace519c67a7af90f06f95286129",
+    "response_sha256": "a69ddebe6c92249ce7c38056feea3f0f2426d7ad9583161509419150fc161ead",
+    "request_fingerprint": "286571457919277f827ee1c25e77b6764b8488fbf05107c3c9e4cc6273a23996"
+  },
+  {
+    "key": "group/group-1/gallery/1/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "757650cd10df77154c863f37fa8b46e6d5918c0efc9ccb64fec28a632f0d2975",
+    "response_sha256": "ed7a604a50c4a7d387ea8e1f836d0937e1ffc76148e627a4f1103b5534fc6125",
+    "request_fingerprint": "791c3ad687b42fa023625ae744117db5c557f06481540f720055846aa92ec039"
+  },
+  {
+    "key": "group/group-1/gallery/1/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "f5687e9998cfdcfcfca5b5687e5692ff9a5c83b73ba230d5df3368b0072842a2",
+    "response_sha256": "fada3a238c720001fe6b25005a6aebc58710a67d9e20099b25ecb9b96d4e5306",
+    "request_fingerprint": "1f345c73c6d2a36579672742eeaef238032689809fd35606840b73cbf687905d"
+  },
+  {
+    "key": "group/group-1/gallery/1/carrier/proposal",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "2306e083a29d11cb2866d6143d009bc21c33925cc0538e4cccacf1a0d85c6d14",
+    "response_sha256": "d2e1d4281075435607f08f9a3fc78a34203358ad229bef8f60ba9f1b7de9a4e9",
+    "request_fingerprint": "f9d32154788f4432b660d97d0c447d59dd17a98333dea898976ea9dd3c1cddad"
+  },
+  {
+    "key": "group/group-1/gallery/1/receiving/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "1cb2660dee99db82083bd627b49e19d76d173ace519c67a7af90f06f95286129",
+    "response_sha256": "b24d31945f30dfee82a1c7f859ad24351aa81c4f4b56a435edcd671d481aa3bc",
+    "request_fingerprint": "a792faccaabb89b9740980c159501f9ba46f94419a63a59347952f9f9db71208"
+  },
+  {
+    "key": "group/group-1/gallery/1/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "757650cd10df77154c863f37fa8b46e6d5918c0efc9ccb64fec28a632f0d2975",
+    "response_sha256": "eff4bdceae7a8db41b653f57e045ff62fef8b10587d99b9d96c326501bc322c8",
+    "request_fingerprint": "c864d5c2c2b94d2d384a5bfa993eca34ec127dc484f3cc6d6cc044e7aecfff38"
+  },
+  {
+    "key": "group/group-1/gallery/1/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "f5687e9998cfdcfcfca5b5687e5692ff9a5c83b73ba230d5df3368b0072842a2",
+    "response_sha256": "f97e10055fe9810b2c4b0774bed6fa2802cb6ef46cb7852851ea53867bda03fe",
+    "request_fingerprint": "6967af63a848a6fa08a1cee69282e392c521be280cffdd57d2712aa45c457604"
+  },
+  {
+    "key": "group/group-1/gallery/1/carrier/final-offer",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "2306e083a29d11cb2866d6143d009bc21c33925cc0538e4cccacf1a0d85c6d14",
+    "response_sha256": "32fab6258b8e14085ff8e5b84fe0e2711e24db06d5e100a3ec7b05367cfc2b7c",
+    "request_fingerprint": "74e55345dd76aff7e141e9b2203e698ceac5a2d3bdd0165a4112ee071816b4b4"
+  },
+  {
+    "key": "group/group-1/gallery/1/receiving/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "1cb2660dee99db82083bd627b49e19d76d173ace519c67a7af90f06f95286129",
+    "response_sha256": "bdbe14306ab770cb7b5e60deb8b7af25d12af12d6d15c198affb0f2200264c84",
+    "request_fingerprint": "0d9ee463dbed3a3b3dea6e0a9fd309a4441563ca5137e6348b4175e3e4330b02"
+  },
+  {
+    "key": "group/group-1/gallery/1/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "757650cd10df77154c863f37fa8b46e6d5918c0efc9ccb64fec28a632f0d2975",
+    "response_sha256": "aa0ee34e73ddf9122a8725fcf50033d41768613ecc4975a560c8a8643c8597d8",
+    "request_fingerprint": "1ab942d847ddf9a9f111fe4ecc6d6b71e36562e2a5f21ee7d886802782f5676e"
+  },
+  {
+    "key": "group/group-1/gallery/1/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "f5687e9998cfdcfcfca5b5687e5692ff9a5c83b73ba230d5df3368b0072842a2",
+    "response_sha256": "c443252e39874f66eda9d488e032e6d3e39733400b4d66345ae0a5cfd5beb8d9",
+    "request_fingerprint": "579d33d31a553330e79bb420d40959f09ed263fe4d99e0beb3962259fe7f39cf"
+  },
+  {
+    "key": "group/group-1/gallery/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "cef958e5de3ebd926d8c76d0b8a5e84881c82330651a44c27767921c39e41c27",
+    "response_sha256": "70843af7ed8d69070ad76e1907cbba819ad5f68992144baa59c39d5be1de7091",
+    "request_fingerprint": "dbeeb0eabd7e63bcccba4419628fc8e35014f3b8394bbbf6a9fd22dca938f24a"
+  },
+  {
+    "key": "group/group-1/gallery/1/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "900c3fcb9d0b035ae7f4244b5ef0a02e54c5bf7c12d7d2abf6c0a00a846a7211",
+    "response_sha256": "e3a023532a2db2ce875d4d22dbad6d30c655f2448689e3485b7db3c13de1cf87",
+    "request_fingerprint": "3e1a89e9f825e7654479c019efcc4d82855572a1ad417346d6fb555491b9288d"
+  },
+  {
+    "key": "group/group-1/garden/0/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "d7d802fa867342cffddb3dd3e7fec87b93798d4dfcb55c658b616d03bfce8248",
+    "response_sha256": "7a4b312b54da3696cbf593fbad835574dccdae864532e06267f6d1d33a385969",
+    "request_fingerprint": "eea2894138a463c78a63c0302a9f1caea1256cc9cb860a902983cf53e55755d1"
+  },
+  {
+    "key": "group/group-1/garden/0/carrier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "eb27af64dd48817aa662c56081979023c51850e81eca39e381b4d60772999bc2",
+    "response_sha256": "12439dfeb13a0670261b46edf07054a2c3419ce5d471089c71e651306762f0d5",
+    "request_fingerprint": "84b655a99c2f3be227f09ffb725f0362426f5f68fd03fc3bc004eaf0f2ac67cd"
+  },
+  {
+    "key": "group/group-1/garden/0/buyer/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "28a89f021cd98d8e0af640602197cd9bb99948612082040e820b726362db4148",
+    "response_sha256": "678682d2624f00ab399627a36ab631c1ffd5f6b8c8251efd51c9158e539a53f2",
+    "request_fingerprint": "b1ba80297cc0d172cd7df970ac35eef9d3a8724842276c85529404030ef699f3"
+  },
+  {
+    "key": "group/group-1/garden/0/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "577ee784a930181dc7d4a54015847a4b80028df6c7971f6f7cf3804c6a4879d7",
+    "response_sha256": "f52ad91d958ecccb9df0dfa5fb423cab18b4d96c38858112ac804e1ce6582b2b",
+    "request_fingerprint": "2b05f3c76a976ae5b7af56c218dfb4331f263b8976f4453b3d6c18ad1067bb35"
+  },
+  {
+    "key": "group/group-1/garden/0/carrier/proposal",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "eb27af64dd48817aa662c56081979023c51850e81eca39e381b4d60772999bc2",
+    "response_sha256": "17e3d1f895fcda62dcecbb48faad7fa6153dc3f0efbe85a888b1bf361da5033a",
+    "request_fingerprint": "f6067c0c1e4b2ad6c48e5c5b1b2f7ce9beb7fddf630486dd0c160af45f9b57c2"
+  },
+  {
+    "key": "group/group-1/garden/0/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "d7d802fa867342cffddb3dd3e7fec87b93798d4dfcb55c658b616d03bfce8248",
+    "response_sha256": "0b021c3f8bb8549fc493d3c4b08b998fd819124a0d6bd1e0ebd06969ea3b30f8",
+    "request_fingerprint": "fbcc946e3bd3f0d143a15f210a434bb3a3979d72071a136b256fc51ecb65e27f"
+  },
+  {
+    "key": "group/group-1/garden/0/buyer/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "28a89f021cd98d8e0af640602197cd9bb99948612082040e820b726362db4148",
+    "response_sha256": "056b4cea583d032d0e6e240c45282289047396db46c4beb3319d17d39a2b543a",
+    "request_fingerprint": "f5089037109dc4070aed1ed6db260272999d14a6c7f18875ffad097bafd1d1f4"
+  },
+  {
+    "key": "group/group-1/garden/0/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "577ee784a930181dc7d4a54015847a4b80028df6c7971f6f7cf3804c6a4879d7",
+    "response_sha256": "c3cf18b1272a25c94ec998cbc3250100943bcadfe4f9ad9d1fdcbd3b35889865",
+    "request_fingerprint": "a50f6ef5950655e2a6f851f061c4745e239c23f4ef597ba4dc8ef605f4a74ef1"
+  },
+  {
+    "key": "group/group-1/garden/0/carrier/final-offer",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "eb27af64dd48817aa662c56081979023c51850e81eca39e381b4d60772999bc2",
+    "response_sha256": "4f5d72521e7d5ea128b6af2d131f613c8d0dede39cde7ee14eb71fb859c3864a",
+    "request_fingerprint": "c91cff30eb91e61d58e3f0e0e2113ee42b3a428cab6461ffe3ce1a08a3bbdea2"
+  },
+  {
+    "key": "group/group-1/garden/0/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "d7d802fa867342cffddb3dd3e7fec87b93798d4dfcb55c658b616d03bfce8248",
+    "response_sha256": "ec0bda06961c4f049cf3d57911c5bb80275ed110844548b286f32082ccf9b6ff",
+    "request_fingerprint": "96ad6e6ba06bfe7b53596c8d49f5dd28e7cd580d5efe00e0415d5df12416f73f"
+  },
+  {
+    "key": "group/group-1/garden/0/buyer/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "28a89f021cd98d8e0af640602197cd9bb99948612082040e820b726362db4148",
+    "response_sha256": "d157942ed2d5e1a10ea021659646324107b7bcdb25d18e30a55a3c7da2d1cd03",
+    "request_fingerprint": "4a9931d0c30ad862baac9cedca67a90ec33a79690fb051130d412ceada77e805"
+  },
+  {
+    "key": "group/group-1/garden/0/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "577ee784a930181dc7d4a54015847a4b80028df6c7971f6f7cf3804c6a4879d7",
+    "response_sha256": "5bb82f71c455b18b37b40c96d9374029b06ec73174d7e798b7f02c1d0b43ed6f",
+    "request_fingerprint": "2b4dd5e1d075c9ede61f39c8f279c66528b644639b095ef8e90c6ec4782b3d79"
+  },
+  {
+    "key": "group/group-1/garden/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "2f8cdcb0c87cbb8d20fb2d25036c0664b3cade54b3055629b15c24c3e2b54443",
+    "response_sha256": "31a3ee6bbd604134a84f45213e9a25389bcb5e70ffdf614ce502cbee790a37a9",
+    "request_fingerprint": "33e01043f4ddbdaec70feb6f41c48d79e1e83fbd95d86c8189802faef317e0fd"
+  },
+  {
+    "key": "group/group-1/garden/0/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "e45cf044fa8aecff15337dea2911a1f976b4ea7103efb8a5ccf322c1c7828d79",
+    "response_sha256": "3d3e7f467bd8e2ba858d44ee9001368158398d8ebedef3d5ca45482082843bc1",
+    "request_fingerprint": "182453728647d4ff6aa4aa093795dc753433f5cb80608d8f9b71b5ea366bc20c"
+  },
+  {
+    "key": "group/group-1/garden/1/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "410ce00ec8b02186a2cb9823fb58512d8e7f07c24e176d2f74b09485fc0a4b1b",
+    "response_sha256": "f891e822ccb8f057dc67777fe23a2cf477d632e19d14e414d4372fe5b26ae457",
+    "request_fingerprint": "008d4b7276f435915cd569f0d1401d1305d018f1ef4df69691d92b9f7f0a9edb"
+  },
+  {
+    "key": "group/group-1/garden/1/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "296f565b75999a8de76d5923de1af4c98d83e98531ef069e047cef2859d0912e",
+    "response_sha256": "2c44f4d196b32ac23d62c02d0588339498978e872baff22443f9f2580c28113e",
+    "request_fingerprint": "b9ba29ab1571d4d280ca5c4b6f040fbbd3d48f511d13ed8b36dcff93a5a9ec65"
+  },
+  {
+    "key": "group/group-1/garden/1/buyer/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "40a7ecf401fec4444e3a928bb730c5fad271b9b1834fb85161891fc8968829b0",
+    "response_sha256": "426f52332929525f519db0ed03fdffafa4320e8f6b2788ecd83bc4ef3c1e19a6",
+    "request_fingerprint": "d22f3893ce282c0d4a70af3db4f7ecb31cb2b7779735ad0726777f2512286692"
+  },
+  {
+    "key": "group/group-1/garden/1/supplier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "ccfedcd08aed13a61f0e97d5f7c82dde4882e7a64890a93c940bc53969509cc8",
+    "response_sha256": "cf6b4f02f2971d1025c27fc0a566d8bc3d8f1f0011313239bab9632b2fb8ef61",
+    "request_fingerprint": "2c87110f7baa80097bceee7eda29a941bfc58c69b4490ce019e08806247f6c4f"
+  },
+  {
+    "key": "group/group-1/garden/1/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "296f565b75999a8de76d5923de1af4c98d83e98531ef069e047cef2859d0912e",
+    "response_sha256": "7c7a55793408bf6e9ea5b69303be2111d4fbbec8a962e4962f0b122ab7deb3e2",
+    "request_fingerprint": "d4749149769cc3d69fe940ba8d3f7b4023dabbc013d17dcddd7f25d46f339769"
+  },
+  {
+    "key": "group/group-1/garden/1/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "410ce00ec8b02186a2cb9823fb58512d8e7f07c24e176d2f74b09485fc0a4b1b",
+    "response_sha256": "ae7b09497935b4ed79706a129c66b0ab4cea86ac093e29853156bd1ae5e960cf",
+    "request_fingerprint": "5c82f8dba0d95d0232dc37be69d3157ffb36dd0a10c9c2c5fac122ebbc5ed315"
+  },
+  {
+    "key": "group/group-1/garden/1/buyer/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "40a7ecf401fec4444e3a928bb730c5fad271b9b1834fb85161891fc8968829b0",
+    "response_sha256": "0149d02f7b921c77d71a7cdb42aaeaa576f1bf370bbd1ac76508a18812efe093",
+    "request_fingerprint": "4de1db410b44979e04494bf9e15fae6262e0d503f0814c9e36acaa6325d6afe9"
+  },
+  {
+    "key": "group/group-1/garden/1/supplier/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "ccfedcd08aed13a61f0e97d5f7c82dde4882e7a64890a93c940bc53969509cc8",
+    "response_sha256": "9ad771fc1dbd5a8d26577a86a715b8d2688e0807a52278620393dd2a295922d9",
+    "request_fingerprint": "6ce958b90534c53c1ab14b23764bb8b2f1fd0f10424ec2315474d3e63d0670ab"
+  },
+  {
+    "key": "group/group-1/garden/1/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "296f565b75999a8de76d5923de1af4c98d83e98531ef069e047cef2859d0912e",
+    "response_sha256": "d1cffec4d0e81ca2d774f2757e759520a68be0b5bc49d473169ccb9ebc053a24",
+    "request_fingerprint": "753d9d3d892bf5b02a1d9c13a0444f608d36945bf60a5b05f8528af190e2fc68"
+  },
+  {
+    "key": "group/group-1/garden/1/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "410ce00ec8b02186a2cb9823fb58512d8e7f07c24e176d2f74b09485fc0a4b1b",
+    "response_sha256": "8537444b5f53a3f652fe3b267b2da3bb64a5b2a89813a74a0a893d1a0e588d42",
+    "request_fingerprint": "58103e77ef0d4936dbe38b8ed69cfdfd1434e7fbbbdb5c896550e5b1cc1f20c5"
+  },
+  {
+    "key": "group/group-1/garden/1/buyer/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "40a7ecf401fec4444e3a928bb730c5fad271b9b1834fb85161891fc8968829b0",
+    "response_sha256": "66918d5d30569d46f04515e24840b4bff708df6dca8d6ffd968a3147936195e6",
+    "request_fingerprint": "e8854354b6a4222e08a998c714bb792ac40e489a2dae5b0344a739da7419d23f"
+  },
+  {
+    "key": "group/group-1/garden/1/supplier/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "ccfedcd08aed13a61f0e97d5f7c82dde4882e7a64890a93c940bc53969509cc8",
+    "response_sha256": "219f9eb379dc8dff17797336186ae274f4b387300b173da8a91d54fa24f59ba1",
+    "request_fingerprint": "02df87529eb99182112e21aa90ffa8f13baf8bfe6d27c14421d925e2f9ee6d20"
+  },
+  {
+    "key": "group/group-1/garden/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "597c983eb4008f30dbbfd3d7af523767ad3f89a605cf409d6a75536bc5529950",
+    "response_sha256": "18616dd544d39a1060b91ca8f3d6a47b35843410dbc2705b914bff732b4c4667",
+    "request_fingerprint": "ce6891fa9a2e2cc3a4352085935f6f2e884aa0fc16803f21ccf9e36e49e8db10"
+  },
+  {
+    "key": "group/group-1/garden/1/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "57fc703984f61120f06deac03a83ce4baf4c485085cb82e73ff8d81c18082a59",
+    "response_sha256": "3bc698b4bc8d6970c04c8c30fa3e559c8ecdb717be28c8d47679c142bd8b6e33",
+    "request_fingerprint": "afb76e6392285ae353977fd140e09ac20bed92b281456e50c0573f66d4cd62b2"
+  },
+  {
+    "key": "group/group-1/lanterns/0/supplier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "1ba7d2f3494504385946f31ad9d9c497593a9e3379c8c3f6f06999ae027a70c2",
+    "response_sha256": "34508bc4ac44f708a43601c4a52b93c2264d38ef8edf5f12646f5f557504cf08",
+    "request_fingerprint": "8d079988dba478ce66a31304c5162af087aaa3698856a0ca1e6d39516f57b1bf"
+  },
+  {
+    "key": "group/group-1/lanterns/0/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5820b191e5ae50bb4688038a0eca39af485551abe6de2b58d74bb3b40f9ef8db",
+    "response_sha256": "e374ce93192f25f711e0068e63fbe27679007ea3008e1cfa6e0ba6eeb46e5e92",
+    "request_fingerprint": "1fbf86cbb1197f768c00ef2634ce166db449015df25b6d5e9463c3c8d06a48c9"
+  },
+  {
+    "key": "group/group-1/lanterns/0/receiving/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "2e5999b8987a61090acad5e164280e585cf8be9ecb7eed81aa7b1d5f1b209ec5",
+    "response_sha256": "631501dc0d5d1268f043d4988a3e166df964b5bd245da06121664814a3840417",
+    "request_fingerprint": "818b1c48ab9dc830b515844c0358213f13cad2973151cfbab41b49f13b897f52"
+  },
+  {
+    "key": "group/group-1/lanterns/0/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5692df6943d4e809ac7c182a726c28787900144a1271be426fac0a18305e3349",
+    "response_sha256": "213cdf7efc595409a656890e2b3f13b8b9d453465a17cf8712e32e1aa57fe8bb",
+    "request_fingerprint": "0ae5618e7a0a97e4c8ec19c13954d2ec3880c82868652b904325d128b9875167"
+  },
+  {
+    "key": "group/group-1/lanterns/0/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5692df6943d4e809ac7c182a726c28787900144a1271be426fac0a18305e3349",
+    "response_sha256": "b19a2b3355b991554e6d67f579e5c183877896650b102823f6514c1b79da0e95",
+    "request_fingerprint": "e3cff72ca91808122f07b745f10578399f2b9215a2ee4d4f01078a2b3ac4d5e2"
+  },
+  {
+    "key": "group/group-1/lanterns/0/supplier/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "1ba7d2f3494504385946f31ad9d9c497593a9e3379c8c3f6f06999ae027a70c2",
+    "response_sha256": "20d62626f2f11d6fcecb03692b3767a3bd814be55b11bb3f5712704100b506bb",
+    "request_fingerprint": "06f06f6a8090ab08402bcc14f6b8a0560d06c789773ef871c1a760957ef83173"
+  },
+  {
+    "key": "group/group-1/lanterns/0/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5820b191e5ae50bb4688038a0eca39af485551abe6de2b58d74bb3b40f9ef8db",
+    "response_sha256": "ecf432d6939782b2848acdebb6d9a35d0931ad968bbcdd16bbe432089ab2f12b",
+    "request_fingerprint": "da318268251f182596c57df48f2876251e4922f201f37f37e3129ce1d50820f8"
+  },
+  {
+    "key": "group/group-1/lanterns/0/receiving/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "2e5999b8987a61090acad5e164280e585cf8be9ecb7eed81aa7b1d5f1b209ec5",
+    "response_sha256": "2d4c0c5af9050e682101a48a4e794bd2447832ecf7cc50b6d3b72e0064dcd0e9",
+    "request_fingerprint": "f31a8237f547aed7fb5d1517c5a7698ff189e795df6ce5153a6d041497f20513"
+  },
+  {
+    "key": "group/group-1/lanterns/0/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5692df6943d4e809ac7c182a726c28787900144a1271be426fac0a18305e3349",
+    "response_sha256": "9bf5c38607c7b18cf07886f90e876c2d674b67aa5db07f60e3d389c8f66b810f",
+    "request_fingerprint": "22fc26264a09165ab3d65266499b797122efe9bc3b62e63d2f480f1b60701e3e"
+  },
+  {
+    "key": "group/group-1/lanterns/0/supplier/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "1ba7d2f3494504385946f31ad9d9c497593a9e3379c8c3f6f06999ae027a70c2",
+    "response_sha256": "0aaf7aab9442ddb2838c18447b8d81edcbd29b7cca88163ed8057d1f25989049",
+    "request_fingerprint": "2ef231f1abc2dbbc634e1cecb17c8cb0ddcadc2e7895a3e6586ddfe7010cf9c6"
+  },
+  {
+    "key": "group/group-1/lanterns/0/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5820b191e5ae50bb4688038a0eca39af485551abe6de2b58d74bb3b40f9ef8db",
+    "response_sha256": "ff840c0718637863e07b3adf55b6c7abba944843ed03cb418662c34e0ddd057c",
+    "request_fingerprint": "6d8d56ed75e63f6b503ea0abce7acc6dc634504dc573fd42c264c1e07c17257e"
+  },
+  {
+    "key": "group/group-1/lanterns/0/receiving/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "2e5999b8987a61090acad5e164280e585cf8be9ecb7eed81aa7b1d5f1b209ec5",
+    "response_sha256": "5c4e56b7d92b7afc6152f0ae1d101f04d478f9cacc6e4adaa43306710f23984a",
+    "request_fingerprint": "02d3b007a2ef6bdbf16ca234d5ce86cba2180fcb5ccdeffcf58709c98ac19f2c"
+  },
+  {
+    "key": "group/group-1/lanterns/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "30b20db7d7292640978e6ae7ae26f9734553e8e6bf99c11b45ae646c24e120a4",
+    "response_sha256": "11d2121c580499f60e412ea610706b0192dbb969cecdc6e8c006ecc688491901",
+    "request_fingerprint": "23354ca4c615b76cf6513fc52ff408b069515d0da88366265bf4136a7bbbca2b"
+  },
+  {
+    "key": "group/group-1/lanterns/0/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "4daa253a4f4005d637e19f48f0f05f25e280944760c5a5de9f42871fd1042bc6",
+    "response_sha256": "3875917b1aacdb2783184bc385eb8888fb8586987e02dcb28dea2ca0eb3fe10a",
+    "request_fingerprint": "a68b245a379b4e731ae5414fc7f6634863387a486d82e826f44db504e94cd055"
+  },
+  {
+    "key": "group/group-1/lanterns/1/supplier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "7d75c373d1209cf70be9bb527ad0d4403e6e5948b989f1484f2ade29bbfaeeee",
+    "response_sha256": "fefe6871c562b26e7f233ce52f824481cf962cbca4c4bbbc3b821670d1097675",
+    "request_fingerprint": "875876c62ec0de5cb30d119bc5b3e9d37f21ab5480380132b10505c8093c1f15"
+  },
+  {
+    "key": "group/group-1/lanterns/1/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "6426eec4d87afd87aa89b632100105e080342fc202486df74c7b74889418575d",
+    "response_sha256": "53871c53e5f67bec18fd4102e9248a139d9c3063f1b10fc5e9513148acb4d10e",
+    "request_fingerprint": "a5e852978389c9bf923fabf85c861b4487aa06d9f251a7264f2108ef94073f7e"
+  },
+  {
+    "key": "group/group-1/lanterns/1/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "700d54df3668f6e1b41ef6bf5a59a3dfdb67efd326ea97d7d521d0daa03481aa",
+    "response_sha256": "f7d8888cbdd5d6560aa33b7aa56e5a24e9832a97a0b201fbd1c5284f0dcfe3ee",
+    "request_fingerprint": "9b80d1b80b228b2d6363d6aa018e118474d450f8c2029dc33a9af59e1b83cd3d"
+  },
+  {
+    "key": "group/group-1/lanterns/1/carrier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "30d07206da19b791898e212e171a3830c2b04f2006d23bdb9f439e4100d49cff",
+    "response_sha256": "7a8d00b0fe53e0d7fbf0f1200e01f0de5f8fd8b297ca7471f45c8f4593ecf479",
+    "request_fingerprint": "c3736e8437e55d509f07ddcfc839bc5a2843c850a4934032d1b67220cefefd52"
+  },
+  {
+    "key": "group/group-1/lanterns/1/carrier/proposal",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "30d07206da19b791898e212e171a3830c2b04f2006d23bdb9f439e4100d49cff",
+    "response_sha256": "a0970ae9ff41dc0fa04168092918b81022193b9e6f585ae55fa2e5301a028ef1",
+    "request_fingerprint": "a88016b1dfe64f2dfd0143ca19442c7d21f076f893afd6f2905e90739a00852e"
+  },
+  {
+    "key": "group/group-1/lanterns/1/supplier/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "7d75c373d1209cf70be9bb527ad0d4403e6e5948b989f1484f2ade29bbfaeeee",
+    "response_sha256": "982699247b527977a43d118d4b4f2346d209456e2de9baa8eccb8b9173fe37d4",
+    "request_fingerprint": "39715b82e2df152a0a0daaa34b431caf80ebdab17706923a078d1a6cfe4008ca"
+  },
+  {
+    "key": "group/group-1/lanterns/1/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "6426eec4d87afd87aa89b632100105e080342fc202486df74c7b74889418575d",
+    "response_sha256": "279b031e7379cc844890af17863677856c26d6110a3e9fef869624268ce1271f",
+    "request_fingerprint": "41176e72812d991b797b6a345e0d6caa9994031ffaf3fd6489c5c661719e016f"
+  },
+  {
+    "key": "group/group-1/lanterns/1/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "700d54df3668f6e1b41ef6bf5a59a3dfdb67efd326ea97d7d521d0daa03481aa",
+    "response_sha256": "fddd459d15c922af52ca23be7c022422778715c97c00be9a36581c0491c7ed77",
+    "request_fingerprint": "b25047273088745a3afb372757efb672056c4da9192a7ac23ac5d30e2fb6b5be"
+  },
+  {
+    "key": "group/group-1/lanterns/1/carrier/final-offer",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "30d07206da19b791898e212e171a3830c2b04f2006d23bdb9f439e4100d49cff",
+    "response_sha256": "c097c3aa84d5fd74619514d2b98f7ae863f7c071872061891c6c1e0c38188b76",
+    "request_fingerprint": "d4fc4f237911f62b9cf336a89bd19cc62c1c507c1e988966d91ec1af80ef3c34"
+  },
+  {
+    "key": "group/group-1/lanterns/1/supplier/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "7d75c373d1209cf70be9bb527ad0d4403e6e5948b989f1484f2ade29bbfaeeee",
+    "response_sha256": "dfe4c00043d0116d57ebfff74892dae3c7b14bc928cda6dc7ad065d23517fcc1",
+    "request_fingerprint": "b3564714ce5728b6f7a494bb1ef665a17e6e4e398d0cf9a7a030f4940058d2f8"
+  },
+  {
+    "key": "group/group-1/lanterns/1/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "6426eec4d87afd87aa89b632100105e080342fc202486df74c7b74889418575d",
+    "response_sha256": "a510674b9afc8304520beb54ad1ad856c6e37bd2d348fb8469dd89a47edb3127",
+    "request_fingerprint": "abf00fdb31d744314803901a2d5f929836989451e103ab1c399175020f45f7fc"
+  },
+  {
+    "key": "group/group-1/lanterns/1/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "700d54df3668f6e1b41ef6bf5a59a3dfdb67efd326ea97d7d521d0daa03481aa",
+    "response_sha256": "b16dfe4140cfe9f3f1e1acf34d5f1d8ecbe984e3c74f2afbf246d67ff0e57d4f",
+    "request_fingerprint": "e37e1a96d7c28302677069159a53a266ebcbfe2e994af2bcb901020693692c46"
+  },
+  {
+    "key": "group/group-1/lanterns/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "9b7803b2b093c790a222c3718f795d88317b7808912b972958defe02a5f26ff4",
+    "response_sha256": "9f0dfedc7784bc9156243f8dcc49c812b55d900444fc4178415eb3b8d3697c78",
+    "request_fingerprint": "2e9773881f04783bf5252d982b14f8b474fe577066f89bb7732f59641e8a157a"
+  },
+  {
+    "key": "group/group-1/lanterns/1/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "b3e462e35ad89f2e2fc8abdbe9312958ad86463e8b07726f89c7a8447adc52d0",
+    "response_sha256": "4c04bdcc2118744ad4bcd2f40c2cc62c8b0f2fc41b3279c2b89b6344f3427058",
+    "request_fingerprint": "b160e3e147c0125f1e930b4d0d227b99403ab9c9769fa2725e1f67cce46c5dc1"
+  },
+  {
+    "key": "group/group-1/market/0/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "c620b86fe2a8d6a6792275362b586111f018c2490364eb67f399e00424d72072",
+    "response_sha256": "12ff7f697ac4361b366e33ed69cdaedc503a3f0ec8ed8e637e9ec0bc1271201b",
+    "request_fingerprint": "761a0d103ff0b8cd15522675b9ea23bc70b32996396d04ef13430703e3a1e942"
+  },
+  {
+    "key": "group/group-1/market/0/buyer/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "a25e02f4e6dd0033035919178704b26966a529b5da528008d820cedef241122a",
+    "response_sha256": "7a55827eb41d1b2cd6118da23567a74af878d1c9d8e45aed0a1935157deb6980",
+    "request_fingerprint": "02fbe8e069fdf11fc9bb86abeb7f33a190e42c626330b666ef567a69a1376c7e"
+  },
+  {
+    "key": "group/group-1/market/0/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "03e74c04adace1ab49785900c3b94628ed3150111e0c4802827093f356a3410e",
+    "response_sha256": "4e3d20c26417020ba3781e76bc99bd59d28480c9c39f5119def49668d82c1b2a",
+    "request_fingerprint": "cd30cd625fc242a7faedb16e38630653fb085444e2ee0f2e82407b1bb924d198"
+  },
+  {
+    "key": "group/group-1/market/0/carrier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "892a13a4b2a04cd08af7a4aa35216262a0077cf7225b1fe7cb6e9f3ba16a1652",
+    "response_sha256": "c7ee56c8024eac2a19c8a145c2e82b95d7aa8bd517e8eefbfe21b6951a4d1b8a",
+    "request_fingerprint": "ba603d9f697228be14d34ef54bda1f394529920a04880ed66294590fe0912d69"
+  },
+  {
+    "key": "group/group-1/market/0/carrier/proposal",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "892a13a4b2a04cd08af7a4aa35216262a0077cf7225b1fe7cb6e9f3ba16a1652",
+    "response_sha256": "d592cf5be47f5996ec8782cd869a2916459c961f8c1aae229c6453cded340fc7",
+    "request_fingerprint": "7b1635d7f4b739a834ab5881891c8f735b35e3c0688c5c35cd4d526ce7cda09a"
+  },
+  {
+    "key": "group/group-1/market/0/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "c620b86fe2a8d6a6792275362b586111f018c2490364eb67f399e00424d72072",
+    "response_sha256": "9c2128c2e04cda99680588a8ced654fda7e05b54a8d528c03114d7cb71af05c7",
+    "request_fingerprint": "aafc27b609c69d79338eca4e6ef2b3d60ff3a00be66e55a89891c3963d0cac02"
+  },
+  {
+    "key": "group/group-1/market/0/buyer/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "a25e02f4e6dd0033035919178704b26966a529b5da528008d820cedef241122a",
+    "response_sha256": "fc81c6b8622427ffd32128c1a6dcc91a273e24e8363dccab1d3ab58e630a4175",
+    "request_fingerprint": "8d4f4ad002f796e5194331d7a83f52c251fa0970db492ca4a169013c1708fb14"
+  },
+  {
+    "key": "group/group-1/market/0/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "03e74c04adace1ab49785900c3b94628ed3150111e0c4802827093f356a3410e",
+    "response_sha256": "d584321c23872091d64feb3eab0cce398e9419aa7e85aad8230e84543841cb30",
+    "request_fingerprint": "42e86c92b24db71ecc12bf155a3cc661a540a509435349c34dd0a131fe62f4c2"
+  },
+  {
+    "key": "group/group-1/market/0/carrier/final-offer",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "892a13a4b2a04cd08af7a4aa35216262a0077cf7225b1fe7cb6e9f3ba16a1652",
+    "response_sha256": "744af555f6116ee41f43e97efd437eddf32dd50d66047274a23474fb2e1987dc",
+    "request_fingerprint": "12428f376d4907254571e4b9c23e143c742fa86df91a5eb17a0856538bd4babe"
+  },
+  {
+    "key": "group/group-1/market/0/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "c620b86fe2a8d6a6792275362b586111f018c2490364eb67f399e00424d72072",
+    "response_sha256": "8a600338fa410c1bde35581f6b18c73437e8259a215f85c33b6d35262c236dff",
+    "request_fingerprint": "fe4c0cb50838c231ba610db58078662075efccdf8591150a4314e9cd8f4d4520"
+  },
+  {
+    "key": "group/group-1/market/0/buyer/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "a25e02f4e6dd0033035919178704b26966a529b5da528008d820cedef241122a",
+    "response_sha256": "e7a4467a48576d0cc88522cc5e52d8d73b71e6f60c8820d2fb9275f0996eaed1",
+    "request_fingerprint": "98d1cea01b7366bc33be8d7050e9c67d20c66b1f9b009aebd917316843ad339c"
+  },
+  {
+    "key": "group/group-1/market/0/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "03e74c04adace1ab49785900c3b94628ed3150111e0c4802827093f356a3410e",
+    "response_sha256": "24cbb4268dbe2283fb9758a151d7496c76d95a6b70343d3608199872f419a3fb",
+    "request_fingerprint": "b81c9c088d1f419e2ceafed641b61c46b6949aa4cafe2c5368866a4cfb8ba1d8"
+  },
+  {
+    "key": "group/group-1/market/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "ad58356b4b78bc1610fa02bcd73273fbedeb3e44e0d3dfc3de6e2d697f4d8a0d",
+    "response_sha256": "081970f9474bd3474b20483c729529df35ed5a996112195422b0e3ff186dfb58",
+    "request_fingerprint": "8d037895433021e2406cbc0a5a45fffddb697a77b1ea86e17ef3f55c6d004ff6"
+  },
+  {
+    "key": "group/group-1/market/0/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "0edcdbdd22bbc6d24edc79a96abff2aa68f1726c278227ad5c2bc9161811e817",
+    "response_sha256": "4c830ebd2cd266874d55fa3cc9b45dcf6838d1ddcfda7137221f3cc0d8d6880f",
+    "request_fingerprint": "2da1722e0c07c6a8080b31bc7d428bb254cd665806363c5977e6ab473c36d24f"
+  },
+  {
+    "key": "group/group-1/market/1/receiving/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "afa5f9463274bd6660513e899ff7edae666aef7345225e037bceea93bf105a06",
+    "response_sha256": "549d65aebd7041dac6bc4e47e1f14fc071fe9f537d57910b769bc2416c0b292e",
+    "request_fingerprint": "0d23cd8a4f339e06208dae2c8239085418d3066201db38f0f955c3e58249d5f1"
+  },
+  {
+    "key": "group/group-1/market/1/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "3572b28e21e14f8aea0c00a1997b5c2d8deacc8abc857807c686db6ee71ca34e",
+    "response_sha256": "9f382a97ff934f3ba257fe65da2d9e0a3adc5ee94378795760161b26ccbd9e0d",
+    "request_fingerprint": "9855ae6c50cc2a39ffc4245a8aea93f101ec71d06a805b89033f97fc1d85b0ca"
+  },
+  {
+    "key": "group/group-1/market/1/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "a8272eb0f90094fd116cb6a40610e32f36c2ce3a111a1f186408744fcb4736a7",
+    "response_sha256": "d4bc00c4359363f5eaba2dbcf2495597ba4782d66ce9988b2f9db770ff474a0d",
+    "request_fingerprint": "91a6192d470bd45cd9a9c2a0af095f47b340b59c635aea64dada94ad2a396bfc"
+  },
+  {
+    "key": "group/group-1/market/1/carrier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "06e88a56ebadd1e424e0b0b57d0238d6454e639f85e7eaebe6d9ccf435aa10c4",
+    "response_sha256": "9ff09ce8e2a40a242818583d026393d546ad9546d4f25f7b3e4e40890c0f0571",
+    "request_fingerprint": "9e9860a2058001155e9a94cbaf6bf28ced2d94f1f0669f6727a7381e02882dfb"
+  },
+  {
+    "key": "group/group-1/market/1/carrier/proposal",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "06e88a56ebadd1e424e0b0b57d0238d6454e639f85e7eaebe6d9ccf435aa10c4",
+    "response_sha256": "2187090f13fff56499b922b33ab0d0f07bb6ea2c0694e717200f2d0b170bf34a",
+    "request_fingerprint": "06ccdc242e664b8001de1585e6e4aead5490e29f787f8db0a00174db5460114d"
+  },
+  {
+    "key": "group/group-1/market/1/receiving/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "afa5f9463274bd6660513e899ff7edae666aef7345225e037bceea93bf105a06",
+    "response_sha256": "0bd9dc6dceb1e5a50b1bbf424639107ed801c23827d5dce848fb16976f1390c6",
+    "request_fingerprint": "cc00126f26337a03dde54fed0d36b534ecee9ee1ef85256a15b3c9a55880e4f8"
+  },
+  {
+    "key": "group/group-1/market/1/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "3572b28e21e14f8aea0c00a1997b5c2d8deacc8abc857807c686db6ee71ca34e",
+    "response_sha256": "5c46da1af420554425653e11df2c793fb7c95ac8d1a6de2677f071ca6ddc612d",
+    "request_fingerprint": "1e3ab01c064ec77bea545da17ec4b78fa24ba97f9357eae4bbc4cbe93db0d459"
+  },
+  {
+    "key": "group/group-1/market/1/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "a8272eb0f90094fd116cb6a40610e32f36c2ce3a111a1f186408744fcb4736a7",
+    "response_sha256": "419e4ddac0696e7e9bed298341d69d2bfec2541ccafdf97e8aaa3ab62308226f",
+    "request_fingerprint": "1178769659d07e756c890fae24846dab66099c1eda524e345e7a6a095cfb1882"
+  },
+  {
+    "key": "group/group-1/market/1/carrier/final-offer",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "06e88a56ebadd1e424e0b0b57d0238d6454e639f85e7eaebe6d9ccf435aa10c4",
+    "response_sha256": "709a2367373d1359b64394f5e87cb5a8a2e49ff5f4f200518b861e796edac164",
+    "request_fingerprint": "fccbf856dc725c1266544c2b1c5e2e3cfcf9e9935bf5efab7e05a0f9e0cf840d"
+  },
+  {
+    "key": "group/group-1/market/1/receiving/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "afa5f9463274bd6660513e899ff7edae666aef7345225e037bceea93bf105a06",
+    "response_sha256": "cf49b6b68f739e4318674c81ab7ff88c9671ad7d08df1d33234ac13d2341748d",
+    "request_fingerprint": "a397138df6313409911552617e44d412dd4986bf1198c70508d4fdcec12b0735"
+  },
+  {
+    "key": "group/group-1/market/1/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "3572b28e21e14f8aea0c00a1997b5c2d8deacc8abc857807c686db6ee71ca34e",
+    "response_sha256": "89559fb7bbbc01f40446edc8d97e5a2325d079faca245cc1113a5063e5380aac",
+    "request_fingerprint": "386329e3ea7f3d1ea2beab64bae226a6f50710f02a5254e13e80747c5f33ad35"
+  },
+  {
+    "key": "group/group-1/market/1/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "a8272eb0f90094fd116cb6a40610e32f36c2ce3a111a1f186408744fcb4736a7",
+    "response_sha256": "de9275edfa1e2583e63f0e29a3cf220579ffb99f9587faf32fa161c1314585b2",
+    "request_fingerprint": "9932dc1663e1804301a125e6e66ddfddd7b5e555fbe2cee1ece917b8855eb8b4"
+  },
+  {
+    "key": "group/group-1/market/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5534f520272dc2402b0df51449cf77ef91ff4f75d9b37bae23c80a28201b13e9",
+    "response_sha256": "fdfa4feaba1a58912edcfdc3eaca45d49421aa116c28624cc39e0830a4e29ecd",
+    "request_fingerprint": "923b2670bd29b0c08743ff2e903b1a5bb1105ab5959296ac0c6a1b46a37428a7"
+  },
+  {
+    "key": "group/group-1/market/1/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "dec3c5a3412571882569b6072af768ae06b478ef4b4f20e2f9252300d9894182",
+    "response_sha256": "acf2c03446e11a8b49bfd51297ecb1823b26f01db0e1b46247e865bde4641361",
+    "request_fingerprint": "0c269186ba0885de78b2a29d925b15a4677021a2c5c8d5233ec17a5e2d0edab7"
+  },
+  {
+    "key": "group/group-1/museum/0/receiving/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "42548d1c48154069e3559aae848a4c00c618a7562c5b25b56bcf0d7378e7ac61",
+    "response_sha256": "21d50c7287b227856debe76cf39772e88b3f8f6c4b2a0b4185f36c009c88e72b",
+    "request_fingerprint": "4a5b425df45c45b8761de9fe8063e6243ada1e9a4b5ccf763e70d1525750feb6"
+  },
+  {
+    "key": "group/group-1/museum/0/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "872fab75d5208027c37eabe23dd4f138967f6647a57241b398d49faaf9eb5e56",
+    "response_sha256": "d6bf50f51f846fafb22734d6dd2b748f8f69a5cf5eef43472b03d83894ce74ea",
+    "request_fingerprint": "79110092a59be532a0c7a7cfe3da48d2f523f53f0a32a137509b956c18120248"
+  },
+  {
+    "key": "group/group-1/museum/0/supplier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "92e54649697a2ea668ff16017e11c3022c537c682361e2bd066bb5c826b6ea4b",
+    "response_sha256": "ecf6f265a85b7486a0e7fdb4cc3189a16dbe03e8104d49c46b540bf1f2099708",
+    "request_fingerprint": "40a9fb85bf4fd2eb1346bfbd96b598303a05bff631ec1fd24fce7af4f971ee82"
+  },
+  {
+    "key": "group/group-1/museum/0/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "759449dddfe03c22ae9c37a4f00ac0d1d881f44f5fa5f4eae646d3729edb5e86",
+    "response_sha256": "ed32571dbc2d6a3c2991b65edd67f7c87c6ff857d4a3aec927b965ad70a969d8",
+    "request_fingerprint": "392d03eada57cc1a9d9a484813a5d7affabec54f82e0411d785c2417a578c9cd"
+  },
+  {
+    "key": "group/group-1/museum/0/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "759449dddfe03c22ae9c37a4f00ac0d1d881f44f5fa5f4eae646d3729edb5e86",
+    "response_sha256": "482dd90fe8133cd559f8e04228665e8bba8f99d6db65925383dffa85f0a5b938",
+    "request_fingerprint": "00e88f20b6ae89e1322577a3f5cf819496bdfdd50a8f0d00cee3ec132287d85c"
+  },
+  {
+    "key": "group/group-1/museum/0/receiving/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "42548d1c48154069e3559aae848a4c00c618a7562c5b25b56bcf0d7378e7ac61",
+    "response_sha256": "7739006abeab446befd22e0566fd4a1aa2bf6e2d06112e0ab90f351290a3be09",
+    "request_fingerprint": "8fde1ee68a5281acf6d77a4cff4dead189c62da7aafc5686f9f7ce95b57b1b67"
+  },
+  {
+    "key": "group/group-1/museum/0/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "872fab75d5208027c37eabe23dd4f138967f6647a57241b398d49faaf9eb5e56",
+    "response_sha256": "1e1c31742fb6d7b75b74e15923803e484348dc75938094a8310865c58ba7b29f",
+    "request_fingerprint": "4c3108700f2d50dc43af0af6f7c87d3cee71c8cb2f0cf1e2eb46e9b0edf265bd"
+  },
+  {
+    "key": "group/group-1/museum/0/supplier/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "92e54649697a2ea668ff16017e11c3022c537c682361e2bd066bb5c826b6ea4b",
+    "response_sha256": "d06121d60216edbb34b22a7684cd252d1f3fc11221a87f5b49c60f1a301d145f",
+    "request_fingerprint": "628498de5d28b22b96b55f0c4754e0f3a8d388873e9a486bcfa7611369deb2ca"
+  },
+  {
+    "key": "group/group-1/museum/0/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "759449dddfe03c22ae9c37a4f00ac0d1d881f44f5fa5f4eae646d3729edb5e86",
+    "response_sha256": "11a1dedb5ef41f11438ca3912d514e0916bc98fbe4695cefe41e93f7099db21c",
+    "request_fingerprint": "02e7565e40c7b75dc2de85d24926340c0a3b91cef5aca815510de38e8a47a0b0"
+  },
+  {
+    "key": "group/group-1/museum/0/receiving/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "42548d1c48154069e3559aae848a4c00c618a7562c5b25b56bcf0d7378e7ac61",
+    "response_sha256": "1e09c9c493113b8ed22dbb0c96f4e7b7e11b09fe0c9f2ba0bb9e67950a49f333",
+    "request_fingerprint": "e1f663f51843e423a574aef4c106d0e216a4ab9b45dc19764d78f754209a8db5"
+  },
+  {
+    "key": "group/group-1/museum/0/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "872fab75d5208027c37eabe23dd4f138967f6647a57241b398d49faaf9eb5e56",
+    "response_sha256": "6a89ea793f3e15a5f77ba00f3096761c9c0bdb668bf41f7b1bb52d78a76c7887",
+    "request_fingerprint": "680ddaa6c089bafa440ae47b6dfbb8b45bf1e54b9a6e627aaaa3113072928381"
+  },
+  {
+    "key": "group/group-1/museum/0/supplier/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "92e54649697a2ea668ff16017e11c3022c537c682361e2bd066bb5c826b6ea4b",
+    "response_sha256": "cdddb0d308cb2e852862f60bf967b388af7f23b9f5170343ce03154f6f71d33f",
+    "request_fingerprint": "8a32caf7493a33ced9143cdd951f3efefb0fd64a16676c3dd5bdb51e21ea2083"
+  },
+  {
+    "key": "group/group-1/museum/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "c2ed84a2898f24d143a3059d0c2b6eb606e781d05b12c61b230eddf1f16294f1",
+    "response_sha256": "5de1b2fbc3ffe41ed1380b2db6237cfcadae27621639333a868b56cbcf3dfb42",
+    "request_fingerprint": "207007bb56c75b344f116ce225b799adf52eb1848c5ef93d0d6b076d2f6a135d"
+  },
+  {
+    "key": "group/group-1/museum/0/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "9b8d09013068344acb0804491c0bd507f2f446068b72b1f352183d10f9f8ab17",
+    "response_sha256": "5a4f465970b2c8cb06a3fa3297e7393afdf41bf237c86cb5087ad460f3364b56",
+    "request_fingerprint": "ae772ceff1b344c98a216399280de696ade7fb203257bfff21db297e71eb10b4"
+  },
+  {
+    "key": "group/group-1/museum/1/receiving/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "bca2b32ad01f68ef52a66b5078d9684d627d812f49a20e9829e7c0d57338caaf",
+    "response_sha256": "3bd39049b3c085ff12845f947a9833e579be9ab952257db5f98a00ec86d32f5a",
+    "request_fingerprint": "6b1ff288ab66dbf84a5f582a9a7cfe4c294cc4f8f7a49b0a06eff6f82f0ba3bb"
+  },
+  {
+    "key": "group/group-1/museum/1/buyer/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "fa2120995e7ab97d5b438cafa29584299067d2811479c2ac6753e15d81252c4d",
+    "response_sha256": "dbdc2ce6442988617c922e323fd0129aea3495b8af9df3180c86143337799b86",
+    "request_fingerprint": "ea1ab95b7aede20d597315a86875ca2319bc160e79c849e023a0bab46b16852e"
+  },
+  {
+    "key": "group/group-1/museum/1/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "be2924651b5a94b237cddffb63ee0fec1db1f5ff1363c54f60361151e3eeaa8b",
+    "response_sha256": "9b2ff53bcd39b2bb3fa143dca9cbfe86aaa5c34fe3e5701e8acb14a65906e730",
+    "request_fingerprint": "76cca31c9d64254b7d04aba844ea5c173823e64a3aa1ec1d366d4df98c3baf55"
+  },
+  {
+    "key": "group/group-1/museum/1/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "ffc60d439b7aa1bd0541ba043315d8caa3bd1b78105714962568c3d11e38a43f",
+    "response_sha256": "95ec717434e3dc8b678b19ce59fa3a4f8ca8cf845925441043aca02dc5da9f57",
+    "request_fingerprint": "cdb9acd60bd7cf72106d31648bffc0e78c671d3287ddadbe091eec6e7f20ab20"
+  },
+  {
+    "key": "group/group-1/museum/1/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "ffc60d439b7aa1bd0541ba043315d8caa3bd1b78105714962568c3d11e38a43f",
+    "response_sha256": "ad88a780760d8fc37578f6669b03be9182e2aea9f33f1cbb211ca8af9cfdedd0",
+    "request_fingerprint": "719cd9a27e578dbb93f22f618b21a54d4e543dd3a81118c665b3ab1d742e08c7"
+  },
+  {
+    "key": "group/group-1/museum/1/receiving/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "bca2b32ad01f68ef52a66b5078d9684d627d812f49a20e9829e7c0d57338caaf",
+    "response_sha256": "7fc705fe081a091c2a0a2aefc44436ccd17dd467ce516524cf62c7217adc9e54",
+    "request_fingerprint": "12dbaaa63a6ec466dfb5fac94c9d1ad55ccb2dde8c3cfab99b9ed61735832c5f"
+  },
+  {
+    "key": "group/group-1/museum/1/buyer/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "fa2120995e7ab97d5b438cafa29584299067d2811479c2ac6753e15d81252c4d",
+    "response_sha256": "d7d14f1ccfa6884a8b3ce5f3d5568ecf0d346b9eb35e00d6fb0342c91b6b0ab6",
+    "request_fingerprint": "7d86d72a56fa40544387f6000d80a8f6d6cb44eb8bcd0d8ec7c2d5afe7c264e6"
+  },
+  {
+    "key": "group/group-1/museum/1/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "be2924651b5a94b237cddffb63ee0fec1db1f5ff1363c54f60361151e3eeaa8b",
+    "response_sha256": "d47a6b1fbd4135e5097c832532353951c6c873768050b496551802d9934e6962",
+    "request_fingerprint": "cb4767e063df48e8cea4c5162e789b460769a5a47e55461788b53f63802f7780"
+  },
+  {
+    "key": "group/group-1/museum/1/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "ffc60d439b7aa1bd0541ba043315d8caa3bd1b78105714962568c3d11e38a43f",
+    "response_sha256": "5bf4efe678009faffb35f79fc6611b0105c9fc121408333aebe976125b355375",
+    "request_fingerprint": "0d3f6c0f8a768f2830056e042c59d8d5439f3285271de4560c4ba9f5029052ba"
+  },
+  {
+    "key": "group/group-1/museum/1/receiving/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "bca2b32ad01f68ef52a66b5078d9684d627d812f49a20e9829e7c0d57338caaf",
+    "response_sha256": "93eebc3d05339de1076ed742792390c0bd9e6bde78bb48e6ab1f3db2072e0dab",
+    "request_fingerprint": "8608a0ef85fd21445f9cdabfe0b5462cabfbfaf6a7f3a85d604075c6260d2874"
+  },
+  {
+    "key": "group/group-1/museum/1/buyer/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "fa2120995e7ab97d5b438cafa29584299067d2811479c2ac6753e15d81252c4d",
+    "response_sha256": "552c320332da9d13c064534d2355813e312e20f5d78867cd3a8c389270fd9e37",
+    "request_fingerprint": "7b7bad37845bcc329851763f66dbe45d697e1e273e547f3fb34f0d8a407fbbae"
+  },
+  {
+    "key": "group/group-1/museum/1/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "be2924651b5a94b237cddffb63ee0fec1db1f5ff1363c54f60361151e3eeaa8b",
+    "response_sha256": "35c28d79df160366adbb1c64cce7fef80986abcefe6f52f05aaaf978bb3f0faf",
+    "request_fingerprint": "1458cd37370290442075c3a7846fddfd5a41ac504f0295199d30d318801ae74d"
+  },
+  {
+    "key": "group/group-1/museum/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "c61acdb97c603e39f9940888bba4ef20ab8e882e0bca61bf8c967c6a9bd1e0fb",
+    "response_sha256": "68a79109bc2a829265374fd670ec94b2781ea7db658214870c8864161405d026",
+    "request_fingerprint": "ac87c1f427dac04a49f7b12f900070e00281bccbfacd02aaf4588e4dd77f4ca4"
+  },
+  {
+    "key": "group/group-1/museum/1/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "1361c4971950afdad924c6fb1d9077cbaec12dcad9a205b315244863fe6520b7",
+    "response_sha256": "2267aa9089a7b7d6b650c1d1efdb83c8deb9c3d17995defd2aadece1e7f09f1f",
+    "request_fingerprint": "9e8d45205625d503d3ccd679dc719596f0722a300c3140115e846f126c3900ae"
+  },
+  {
+    "key": "group/group-1/picnic/0/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "894b412e64c8f8609830121d967c34fb305dfdaa16209ce504c50eb01da8174d",
+    "response_sha256": "e0f033ba62a4334d08a2b04bf07e3c2cb7e9f823e8a51b5190feb49b692d7377",
+    "request_fingerprint": "64e7182a3d1a815e874015292bc6cf597ffb5bde8c1face24c1195fe4fdbf367"
+  },
+  {
+    "key": "group/group-1/picnic/0/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "14ed5244521d1d5da7ff74136b7895de2a9bb77dc63ba6c531f35b7c7edcb108",
+    "response_sha256": "6b4532a232ae52aa1c8fc426fcf52c304ca08197b13ddcaceec54ad9b6ce94c7",
+    "request_fingerprint": "9b1df62a50bbcf45aa5eb6f2a3b6059cfbb8373213d5382869d213a5ad1545ba"
+  },
+  {
+    "key": "group/group-1/picnic/0/carrier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "36553917a2c5d73f6203a7edff885f76f966677601e01172e248db70c0568fee",
+    "response_sha256": "c02bd697c08238797fb0d3c17d525bbd8f820da6fe0169da488b309c934ffffe",
+    "request_fingerprint": "7471953ac965dd4aac0cbf1d4f48a38b9f584657369b5dd64a52593c95d3a8ce"
+  },
+  {
+    "key": "group/group-1/picnic/0/buyer/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "4793cd82cdb00e9e328a3aa57f626f1bfc1e3e36f0d6c1c9eb4e9e3bc4996d57",
+    "response_sha256": "ca809a05476a8762b2f76a82701d6c524a9a6e6089567ed4632a9e96538732cb",
+    "request_fingerprint": "12d5f3add1a0601d09aceb67bd427d6ce4efd882b46415ab1f968349b1508d25"
+  },
+  {
+    "key": "group/group-1/picnic/0/carrier/proposal",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "36553917a2c5d73f6203a7edff885f76f966677601e01172e248db70c0568fee",
+    "response_sha256": "859404a4983ae29d9150e27d34d61817e8faa26bec19fa31dd786ea05f69f15c",
+    "request_fingerprint": "5bac4c4e9806b8945aa419e2ce45a204dadfef30b6cff24a91bd0bb26e2bf232"
+  },
+  {
+    "key": "group/group-1/picnic/0/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "894b412e64c8f8609830121d967c34fb305dfdaa16209ce504c50eb01da8174d",
+    "response_sha256": "2de9285f77b99b479d1d49b0abba45a60a15422f9254bedc0527218dac0006bf",
+    "request_fingerprint": "ab15c24d18935d4c9677999ade121093f89cf91a6e8b872914c6af947bb43167"
+  },
+  {
+    "key": "group/group-1/picnic/0/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "14ed5244521d1d5da7ff74136b7895de2a9bb77dc63ba6c531f35b7c7edcb108",
+    "response_sha256": "470a21a9c566c548e9d6e2bc5b5d4387a4a241539fd39c63a202a6b87b4008ea",
+    "request_fingerprint": "01e0edd9d34a1920250ada27a200f231f8a9eb185eb936d815a6c913edf1a13a"
+  },
+  {
+    "key": "group/group-1/picnic/0/buyer/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "4793cd82cdb00e9e328a3aa57f626f1bfc1e3e36f0d6c1c9eb4e9e3bc4996d57",
+    "response_sha256": "99e3fafce7b884e7e1d539cee948da5a6cc09626e5bb107efd6533c8baa6ae0b",
+    "request_fingerprint": "13596ff46d242c7c2b05e5b185fd311a4bd94e8e138f7e8ffe795325c904076e"
+  },
+  {
+    "key": "group/group-1/picnic/0/carrier/final-offer",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "36553917a2c5d73f6203a7edff885f76f966677601e01172e248db70c0568fee",
+    "response_sha256": "92c7e9f89a7332452d867829a147badbce38aab516adcc0634bcace9725e58cf",
+    "request_fingerprint": "96b72157cee54f44019d788054f4fdaa5095d1937d56b900e7f2b47f28a8a5c3"
+  },
+  {
+    "key": "group/group-1/picnic/0/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "894b412e64c8f8609830121d967c34fb305dfdaa16209ce504c50eb01da8174d",
+    "response_sha256": "f7e69725d1fc349889d8ea02fbcceb59b693abb1d39137c88d361f58ec9e4cc0",
+    "request_fingerprint": "9c0307f4ea821db056205b3f7af14a329a70ea96e36d7d4ba064ed1c56e60771"
+  },
+  {
+    "key": "group/group-1/picnic/0/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "14ed5244521d1d5da7ff74136b7895de2a9bb77dc63ba6c531f35b7c7edcb108",
+    "response_sha256": "470a21a9c566c548e9d6e2bc5b5d4387a4a241539fd39c63a202a6b87b4008ea",
+    "request_fingerprint": "d37107db296d988c75ddaf92b47b0ebc2c31ea6b798a3ae1c4b76c61e6d35552"
+  },
+  {
+    "key": "group/group-1/picnic/0/buyer/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "4793cd82cdb00e9e328a3aa57f626f1bfc1e3e36f0d6c1c9eb4e9e3bc4996d57",
+    "response_sha256": "a222e21d0f98b31f5e80efdb06ca96d18b164018dea06bece35aae7aef99a8c4",
+    "request_fingerprint": "e704641eeaf0c8527307cfb751d6cbab5dba60e22fdc96c1fe6aeec6462e9235"
+  },
+  {
+    "key": "group/group-1/picnic/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "925c906e70d8d5474d98f4757914f1bd68e9835b8fd8cda960c384656f25e43a",
+    "response_sha256": "861f3da76b14130ccee4e39188f032ad0ca3a3f18120b2e943067fd0feb7664d",
+    "request_fingerprint": "f5e86a3f438652b56ee10a1c54a3b3f70c14c196f8647b8efa6d67e5a8e44680"
+  },
+  {
+    "key": "group/group-1/picnic/0/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "e2fff3b61539ce5aefc5affa0bc36d41b055519f699cc94f9a2f5f293fa4d508",
+    "response_sha256": "e4916467d81a1ab7cb49387f0d13e6b7a1f0d31abdd5fcf40e94f6295bccbcd7",
+    "request_fingerprint": "60645c162363eedd65ebbd03dc4cdab8d3269d752e9167dde4286844d0b1bfaa"
+  },
+  {
+    "key": "group/group-1/picnic/1/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "75c2128b2bcc0fb7906db159a878aa0ee9315554dc7f0acc9bbad4a6b772212d",
+    "response_sha256": "d3192fad81e724d3fd28a5c972bf9d4b79167af070e5fdcd336f20eb41ac264c",
+    "request_fingerprint": "6a39200b2077ff43ddad1b6f34a61c8759314322440b9f3b6e7295f76dc0465f"
+  },
+  {
+    "key": "group/group-1/picnic/1/receiving/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "d62a5b17af892f089126dd6e53778c6c1902ffb4585e573d5af6100982d01612",
+    "response_sha256": "f4470dbcd6058b0120a031ba1070929ffff020c84f0f57b8f80d0b2dc94c2a8f",
+    "request_fingerprint": "713572f805e0a6f0847d47f893d368f40e2d7fffb49a33d551f9e1b5262ffff5"
+  },
+  {
+    "key": "group/group-1/picnic/1/carrier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "4809225ce6e96cebc69511d9fbbda2389b609de8175cf5bbcb171831a3af8592",
+    "response_sha256": "6105923e8537bb74d0e1a222078cc4f259927eed95de9101f136e00e2f2d78f9",
+    "request_fingerprint": "f938803d138d940ea1342cd7e23c62759ec62fd84e901ad2943d31a9eb00fd87"
+  },
+  {
+    "key": "group/group-1/picnic/1/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "81921e322056d61c5d5415bf5750a60c21a22b6f2c1f12db419c306f05485603",
+    "response_sha256": "57a10ce6a7c11f2983124b9170cd47f849f8e4bb1ef3a3e4e8bc6e16b4c042f2",
+    "request_fingerprint": "80e1ee4119dd8372bb3f2d253c7dfdac2996fb9ef724ad0dfa321fdbad5a5794"
+  },
+  {
+    "key": "group/group-1/picnic/1/carrier/proposal",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "4809225ce6e96cebc69511d9fbbda2389b609de8175cf5bbcb171831a3af8592",
+    "response_sha256": "a75006f91a4bb51e85fa474efef04ea6565787f2677080d2a5e739ea7619327d",
+    "request_fingerprint": "ec1907f352a7bbf76dfa5dfd1cc98c144b658b81010dc78184c526f6df70546d"
+  },
+  {
+    "key": "group/group-1/picnic/1/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "75c2128b2bcc0fb7906db159a878aa0ee9315554dc7f0acc9bbad4a6b772212d",
+    "response_sha256": "1ea6441fc7d4f3420a43496c3abdf5346da7446fd4bd9147f310e65d871fc913",
+    "request_fingerprint": "6f74d2cc2b2894d7ea71590b294514005eae4942668dffa5c5ca764a787ca71c"
+  },
+  {
+    "key": "group/group-1/picnic/1/receiving/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "d62a5b17af892f089126dd6e53778c6c1902ffb4585e573d5af6100982d01612",
+    "response_sha256": "ea6cf0999ff3cc0fd67354101ad739e5eb3da851291724452ec843550d5a0341",
+    "request_fingerprint": "6ea826476e6ebaef259264fff6ef9bc5dd40ca17ad17dca84fe3c93359836954"
+  },
+  {
+    "key": "group/group-1/picnic/1/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "81921e322056d61c5d5415bf5750a60c21a22b6f2c1f12db419c306f05485603",
+    "response_sha256": "c236d6812b9b1b2e5d2aaa5da91a785cd04aacff0afe6c9d1c07054d9b7ecddd",
+    "request_fingerprint": "ea305a06032c114ea261608d874f6aec327dc04c687ecba5e6acbe35e7d743aa"
+  },
+  {
+    "key": "group/group-1/picnic/1/carrier/final-offer",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "4809225ce6e96cebc69511d9fbbda2389b609de8175cf5bbcb171831a3af8592",
+    "response_sha256": "ba0a0eca73ec3a8fe5e77746090c4426bbd5e8ce596dbe6b532e911c392950c4",
+    "request_fingerprint": "a7c10803b1d0320f01d84735025062a2413976399387606108a8ec696ae5bb0c"
+  },
+  {
+    "key": "group/group-1/picnic/1/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "75c2128b2bcc0fb7906db159a878aa0ee9315554dc7f0acc9bbad4a6b772212d",
+    "response_sha256": "a9a437fb97be1fa743bb8aa0576b817bcc78669859e2a00144871c72578501c5",
+    "request_fingerprint": "9d27f2a6ba4786547b2504b1ebd113c606c6e43ade483d2be69716bb6599d924"
+  },
+  {
+    "key": "group/group-1/picnic/1/receiving/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "d62a5b17af892f089126dd6e53778c6c1902ffb4585e573d5af6100982d01612",
+    "response_sha256": "112fd82066d9fd771d147cd30acb086a0f645d44cb13aa2f0a3c745a83fa874c",
+    "request_fingerprint": "4f94a1fae089873d55ffc2e2f7b890dceb152e7b59e5874b4e93bd7d671ea0a2"
+  },
+  {
+    "key": "group/group-1/picnic/1/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "81921e322056d61c5d5415bf5750a60c21a22b6f2c1f12db419c306f05485603",
+    "response_sha256": "6cb9bf43ebd07bc7a75390c2fb70530736a6db3bc38ca8d06d93675eaf5598cc",
+    "request_fingerprint": "90af488f725f6825cc958005baf5388abd5717110068ed2f363922a2027b8ca3"
+  },
+  {
+    "key": "group/group-1/picnic/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "9aef26385684b8ed361c8b79bc8882ea44bc263a6460436fe6137aaa5fd4a1e6",
+    "response_sha256": "a015df765a5763a8d09e9c11bad82b58ea6448b39160fbd1a0f3f3192bd43a29",
+    "request_fingerprint": "fcc11e9751489dd46294bdcf334ed7ff285afeac01edaae836fd739983cdb281"
+  },
+  {
+    "key": "group/group-1/picnic/1/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "d1a9922f9bd9dc8fcf3abb9e587bb40ac525468dd28c93a6dcf0bbd60eda7256",
+    "response_sha256": "4b8b3e03ce73ac275a782640e8c3f84259acd2a67431ba767b2a7e34693223fc",
+    "request_fingerprint": "e4013dd1ad4e7e0a1245b94e30ad8f16b96913cab2448df28768ee56dbf2033f"
+  },
+  {
+    "key": "group/group-1/school/0/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "332d7e21bf53df3a38740b96b9d978f57a1cc9ea90a47907afad408e1aecaab6",
+    "response_sha256": "e6e206ed2cf0791fd3b607d4a692f19bb1cbdc17441ced387efbeeef14457d16",
+    "request_fingerprint": "7c0048a3a8bbc114046441d5987f111fd310bfbd9d6b5da0c0e1d7e084fd5edf"
+  },
+  {
+    "key": "group/group-1/school/0/carrier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "648e63b68d2264ef34c3cf0486e195ef79fb4c6c0a389a07a852342d53786817",
+    "response_sha256": "29f11a19409160de67392842afbdb2edb7903fd5d4d889dceb8798d603cb92dc",
+    "request_fingerprint": "092ed2cbcf09f95231ed3bc7dd346ac2dae9cf73e08202f2947ee4a3e35d10ac"
+  },
+  {
+    "key": "group/group-1/school/0/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "83599198bcf06c219dfab17a3c6cf821d72793e08d6aa442703114ddb2d8284f",
+    "response_sha256": "a7adf8277cc868c5107af710eeafb89451282cb3eeda5a590c0d2294cac3767d",
+    "request_fingerprint": "bd568b1342c46c22b12ac235fcbd7525507ec48a567248398c1f7c1f9b6a1e60"
+  },
+  {
+    "key": "group/group-1/school/0/buyer/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "9ea73a4a57510fc83d715fbd11e0eb4c5c48a2e1296c506a56b04b40d5f79a8b",
+    "response_sha256": "118da87e529e2bc291e09b9e0606215d57cefc04cc6a7b59054586596251cf10",
+    "request_fingerprint": "a27a4e71fa85eeb6cad0f634d2feb5a101ddcdd300748ad9ab2fef1b8dec07c5"
+  },
+  {
+    "key": "group/group-1/school/0/carrier/proposal",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "648e63b68d2264ef34c3cf0486e195ef79fb4c6c0a389a07a852342d53786817",
+    "response_sha256": "92c50981456ac007408c08d76fe3c706a7b5742ad3745240396231a1cee46394",
+    "request_fingerprint": "eeff4984824586064fbe3e38707bc22382d4bbacebcc022df7b0c3b6aa1efd15"
+  },
+  {
+    "key": "group/group-1/school/0/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "332d7e21bf53df3a38740b96b9d978f57a1cc9ea90a47907afad408e1aecaab6",
+    "response_sha256": "b471ec7ed1b068e7e926b70788b655a30d531acc69d97bfccef599e5fe4e2ab8",
+    "request_fingerprint": "955a5d4b9c99e94e3f9acc288abda7e2ffdbf1ea7bb4179022825d8a57f8d3d0"
+  },
+  {
+    "key": "group/group-1/school/0/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "83599198bcf06c219dfab17a3c6cf821d72793e08d6aa442703114ddb2d8284f",
+    "response_sha256": "7557e46eecd3b842e575870e30f6e5c98ea8e25940cc69f727d0f67625ef44e6",
+    "request_fingerprint": "0252031fee5bb7eee2a70042bbde0bef3a7ed24358186cd8979dc94670df3576"
+  },
+  {
+    "key": "group/group-1/school/0/buyer/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "9ea73a4a57510fc83d715fbd11e0eb4c5c48a2e1296c506a56b04b40d5f79a8b",
+    "response_sha256": "c43ad06fa7925758881a93c51712581353d6f4dfc2f4c6cc1db0374f6ceb549a",
+    "request_fingerprint": "0f1cffc6554c8ccbce67cfa1acfa30bb78bebec5a14fdf22f1553aa60e3b3aff"
+  },
+  {
+    "key": "group/group-1/school/0/carrier/final-offer",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "648e63b68d2264ef34c3cf0486e195ef79fb4c6c0a389a07a852342d53786817",
+    "response_sha256": "2c65051b42f7ad91691e678a72d29c9a9ee074c059810125f7950d998c3060b1",
+    "request_fingerprint": "347806e83cfb553885db8ca27fdd2044b269b7417a8398d30dc656af350c0588"
+  },
+  {
+    "key": "group/group-1/school/0/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "332d7e21bf53df3a38740b96b9d978f57a1cc9ea90a47907afad408e1aecaab6",
+    "response_sha256": "189dda97b0c6b3546a95b1b47556102fa01754032e7f2b55e280efc1b3089b4a",
+    "request_fingerprint": "d76e1bc9160d9d50b09c549577deee29c431e1c19294ae5228f64daf02ab0710"
+  },
+  {
+    "key": "group/group-1/school/0/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "83599198bcf06c219dfab17a3c6cf821d72793e08d6aa442703114ddb2d8284f",
+    "response_sha256": "bec861abb7ef12a45af76e54f0f8d3c7aeb4662da9c2b420d293d8d9c72c39ff",
+    "request_fingerprint": "e89c297a305c0c715f3890ab8a0507d1b28c6b1f66b18b4616a08be3afc69406"
+  },
+  {
+    "key": "group/group-1/school/0/buyer/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "9ea73a4a57510fc83d715fbd11e0eb4c5c48a2e1296c506a56b04b40d5f79a8b",
+    "response_sha256": "a77a518b372daec87c074930c630747f2a58beba724216cc8ec763e37c32cbd0",
+    "request_fingerprint": "4f7071d72d26eca0c281515a7e21762504480f0bdd349adc249c83a90f0182d6"
+  },
+  {
+    "key": "group/group-1/school/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "80b0ebece41b315d00c93535584c611c761da170db48780582ae342b2224fd4e",
+    "response_sha256": "8a546b357fbaa8e325112f11c25fa0ddd076f488ed7deaabc0e6cd6ee7340833",
+    "request_fingerprint": "455653f144735e5edff4c4d81acccb07be433e409ac883f4b697fce23f82e5f4"
+  },
+  {
+    "key": "group/group-1/school/0/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "460e9e348a6d2be13132dc1cda3f29c47c593379590e1f2d5153e3a7d15e14ef",
+    "response_sha256": "5c0f68c1e3a50c3d306e0731bf80c5d3efe389a8d6c082aca0d675256ff3514f",
+    "request_fingerprint": "69570993703253a4242058737bfc87f9b9598dc806b65079c9862d3177600dd9"
+  },
+  {
+    "key": "group/group-1/school/1/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "a13fa05ee867e6f1547ce28880e772904f5737e8ecdd6724ea6be9f145f9aeb8",
+    "response_sha256": "be3f5b5ffb8608388c38c4a73582459a9cc2c5bae401d651572ede3eab346505",
+    "request_fingerprint": "d2d74fc76b7f38294e6e991e73b98f505998f7950c11e35382d77ba9e7d83219"
+  },
+  {
+    "key": "group/group-1/school/1/carrier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "914420cd9760b2bef024299e2d475cd53f73150d1c32b349c08a185fcf848f7c",
+    "response_sha256": "ed85eb6e0fdfeb9413e4a77d25f9dc0a4c2ff82a61fd92258bcdab9ff2f798e6",
+    "request_fingerprint": "3ecba3845baaf3968ca2f829f213a9f6debd2ace9dacb783ad15caf684bee9a8"
+  },
+  {
+    "key": "group/group-1/school/1/receiving/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "9b6ca6db789f048e52794baa235d47fff46fbd3346078a84ef2377608730a51c",
+    "response_sha256": "181c0c3eb85ecddb6c73e840be42be8478de872db0bbaa5980eaeb725b576351",
+    "request_fingerprint": "3fb2d4ada9b3db048fb553c63cc7a045a6f2fd7f1d078a285116247e0d3c76d6"
+  },
+  {
+    "key": "group/group-1/school/1/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "bef74a95ab3308ebf1fb33d55a41ff84078af8b445efba60521f2563da41dde6",
+    "response_sha256": "24cafb907b6c416451b8b39cdea9cb02c99b974f565af703f746d933c4c60e52",
+    "request_fingerprint": "4482da91ef24fbf2b15ea127a80c764b6f6c03c8eade19d2f652a91b0c79e739"
+  },
+  {
+    "key": "group/group-1/school/1/carrier/proposal",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "914420cd9760b2bef024299e2d475cd53f73150d1c32b349c08a185fcf848f7c",
+    "response_sha256": "e8b1a78063d3a8ce7792178d99221312b60307cd15c12e63230bebf1e16cf324",
+    "request_fingerprint": "dfca23a3cd737e5d69987dd5b5ad90abfa683f93f3a899db2f7a1fa54fdf4f66"
+  },
+  {
+    "key": "group/group-1/school/1/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "a13fa05ee867e6f1547ce28880e772904f5737e8ecdd6724ea6be9f145f9aeb8",
+    "response_sha256": "93d91d96a2bfe2566a0d537360279c0e243cc44efd7239ba0d9fa034a3311ac2",
+    "request_fingerprint": "8944b5578a7afe43d62afbb73fa5be5f3658bb4af8d5d9b8d68120cf38c9c188"
+  },
+  {
+    "key": "group/group-1/school/1/receiving/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "9b6ca6db789f048e52794baa235d47fff46fbd3346078a84ef2377608730a51c",
+    "response_sha256": "a8d91fcb22ae6d4d0ae2a30b40d05d0b37e36fc165462a8d227a5cb816bf975b",
+    "request_fingerprint": "81f112701605a382d3dc09aa8c8cff55cc71f582c78438377a9a74c71d505b27"
+  },
+  {
+    "key": "group/group-1/school/1/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "bef74a95ab3308ebf1fb33d55a41ff84078af8b445efba60521f2563da41dde6",
+    "response_sha256": "65e799d1438b079591c8e55b4affaaac2937b9a7e5ccda7f4437893948f14459",
+    "request_fingerprint": "9aa3f8b16dc35544b38cf2cc8ccd888e783392bedbafed7de440d63b29b51150"
+  },
+  {
+    "key": "group/group-1/school/1/carrier/final-offer",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "914420cd9760b2bef024299e2d475cd53f73150d1c32b349c08a185fcf848f7c",
+    "response_sha256": "ab17e6efbf7c3423ec47e47b227729dd656bd7f1ddb0f63c0ecfadc54c85acc6",
+    "request_fingerprint": "5db2edcafd0708d50f9ca81ff4c89685825b313522947c11d786eb2b72edfc99"
+  },
+  {
+    "key": "group/group-1/school/1/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "a13fa05ee867e6f1547ce28880e772904f5737e8ecdd6724ea6be9f145f9aeb8",
+    "response_sha256": "4839c40d2bee5d2704b3d08575deba39b25d2d197467c383a6d7a1ac8745384a",
+    "request_fingerprint": "c724e1ea411e81be22df0e381254681aaf1e6f6b484b4190a1752ef772d6dcb7"
+  },
+  {
+    "key": "group/group-1/school/1/receiving/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "9b6ca6db789f048e52794baa235d47fff46fbd3346078a84ef2377608730a51c",
+    "response_sha256": "3ba8c8d821a7f83363fae6e19948ab96ca53493a36996be9d9aa74f592831159",
+    "request_fingerprint": "17448ea534cbc2deee980da1d627b0c356ba433df8c0a504e905cffc4ad54e05"
+  },
+  {
+    "key": "group/group-1/school/1/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "bef74a95ab3308ebf1fb33d55a41ff84078af8b445efba60521f2563da41dde6",
+    "response_sha256": "6133a6681fedc750b2332a9ace74e63e7e28e496fbec98aa67f9dece4c36d63a",
+    "request_fingerprint": "8dc2333f3df72dc26e0aa9ae6e52c4e2a1a97d3d031f5b026fc33f75fb6b559e"
+  },
+  {
+    "key": "group/group-1/school/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "96cd0e4043868ca8eca717f25ee4065607902e0d8d4074629f1ffeb3b573750b",
+    "response_sha256": "dd329da606849cd6890a8082f37020b7481261482601fe6bf0d6236058375ba6",
+    "request_fingerprint": "6982af48e9785ed718750767b46dc6a451c52a923ee18cd4c6ee8e297ccdf9c8"
+  },
+  {
+    "key": "group/group-1/school/1/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "1b486a00f9725cddb87570a034e210b86fb97251e5da9db5bfa53ba4a8de0fdf",
+    "response_sha256": "4656105de9d0777c12ce00c3a511a83c83f8a262ce4c40b84ac41bf5c6cefd7a",
+    "request_fingerprint": "0a5938ae2f10fb4650403bff51135112e4fec6ffda6205ec66e66faa640103b8"
+  },
+  {
+    "key": "group/group-1/studio/0/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "ed427a1fa0ddcf2aae81bba894fd2ade28c50a413d385df9d367aa53bda54591",
+    "response_sha256": "2e09c44038e9797718ffc03e0a166a2258c59a5369b28a00be35e89e9f7bebc8",
+    "request_fingerprint": "7753552b2c054e1fab13dfccbba95effc9aac39466b959c47e8e4ddc9f297d28"
+  },
+  {
+    "key": "group/group-1/studio/0/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "6e4569515c3dedf253381cc07a5cea0247a4b3a8770f5822d9ce84e0aead4544",
+    "response_sha256": "c89c63f392556a5950ce3a2f2384068a4efabf042e13084ad0b337f111657e51",
+    "request_fingerprint": "ac119922ab203621ad81ab04e396b832662b8ab004b0237db8a69abed9789a44"
+  },
+  {
+    "key": "group/group-1/studio/0/supplier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "f23b9973a34c0946766f0f5871a33103172ea821aac6789054786caf4be887ad",
+    "response_sha256": "cfdb859408eae6c72c2bb39f898ed588eb9a63e57aaafcd7f718e1c023c4dbd3",
+    "request_fingerprint": "a7ffb47fb451d4a1dbd89fa4a924ae7510289c26f089a24cffa924fcd00f0b9a"
+  },
+  {
+    "key": "group/group-1/studio/0/receiving/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "c02a88d790039bac561d0528af7bf66373bb7528305439ef0f65042afe38e883",
+    "response_sha256": "4aaae47059b42c4b1a41ebdc405609edf47acedebf68c183211c9f2e982d12a8",
+    "request_fingerprint": "8df2e033ae189eae5a733a998bb99710a93b84d6c024cf3367e68bad65af8e06"
+  },
+  {
+    "key": "group/group-1/studio/0/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "ed427a1fa0ddcf2aae81bba894fd2ade28c50a413d385df9d367aa53bda54591",
+    "response_sha256": "653ceb069126a26a144d4ba007c706e1d036bf282da74611e840a32303fd22d9",
+    "request_fingerprint": "2ce59b79a7b45fabb13527d1d2930795fda60f0439e7a1b3d4765a98caee0871"
+  },
+  {
+    "key": "group/group-1/studio/0/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "6e4569515c3dedf253381cc07a5cea0247a4b3a8770f5822d9ce84e0aead4544",
+    "response_sha256": "7b92c2b18ecfddbd2c5e1d80dcc28facf4a2849a2b07aa59a128b010fd95cdc0",
+    "request_fingerprint": "d8f1f068f8d11acbf026b61eccdc17261a7dfca8311001a04c7030c6820e7b13"
+  },
+  {
+    "key": "group/group-1/studio/0/supplier/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "f23b9973a34c0946766f0f5871a33103172ea821aac6789054786caf4be887ad",
+    "response_sha256": "2b3be650779d739f40a73f46471d44f0398494b134d834072ec58d5364452f4e",
+    "request_fingerprint": "263edc079bf5554afb8a152f510e9b5d803e3b93bbf80c6b0f9c1bfb0f9922ea"
+  },
+  {
+    "key": "group/group-1/studio/0/receiving/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "c02a88d790039bac561d0528af7bf66373bb7528305439ef0f65042afe38e883",
+    "response_sha256": "a1501110937027aa3093660b4e902beddeae89af1b76658888bbd2f2a8c26c1c",
+    "request_fingerprint": "ee5f7c4ee76627a66326355d91d18b25eb342587015691a5640291a97065b89c"
+  },
+  {
+    "key": "group/group-1/studio/0/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "ed427a1fa0ddcf2aae81bba894fd2ade28c50a413d385df9d367aa53bda54591",
+    "response_sha256": "ca2e34ca00318fa9bc966c2ec0c1d05eaf3101a37d93269786aa68a982796d28",
+    "request_fingerprint": "bd59a1aaa6b933863591362b1c96a2a6cf803784327f810c70b7f3f27bb8123a"
+  },
+  {
+    "key": "group/group-1/studio/0/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "6e4569515c3dedf253381cc07a5cea0247a4b3a8770f5822d9ce84e0aead4544",
+    "response_sha256": "8422a3bc16b6c5988685674cc39cf068637d713a329f28412bc458f252dc444f",
+    "request_fingerprint": "ccc89deaf97fed4479025205273bf6c4cc70e8964f9e4e975a0307a0d1759623"
+  },
+  {
+    "key": "group/group-1/studio/0/supplier/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "f23b9973a34c0946766f0f5871a33103172ea821aac6789054786caf4be887ad",
+    "response_sha256": "cdc55a74f21da5ee790afacbd1fef1b497e0ceb05d8ee175f2bd1aa11eaa8ad4",
+    "request_fingerprint": "4a861a9355920468093f6a67671e9a55b4a51a9c26192707fa136e90f8cb46f6"
+  },
+  {
+    "key": "group/group-1/studio/0/receiving/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "c02a88d790039bac561d0528af7bf66373bb7528305439ef0f65042afe38e883",
+    "response_sha256": "413957052314481062d2c13cf8b13b65307e5cabdd2a03db78d0d3fa6abbce2c",
+    "request_fingerprint": "b5ec512d3e07c74e307c08fe817f63597610c3b86457dfed04dcaa87acf0e140"
+  },
+  {
+    "key": "group/group-1/studio/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "39e1f88dc918072ef28f42e2d14976a0d8a9fa198391c52d68fe734921e22531",
+    "response_sha256": "acfd7884c7ffbfb1b9cf1633c8284a7e0cfdaf4040df2eef3b49241de400efe0",
+    "request_fingerprint": "fe274bfefc01c0b30ad13fb0be7b07b15105aeee2fb4e7973a8c59fc552e3630"
+  },
+  {
+    "key": "group/group-1/studio/0/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "60f881754228d181f70ce116b99aa9141e6c2a0f1326476d3dba1eea358e6f95",
+    "response_sha256": "de4723aa6806ee15fe33c04c2505217ac648ac7be5e851461a3e0a3e43300796",
+    "request_fingerprint": "baac94a3acbe90c5f31073d9827533b5113bb2e3b370ea23b6a2c76a7a5c666f"
+  },
+  {
+    "key": "group/group-1/studio/1/carrier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "83e0cec1757ff2b7b39367d67fd827e865c5fbc34ccb8c6713832f43cb8044bb",
+    "response_sha256": "fd1322cc485800c5d3c229427b5ff8a7977f1fdf9f026c4d4b791ab2f10ce160",
+    "request_fingerprint": "1ec2ed16d1c9451f62d82075b0762f3e3864d52dc794d90d65551c741f3c6b5f"
+  },
+  {
+    "key": "group/group-1/studio/1/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "bd95e62709dd5fe029f9b7dae9de966368f625e95dbdab902e53d32450f1ffff",
+    "response_sha256": "fcf8dd25c344b15244ca20e620551d24549a40212f38855fd539b918d894957b",
+    "request_fingerprint": "8d7054079e91caa3cd1bd68e4c8acebbd105fcfd4116b5fce44d18cfd7aeda9f"
+  },
+  {
+    "key": "group/group-1/studio/1/supplier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "d650614488de44a887434f0fd1678dacb64fbbe5639969e2c82f5adf96eedaed",
+    "response_sha256": "64c8d096b000919b69c7400bf11a4641a8a3f9315b2d1fc5b169dd70bf674714",
+    "request_fingerprint": "19cb1931c5ff18c5ddc71af83cf5ccf2bda16fd1947ceec6d28ebf8fea991098"
+  },
+  {
+    "key": "group/group-1/studio/1/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "50b8518d5ac6d40d42348afb2e5aa6404c4c5cffacd0b2d69edb4c629e6aefa8",
+    "response_sha256": "f571586e9ecaf3f6f32a7e15a6c715d0461b21f613f45b5532d19ff291557cbb",
+    "request_fingerprint": "ab15c41973d91f0918efaa1d3cca56a9f76533e7347fbb860fa6c28527a6e3b0"
+  },
+  {
+    "key": "group/group-1/studio/1/carrier/proposal",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "83e0cec1757ff2b7b39367d67fd827e865c5fbc34ccb8c6713832f43cb8044bb",
+    "response_sha256": "b6bdb483b43a3f13e3a93236593074d5e7a7f6e19ae0de2d059a62757d221a1a",
+    "request_fingerprint": "ed7574aae4c6dc945f38c573884c6540d8945b948e554be92fdd8be18ec54d38"
+  },
+  {
+    "key": "group/group-1/studio/1/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "bd95e62709dd5fe029f9b7dae9de966368f625e95dbdab902e53d32450f1ffff",
+    "response_sha256": "7ff3fbdac921c7fcbf7413dc26472ac2fa70c7c84a6e2e2ebcbdddee81454570",
+    "request_fingerprint": "01c9b952b0708360c8e0f4d0a1fa1dbac4f97e0a9add86c14d25c749300f9ee7"
+  },
+  {
+    "key": "group/group-1/studio/1/supplier/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "d650614488de44a887434f0fd1678dacb64fbbe5639969e2c82f5adf96eedaed",
+    "response_sha256": "899908436e18300eea74e8cff94aea4893b8552043985e2f1f2f94a007639ae5",
+    "request_fingerprint": "8418399403cc9dd5bc3941da8d9c0e8f026aabdc3829241f103800591b93639c"
+  },
+  {
+    "key": "group/group-1/studio/1/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "50b8518d5ac6d40d42348afb2e5aa6404c4c5cffacd0b2d69edb4c629e6aefa8",
+    "response_sha256": "8b78d979c1d8e5ed1700dde6c395167074ab40acce95844635af5417e385e2b5",
+    "request_fingerprint": "8c8ff9fc070345f1b3f8cab64baef796b1f7f88404601c3f79ad9e09c03c14f5"
+  },
+  {
+    "key": "group/group-1/studio/1/carrier/final-offer",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "83e0cec1757ff2b7b39367d67fd827e865c5fbc34ccb8c6713832f43cb8044bb",
+    "response_sha256": "ea2e0621994049c585fbf48a922c72666fb9af27b5fcc13c3bd1db0bae4d8a5e",
+    "request_fingerprint": "735f651b718c9ef6fc12975ce97324d33bab0cea7e8ed8e802660e96d408c48a"
+  },
+  {
+    "key": "group/group-1/studio/1/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "bd95e62709dd5fe029f9b7dae9de966368f625e95dbdab902e53d32450f1ffff",
+    "response_sha256": "570b6bc2fdc5c93f848559ef4eb802128bac984aaf431c28f130ac6e3c8ba285",
+    "request_fingerprint": "e25032ef904d334ccd86d256cedfbee50f155e7dac09891df5a59213692dfb5a"
+  },
+  {
+    "key": "group/group-1/studio/1/supplier/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "d650614488de44a887434f0fd1678dacb64fbbe5639969e2c82f5adf96eedaed",
+    "response_sha256": "e5a442ff5ce68975648c738e41479f4b201805755e68e358bd338f118c4e7c3f",
+    "request_fingerprint": "864b76a675a2a0673a382ee26125ec61c87a425c2eeb11618cf223bc37bda020"
+  },
+  {
+    "key": "group/group-1/studio/1/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "50b8518d5ac6d40d42348afb2e5aa6404c4c5cffacd0b2d69edb4c629e6aefa8",
+    "response_sha256": "14f91ff68daa796935ee640563b9bcd48af780af529d46a5a1bdad6332d1e3c0",
+    "request_fingerprint": "81f6e536ea2e01d8f4f755a53a3a55c9a6628b5d56aa651ce6ad3d7f54ee238c"
+  },
+  {
+    "key": "group/group-1/studio/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "20a3e95ccba204126787cf2062dbd41daa0eefcc8a0569bb9f3fc3de7216eb9d",
+    "response_sha256": "8901e8e63335b6b8b3f11d99e59c333416f26408e4e674a5bc6b43fb0e5d9436",
+    "request_fingerprint": "bcf419664f89e7254c807789b1ea65c1e93fb36920b908d3db21e621fccd49a6"
+  },
+  {
+    "key": "group/group-1/studio/1/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "a25bf7f00c67db596ba27386096a15558235c7831d17131a5bdf2c3b33ce3e55",
+    "response_sha256": "d9c142838eb46e5426e9b047d76f48ad121b6da32dd2bc6b5c04764702b607c2",
+    "request_fingerprint": "9b1b0a1a908a462c258fc676cc9b5e980080f654f9405b1d968b54f3a7850189"
+  },
+  {
+    "key": "group/group-1/workshop/0/supplier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "653df648bce96e8095f32e10ebbdcb28753bf2485532c6d469a657464c4b9099",
+    "response_sha256": "8510be26a3f56f26fb3899080ec0bae6961d1b37fea180880b15d82a0b66e039",
+    "request_fingerprint": "199680434657cb1eaf4a361e0b95fd6721103da76cb198cb6c85acff48fca3a5"
+  },
+  {
+    "key": "group/group-1/workshop/0/receiving/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "643ff9e3dcbd1d33298bfd7ec4193ee2caea9e37f504bb4f03e29d2151332bb0",
+    "response_sha256": "a00fe10dc5d0d4142cfadb2e41afba8fe4842f6534827b762aa7dff7913910dd",
+    "request_fingerprint": "89c70cba44af47d5d3898ae0606902241b8846faf2e512a59295a3348a6dee91"
+  },
+  {
+    "key": "group/group-1/workshop/0/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "1c7c5040c61360cf10b57d9daaefd6138e53d023ae9d225c5ac1a3eca4641f46",
+    "response_sha256": "af1eb5f34ef12dff475f7c8e15fd3e5845e0b4fef2b6d7d8e9b3e89e4d718441",
+    "request_fingerprint": "b099838279beeec1a20815730a2e1cdd2808f578f17f05efecd56d1ee794463e"
+  },
+  {
+    "key": "group/group-1/workshop/0/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "4f9c7f3dcf0c1b369aceed223bbd19d61e8e38b8a2834e6ac5e845665c736022",
+    "response_sha256": "42935ce0c410b71357fa367add645f9d5492b3051419491e69805f4dbb76572c",
+    "request_fingerprint": "28174c7e16821ea437286d16e534db0acc26a5d864299d3e30c8ceea462339b9"
+  },
+  {
+    "key": "group/group-1/workshop/0/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "4f9c7f3dcf0c1b369aceed223bbd19d61e8e38b8a2834e6ac5e845665c736022",
+    "response_sha256": "5219eac44f53adee173d22e4ed09970a00cbc2640ed8b4c488bfea021804bd86",
+    "request_fingerprint": "ebe197020f707f1e58c9f7be51149fe273febcc2b14e354ef622fb537dea22f3"
+  },
+  {
+    "key": "group/group-1/workshop/0/supplier/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "653df648bce96e8095f32e10ebbdcb28753bf2485532c6d469a657464c4b9099",
+    "response_sha256": "8cc62778d16410dfec5a133f4599d9930b0fd2bae7596489ea08ad7201a36556",
+    "request_fingerprint": "ef0d4b5781573d95ecc5b1e6fecb8b007521a17018b68f95e12dde44f5125812"
+  },
+  {
+    "key": "group/group-1/workshop/0/receiving/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "643ff9e3dcbd1d33298bfd7ec4193ee2caea9e37f504bb4f03e29d2151332bb0",
+    "response_sha256": "2d627aa3f82391ee921c5bacd594eb31d721f154f0208fab1177162eae3349e3",
+    "request_fingerprint": "163c725c98abddb2d35f8ece48631d5cf0f0d72dc1b50ad86261d4b23777a5b5"
+  },
+  {
+    "key": "group/group-1/workshop/0/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "1c7c5040c61360cf10b57d9daaefd6138e53d023ae9d225c5ac1a3eca4641f46",
+    "response_sha256": "caf0262595415ec3426685d93d160388b64696aa884c2606bb859e9d03785a6e",
+    "request_fingerprint": "f126fa8d8bb1728eef858dafdb981229a911df5ad6d1ccf887e14ba4dab98939"
+  },
+  {
+    "key": "group/group-1/workshop/0/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "4f9c7f3dcf0c1b369aceed223bbd19d61e8e38b8a2834e6ac5e845665c736022",
+    "response_sha256": "ee0c0093b068fc60a88bdea50b6846e6b1ea6f00e97cd7e47ac561a81722bdd5",
+    "request_fingerprint": "fe13f577273dd88cae4378e92dd6cee2f9aafeaa5b55b7fe09d17c9dc7654525"
+  },
+  {
+    "key": "group/group-1/workshop/0/supplier/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "653df648bce96e8095f32e10ebbdcb28753bf2485532c6d469a657464c4b9099",
+    "response_sha256": "08afc1c2a87f3eba04f5c1bc436d0bf03bd3b54cb68956373343d4350707eb7e",
+    "request_fingerprint": "1386772513d53e5f7622d07debd82447897311610d369cb87b5137dfd528be7e"
+  },
+  {
+    "key": "group/group-1/workshop/0/receiving/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "643ff9e3dcbd1d33298bfd7ec4193ee2caea9e37f504bb4f03e29d2151332bb0",
+    "response_sha256": "9baf72eba6216b65d0eff42f89fbf9b91559190f9358caabcfd85b875b1f9548",
+    "request_fingerprint": "d0222529fa7f1da0c914c40a69210b02fe199a7c5f7fd270e928469c75447665"
+  },
+  {
+    "key": "group/group-1/workshop/0/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "1c7c5040c61360cf10b57d9daaefd6138e53d023ae9d225c5ac1a3eca4641f46",
+    "response_sha256": "452bcbf0faf63863094acae50bd6de765fed89294e8c11b07376fcf18876cd0a",
+    "request_fingerprint": "5ba0a19a55d60baca0d92ff8fc0f7aac73cdb61d7cb44e8e645d35291f81022b"
+  },
+  {
+    "key": "group/group-1/workshop/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "d4831563791a6e391e0686e44dafa63609319d85503226ca3806270bec5ba17e",
+    "response_sha256": "f473eaa3497de8ca18d2dd876eb2d5078e3c8de4415d5b5429c93c37e45abfc6",
+    "request_fingerprint": "626b3af7156ebf028ed318c1a9753fb6ea1fdbbab6d7c869a20fdf418ed517a1"
+  },
+  {
+    "key": "group/group-1/workshop/0/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "b6490c58cc2c54e4cd2ef3b1e248e46f0ccfa432a85becb3a7f4db5304873509",
+    "response_sha256": "48825b1d057326e516ddc431b95969808b2d8687c192e968dd193927b0933c96",
+    "request_fingerprint": "4aacdad85b6aa692bb41bdccc30710afd9c2483cc375e2bb1b10c524ca38c5e2"
+  },
+  {
+    "key": "group/group-1/workshop/1/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "90c220a9998cb3cf01ca21e8e7aa88496aac058878e3f896532ec2607bd32d95",
+    "response_sha256": "b09c236c6fc474082f590f9e60eb3dc57a490f4f8f1a76ce82b0416ce729a6fd",
+    "request_fingerprint": "7bb1d71df41cee827f1896ebf90a11e5236b2132e22d67e1a04f47b607fb4ec1"
+  },
+  {
+    "key": "group/group-1/workshop/1/receiving/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "75536f5b6f90568fb00d1e79f073d486dfaceb2dc5ae74958bb2254f809c06b8",
+    "response_sha256": "36e77b609f639c545fe471543bb4d1302f377c13a8f5633b57ad9313f6c21d47",
+    "request_fingerprint": "2f90098de4e55f3aeca44f28fbb37277a997ea5d2426c4f0bb96e7badc74456e"
+  },
+  {
+    "key": "group/group-1/workshop/1/buyer/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "667e571c2e03cad36967be13a45fc9beacac339057aad9d03bea957f81fe778e",
+    "response_sha256": "a0214b97dc10ee8979ae1753c70ede7f5661653037e7b3112eb4816de8c90dad",
+    "request_fingerprint": "49547da4c793a7c8d13f35f89693935e8e45a51306a0a4cf11189d9aa60a1337"
+  },
+  {
+    "key": "group/group-1/workshop/1/carrier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "75993deb4353672c21c3f1ceb9c4bcd01ad8056a254ec54642c3107695b42c6b",
+    "response_sha256": "249a9024180fc44b7f1f80b552e94a31baba80bff9e87c1749209302ae681a40",
+    "request_fingerprint": "92bb3337427e54827bc2b91fa8d82290795449572f4ffdaaada784a872b7dfa2"
+  },
+  {
+    "key": "group/group-1/workshop/1/carrier/proposal",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "75993deb4353672c21c3f1ceb9c4bcd01ad8056a254ec54642c3107695b42c6b",
+    "response_sha256": "e046461752ac8ccaf8b26796bf91e38d4ee8a128b5508c727e4307166c20c19a",
+    "request_fingerprint": "5c66b3cc462b06b1332c0f785631b3b91e8a8126c1af0de723460967431a9946"
+  },
+  {
+    "key": "group/group-1/workshop/1/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "90c220a9998cb3cf01ca21e8e7aa88496aac058878e3f896532ec2607bd32d95",
+    "response_sha256": "8aa8b6844f0d4ef5c6b55aa56ec54e29c41b8298934aac42f3b445472b626c9f",
+    "request_fingerprint": "a6b1d95328255f865df5ab45972daf978ac6b89d28c3a516404e10eb71f8eca5"
+  },
+  {
+    "key": "group/group-1/workshop/1/receiving/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "75536f5b6f90568fb00d1e79f073d486dfaceb2dc5ae74958bb2254f809c06b8",
+    "response_sha256": "8744cb5ecab5bad20657b4351e4d7d171bdf65e1c5f792206ed053b40ef4f0b2",
+    "request_fingerprint": "546f4990a1106503d107062f3480dde1aaf00a23e8d4e143209102d2aebc3281"
+  },
+  {
+    "key": "group/group-1/workshop/1/buyer/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "667e571c2e03cad36967be13a45fc9beacac339057aad9d03bea957f81fe778e",
+    "response_sha256": "39f4bfa999924b51b431e307fb11e93819562ebe7c7fe51133ad2208a3583057",
+    "request_fingerprint": "47a6157a754b6387804d86a53bf86a00eaea251f745f49980293039da73c00d7"
+  },
+  {
+    "key": "group/group-1/workshop/1/carrier/final-offer",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "75993deb4353672c21c3f1ceb9c4bcd01ad8056a254ec54642c3107695b42c6b",
+    "response_sha256": "c7e83361e31636afbd7a7752dfafd508474eae93879cb3d0d55e71859e83ba50",
+    "request_fingerprint": "19ad4b7dedc7c767383f5fb964bcdda64ba1fd2e6db52acf32ef8b16c57441bd"
+  },
+  {
+    "key": "group/group-1/workshop/1/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "90c220a9998cb3cf01ca21e8e7aa88496aac058878e3f896532ec2607bd32d95",
+    "response_sha256": "2db9c115a8ade9a92d7cbf3eeb144e3ceee39fc0baa4031848f1170c311d5a9b",
+    "request_fingerprint": "ff177ef19f4591509cab65d5537a9af342b2fe3cfcf94d720fac2abe24e689aa"
+  },
+  {
+    "key": "group/group-1/workshop/1/receiving/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "75536f5b6f90568fb00d1e79f073d486dfaceb2dc5ae74958bb2254f809c06b8",
+    "response_sha256": "5889ceaf3f210eea341af0b8141d3995c1f83cbf5f0d81198b30a74243aec321",
+    "request_fingerprint": "4220008edef38bc2feb9fe95431eaa99c39cd1f0512ae883eb6ef3861b42bb78"
+  },
+  {
+    "key": "group/group-1/workshop/1/buyer/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "667e571c2e03cad36967be13a45fc9beacac339057aad9d03bea957f81fe778e",
+    "response_sha256": "afb8520071eeb3b4e585fffab856401c2a01d0194fc833cbcc4f885c29366e52",
+    "request_fingerprint": "2c47185b8c9496ba6bebb332b9c6663dbc7e9f8205c81ba9d73079950ecb54e9"
+  },
+  {
+    "key": "group/group-1/workshop/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "67e73c8ced3f7b6b4ce17b69b5e248684646960a085b03538b280aa6f73da848",
+    "response_sha256": "c84b00b8c8edcffaf3549abd360dec5de05fe834cbda71199afa545d661e2992",
+    "request_fingerprint": "821336a32b3324bd1decc71e9657e7c8e932afa96abb7096663c17eba2f08068"
+  },
+  {
+    "key": "group/group-1/workshop/1/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "ca2a6fe34301b3255525746940a9e223e94192ff86bb1a1b548d662b0d55762f",
+    "response_sha256": "0018649ad68fff09938fe4c8edcc30dd2089f41c39c68b042a456482955456dd",
+    "request_fingerprint": "9aa2e2f79d5c07a13f0852a1dd3d1cc318332e48a89da812033a0862b6329a7c"
+  },
+  {
+    "key": "group/group-1/dev-library/0/carrier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "fd05b0614974c08579537da0a5bc8fbb6934d66a4333b84d18263ed6d3a46959",
+    "response_sha256": "ad74e7a1cb90e328814a69afd5cf2fa2b1749f1942a0f8ea5f15b4d0c16252c8",
+    "request_fingerprint": "abaab8a97570f8586c5cf73c5daa5f47ac0b024d9fb881ae356f8e444d9473f9"
+  },
+  {
+    "key": "group/group-1/dev-library/0/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5546ce0fa8e045eb29e8d4ad47c11931a7fc2c02bad9050b011b893e2b833ff3",
+    "response_sha256": "9250b8bd0b836aa5e40027025355f046ec5930d8dfb969e019988d9d2da59c3a",
+    "request_fingerprint": "580a4e90466d5e7a177870c88c3e60ecb45e69acfbe849391baa8b3eeea44ad4"
+  },
+  {
+    "key": "group/group-1/dev-library/0/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "3fe1a21e390f9c2e798b431c9996e21a999fcec7e421ef7d6c04d0e91b2f6f93",
+    "response_sha256": "a1d96f5ed2c1807841c42a9231151c9fe2252f5c65514761200a7511457a6b39",
+    "request_fingerprint": "d323dedf94ae0858d42d21e8b96ed7aeec0bfaaa711f6705ecd55bc9c6ed3813"
+  },
+  {
+    "key": "group/group-1/dev-library/0/buyer/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "27fdc8a4eceadbd131669a72116d1cea728d932b0ce8d35d7ea8e32ae551ef99",
+    "response_sha256": "412ac03158160a3f02d424b2290e6fb933c67ec7d199cde3c7361adbc625e44e",
+    "request_fingerprint": "5b2b97e896f0a85b349cc0b5b878627e1da21794b9030892db75b51c6ae76e17"
+  },
+  {
+    "key": "group/group-1/dev-library/0/carrier/proposal",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "fd05b0614974c08579537da0a5bc8fbb6934d66a4333b84d18263ed6d3a46959",
+    "response_sha256": "6cad2e531cc37c3ee8af09d1a6b5c4e278d42210af99e4b7ce2d41dc480a07b7",
+    "request_fingerprint": "535da51d2b134d49bf8154c102c83982f45bd9dbd8d26ae3efbfdc5da777a371"
+  },
+  {
+    "key": "group/group-1/dev-library/0/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5546ce0fa8e045eb29e8d4ad47c11931a7fc2c02bad9050b011b893e2b833ff3",
+    "response_sha256": "2dd890f949838560cecad2897782d23aea5cd97c38d3a7404c6d8fd27de31c31",
+    "request_fingerprint": "f997765ce2317c36ada37ebfac1f921bd29251911e4d28608ba720887069f287"
+  },
+  {
+    "key": "group/group-1/dev-library/0/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "3fe1a21e390f9c2e798b431c9996e21a999fcec7e421ef7d6c04d0e91b2f6f93",
+    "response_sha256": "3b59275c42b568bd59981559abe22fd89e5ca56d8fb338d886d9ed064d906172",
+    "request_fingerprint": "199ca90117f61a929b82ebcc931b07dbcefea3e9ce917b441654df441ab81937"
+  },
+  {
+    "key": "group/group-1/dev-library/0/buyer/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "27fdc8a4eceadbd131669a72116d1cea728d932b0ce8d35d7ea8e32ae551ef99",
+    "response_sha256": "da0bfe7e4fdee47efa27ca0084cd70b7e60eeb62f7810981ad8b1993106fe4b8",
+    "request_fingerprint": "be534974d91bf4f9b4167097cbcfa07abdc251383601e3c898f604106ffa75cb"
+  },
+  {
+    "key": "group/group-1/dev-library/0/carrier/final-offer",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "fd05b0614974c08579537da0a5bc8fbb6934d66a4333b84d18263ed6d3a46959",
+    "response_sha256": "4d3f923f66a3053d789ddd427fafe5816ea864ea9b0fc389bf8117348f47deed",
+    "request_fingerprint": "8d6339cec14e62aa917966d5a66c9a026818e81dbb8468560c68d6c4bfa80457"
+  },
+  {
+    "key": "group/group-1/dev-library/0/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "5546ce0fa8e045eb29e8d4ad47c11931a7fc2c02bad9050b011b893e2b833ff3",
+    "response_sha256": "ea450ce685cf8710da4c9979e97d808e20a0ff5666ccd0384db60d2c3bf93fd6",
+    "request_fingerprint": "8ea37ec76936670ab10d87a06046d306156c7cc02533e3c62ade4e87e8aaec13"
+  },
+  {
+    "key": "group/group-1/dev-library/0/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "3fe1a21e390f9c2e798b431c9996e21a999fcec7e421ef7d6c04d0e91b2f6f93",
+    "response_sha256": "3a4c3dae7794fe03cb5ec4caeda150ccffc4c5093eb32a0996aef2965c12a7f1",
+    "request_fingerprint": "3c7177d8eca4f94b11e2eeaaee77f38aaa18984bfdf6dcec95b9b2ce8e8ab13e"
+  },
+  {
+    "key": "group/group-1/dev-library/0/buyer/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "27fdc8a4eceadbd131669a72116d1cea728d932b0ce8d35d7ea8e32ae551ef99",
+    "response_sha256": "9835c5192a45ecf4551e01e99fce08be391bccab37c301c162e67c97d60739cd",
+    "request_fingerprint": "f6c8a008474c4180ebb6c9f6da7f231497f71098777919d6a1473ffea185c5b4"
+  },
+  {
+    "key": "group/group-1/dev-library/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "0c6c7843df5af1432ad78f38fdf1f89ae0468826f27faa509010940ae31ccaa1",
+    "response_sha256": "9100d95e2eab69b20dc2444f37bb8224854197a64f8a92775cc61c1fef349dc2",
+    "request_fingerprint": "db917aa6ad7e99d19cc65704933a81ad998126f8008f23107f58833834461d33"
+  },
+  {
+    "key": "group/group-1/dev-library/0/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "57f0a61a48205cdeb2cc3977ee1246ec78515aaf3355219430d51eb1e0b09221",
+    "response_sha256": "e54c64d6e6a4b4d4f6fbb6c686dfc9a992c573e7601a1ef59e75f71b1635cdef",
+    "request_fingerprint": "a4377753cea186284a29b23571e5602eb9bf482ee25d2817bb5a953db331ecb4"
+  },
+  {
+    "key": "group/group-1/dev-library/1/carrier/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "bf1939f66e9569e752815660868a596fb5caa70adef0e9081d9b3b3116aef912",
+    "response_sha256": "bc9dda028eb00f4a312001cc82b52f762eb579deb06fe0dd900c87429dd250bc",
+    "request_fingerprint": "911e35c7717a81dc3ad96b62677800c7000906c7fdbcef032357be21ab6885de"
+  },
+  {
+    "key": "group/group-1/dev-library/1/receiving/opening",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "66c818d0edef434a69df451c7d9e09685c1898bb834215675944ed709c0ee7c8",
+    "response_sha256": "8db627f90d76bff64724efc3568cc93f4a4fbf27d1bfbb47fda356e0a55f7cf7",
+    "request_fingerprint": "c51b7bbf662732febe1c309252350b2228c8d5cae944126541cd6926cdaca55f"
+  },
+  {
+    "key": "group/group-1/dev-library/1/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "6326442fc644a2b28faec69120a83f5601a3c5cf137a6375dd811da87e2f7ab8",
+    "response_sha256": "5bba5939b677b676ef7bdcd0cf2a1482852cf1bc091a94219d8a442f008e5a68",
+    "request_fingerprint": "e7c25c0261e202359a7656b37ff215ccf3efcb83b52e98fb3e74fe3dc5e76b01"
+  },
+  {
+    "key": "group/group-1/dev-library/1/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "38c0a906b8d1c35f71d64b5803e4bc512d1020e983f842331394e5010aa1768a",
+    "response_sha256": "be9cd65370daa1c49d919ff048a9e8349d3d6599c70a2d03f59ae09ac48ae1b1",
+    "request_fingerprint": "2e1a7ca8dd6131a4fed76be9483ed9b2405e868d2fc0dc081b34fb70ff860b68"
+  },
+  {
+    "key": "group/group-1/dev-library/1/carrier/proposal",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "bf1939f66e9569e752815660868a596fb5caa70adef0e9081d9b3b3116aef912",
+    "response_sha256": "4469942af5bcc749e892d4aee54f43fe210f7882a59d59031f9f7263863ebe68",
+    "request_fingerprint": "804c706ed4414bf3bb42227fda10da5275648fcdd8e3e840369d319332745f84"
+  },
+  {
+    "key": "group/group-1/dev-library/1/receiving/review",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "66c818d0edef434a69df451c7d9e09685c1898bb834215675944ed709c0ee7c8",
+    "response_sha256": "2e77d79335377989cfeba1e6355f9beb3e8afbd01c53dff0a9b56564cc48d18a",
+    "request_fingerprint": "5fa6abc1919a98e1e100f0ae10832704f242a88f8149de1ce9daee7f231c3021"
+  },
+  {
+    "key": "group/group-1/dev-library/1/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "6326442fc644a2b28faec69120a83f5601a3c5cf137a6375dd811da87e2f7ab8",
+    "response_sha256": "f060bb1e0a02ccf8062b1d23c0a2c18b6d29adf2c4b25c56f07a5cb48131a97b",
+    "request_fingerprint": "943896cebe18836e23d4eb498de04df8ab2f48ae87bfea5ed7e837c5595ef803"
+  },
+  {
+    "key": "group/group-1/dev-library/1/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "38c0a906b8d1c35f71d64b5803e4bc512d1020e983f842331394e5010aa1768a",
+    "response_sha256": "d0caad0ef77986f69065526833a68e091f10c6ae19daff9104d1c230e36c6878",
+    "request_fingerprint": "8251950d783e4e01c0ada29e4fd6e57af0e7fc7bd57ff3cfc2c7a4c17c65ef1b"
+  },
+  {
+    "key": "group/group-1/dev-library/1/carrier/final-offer",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "bf1939f66e9569e752815660868a596fb5caa70adef0e9081d9b3b3116aef912",
+    "response_sha256": "de72770810593e5ebd5c035fc642862f6f278d4317edf3c6deb98bc2f3e43a79",
+    "request_fingerprint": "3d86d58a60214d2988774f6f0c842ecc079668a39662a878378e825653d9246b"
+  },
+  {
+    "key": "group/group-1/dev-library/1/receiving/ratify",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "66c818d0edef434a69df451c7d9e09685c1898bb834215675944ed709c0ee7c8",
+    "response_sha256": "b7351731803a148a6dba5595a9a9c947a00967a3f058ffc9533071cce61c29b0",
+    "request_fingerprint": "3b7ecbf7bdde58ae1c2c90f246748579e1d134ff896522d1f36c55b13117a96f"
+  },
+  {
+    "key": "group/group-1/dev-library/1/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "6326442fc644a2b28faec69120a83f5601a3c5cf137a6375dd811da87e2f7ab8",
+    "response_sha256": "41250ce9a24a352235b244879db999263771d59662e4928d9d9039c6fad215da",
+    "request_fingerprint": "93ecfd1f568ca61f4f87b057da30ddaf93464b9e9d5aed12381ded4c9c86dad3"
+  },
+  {
+    "key": "group/group-1/dev-library/1/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "38c0a906b8d1c35f71d64b5803e4bc512d1020e983f842331394e5010aa1768a",
+    "response_sha256": "6044e3153b58f5bf6ffbb030416323ea44e47d22ec7b76f8c1c1d134a08fece0",
+    "request_fingerprint": "3f7d7139c79d30a1fd890374f90a4bc812db5d6ec886d6400726b8f0c6d61b93"
+  },
+  {
+    "key": "group/group-1/dev-library/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "b800acb101f05630b716eae1384fa786fb2a45682205e08fb416362cab2437ea",
+    "response_sha256": "bbc0596de6108e8486d42c95716e5bd1e9ec4875a6e72bf6ab50631920104a76",
+    "request_fingerprint": "48cc8d4ca47e85059f6944a0dabd06f2f148958c1ef577b7780b6428086b6a0e"
+  },
+  {
+    "key": "group/group-1/dev-library/1/fresh-reader/gpt-6.2-sol",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "7fc4e48e8906bebd635a96d49c256703133ebac8d747f779d01b71c1067f61ad",
+    "response_sha256": "0dbd8fd052bb5f12b7da9004b2829dfe17869c1580959415a0a77466dcf6a820",
+    "request_fingerprint": "b94c9e703fbc549d804007b43d1c40c94f5398572b51449ac284cabecc6293ed"
+  },
+  {
+    "key": "group/group-1/dev-radio/0/receiving/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "43750bfb2b5f0f803c83610cd810679b2cba423a49249f8dfc29a3ec9bc3697b",
+    "response_sha256": "3b52dde2725b8a3b709eccee1e41ffdf0851a6e09fc6ee5ba3a7268e2a680c25",
+    "request_fingerprint": "e4304af18c5278e2144c6527f8db22cc51fbf20427f3d2b08337f77d13d443f2"
+  },
+  {
+    "key": "group/group-1/dev-radio/0/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "9d600b12588c8f0acfbcb3e0c585efbde8fec8fe0a4f09640b349616d94f236e",
+    "response_sha256": "c3e7cbdfd15343d2c60b5fd3424d7d56a058e1f65807ba3e2a9219a4c4ed4a00",
+    "request_fingerprint": "c734d66a954b90b0518539851ad38d23036d17b5da56fa7648a21315d6df5672"
+  },
+  {
+    "key": "group/group-1/dev-radio/0/carrier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "30d4dd8a3f90b8aeefd7ac153f61a093987dad83d67d1fdcc59c83d57817201e",
+    "response_sha256": "4c8c2d30a174481fffc59c800cac96a272c950c7f8eadb1686067331fcf33061",
+    "request_fingerprint": "8c1d884c58042153cbe874c353296ab9df1bbefd81bfebb93b2d2c944fb1fb59"
+  },
+  {
+    "key": "group/group-1/dev-radio/0/buyer/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "1a149d9b9971d5b583b2a15e2e23d504d8f71622ae8a9a493d917a56e00c282f",
+    "response_sha256": "ad7348e2f123f982638e037109409b59d42da952501300e798cb5aafb6904d4e",
+    "request_fingerprint": "e7bc961473d9aaea7ee30e7e3b142a83e6339993695fca5f75265369b3ba9d75"
+  },
+  {
+    "key": "group/group-1/dev-radio/0/carrier/proposal",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "30d4dd8a3f90b8aeefd7ac153f61a093987dad83d67d1fdcc59c83d57817201e",
+    "response_sha256": "287cea3d1cd283c584f6133a315b0f313c4d184a299ad2c33569fd6e5d307598",
+    "request_fingerprint": "50eaebcbbc46bee0ef97cd6a8cd6996e7624aeede5a255b62451346bf421db09"
+  },
+  {
+    "key": "group/group-1/dev-radio/0/receiving/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "43750bfb2b5f0f803c83610cd810679b2cba423a49249f8dfc29a3ec9bc3697b",
+    "response_sha256": "84804140d9877d127f216a92cee3a9a9f9e4fdb8ed97589cd8ba10a3acb3cc90",
+    "request_fingerprint": "9a888ea7e64a9038625e22274383fb170c2a06e0a4e96466decd1655eac86d32"
+  },
+  {
+    "key": "group/group-1/dev-radio/0/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "9d600b12588c8f0acfbcb3e0c585efbde8fec8fe0a4f09640b349616d94f236e",
+    "response_sha256": "5ca443044823637126eaa2c7e80cf754654fc1416b81210fcd5b7498d85c4045",
+    "request_fingerprint": "41e182466bbfc8cc9d1829e95db51adcd169f54dc615ce785be7bf0d97c53882"
+  },
+  {
+    "key": "group/group-1/dev-radio/0/buyer/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "1a149d9b9971d5b583b2a15e2e23d504d8f71622ae8a9a493d917a56e00c282f",
+    "response_sha256": "e663be40306d0ceb28df678564e874a6487361bd7d3b49e249c03424c2a85f1f",
+    "request_fingerprint": "ec1a58ecd0364319fa4b6e29144d8aa1988ac7b0889155e368d419c835cd639b"
+  },
+  {
+    "key": "group/group-1/dev-radio/0/carrier/final-offer",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "30d4dd8a3f90b8aeefd7ac153f61a093987dad83d67d1fdcc59c83d57817201e",
+    "response_sha256": "666a498f53b26cc43d55e1d937bb364fb1ab1e3e0e35d9b3bf611e763f14f623",
+    "request_fingerprint": "77c3a4f19bc977a7358dca2db5630463b05c8a741797593eb5207a8e7bd58772"
+  },
+  {
+    "key": "group/group-1/dev-radio/0/receiving/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "43750bfb2b5f0f803c83610cd810679b2cba423a49249f8dfc29a3ec9bc3697b",
+    "response_sha256": "d89214d4d36fe19c371f281bca291d2e1d5e54aafc2caac33136454ab5ad9c07",
+    "request_fingerprint": "5699b3aff4ccc479cfc3149ceebdd620c6184d1f6aaa681a3b66fc8cc61711e1"
+  },
+  {
+    "key": "group/group-1/dev-radio/0/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "9d600b12588c8f0acfbcb3e0c585efbde8fec8fe0a4f09640b349616d94f236e",
+    "response_sha256": "2c0cbb6af21587b6420abeafb8f0c87b94093f03ac5b20f3609f9ffdc807ce78",
+    "request_fingerprint": "b83621e9ef419208a96a9d481c4629e8fdfd422ccfcd9316518340d52dc30095"
+  },
+  {
+    "key": "group/group-1/dev-radio/0/buyer/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "1a149d9b9971d5b583b2a15e2e23d504d8f71622ae8a9a493d917a56e00c282f",
+    "response_sha256": "c4b6e4a19bf3ffb399f0b1aa569bfec6cdfacf89232db389fc80f7cfb961a253",
+    "request_fingerprint": "7980faac0d161db83ddfdb583adb3d448d06375e31682b6e59953d7f6afbb940"
+  },
+  {
+    "key": "group/group-1/dev-radio/0/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "0d555974c8b0618f130c3b495a0a3ccf09e48002cd4fbeea0e2ffed8c765228b",
+    "response_sha256": "95703e01fc1423449392d3532ed8fdb8a2ba38c8bd09e908cf0703311eda508f",
+    "request_fingerprint": "24bbff55c8eeb36cd9f591484d19da86f5937104482eb23532b11a2a5947936f"
+  },
+  {
+    "key": "group/group-1/dev-radio/0/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "772b89c9216d8be5b6f2922dc34fee8230965cb09a289f35003269a2d485037e",
+    "response_sha256": "5f75a5b5d97fae74500fb40dbcf327ea59ef28ad455bff617e26ab85bc7b137e",
+    "request_fingerprint": "258bc15cdd01b9de0d652be87e41c7be3cb8e0fd742ae0c23274ac8f272b9c6a"
+  },
+  {
+    "key": "group/group-1/dev-radio/1/receiving/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "84534d610e660d2baaaeb1ec1b5cb1f99da6e50cc61904c86316e7278e9b1bbc",
+    "response_sha256": "8194300634cdd967560a626baf37f2f533cd49edff005911816dbf4178c2277f",
+    "request_fingerprint": "aee57c65f2a9bea0cd1bdea230b8d2221d6c6b4343a7a4441033d642f0251f9e"
+  },
+  {
+    "key": "group/group-1/dev-radio/1/supplier/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "f760b9f03b7dde4b68913d4c3a58e822b0be3b20170c7952de4a92820319a9ca",
+    "response_sha256": "fe499ba080823ecefe1c35839747e29cadcee22032f6945e87f6e000d6c1ff7d",
+    "request_fingerprint": "93dbacb9c062a92651289319e92ca3c5ffa7a5472b17df670497faed778612e1"
+  },
+  {
+    "key": "group/group-1/dev-radio/1/carrier/opening",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "e423336775ddbfd5488453c2b86b80526c49da9a95e37aef883453de28734941",
+    "response_sha256": "5267da262a41a911d209a20647319412ec057d058f1708ff1a764ed6a1dfac29",
+    "request_fingerprint": "7a6a0be0b4ecafb3a5d613bd896327fc49cc25680ef6431b7570dbeabe75fa9c"
+  },
+  {
+    "key": "group/group-1/dev-radio/1/buyer/opening",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "4df1bee5e6f8016e77870a08caa6a11782eaa2b9a848f50db691e7b98161308c",
+    "response_sha256": "edfe0f7d0c01a7850fde51546cf0331baf7d380672e84fb739337367d29494d7",
+    "request_fingerprint": "6b66249ec21c2ae35792885bc03f0cded5302a1795f354d903f3a964ce700599"
+  },
+  {
+    "key": "group/group-1/dev-radio/1/carrier/proposal",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "e423336775ddbfd5488453c2b86b80526c49da9a95e37aef883453de28734941",
+    "response_sha256": "6eba527507ddbf519f99d4fadecd9c5dfa3af3b7c6ac9184298968a6e6cf306f",
+    "request_fingerprint": "dbc51f3da14d4dbf9387dc24298049e43e3482f6aef8ff2c93ff0da11d4b481f"
+  },
+  {
+    "key": "group/group-1/dev-radio/1/receiving/review",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "84534d610e660d2baaaeb1ec1b5cb1f99da6e50cc61904c86316e7278e9b1bbc",
+    "response_sha256": "86ba8f589a05616201125817e31544c56808dcd06cc2f56d8ad491d1796329dc",
+    "request_fingerprint": "1c995bbf7f0c31bbb3c1ff70d36627a66323b6277e4e73b8c8209c9ea0c4acaa"
+  },
+  {
+    "key": "group/group-1/dev-radio/1/supplier/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "f760b9f03b7dde4b68913d4c3a58e822b0be3b20170c7952de4a92820319a9ca",
+    "response_sha256": "45dcb27e601216f6d6dec70bb25cc0064f4be5ea3f0efd331beb3b2d4b8d56c5",
+    "request_fingerprint": "71fa47df4ef95ae70c0aaba2c3328dee330ed9bac8eb4df9220b09ad966504f1"
+  },
+  {
+    "key": "group/group-1/dev-radio/1/buyer/review",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "4df1bee5e6f8016e77870a08caa6a11782eaa2b9a848f50db691e7b98161308c",
+    "response_sha256": "6a226146dc3c1042b07ec710f513dba6bb902c9bdb19d0e778dac9469328cb46",
+    "request_fingerprint": "be857f46a7053bd4410b50c3deb10035d3c0df2e4a2181d99b2730ece2e6778a"
+  },
+  {
+    "key": "group/group-1/dev-radio/1/carrier/final-offer",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "e423336775ddbfd5488453c2b86b80526c49da9a95e37aef883453de28734941",
+    "response_sha256": "82909232cfb7b1f81402496835da24f424747f746f4c533d469a1f73d732744d",
+    "request_fingerprint": "dcca1c6ee4e37cf5b97d33261888cec63fb03839dd125bb6bafdbdbdcbfe3db2"
+  },
+  {
+    "key": "group/group-1/dev-radio/1/receiving/ratify",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "84534d610e660d2baaaeb1ec1b5cb1f99da6e50cc61904c86316e7278e9b1bbc",
+    "response_sha256": "3b6cfabf199bd131ded534021a49b8e93feec774bcec2f72b785033f6e5f2666",
+    "request_fingerprint": "a439fd4cc9afdff0e1575f6b110f97309498748715fa4741230897d0d459370f"
+  },
+  {
+    "key": "group/group-1/dev-radio/1/supplier/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "f760b9f03b7dde4b68913d4c3a58e822b0be3b20170c7952de4a92820319a9ca",
+    "response_sha256": "68722bb05af9a3a0c75f9415847ea8fbcbbae498df8420adbb08fda5b8b5a811",
+    "request_fingerprint": "513ef77d25bfa6203ea1f55c600cdd0b6815d9f234fc210588fd71e75227a913"
+  },
+  {
+    "key": "group/group-1/dev-radio/1/buyer/ratify",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "4df1bee5e6f8016e77870a08caa6a11782eaa2b9a848f50db691e7b98161308c",
+    "response_sha256": "b16ebeb2b8d1f900f45febfdfd4cb500b46f3490fff5ce81566dc658d5562fe8",
+    "request_fingerprint": "26fd01965195184781891ef63cc2ae8912edf17dcc2b1ed37178b87a98834692"
+  },
+  {
+    "key": "group/group-1/dev-radio/1/fresh-reader/gpt-6.2-astra",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "7e71b3672cfbc48950c5b1a20c1929a2886dcb9222cc8cddb40f7b1cf753a0c6",
+    "response_sha256": "3446f02a9cad1a4e86c2711f1a04ce78e1ce0e114c98f027c1dae1553319a940",
+    "request_fingerprint": "db862125183204e5a73cc50d3e54fad5be827969ac063d0084a721ccaab5b9e6"
+  },
+  {
+    "key": "group/group-1/dev-radio/1/fresh-reader/claude-fable-5-2",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "5659dc1ab0a938bd4937c814d6f46f9342e83b4f0dceeeb9671a3389ec5e8cb5",
+    "response_sha256": "50b993a06a8f8186daa2b03a0a743ee5c5c50b2d17bf1e84aa6fac842a757900",
+    "request_fingerprint": "deea37ce0399e6f1140992e7ff3d0a00f7645f645ff4342261f33852cbf77f0b"
+  },
+  {
+    "key": "group-replay/v1/market/0/0",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "c5f6a5a59ff956bbde1d079b05f94c7f258401f5421cebddf607f8dcce7b2af6",
+    "response_sha256": "94c05aef08d652406ca433cb31f3aab80b5078129db90f56f08fd3fb4304439c",
+    "request_fingerprint": "7bcb84bd2ec6082eba56e1f4666cebf197a06e8e0978770e97e77c2203e737eb"
+  },
+  {
+    "key": "group-replay/v1/market/0/1",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "f7ab3264e70638846827b6bbb590f754b428f685aad8a2bdfaaa66dfaeaf3cde",
+    "response_sha256": "57b9251dfbee36b31ad32be60c0ba7c854230ac8138231bbd33c048b9a2152ff",
+    "request_fingerprint": "10531be67d917a944ee721079bb15c849e64a4a0c6ef18f91efa6d21995f29f7"
+  },
+  {
+    "key": "group-replay/v1/gallery/0/0",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "e23cda6511ed33375bc73ed6a371e6609230407875614e8c0216670238bafdce",
+    "response_sha256": "8eada535331acb16d731f561106b89d990c751dccb2e597c93a28302828805a3",
+    "request_fingerprint": "8ff671b47ab30b46c6f85ad2257c99f97c68f801534e34f22dd1d345ff93dca1"
+  },
+  {
+    "key": "group-replay/v1/gallery/0/1",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "4a22e1160d62446f51b7aaedfe400c570017966ca0b1c0db34a2ef5af688ce82",
+    "response_sha256": "5cb055cdeead38371bd6e0d4dcf05c7a7add634f4454c5669346cb4d9a274247",
+    "request_fingerprint": "f1c542a24e95d68f7e27681d65b05636431b1846ae3a939dc4b9cd6b2746e510"
+  },
+  {
+    "key": "group-replay/v1/picnic/0/0",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "d03bf0e8dc423a9fdb2e39e09a047a002a0c34470145465a7ebbdd403bd30c86",
+    "response_sha256": "0b55a05c69bbddc164ea064b5606c4dd4f88a4247071c953a17abd868fbc05c9",
+    "request_fingerprint": "5dd46d0a19fd476dd5094146a17b7fac4153ddc41585b7658d326473ee3c01c9"
+  },
+  {
+    "key": "group-replay/v1/picnic/0/1",
+    "model": "gpt-6.2-sol",
+    "session_fingerprint": "dd3224f5b22fd5059cf71503ee194c4c31afc10545f768518c3e5a65752a95ae",
+    "response_sha256": "d4e48761d3184775230e67276f1cb15deb172e48f1001f95f5192eb30212c44f",
+    "request_fingerprint": "b473478c79fcae860a4d8d95f8a4054eb2002ebeea8bb3c35aeca0a8d09be3ca"
+  },
+  {
+    "key": "group-replay/v1/school/0/0",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "11fabbe2d14ef25fad9a716979378e838d881959622fa208d119831304ad6c58",
+    "response_sha256": "a2679d7ecd2c1e9bf7c6169e7c51dc5344c8d4447b6868980616787ad5b4d9d3",
+    "request_fingerprint": "02bf5287695e091ca8858934b971fb08b1def26d7cf99662381cb20f8958af6b"
+  },
+  {
+    "key": "group-replay/v1/school/0/1",
+    "model": "claude-fable-5-2",
+    "session_fingerprint": "db2ace6d1b803e33c4a2105879341c9bbddb914d397fefae1cea0735d5a3700f",
+    "response_sha256": "2fc04bac7a8938ce8c4d8077b8e73845ea432a00ed6d17481ed6dd4b839e525f",
+    "request_fingerprint": "d4290db9cd3930a56f37998a30f6dcb1635d6cc90d0c33da4acbc176e0dc7bf4"
+  },
+  {
+    "key": "group-replay/v1/bookfair/0/0",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "a021e68438bbfa0c624eab5bdcd84648647e31f950fc3921963567e02c1c2d47",
+    "response_sha256": "bbdae38f4efe34c22dcd819e2e235741e2f7a25bf459be75b5ec9195eb0bb4ea",
+    "request_fingerprint": "d85ed99ef07715224937980b59a3e8f0a75261941783ab309b4321b2ad7d83ef"
+  },
+  {
+    "key": "group-replay/v1/bookfair/0/1",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "72cc18b28459654d3a186a29edca0822d1969f7282a8f8a347e5ef28ad580952",
+    "response_sha256": "292e4d505fa19a1733d72021a541b235316abe5b92f58d14e4292c66607fc205",
+    "request_fingerprint": "4202f8f470dea3c826adb4ca56aeeabe4336f901b79fafa0fa28aa7d56375ecc"
+  },
+  {
+    "key": "group-replay/v1/workshop/0/0",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "2b38018670c5bce96f158d18613128714bed27a40153b4d48867f6ae2c9f6278",
+    "response_sha256": "a7747ce76b6c02d2a0fec808fe6d45dcb933d82d086ee0890ca28870c4e9c3a1",
+    "request_fingerprint": "e64d774c160a71960017313646747d88071aa0327687a4be30d896a9c8a163c2"
+  },
+  {
+    "key": "group-replay/v1/workshop/0/1",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "9291e053ab2f2b0991e4950fbaf2ed6fdad89af7283f2215107a64e9b0e9d5ec",
+    "response_sha256": "cd4715cc4bf9eec2bfbe5d43f886168c13bcffddac8e7117588aeb88b62ad8d8",
+    "request_fingerprint": "eaadaa6dfc3e4bb623d4d7cfa82d1c1dfea9177ccaa965998f52115ec9fb348b"
+  },
+  {
+    "key": "group-replay/v1/museum/0/0",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "b5e3dad42ce17e34d52f8517c8831d69f15fa27eeda0b51e75d55f8d37722972",
+    "response_sha256": "23b6b36981e538f84400dfd55a895bb64f8cc41bdd4f9ae2eceadcfcef4861f4",
+    "request_fingerprint": "37adb0b95fc5a898841e73a42a8514bd5c4c3d54c51983359dd35477692c7a7d"
+  },
+  {
+    "key": "group-replay/v1/museum/0/1",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "603bd79f75d59ad632a6d59e8c5f2c796f7f85812d1afa666bbb16d4965009a9",
+    "response_sha256": "a894ca241b4bc1c24c7fb659808065f4485bc871812c42fa4f2699543684f79a",
+    "request_fingerprint": "87fc665da9c5bd8237a2c5a23182a786d4b231534f483d6baff404f21deda65b"
+  },
+  {
+    "key": "group-replay/v1/film/0/0",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "0948303281c1807ba99c51ab984635849c2346e23ef4a1a7e0e0e15a6d399400",
+    "response_sha256": "375bf8aca3f99ed079bf85ead169ed39a8a10af487c54889b0446afc1158246a",
+    "request_fingerprint": "59ede20511eef8608b5ffacfc497ca243709241522e3c59e0f206ff89217b738"
+  },
+  {
+    "key": "group-replay/v1/film/0/1",
+    "model": "gpt-6.2-astra",
+    "session_fingerprint": "671a74649fd69553eeb3e52a39672c45dc454bfae231a845df50a15499bf173c",
+    "response_sha256": "c10fd99206944c62965c41505e8ea0aa25b4ff03b79119378e7811e67677f12f",
+    "request_fingerprint": "7d6b45d8939ce420a6032afa37f42491bd5900923b11fd5c2d3caeca28269cb7"
+  }
+]

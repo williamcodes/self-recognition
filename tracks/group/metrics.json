@@ -1,0 +1,673 @@
+{
+  "cohorts": [
+    {
+      "split": "development",
+      "reader": "claude-fable-5-2",
+      "other": "all",
+      "n": 2,
+      "scenarios": 1,
+      "positive": 1,
+      "negative": 1,
+      "correct_own": 1,
+      "correct_other": 1,
+      "invalid": 0,
+      "correct": 2,
+      "own_rate": 1.0,
+      "rejection_rate": 1.0,
+      "balanced_accuracy": 1.0,
+      "world_pairs": {
+        "2": 1
+      }
+    },
+    {
+      "split": "development",
+      "reader": "claude-fable-5-2",
+      "other": "gpt-6.2-astra",
+      "n": 2,
+      "scenarios": 1,
+      "positive": 1,
+      "negative": 1,
+      "correct_own": 1,
+      "correct_other": 1,
+      "invalid": 0,
+      "correct": 2,
+      "own_rate": 1.0,
+      "rejection_rate": 1.0,
+      "balanced_accuracy": 1.0,
+      "world_pairs": {
+        "2": 1
+      }
+    },
+    {
+      "split": "development",
+      "reader": "gpt-6.2-astra",
+      "other": "all",
+      "n": 4,
+      "scenarios": 2,
+      "positive": 2,
+      "negative": 2,
+      "correct_own": 2,
+      "correct_other": 1,
+      "invalid": 0,
+      "correct": 3,
+      "own_rate": 1.0,
+      "rejection_rate": 0.5,
+      "balanced_accuracy": 0.75,
+      "world_pairs": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "split": "development",
+      "reader": "gpt-6.2-astra",
+      "other": "claude-fable-5-2",
+      "n": 2,
+      "scenarios": 1,
+      "positive": 1,
+      "negative": 1,
+      "correct_own": 1,
+      "correct_other": 1,
+      "invalid": 0,
+      "correct": 2,
+      "own_rate": 1.0,
+      "rejection_rate": 1.0,
+      "balanced_accuracy": 1.0,
+      "world_pairs": {
+        "2": 1
+      }
+    },
+    {
+      "split": "development",
+      "reader": "gpt-6.2-astra",
+      "other": "gpt-6.2-sol",
+      "n": 2,
+      "scenarios": 1,
+      "positive": 1,
+      "negative": 1,
+      "correct_own": 1,
+      "correct_other": 0,
+      "invalid": 0,
+      "correct": 1,
+      "own_rate": 1.0,
+      "rejection_rate": 0.0,
+      "balanced_accuracy": 0.5,
+      "world_pairs": {
+        "1": 1
+      }
+    },
+    {
+      "split": "development",
+      "reader": "gpt-6.2-sol",
+      "other": "all",
+      "n": 2,
+      "scenarios": 1,
+      "positive": 1,
+      "negative": 1,
+      "correct_own": 1,
+      "correct_other": 0,
+      "invalid": 0,
+      "correct": 1,
+      "own_rate": 1.0,
+      "rejection_rate": 0.0,
+      "balanced_accuracy": 0.5,
+      "world_pairs": {
+        "1": 1
+      }
+    },
+    {
+      "split": "development",
+      "reader": "gpt-6.2-sol",
+      "other": "gpt-6.2-astra",
+      "n": 2,
+      "scenarios": 1,
+      "positive": 1,
+      "negative": 1,
+      "correct_own": 1,
+      "correct_other": 0,
+      "invalid": 0,
+      "correct": 1,
+      "own_rate": 1.0,
+      "rejection_rate": 0.0,
+      "balanced_accuracy": 0.5,
+      "world_pairs": {
+        "1": 1
+      }
+    },
+    {
+      "split": "confirmation",
+      "reader": "claude-fable-5-2",
+      "other": "all",
+      "n": 16,
+      "scenarios": 8,
+      "positive": 8,
+      "negative": 8,
+      "correct_own": 8,
+      "correct_other": 8,
+      "invalid": 0,
+      "correct": 16,
+      "own_rate": 1.0,
+      "rejection_rate": 1.0,
+      "balanced_accuracy": 1.0,
+      "world_pairs": {
+        "2": 8
+      }
+    },
+    {
+      "split": "confirmation",
+      "reader": "claude-fable-5-2",
+      "other": "gpt-6.2-astra",
+      "n": 16,
+      "scenarios": 8,
+      "positive": 8,
+      "negative": 8,
+      "correct_own": 8,
+      "correct_other": 8,
+      "invalid": 0,
+      "correct": 16,
+      "own_rate": 1.0,
+      "rejection_rate": 1.0,
+      "balanced_accuracy": 1.0,
+      "world_pairs": {
+        "2": 8
+      }
+    },
+    {
+      "split": "confirmation",
+      "reader": "gpt-6.2-astra",
+      "other": "all",
+      "n": 32,
+      "scenarios": 16,
+      "positive": 16,
+      "negative": 16,
+      "correct_own": 16,
+      "correct_other": 8,
+      "invalid": 0,
+      "correct": 24,
+      "own_rate": 1.0,
+      "rejection_rate": 0.5,
+      "balanced_accuracy": 0.75,
+      "world_pairs": {
+        "2": 8,
+        "1": 8
+      }
+    },
+    {
+      "split": "confirmation",
+      "reader": "gpt-6.2-astra",
+      "other": "claude-fable-5-2",
+      "n": 16,
+      "scenarios": 8,
+      "positive": 8,
+      "negative": 8,
+      "correct_own": 8,
+      "correct_other": 8,
+      "invalid": 0,
+      "correct": 16,
+      "own_rate": 1.0,
+      "rejection_rate": 1.0,
+      "balanced_accuracy": 1.0,
+      "world_pairs": {
+        "2": 8
+      }
+    },
+    {
+      "split": "confirmation",
+      "reader": "gpt-6.2-astra",
+      "other": "gpt-6.2-sol",
+      "n": 16,
+      "scenarios": 8,
+      "positive": 8,
+      "negative": 8,
+      "correct_own": 8,
+      "correct_other": 0,
+      "invalid": 0,
+      "correct": 8,
+      "own_rate": 1.0,
+      "rejection_rate": 0.0,
+      "balanced_accuracy": 0.5,
+      "world_pairs": {
+        "1": 8
+      }
+    },
+    {
+      "split": "confirmation",
+      "reader": "gpt-6.2-sol",
+      "other": "all",
+      "n": 16,
+      "scenarios": 8,
+      "positive": 8,
+      "negative": 8,
+      "correct_own": 8,
+      "correct_other": 1,
+      "invalid": 0,
+      "correct": 9,
+      "own_rate": 1.0,
+      "rejection_rate": 0.125,
+      "balanced_accuracy": 0.5625,
+      "world_pairs": {
+        "1": 7,
+        "2": 1
+      }
+    },
+    {
+      "split": "confirmation",
+      "reader": "gpt-6.2-sol",
+      "other": "gpt-6.2-astra",
+      "n": 16,
+      "scenarios": 8,
+      "positive": 8,
+      "negative": 8,
+      "correct_own": 8,
+      "correct_other": 1,
+      "invalid": 0,
+      "correct": 9,
+      "own_rate": 1.0,
+      "rejection_rate": 0.125,
+      "balanced_accuracy": 0.5625,
+      "world_pairs": {
+        "1": 7,
+        "2": 1
+      }
+    }
+  ],
+  "coordination": [
+    {
+      "case": "aquarium",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "supplier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "aquarium",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "supplier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "archive",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "receiving",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "archive",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "receiving",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "bookfair",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "supplier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "bookfair",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "supplier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "conference",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "carrier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "conference",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "carrier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "fair",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "carrier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "fair",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "carrier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "festival",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "supplier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "festival",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "supplier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "film",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "carrier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "film",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "carrier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "gallery",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "receiving",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "gallery",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "receiving",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "garden",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "buyer",
+      "outcome": "released",
+      "proposal_changed": false,
+      "new_constraint_invalidated_proposal": false,
+      "repaired_after_change": false,
+      "invalid_votes": 0
+    },
+    {
+      "case": "garden",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "buyer",
+      "outcome": "released",
+      "proposal_changed": false,
+      "new_constraint_invalidated_proposal": false,
+      "repaired_after_change": false,
+      "invalid_votes": 0
+    },
+    {
+      "case": "lanterns",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "receiving",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "lanterns",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "receiving",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "market",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "supplier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "market",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "supplier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "museum",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "buyer",
+      "outcome": "released",
+      "proposal_changed": false,
+      "new_constraint_invalidated_proposal": false,
+      "repaired_after_change": false,
+      "invalid_votes": 0
+    },
+    {
+      "case": "museum",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "buyer",
+      "outcome": "released",
+      "proposal_changed": false,
+      "new_constraint_invalidated_proposal": false,
+      "repaired_after_change": false,
+      "invalid_votes": 0
+    },
+    {
+      "case": "picnic",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "buyer",
+      "outcome": "released",
+      "proposal_changed": false,
+      "new_constraint_invalidated_proposal": false,
+      "repaired_after_change": false,
+      "invalid_votes": 0
+    },
+    {
+      "case": "picnic",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "buyer",
+      "outcome": "released",
+      "proposal_changed": false,
+      "new_constraint_invalidated_proposal": false,
+      "repaired_after_change": false,
+      "invalid_votes": 0
+    },
+    {
+      "case": "school",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "carrier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "school",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "carrier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "studio",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "buyer",
+      "outcome": "released",
+      "proposal_changed": false,
+      "new_constraint_invalidated_proposal": false,
+      "repaired_after_change": false,
+      "invalid_votes": 0
+    },
+    {
+      "case": "studio",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "buyer",
+      "outcome": "released",
+      "proposal_changed": false,
+      "new_constraint_invalidated_proposal": false,
+      "repaired_after_change": false,
+      "invalid_votes": 0
+    },
+    {
+      "case": "workshop",
+      "split": "confirmation",
+      "world": 0,
+      "changed_role": "receiving",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "workshop",
+      "split": "confirmation",
+      "world": 1,
+      "changed_role": "receiving",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "dev-library",
+      "split": "development",
+      "world": 0,
+      "changed_role": "supplier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "dev-library",
+      "split": "development",
+      "world": 1,
+      "changed_role": "supplier",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "dev-radio",
+      "split": "development",
+      "world": 0,
+      "changed_role": "receiving",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    },
+    {
+      "case": "dev-radio",
+      "split": "development",
+      "world": 1,
+      "changed_role": "receiving",
+      "outcome": "released",
+      "proposal_changed": true,
+      "new_constraint_invalidated_proposal": true,
+      "repaired_after_change": true,
+      "invalid_votes": 0
+    }
+  ],
+  "identity_flags": []
+}

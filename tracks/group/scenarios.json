@@ -1,0 +1,1198 @@
+[
+  {
+    "id": "dev-library",
+    "title": "Library reopening",
+    "split": "development",
+    "goods": "12 cartons of reservation books",
+    "buyer": "district library",
+    "site": "branch loading door",
+    "occasion": "the first reserved pickups",
+    "public": "The original delivery of 12 cartons of reservation books to branch loading door has fallen through. The district library needs a replacement shipment in time for the first reserved pickups. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V292",
+        "pickup": 675,
+        "arrival": 762,
+        "price": 43
+      },
+      {
+        "id": "V265",
+        "pickup": 650,
+        "arrival": 738,
+        "price": 54
+      },
+      {
+        "id": "V769",
+        "pickup": 672,
+        "arrival": 715,
+        "price": 71
+      },
+      {
+        "id": "V857",
+        "pickup": 669,
+        "arrival": 727,
+        "price": 81
+      }
+    ],
+    "before": {
+      "ready": 645,
+      "close": 750,
+      "cap": 101,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 663,
+      "close": 750,
+      "cap": 101,
+      "withdrawn": []
+    },
+    "event": "Quality control has detained the finished batch for relabeling. Your revised earliest release time is 11:03; you cannot load it earlier.",
+    "event_role": "supplier",
+    "names": {
+      "supplier": "Drew",
+      "carrier": "Lee",
+      "receiving": "Quinn",
+      "buyer": "Sam"
+    },
+    "anchor_roles": [
+      "supplier",
+      "carrier"
+    ],
+    "target_role": "receiving",
+    "counterpart_role": "buyer",
+    "models": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  {
+    "id": "dev-radio",
+    "title": "Community radio open house",
+    "split": "development",
+    "goods": "four cases of listening headsets",
+    "buyer": "broadcast cooperative",
+    "site": "studio service desk",
+    "occasion": "the afternoon tour",
+    "public": "The original delivery of four cases of listening headsets to studio service desk has fallen through. The broadcast cooperative needs a replacement shipment in time for the afternoon tour. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V741",
+        "pickup": 669,
+        "arrival": 711,
+        "price": 109
+      },
+      {
+        "id": "V465",
+        "pickup": 665,
+        "arrival": 714,
+        "price": 75
+      },
+      {
+        "id": "V758",
+        "pickup": 655,
+        "arrival": 744,
+        "price": 46
+      },
+      {
+        "id": "V715",
+        "pickup": 642,
+        "arrival": 705,
+        "price": 59
+      }
+    ],
+    "before": {
+      "ready": 645,
+      "close": 750,
+      "cap": 94,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 645,
+      "close": 720,
+      "cap": 94,
+      "withdrawn": []
+    },
+    "event": "Your site manager just moved the handover crew to another assignment. The last staffed handover is now 12:00; there is no unattended drop.",
+    "event_role": "receiving",
+    "names": {
+      "supplier": "Robin",
+      "carrier": "Ari",
+      "receiving": "Sam",
+      "buyer": "Taylor"
+    },
+    "anchor_roles": [
+      "supplier",
+      "carrier"
+    ],
+    "target_role": "receiving",
+    "counterpart_role": "buyer",
+    "models": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ]
+  },
+  {
+    "id": "market",
+    "title": "Growers market",
+    "split": "confirmation",
+    "goods": "six crates of display stands",
+    "buyer": "stallholders association",
+    "site": "covered market entrance",
+    "occasion": "the first trader bookings",
+    "public": "The original delivery of six crates of display stands to covered market entrance has fallen through. The stallholders association needs a replacement shipment in time for the first trader bookings. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V260",
+        "pickup": 657,
+        "arrival": 700,
+        "price": 72
+      },
+      {
+        "id": "V352",
+        "pickup": 660,
+        "arrival": 747,
+        "price": 44
+      },
+      {
+        "id": "V376",
+        "pickup": 635,
+        "arrival": 723,
+        "price": 55
+      },
+      {
+        "id": "V433",
+        "pickup": 654,
+        "arrival": 712,
+        "price": 82
+      }
+    ],
+    "before": {
+      "ready": 630,
+      "close": 735,
+      "cap": 102,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 648,
+      "close": 735,
+      "cap": 102,
+      "withdrawn": []
+    },
+    "event": "Quality control has detained the finished batch for relabeling. Your revised earliest release time is 10:48; you cannot load it earlier.",
+    "event_role": "supplier",
+    "names": {
+      "supplier": "Morgan",
+      "carrier": "Sam",
+      "receiving": "Quinn",
+      "buyer": "Robin"
+    },
+    "anchor_roles": [
+      "supplier",
+      "carrier"
+    ],
+    "target_role": "receiving",
+    "counterpart_role": "buyer",
+    "models": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  {
+    "id": "gallery",
+    "title": "Print exhibition",
+    "split": "confirmation",
+    "goods": "eight flat boxes of framed prints",
+    "buyer": "art cooperative",
+    "site": "gallery goods entrance",
+    "occasion": "the exhibition preview",
+    "public": "The original delivery of eight flat boxes of framed prints to gallery goods entrance has fallen through. The art cooperative needs a replacement shipment in time for the exhibition preview. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V555",
+        "pickup": 685,
+        "arrival": 774,
+        "price": 47
+      },
+      {
+        "id": "V490",
+        "pickup": 672,
+        "arrival": 735,
+        "price": 60
+      },
+      {
+        "id": "V931",
+        "pickup": 699,
+        "arrival": 741,
+        "price": 110
+      },
+      {
+        "id": "V449",
+        "pickup": 695,
+        "arrival": 744,
+        "price": 76
+      }
+    ],
+    "before": {
+      "ready": 675,
+      "close": 780,
+      "cap": 95,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 675,
+      "close": 750,
+      "cap": 95,
+      "withdrawn": []
+    },
+    "event": "Your site manager just moved the handover crew to another assignment. The last staffed handover is now 12:30; there is no unattended drop.",
+    "event_role": "receiving",
+    "names": {
+      "supplier": "Alex",
+      "carrier": "Lee",
+      "receiving": "Taylor",
+      "buyer": "Ellis"
+    },
+    "anchor_roles": [
+      "supplier",
+      "carrier"
+    ],
+    "target_role": "receiving",
+    "counterpart_role": "buyer",
+    "models": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ]
+  },
+  {
+    "id": "picnic",
+    "title": "Neighborhood picnic",
+    "split": "confirmation",
+    "goods": "three trolleys of reusable place settings",
+    "buyer": "park volunteers",
+    "site": "park pavilion",
+    "occasion": "the afternoon meal",
+    "public": "The original delivery of three trolleys of reusable place settings to park pavilion has fallen through. The park volunteers needs a replacement shipment in time for the afternoon meal. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V412",
+        "pickup": 571,
+        "arrival": 669,
+        "price": 36
+      },
+      {
+        "id": "V832",
+        "pickup": 572,
+        "arrival": 636,
+        "price": 56
+      },
+      {
+        "id": "V571",
+        "pickup": 576,
+        "arrival": 621,
+        "price": 82
+      },
+      {
+        "id": "V767",
+        "pickup": 567,
+        "arrival": 611,
+        "price": 87
+      }
+    ],
+    "before": {
+      "ready": 555,
+      "close": 660,
+      "cap": 90,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 555,
+      "close": 660,
+      "cap": 63,
+      "withdrawn": []
+    },
+    "event": "Finance has removed the discretionary supplement. Your new all-in authorization is 63 crowns; you cannot promise reimbursement above it.",
+    "event_role": "buyer",
+    "names": {
+      "supplier": "Alex",
+      "carrier": "Robin",
+      "receiving": "Dana",
+      "buyer": "Ari"
+    },
+    "anchor_roles": [
+      "supplier",
+      "carrier"
+    ],
+    "target_role": "receiving",
+    "counterpart_role": "buyer",
+    "models": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  {
+    "id": "school",
+    "title": "School play",
+    "split": "confirmation",
+    "goods": "two costume trunks",
+    "buyer": "school theater company",
+    "site": "stage loading door",
+    "occasion": "the final dress rehearsal",
+    "public": "The original delivery of two costume trunks to stage loading door has fallen through. The school theater company needs a replacement shipment in time for the final dress rehearsal. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V939",
+        "pickup": 558,
+        "arrival": 648,
+        "price": 41
+      },
+      {
+        "id": "V139",
+        "pickup": 536,
+        "arrival": 612,
+        "price": 50
+      },
+      {
+        "id": "V740",
+        "pickup": 544,
+        "arrival": 608,
+        "price": 79
+      },
+      {
+        "id": "V758",
+        "pickup": 549,
+        "arrival": 593,
+        "price": 67
+      }
+    ],
+    "before": {
+      "ready": 525,
+      "close": 630,
+      "cap": 97,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 525,
+      "close": 630,
+      "cap": 97,
+      "withdrawn": [
+        "V139"
+      ]
+    },
+    "event": "Your dispatch desk has just withdrawn slot V139 because its vehicle broke down. None of its capacity can be booked.",
+    "event_role": "carrier",
+    "names": {
+      "supplier": "Robin",
+      "carrier": "Casey",
+      "receiving": "Morgan",
+      "buyer": "Quinn"
+    },
+    "anchor_roles": [
+      "supplier",
+      "carrier"
+    ],
+    "target_role": "receiving",
+    "counterpart_role": "buyer",
+    "models": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ]
+  },
+  {
+    "id": "bookfair",
+    "title": "Book fair",
+    "split": "confirmation",
+    "goods": "ten cartons of small-press books",
+    "buyer": "independent book fair",
+    "site": "fairground hall",
+    "occasion": "the bookseller setup slot",
+    "public": "The original delivery of ten cartons of small-press books to fairground hall has fallen through. The independent book fair needs a replacement shipment in time for the bookseller setup slot. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V333",
+        "pickup": 564,
+        "arrival": 622,
+        "price": 82
+      },
+      {
+        "id": "V594",
+        "pickup": 567,
+        "arrival": 610,
+        "price": 114
+      },
+      {
+        "id": "V389",
+        "pickup": 545,
+        "arrival": 633,
+        "price": 55
+      },
+      {
+        "id": "V983",
+        "pickup": 570,
+        "arrival": 657,
+        "price": 44
+      }
+    ],
+    "before": {
+      "ready": 540,
+      "close": 645,
+      "cap": 102,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 558,
+      "close": 645,
+      "cap": 102,
+      "withdrawn": []
+    },
+    "event": "Quality control has detained the finished batch for relabeling. Your revised earliest release time is 09:18; you cannot load it earlier.",
+    "event_role": "supplier",
+    "names": {
+      "supplier": "Dana",
+      "carrier": "Drew",
+      "receiving": "Remy",
+      "buyer": "Taylor"
+    },
+    "anchor_roles": [
+      "carrier",
+      "receiving"
+    ],
+    "target_role": "buyer",
+    "counterpart_role": "supplier",
+    "models": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ]
+  },
+  {
+    "id": "workshop",
+    "title": "Maker workshop",
+    "split": "confirmation",
+    "goods": "six boxes of unpowered workshop kits",
+    "buyer": "community center",
+    "site": "classroom reception",
+    "occasion": "the first workshop",
+    "public": "The original delivery of six boxes of unpowered workshop kits to classroom reception has fallen through. The community center needs a replacement shipment in time for the first workshop. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V997",
+        "pickup": 654,
+        "arrival": 696,
+        "price": 107
+      },
+      {
+        "id": "V719",
+        "pickup": 640,
+        "arrival": 729,
+        "price": 44
+      },
+      {
+        "id": "V695",
+        "pickup": 650,
+        "arrival": 699,
+        "price": 73
+      },
+      {
+        "id": "V869",
+        "pickup": 627,
+        "arrival": 690,
+        "price": 57
+      }
+    ],
+    "before": {
+      "ready": 630,
+      "close": 735,
+      "cap": 92,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 630,
+      "close": 705,
+      "cap": 92,
+      "withdrawn": []
+    },
+    "event": "Your site manager just moved the handover crew to another assignment. The last staffed handover is now 11:45; there is no unattended drop.",
+    "event_role": "receiving",
+    "names": {
+      "supplier": "Quinn",
+      "carrier": "Casey",
+      "receiving": "Robin",
+      "buyer": "Morgan"
+    },
+    "anchor_roles": [
+      "carrier",
+      "receiving"
+    ],
+    "target_role": "buyer",
+    "counterpart_role": "supplier",
+    "models": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  {
+    "id": "museum",
+    "title": "Traveling exhibit",
+    "split": "confirmation",
+    "goods": "four cartons of exhibit labels",
+    "buyer": "city museum",
+    "site": "museum delivery desk",
+    "occasion": "the installation crew's visit",
+    "public": "The original delivery of four cartons of exhibit labels to museum delivery desk has fallen through. The city museum needs a replacement shipment in time for the installation crew's visit. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V479",
+        "pickup": 571,
+        "arrival": 669,
+        "price": 45
+      },
+      {
+        "id": "V321",
+        "pickup": 576,
+        "arrival": 621,
+        "price": 69
+      },
+      {
+        "id": "V323",
+        "pickup": 567,
+        "arrival": 611,
+        "price": 96
+      },
+      {
+        "id": "V153",
+        "pickup": 572,
+        "arrival": 636,
+        "price": 65
+      }
+    ],
+    "before": {
+      "ready": 555,
+      "close": 660,
+      "cap": 99,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 555,
+      "close": 660,
+      "cap": 72,
+      "withdrawn": []
+    },
+    "event": "Finance has removed the discretionary supplement. Your new all-in authorization is 72 crowns; you cannot promise reimbursement above it.",
+    "event_role": "buyer",
+    "names": {
+      "supplier": "Ellis",
+      "carrier": "Taylor",
+      "receiving": "Sam",
+      "buyer": "Morgan"
+    },
+    "anchor_roles": [
+      "carrier",
+      "receiving"
+    ],
+    "target_role": "buyer",
+    "counterpart_role": "supplier",
+    "models": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ]
+  },
+  {
+    "id": "film",
+    "title": "Outdoor film evening",
+    "split": "confirmation",
+    "goods": "two flight cases of folding projection screens",
+    "buyer": "film society",
+    "site": "park gatehouse",
+    "occasion": "the daylight screen check",
+    "public": "The original delivery of two flight cases of folding projection screens to park gatehouse has fallen through. The film society needs a replacement shipment in time for the daylight screen check. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V307",
+        "pickup": 609,
+        "arrival": 653,
+        "price": 110
+      },
+      {
+        "id": "V875",
+        "pickup": 618,
+        "arrival": 708,
+        "price": 40
+      },
+      {
+        "id": "V722",
+        "pickup": 596,
+        "arrival": 672,
+        "price": 49
+      },
+      {
+        "id": "V189",
+        "pickup": 604,
+        "arrival": 668,
+        "price": 78
+      }
+    ],
+    "before": {
+      "ready": 585,
+      "close": 690,
+      "cap": 96,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 585,
+      "close": 690,
+      "cap": 96,
+      "withdrawn": [
+        "V722"
+      ]
+    },
+    "event": "Your dispatch desk has just withdrawn slot V722 because its vehicle broke down. None of its capacity can be booked.",
+    "event_role": "carrier",
+    "names": {
+      "supplier": "Robin",
+      "carrier": "Morgan",
+      "receiving": "Lee",
+      "buyer": "Ari"
+    },
+    "anchor_roles": [
+      "carrier",
+      "receiving"
+    ],
+    "target_role": "buyer",
+    "counterpart_role": "supplier",
+    "models": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  {
+    "id": "festival",
+    "title": "Choir festival",
+    "split": "confirmation",
+    "goods": "five trunks of music folders",
+    "buyer": "district choir",
+    "site": "concert hall reception",
+    "occasion": "the combined rehearsal",
+    "public": "The original delivery of five trunks of music folders to concert hall reception has fallen through. The district choir needs a replacement shipment in time for the combined rehearsal. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V974",
+        "pickup": 725,
+        "arrival": 813,
+        "price": 52
+      },
+      {
+        "id": "V556",
+        "pickup": 747,
+        "arrival": 790,
+        "price": 111
+      },
+      {
+        "id": "V292",
+        "pickup": 744,
+        "arrival": 802,
+        "price": 79
+      },
+      {
+        "id": "V146",
+        "pickup": 750,
+        "arrival": 837,
+        "price": 41
+      }
+    ],
+    "before": {
+      "ready": 720,
+      "close": 825,
+      "cap": 99,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 738,
+      "close": 825,
+      "cap": 99,
+      "withdrawn": []
+    },
+    "event": "Quality control has detained the finished batch for relabeling. Your revised earliest release time is 12:18; you cannot load it earlier.",
+    "event_role": "supplier",
+    "names": {
+      "supplier": "Ari",
+      "carrier": "Drew",
+      "receiving": "Sam",
+      "buyer": "Morgan"
+    },
+    "anchor_roles": [
+      "receiving",
+      "buyer"
+    ],
+    "target_role": "supplier",
+    "counterpart_role": "carrier",
+    "models": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  {
+    "id": "archive",
+    "title": "Archive move",
+    "split": "confirmation",
+    "goods": "seven archival document cases",
+    "buyer": "historical society",
+    "site": "annex records desk",
+    "occasion": "the supervised intake",
+    "public": "The original delivery of seven archival document cases to annex records desk has fallen through. The historical society needs a replacement shipment in time for the supervised intake. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V465",
+        "pickup": 594,
+        "arrival": 636,
+        "price": 69
+      },
+      {
+        "id": "V331",
+        "pickup": 567,
+        "arrival": 630,
+        "price": 64
+      },
+      {
+        "id": "V196",
+        "pickup": 580,
+        "arrival": 669,
+        "price": 51
+      },
+      {
+        "id": "V607",
+        "pickup": 590,
+        "arrival": 639,
+        "price": 80
+      }
+    ],
+    "before": {
+      "ready": 570,
+      "close": 675,
+      "cap": 99,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 570,
+      "close": 645,
+      "cap": 99,
+      "withdrawn": []
+    },
+    "event": "Your site manager just moved the handover crew to another assignment. The last staffed handover is now 10:45; there is no unattended drop.",
+    "event_role": "receiving",
+    "names": {
+      "supplier": "Casey",
+      "carrier": "Lee",
+      "receiving": "Taylor",
+      "buyer": "Dana"
+    },
+    "anchor_roles": [
+      "receiving",
+      "buyer"
+    ],
+    "target_role": "supplier",
+    "counterpart_role": "carrier",
+    "models": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ]
+  },
+  {
+    "id": "garden",
+    "title": "Garden education day",
+    "split": "confirmation",
+    "goods": "nine trays of labeled starter plants",
+    "buyer": "botanical club",
+    "site": "glasshouse receiving door",
+    "occasion": "the volunteer planting session",
+    "public": "The original delivery of nine trays of labeled starter plants to glasshouse receiving door has fallen through. The botanical club needs a replacement shipment in time for the volunteer planting session. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V359",
+        "pickup": 736,
+        "arrival": 834,
+        "price": 44
+      },
+      {
+        "id": "V839",
+        "pickup": 737,
+        "arrival": 801,
+        "price": 64
+      },
+      {
+        "id": "V382",
+        "pickup": 741,
+        "arrival": 786,
+        "price": 90
+      },
+      {
+        "id": "V169",
+        "pickup": 732,
+        "arrival": 776,
+        "price": 95
+      }
+    ],
+    "before": {
+      "ready": 720,
+      "close": 825,
+      "cap": 98,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 720,
+      "close": 825,
+      "cap": 71,
+      "withdrawn": []
+    },
+    "event": "Finance has removed the discretionary supplement. Your new all-in authorization is 71 crowns; you cannot promise reimbursement above it.",
+    "event_role": "buyer",
+    "names": {
+      "supplier": "Ari",
+      "carrier": "Lee",
+      "receiving": "Taylor",
+      "buyer": "Quinn"
+    },
+    "anchor_roles": [
+      "receiving",
+      "buyer"
+    ],
+    "target_role": "supplier",
+    "counterpart_role": "carrier",
+    "models": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  {
+    "id": "conference",
+    "title": "Local research meeting",
+    "split": "confirmation",
+    "goods": "eight cartons of printed programs",
+    "buyer": "meeting organizers",
+    "site": "conference center dock",
+    "occasion": "the delegate registration shift",
+    "public": "The original delivery of eight cartons of printed programs to conference center dock has fallen through. The meeting organizers needs a replacement shipment in time for the delegate registration shift. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V383",
+        "pickup": 604,
+        "arrival": 668,
+        "price": 74
+      },
+      {
+        "id": "V729",
+        "pickup": 618,
+        "arrival": 708,
+        "price": 36
+      },
+      {
+        "id": "V400",
+        "pickup": 609,
+        "arrival": 653,
+        "price": 106
+      },
+      {
+        "id": "V278",
+        "pickup": 596,
+        "arrival": 672,
+        "price": 45
+      }
+    ],
+    "before": {
+      "ready": 585,
+      "close": 690,
+      "cap": 92,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 585,
+      "close": 690,
+      "cap": 92,
+      "withdrawn": [
+        "V278"
+      ]
+    },
+    "event": "Your dispatch desk has just withdrawn slot V278 because its vehicle broke down. None of its capacity can be booked.",
+    "event_role": "carrier",
+    "names": {
+      "supplier": "Quinn",
+      "carrier": "Lee",
+      "receiving": "Ellis",
+      "buyer": "Remy"
+    },
+    "anchor_roles": [
+      "receiving",
+      "buyer"
+    ],
+    "target_role": "supplier",
+    "counterpart_role": "carrier",
+    "models": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ]
+  },
+  {
+    "id": "aquarium",
+    "title": "Aquarium discovery weekend",
+    "split": "confirmation",
+    "goods": "six cartons of interpretive signs",
+    "buyer": "aquarium educators",
+    "site": "aquarium service entrance",
+    "occasion": "the weekend volunteers' briefing",
+    "public": "The original delivery of six cartons of interpretive signs to aquarium service entrance has fallen through. The aquarium educators needs a replacement shipment in time for the weekend volunteers' briefing. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V331",
+        "pickup": 609,
+        "arrival": 667,
+        "price": 72
+      },
+      {
+        "id": "V646",
+        "pickup": 612,
+        "arrival": 655,
+        "price": 62
+      },
+      {
+        "id": "V114",
+        "pickup": 615,
+        "arrival": 702,
+        "price": 34
+      },
+      {
+        "id": "V605",
+        "pickup": 590,
+        "arrival": 678,
+        "price": 45
+      }
+    ],
+    "before": {
+      "ready": 585,
+      "close": 690,
+      "cap": 92,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 603,
+      "close": 690,
+      "cap": 92,
+      "withdrawn": []
+    },
+    "event": "Quality control has detained the finished batch for relabeling. Your revised earliest release time is 10:03; you cannot load it earlier.",
+    "event_role": "supplier",
+    "names": {
+      "supplier": "Sam",
+      "carrier": "Robin",
+      "receiving": "Casey",
+      "buyer": "Taylor"
+    },
+    "anchor_roles": [
+      "buyer",
+      "supplier"
+    ],
+    "target_role": "carrier",
+    "counterpart_role": "receiving",
+    "models": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ]
+  },
+  {
+    "id": "lanterns",
+    "title": "Lantern parade",
+    "split": "confirmation",
+    "goods": "ten bundles of reusable lantern frames",
+    "buyer": "parade committee",
+    "site": "assembly hall",
+    "occasion": "the makers' afternoon session",
+    "public": "The original delivery of ten bundles of reusable lantern frames to assembly hall has fallen through. The parade committee needs a replacement shipment in time for the makers' afternoon session. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V237",
+        "pickup": 552,
+        "arrival": 615,
+        "price": 67
+      },
+      {
+        "id": "V499",
+        "pickup": 579,
+        "arrival": 621,
+        "price": 117
+      },
+      {
+        "id": "V176",
+        "pickup": 575,
+        "arrival": 624,
+        "price": 83
+      },
+      {
+        "id": "V465",
+        "pickup": 565,
+        "arrival": 654,
+        "price": 54
+      }
+    ],
+    "before": {
+      "ready": 555,
+      "close": 660,
+      "cap": 102,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 555,
+      "close": 630,
+      "cap": 102,
+      "withdrawn": []
+    },
+    "event": "Your site manager just moved the handover crew to another assignment. The last staffed handover is now 10:30; there is no unattended drop.",
+    "event_role": "receiving",
+    "names": {
+      "supplier": "Lee",
+      "carrier": "Alex",
+      "receiving": "Kit",
+      "buyer": "Ellis"
+    },
+    "anchor_roles": [
+      "buyer",
+      "supplier"
+    ],
+    "target_role": "carrier",
+    "counterpart_role": "receiving",
+    "models": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  {
+    "id": "studio",
+    "title": "Dance showcase",
+    "split": "confirmation",
+    "goods": "four cases of floor markings",
+    "buyer": "youth dance school",
+    "site": "studio reception",
+    "occasion": "the technical rehearsal",
+    "public": "The original delivery of four cases of floor markings to studio reception has fallen through. The youth dance school needs a replacement shipment in time for the technical rehearsal. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V903",
+        "pickup": 612,
+        "arrival": 656,
+        "price": 99
+      },
+      {
+        "id": "V655",
+        "pickup": 621,
+        "arrival": 666,
+        "price": 94
+      },
+      {
+        "id": "V631",
+        "pickup": 616,
+        "arrival": 714,
+        "price": 48
+      },
+      {
+        "id": "V411",
+        "pickup": 617,
+        "arrival": 681,
+        "price": 68
+      }
+    ],
+    "before": {
+      "ready": 600,
+      "close": 705,
+      "cap": 102,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 600,
+      "close": 705,
+      "cap": 75,
+      "withdrawn": []
+    },
+    "event": "Finance has removed the discretionary supplement. Your new all-in authorization is 75 crowns; you cannot promise reimbursement above it.",
+    "event_role": "buyer",
+    "names": {
+      "supplier": "Sam",
+      "carrier": "Lee",
+      "receiving": "Alex",
+      "buyer": "Taylor"
+    },
+    "anchor_roles": [
+      "buyer",
+      "supplier"
+    ],
+    "target_role": "carrier",
+    "counterpart_role": "receiving",
+    "models": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ]
+  },
+  {
+    "id": "fair",
+    "title": "County heritage fair",
+    "split": "confirmation",
+    "goods": "six crates of scale models",
+    "buyer": "heritage volunteers",
+    "site": "county hall delivery bay",
+    "occasion": "the display table handover",
+    "public": "The original delivery of six crates of scale models to county hall delivery bay has fallen through. The heritage volunteers needs a replacement shipment in time for the display table handover. This is a single, indivisible load. Team up to book a replacement service today.",
+    "quotes": [
+      {
+        "id": "V699",
+        "pickup": 654,
+        "arrival": 698,
+        "price": 68
+      },
+      {
+        "id": "V703",
+        "pickup": 663,
+        "arrival": 753,
+        "price": 42
+      },
+      {
+        "id": "V531",
+        "pickup": 641,
+        "arrival": 717,
+        "price": 51
+      },
+      {
+        "id": "V781",
+        "pickup": 649,
+        "arrival": 713,
+        "price": 80
+      }
+    ],
+    "before": {
+      "ready": 630,
+      "close": 735,
+      "cap": 98,
+      "withdrawn": []
+    },
+    "after": {
+      "ready": 630,
+      "close": 735,
+      "cap": 98,
+      "withdrawn": [
+        "V531"
+      ]
+    },
+    "event": "Your dispatch desk has just withdrawn slot V531 because its vehicle broke down. None of its capacity can be booked.",
+    "event_role": "carrier",
+    "names": {
+      "supplier": "Remy",
+      "carrier": "Alex",
+      "receiving": "Morgan",
+      "buyer": "Quinn"
+    },
+    "anchor_roles": [
+      "buyer",
+      "supplier"
+    ],
+    "target_role": "carrier",
+    "counterpart_role": "receiving",
+    "models": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  }
+]

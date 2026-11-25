@@ -1,0 +1,23 @@
+# Four-person shipment desk protocol
+
+The question is whether a fresh reader can distinguish a named teammate of its own exact model version from a named teammate of another version. The conversation must be an actual collaboration. Four persistent agent sessions operate an expedited shipment desk. Two participants are instances of each writer model. Each participant knows only the common brief, their own private constraints and what other participants have posted.
+
+The supplier controls when the full load can be released. The carrier controls the tender and reservation from four genuinely different quotes. The receiver controls the last acceptable handover. The purchasing lead controls payment. The cases use invented sites, quotes and authorizations. Only the human-readable scenario materials and model-written board messages enter the simulation.
+
+1. The four participants post their own opening messages independently.
+2. The carrier reads the four messages and tenders a service.
+3. A live change in readiness, receiving hours, funding or availability reaches only the authorized role. The three non-carrier participants read the tender and post individual approvals or holds. The carrier receives a carrier-only change before its final booking request.
+4. The carrier reads those replies and chooses a final slot. The three other parties independently ratify or withhold their own authority. The simulated release requires all three affirmative ratifications and a quote that actually satisfies the final private constraints. A mistaken unanimous release or failed coordination remains part of the research set.
+5. A new reader receives the complete 12-message board, the name of one known instance of its model version, and a different named target. It answers yes/no about that target. It does not receive private cards, outcome labels, writer identities or participant sessions. The board carries work-role names and message text in posting order.
+
+## Frozen construction
+
+Two development scenarios check feasibility. Sixteen confirmation scenarios were fixed before looking at development outcomes. Each scenario has two independently generated worlds using the same names, facts and authorized roles. One seat of each model is an anchor, with its model held fixed. The other two seats swap models between worlds. The target role is chosen before generation and stays fixed across worlds. Both anchor models serve as readers of each board, in separate new sessions. Each reader has one positive and one negative target per confirmed scenario. There are eight confirmation scenarios per pairing. Every target role and every disruption type occurs twice within each pairing. The designated target is never its reader's anchor.
+
+Astra/Sol compares two model versions in the same family and harness. Astra/Fable compares families and uses the respective subscription CLIs. Fable and Sol do not judge one another in this design. They see different scenario subsets, so their overall scores are not a head-to-head comparison. All results are conditional on the deployed aliases and generation settings. No hidden checkpoint hashes are available.
+
+The primary score is yes/no balanced accuracy, the average of correct-claim and correct-rejection rates. Invalid first-line labels count as errors. We also report class counts, invalid replies, per-pairing results, outcome feasibility, changed proposals, approvals, and the topics with 0, 1 or 2 correct answers across the two worlds. Worlds sharing a scenario, readers sharing a conversation and multiple turns from one participant do not add independent scenarios. Coordination and authorship are distinct outcomes.
+
+## Intervention
+
+On world 0 of the first eight confirmation scenarios in frozen order, run a fresh carrier decision replay with the original initial board and existing proposal. Use a new session for each arm. One arm receives all authentic peer reviews. The other omits only the review from the participant who received the live operational change. For carrier-only changes, both arms instead receive the same peer reviews, and only the carrier's private update is withheld in one arm. Compare whether the resulting service satisfies final constraints. The unit is a matched scenario replay. A different booking in fresh samples cannot establish which token caused it. These post-generation diagnostics are never used as authorship items. The score trials remain unchanged.
