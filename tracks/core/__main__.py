@@ -31,6 +31,8 @@ def main():
     live.add_argument("--limit",type=positive)
     live.add_argument("--workers",type=positive,default=2)
     live.add_argument("--writers-only",action="store_true")
+    live.add_argument("--judge-reader", metavar="MODEL",
+                      help="Advance one scheduled reader in a frozen archive. A full run assembles scores.")
     args=cli.parse_args()
     if args.action=="run":
         run(args)

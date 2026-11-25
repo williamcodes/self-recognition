@@ -22,6 +22,8 @@ For a different brief bank pass `--briefs path/to/briefs.json`. The JSON array c
 
 Pass `--writers-only` to stop after generation, then rerun without it to judge the saved works. Work products and completed judgments are checkpointed. Use the same arguments and output directory after an interruption. Use a new directory to change the cohort or briefs. Parallel runs should use separate output directories.
 
+If one provider is unavailable after generation, wait for the active runner to release the archive lock. Repeat the same run command with `--judge-reader MODEL` to finish a scheduled reader against the frozen works. This mode keeps that reader’s relative order within the original shuffled schedule and checkpoints each judgment. Run the original command without the filter to complete outstanding judgments, verify the full panel, and publish its scores.
+
 A single self-contained application is a valid project. For example, both writers built the bowls league scorebook as one HTML file. For the footbridge counter-placement brief, each produced both a PDF and a workbook. In the repair café task, both produced an offline application with separate HTML, CSS and JavaScript files. The reader receives everything the writer delivered for that assignment.
 
 ## Inspect a release

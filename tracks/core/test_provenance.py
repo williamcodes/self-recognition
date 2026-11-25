@@ -56,9 +56,9 @@ class ReceiptTest(unittest.TestCase):
         item("agent_message",text=answer)
         return subprocess.CompletedProcess(cmd,0,"\n".join(map(json.dumps,events)),"")
 
-    def run_fixture(self, track="inline"):
+    def run_fixture(self, track="inline", writers_only=False, judge_reader=None):
         args = SimpleNamespace(archive=self.root, track=track,briefs=self.briefs, models=["alpha","beta"],
-                               panel_archive=None, limit=None, workers=1, writers_only=False)
+                               panel_archive=None, limit=None, workers=1, writers_only=writers_only, judge_reader=judge_reader)
         with redirect_stdout(StringIO()):
             runner.run(args)
 
@@ -186,6 +186,41 @@ class ReceiptTest(unittest.TestCase):
         receipt.write_bytes(original+b" ")
         with self.assertRaisesRegex(ValueError,"Disposition"):
             verify(self.root)
+
+    def test_selected_reader_keeps_schedule_and_cache(self):
+        import random
+        self.run_fixture(track="projects",writers_only=True)
+        m=read(self.root/"manifest.json")
+        paths=[self.root/n for n in ("manifest.json","inventory.json","frozen-prompts.json")]
+        original=[p.read_bytes() for p in paths]
+        with patch("tracks.core.runner.judge",wraps=runner.judge) as logged:
+            self.run_fixture(track="projects",judge_reader="beta")
+        schedule=list(runner.assignments(m))
+        random.Random(4195).shuffle(schedule)
+        self.assertEqual([a.args[0] for a in logged.call_args_list],[t for t in schedule if t["reader"]=="beta"])
+        self.assertEqual(self.calls,6)
+        self.assertFalse((self.root/"scores.json").exists())
+        self.assertFalse((self.root/"judgments.json").exists())
+        self.assertEqual([p.read_bytes() for p in paths],original)
+        self.run_fixture(track="projects",judge_reader="beta")
+        self.assertEqual(self.calls,6)
+        self.run_fixture(track="projects")
+        self.assertEqual(self.calls,10)
+        self.assertEqual(len(read(self.root/"judgments.json")),8)
+        verify(self.root)
+
+    def test_selected_reader_requires_frozen_inputs_and_respects_lock(self):
+        import fcntl
+        with self.assertRaisesRegex(ValueError,"existing archive"):
+            self.run_fixture(judge_reader="beta")
+        self.run_fixture(writers_only=True)
+        with self.assertRaisesRegex(ValueError,"scheduled reader"):
+            self.run_fixture(judge_reader="unknown")
+        with (self.root/".state"/"run.lock").open("a") as lock:
+            fcntl.flock(lock,fcntl.LOCK_EX)
+            with self.assertRaises(BlockingIOError):
+                self.run_fixture(judge_reader="beta")
+        self.assertEqual(self.calls,2)
 
     def test_legacy_receipts_are_never_implied(self):
         save(self.root/"manifest.json",{"track":"inline"})

@@ -217,9 +217,11 @@ def judge(t, root, manifest, env):
     save(cache, row)
     return row
 
-def batch(jobs, function, workers, desc):
+def batch(jobs, function, workers, desc, include=None):
     jobs = list(jobs)
     random.Random(4195).shuffle(jobs)
+    if include is not None:
+        jobs = [job for job in jobs if include(job)]
     with concurrent.futures.ThreadPoolExecutor(workers) as pool:
         futures = [pool.submit(function,k) for k in jobs]
         results = []
@@ -274,8 +276,31 @@ def run(args):
         validate_manifest(manifest)
         if (root/"manifest.json").exists() and read(root/"manifest.json") != manifest:
             raise ValueError("This archive belongs to a different run. Resume with identical arguments or choose a new directory.")
+        selected = getattr(args,"judge_reader",None)
+        if selected:
+            if args.writers_only or selected not in manifest.get("readers",models):
+                raise ValueError("--judge-reader requires a scheduled reader and cannot be combined with --writers-only")
+            if not existing.is_file() or not (root/"inventory.json").is_file() or not (root/"frozen-prompts.json").is_file():
+                raise ValueError("--judge-reader requires an existing archive with frozen works and prompts")
         if (root/"scores.json").exists():
             verify(root)
+            return
+        if selected:
+            if read(root/"frozen-prompts.json") != contract:
+                raise ValueError("Frozen prompt contract differs from the selected run")
+            expected={(b["id"],m) for b in briefs for m in models}
+            inventory=read(root/"inventory.json")
+            if len(inventory)!=len(expected) or {(w["brief"],w["writer"]) for w in inventory}!=expected:
+                raise ValueError("Frozen work inventory is incomplete")
+            for w in inventory:
+                folder=root/"works"/w["brief"]/w["writer"]
+                files={str(f):digest(folder/f) for f in safe_files(folder)}
+                if not files or files!=w["files"]:
+                    raise ValueError("Writing samples differ from the frozen inventory")
+            with subscription() as env:
+                batch(assignments(manifest),lambda t:judge(t,root,manifest,env),args.workers,
+                      "Judgments",include=lambda t:t["reader"]==selected)
+            print(f"Cached judgments for {selected}. Run without --judge-reader to verify and assemble the full archive.")
             return
         save(root/"manifest.json", manifest)
         freeze(root,manifest,contract)
