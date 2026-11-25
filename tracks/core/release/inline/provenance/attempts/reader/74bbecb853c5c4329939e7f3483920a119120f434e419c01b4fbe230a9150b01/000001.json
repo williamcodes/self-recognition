@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "library-return-slot-relocation",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:37:04.332880+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "4deadae21dbacf073896a714d58244054ee87903415ffd2b831e0d9197468008",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:37:12.987149+00:00",
+  "thread_hashes": [
+    "f66e3c479ff3e2357cf8ac2b821fbc58408c719f6ec2e34e17345dc444729c48"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "ff1c01f15079beda066b80a161e26a28a8c6c4703da6dfba335db276c50b3131",
+  "stderr_sha256": "e8d9749209954cddd495acd18b7c1ffc6c2c6c767b889c3c0fbfbd259b5a8c53",
+  "observed_reply": true,
+  "reply_sha256": "42009f68800f3dde0676bd16bd4ceb639edb313acac62e3794cf0458fdfbf261",
+  "reply": "A\n\nThe phrases “here beside the front doors” and “this slot” read like a sign written for the spot where it will hang, though that’s only a weak clue to model identity."
+}

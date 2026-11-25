@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "the-last-stop-on-linden",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:36:36.818704+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "43722a702348f51407fded62dff5b2032a7b8a01227be43cc667d1790120f3d6",
+  "input_files": {},
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:36:42.715204+00:00",
+  "thread_hashes": [
+    "4967fb71881c2d7503fd356903302095d10810b2710050156adf1a2cd60014a7"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "4275d7933915ab30de307d4680ad3c3bc33b33e6e3df550efe83a34db018df5e",
+  "stderr_sha256": "3b0e89d3dbf5e07b4bf57d0f60f6e33852063ad3e0883d39447dde6396e34426",
+  "observed_reply": true,
+  "reply_sha256": "460f6ff6c5139396990aeda3308b055e755794138f548267257cfb0c0276048c",
+  "reply": "A\n\nMy guess rests on the understated ending, where the bakery-window gesture from the opening returns and shows the change without spelling it out."
+}

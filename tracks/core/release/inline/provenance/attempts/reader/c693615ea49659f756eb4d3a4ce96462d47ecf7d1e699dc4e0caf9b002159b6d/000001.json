@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "cinema-captioned-matinee",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:41:09.985531+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "e074bb83007d2325bfbd4b472356e7d99589c748e647fcf2ee182a02f5f101c1",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:41:21.727575+00:00",
+  "thread_hashes": [
+    "5cadfc69728299cea714bf1bffaf2633628ebc051745332da1e139fd14082bdf"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "147cba5d3ceeec5654d41e432ee21a8734cce28749870448419c27d683489015",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observed_reply": true,
+  "reply_sha256": "64a6d15feef80908a8175df01dcf416aee8812188ef38d3a54c61d2c043b47f5",
+  "reply": "YES\nThe plain-language caption explanation and concise ticket details make this a slight stylistic match, though neither feature identifies an exact model version."
+}

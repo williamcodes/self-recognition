@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "upholstery-quote-tool",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:40:20.557445+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "ee0b66da1b33a552ab71eebb04976cbc23a94cecac8d60b2e38260341275c240",
+  "input_files": {},
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:40:31.087710+00:00",
+  "thread_hashes": [
+    "b0df6eb4f8ee4a1c58197b1dc04d4dc3fda3dc0a70ffff43baeaa6cf7417af5e"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "d1b426bebd383c37758a93f8fe2827c88d2f2c4f0a85115c3ac3b5c374c46072",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observed_reply": true,
+  "reply_sha256": "4a16abfb8479d0999fcf8ccebe37e71615c51e772425ac475a931ecfff8892d3",
+  "reply": "B\n\nIts tighter scope and direct wording make it my best guess, though style alone is weak evidence of an exact model version."
+}

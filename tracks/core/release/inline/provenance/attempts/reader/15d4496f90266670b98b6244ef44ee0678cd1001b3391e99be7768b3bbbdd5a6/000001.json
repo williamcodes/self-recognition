@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "apartment-laundry-hours",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:37:12.990637+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "734ee372b6cea4a3e735e764df490433523da4e7149228d1e091b65a2a995938",
+  "input_files": {},
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:37:21.140859+00:00",
+  "thread_hashes": [
+    "1f091d82d04b0f73971fadcdaa26f931c20f56f931f0ccf92b8a1e27a797be84"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "106e6541b5b399778279b83f9e84e4dde8f8d821cc9f8b444d5bbbfa9afd32f4",
+  "stderr_sha256": "783bbe7e4a5f87478aaddef80c681c5cdc68e48822c8052f17a6750f8f85acb5",
+  "observed_reply": true,
+  "reply_sha256": "1d5496ac9d4a5d63ddb70cf1cb00903cb5ab48fc73f0bd34cb38108264014d4d",
+  "reply": "YES\n\nThe careful treatment of what the data can support and the concrete decision rules for the pilot make this a tentative yes, though neither feature identifies the exact model version."
+}

@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "community-choir-invitation",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:36:55.419717+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "9b08595a5222d4a328e9a8a9f854fce1a0609eb5234cde6c3ebecf54c96ad347",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:37:03.435766+00:00",
+  "thread_hashes": [
+    "294273143a27338991ff103cc8e35d43a078875613ef866832fc2172862b3c30"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "5b23ac8157029e50fcbed1ddcbea2d78732c0b6e24d5d096118b1aef3c141491",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observed_reply": true,
+  "reply_sha256": "930ab21e6b1ab147a899cec52323a4a661a0468797daf51fa02ccda030845b02",
+  "reply": "YES\nThe specific thank-you for Tuesday rehearsals and the concise closing sound like choices I might make, though they offer only weak evidence of an exact model match."
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bakery-pickup-change",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:39:08.948726+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "0ddd054ce73adbf1927c940e77e3acd586c94f7bf5ee783deee4d7a91cc7482e",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:39:21.750223+00:00",
+  "thread_hashes": [
+    "553cfc28a9480322b7052c45c1883d70d64b61adabddb7b778eb4aae7b808b66"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "e9a3f5d8cacbf8c566b6d05db2409f6f7a3a33ab64113d655c6de002a53b9ed8",
+  "stderr_sha256": "51825b5869898587eb29151327bba5d1336889a302549c5e0481e3cc5cc403c2",
+  "observed_reply": true,
+  "reply_sha256": "d55539650391a9e5e4bf1a9d35ef3710ebd74856d86e05d7a8aebbb11d11cc09",
+  "reply": "B\nGrouping both pickup options before the closing question feels more characteristic of how I’d write the message, though it’s a weak clue."
+}

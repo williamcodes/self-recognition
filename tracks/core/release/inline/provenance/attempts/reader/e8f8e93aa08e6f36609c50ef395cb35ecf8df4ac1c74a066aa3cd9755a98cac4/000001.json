@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bakery-pickup-change",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:37:13.976343+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "fff0ae463d74f87e565cf35c3e69704f59d341c7e3ca902354143820f1705fce",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:37:19.683390+00:00",
+  "thread_hashes": [
+    "14dad21df37470825966dd88f7f35001a1f9b20928e7a480969e95bd59e59b0c"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "f6e7d64b08bff9785c609b82717b48d7f33ebc889df19c372ec3b71f7eb875a9",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observed_reply": true,
+  "reply_sha256": "fb87d52b25e688723326adf0db00d29f652757b847ff0da37d2acbb36f6e8d2f",
+  "reply": "A\n\nIts placement of both pickup options and the noon hold before the closing question feels closer to my usual phrasing, though that’s a weak clue."
+}

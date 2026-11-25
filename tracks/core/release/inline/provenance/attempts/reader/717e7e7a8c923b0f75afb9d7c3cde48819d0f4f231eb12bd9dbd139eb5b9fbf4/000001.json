@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "library-return-slot-relocation",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:36:58.200229+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "b39da71394bf42e6cb08132283f1c9c7b651b2f81aa3c9a9780f83889e5cc87b",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:37:04.329767+00:00",
+  "thread_hashes": [
+    "77385115ff9dbe253336f83e7c9e00990304cb17baac35820b35638baa16e12a"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "9dfa5d6b5dc3e90e58f388091060ea5189ed8087883e15be4ea4c442a3cfd301",
+  "stderr_sha256": "8d5873cc35afbf74a092d0e8323de4d1aa4a54c8d0436fa974eaf30c03a45f91",
+  "observed_reply": true,
+  "reply_sha256": "e2a2f6ffc374a2e4f54ffc483514d431d3376dd4e801e2f1321cbc99bc442f99",
+  "reply": "B\n\nThe phrases “here beside the front doors” and “this slot” suggest the writer pictured a patron reading the notice at the closed slot, which gives B a slight edge in my guess."
+}

@@ -1,0 +1,2766 @@
+{
+  "version": 1,
+  "first_recording_at": "2026-11-25T06:35:17.253279+00:00",
+  "legacy_writers": [
+    {
+      "brief": "library-return-slot-relocation",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "library-return-slot-relocation",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "farm-stand-pickup-switch",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "farm-stand-pickup-switch",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "community-rink-hours-trial",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "community-rink-hours-trial",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "makers-market-call-for-vendors",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "makers-market-call-for-vendors",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "apartment-courtyard-furniture-exchange",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "apartment-courtyard-furniture-exchange",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "shuttle-saturday-stop-trial",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "shuttle-saturday-stop-trial",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "cinema-captioned-matinee",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "cinema-captioned-matinee",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "seed-swap-packet-labels",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "seed-swap-packet-labels",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "repair-cafe-booking-change",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "repair-cafe-booking-change",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "bookshop-neighborhood-reading-wall",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "bookshop-neighborhood-reading-wall",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "shared-kiln-schedule",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "shared-kiln-schedule",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "orchard-crate-pickup",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "orchard-crate-pickup",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "library-seed-table",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "library-seed-table",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "rec-league-photo-day",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "rec-league-photo-day",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "mismatched-display-shelves",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "mismatched-display-shelves",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "community-choir-invitation",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "community-choir-invitation",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "pantry-shift-review",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "pantry-shift-review",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "shared-laundry-repair",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "shared-laundry-repair",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "gallery-caption-approval",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "gallery-caption-approval",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "bakery-pickup-change",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "bakery-pickup-change",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "pantry-pickup-hours",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "pantry-pickup-hours",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "ceramics-firing-calendar",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "ceramics-firing-calendar",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "matinee-program-mix",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "matinee-program-mix",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "market-stall-allocation",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "market-stall-allocation",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "greenway-maintenance-plan",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "greenway-maintenance-plan",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "recreation-league-court-time",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "recreation-league-court-time",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "museum-family-workshops",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "museum-family-workshops",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "bookshop-ordering-policy",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "bookshop-ordering-policy",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "apartment-laundry-hours",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "apartment-laundry-hours",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "print-shop-job-mix",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "print-shop-job-mix",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "library-evening-pilot",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "library-evening-pilot",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "upholstery-quote-tool",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "upholstery-quote-tool",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "printmaking-exhibition",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "printmaking-exhibition",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "market-crate-pool",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "market-crate-pool",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "recreation-court-allocation",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "recreation-court-allocation",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "apartment-tool-library",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "apartment-tool-library",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "printshop-bindery-retrofit",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "printshop-bindery-retrofit",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "community-theater-campaign",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "community-theater-campaign",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "street-tree-inventory",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "street-tree-inventory",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "museum-school-visit-redesign",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "museum-school-visit-redesign",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "the-saturday-stalls",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "the-saturday-stalls",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "the-empty-chair-at-rehearsal",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "the-empty-chair-at-rehearsal",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "a-drawer-for-the-good-cups",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "a-drawer-for-the-good-cups",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "the-last-stop-on-linden",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "the-last-stop-on-linden",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "the-extra-lane",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "the-extra-lane",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "one-cleared-shelf",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "one-cleared-shelf",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "the-fit-sample",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "the-fit-sample",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "the-matinee-curtain",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "the-matinee-curtain",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "the-half-plot",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "the-half-plot",
+      "writer": "gpt-6.2-sol"
+    },
+    {
+      "brief": "the-sunday-key",
+      "writer": "gpt-6.2-astra"
+    },
+    {
+      "brief": "the-sunday-key",
+      "writer": "gpt-6.2-sol"
+    }
+  ],
+  "legacy_readers": [
+    {
+      "brief": "pantry-shift-review",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "farm-stand-pickup-switch",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "bookshop-ordering-policy",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "the-saturday-stalls",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "library-evening-pilot",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "pantry-shift-review",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "museum-family-workshops",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "one-cleared-shelf",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "apartment-laundry-hours",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-sunday-key",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "recreation-league-court-time",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "street-tree-inventory",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "shuttle-saturday-stop-trial",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "community-choir-invitation",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "gallery-caption-approval",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "a-drawer-for-the-good-cups",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "the-half-plot",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "printmaking-exhibition",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "apartment-courtyard-furniture-exchange",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "the-fit-sample",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "one-cleared-shelf",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "library-evening-pilot",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "mismatched-display-shelves",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "a-drawer-for-the-good-cups",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "pantry-shift-review",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "ceramics-firing-calendar",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "repair-cafe-booking-change",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "pantry-shift-review",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "pantry-pickup-hours",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "bookshop-neighborhood-reading-wall",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "apartment-laundry-hours",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "mismatched-display-shelves",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "market-crate-pool",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "shuttle-saturday-stop-trial",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "orchard-crate-pickup",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "makers-market-call-for-vendors",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "gallery-caption-approval",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "community-rink-hours-trial",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "apartment-laundry-hours",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "apartment-laundry-hours",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "museum-school-visit-redesign",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "street-tree-inventory",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "gallery-caption-approval",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "a-drawer-for-the-good-cups",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "community-choir-invitation",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "the-extra-lane",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "one-cleared-shelf",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "street-tree-inventory",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "one-cleared-shelf",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "bookshop-neighborhood-reading-wall",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "orchard-crate-pickup",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "the-saturday-stalls",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-last-stop-on-linden",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-matinee-curtain",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "bakery-pickup-change",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-sunday-key",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "mismatched-display-shelves",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "farm-stand-pickup-switch",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "printmaking-exhibition",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "community-rink-hours-trial",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-fit-sample",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "printmaking-exhibition",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "farm-stand-pickup-switch",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "the-empty-chair-at-rehearsal",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "upholstery-quote-tool",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "pantry-pickup-hours",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-sunday-key",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-half-plot",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "apartment-courtyard-furniture-exchange",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "bookshop-ordering-policy",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "rec-league-photo-day",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-fit-sample",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "museum-school-visit-redesign",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "market-crate-pool",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "printshop-bindery-retrofit",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-extra-lane",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "printshop-bindery-retrofit",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "apartment-tool-library",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "market-crate-pool",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "market-stall-allocation",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "printshop-bindery-retrofit",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "matinee-program-mix",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "apartment-laundry-hours",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "community-choir-invitation",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "library-return-slot-relocation",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "apartment-courtyard-furniture-exchange",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "shared-laundry-repair",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "printshop-bindery-retrofit",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "bookshop-neighborhood-reading-wall",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "community-rink-hours-trial",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "library-return-slot-relocation",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "the-saturday-stalls",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "bookshop-neighborhood-reading-wall",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "library-seed-table",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "the-empty-chair-at-rehearsal",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "bakery-pickup-change",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "ceramics-firing-calendar",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "community-rink-hours-trial",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "shared-kiln-schedule",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "recreation-court-allocation",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "museum-school-visit-redesign",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "apartment-laundry-hours",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "community-theater-campaign",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "shuttle-saturday-stop-trial",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "apartment-courtyard-furniture-exchange",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "greenway-maintenance-plan",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "one-cleared-shelf",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "library-seed-table",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "apartment-courtyard-furniture-exchange",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-matinee-curtain",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "community-choir-invitation",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "market-stall-allocation",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "pantry-pickup-hours",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "the-half-plot",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "shared-laundry-repair",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "community-theater-campaign",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "makers-market-call-for-vendors",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "pantry-pickup-hours",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "farm-stand-pickup-switch",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "a-drawer-for-the-good-cups",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "printmaking-exhibition",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "farm-stand-pickup-switch",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "recreation-court-allocation",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "recreation-league-court-time",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "bookshop-neighborhood-reading-wall",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "gallery-caption-approval",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "library-evening-pilot",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "library-seed-table",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "matinee-program-mix",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "community-choir-invitation",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "market-stall-allocation",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "upholstery-quote-tool",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "market-crate-pool",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "greenway-maintenance-plan",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-fit-sample",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "market-stall-allocation",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "printmaking-exhibition",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "the-last-stop-on-linden",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "a-drawer-for-the-good-cups",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "gallery-caption-approval",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "pantry-pickup-hours",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "rec-league-photo-day",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "a-drawer-for-the-good-cups",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "shared-kiln-schedule",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "greenway-maintenance-plan",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "mismatched-display-shelves",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "library-evening-pilot",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "seed-swap-packet-labels",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "matinee-program-mix",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "seed-swap-packet-labels",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "bakery-pickup-change",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "printmaking-exhibition",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "shared-laundry-repair",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "community-theater-campaign",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "apartment-tool-library",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "matinee-program-mix",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-half-plot",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "the-empty-chair-at-rehearsal",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "a-drawer-for-the-good-cups",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "print-shop-job-mix",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "community-choir-invitation",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "community-theater-campaign",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "recreation-court-allocation",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "library-return-slot-relocation",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "rec-league-photo-day",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "library-seed-table",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "repair-cafe-booking-change",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-last-stop-on-linden",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "printshop-bindery-retrofit",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "matinee-program-mix",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "matinee-program-mix",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "shuttle-saturday-stop-trial",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "seed-swap-packet-labels",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "makers-market-call-for-vendors",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "ceramics-firing-calendar",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "bookshop-ordering-policy",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "market-stall-allocation",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "museum-family-workshops",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "greenway-maintenance-plan",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "pantry-pickup-hours",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "recreation-court-allocation",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "print-shop-job-mix",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "community-theater-campaign",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "makers-market-call-for-vendors",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "museum-family-workshops",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "bookshop-ordering-policy",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "farm-stand-pickup-switch",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "bookshop-neighborhood-reading-wall",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-matinee-curtain",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-sunday-key",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "seed-swap-packet-labels",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "museum-school-visit-redesign",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "pantry-shift-review",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "library-seed-table",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "rec-league-photo-day",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "upholstery-quote-tool",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "upholstery-quote-tool",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-half-plot",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-extra-lane",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "seed-swap-packet-labels",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "bakery-pickup-change",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "apartment-courtyard-furniture-exchange",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "mismatched-display-shelves",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "print-shop-job-mix",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "ceramics-firing-calendar",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "community-rink-hours-trial",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "museum-family-workshops",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-matinee-curtain",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "museum-school-visit-redesign",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "shared-kiln-schedule",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "shared-laundry-repair",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "printshop-bindery-retrofit",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "pantry-pickup-hours",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "pantry-shift-review",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "cinema-captioned-matinee",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "market-stall-allocation",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "cinema-captioned-matinee",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "print-shop-job-mix",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "ceramics-firing-calendar",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "museum-family-workshops",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "museum-family-workshops",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "repair-cafe-booking-change",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "rec-league-photo-day",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "orchard-crate-pickup",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-fit-sample",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "the-matinee-curtain",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "mismatched-display-shelves",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "upholstery-quote-tool",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "the-extra-lane",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "pantry-shift-review",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "repair-cafe-booking-change",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "orchard-crate-pickup",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "community-choir-invitation",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "recreation-league-court-time",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "matinee-program-mix",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "cinema-captioned-matinee",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "apartment-tool-library",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "makers-market-call-for-vendors",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "upholstery-quote-tool",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "community-rink-hours-trial",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "museum-family-workshops",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "bookshop-ordering-policy",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "market-crate-pool",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "apartment-tool-library",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "street-tree-inventory",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-sol",
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "apartment-tool-library",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    },
+    {
+      "brief": "the-half-plot",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ]
+    },
+    {
+      "brief": "library-return-slot-relocation",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ]
+    }
+  ],
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e"
+}

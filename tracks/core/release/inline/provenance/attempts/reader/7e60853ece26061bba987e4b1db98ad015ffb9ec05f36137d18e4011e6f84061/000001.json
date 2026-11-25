@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "ceramics-firing-calendar",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:40:01.551074+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "a99cdb1e34042de49c8cf2b398b031a3266b4604dd27a0a0eea3fc07ef6849fd",
+  "input_files": {},
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:40:13.279313+00:00",
+  "thread_hashes": [
+    "a99bfbeeedfe9be6ba77623cc932ae48513cea8e7fe621bcdd0ef989b94c3ce2"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "d06f683c8ab1d93d11adc2e897a84c0bf870453c92ea14f0867a3075208b6126",
+  "stderr_sha256": "486aa3a895d3243052e8874290391e61a7bcdfbafbfbc9ff62e792b8c165b24e",
+  "observed_reply": true,
+  "reply_sha256": "f7a12ed5eb5f1e4d81fc516ab700cbaa2a3027a6585a6a6c9577f28a3584d4f7",
+  "reply": "B\n\nMy tentative guess is based on B’s pooled metrics and its concrete test for when an eleventh firing would help the queue and fit the budget."
+}

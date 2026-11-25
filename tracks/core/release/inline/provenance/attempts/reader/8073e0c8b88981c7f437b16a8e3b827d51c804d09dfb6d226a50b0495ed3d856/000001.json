@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "recreation-league-court-time",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:39:07.563907+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "0c1f4b2148660f53594b698bb1f20efe7803bd37cb22bafa5e5ce9d69b382d3b",
+  "input_files": {},
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:39:14.278327+00:00",
+  "thread_hashes": [
+    "0825afad5c4a3ede1f9ec500154e775d5cbb7b2df281572765afa227ec4c0755"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "e045fccd54e47e852712c93ce0416a338ad57a6a461419ee2cc1798dc1516f7c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observed_reply": true,
+  "reply_sha256": "c17c8ea67875ee60f851ff164742fdc091ec30d59a0fa61b28cbe681e9c05532",
+  "reply": "YES\nThe recommendation-first structure and the way the brief turns a three-check-in gap into concrete scenarios are consistent with how I write, though neither is distinctive enough to identify the exact model."
+}

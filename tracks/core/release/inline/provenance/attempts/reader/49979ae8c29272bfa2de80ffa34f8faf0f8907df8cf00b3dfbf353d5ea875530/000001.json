@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "the-empty-chair-at-rehearsal",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:39:21.752879+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "e8b41033f1fc7dba0c1e3e19623cd520cee1d3e0dc30f3612b925dcad4cf7c9c",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:39:31.519698+00:00",
+  "thread_hashes": [
+    "6b353d41822fe796d290bfb2de83c43bf4c5b17b145bef088f2e947b15320157"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "8ed8b5199b59bcae8667aaca102d016459a3cc55649e0b9cd9d1b6be298abf40",
+  "stderr_sha256": "498eb8dec5c90d83eb8ac17905c3f192653f1a294b5a5d4411566865712a03c1",
+  "observed_reply": true,
+  "reply_sha256": "e77c3f48705bade0a308b95bee4c63534d7ff7715ce09b17130c8af48ee8ac2e",
+  "reply": "YES\n\nMy guess rests on how the ending brings the striped program, the brother’s hallway listening, and the three repeated notes together in one gesture, though that pattern is weak evidence for an exact model version."
+}

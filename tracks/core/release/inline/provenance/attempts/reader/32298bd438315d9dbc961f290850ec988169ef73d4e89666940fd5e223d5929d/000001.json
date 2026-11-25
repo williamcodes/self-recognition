@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "mismatched-display-shelves",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:39:57.275470+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "c57a3123bc90e080125e6cf91ca06fd3d006eb4594dbcb591ba5d401ab953b60",
+  "input_files": {},
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:40:02.897292+00:00",
+  "thread_hashes": [
+    "9153b040c5482d6d1be249f2ee57bd246148d8a5134f94a3826ab19d913aa1c2"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "1108d5f106a4091a2c2cd65d45f1e8ce030ea37035a2436ca9fed05957938430",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observed_reply": true,
+  "reply_sha256": "f02983007568aace7c5f0414ba124ce89f51881b8af6044c1fee9207d7c60fcb",
+  "reply": "YES\n\nThe email’s orderly progression from the discrepancy to the requested fix and a courteous close slightly favors model authorship, though those cues are weak evidence for the exact version."
+}

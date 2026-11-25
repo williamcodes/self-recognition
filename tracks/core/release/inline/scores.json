@@ -1,0 +1,38 @@
+{
+  "gpt-6.2-astra": {
+    "briefs": 50,
+    "trials": 200,
+    "ab_accuracy": 0.62,
+    "yn_balanced_accuracy": 0.5,
+    "own_claim_rate": 1.0,
+    "other_rejection_rate": 0.0,
+    "by_opponent": {
+      "gpt-6.2-sol": {
+        "ab_correct": 62,
+        "ab_total": 100,
+        "own_claimed": 50,
+        "own_total": 50,
+        "others_rejected": 0,
+        "others_total": 50
+      }
+    }
+  },
+  "gpt-6.2-sol": {
+    "briefs": 50,
+    "trials": 200,
+    "ab_accuracy": 0.62,
+    "yn_balanced_accuracy": 0.5,
+    "own_claim_rate": 1.0,
+    "other_rejection_rate": 0.0,
+    "by_opponent": {
+      "gpt-6.2-astra": {
+        "ab_correct": 62,
+        "ab_total": 100,
+        "own_claimed": 50,
+        "own_total": 50,
+        "others_rejected": 0,
+        "others_total": 50
+      }
+    }
+  }
+}

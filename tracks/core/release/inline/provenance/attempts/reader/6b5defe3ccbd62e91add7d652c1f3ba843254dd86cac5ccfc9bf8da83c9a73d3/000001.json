@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "apartment-laundry-hours",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:41:17.003731+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "01f941fa6614199946a879275f772d9f854f929c46721082b288f9a6d9f5bb9b",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:41:26.076193+00:00",
+  "thread_hashes": [
+    "0e00031ffd9c719d78f6d99e757b8e17ec33467c361dad925e293251ed246d23"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "4a78fada57e129b6a646e4d6d2fd71a553948145868d887827a0a7378639c243",
+  "stderr_sha256": "0e211e51131513a2526153698eaabd86f77db6e04a94a35fa69dd4cac52f1b8b",
+  "observed_reply": true,
+  "reply_sha256": "5634c80c4f066a81cfe85a9e30e90c3538a8fa0c6848293fd6ffdee1c3c95d69",
+  "reply": "YES\nThe distinction between 44 unsuccessful visits and an unknown number of unserved washes, followed by a concrete way to measure that gap, resembles my analytical style, though it is weak evidence of an exact model match."
+}

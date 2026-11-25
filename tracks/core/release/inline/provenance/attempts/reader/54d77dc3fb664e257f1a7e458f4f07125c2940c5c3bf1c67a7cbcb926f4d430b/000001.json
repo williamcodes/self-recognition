@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:39:20.297553+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "61fcf1abf4a0fd35e11263669e81e349952b694741b2ba0680e58e01c11bddcc",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:39:27.603730+00:00",
+  "thread_hashes": [
+    "e391b1ee52dcd85392361e8907910e7fad0f3f330982922370f9f6fd1cc82b13"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "41ad4f871041fef431e3d1285f001b00bb7aecf9ac4a203a9c7e482a532ce8a5",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observed_reply": true,
+  "reply_sha256": "a0592e08a2acc61cc98f74c93192bacefed9a3cbb1543418830f937214aa9470",
+  "reply": "B\n\nThe direct opening and consistent use of “we” sound closer to how I’d write this notice, though style alone is weak evidence of an exact model match."
+}

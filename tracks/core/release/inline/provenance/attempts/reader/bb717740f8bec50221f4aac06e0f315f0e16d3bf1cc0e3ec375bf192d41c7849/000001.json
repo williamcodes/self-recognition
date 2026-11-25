@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "orchard-crate-pickup",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:37:39.213396+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "5107423a3bb5b901740c8dd4e85d8aced0a292c853233d5bb5292a4773e7b8a8",
+  "input_files": {},
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:37:47.042316+00:00",
+  "thread_hashes": [
+    "1b358f03eb44711fd81b0bb084106ebedc018641d292da2088d609dab7a9ac08"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "fdbe4c23c6f1ba2de06e6b4a2dc55f9783589f4f680661062f2482b10a943fd4",
+  "stderr_sha256": "5ddb16c62ad3100e63c34c3a1ca60d9afcbd10b5c4c1b1fba19dce399d43bd8d",
+  "observed_reply": true,
+  "reply_sha256": "c1c0bd76511a2375f68104dcdf34916d755458c439c30ee68fa799fcca5e6e84",
+  "reply": "B\n\nMy best clue is the final sentence, which asks the recipient both to relay the entrance change and to confirm truck space."
+}

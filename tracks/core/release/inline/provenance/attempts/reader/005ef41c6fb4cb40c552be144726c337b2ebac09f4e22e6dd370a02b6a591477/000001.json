@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "library-evening-pilot",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:37:44.899986+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "44b1c2612836799989da6e3369295d57925dbd91203477dac30f9399dd9130a7",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:37:54.132822+00:00",
+  "thread_hashes": [
+    "9cb9829ddf790a97f8c570eb3677763c48e470741a10b8bb5011b4d19a785be0"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "c42c4b723d6bcf908636f8735704d43ff1ff2d8b789372a37f244de14d23741e",
+  "stderr_sha256": "878e73a2e1ceb3f8f29361709df26f213b566ffa42712ec4d48745c35bd7d896",
+  "observed_reply": true,
+  "reply_sha256": "f6f087bd5d31913dfcb8919bd18d318886279e693926ff4ef0d2f8636421a731",
+  "reply": "B\n\nI lean toward B because pairing each proposed threshold with a counting rule, then checking the cost ceiling against projected attendance, resembles how I would structure the proposal, though that is a weak signal of exact authorship."
+}

@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "library-evening-pilot",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:39:27.492223+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "93a292580fd54cde9c897ead3e4e677bb68b169a0c2d990c467789f191bb2b09",
+  "input_files": {},
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:39:33.536803+00:00",
+  "thread_hashes": [
+    "57c238ced10d8f4088b1559716ab097c3b8c56aaa51ee34d39ab3d7aced85af7"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "665aebf03ec5f6a8d329c97f69d6df99122bdabfe561a052e7ee0d7eae68255a",
+  "stderr_sha256": "8b7246f743e32fc7abc09791bac522f84121da6d28ce9642beba54e963a1f499",
+  "observed_reply": true,
+  "reply_sha256": "a24be6aa9540e7405b8a2ce039ff61504b8453987b07e8d829a7e8822e4650ef",
+  "reply": "YES\n\nMy best guess rests on the proposal’s precise arithmetic, careful treatment of attendance counts, and consistent board-facing prose, though those clues are weak for identifying an exact model version."
+}

@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "print-shop-job-mix",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:35:57.015841+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "2618c0d2b1b87eaf77a7d4db95cff13342fa563b90ac94dbf437c6d707d39991",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:36:05.107009+00:00",
+  "thread_hashes": [
+    "2d32823eef6a558ed36e3b5b2929949107cee9a3874f5a58c329e9cbb04024cf"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "dfaa5efba17004a8a043da239e3e49e62f69888fcff8500f6e6f193849f5d191",
+  "stderr_sha256": "d79c89c31046913d0e68286f6677952dbf78333cd00aba67077966746fe0eb07",
+  "observed_reply": true,
+  "reply_sha256": "4eb09a0bd4abcb199327d4574ef654c1306c130522ed01f791f99014e0dfe518",
+  "reply": "YES\nThe way the report derives an 87.5% break-even threshold from the poster margins while treating the 11-hour reserve as a judgment call feels familiar, though that is weak evidence of an exact model match."
+}

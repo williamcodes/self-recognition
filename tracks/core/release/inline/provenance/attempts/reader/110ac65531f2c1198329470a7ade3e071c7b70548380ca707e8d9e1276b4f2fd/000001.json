@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "the-empty-chair-at-rehearsal",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:40:58.202330+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "f29962386f229f71c1557faa862f697719b607c61450b61e5862bfd4e0bd06d5",
+  "input_files": {},
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:41:07.139944+00:00",
+  "thread_hashes": [
+    "ffe83a0ce80a75f045e2e2b91c2fd6c8d3cca170176631ab9fb0d0e21abd3bd1"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "108951a1ec40eac1d80c675b19456970d822f880fa9bb2aaee68e44c41182f13",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observed_reply": true,
+  "reply_sha256": "1e58471736eee280473971c47d47ca3268ff307dbdf2b1b2cc5c179cb82b0e20",
+  "reply": "YES\n\nMy guess rests on the tightly mirrored rehearsal and concert scenes, where small details like Mara’s rising sleeve carry the emotional turn, though that pattern is weak evidence for an exact model version."
+}

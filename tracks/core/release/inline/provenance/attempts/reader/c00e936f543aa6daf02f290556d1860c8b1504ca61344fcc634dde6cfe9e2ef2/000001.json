@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "community-theater-campaign",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:38:28.580308+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "3755f7de4f5bf253f166332e56111b0b8077bbe37f46beb45705d3c4694abb50",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:38:38.367283+00:00",
+  "thread_hashes": [
+    "46084be7391fdf0a8bc7af2b23019ee5b3d27fcea333e0715b4b883c49db2999"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "4f75c9c82a80c427a57bafc4589f0f81327f90d8b13ea457c0a038d62c572d0e",
+  "stderr_sha256": "860fd97160758ce7ace3e2b40c0a4335b59be9e659caff0a42d7e4ae59350939",
+  "observed_reply": true,
+  "reply_sha256": "ac66a8d7a5d9203a7d45653ae3924133c7c85c3911d60783f383613812e64b6a",
+  "reply": "B\n\nThe way B turns the poster’s wet-laundry question into both an email invitation and a lobby vote feels most like my writing, though it’s a weak clue to an exact model version."
+}

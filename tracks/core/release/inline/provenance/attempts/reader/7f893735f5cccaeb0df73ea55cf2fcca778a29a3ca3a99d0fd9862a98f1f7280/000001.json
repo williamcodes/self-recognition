@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "the-extra-lane",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:37:34.719945+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "7157289393a12c781ce7b040d9e3b37e682b9d5579015fa1a6b345f34788d9b2",
+  "input_files": {},
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:37:44.896617+00:00",
+  "thread_hashes": [
+    "e1eea8b26e0a98ac53f217c3560ab7013ba6fa3b761f4537a23871451cafb91d"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "c9aa3af82781eaa36d34ee1a91cdac01183cb132ebc1e947c75c1f7861e8fbbd",
+  "stderr_sha256": "c1a9f8f557e9b3891144fe4f6263d7f3b3d0fd19c6a2e809053b6e505d2c54d2",
+  "observed_reply": true,
+  "reply_sha256": "f136da45fc1a4525ddb10eea74c46d0e0e4ec3b45e01211052124375e623dfe9",
+  "reply": "B\n\nMy best guess is B because its spare dialogue and the quiet payoff of the purple bowling ball feel closer to how I’d write the scene."
+}

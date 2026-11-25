@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "the-fit-sample",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:40:49.679745+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "9fb5f9e094d2249e34e9b82a2aabf84f845fa7d01149c0da19864bd7b88f9e22",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:40:59.721290+00:00",
+  "thread_hashes": [
+    "442bebcb2b44fd9127606e5a38d94da6863817c1c9d7a46c75646c1337527181"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "c79e6e171ad25814133fe73db1e6c857b211a6f734fce769cc3a5e7dc6d87809",
+  "stderr_sha256": "56d82fe6fd022137ce9192b31a82b6d96bd969f364dbcabd66f79e7446cb43ba",
+  "observed_reply": true,
+  "reply_sha256": "eed334ab64787abf26cd92c6f9b1ab7ea78d0ffc967e20408ec54997bfb65c8a",
+  "reply": "YES\n\nThe way the two measurements recur in the dialogue, the fitting, and the final image of the rolled patterns feels consistent with my writing style, though it’s weak evidence of an exact model match."
+}

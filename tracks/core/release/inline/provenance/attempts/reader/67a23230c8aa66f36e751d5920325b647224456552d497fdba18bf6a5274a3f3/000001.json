@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "greenway-maintenance-plan",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:40:15.475291+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "4e6687915bdd6c7b950226452bda4912eaa5c646846ac8ed974d5ebbdfbf2a0f",
+  "input_files": {},
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:40:22.073349+00:00",
+  "thread_hashes": [
+    "fef1b6e2b356f0fed14d98c26eae1b01972cf1c96a4e550f4d0d5263d8e18751"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "8592efa253def449bcbfceb23337f169c5e5a1aaf13b4f7f5429b811fcf74b03",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observed_reply": true,
+  "reply_sha256": "0b1e6d66fd3b2043e20d8f3630c775987af0128d5e21276ea31dffe4ee9b9c80",
+  "reply": "YES\n\nThe upfront allocation, transparent arithmetic, and careful distinction between overflow reports and distinct incidents resemble my writing style, though they offer weak evidence of an exact model match."
+}

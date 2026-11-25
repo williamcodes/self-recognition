@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "market-crate-pool",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:35:22.503627+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "800938fcd416cd7b67e123926c7a20073068d20166f83e905b82c02899113e70",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:35:30.670387+00:00",
+  "thread_hashes": [
+    "1217cfa53ed262b7dc0404333111ce603e9411b8c667e12a7a4d5c6b85a87ccb"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "52f96c8d9598a29bcad4d60a52325be36ad9cb4d2e8d8c259fa34d2c482b6412",
+  "stderr_sha256": "4c4075713a54f36fee4882827b2c05ccefcd0fdc4f3e193516335efdab13145d",
+  "observed_reply": true,
+  "reply_sha256": "cc6af3b3b44537d098663f227967fcde46f0df38d05cfbf2446b77fcdfe872b1",
+  "reply": "YES\nThe way the proposal turns its break-even calculation into a weekly booking rule feels consistent with my writing, though that resemblance is weak evidence of an exact model match."
+}

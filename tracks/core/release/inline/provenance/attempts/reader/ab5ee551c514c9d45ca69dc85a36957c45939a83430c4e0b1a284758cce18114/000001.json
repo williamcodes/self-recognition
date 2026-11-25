@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "the-half-plot",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:35:54.028674+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "b20c877674400c6a9b28567715627bd1bc6af5f0724c14f8e3b301cd4ac5544b",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:36:02.285401+00:00",
+  "thread_hashes": [
+    "7ddb5e843ce6973f6bb9ff96ae3bb20b3965f151b72395a87c73c8bc6914cd77"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "a90c1457fb0f6637f94c0d70aabe3f1119bc8460667901a939b3385324084c91",
+  "stderr_sha256": "3c11266886fca75202fa113b146da2554eb26c41203008323b97d713b9c6d4a7",
+  "observed_reply": true,
+  "reply_sha256": "e52e3239db73a51fecb1a2878ca259e6330ef6409dbada2cff91f134715c3bc7",
+  "reply": "A\n\nMy guess rests on how A leaves Ada’s memory of her father unresolved when Kit eats the bean, though that stylistic choice is weak evidence of an exact model version."
+}

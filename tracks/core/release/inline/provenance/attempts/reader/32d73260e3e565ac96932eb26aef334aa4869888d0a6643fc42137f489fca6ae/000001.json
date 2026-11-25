@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "community-theater-campaign",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:36:18.346177+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "a64cdf52276b5b57c4ca035f0bd52d5df91f9c30da20090024f51814a52f476c",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:36:25.865030+00:00",
+  "thread_hashes": [
+    "4c3618213b53ae641ee93ebeba83b23308f5b262652088b0247f54e1a791a54a"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "88a228042bedaa71a56ecee8aece3a785754ab47c4737d81e69f2b210f64e96d",
+  "stderr_sha256": "90c2462cd84888640e7861977e8ad1b24a1b520f347cb547b5513ae8a6821d9b",
+  "observed_reply": true,
+  "reply_sha256": "174f30cfe2e319e3c2e4a9b034cda0e6646914ec3db078c8fb6a387133958e73",
+  "reply": "YES\nThe way each week’s tasks add up to exactly three hours nudges me toward yes, though that planning style is weak evidence of an exact model match."
+}

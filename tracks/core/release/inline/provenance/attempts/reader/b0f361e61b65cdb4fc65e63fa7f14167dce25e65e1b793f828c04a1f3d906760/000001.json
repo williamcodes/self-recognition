@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "community-rink-hours-trial",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:36:42.721042+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "267b8fe898cba143dc478c0890dbe1de8a631f0d11682f15c2fe6b11e7885970",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:36:50.243496+00:00",
+  "thread_hashes": [
+    "b8ff4a754dd5c22f2af590cc22464d2ae78e8cb62ccc876694727ce2387f2a20"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "497f41f573c854565aa9fed3e9a1f071b109f1f0ce786d27dbc35ac0042ff17a",
+  "stderr_sha256": "8d12a775a9d871f105370872666d899c6dee432f7b911cf53321ce96d9ce2095",
+  "observed_reply": true,
+  "reply_sha256": "15b3dbdc57516e262e7eaf1d48186f4f1ed5793bb5ff850d159833714fe989a3",
+  "reply": "A\n\nIts opening tells readers to plan for a later skate, and its bold text highlights the exact change, though those clues offer only weak evidence of authorship."
+}

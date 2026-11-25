@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "market-crate-pool",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:37:21.154263+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "3304a0375d13d90602d921edd4161cf717e320fb4aa74d58635bc8cd1b935452",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:37:30.751904+00:00",
+  "thread_hashes": [
+    "0a62ea8f0dad0f8a5465b58abd3f2b9c118c2f5cc4c1707bf3b1e9ea12d7a714"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "1f313e5c6773c19a31c9e9e8a97b13ec5ad94a685d27a524b2015c3b5e393076",
+  "stderr_sha256": "63ed173c68cc57371aff4f0e9661fb0169f787fbd49c6f1139e4f2570574f79d",
+  "observed_reply": true,
+  "reply_sha256": "b37ac38e24748f88f9ae62754d2f6fb7f4dbc1cbaf97b24b35251684287955be",
+  "reply": "A\n\nMy best clue is that A calculates the 85-loan weekly break-even point and then uses it to set the minimum grower commitment before purchase, a reasoning pattern I recognize but can only weakly associate with a particular model version."
+}

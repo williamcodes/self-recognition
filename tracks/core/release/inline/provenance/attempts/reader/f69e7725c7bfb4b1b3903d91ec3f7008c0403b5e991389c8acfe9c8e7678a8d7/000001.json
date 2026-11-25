@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "repair-cafe-booking-change",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:41:36.162735+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "bca0aa40b36e0e7da2d8c8e7c96b0b3f497ef2e668d9ef5d45c11eb5983efa8b",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:41:45.324625+00:00",
+  "thread_hashes": [
+    "483d8ce295a4a2fb53bdd78615ac272a82b5bc3742cfcc20777dd8a0ec15c1cd"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "c2a56d7f9d0138ba2bad0d4f3fa0d0c20fecf141c06f4e17987fc49f9a71b422",
+  "stderr_sha256": "a451315996e2fbca790aafb450ecacc4e19910ea11801c0e66af2990fe0984e1",
+  "observed_reply": true,
+  "reply_sha256": "99e2744f02ecd15c79d3b73402249e029010d4c8d57a5e395c8d544fefc71ace",
+  "reply": "B\n\nThe sentence introducing the two options makes clear that both are free 20-minute slots, and the parallel bullet labels feel more like my writing, though the resemblance is weak evidence."
+}

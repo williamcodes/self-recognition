@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "ceramics-firing-calendar",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:40:59.731373+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "0aebb8c3aa1d130215d85f9d7495f176bbc442d9cd0043ecdc03f2581ca1fa56",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:41:09.979720+00:00",
+  "thread_hashes": [
+    "7aa05ed14e08808bb0a6fbc0539ba73c70b560bf13f04b3b62fd030e179c7967"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "9241ca2db91be902b1ac558c5cc88a3a37cb6000ddd8e2960a69fcfab8ce60c8",
+  "stderr_sha256": "58c973b3512aa68cf33aa7ad11b92dec7d2b4b0f391bcdc6716d33edaf382b08",
+  "observed_reply": true,
+  "reply_sha256": "e54f637d39bb002351ebe34c5559ae4a736134ba48e001ccaf9a48dfd96ccf14",
+  "reply": "B\n\nB’s explicit assumptions and its use of a cost range carried through to the per-piece estimates feel closer to my writing style, though those are weak clues to an exact model version."
+}

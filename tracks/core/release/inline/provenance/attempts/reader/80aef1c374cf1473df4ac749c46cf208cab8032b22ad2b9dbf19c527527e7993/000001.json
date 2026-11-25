@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "library-seed-table",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:38:53.768318+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "bfacdaed3aa19b460022b1c4313cb81c09630f6ed64c0b439ec9af678c50d884",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:39:01.611212+00:00",
+  "thread_hashes": [
+    "d77f8cdd5841f1b4f826053eaf5ac3163671df623c59856b6ec00acba31fbc55"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "0830ecf66b391d340e6312a131dc6adee44a8a82ab1b8869b1f2d4d26edeb052",
+  "stderr_sha256": "aaa28ce6edf2c5ffd54b1285bc15f66d048f7eb28ba010fcbca59e98023bffc6",
+  "observed_reply": true,
+  "reply_sha256": "91585822c9d2bb414f2f0b5e113ebc1bf24934e926cdcd59b91abecb17b47f11",
+  "reply": "B\n\nThe subject line names the seed swap directly, and the conversational sign-off sounds slightly closer to my usual style, though both clues are weak."
+}

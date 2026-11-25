@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "seed-swap-packet-labels",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:40:31.001973+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "05e186c897a99344fa7c4274398e7cb73039437ed495e040fe1b9e15b5b68fe9",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:40:43.054603+00:00",
+  "thread_hashes": [
+    "454145aa4e1d84a029abcace67ff0d7ae2291b3bc4b24f7dd7fc4c0fccb05e82"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "c162d67f9b360d702d7287b90f0c0c1383ff28915ee5b08167f0edd8c6336182",
+  "stderr_sha256": "64792ead3f6f8ef1bf02b2838ed4b4c56e4c968bdc16a8760090c4a65d83abe9",
+  "observed_reply": true,
+  "reply_sha256": "a39fcb9d4aa23ba187aa2820019cfa8ff216664948d8a0dc85c85234c6ac0797",
+  "reply": "YES\nThe welcoming question and concise packet-labeling instructions sound like something I might write, though those cues offer little evidence about the exact model version."
+}

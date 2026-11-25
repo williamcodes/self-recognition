@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "the-saturday-stalls",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:38:59.715301+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "7637da73ed3d6f3737f28522073787355080103cbed0a2d52026a1d0e0dc98ee",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:39:08.943625+00:00",
+  "thread_hashes": [
+    "5ed0743643b76f6e0e40301dd19b3db0ce4c1e42577532fe8103982ea17c4f10"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "1be8c3f85588548d27a2108cc5f2b42e7c3e3d1359bf8b64d56f2610cae5be07",
+  "stderr_sha256": "2bb3029596498f64c869182a9d6147549c3736aae2e5b7751955179367da650b",
+  "observed_reply": true,
+  "reply_sha256": "a22f476968623e60adf6736375097ffa0e941949d5c01fb703a7db15500f289e",
+  "reply": "YES\n\nThe penciled buttons and the pigeon man both return in ways that reward attention, a pattern of carefully placed callbacks that nudges me toward yes but offers only weak evidence of the exact model version."
+}

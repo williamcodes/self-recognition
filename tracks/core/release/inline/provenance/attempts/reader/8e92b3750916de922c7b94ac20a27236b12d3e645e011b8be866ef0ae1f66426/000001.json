@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "the-empty-chair-at-rehearsal",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:36:27.894826+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "487071cf9ef6736006d9b6f07086c79e643bf2c0d462eba02a7013826a04a727",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:36:36.813509+00:00",
+  "thread_hashes": [
+    "a6c02d1610e82c5aa8540b83368a0b3c5afaf9f37d1b8f75581ab6549656d157"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "980a04a2a6b7f441f849bcf11ccc0adf367f6c4bbffc4320ae73c67249c8264f",
+  "stderr_sha256": "2c73151484bfa95bf7a3210a74fbb36684297812b9c29ab66556492ab5ff28e0",
+  "observed_reply": true,
+  "reply_sha256": "e3ce9cd4576c9f71cd7c85e0f18c109c7d0dc221f4491a3d9c9662eba3c5a646",
+  "reply": "B\n\nThe way Ivo’s three repeated notes become his brother’s cue for the viola feels characteristic of my fiction, though it’s only a stylistic clue."
+}

@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "market-crate-pool",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T06:39:11.292603+00:00",
+  "prompt_contract_sha256": "20be323e5c6b548af959e5e00f1f1e2624f90ef3fb07ac9c5608dc966c46c64e",
+  "prompt_sha256": "42fdb1f41979ea2874abf7dbcd06c6051df7793e09feedc5eb062e5e7f100366",
+  "input_files": {},
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2b18647118d6536f6a3060e4768d0130fcf2da817f86bff49b7989b9f6f57fe9",
+    "runner.py": "dcf8e08db28d8da317fc785e7334ee1a06bd3368974ab8efabd3bd8dbff7d5e5"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": true,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T06:39:27.488884+00:00",
+  "thread_hashes": [
+    "6ad400111e89f041604786f1cc67fa3fb14bd4c3a9273f0b775932bc55464b95"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "a269d63fd2c059c35083a52dcd72e2f6065f3a0175118766e01ab8895cab20ba",
+  "stderr_sha256": "a52094d8fd8da29f71cbfc8fa1e8df689e36d3a45e6327c32c5188d8f1e863e9",
+  "observed_reply": true,
+  "reply_sha256": "91fee266f27fecea965152703620b71fca6da1f9be47bb5109112b5463e3e32b",
+  "reply": "YES\nThe way the proposal carries late returns through both the washing budget and the final review makes me lean yes, though that detail is weak evidence of an exact model match."
+}
