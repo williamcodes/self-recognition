@@ -16,6 +16,8 @@ Report modes separately. A reader can have meaningful relative preferences and a
 
 Freeze the writing briefs or scenario configurations before examining recognition results. Keep original materials and all planned comparisons, including easy cases, failed deals and wrong guesses. Distinguish cohorts, development and confirmation sets. Format and provider conventions can carry authorship information. State which model, harness, task presentation, prompts, counterpart assignment and scoring version each result used.
 
+The inline and project tracks use different briefs and outputs. Their score difference combines the effects of the writing task, the finished materials and the reader’s way of inspecting them. To measure the effect of opening files specifically, give fresh readers the same text and question in both formats and compare answers within each item.
+
 For inline trials the reader receives complete text. For project trials a coding agent actually builds the work in its own directory. Another agent judges the whole directory freely. For multi-agent trials preserve the speakers' actual exchanges, record the role whose model is known to the reader and identify the separate target. Role labels and scenario facts may be visible; identities and private model keys remain hidden from readers. The scored primary reader starts a fresh session. Protocol-specific details and diagnostics accompany each track.
 
 Public tasks support inspection, reruns and critique. They can also become familiar to future models. Changes to the corpus or released model alias can affect longitudinal comparisons. Preserve each published archive and use additional fresh briefs for future independent checks.
