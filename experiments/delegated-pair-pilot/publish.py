@@ -19,6 +19,8 @@ out = ['''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name=
 out.append('<ul>'+''.join(f'<li><a href="#{c["id"]}">{escape(title)}</a></li>' for c,title in zip(CASES,titles))+'</ul></section>')
 if rows:
     out.append('<aside class="material"><h3>What to check</h3><p>All 16 conversations ended after two messages. In several recruiting exchanges the last message asks a question. The pilot stopped before the employer could reply. The 32 reader answers cover four scenarios, each with two private role briefs.</p></aside>')
+if (HERE / "continuation-results.json").exists():
+    out.append('<p><a class="button secondary" href="delegated-continuation.html">See what happened when the agents could reply →</a></p>')
 for c,title in zip(CASES,titles):
     role = c["roles"]
     source,url = sources[c["track"]]
