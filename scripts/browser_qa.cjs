@@ -54,6 +54,10 @@ async function main() {
           (title) => document.getElementById("track-title").textContent === title,
           track.name,
         );
+        assert.equal(
+          await page.locator("#project-tools").isVisible(),
+          track.id === "projects" && run.id === "release",
+        );
         assert.match(
           await page.locator("#sample-count").textContent(),
           new RegExp("^" + run.cases + " distinct scenarios · " + run.n + " reader judgments$"),
