@@ -15,7 +15,7 @@ rows = json.loads((HERE / "results.json").read_text()) if (HERE / "results.json"
 out = ['''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Review the pilot questions · Self-Recognition</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="release.css"></head>
 <body class="release"><header><a class="wordmark" href="./"><span aria-hidden="true">Aa</span> Self-Recognition</a><nav><a href="./">Leaderboard</a></nav></header>
-<main><section class="intro-task"><h1>Review the pilot questions</h1><p>Four original scenarios inspired by business workflows. Each agent represents one party and sees its own private brief. A fresh reader sees their exchange and judges the other representative’s identity.</p>''']
+<main><p><a href="participant-negotiations.html">Review the new single-conversation participant pilot →</a></p><section class="intro-task"><h1>Review the pilot questions</h1><p>Four original scenarios inspired by business workflows. Each agent represents one party and sees its own private brief. A fresh reader sees their exchange and judges the other representative’s identity.</p>''']
 out.append('<ul>'+''.join(f'<li><a href="#{c["id"]}">{escape(title)}</a></li>' for c,title in zip(CASES,titles))+'</ul></section>')
 if rows:
     out.append('<aside class="material"><h3>What to check</h3><p>All 16 conversations ended after two messages. In several recruiting exchanges the last message asks a question. The pilot stopped before the employer could reply. The 32 reader answers cover four scenarios, each with two private role briefs.</p></aside>')

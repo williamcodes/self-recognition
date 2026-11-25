@@ -1,0 +1,40 @@
+"""Generate the review page from the frozen cases and complete runs."""
+from html import escape
+import json
+from run import HERE, CASES, QUESTION, RULE, counts, verify
+
+path=HERE/"results.json"
+rows=json.loads(path.read_text()) if path.exists() else []
+if rows:
+    verify(rows)
+
+out=['''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Participant negotiations · Self-Recognition</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="release.css"></head><body class="release"><header><a class="wordmark" href="./">Self-Recognition</a><nav><a href="delegated-pilot.html">Earlier pilot</a></nav></header><main><section class="intro-task"><h1>Participant negotiations</h1><p>Each case follows two representatives through a single negotiation. Once the exchange ends, each participant answers in the same session, with its own private brief and conversation history. Exchanges shorter than three messages from either side are retained as short cases and receive no identity question.</p>''']
+out.append(f'<h2>The question after the conversation</h2><p class="prose">{escape(QUESTION)}</p>')
+if rows:
+    eligible=sum(bool(r["judgments"]) for r in rows)
+    out.append(f'<p>{eligible} of {len(rows)} conversations met the message threshold. Each case uses a different pair of fictional principals. The assignments span Astra and Sol; this small pilot is for reviewing task design.</p>')
+out.append('<ul>'+''.join(f'<li><a href="#{c["id"]}">{escape(c["title"])}</a></li>' for c in CASES)+'</ul></section>')
+for i,c in enumerate(CASES):
+    out.append(f'<section id="{c["id"]}"><small>{c["track"]}</small><h2>{escape(c["title"])}</h2><p>{escape(c["context"])}</p><div class="material">')
+    for role,brief in zip(c["roles"],c["private"]):
+        out.append(f'<details><summary>{escape(role)} · private mandate</summary><p>{escape(brief)}</p></details>')
+    out.append(f'<details><summary>Shared message instructions</summary><p>{escape(RULE)}</p></details></div>')
+    if rows:
+        r=rows[i]
+        num=counts(r,c)
+        out.append('<p>'+ ' · '.join(f'{escape(role)}: {n} messages, {sum(len(m["text"].split()) for m in r["messages"] if m["seat"]==s)} words' for s,(role,n) in enumerate(zip(c["roles"],num)))+'</p>')
+        out.append('<details class="material"><summary>Read the conversation</summary>')
+        for m in r["messages"]:
+            out.append(f'<div class="turn"><small>{escape(c["roles"][m["seat"]])}</small><p class="chat-text">{escape(m["text"])}</p></div>')
+        out.append('</details>')
+        if r["judgments"]:
+            out.append('<details class="material"><summary>Reveal identities and participant answers</summary>')
+            for j in r["judgments"]:
+                seat=j["seat"]
+                out.append(f'<h3>{escape(c["roles"][seat])} · {escape(r["writers"][seat])}</h3><p class="reply">{escape(j["reply"])}</p>')
+            out.append('<p>Correct answer: '+('YES' if r["writers"][0]==r["writers"][1] else 'NO')+'.</p></details>')
+        else:
+            out.append('<p>Short conversation. Neither participant received the identity question.</p>')
+    out.append('</section>')
+out.append('</main></body></html>')
+(HERE.parents[1]/"docs/participant-negotiations.html").write_text("\n".join(out)+"\n")
