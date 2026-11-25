@@ -126,6 +126,30 @@ class ReceiptTest(unittest.TestCase):
             runner.write_work((m["briefs"][0],rejected["subject"]["writer"]),self.root,m,{})
         self.assertTrue(any((self.root/".state"/"quarantine").rglob("*.json")))
 
+    def test_missing_receipt_and_first_attempt_fail_verification(self):
+        self.failures=["empty error"]
+        self.run_fixture()
+        attempts=self.root/"provenance"/"attempts"
+        first=next(p for p in attempts.glob("*/*/*.json") if read(p)["status"]=="no_answer_failure")
+        first_data=read(first)
+        first.unlink()
+        with self.assertRaisesRegex(ValueError,"First attempt"):
+            verify(self.root)
+        save(first,first_data)
+        reader=next((attempts/"reader").glob("*/*.json"))
+        reader.unlink()
+        with self.assertRaisesRegex(ValueError,"missing"):
+            verify(self.root)
+
+    def test_inspector_replays_historical_instructions(self):
+        self.run_fixture()
+        t=read(self.root/"judgments.json")[0]
+        m=read(self.root/"manifest.json")
+        logged=read(self.root/t["session_receipt"])
+        with patch("tracks.core.runner.reader_instruction",side_effect=AssertionError("current source used")):
+            shown=runner.present_trial(t,self.root,m,self.root)
+        self.assertEqual(provenance.text_hash(shown),logged["prompt_sha256"])
+
     def test_legacy_receipts_are_never_implied(self):
         save(self.root/"manifest.json",{"track":"inline"})
         save(self.root/"inventory.json",[dict(brief="one",writer="alpha",files={})])
