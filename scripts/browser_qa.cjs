@@ -119,6 +119,10 @@ async function main() {
     const preview = page.locator("iframe[sandbox]").first();
     assert.equal(await preview.getAttribute("sandbox"), "");
     assert(await preview.contentFrame().locator("body").innerText());
+    const sheet = page.locator(".sheet-preview").first();
+    await sheet.locator("xpath=ancestor::details[1]/summary").tap();
+    assert((await sheet.locator("td").count()) > 0);
+    await width(page.viewportSize().width);
     for (const [caseID, type] of [
       ["repair-night", "pdf"],
       ["lost-platform", "audio"],
