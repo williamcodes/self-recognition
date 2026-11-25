@@ -12,7 +12,7 @@ import subprocess
 import tempfile
 import time
 
-from .provenance import AttemptLog, adjudicated_row, contract_prompt, freeze, object_hash, text_hash
+from .provenance import AttemptLog, QuarantinedSession, mark_locked_reader_miss, adjudicated_row, contract_prompt, freeze, object_hash, text_hash
 from .scoring import PROTOCOL, assignments, digest, parse, read, save, scores, validate_manifest, verify
 
 MAC_CODEX = Path("/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex")
@@ -188,7 +188,7 @@ def present_trial(t, root, manifest, folder):
             os.utime(folder,(NORMAL_TIME,NORMAL_TIME))
     return prompt
 
-def judge(t, root, manifest, env):
+def judge(t, root, manifest, env, quarantined_as_misses=False):
     tag = hashlib.sha256(json.dumps(t,sort_keys=True).encode()).hexdigest()
     cache = root/".state"/"judgments"/(tag+".json")
     if cache.is_file():
@@ -200,16 +200,21 @@ def judge(t, root, manifest, env):
         spec = read(root/"frozen-prompts.json")
         audit = AttemptLog(root,"reader",t,object_hash(spec),inputs)
         audit.path, audit.data = audit.last()
-        if audit.data and audit.data["status"]=="quarantined":
-            row=adjudicated_row(root,audit.path,audit.data)
-            save(cache,row)
-            return row
         if audit.data and audit.data["status"] in ("response_recorded","complete"):
             if audit.data["prompt_sha256"] != text_hash(prompt) or audit.data["input_files"] != inputs:
                 raise ValueError("Reader inputs changed during recovery")
             reply, commands = audit.data["reply"], audit.data["commands"]
-        else:
-            reply, commands = session(t["reader"],prompt,folder,env,audit,inline=manifest["track"] == "inline")
+        elif not audit.data or audit.data["status"]!="quarantined":
+            try:
+                reply, commands = session(t["reader"],prompt,folder,env,audit,inline=manifest["track"] == "inline")
+            except QuarantinedSession:
+                if not quarantined_as_misses:
+                    raise
+        if audit.data["status"]=="quarantined":
+            resolve=mark_locked_reader_miss if quarantined_as_misses else adjudicated_row
+            row=resolve(root,audit.path,audit.data)
+            save(cache,row)
+            return row
         if audit.data["status"] != "complete":
             audit.update("complete")
     row = dict(**t, answer=parse(reply,t["mode"]), reply=reply, commands=commands,
@@ -276,6 +281,7 @@ def run(args):
         validate_manifest(manifest)
         if (root/"manifest.json").exists() and read(root/"manifest.json") != manifest:
             raise ValueError("This archive belongs to a different run. Resume with identical arguments or choose a new directory.")
+        quarantined_as_misses = getattr(args,"quarantined_readers_as_misses",False)
         selected = getattr(args,"judge_reader",None)
         if selected:
             if args.writers_only or selected not in manifest.get("readers",models):
@@ -298,7 +304,7 @@ def run(args):
                 if not files or files!=w["files"]:
                     raise ValueError("Writing samples differ from the frozen inventory")
             with subscription() as env:
-                batch(assignments(manifest),lambda t:judge(t,root,manifest,env),args.workers,
+                batch(assignments(manifest),lambda t:judge(t,root,manifest,env,quarantined_as_misses),args.workers,
                       "Judgments",include=lambda t:t["reader"]==selected)
             print(f"Cached judgments for {selected}. Run without --judge-reader to verify and assemble the full archive.")
             return
@@ -328,7 +334,7 @@ def run(args):
             save(root/"inventory.json",inventory)
             if args.writers_only:
                 return
-            trials=batch(assignments(manifest),lambda t:judge(t,root,manifest,env),args.workers,"Judgments")
+            trials=batch(assignments(manifest),lambda t:judge(t,root,manifest,env,quarantined_as_misses),args.workers,"Judgments")
             trials.sort(key=lambda t:(t["brief"],t["reader"],t["opponent"],t["mode"],t["authors"]))
             save(root/"judgments.json", trials)
             save(root/"scores.json", scores(trials))

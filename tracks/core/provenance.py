@@ -170,6 +170,10 @@ def content_blob(root, text):
     return checksum
 
 
+class QuarantinedSession(RuntimeError):
+    """The attempt and its private quarantine evidence have already been saved."""
+
+
 class AttemptLog:
     def __init__(self, root, kind, subject, contract_hash, input_files=None):
         self.root=root
@@ -221,7 +225,7 @@ class AttemptLog:
             private=self.root/".state"/"quarantine"/self.kind/subject_id(self.subject)/self.path.name
             save(private,dict(raw_reply=evidence,commands=events["commands"]))
             self.update("quarantined",**fields)
-            raise RuntimeError(f"Session quarantined for input-boundary review: {self.path}")
+            raise QuarantinedSession(f"Session quarantined for input-boundary review: {self.path}")
         if self.kind=="writer":
             fields.update(public_fields(self.root,self.path,events["commands"],Path.home()))
         fields["reply"]=evidence
@@ -242,14 +246,19 @@ def mark_reader_miss(root, sid):
         if not receipts:
             raise ValueError("Reader receipt not found")
         path=receipts[-1]
-        a=read(path)
-        if (a["kind"]!="reader" or a["status"]!="quarantined" or not a.get("quarantine_reasons")
-                or subject_id(a["subject"])!=sid):
-            raise ValueError("Only quarantined readers may be adjudicated as misses")
-        disposition=root/"provenance"/"adjudications"/(sid+".json")
-        if not disposition.exists():
-            save(disposition,dict(action="invalid_miss",receipt_sha256=digest(path),decided_at=now()))
-        return adjudicated_row(root,path,a)
+        return mark_locked_reader_miss(root,path,read(path))
+
+
+def mark_locked_reader_miss(root,path,a):
+    """Caller holds the archive run lock. Each scheduled reader subject is unique."""
+    sid=subject_id(a["subject"])
+    if (a["kind"]!="reader" or a["status"]!="quarantined" or not a.get("quarantine_reasons")
+            or path.parent.name!=sid):
+        raise ValueError("Only quarantined readers may be adjudicated as misses")
+    disposition=root/"provenance"/"adjudications"/(sid+".json")
+    if not disposition.exists():
+        save(disposition,dict(action="invalid_miss",receipt_sha256=digest(path),decided_at=now()))
+    return adjudicated_row(root,path,a)
 
 
 def adjudicated_row(root,path,attempt):

@@ -56,9 +56,10 @@ class ReceiptTest(unittest.TestCase):
         item("agent_message",text=answer)
         return subprocess.CompletedProcess(cmd,0,"\n".join(map(json.dumps,events)),"")
 
-    def run_fixture(self, track="inline", writers_only=False, judge_reader=None):
+    def run_fixture(self, track="inline", writers_only=False, judge_reader=None, quarantined_readers_as_misses=False):
         args = SimpleNamespace(archive=self.root, track=track,briefs=self.briefs, models=["alpha","beta"],
-                               panel_archive=None, limit=None, workers=1, writers_only=writers_only, judge_reader=judge_reader)
+                               panel_archive=None, limit=None, workers=1, writers_only=writers_only, judge_reader=judge_reader,
+                               quarantined_readers_as_misses=quarantined_readers_as_misses)
         with redirect_stdout(StringIO()):
             runner.run(args)
 
@@ -186,6 +187,35 @@ class ReceiptTest(unittest.TestCase):
         receipt.write_bytes(original+b" ")
         with self.assertRaisesRegex(ValueError,"Disposition"):
             verify(self.root)
+
+    def test_opt_in_retains_existing_and_new_quarantines_without_resampling(self):
+        self.run_fixture(writers_only=True)
+        self.failures=["inline tool"]
+        with self.assertRaisesRegex(RuntimeError,"quarantined"):
+            self.run_fixture(judge_reader="beta")
+        self.failures=["inline tool"]
+        self.run_fixture(judge_reader="beta",quarantined_readers_as_misses=True)
+        self.assertEqual(self.calls,6)
+        self.assertFalse((self.root/"scores.json").exists())
+        self.run_fixture(quarantined_readers_as_misses=True)
+        self.assertEqual(self.calls,10)
+        rows=read(self.root/"judgments.json")
+        misses=[r for r in rows if r.get("disposition")=="invalid_miss"]
+        self.assertEqual(len(misses),2)
+        for miss in misses:
+            sid=(self.root/miss["session_receipt"]).parent.name
+            self.assertEqual(miss,provenance.mark_reader_miss(self.root,sid))
+            self.assertEqual((miss["answer"],miss["reply"],miss["commands"]),(None,"",[]))
+        self.assertEqual(provenance.verify_provenance(self.root)["adjudicated_invalid_misses"],2)
+        verify(self.root)
+
+    def test_opt_in_does_not_convert_other_failures(self):
+        self.run_fixture(writers_only=True)
+        self.failures=["partial timeout"]
+        with self.assertRaisesRegex(RuntimeError,"Unsuccessful"):
+            self.run_fixture(quarantined_readers_as_misses=True)
+        self.assertFalse((self.root/"provenance"/"adjudications").exists())
+        self.assertFalse((self.root/"scores.json").exists())
 
     def test_selected_reader_keeps_schedule_and_cache(self):
         import random
