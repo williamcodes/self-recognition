@@ -1,0 +1,65 @@
+# Capital proposal for the bindery
+
+**Approve the $3,200 retrofit, subject to a vendor-confirmed eight-hour installation and recovery plan.** The retrofit is projected to save $2,426 a year and recover its cost in 15.8 months. The $7,600 replacement offers greater savings and would cost $3,025 less than the retrofit over three years at the projected rates. It takes 21.3 months to recover the additional $4,400 investment, and that period stretches to 28.4 months if both options deliver 75% of their projected savings. With four months of operating history and no documented estimate of the existing binder’s remaining service life, the retrofit is the better initial commitment if the binder is mechanically sound. If inspection finds that major work is likely within the next two to three years, reopen the replacement decision before placing the order.
+
+## Current operating cost
+
+The binder processed 84,000 booklets over four months. Rework affected 2,955 booklets, or 3.52% of production, and binding required 42 hours of overtime.
+
+| Month | Booklets processed | Booklets reworked | Rework rate | Overtime hours | Rework and overtime cost |
+|---|---:|---:|---:|---:|---:|
+| 1 | 18,000 | 540 | 3.00% | 8 | $472 |
+| 2 | 21,000 | 735 | 3.50% | 11 | $646 |
+| 3 | 20,000 | 680 | 3.40% | 9 | $560 |
+| 4 | 25,000 | 1,000 | 4.00% | 14 | $848 |
+| **Total** | **84,000** | **2,955** | **3.52%** | **42** | **$2,526** |
+
+At $0.40 per affected booklet, rework cost $1,182. At $32 per hour, overtime cost $1,344. Continued operation requires no capital outlay and carries an estimated **$631.50 a month**, or **$7,578 a year**, in these two costs if the four-month average holds. The busiest month also had the highest rework rate and overtime bill. That month shows what a difficult production period can cost, although four observations give a limited basis for forecasting how costs will change with volume or job mix.
+
+## Financial comparison
+
+The comparison annualizes the four observed months and applies each option’s projected reductions separately to rework and overtime. It treats the quoted prices as upfront costs and uses simple, undiscounted payback. Three-year costs include the upfront investment and remaining rework and overtime. The model assigns no dollar value to maintenance changes, resale proceeds, additional capacity, or closure-related effects because estimates were unavailable.
+
+| Measure | Continue operating | Retrofit | Replacement |
+|---|---:|---:|---:|
+| Upfront investment | $0 | $3,200 | $7,600 |
+| Projected annual rework savings | $0 | $1,181 | $2,482 |
+| Projected annual overtime savings | $0 | $1,008 | $2,419 |
+| **Projected annual savings** | **$0** | **$2,426** | **$4,901** |
+| Annual rework and overtime remaining | $7,578 | $5,152 | $2,677 |
+| Simple payback against continued operation | — | 15.8 months | 18.6 months |
+| Cumulative cost after two years | $15,156 | $13,503 | $12,953 |
+| **Cumulative cost after three years** | **$22,734** | **$18,655** | **$15,630** |
+
+*Dollar figures are rounded for display. Paybacks and cumulative costs use unrounded savings.*
+
+The retrofit cuts projected monthly costs by $202.20. The replacement cuts them by $408.45, for an additional $206.25 a month over the retrofit. At that rate, the replacement’s extra investment pays off in 21.3 months. Its cost advantage over the retrofit is about $550 at two years and grows to $3,025 at three years. That makes the expected service period material to the purchase. Continued operation preserves cash immediately, but it carries the highest modeled two- and three-year cost at the projected savings.
+
+## Sensitivity to lower savings
+
+The scenarios below reduce the projected dollar savings for both rework and overtime by the same proportion while holding capital costs fixed. At 75% realization, for example, the retrofit’s projected reductions become 30% for rework and 18.75% for overtime.
+
+| Share of projected savings realized | Retrofit annual savings | Retrofit payback | Replacement annual savings | Replacement payback | Payback on extra $4,400 for replacement |
+|---|---:|---:|---:|---:|---:|
+| 100% | $2,426 | 15.8 months | $4,901 | 18.6 months | 21.3 months |
+| 75% | $1,820 | 21.1 months | $3,676 | 24.8 months | 28.4 months |
+| 50% | $1,213 | 31.7 months | $2,451 | 37.2 months | 42.7 months |
+
+At 75% realization, the replacement still costs about $1,169 less than the retrofit over three years. At 50%, the retrofit saves about $440 over continued operation across three years, while the replacement costs about $248 more than continued operation. The two projects could also underperform by different amounts. If the retrofit delivers its full projection and the replacement delivers 75% of its own, the replacement takes about 42.3 months to recover the extra investment.
+
+Before committing funds, have the technician inspect the existing binder and identify any likely major repairs during the next three years. Confirm which labor, parts, and commissioning work the $3,200 price covers. If both machines are expected to serve the shop over that period, the modeled cost advantage for replacement is $3,025 at full savings and $1,169 in the 75% case. Documented repair costs or a meaningful difference in expected service life could change the decision. If cash is especially tight or the shop expects to use the binder for less than the retrofit’s payback period, continued operation remains a reasonable choice.
+
+## Rollout in one eight-hour closure
+
+Schedule the retrofit during the lowest-load eight-hour window and finish deadline-sensitive binding in advance. Before the closure, have the vendor verify fit, stage and inspect all parts and tools, record the binder’s settings, and time the procedure for restoring the current setup. Prepare sample jobs covering the shop’s common stocks and booklet thicknesses. The shop lead should open the closure only after the technician confirms that installation, testing, and recovery fit the schedule.
+
+| Elapsed time | Work and decision points |
+|---|---|
+| **Hour 0–1** | Run a short baseline sample, confirm the recorded settings, and have the technician isolate the binder before work begins. |
+| **Hours 1–4** | Install the retrofit and complete initial adjustments. Retain the removed components at the machine for recovery. At hour four, confirm that the binder is ready for functional testing. Start restoration if installation is behind schedule and the remaining window cannot cover both testing and recovery. |
+| **Hours 4–6** | Check guards and controls, then run representative booklets at normal production speed. Inspect binding integrity, alignment, and finish against the shop’s existing acceptance criteria. Have the regular operator run a sample and sign off with the shop lead. |
+| **Hours 6–8** | If accepted, train the operator on changed settings and routine checks, document the setup, and prepare the first production job. If acceptance fails, use the reserved window to restore the original setup and verify it with a production sample before reopening. |
+
+The hour-six decision assumes the technician can restore and verify the original setup within two hours. If recovery requires longer, move the decision earlier and use that deadline in the vendor’s work plan.
+
+For the first eight weeks after installation, record booklets processed, booklets reworked, and binding overtime by job. At the historical average of 21,000 booklets per month, the retrofit targets a rework rate of about **2.11%** and **7.9 overtime hours per month**, down from 3.52% and 10.5 hours. Review the figures weekly for setup problems and assess the savings at the end of eight weeks, accounting for changes in volume and job mix. At comparable workload, savings below roughly **$152 per month** would put performance below the 75% case. Use the job records to identify the shortfall and have the installer address any issues covered by the installation agreement.

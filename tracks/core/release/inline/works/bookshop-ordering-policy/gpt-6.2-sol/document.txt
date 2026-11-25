@@ -1,0 +1,54 @@
+# Winter advance-order inventory review
+
+Put **$306 into 34 local guides, $154 into 14 puzzles, $160 into 10 cookbooks, and $280 into 28 graphic novels**. The order uses the full $900 and meets the 10-unit minimum in every category. Local guides and graphic novels receive about 65% of the budget because they had the strongest recent sell-through and together accounted for 24 of the 27 requests recorded during stockouts in the latest winter. Puzzles earn a modest order after a stronger second year. Cookbooks stay at the minimum because they have the highest unit cost and left the most stock at the end of both 90-day windows.
+
+## What the two winters show
+
+Sell-through is the number of units sold within 90 days divided by the number received. The units left in the table are receipts minus recorded sales for that winter. Current shelf counts would need to be checked separately.
+
+| Category | First winter sell-through | Second winter sell-through | Units left, first → second | Stockout requests, first → second |
+|---|---:|---:|---:|---:|
+| Local guides | 90.0% (36 of 40) | 97.8% (44 of 45) | 4 → 1 | 7 → 15 |
+| Puzzles | 70.0% (42 of 60) | 85.5% (47 of 55) | 18 → 8 | 0 → 3 |
+| Cookbooks | 62.0% (31 of 50) | 70.8% (34 of 48) | 19 → 14 | 0 → 0 |
+| Graphic novels | 78.2% (43 of 55) | 90.8% (59 of 65) | 12 → 6 | 4 → 9 |
+
+Across all four categories, 90-day sell-through rose from 74.1% to 86.4%, and recorded stockout requests rose from 11 to 27. The same two categories led on both measures in the second winter. Local guides sold eight more copies on five additional receipts and finished with just one unit left. Graphic novels sold 16 more copies on 10 additional receipts, the largest unit-sales gain of any category. Both categories sold through a greater share of a larger buy while attracting more requests during stockouts.
+
+Puzzles also improved. They sold five more units on five fewer receipts, cutting 90-day leftovers from 18 to eight. The three stockout requests give some reason to buy above the minimum, especially for titles that prompted those requests. Cookbooks sold three more units on two fewer receipts, but 14 of 48 remained after 90 days and there were no recorded requests. A cookbook costs $16, so a speculative copy ties up almost as much cash as a local guide and a graphic novel combined.
+
+Treat the request counts as evidence of demand the shop could not immediately serve. Adding requests to sales gives 59 for guides, 50 for puzzles, 34 for cookbooks, and 68 for graphic novels in the second winter. Those sums are useful for seeing where shortages may have mattered, but they are rough measures of customer interest. A customer might ask twice, buy a substitute, or return later and appear in the sales count. Stockout requests and leftover stock can also coexist if popular titles sell out while slower titles remain on the shelf. The order should therefore put extra copies into the specific titles customers asked for, where the shop has that detail.
+
+## How to spend the $900
+
+| Category | Advance order | Unit cost | Cash allocated |
+|---|---:|---:|---:|
+| Local guides | 34 | $9 | $306 |
+| Puzzles | 14 | $11 | $154 |
+| Cookbooks | 10 | $16 | $160 |
+| Graphic novels | 28 | $10 | $280 |
+| **Total** | **86** | | **$900** |
+
+The four minimum orders cost $460. Of the remaining $440, the plan puts $216 into 24 additional guides, $180 into 18 additional graphic novels, and $44 into four additional puzzles. The two winters give guides the strongest case for depth. They had the highest sell-through in each year and drew 15 stockout requests in the latest window. At $9 a copy, they also let the shop put more units on the shelf per dollar than any other category.
+
+Graphic novels get the second-largest allocation. Their latest sales of 59 units give a 28-copy advance order substantial room if demand cools, and the nine stockout requests make a case for ordering more deeply into confirmed favorites. Fourteen puzzles give the shop room to act on the improvement in recent sales while keeping the cash commitment modest. For cookbooks, the 10-copy minimum preserves a buying presence. With 14 units remaining after the last window, the shop should check which titles are still available before placing the order and use the new copies where they fill gaps.
+
+This is an advance-order allocation. Recent sales exceeded the proposed order in every category, so opening inventory and any later replenishment will determine how much of a strong winter the shop can serve. Check current stock by title before committing the order, especially if the remaining copies are concentrated in slower sellers. The budget and demand figures support a judgment about how quickly the shop may recover its inventory cash. A profit comparison would also require selling prices, margins, and any return terms.
+
+## How the risk changes if demand falls
+
+Using the latest winter’s recorded sales as a baseline, the guide order is the most exposed to a downturn. Sales could fall about 23% before category demand dipped below the 34 copies ordered. The corresponding cushion is about 53% for graphic novels and about 70% for both puzzles and cookbooks. Cookbooks have a large cushion in this comparison because the order is small relative to last winter’s sales. Their downside is the $16 tied up in each unsold copy, especially if older stock is already competing for the same buyers.
+
+The table applies the same percentage decline to all four categories, rounds projected sales down to whole units, and assumes the advance order is the only stock available. The dollar figure measures purchase cost still tied up at day 90.
+
+| Decline from latest winter sales | Guides left | Puzzles left | Cookbooks left | Graphic novels left | Cash tied up |
+|---|---:|---:|---:|---:|---:|
+| 25% | 1 | 0 | 0 | 0 | $9 |
+| 40% | 8 | 0 | 0 | 0 | $72 |
+| 60% | 17 | 0 | 0 | 5 | $203 |
+
+These are category-level scenarios. Carryover stock can leave more of the new order unsold, and a poor title mix can create leftovers even when category sales are strong enough to absorb the planned quantity. A drop concentrated in local travel or visitor traffic would put more pressure on guides than the across-the-board scenarios suggest. The stockout requests make a case for ordering deeper into proven guide titles, but they tell the shop little about how those titles will fare if visitor demand changes.
+
+If the shop already sees weaker demand for guides before placing the order, a second $900 mix is **28 guides, 18 puzzles, 10 cookbooks, and 29 graphic novels**. It trades six guides for four puzzles and one graphic novel. Under the 40% decline scenario, that mix would leave two guides costing $18, compared with eight guides costing $72 under the recommended order. The tradeoff is six fewer guides available in the category that had 15 stockout requests last winter.
+
+On the two winters of evidence, I would place the 34-guide order. The guides’ near-complete sell-through and rising requests justify the extra copies, and the graphic novel order gives the shop meaningful depth in its fastest-growing category by unit sales. The final title choices should follow the request records and the stock already on the shelf. That is where the shop can do the most to turn this $900 into sales within the winter window.

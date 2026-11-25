@@ -1,0 +1,49 @@
+# Proposal for next season’s evening court allocation
+
+I recommend allocating **40 court-hours to badminton, 46 to pickleball, and 34 to open play** for the next eight-week season. This gives badminton the same number of hours it used last season, gives pickleball the largest share, and gives open play two additional hours to test whether its strong attendance carries into more evening slots. Staff should review the schedule after four weeks and have authority to reassign a small number of future hours when court use and unmet demand support a change.
+
+## What the past three seasons show
+
+The center has 120 evening court-hours available. Last season, the three activities requested 160 hours and used 120. A schedule based on requests alone would require 40 more hours than the center has. Actual use is a better starting point, while attendance and information about people who could not get a place help the board decide where an additional hour is most valuable.
+
+The table uses hours used divided by hours requested as the utilization measure. Attendance totals count reported attendances. A person who came several times may appear several times in those totals.
+
+| Activity | Hours requested by season | Hours used by season | Three-season utilization | Attendance by season | Three-season attendances per hour used |
+|---|---:|---:|---:|---:|---:|
+| Badminton | 40, 48, 56 | 32, 36, 40 | 108 of 144 (75.0%) | 190, 216, 240 | 6.0 |
+| Pickleball | 48, 56, 64 | 40, 44, 48 | 132 of 168 (78.6%) | 200, 220, 240 | 5.0 |
+| Open play | 32, 36, 40 | 24, 28, 32 | 84 of 108 (77.8%) | 168, 196, 224 | 7.0 |
+
+**Badminton** added four hours of actual use each season. Its attendance rose from 190 to 240, and it drew about six attendances per hour throughout the period. Its utilization against requests fell from 80% to about 71% because requests grew twice as fast as use. Forty hours gives badminton a weekly schedule consistent with its latest use and supports an activity that matched pickleball’s attendance last season with eight fewer court-hours.
+
+**Pickleball** had the highest total use and attendance across the three seasons, with 132 hours used and 660 attendances. It drew five attendances per used hour in each season, with attendance rising as use increased. Its utilization against requests fell from about 83% in the first season to 75% in the third, even as actual use rose from 40 to 48 hours. The latest use makes a strong case for keeping pickleball’s share the largest. The proposed 46 hours are two below its latest use, so staff should pay particular attention to full sessions and waitlists on the evenings where those hours are moved.
+
+**Open play** had the fewest hours and the lowest total attendance, but its attendance grew the most, from 168 to 224, an increase of one-third. It averaged seven attendances per used hour in every season. It was also the only activity whose utilization against requests rose, from 75% to 80%. Two additional hours would give staff a practical way to test whether an activity open to residents outside the organized groups can serve more people at times they can attend.
+
+These figures capture different aspects of demand. Hours used show how much court time each activity put into service. Attendance per hour shows how many visits that time supported, with differences in session format and capacity affecting the comparison. The records show requests and use, but they do not show how many hours staff actually offered, how many sessions filled, or how many residents were turned away. The board should use the figures to set an initial schedule and collect that missing information before making a larger shift.
+
+## How to put the allocation on the calendar
+
+Schedule 15 court-hours per week. Give badminton five hours each week. For six weeks, schedule six hours of pickleball and four hours of open play. In the other two weeks, schedule five hours of pickleball and five hours of open play. Place one of those weeks in each half of the season so the first extra open-play hour can inform the midpoint review.
+
+Publish the full schedule before registration opens. Keep core sessions at consistent times so residents can plan around them. Give each activity a share of the most sought-after evening slots, using prior booking records if available. Put the two extra open-play hours at times residents are likely to be able to use, and avoid taking both hours from the same recurring pickleball session. A trial held only during the least convenient hours would give the board little basis for judging demand.
+
+Post the court schedule and booking instructions in the center and through its usual online channels. Keep open play available through the center’s public booking process, with a front-desk option for residents who need help enrolling. Publish any capacity limits and explain how residents can join a waitlist. Staff should apply the same booking and cancellation rules to each activity.
+
+## How staff should handle cancellations
+
+Ask activity leads and residents with reservations to release time as soon as they know they cannot use it. For a canceled court session, set a standard release deadline of 24 hours before the start. Staff should update the public calendar and notify anyone already booked. If a single participant cancels a place in a session that is still running, staff should offer it to the next person on that session’s waitlist in sign-up order.
+
+For a whole court-hour released at least 24 hours ahead, staff should first check whether the originally scheduled activity has a waitlist or a group able to use the hour. Give that activity up to four hours to confirm during staffed hours, with the response window closing no later than 12 hours before the session. Then offer the time to another activity with documented unmet demand for that evening. If no group can confirm, post it as open play when staffing and court setup allow.
+
+For a same-day release, staff should post the opening promptly and use the waitlists to find participants who can attend on short notice. If the center closes a court, notify affected participants and record the closure separately. When a group repeatedly releases a recurring slot late or leaves it empty, staff should discuss whether a different time would work and make that slot a candidate for the midpoint review. Record who actually used each released hour so the board can see both how the original schedule performed and how much time staff recovered.
+
+## How the board should review access
+
+For each session, staff should record the activity, time, court-hours offered and used, attendance, capacity, cancellations, and any rebooking. Track unfilled waitlist requests and walk-ins turned away when sessions are full. Count each person once per session when tallying unmet demand, even if they asked through more than one channel. A short question at booking or at the front desk about preferred times can also help identify residents who cannot attend the slots currently offered.
+
+After week four, compare use against hours actually offered, along with attendance and unmet demand at similar times. A Tuesday session that repeatedly fills and turns people away makes a stronger case for another Tuesday hour than a season-wide attendance total does. Likewise, a recurring hour that goes unused warrants a look at its start time, how it was advertised, and any closures or staffing problems before staff attribute the result to low demand.
+
+Authorize staff to move up to two of the remaining court-hours if one activity has repeated unused or returned time and another has repeatedly filled comparable sessions with people still waiting. Keep existing participant bookings and give at least one week’s notice for any change to a future slot. If the first four weeks provide mixed evidence, keep the published schedule through week eight and use cancellations to accommodate demand as opportunities arise.
+
+At season’s end, staff should report the original and final allocations, actual use, attendance, recovered cancellation hours, and unmet demand by activity and time slot. The board can then decide whether to retain the two extra open-play hours, restore them to pickleball, or adjust the mix based on who was able to get court time. For this season, the board should approve **40 hours for badminton, 46 for pickleball, and 34 for open play**, along with the cancellation procedure and four-week review.

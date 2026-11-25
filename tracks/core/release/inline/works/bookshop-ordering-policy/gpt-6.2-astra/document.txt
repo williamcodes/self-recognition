@@ -1,0 +1,48 @@
+I would spend the $900 on **33 local guides, 13 puzzles, 10 cookbooks, and 30 graphic novels**. Local guides get the most copies because they nearly sold out the latest shipment within 90 days, drew the most requests while unavailable, and cost the least to buy. Graphic novels get slightly more cash than guides because they cost a dollar more per copy and have the highest recorded unit sales. Puzzles earn a modest order above the minimum after a stronger second winter. Cookbooks stay at ten because they tie up the most cash per copy and have shown the least pressure on supply.
+
+| Category | Copies to order | Unit cost | Advance cash |
+|---|---:|---:|---:|
+| Local guides | 33 | $9 | $297 |
+| Puzzles | 13 | $11 | $143 |
+| Cookbooks | 10 | $16 | $160 |
+| Graphic novels | 30 | $10 | $300 |
+| **Total** | **86** | | **$900** |
+
+### What the two winters show
+
+Sell-through measures the share of received units sold within 90 days. It matters alongside the sales count because the shop changed its order quantities between winters. Selling more from a larger shipment can simply reflect better availability. Selling more from a smaller shipment gives the owner a different reason to reconsider the next order.
+
+| Category | First winter, sold / received | Second winter, sold / received | Requests while sold out, first → second |
+|---|---:|---:|---:|
+| Local guides | 36 / 40 = 90.0% | 44 / 45 = 97.8% | 7 → 15 |
+| Puzzles | 42 / 60 = 70.0% | 47 / 55 = 85.5% | 0 → 3 |
+| Cookbooks | 31 / 50 = 62.0% | 34 / 48 = 70.8% | 0 → 0 |
+| Graphic novels | 43 / 55 = 78.2% | 59 / 65 = 90.8% | 4 → 9 |
+
+**Local guides.** The shop received five more guides in the second winter and sold eight more. Only one of the 45 copies remained unsold at day 90, yet staff recorded 15 requests while guides were unavailable. That combination makes guides the first place I would put discretionary cash. It also makes title selection consequential. A copy of one neighborhood guide can remain on the shelf while customers repeatedly ask for another. If the request log names titles, those names should carry more weight in choosing the 33 copies than a general increase across every guide on the list.
+
+**Puzzles.** Puzzles posted the largest gain in sell-through, up 15.5 percentage points. The shop bought five fewer units and sold five more, reducing the unsold balance from 18 to eight. The three requests in the second winter are the first recorded sign that availability cost the category some business. An order of 13 may look small against 47 recent sales, and it is. The reason to hold it there is the competition for cash from two categories with stronger evidence of shortages. The improvement earns puzzles three copies above the minimum and makes them worth watching early in the season.
+
+**Cookbooks.** Cookbook sales rose from 31 to 34 even as receipts fell by two. That is a reason to keep a credible selection. Still, 14 of the latest 48 copies remained unsold after 90 days, and neither winter produced a request while cookbooks were sold out. At cost, those 14 copies represented $224 still on the shelf at the end of the measured window. They could sell later, but that cash was unavailable for another purchase in the meantime. Even the minimum order of ten takes $160, more than the entire proposed puzzle order. I would use those ten places for titles with a record of selling in this shop.
+
+**Graphic novels.** The additional ten copies received in the second winter supported 16 additional sales. The unsold balance fell from 12 to six, while requests rose from four to nine. Graphic novels therefore combine the highest sales volume with evidence that customers would have bought a different mix or more copies of particular titles. They merit 30 units and the largest dollar allocation. The main risk of ordering only 30 is clear from the first winter alone, when the shop sold 43. If this advance order has to last the full season, some customers will likely encounter gaps even if sales ease from their recent high.
+
+### How to read missed demand
+
+A request while sold out is good evidence that availability mattered to a customer. Its value as a sales forecast depends on what happened next. One reader might ask twice, accept a substitute, or return to buy the requested book after a delivery. Other readers may see an empty space and leave without asking. The 15 guide requests justify giving guides priority, but adding all 15 to the 44 sales and forecasting exactly 59 purchases would imply more precision than the records support.
+
+The category totals also leave open *when* the gaps occurred. Nine requests for the same graphic novel early in winter would argue for buying that title more deeply. Nine requests spread over nine titles would argue for a broader selection. With limited cash, that distinction can matter as much as shifting a few dollars between categories. For this order, I would first match available title-level requests to sales records, especially for guides and graphic novels, where the shop has evidence of shortages in both winters.
+
+### Why this mix fits the cash limit
+
+Buying ten of everything accounts for $460 before the owner makes a discretionary choice. The remaining $440 buys 23 extra guides for $207, three extra puzzles for $33, and 20 extra graphic novels for $200. This leaves guides and graphic novels almost level in total cash exposure, while the lower guide cost buys three more opportunities to serve a customer. The plan uses the full budget and meets all four minimums.
+
+The constraint is substantial. The shop sold 184 units across these categories in the latest winter, compared with 86 units in this order. I have treated the quantities as advance purchases and assumed no particular amount of carryover stock. If last winter’s unsold copies are still available, they count toward what customers can find this winter, especially among cookbooks and puzzles. Selling prices and margins are also unknown, so the case for the allocation rests on observed sales, shortages, and purchase cost. A profit-maximizing order would require knowing what the shop earns when each unit sells.
+
+### What changes if demand falls
+
+As a simple stress test, suppose each category’s demand falls 25% from its second-winter recorded sales. That gives roughly 33 guide sales, 35 puzzle sales, 26 cookbook sales, and 44 graphic novel sales. Assuming the right titles and no carryover, the proposed guides would just cover that level. The other three orders would still fall short of it. A broad decline of that size would therefore ease the risk of turning customers away, while leaving little reason to expect a large pile of unsold stock from this purchase. The shop could nevertheless sell out of a popular title while slower titles remain.
+
+At a 40% decline on the same basis, the picture changes first for guides. Demand would be about 26 guides against an order of 33, leaving roughly seven copies, or $63 at cost, still on hand after 90 days. Graphic novel demand would be about 35 against 30 ordered. Puzzle and cookbook demand would also remain above their order quantities. Guides thus carry the greatest near-term exposure to a uniform downturn, even though they had the best historical sell-through. The owner has chosen to cover a larger share of recent guide sales because the evidence of missed demand was strongest there.
+
+An uneven decline calls for a different response. If early sales show guides weakening while graphic novels continue to move, the owner should use any later buying cash on the specific novels customers are asking for. If every category slows, the better course is to sell through the advance order before committing more cash. A weekly check of copies sold, copies on hand, and requests by title would give the owner enough information to distinguish those situations. That is particularly important for an 86-unit purchase, where a handful of requests for one title can justify a reorder even during a softer winter overall.

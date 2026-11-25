@@ -1,0 +1,53 @@
+# Scheduling brief for the badminton league committee
+
+**Renew Monday early and Wednesday late for eight weeks at a total court rent of $1,040.** This gives players an early-evening option every week, leaves $60 of the $1,100 budget unspent, and retains the two slots that together recorded the most check-ins of any eligible pair. If the next eight weeks repeat the recorded period, the league can expect 195 player attendances across 16 sessions, at $5.33 in court rent per attendance. The decision is close. Friday early and Sunday afternoon would have delivered 192 attendances for $1,080, and Sunday has the strongest attendance record of any individual slot.
+
+## What the eight weeks show
+
+Each slot offered 128 player places over eight sessions, or 16 places per session. A check-in counts one player attending one session. A regular who came eight times therefore accounts for eight attendances. Court rent per attendance is the eight-week rent divided by check-ins. This measure captures what the league paid for each place actually used, including the cost of places that stood empty.
+
+| Weekly slot | Bookings | Check-ins | Average attendance per session | Available places used | Waitlist entries | Rent | Rent per attendance |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Monday early | 112 | 91 | 11.38 | 71.1% | 9 | $480 | $5.27 |
+| Wednesday late | 128 | 104 | 13.00 | 81.3% | 41 | $560 | $5.38 |
+| Friday early | 94 | 80 | 10.00 | 62.5% | 4 | $440 | $5.50 |
+| Sunday afternoon | 121 | 112 | 14.00 | 87.5% | 26 | $640 | $5.71 |
+
+Monday is the stronger choice for early-evening access. Its additional $40 in rent over Friday bought 11 more attendances across eight weeks, and its nine waitlist entries also exceeded Friday’s four. Friday did have a slightly higher share of bookings turn into check-ins, at 85.1% against Monday’s 81.3%. Its difficulty was attracting enough bookings in the first place. Friday drew 18 fewer bookings than Monday and averaged six empty places per session. Its lower rent consequently produced a higher cost per attendance.
+
+Wednesday and Sunday offer different reasons for renewal. Wednesday recorded a booking for every available place and attracted the longest queue, with 41 waitlist entries. Yet only 104 of its 128 bookings resulted in check-ins. Wednesday averaged three unused places per session even as players were expressing interest in attending. Sunday used its places most consistently. It averaged 14 players, and 112 of its 121 bookings turned into check-ins, a 92.6% attendance rate among those booked. Its drawback is the $640 rental charge. Pairing Sunday with Monday would cost $1,120, so choosing Sunday means choosing Friday for early access.
+
+Waitlist entries show pressure on the booking system, but the records do not establish how many different people joined a queue, how many eventually played, or whether they were still available when a place opened. The totals also conceal fluctuations between weeks. A Friday waitlist during one busy week can coexist with empty places on other Fridays. The committee should use the queues to identify where timely cancellations would matter most and use check-ins to judge how much play the schedule actually delivered.
+
+## Comparing the eligible schedules
+
+The committee’s decision rule should be to satisfy the budget and early-access requirements first, then favor the pair with the most expected attendances. If two options are tied on attendance, favor the lower rent. This rule gives the league a clear way to weigh a busy, expensive session against the early slot it can afford alongside it.
+
+| Eligible pair | Eight-week rent | Budget left | Recorded attendances | Combined waitlist entries | Rent per attendance |
+|---|---:|---:|---:|---:|---:|
+| Monday early + Wednesday late | $1,040 | $60 | 195 | 50 | $5.33 |
+| Friday early + Sunday afternoon | $1,080 | $20 | 192 | 30 | $5.63 |
+| Friday early + Wednesday late | $1,000 | $100 | 184 | 45 | $5.43 |
+| Monday early + Friday early | $920 | $180 | 171 | 13 | $5.38 |
+
+Monday and Wednesday lead on both attendance and rent per attendance. The closest challenger, Friday and Sunday, costs $40 more. Sunday drew eight more attendances than Wednesday, but taking Friday in place of Monday gives up 11. That three-attendance difference explains why the busiest individual session falls outside the recommended pair. Wednesday and Sunday together would cost $1,200 and would leave the league without an early-evening session.
+
+The two less expensive pairs clarify what the savings would buy. Keeping Wednesday and switching Monday to Friday saves $40 at the historical cost of 11 attendances. Keeping both early slots saves $120 against the recommendation and gives early-evening players two nights to choose from, but it gives up 24 attendances and drops the late option entirely. The records give no count of players who can attend only early sessions, so there is no basis here for assigning a numerical benefit to that second early night.
+
+## How easily could the choice change?
+
+**Four extra check-ins across eight weeks would put Friday and Sunday ahead on attendance**, assuming Monday and Wednesday repeat their total of 195. For example, if Friday drew 84 players over the period instead of 80 and Sunday held at 112, the pair would reach 196. That requires just one additional Friday player every other week. Three extra check-ins would produce a tie at 195, in which case Monday and Wednesday would retain the decision on rent. The same margin works in the other direction. If Monday and Wednesday fell to 191 while Friday and Sunday held at 192, the recommendation would switch.
+
+The two schedules could also move at once. Suppose the committee learns that two attendances previously expected on Wednesday would instead occur on Sunday if that option were offered. The revised pair totals would be 193 for Monday and Wednesday and 194 for Friday and Sunday. Such a shift is plausible in scale, but the aggregate records cannot show who would switch nights or who would stop playing if their preferred slot disappeared. The three-attendance lead merits a decision for this renewal, not a claim that the same schedule will always win.
+
+A change in the attendance ranking would also leave a separate cost question. At 196 attendances, Friday and Sunday would cost about $5.51 per attendance. To beat Monday and Wednesday’s current cost of $1,040 for 195 attendances, the $1,080 pair would need at least 203 attendances, 11 above its recorded total. Under the proposed decision rule, 196 is sufficient because both schedules are affordable and attendance comes first. Stating that priority now will help the committee interpret a close result at the next renewal.
+
+## A fair policy for unused bookings
+
+Give players a one-click cancellation link in the booking confirmation and send a reminder the day before play. Ask anyone whose plans change to release the place at least four hours before the session. Keep cancellation available right up to the start. Even a late release can help a player who lives nearby, and someone who takes the trouble to release a place should have a reason to keep doing so.
+
+Offer released places in waitlist order. Show the acceptance deadline in each offer, move to the next person when it expires, and count a replacement as booked only after they accept. Joining a queue should never oblige someone to attend at short notice. Let players opt in to last-minute offers separately so a volunteer can contact people who have said they can get to the court in time. Publish the check-in procedure in advance and give the session organizer a way to record arrivals when a player cannot check in electronically.
+
+For a first missed booking without notice, send a private reminder with the cancellation link and a way to correct a check-in error. After a second verified miss within the eight-week block, pause advance booking for one week while allowing the player to use the waitlist or take an available place on the day. Give players a private route to explain emergencies, transport disruption, or access difficulties before applying the restriction. Record late cancellations separately from unexplained absences, and follow up privately if a repeated pattern leaves too little time to refill places.
+
+At the end of each session, have the organizer record bookings, releases, replacement offers accepted, and actual check-ins. At the next renewal, the committee can then answer a question the current Wednesday figures leave open: when a booked player could not come, did someone in the queue get enough notice to play? The immediate opportunity is to keep Monday’s well-used early session and turn more of Wednesday’s already funded places into time on court.

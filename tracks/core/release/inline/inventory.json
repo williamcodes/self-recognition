@@ -1,0 +1,702 @@
+[
+  {
+    "brief": "a-drawer-for-the-good-cups",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "52d1e0b7a98a39f3d770ec55129d1e4728f98280cb5472709195de5c789b85dc"
+    }
+  },
+  {
+    "brief": "a-drawer-for-the-good-cups",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "831037cdb09a362c46d5b91fb5ea022518d82970892ff26c132079fa23b90b0f"
+    }
+  },
+  {
+    "brief": "apartment-courtyard-furniture-exchange",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "c3fc8ac0f5efd58233c1864a942e29f4084ebc96d8e145aaa0088feb080fc77d"
+    }
+  },
+  {
+    "brief": "apartment-courtyard-furniture-exchange",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "970608acabc50768c0817387a522eb36a2fce348e61de6f031148f2a901c7740"
+    }
+  },
+  {
+    "brief": "apartment-laundry-hours",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "30e5418af4343ab5eae365498a354ef7ec1242f36b4388be24619b4e5c9b9e57"
+    }
+  },
+  {
+    "brief": "apartment-laundry-hours",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "247d3bcdf1cf5a52d2d52b8564602d8a634ec3e487f1ae712f362d5e47036d7a"
+    }
+  },
+  {
+    "brief": "apartment-tool-library",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "59ecacc586400aee3c8506375b58e02810c7c35ced4c3f1d62901912d207705e"
+    }
+  },
+  {
+    "brief": "apartment-tool-library",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "ce916571ce26973d5a67d3379ce69641c6ff2f67b554f79359b72ebd8e2774d5"
+    }
+  },
+  {
+    "brief": "bakery-pickup-change",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "aafb46c15de3e875bc8d7092114949119050368cc38a9a7df7ab64790efe484c"
+    }
+  },
+  {
+    "brief": "bakery-pickup-change",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "679f83a12d8a16ce8526f404d38018acb2deff758fb7644da6be055065db488b"
+    }
+  },
+  {
+    "brief": "bookshop-neighborhood-reading-wall",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "53640327f6c7d038dbb3e8c1ed4f81e6093cd76981c79449fcbddcf79458223e"
+    }
+  },
+  {
+    "brief": "bookshop-neighborhood-reading-wall",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "b1c3b09ca4ab944e2426f908fb328e67ba24dd8268196eeddf9d27b83b93b73d"
+    }
+  },
+  {
+    "brief": "bookshop-ordering-policy",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "b9b717f7c48436af684a0d0b7cbf0b1bb640a899e91197eb19dbb1430a6dd49e"
+    }
+  },
+  {
+    "brief": "bookshop-ordering-policy",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "a21f211630798bede3e6ed07606e63ee59ea9684dfe35bb9d23ea5cbd775053d"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "2f941bc31a5f9908ae90129b75f99661af8af51fc5cbebe947832b03cf60cba9"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "8dc632787c6dacac33be5336df78ef81f1de9497e3279a994b9be5f963ab84ba"
+    }
+  },
+  {
+    "brief": "cinema-captioned-matinee",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "b5897d6ecbde3aa3fa0c5f8b075220a8137e99ef6298920f92a77d2b9eba271a"
+    }
+  },
+  {
+    "brief": "cinema-captioned-matinee",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "452f5b7a9bb08b8e09447d1acbd006853bc0e959e7a6f3419b11be976c06717e"
+    }
+  },
+  {
+    "brief": "community-choir-invitation",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "2f460338e15616cf965a107faaddd8e8ea8f1021c46e87bba673b90aeeefd7ac"
+    }
+  },
+  {
+    "brief": "community-choir-invitation",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "8fe55f54f718b1bce18672f34bd035f0996a8db96b8e8f947e747d5cc43265f7"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "f70c9655de8229e869b02d1935a77a8db0d17f6aa83ce48937156ea242122e5b"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "e30ce0c8ead534f05ebdf49488b15928628266f5a680a55f371b338a23ad4d31"
+    }
+  },
+  {
+    "brief": "community-theater-campaign",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "2f5fa178d619b5e71fd19cbf80d4fab6e88af45d195867478c9c8b9c55f36246"
+    }
+  },
+  {
+    "brief": "community-theater-campaign",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "d58dd683dfadd437b0b4fa0b0e944addfd5c95cf52e24f158eadf6f87bf3eec9"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "841e1534c9b48ee089a8f16a754fa519fbd1ede4c4ad84836acd6c51473fc264"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "8e95c23805a956ede3d815d3d3394e40cb0d63e9dd9ba570682b175b45bfe251"
+    }
+  },
+  {
+    "brief": "gallery-caption-approval",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "e4d0d7798471fa2725e038dc854532ab81add8acf12be81484afda451f15cba1"
+    }
+  },
+  {
+    "brief": "gallery-caption-approval",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "9755e4e2c5db53f9af90dcfe3656516baef5c7a9329fa16bde5fbb97f0cf2556"
+    }
+  },
+  {
+    "brief": "greenway-maintenance-plan",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "f9dac958603caa9b1f9e45b985bb82801efb293caaf46664f6e361d02efc3776"
+    }
+  },
+  {
+    "brief": "greenway-maintenance-plan",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "9d786d56561d4468ac00ff701dba569a80bc2b6ace9ed5e02158411c9651c88e"
+    }
+  },
+  {
+    "brief": "library-evening-pilot",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "4541787d3bb12302e0636898f0533f9c5a05e4aa17b474a8d980264420e5898f"
+    }
+  },
+  {
+    "brief": "library-evening-pilot",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "3dd5e6f99a55d6730ac187a9a051005eedd2e4da6071e2e72b0a452bfd8f729b"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "1bde5e12b23a2b6f1d0d2d6f8d7c66b004253962391168cabe09cff6dfb3b693"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "73edd2d78c138689131d6415debcd32882bb761fa734ce309fb17fc24cc50bb2"
+    }
+  },
+  {
+    "brief": "library-seed-table",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "b3907603e10098a8566b9821d486f6aead83de65f1815668fda8adc16bc2d898"
+    }
+  },
+  {
+    "brief": "library-seed-table",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "178621a4e380595520e8c3ca97d10fe0db425789beac28c87bb343505ca8a4de"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "70f9514a18cf6c0d24a4fd8eeedc207a33000a2c1c8184b394e508f0fcf1b767"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "88ac4427719e4775879afcfd9649333fb1f1bc225c7912bbe6bb666e84e1496f"
+    }
+  },
+  {
+    "brief": "market-crate-pool",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "e1397b260bf674b2d2ac3a2c93ff3fed68f5e449e12c64564c28c8ee903c3242"
+    }
+  },
+  {
+    "brief": "market-crate-pool",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "aa02d45df3b5a554bd75df2cf8494abb8195b66b9c8b9f39b7e578f4be302ae9"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "72f9308cdd43ed205105a51b1c22789742a8ca340c18f91bf00c2fd1a6daafb5"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "6914a4a121efab4ef07032f5b744bdbffb9a7de23dc315a698e64fc75ece542d"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "f991302329cf6eb3203c73fb7988d3be5d1799b8de73675597d20639744b05b0"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "8c8aa683a94e16be5041ca5735a85ebea2df81f04bb0bc492a32729ba15bf03f"
+    }
+  },
+  {
+    "brief": "mismatched-display-shelves",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "7876dc57a82ec2173ec028060ba3e8544fc08558474b7eb2e7cd3f862757bd97"
+    }
+  },
+  {
+    "brief": "mismatched-display-shelves",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "d6a17b0b81f398a8f44806b7c4f290fada446430d7116fc710391b1817013199"
+    }
+  },
+  {
+    "brief": "museum-family-workshops",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "3e9025f31491bf11d9236b43b14e9bfb48e40b6783ca4e670848502e34990a08"
+    }
+  },
+  {
+    "brief": "museum-family-workshops",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "163edac0a981935f1da1efed48b1dadd85cdeb442b8050cbd00d838d8f967ee9"
+    }
+  },
+  {
+    "brief": "museum-school-visit-redesign",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "44e3bee46d933f55fbc6c7c373ca3c6ff2004281b49351a17e044a2ac6349173"
+    }
+  },
+  {
+    "brief": "museum-school-visit-redesign",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "e99fc55744596bdf72009ce5aec389d77ee8feb0752bdd7ccfaec3c95c1c3e3c"
+    }
+  },
+  {
+    "brief": "one-cleared-shelf",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "1b9893d6e2d7716230d6539b2ed883c7ad131a4d80b134591685ae586af0cfea"
+    }
+  },
+  {
+    "brief": "one-cleared-shelf",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "5fde349035cc69e24679d424e9e5ff1c6bc1db48b45ffb39570c9255a88199e1"
+    }
+  },
+  {
+    "brief": "orchard-crate-pickup",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "a759bbb79e5c0e13d20abc0a23fe2028db86d3e4afaca75b7d0fec14c8269a42"
+    }
+  },
+  {
+    "brief": "orchard-crate-pickup",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "f35dc253523a9b91644ed73fee6f9b9a0bc910cf900e19f16ea13b83327eda2c"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "fee093bfbd14940b658a78e584f6ecb1a961ccafb7f9ae0937a530aa098e37e2"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "633ee55b99fd5f9acba11fa78c826ddb94becf072a2d882032cb88cae14bc74d"
+    }
+  },
+  {
+    "brief": "pantry-shift-review",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "a442ff2d38b2957b2a7cc3181eea02ebe3eb8f0c7d1ab2636aa4bc8bcaff9e0b"
+    }
+  },
+  {
+    "brief": "pantry-shift-review",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "488710e13ee4421f206efa970bcfc7a9053ba7a0e6e3252e882fffeccaa99876"
+    }
+  },
+  {
+    "brief": "print-shop-job-mix",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "9c4cef0cb9763b42d5ac59b24152e332737829de5afefa9e162539e6462e26bd"
+    }
+  },
+  {
+    "brief": "print-shop-job-mix",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "d975b0605a60ac5475ac6965854bac5d60294b9013af5898f0d94d40f6303e87"
+    }
+  },
+  {
+    "brief": "printmaking-exhibition",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "5c28e3e9dd0b4b0c8f94c63d6083b5eb2bac0a884a11c255f717f5342084d4ff"
+    }
+  },
+  {
+    "brief": "printmaking-exhibition",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "d83cf283fe9e8116eab2ae9589395970e6bc8932e15832af0d96a4c5b73833e6"
+    }
+  },
+  {
+    "brief": "printshop-bindery-retrofit",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "666e1495da359602247d735c27eaed5582338a2d3c92a4e5dd6eb6311d949388"
+    }
+  },
+  {
+    "brief": "printshop-bindery-retrofit",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "dbfa65bebb567da5b1f78b3430b3405815381942a9e7d41dfa258e9f4dd20d41"
+    }
+  },
+  {
+    "brief": "rec-league-photo-day",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "d1f221e231dbd6a44358e515f0295a48eb50c1d7ad93a0b8ff133445c4aabafc"
+    }
+  },
+  {
+    "brief": "rec-league-photo-day",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "3f5962cc3794b1b3e0379bb7693134e5d627ae2496b2046633a8d1946a7f3bd3"
+    }
+  },
+  {
+    "brief": "recreation-court-allocation",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "19cfa47a3150fa9417dcf6a456575102d6a80c988129f0767e944ba5ebdb2674"
+    }
+  },
+  {
+    "brief": "recreation-court-allocation",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "07089d4c365f19ae17cf26fd9d6159951ba5c788994c24f1c31f8e2be8f3ecb4"
+    }
+  },
+  {
+    "brief": "recreation-league-court-time",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "27ad6072f9d2bd2e92dfbde53de16386999cfb04fe008263f983bc288e5f2bf5"
+    }
+  },
+  {
+    "brief": "recreation-league-court-time",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "32c5fc5da58edaa695beea4b8dce0857f8f21e2d900def5b8a77861e164f9cfe"
+    }
+  },
+  {
+    "brief": "repair-cafe-booking-change",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "7d1a6ab6c0fbe760fc2472ed8e647ec0fc6029b732f7fcef1a15d4626dabda1f"
+    }
+  },
+  {
+    "brief": "repair-cafe-booking-change",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "9c94f0bd049f3932f83e65ebd4d367e1637f22348cdf590a4bd73e7db9088754"
+    }
+  },
+  {
+    "brief": "seed-swap-packet-labels",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "d5f3f1e5133bc70961a680cde550ab24175136c0b37fec4545f56c23e3c84cc1"
+    }
+  },
+  {
+    "brief": "seed-swap-packet-labels",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "fba45b290ee04083395ac5b458a47fab1f4d72eab9615c1d36f2179f73baf007"
+    }
+  },
+  {
+    "brief": "shared-kiln-schedule",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "8110c626a0c7d1b4928d0de7803e80cd03de9a070c5d9b9a2d6029c0a74cf8d7"
+    }
+  },
+  {
+    "brief": "shared-kiln-schedule",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "30ade085178481e7db085529096f86154f4ae9b0fc0d2571191b6cdc907ebd23"
+    }
+  },
+  {
+    "brief": "shared-laundry-repair",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "c41e7399d4ce9b853ed3739ef3ea0de2cae5c7b22c5296f146c1f2f1d2a5a99e"
+    }
+  },
+  {
+    "brief": "shared-laundry-repair",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "f44ab4e7fadeeea5486435ebea9b848584703ee13b95f21df26720114d2745a7"
+    }
+  },
+  {
+    "brief": "shuttle-saturday-stop-trial",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "66aff4ddd3d8e88c333438585f7af776d5f8d2452ed79b57124e6b79a4c81ffc"
+    }
+  },
+  {
+    "brief": "shuttle-saturday-stop-trial",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "db0443a9c62bed34b521356438ac5286f6d9ca96f1a6d0686d513969191ef3ac"
+    }
+  },
+  {
+    "brief": "street-tree-inventory",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "ca8693d3b3553ee28237f341a0f9ffc359bff5d559317f22656dc88a5cdbbbb1"
+    }
+  },
+  {
+    "brief": "street-tree-inventory",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "b080e6ba9521490eb27922c4d505175b2ddb3da3d0dd3f674b41b29a31cdd913"
+    }
+  },
+  {
+    "brief": "the-empty-chair-at-rehearsal",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "f8fa53d7a3693cd06218747700e5daf927d6d13d714e40563a471e0aa114aeef"
+    }
+  },
+  {
+    "brief": "the-empty-chair-at-rehearsal",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "384300fff42c5bc0dbfbe2c1c95d3d539648c33d8cbfd90b4f7584dce676b5e4"
+    }
+  },
+  {
+    "brief": "the-extra-lane",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "b36b4189d250758282ab9277a268dd14d315df4c65d5de7d945110bcc09da243"
+    }
+  },
+  {
+    "brief": "the-extra-lane",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "c7312424ccc9a17cc6201a9fd7bfeef3550a7270e7dd75587baffdcf6cd15ec5"
+    }
+  },
+  {
+    "brief": "the-fit-sample",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "41cea1ec7b3d8d65ed0b01b0402a253e6fbf4bf3e02cfa7aa15c5896fca27869"
+    }
+  },
+  {
+    "brief": "the-fit-sample",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "2ffb7edec84b035dc87c6bfc093b7fc0d7a7f7435cb2f63fb881bb1cef0ea05b"
+    }
+  },
+  {
+    "brief": "the-half-plot",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "58b2dbda4aae05bdac415eca3651a37ac2bc178a649675024f1001ed5ff81182"
+    }
+  },
+  {
+    "brief": "the-half-plot",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "7fe7f59067f469e0fba6f45b685c2bdbbc96331f0a2686b414051c1234132b66"
+    }
+  },
+  {
+    "brief": "the-last-stop-on-linden",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "d301956bfe374080ea0e0609e28e21faa12c3511dbf6b142fdd449226eda5eac"
+    }
+  },
+  {
+    "brief": "the-last-stop-on-linden",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "38f9c3110598426138af0e473d25ace87cb56c3b4a25fbef23da94f9be59b8ce"
+    }
+  },
+  {
+    "brief": "the-matinee-curtain",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "a6195c91009bb7f629d44630f34e409110710bbf6757981a92afb466f030a183"
+    }
+  },
+  {
+    "brief": "the-matinee-curtain",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "7398c193f7e10c147dae33c56140b1943539a1369a6722f0e051844c0eb562ee"
+    }
+  },
+  {
+    "brief": "the-saturday-stalls",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "e150eeb7ee748564f4b60253f63ddaae130e5015a254cc9d44299a7c57b0c529"
+    }
+  },
+  {
+    "brief": "the-saturday-stalls",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "50464f9ea91f5759e76f29866c712d19e88b51298ddfb3b1c9676beb23108a5d"
+    }
+  },
+  {
+    "brief": "the-sunday-key",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "606f485366315f88b92e125fcf33d9669590da1c31755ca2c7c7938861bc24a5"
+    }
+  },
+  {
+    "brief": "the-sunday-key",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "2eb74d01aa955b4b9047bc3c402dc0e9318864687dfc3eda805a9088bea514f7"
+    }
+  },
+  {
+    "brief": "upholstery-quote-tool",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "b68c35b9bf9c5d56a05b4c245c16ea3970c46f42fa4800f217385d4827dc787e"
+    }
+  },
+  {
+    "brief": "upholstery-quote-tool",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "88e2450f8befa95ae4c759dc07f2f93de6abe81f381b43d217f19457a943e585"
+    }
+  }
+]

@@ -1,0 +1,55 @@
+# Project proposal for an offline upholstery quote tool
+
+## Purpose
+
+Build a small Windows app that lets the shop’s two estimators prepare quotes on the shared laptop, print a one-page copy for the customer, and export job summaries to CSV. The app will handle the calculations and keep a local record of issued quotes. The shop will continue using its paper job sheets for measurements, work instructions, and production notes. Estimators can write the app’s quote number on the corresponding paper sheet to connect the two records.
+
+The project will take four weeks, with a maximum cost of $1,800 and a combined staff commitment of two hours per week. The owner will approve the calculation rules and maintain the rate table. Both estimators will test the workflow on the shop’s laptop and printer before the tool goes into use.
+
+## What the app will do
+
+An estimator opens a single quote form and enters the customer’s initials, furniture type, fabric yardage, and labor hours. They select one of five fabric price bands and one of three labor rates. The app displays the selected fabric price per yard and labor price per hour alongside the quantities. An optional pickup fee can be entered as a dollar amount. A blank pickup field counts as zero.
+
+The app shows the fabric charge, labor charge, pickup fee, subtotal, discount amount, and final quoted price as the estimator works. It accepts fractional yardage and labor hours and flags missing required fields, negative amounts, or discounts outside the allowed range before the quote can be issued. Furniture type is a short text field so estimators can use the shop’s own descriptions.
+
+The proposed pricing rule is to multiply yardage by the fabric price per yard and labor hours by the hourly rate. Round each charge to the nearest cent, then add the charges and any pickup fee to get the subtotal. Apply the percentage discount to that subtotal, including pickup, and round the discount to the nearest cent before subtracting it. The owner will confirm the discount treatment in week one. The owner sets the default discount, initially 0%, and the estimator can adjust it for an individual quote. The proposed scope covers the quoted price before any applicable tax. The owner will confirm whether that format suits the shop’s current quoting practice before the print layout is built.
+
+The estimator can preview the quote before issuing it. Issuing saves a local record and assigns a unique quote number. From that record, the estimator can print or reprint a single page with the shop name, quote number and date, customer initials, furniture description, itemized charges, subtotal, discount, and final total. If the printer is unavailable or runs out of paper, the issued quote stays available for reprinting. If a price or quantity needs correcting after issue, the estimator can copy the quote into a new draft and issue it under a new number. Both records remain available so the shop can identify which version a customer received.
+
+The owner can update the five fabric price bands, the three labor rates, and the default discount on a settings screen. The screen saves a complete set of rates together and shows when it was last updated. New quotes use the current rates. Each issued quote retains the prices and discount used when it was issued, so quarterly changes leave earlier quotes accurate and reproducible. The owner and estimators will share the same laptop access, with rate changes handled by the owner as a shop procedure.
+
+## Local records and CSV export
+
+The app will run offline under the shop’s existing Windows account. It will store settings and issued quotes in a local database in a documented folder. Customer initials are the only customer identifier collected by the app. Full names, contact details, addresses, and pickup instructions stay on the shop’s paper job sheets. Anyone using the shared Windows account can access the quote history, settings, and exported files.
+
+The history screen will let staff find issued quotes by quote number or customer initials. Staff can export a date range of issued quotes to a CSV file in a folder they choose. Each row represents one issued quote and includes the quote number, issue date, customer initials, furniture type, yardage, fabric band and unit price, labor hours and hourly rate, pickup fee, subtotal, discount percentage and amount, and final total. Dates will use `YYYY-MM-DD`, and prices will be numeric values with two decimal places. Descriptions containing commas or quotation marks will remain in a single field. Staff may see both an original quote and its replacement in an export, so the file should be read as a record of quotes issued.
+
+The handover will show the owner how to close the app and copy the database to a shop-controlled backup location separate from the laptop. The database backup preserves both the quote history and the rate settings. CSV exports serve as reporting files. The owner will practice restoring a backup during handover and will decide how long to retain local quotes, exports, and backups in line with the shop’s paper record practices.
+
+## Four-week schedule and budget
+
+**Week 1 · Confirm the workflow and pricing rules · $300.** Review a representative paper job sheet and confirm the eight rates, discount treatment, print content, Windows setup, and printer. Agree on example quotes and expected totals before development. Staff time is 60 minutes for the owner and 30 minutes for each estimator.
+
+**Week 2 · Build the quote form and rate settings · $600.** Implement entry, calculations, validation, local storage, and the owner’s settings screen. Load the approved rates and have both estimators enter familiar jobs. Staff time is 30 minutes for the owner and 45 minutes for each estimator.
+
+**Week 3 · Finish printing, history, and export · $500.** Build the print layout, connect reprinting to saved quotes, and add CSV export. Test the printout on the shop printer and open a sample export in the spreadsheet program staff expect to use. Staff time is 30 minutes for the owner and 45 minutes for each estimator.
+
+**Week 4 · Run acceptance checks and hand over · $400.** Test the complete workflow on the shared laptop, correct issues within the agreed scope, and deliver the installed app and operating guide. Staff time is 60 minutes for the owner and 30 minutes for each estimator.
+
+The total is **$1,800 and eight combined staff hours**. The budget includes installation on the existing laptop, testing with the existing printer, and handover. The proposed scope supports one shared laptop and one quote at a time. Inventory, scheduling, invoicing, payments, and multi-device access are outside this project.
+
+## Acceptance checks
+
+The owner and both estimators will run the checks on the shop laptop with the network disconnected. The owner will approve delivery once the checks pass.
+
+1. **Calculate a known quote.** Enter 3.5 yards at $32 per yard, 2.25 hours at $40 per hour, a $25 pickup fee, and a 10% discount. The app shows $112.00 for fabric, $90.00 for labor, a $227.00 subtotal, a $22.70 discount, and a $204.30 final price. Repeat with pickup left blank and the discount set to 0%. The final price is $202.00. Use an additional example that produces a half-cent rounding case.
+2. **Check entry errors.** Try issuing quotes with missing initials, negative hours, and a discount over 100%. The app identifies the fields to correct and issues a quote once valid values are entered.
+3. **Change rates and reopen a quote.** Issue a quote, update the rate table and default discount, then start a new quote. Check that the new quote uses the updated settings and the issued quote still shows its original amounts after restarting the app.
+4. **Print and reprint.** Each estimator independently enters and issues a quote, then prints it on the shop printer. Confirm that all amounts match the screen and the entire quote fits legibly on one page. Repeat with the printer temporarily unavailable, then reprint the saved quote once the printer is back.
+5. **Export and restore.** Export a date range with known quotes and verify the row count, totals, and a furniture description containing a comma. Restore a backup in a test location and confirm that the saved quotes and current rate table both open.
+
+## Handover
+
+The shop receives the installed app, a copy of the installer, the source code with build instructions, and a short operating guide. The guide will cover issuing and correcting quotes, printing, CSV export, quarterly rate updates, and backup and restore. It will identify where the app stores its data and how to move it to a replacement laptop.
+
+During the final session, the owner will update a rate and restore a test backup, and each estimator will issue and reprint a quote independently. The owner will take responsibility for quarterly rate updates and backups. Staff can begin using the tool for live quotes after the owner signs off on the acceptance checks.

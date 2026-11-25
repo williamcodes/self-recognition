@@ -1,0 +1,58 @@
+# Annual greenway upkeep analysis
+
+Allocate next year’s 275 volunteer hours as follows **Canal 73, Orchard 55, Depot 87, and Meadow 60**. Every segment receives at least the promised 40 hours. Depot gets the largest allocation because it had the most litter bags collected, the most overflow reports, and the highest values on both measures per kilometre. Canal gets the second-largest allocation and the closest early review. Its overflow reports rose from 11 to 19, the largest increase of any segment. The four segments logged 310 hours last year, so the new budget requires a reduction of 35 hours, or about 11%.
+
+## Workload and overflow trends
+
+| Segment | Length (km) | Last year’s hours per km | Litter bags per km | Litter bags per volunteer hour* | Overflow reports last year → this year | Overflow reports per km last year → this year |
+|---|---:|---:|---:|---:|---:|---:|
+| Canal | 1.2 | 70.0 | 80.0 | 1.14 | 11 → 19 | 9.2 → 15.8 |
+| Orchard | 0.8 | 76.3 | 52.5 | 0.69 | 9 → 7 | 11.3 → 8.8 |
+| Depot | 1.6 | 57.5 | 83.8 | 1.46 | 21 → 28 | 13.1 → 17.5 |
+| Meadow | 1.4 | 52.1 | 41.4 | 0.79 | 5 → 5 | 3.6 → 3.6 |
+
+\*Bags per volunteer hour assumes the bag counts cover the same period as last year’s volunteer hours. If the collection dates differ, use bags per kilometre as a summary of the supplied counts and omit bags per hour until the periods can be matched.
+
+The totals and rates answer different planning questions. Total bags indicate how much material volunteers handled. Bags and overflow reports per kilometre show where the recorded workload was concentrated along the route. Bags per volunteer hour put collection volume in the context of recorded effort. That figure can vary with bag size, the mix of tasks volunteers do, and how much litter is available to collect. It is most useful here as a description of last year’s work.
+
+**Depot** accounted for 134 of the 330 bags and 28 of this year’s 59 overflow reports. It also led on bags and reports per kilometre, so its longer route explains only part of its higher totals. Its reports rose by seven, or 33%. **Canal** was close behind Depot on litter bags per kilometre, and its eight additional overflow reports represent a 73% increase. Together, these two segments accounted for 47 of this year’s 59 reports. Across the whole greenway, reports rose from 46 to 59, an increase of 13, or 28%.
+
+**Orchard** received the most volunteer time per kilometre last year. Its overflow reports fell by two, and its litter collection per kilometre was below Canal’s and Depot’s. The decline could reflect the upkeep it already received, so check whether reports rebound as hours fall. **Meadow** had the lowest recorded litter collection and overflow reporting per kilometre. Its five reports in each year support a lighter schedule, with enough time to cover its 1.4 km regularly.
+
+## How the allocation works
+
+Reserve 40 hours for each segment first. That uses 160 hours and leaves 115 to assign according to recorded workload. Allocate half of those remaining hours by each segment’s share of litter bags, 30% by its share of this year’s overflow reports, and 20% by its share of total route length. The largest weight goes to collected litter because it represents work volunteers performed. Overflow reports add a measure of current demand, and length gives longer segments some extra time for routine coverage. The weights are planning judgments. Year-over-year changes guide where volunteers look first during reviews, while this year’s report counts enter the allocation once.
+
+| Segment | Last year’s hours | Recommended hours | Change | Recommended hours per km |
+|---|---:|---:|---:|---:|
+| Canal | 84 | 73 | −11 | 60.8 |
+| Orchard | 61 | 55 | −6 | 68.8 |
+| Depot | 92 | 87 | −5 | 54.4 |
+| Meadow | 73 | 60 | −13 | 42.9 |
+| **Total** | **310** | **275** | **−35** | **55.0** |
+
+To round to whole hours, give each segment the whole-number portion of its calculated share, then assign the final hour to Meadow, which has the largest fractional remainder. Depot takes the smallest cut despite having the highest previous allocation. Orchard retains the highest hours per kilometre because the 40-hour commitment makes up a larger share of its schedule on the shortest segment.
+
+## How repeat reports could change the result
+
+Several volunteers may report the same full bin before it is emptied. Those reports describe one overflow episode and can also reveal that it persisted. If the bin is emptied and later overflows again, record a new episode. This distinction helps volunteers decide whether a location needs faster follow-up on open reports or more frequent service between clearances. The reported increases at Canal and Depot could reflect more overflow episodes, more repeated observations of the same episodes, or both.
+
+For example, suppose 10 of Depot’s 28 reports this year turned out to be duplicate observations, and the other segments’ counts held up as recorded. Depot would have 18 episodes, or 11.3 per kilometre, compared with Canal’s 19, or 15.8 per kilometre. Applying the same allocation method would yield **Canal 76, Orchard 56, Depot 83, and Meadow 60**. Depot would still get the most hours because of its litter volume and route length. The example shows how duplicate reports could shift a few hours toward Canal while leaving the overall priorities intact.
+
+Use a shared log with a bin ID or precise location, observation date, and clearance date when known. Link follow-up reports to the open episode and keep the date of the latest observation. Review past entries by the same rules for both years where the details allow. If the older records cannot be reconciled, show the historical report counts alongside the new episode counts with clear labels. Once the group has a bin inventory, track episodes per bin per quarter alongside episodes per kilometre. A segment with more bins per kilometre can have more reports along the route even when its individual bins overflow less often.
+
+## Quarterly volunteer review
+
+Use the following schedule as a starting point. At each review, compare hours used with the plan, check which segments have had a full walk-through, and record any changes to the next quarter’s shifts. Move future hours only after checking that each segment is still scheduled to receive at least 40 hours for the year and that the revised total remains within 275.
+
+| Quarter | Canal | Orchard | Depot | Meadow | Total |
+|---|---:|---:|---:|---:|---:|
+| Q1 | 18 | 14 | 22 | 15 | 69 |
+| Q2 | 18 | 14 | 22 | 15 | 69 |
+| Q3 | 19 | 14 | 21 | 15 | 69 |
+| Q4 | 18 | 13 | 22 | 15 | 68 |
+
+- **Q1.** Walk all four segments and assign bin IDs. Begin logging volunteer hours, bags, visits, and overflow episodes. Review Canal and Depot first to identify bins with repeated overflows after clearance or episodes that stay open across multiple visits.
+- **Q2.** Compare the first two quarters using bags per kilometre, overflow episodes per kilometre, and the number of visits. Look at the visit records before interpreting a rise or fall in reports. If a confirmed hotspot needs more coverage, move a shift within the segment first. Check the full-year commitments before transferring hours between segments.
+- **Q3.** Check whether the shift changes shortened open episodes or reduced recurrence after clearance. Review Orchard and Meadow explicitly for missed coverage or a rise in confirmed episodes. Use the remaining hours to address the clearest recurring problems while keeping all four segments on track for their minimum.
+- **Q4.** Reconcile the hours and confirm that every segment received at least 40. Summarize bags, visits, raw reports, and distinct overflow episodes by segment. Note which schedule changes were followed by improvements and where a full bin repeatedly needed attention. Use that record to set the following year’s allocation and adjust the timing of shifts where the quarterly pattern supports it.

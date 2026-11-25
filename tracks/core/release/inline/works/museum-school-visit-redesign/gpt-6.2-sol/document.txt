@@ -1,0 +1,77 @@
+# Weekday school visits pilot for pupils aged nine to eleven
+
+The museum should pilot a 75-minute visit in which pupils use a paper timetable to make a journey decision, explain it to a partner, and then apply the same skill independently. The visit will connect that task to the museum’s collection by asking pupils to look at how a real timetable presented information to passengers. A ready-to-send teacher sheet and a short booking reminder will help schools prepare for the visit. The pilot will use the existing educator, volunteer, and two indoor rooms, with a budget of $2,700.
+
+## What the last three terms show
+
+| Term | Classes booked | Classes attended | Share of bookings attended | Correct exit responses | Share correct |
+|---|---:|---:|---:|---:|---:|
+| 1 | 12 | 10 | 83.3% | 96 of 160 | 60.0% |
+| 2 | 16 | 13 | 81.3% | 143 of 220 | 65.0% |
+| 3 | 14 | 12 | 85.7% | 126 of 200 | 63.0% |
+| **Total** | **42** | **35** | **83.3%** | **365 of 580** | **62.9%** |
+
+Term 2 brought in the most classes and had the lowest share of bookings attended. Term 3 had the highest attendance rate, with 12 of 14 classes attending. Across all three terms, seven booked visits did not take place. The figures give no reasons for those missed visits, so the pilot should record what schools report when they cancel, reschedule, or fail to arrive.
+
+Correct exit responses rose five percentage points from Term 1 to Term 2, then fell two points in Term 3. Overall, nearly two in five survey respondents did not correctly describe how a paper timetable works. The figures describe pupils who returned a survey. The total number of pupils who attended and their starting knowledge are unknown, so these results establish a benchmark for exit performance. The pilot will also measure how much pupils learn during the visit.
+
+## The revised 75-minute visit
+
+Set up one room for the collection activity and the other for seated timetable work. The class moves together once, with the educator leading and the volunteer supporting. For a class of 30, prepare six tables of five and 15 sets of pair materials. At each table, two pairs and one pupil working alongside a pair can share the first task, with roles changing between questions. Each pupil gets an individual exit card.
+
+| Time | Activity |
+|---|---|
+| **0–8 minutes** | **Welcome and starting task.** The educator introduces the question, “How can a passenger use a printed timetable to plan a journey?” Pupils complete a short individual card using a simple timetable. The volunteer distributes and collects cards before any answers are discussed. |
+| **8–20 minutes** | **Look at a collection timetable.** Using an enlarged reproduction of a timetable from the museum’s collection, the educator asks pupils to find the places, times, and direction of travel. Pupils point out what a passenger would need to know. The educator introduces the idea that one column can represent one vehicle’s journey. |
+| **20–25 minutes** | **Move to the activity room.** The volunteer guides pupils to tables with the materials already laid out. |
+| **25–38 minutes** | **Plan a journey together.** The educator models finding a boarding stop, reading across to a departure time, and following the same column to the destination. Pupils use a strip of card to track the column on their own copies. They explain how the departure and arrival times belong to the same service. |
+| **38–58 minutes** | **Solve passenger challenges.** Pupils take turns tracing a journey and checking their partner’s explanation. They first find a service that arrives by a deadline, then tackle a journey with both a start time and a deadline. The educator asks groups to justify choices. The volunteer helps pupils orient the sheet, use the tracking strip, and take turns. |
+| **58–69 minutes** | **Complete an individual exit task.** Each pupil uses a fresh timetable to choose a service and describe how they found the departure and arrival times. Adults can read the wording or record a pupil’s spoken answer where needed. Pupils make their own choices. |
+| **69–75 minutes** | **Discuss and depart.** After collecting the cards, the educator shares two different ways passengers might choose a service. The volunteer gathers materials and helps the class leave on time. |
+
+## Activity materials
+
+Make an A3 reproduction of the collection timetable, an enlarged teaching timetable, 15 reusable timetable sets, and six table packs with pencils and blank working paper. Each reusable set contains a timetable, a card strip for following one column, and three passenger cards. Print in large, high-contrast type and use clear service headings so pupils can follow the timetable without relying on colour. Supply large-print individual cards and leave room for pupils to mark the route or circle times.
+
+The following fictional timetable can be used for the guided practice.
+
+**Museum bus. Weekday service toward the museum. All times are in the morning.**
+
+| Stop | Service A | Service B | Service C | Service D |
+|---|---:|---:|---:|---:|
+| Market Square | 9:00 | 9:20 | 9:40 | 10:00 |
+| Station Road | 9:07 | 9:27 | 9:47 | 10:07 |
+| Transport Museum | 9:15 | 9:35 | 9:55 | 10:15 |
+
+- **Model together.** You’re at Market Square and can leave at 9:20. When does that bus reach the museum? Service B arrives at 9:35.
+- **Passenger card 1.** You’re boarding at Station Road. What is the latest bus you can take to reach the museum by 10:00? Service C leaves at 9:47 and arrives at 9:55.
+- **Passenger card 2.** You reach Market Square at 9:25 and must be at the museum by 10:00. Which service works? Service C leaves at 9:40 and arrives at 9:55.
+- **Passenger card 3.** You reach Station Road at 9:50 and must be at the museum by 10:00. Can you make it on this timetable? The next departure is at 10:07 and arrives at 10:15.
+
+Give pairs two prompts to use throughout the activity. “Show me where you found the departure” and “How do you know that arrival time belongs to the same bus?” Keep the model answers on the educator’s copy.
+
+## Teacher preparation sheet
+
+**Planning a journey at the transport museum**
+
+Your class will spend 75 minutes looking at a museum timetable and using a printed timetable to plan a bus journey. Pupils will practise finding a departure and an arrival for the same service and explaining their choice.
+
+**Before the visit**
+
+- Spend five minutes asking pupils what they would need to know to get to a place by a certain time. Review the words *stop*, *departure*, and *arrival*. The museum will teach pupils how to read the timetable.
+- Check your booked start time and travel plan. Reply to the museum’s reminder with the expected pupil count and any access or communication needs that will help us prepare. If your plans change, contact the museum using the details on your booking confirmation so we can discuss another date.
+- Have pupils ready to work with a partner. We will supply all activity materials.
+
+**On the day**
+
+Please let the educator know if any pupil needs a large-print copy or help reading or recording an answer. During the short starting and exit tasks, give pupils time to choose their own answers. After the visit, ask your class how they checked that a departure and an arrival belonged to the same bus.
+
+## Pilot budget and evaluation
+
+Run the pilot for one school term, aiming for around 14 booked classes, in line with recent demand. Send the teacher sheet at booking and a brief reminder one week before the visit. Use **$850** for educator planning, rehearsal, and scoring time, **$600** for reproduction and printing, **$450** for reusable table materials, **$350** for accessible formats, **$300** for booking follow-up and evaluation administration, and **$150** for replacements and contingencies. The total is **$2,700**.
+
+**Attendance.** Log the booked date, attendance, pupil count, and any reason the school gives for a cancellation or missed visit. Track rescheduling separately so a replacement booking does not inflate the number of classes booked. Report attended classes out of all booked classes, with the historical 35 of 42 as context. Aim for at least 85% attendance, equivalent to 12 of 14 bookings. With a cohort this size, one class can move the rate by about seven percentage points, so use the figures alongside schools’ reported reasons.
+
+**Learning.** Prepare two equivalent individual cards with different stop names and times. Use one at entry and one at exit, reversing their order across classes. Both ask pupils to choose a service that meets a deadline, give its departure and arrival times, and explain how they found them. Score one point each for the correct service, the correct pair of times, and an explanation that links the boarding and destination stops through the same service column. Accept equivalent wording, annotated timetables, or recorded spoken answers. Use anonymous paired codes to report the share of pupils earning full marks at entry and exit, plus how many gained, held, or lost points. Report missing cards and completion numbers. Aim for at least 75% full marks at exit and a 15-percentage-point increase from entry to exit among pupils with both cards. The historical 62.9% provides context because the earlier survey’s scoring criteria are unknown.
+
+**Delivery.** After each visit, the educator records the actual finish time, any activity that had to be shortened, and the most common reading error. Ask teachers whether the preparation sheet was clear and whether a booking or arrival issue could have been prevented. At term end, review those notes with the attendance and learning results. If pupils frequently choose a plausible departure but take the arrival from a different column, revise the guided example and give pupils another chance to practise tracing a service before the independent task.

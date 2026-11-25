@@ -1,0 +1,61 @@
+# Sunday matinee programming recommendation
+
+Book **four classic comedies, one animated double bill, and one local documentary**. The six Sundays are projected to draw **408 paid admissions** and contribute **$2,365** after direct event costs. The calendar costs **$2,205** to put on, leaving **$795** of the $3,000 budget available. If admissions fall 15% across the series, the projected contribution is **$1,679.50**, the highest of any calendar that meets the programming requirements.
+
+The strongest calendar for attendance puts four animated double bills on the schedule. It would draw 57 more paid admissions at the historical averages, which is a meaningful difference if the owner wants to bring as many people through the doors as possible. Its projected contribution advantage is only **$7.50**. For this run, I would prioritize the calendar that delivers nearly the same contribution at the historical averages, commits less cash, and earns more in the requested downside scenario.
+
+## What the historical screenings tell us
+
+Each format has two screenings in the fictional history. Dividing each total by two gives the per-screening estimates below. Contribution is ticket revenue plus concessions contribution after ingredient costs, less direct event costs. It measures what the series contributes toward the cinema’s other expenses and overall result.
+
+| Format | Paid admissions | Ticket revenue | Concessions contribution | Direct cost | Net contribution |
+|---|---:|---:|---:|---:|---:|
+| Classic comedy | 67 | $603 | $157.50 | $350 | $410.50 |
+| Animated double bill | 86 | $688 | $205 | $480 | $413.00 |
+| Local documentary | 54 | $540 | $95 | $325 | $310.00 |
+| Silent film with live piano | 78 | $1,014 | $145 | $840 | $319.00 |
+
+With 100 seats per screening, the admissions column also gives each format’s average occupancy percentage. The animated double bill fills the most seats and generates the most concessions contribution. It also costs $130 more to stage than a comedy. At the historical averages, its additional ticket and concessions contribution comes to $132.50, leaving just $2.50 of additional net contribution per booking.
+
+The silent film with live piano has the highest ticket revenue, at an implied $13 per paid admission. It also has the highest direct cost, at $840 per Sunday. It can fit within the budget, and it offers a distinct live event, but the historical numbers put its contribution below both the comedy and the double bill. The documentary has the lowest average attendance and the lowest direct cost. One booking fulfills the local documentary requirement and makes room for a local program within a six-week run.
+
+## Feasible calendars
+
+Each calendar below has six screenings, includes a documentary, uses at least three formats, and stays within the direct-cost cap. Financial results for the stress test are rounded to cents after calculating the series totals.
+
+| Six-Sunday mix | Paid admissions | Direct cost | Net contribution at historical averages | Net contribution with 15% fewer admissions |
+|---|---:|---:|---:|---:|
+| **4 comedies, 1 animated double bill, 1 documentary** | **408** | **$2,205** | **$2,365.00** | **$1,679.50** |
+| 3 comedies, 2 animated double bills, 1 documentary | 427 | $2,335 | $2,367.50 | $1,662.13 |
+| 2 comedies, 3 animated double bills, 1 documentary | 446 | $2,465 | $2,370.00 | $1,644.75 |
+| 1 comedy, 4 animated double bills, 1 documentary | 465 | $2,595 | $2,372.50 | $1,627.38 |
+| 3 comedies, 1 animated double bill, 1 documentary, 1 silent film with live piano | 419 | $2,695 | $2,273.50 | $1,528.23 |
+
+The first four rows show the decision in one-screening increments. For every comedy replaced by an animated double bill, the cinema projects **19 more paid admissions**, spends **$130 more**, and gains **$2.50** in contribution at the historical averages. Under the attendance stress test, each of those swaps reduces contribution by **$17.38** when rounded to cents. The middle calendars are viable if the owner wants a larger audience and still wants comedy to account for at least a third of the series.
+
+At historical averages, four double bills deliver the highest projected contribution. Animation leads on per-screening contribution, and after reserving one Sunday for the documentary, comedy is the strongest remaining format to satisfy the three-format requirement. The 15% drop changes the ranking. Comedy leads on stressed contribution per screening, and the double bill remains the strongest choice for the third format alongside comedy and the required documentary. That makes four comedies the best-performing mix in the downside case.
+
+The four-format calendar shows what it would cost to include the live piano event. Replacing a comedy with it buys 11 more projected paid admissions and adds $490 in direct costs. Series contribution falls by $91.50 at the historical averages and by $151.28 in the stress test, using the unrounded estimates for the comparison. The live performance could warrant that trade if presenting it is a programming priority. The stated requirements can be met with a higher projected contribution and a lower commitment.
+
+## How the attendance stress test works
+
+The test assumes 15% fewer paid admissions at every screening, with ticket revenue and concessions contribution falling in the same proportion. This holds the historical average ticket revenue and concessions contribution per admission steady. Direct event costs stay fixed at the booking estimates. Fractional admissions in the calculation represent projections.
+
+For the recommended mix, the historical averages yield **$3,640 in ticket revenue** and **$930 in concessions contribution**. A 15% decline brings those figures to **$3,094** and **$790.50**, respectively. Subtracting the same $2,205 in direct costs leaves **$1,679.50**. Projected attendance falls from 408 to about 347 across 600 available seats, or from **68% to about 58% occupancy**.
+
+The most animation-heavy calendar starts with a higher projected occupancy of **77.5%**, so it has a clear advantage on audience volume. It also has more revenue and concessions contribution tied to turnout and a higher fixed cost. Under the same proportional assumptions, a uniform admissions decline of about **1.9%** would erase its $7.50 contribution lead over the recommended calendar. With just two historical screenings per format, a difference that small is well within the uncertainty around turnout. The 15% scenario is a sensitivity test. Actual results will depend on the titles booked, the audiences they draw, and what those audiences spend.
+
+## Proposed Sunday lineup
+
+| Sunday | Format | Programming purpose |
+|---|---|---|
+| 1 | Classic comedy | Open with a recognizable title that can introduce the series. |
+| 2 | Animated double bill | Give families an early date and a distinct program to plan around. |
+| 3 | Classic comedy | Choose a different era or style from the opener. |
+| 4 | Local documentary | Give the local film its own Sunday and a clear focus in the series promotion. |
+| 5 | Classic comedy | Use a title that broadens the range of the comedy selections. |
+| 6 | Classic comedy | Close with a title that has broad audience appeal. |
+
+The sequence is an editorial choice. The projections use the same format averages regardless of which Sunday a screening occupies. Four distinct comedy titles give returning patrons a reason to come back, while placing the double bill and documentary in the first four weeks gives both formats an early place in the series.
+
+I would approve the **$2,205 calendar** and keep the **$795** in budget headroom uncommitted. The cinema gets six Sundays with three formats, a dedicated local documentary screening, and almost all the projected contribution of the highest-attendance option. The extra animated bookings are worth considering if the owner puts a premium on the additional 57 projected admissions. On the stated budget and downside test, four comedies give the series the stronger financial footing.

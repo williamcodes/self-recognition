@@ -1,0 +1,70 @@
+# Project proposal for an offline street-tree inventory
+
+The neighborhood association will commission a small desktop tool for its annual walking survey. Four volunteers will work in two pairs, with one laptop per pair. Each pair can enter, review, and save observations throughout a shift without an internet connection. At the end of the shift, a designated survey coordinator will combine both teams’ work on one laptop and produce a spreadsheet export and a printable summary by block.
+
+The project will cost no more than **$1,500**. The tool, the reconciled historical inventory, and the volunteer training will be ready by the end of week four, leaving week five for a rehearsal and any final fixes before the survey begins.
+
+## What the association will receive
+
+The tool will use a local database and run on the association’s two existing laptops. In the first week, the contractor will confirm the laptops’ operating systems, installation permissions, and ability to exchange files using a USB drive. The association will designate one laptop as the master and one volunteer as the survey coordinator, with a backup coordinator trained to cover the role.
+
+The entry screen will present five fields in walking order.
+
+| Field | Entry and validation |
+|---|---|
+| Block name | Select from a list approved by the association. The form can keep the previous block selected for the next entry. |
+| Nearest house number | Enter the number as text so values such as `12A` are preserved. More than one observation can use the same number. |
+| Species or unknown | Enter a species name or explicitly select **Unknown**. |
+| Observation date | Defaults to the laptop’s current date and can be corrected before saving. |
+| Short note | Optional plain text, limited to 250 characters for new observations. |
+
+Each team can review and correct its current shift’s entries before handing them in. After handoff, corrections go through the coordinator on the master laptop. Each observation receives an internal ID so the tool can recognize a repeated file import even when two trees share a house number.
+
+At the end of each shift, both teams will close their batches. The coordinator will export the second laptop’s batch to a USB drive and import it on the master. The tool will show how many records it added and how many were already present. A failed import will leave the master inventory as it was before the attempt. Once the totals agree with both teams’ handoff counts, the coordinator will make a dated backup on the USB drive. The second laptop will retain its local copy through the end of the survey.
+
+The coordinator can export the master inventory as a CSV that opens in the association’s spreadsheet program. For the printable report, the coordinator selects a date range and prints a summary grouped by block, with observation counts, species counts, and a separate count for unknown species. The report will label its totals as observations. A tree recorded in different years can contribute more than one observation to a report spanning those years.
+
+## Migration and reconciliation
+
+The contractor will preserve both original CSV files and give every source row a reference made from its filename and row number. During week one, the contractor and coordinator will agree on a header map for the five inventory fields. They will also agree on the standard names for blocks and review ambiguous date formats, blank species fields, and any source values that have more than one plausible interpretation.
+
+The contractor will load all 340 rows into a staging worksheet. Straightforward cleanup, such as trimming extra spaces and mapping approved block aliases, will happen there. The worksheet will retain the original values alongside any changes that affect interpretation. Blank species fields will become **Unknown** once the coordinator confirms that this reflects how the old files were kept. Unclear dates, missing house numbers, and unresolved block names will go to a review list. Source notes will be preserved in the migration worksheet if any exceed the new entry limit.
+
+The contractor will flag two kinds of possible duplicate. The first is a pair of rows whose fields agree after cleanup. The second is a pair with the same block, house number, and date but differences in species or notes. The coordinator will review the source rows side by side and decide whether they describe the same observation, separate observations, or a case that needs more information. Matching addresses alone will never trigger a merge. When the coordinator confirms a duplicate, the retained record will keep both source references in the migration log and preserve any distinct information the coordinator approves.
+
+Before loading the master inventory, the contractor will deliver a reconciliation worksheet that accounts for all 340 source rows. Each row will be marked as imported, linked to a retained record as a confirmed duplicate, or held for a documented reason. Held rows will stay in the worksheet for later resolution. The coordinator will approve the worksheet and compare a sample from each source file against the master export. The same review process will apply to possible overlaps between walking teams, with batch and record counts checked before any duplicate is resolved.
+
+## Schedule and fixed budget
+
+| Week | Work and milestone | Cost |
+|---|---|---:|
+| 1 | Check both laptops, review CSV headers and sample rows, agree on the block list and field rules. | $200 |
+| 2 | Build the offline entry screen, shift review, batch transfer, CSV export, and block report. | $625 |
+| 3 | Stage all 340 rows, prepare the duplicate review, and load the approved inventory after coordinator review. | $300 |
+| 4 | Run acceptance checks on both laptops, train all four volunteers, and hand over the tool and documentation. | $250 |
+| 5 | Run a short practice walk and address any issues that would prevent survey use. | $125 |
+| | **Total** | **$1,500** |
+
+The estimate assumes the association supplies the two laptops, a USB drive, and access to its usual spreadsheet and printing setup. It also assumes the coordinator is available in week one to confirm field interpretations and in week three to decide flagged migration cases. If a historical row still needs research when the survey starts, it can remain in the reconciliation worksheet while the master inventory and survey proceed. The price includes the installed tool, source code and installation instructions, the migration worksheet and log, and a one-page volunteer guide. The tool requires no paid subscription.
+
+## Acceptance criteria
+
+The contractor and coordinator will run the following checks using the actual laptops and the association’s spreadsheet and printing setup. They will use practice data for the survey exercises and keep it separate from the live inventory.
+
+| Check | Passing result |
+|---|---|
+| Offline operation | With Wi-Fi off on both laptops, each team can open the tool, enter and edit observations, close it, reopen it, and find all saved entries. |
+| Field handling | The form requires a block, house number, species or **Unknown**, and a valid date. It accepts a house number such as `12A`, an empty note, and two distinct observations at the same address. It flags a new note over 250 characters without clearing the form. |
+| Shift consolidation | With 10 practice observations entered on each laptop, the coordinator closes both batches and produces a master inventory with all 20. Importing the same transfer file again leaves the total at 20. An invalid transfer file leaves the count and existing records unchanged. |
+| Historical migration | The reconciliation worksheet accounts for exactly 340 source rows. Every confirmed duplicate links to a retained record, every held row has a reason, and spot checks from both CSVs match the approved worksheet. The master’s historical count equals the number of rows marked as imported. |
+| Spreadsheet export | The CSV opens in the association’s spreadsheet program with the five survey fields in separate columns. The exported row count matches the inventory, and a test note containing a comma and quotation marks stays in one cell. |
+| Printable report | For a practice survey with known counts across two blocks, the selected date range produces the expected block, species, unknown, and overall totals. A printed page or print preview has legible headings and no clipped columns. |
+| Backup and recovery | The coordinator restores a dated backup into a separate practice copy and verifies that its record count and sampled observations match the master at the time of backup. |
+
+## Volunteer training and handover
+
+Week four includes a one-hour hands-on session for all four volunteers. The first 10 minutes cover how to choose a block, identify the nearest house number, and use **Unknown** when a species cannot be identified confidently. For the next 25 minutes, volunteers work in pairs with Wi-Fi off. Each person takes a turn entering records, including two trees at the same address, then finds and corrects one saved entry. This gives each pair practice switching between observing and typing during a walk.
+
+The final 25 minutes cover shift handoff. The volunteers compare their batch counts, then the coordinator imports the second laptop’s file, checks the combined total, saves a backup, and produces the spreadsheet and report. The backup coordinator repeats the transfer and verifies that importing the same file again adds zero records. The one-page guide will show the order of these steps and where the association keeps transfer files and backups.
+
+During the week-five practice walk, each pair will complete a short route and hand in a batch using the guide. The project is ready for survey use when both pairs can complete that exercise and either coordinator can consolidate the records, back up the master, and produce the block report without contractor assistance.

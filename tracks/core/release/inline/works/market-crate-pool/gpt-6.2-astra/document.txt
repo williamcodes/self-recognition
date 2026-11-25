@@ -1,0 +1,51 @@
+# Investment proposal for a shared produce-crate pool
+
+Approve a 12-week pilot with an initial purchase of **120 reusable crates for $960**. Offer growers up to 100 crate loans a week and keep 20 crates as a buffer for late returns, cleaning, and demand that bunches around market day. On the assumptions below, the cooperative and its growers together would spend **$1,620 on packaging over 12 weeks**, including the full purchase price, versus **$1,800 if growers used disposable cartons throughout**. The projected $180 saving is small enough that the board should test it against actual losses and labor before expanding. The pilot fits within the $2,400 budget and leaves 60 of the 180 storage spaces available.
+
+## What the market records tell us
+
+The four comparable months show both a reason to invest and a reason to start small.
+
+| Market month | Disposable cartons used | Carton spending | Sample crate loans | Returned within seven days |
+|---|---:|---:|---:|---:|
+| 1 | 420 | $504 | 100 | 92 |
+| 2 | 510 | $612 | 120 | 108 |
+| 3 | 600 | $720 | 140 | 126 |
+| 4 | 470 | $564 | 110 | 99 |
+| **Total** | **2,000** | **$2,400** | **470** | **425** |
+
+Growers spent an average of $600 a month on 500 disposable cartons. The weighted seven-day return rate for sample crates was **90.4%** (425 of 470). The records establish that 45 crates missed the deadline. They do not establish how many eventually came back, how long they were out, or how many were fit for another trip. A crate that comes back one market late creates a scheduling problem. A crate that disappears also consumes $8 of the pool’s capital. The pilot ledger should distinguish those outcomes from the first week.
+
+For planning, treat each comparable month as four market weeks, giving a 12-week forecast of 1,500 carton uses. Treat the sample loans as evidence about borrowing and returns. The proposal claims savings only when a pilot loan replaces a carton a grower would otherwise buy. It assigns no savings to historical sample loans and assumes their costs fall outside the comparison. Before placing the order, the coordinator should confirm which current carton shipments growers intend to switch. The target of 100 loans per week is substantially above the sample average of about 29.5 per week. Reservations matter more to the purchase decision than expressions of interest.
+
+## What the pilot would cost
+
+The base case assumes one clean crate carries the produce that would have occupied one $1.20 carton. Growers take 100 loans each week for 12 weeks, displacing 1,200 cartons and buying the remaining 300. Assume 90 of each week’s 100 crates return, pass inspection, and are washed before the next dispatch. The other ten become ready before the following dispatch. All eventually return in usable condition. This timing allows for ten crates from the previous issue to remain out when the next 100 are needed. The coordinator must check actual wash and pickup times because a crate delivered after dispatch cannot serve that market.
+
+| Packaging expenditure over 12 weeks | All-carton baseline | Pilot base case |
+|---|---:|---:|
+| Disposable cartons | 1,500 × $1.20 = $1,800 | 300 × $1.20 = $360 |
+| Purchase of reusable crates | $0 | 120 × $8 = $960 |
+| Washing, including final returns | $0 | 1,200 × $0.25 = $300 |
+| **Total cash cost** | **$1,800** | **$1,620** |
+
+Each completed substitution saves $0.95 after washing. Recovering the $960 purchase through these savings takes **1,011 completed substitutions**, or about 85 per week on average. At the 1,200-loan target, each purchased crate serves an average of ten trips. The comparison charges the entire purchase to the pilot and gives no credit for usable crates on hand at closeout. It assumes no additional transport, paid coordination, or storage charge beyond the stated costs. Any such expense reduces the projected $180 saving dollar for dollar.
+
+Two downside cases show what the board needs to watch. If growers use only 75 crates per week and all come back, 900 loans leave 600 cartons to buy. The combined cost is $960 for crates, $225 for washing, and $720 for cartons, or **$1,905**, which exceeds the baseline by $105. Alternatively, suppose volume reaches 1,200 loans but 2% of issues result in permanent loss. Replacing 24 crates costs $192. Washing the 1,176 returned crates costs $294. With the initial purchase and 300 cartons, that yields **$1,806**, assuming replacements arrive in time to keep issuing loans. Loss at that level would consume the expected saving even before additional labor.
+
+## Funding and operating rules
+
+Reserve $960 for the purchase and $300 for washing. Earmark $360 for the projected residual cartons if members need the cooperative to supply them. This leaves $780 of the $2,400 ceiling uncommitted. If growers buy their own remaining cartons, the treasurer should still record that spending in the combined comparison. The pilot shifts part of the packaging bill from individual growers to the cooperative, so a reduction in members’ carton purchases alone cannot establish that the investment paid off. Require the treasurer’s approval before drawing on the reserve and record the purpose of each draw.
+
+- **Book against actual shipments.** Before purchase, the coordinator should secure grower commitments averaging at least 85 carton replacements per week and identify enough prospective shipments to reach 100. Confirm that each shipment’s buyer accepts the crate and that its capacity suits the produce. Take reservations before each market. If requests exceed clean stock, give each participating grower a first allocation before filling additional requests. Release unclaimed reservations at an agreed pickup time.
+- **Assign custody at pickup.** Give each crate a durable identifier. The dispatch volunteer records its identifier, grower, issue date, and due market. The grower checks its condition and remains responsible for arranging its return, including collection from a buyer who keeps it after delivery. Ask at issue how many cartons the shipment replaces. If two crates replace only one carton, credit one avoided carton in the accounts.
+- **Make returns easy to complete and verify.** Use the same collection point each market week and post the return cutoff early enough for washing before dispatch. Growers empty crates before handing them back. The receiving volunteer scans or records each identifier and gives the grower a receipt. The wash lead keeps incoming crates apart from clean stock, inspects them, washes and dries them, and releases them for issue. Damaged crates go into a marked holding area for assessment.
+- **Resolve overdue loans consistently.** The coordinator contacts the grower after a missed cutoff and agrees on a collection date. After two missed markets, pause new borrowing by that grower until the outstanding crates are returned or accounted for. For a confirmed loss, charge the documented $8 replacement cost, with a board review available for disputed custody or damage. Record any recovery separately. A charge paid by a member helps replenish cooperative funds but does not erase the group’s cost of buying another crate.
+
+## Oversight and expansion decision
+
+The coordinator owns the weekly stock count. At each dispatch, reconcile purchased crates and replacements against clean stock, crates on loan, crates awaiting washing or inspection, and documented write-offs. The treasurer maintains the cash ledger and collects growers’ residual carton counts. Record volunteer hours and additional trips even when no cash changes hands. Those entries will show whether a larger pool could operate on the same terms. At weeks four and eight, share with members the number of cartons displaced, clean-stock shortages, seven-day returns, outstanding loans by age, and spending to date. If uptake falls below break-even pace, ask growers which shipments failed to switch before committing more cash.
+
+Close lending at week 12 and allow two weeks to collect and wash the last issues. At the next board meeting, compare actual combined spending with the cost of serving the **same verified shipment volume** in cartons. Use the actual number of carton purchases avoided, include final washing and replacement obligations, and explain any unresolved inventory. This gives the board a fair comparison if harvest volume differs from the 1,500-use forecast.
+
+Approve expansion only if the pilot produces a combined cash saving, at least 90% of loans return within seven days, final inventory reconciles, and the coordinator can show repeated requests that the existing pool could not fill. Require a named wash lead and a funded labor plan for the larger volume. If those conditions hold, size the next purchase to documented unfilled bookings and keep total stock within 180 spaces. If the pool saves money and meets demand at 120 crates, retain that size. If losses, low uptake, or handling costs absorb the savings, use the remaining serviceable crates while the board reviews the specific cause. This lets the cooperative keep the value of its initial purchase while tying further investment to growers’ actual use.

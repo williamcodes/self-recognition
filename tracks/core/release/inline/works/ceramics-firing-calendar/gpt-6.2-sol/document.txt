@@ -1,0 +1,38 @@
+# Operating analysis for the shared kiln
+
+Schedule **10 firings about three days apart**, with dates published before the month starts. Ten firings provide 400 standard-piece slots for the expected 350 pieces, for **87.5% planned utilization**. At February’s $42 per firing or March and April’s $43, energy would cost **$420 to $430**, leaving $20 to $30 under the $450 budget. Use seven days as an operating target and check progress weekly. February’s 10 firings produced an eight-day median wait, so the calendar needs to control gaps between firings and carryover from one load to the next if it is to save that day.
+
+## What the four months show
+
+Utilization is pieces loaded divided by available slots, at 40 slots per firing. Yield is pieces accepted divided by pieces loaded. The two unit costs answer different operating questions. Energy per loaded piece shows the cost of getting work through the kiln. Energy per accepted piece shows how much energy spending produced usable work.
+
+| Month | Firings | Loaded / available | Utilization | Accepted / loaded | Yield | Energy spend | Energy / firing | Energy / loaded piece | Energy / accepted piece | Median wait |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| January | 8 | 280 / 320 | 87.5% | 257 / 280 | 91.8% | $320 | $40 | $1.14 | $1.25 | 11 days |
+| February | 10 | 320 / 400 | 80.0% | 296 / 320 | 92.5% | $420 | $42 | $1.31 | $1.42 | 8 days |
+| March | 12 | 348 / 480 | 72.5% | 310 / 348 | 89.1% | $516 | $43 | $1.48 | $1.66 | 6 days |
+| April | 9 | 333 / 360 | 92.5% | 312 / 333 | 93.7% | $387 | $43 | $1.16 | $1.24 | 10 days |
+
+April was the most efficient month by energy per accepted piece. Its firings averaged 37 loaded pieces and its yield was the highest. Even though each firing cost $3 more than in January, April’s fuller loads and higher acceptance rate brought the energy cost per accepted piece down to $1.24. March also spent $43 per firing, but averaged 29 loaded pieces per firing and had the lowest yield. April produced two more accepted pieces than March while spending $129 less. The practical comparison is between the cost of producing accepted work and the time members wait for kiln access. April performed well on cost, while March was the only month to meet the proposed wait target.
+
+Median wait fell as firing count rose across the four months, from 11 days at eight firings to six days at 12. The history gives monthly totals, so it cannot isolate the effect of frequency from the spacing of firing dates, when pieces arrived, how much work was already on the shelf, or which pieces could share a load. The same limitation applies to yield. March’s lower yield matters for budgeting, but the monthly figures give no basis for attributing the rejects to the firing schedule.
+
+## Calendar and budget
+
+For a 30- or 31-day month, a simple starting calendar is **days 2, 5, 8, 11, 14, 17, 20, 23, 26, and 29**, shifted as needed for staffed days. Carry the spacing across the month boundary so that the last firing this month and the first firing next month are still close together. Publish the ready-by cutoff for each load and check the shelf ahead of that cutoff. Within compatible work, load the oldest ready pieces first. This gives members a predictable set of opportunities and gives staff a way to spot pieces that will miss more than one firing.
+
+This plan assumes the 350 pieces are expected to become ready for kiln loading during the month and occupy roughly 350 standard-piece slots. It also assumes 10 firings are practical with the studio’s staffing and kiln turnaround. Check the opening shelf count and any unusually large or incompatible work when assigning the dates. An average of 35 pieces per firing leaves five slots per load on paper. Some firings will fill before others, so the value of that spare capacity depends on when and where it is available. Keep the published dates when an ordinary load is a little light. Holding it until it fills would use up the time the regular calendar is meant to save.
+
+Nine firings would use 350 of 360 slots, or **97.2% utilization**. At $43 per firing the energy cost would be $387, but there would be only 10 spare slots for the whole month. A single busy intake period or a load with poor packing fit could use most of that margin. April’s nine-firing schedule also recorded a 10-day median at a lower volume of 333 pieces. Nine is an economical option if sustained demand falls or the studio decides it can accept a longer wait.
+
+Eleven firings would reduce planned utilization to **79.5%** and would require average energy spend of **about $40.91 per firing or less**. That is possible at January’s $40 rate. At February’s $42 rate, 11 firings would cost $462. At the March and April rate, they would cost $473. Twelve firings would cost at least $480 even at the lowest observed rate. March comes closest to the expected volume and shows a six-day median is achievable under one historical schedule, but that month’s $516 spend exceeded the proposed budget by $66.
+
+At $420 to $430 for 10 firings, planned energy cost is **$1.20 to $1.23 per loaded piece** if all 350 pieces are fired. Across the four months, 1,175 of 1,281 loaded pieces were accepted, a pooled yield of **91.7%**. Applying that yield gives about **321 accepted pieces** and **$1.31 to $1.34 in energy per accepted piece**. Use those figures for planning. Actual unit cost will rise if some work carries over or if the share of rejects increases.
+
+## What to monitor before adjusting
+
+- **Shelf age and carryover.** Keep the historical wait definition for month-to-month comparison and record when each piece is ready to load. Review the median for fired pieces alongside the age of pieces still on the shelf and the count already past seven days. The completed-piece median can look better while older work is still waiting. Flag pieces that are approaching seven days and have no place in the next compatible load.
+- **Load size and reasons for deferral.** Record ready pieces, loaded pieces, and occupied capacity at each firing. When something stays behind, capture the reason, such as a full load, fit, firing compatibility, or a missed cutoff. Repeated deferrals from full loads point toward a capacity problem. Older pieces waiting while some firings have room point toward a scheduling or compatibility problem that staff can investigate before adding a firing.
+- **Energy spend and yield.** Track energy cost per firing and forecast the month-end bill using spending to date plus the expected cost of the remaining firings. Record accepted pieces and common defect types by load. Reviewing cost and yield together will show whether a calendar change actually reduces the energy cost per usable piece or simply changes the number of firings.
+
+Review the first three or four firings while there is still time to move a date. If ready work is aging between loads and a later firing has room, bring that firing forward or shift it toward the busiest intake days. If compatible loads repeatedly fill and older pieces keep rolling over, price an 11th firing against actual spending and the cost of every remaining scheduled load. If the extra firing would breach $450, the manager has a concrete choice between funding more kiln time and accepting a longer wait. Start with ten evenly spaced firings, use shelf age to guide changes during the month, and use the full month’s wait, yield, and cost to set the following calendar.

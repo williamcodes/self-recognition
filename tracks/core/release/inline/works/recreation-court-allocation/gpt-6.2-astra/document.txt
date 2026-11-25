@@ -1,0 +1,41 @@
+# Proposal for Next Season’s Evening Court Schedule
+
+The board should allocate the next eight-week season’s 120 evening court-hours as **40 hours for badminton, 48 for pickleball, and 32 for open play**. Each activity would receive exactly the time it used in the most recent season. Pickleball would retain the largest allocation, badminton would receive enough time to serve a program that recently matched pickleball’s attendance, and open play would have four hours a week that residents could use without joining an organized group. The board should approve these hours as the starting schedule and authorize staff to release individual sessions when organizers cancel them. A permanent change in any activity’s share should come back to the board.
+
+## What the three seasons show
+
+The table presents the fictional historical figures in season order. “Request fulfillment” is the percentage of requested court-hours that an activity ultimately used, calculated across all three seasons. It is the most useful measure of utilization available here, with one important qualification. The records tell us how much time people requested and used, but they do not say how much time staff awarded. A gap between requests and use could reflect a scheduling limit, a cancellation, or both.
+
+| Activity | Hours requested | Hours used | Total attendance by season | Request fulfillment | Attendances per used hour, all seasons |
+|---|---|---|---|---:|---:|
+| Badminton | 40, 48, 56 | 32, 36, 40 | 190, 216, 240 | 75.0% | 5.98 |
+| Pickleball | 48, 56, 64 | 40, 44, 48 | 200, 220, 240 | 78.6% | 5.00 |
+| Open play | 32, 36, 40 | 24, 28, 32 | 168, 196, 224 | 77.8% | 7.00 |
+
+Pickleball used the most court time in each season and had the highest overall share of requested hours used. Yet badminton closed the attendance gap. In the first season, badminton recorded 190 attendances to pickleball’s 200. By the third, each recorded 240, with badminton using 40 hours to pickleball’s 48. That difference matters when the board considers the next available hour. Both organized programs have demonstrated demand, and badminton has consistently accommodated roughly one additional attendance per hour.
+
+Open play makes a different claim on the schedule. It averaged exactly seven attendances per used hour in each of the three seasons. In the latest season it recorded 224 attendances, just 16 fewer than either organized sport, despite having eight fewer hours than badminton and 16 fewer than pickleball. Open play also posted the largest attendance gain from the first season to the third, rising by 56, compared with 50 for badminton and 40 for pickleball. Those figures count visits. A regular who attends every week contributes eight attendances, so the board will need additional information to judge how many different residents each program reaches.
+
+## Why allocate 40, 48, and 32 hours
+
+Together the three activities used 96 hours in the first season, 108 in the second, and 120 in the third. Each activity added four used hours from one season to the next. The proposed allocation preserves the full latest season of demonstrated use for all three, with no capacity left over. Latest requests totaled 160 hours. Measured against those requests, the proposed schedule leaves 16 hours unmet for badminton, 16 for pickleball, and eight for open play. Staff should publish those figures alongside the schedule so residents can see the constraint behind the decision.
+
+An equal split of 40 hours apiece would look simple on paper. In practice, it would transfer eight hours from pickleball to open play. Open play’s attendance per hour gives the board a reason to consider that trade, but the records give no indication which pickleball participants could find another session or whether eight additional open-play hours would draw the same attendance as the existing 32. Preserving the latest allocation of *used* time gives staff a defensible starting point. Actual turnaways next season can show where a transfer would do the most good.
+
+For an ordinary week, staff should schedule five court-hours for badminton, six for pickleball, and four for open play. One court available for one hour counts as one court-hour, so staff can run adjacent courts together when that makes a session workable. Spread open play over at least two evenings and give each activity a regular slot during the part of the evening residents most want. Where two activities seek the same desirable slot, alternate it on a published pattern. Post the full eight-week calendar before registration so residents can plan around shifts, transportation, and family commitments.
+
+## Keeping canceled hours in use
+
+Give organizers one cancellation contact and ask them to report an unused booking as soon as they know, preferably at least 24 hours before the session. Staff should acknowledge the notice, update the public calendar, and record the activity, time, number of courts released, and notice received. If an organizer needs only one of two reserved courts, release the spare court and keep the rest of the booking intact. The practical aim is to make even a partial cancellation visible while another group can still use it.
+
+For a cancellation received at least 24 hours ahead, offer the court to the first entry on a shared, time-stamped waiting list that requested that evening and can use the available time. Give the contact two hours during staffed hours to accept, then move to the next eligible entry. Once the session is less than 24 hours away, make any remaining space available for drop-in open play and announce it through the public calendar and front desk at the same time. Residents should be able to join the waiting list online or through the desk. Record the activity that actually takes the court so a replacement session receives credit for its use.
+
+For an apparent no-show, staff should check the court and try the booking contact. After a published ten-minute grace period, the desk may give the remaining time to waiting players. Two missed bookings without notice should prompt a conversation about the organizer’s remaining dates and whether a smaller reservation would be easier to fill. Timely cancellations already returned to the schedule should be recorded separately. That distinction gives organizers a reason to release space early.
+
+## Reviewing whether residents can get a court
+
+At each session, staff should record scheduled and used court-hours, attendance, and the number of people who sought to play but could not be accommodated. Count a resident who waits and eventually plays as an attendance, and record the wait separately. For organized programs, invite the booking contact to report people turned away before they reached the center. Keep those counts distinguishable from front-desk turnaways to reduce double counting. Staff should also offer a short, optional question about whether this was the resident’s first session of the season. It gives the board some indication of reach without requiring people to identify themselves publicly.
+
+At the end of week four, the recreation manager should review those records by activity, day, and start time. A full court with repeated turnaways calls for a different response from a full court that consistently accommodates everyone who arrives. If players are turned away on two comparable evenings while another slot repeatedly goes unused, staff should contact the affected groups and arrange a voluntary, time-limited swap where feasible. Publish any change and its end date. A single quiet night should carry little weight in a decision that affects the remaining weeks.
+
+After week eight, the manager should report actual use as a percentage of **awarded** hours, alongside attendance per used hour, turnaways, waits, cancellations, and hours successfully reassigned. Show which activities received the most-requested evening times. Invite brief comments from residents, including those who tried to attend and could not get a court. With those records, the board can decide whether to change the number of hours assigned to an activity, move an existing session to a better evening, or retain the schedule. The proposed allocation serves the level of participation already demonstrated and gives the board a concrete basis for its next decision.

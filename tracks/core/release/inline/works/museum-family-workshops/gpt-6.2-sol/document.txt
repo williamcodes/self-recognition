@@ -1,0 +1,58 @@
+# Decision paper for the museum education committee
+
+## Recommendation
+
+Schedule **one printmaking workshop, one paper architecture workshop, and two family gallery games workshops**. Estimated supply spending is **$288**, leaving **$52** under the $340 cap. Based on the historical per-event averages, the lineup would offer 112 seats, draw about 101 registrations, and generate about 90 attendances across four sessions.
+
+This lineup gives families two distinct making activities and two opportunities to participate in a gallery-based workshop. Paper architecture had the strongest demand relative to capacity. Printmaking also came close to filling its registration places and had a high survey response rate. Family gallery games drew the largest audiences, converted the most registrations into attendance, and had the lowest supply cost. The recommendation gives those participation results more weight than small differences in reported likelihood of returning.
+
+## Participation and supply costs
+
+The historical figures combine two events per format. The table uses the combined counts to calculate rates and divides the supply spending by two to estimate the cost of a future session. Because all formats require equal staff time, each four-session lineup carries the same staffing commitment.
+
+| Format | Seats offered | Registrations | Attendees | Seats registered | Seats attended | Registrants who attended | Supplies per event |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Printmaking | 48 | 46 | 38 | 95.8% | 79.2% | 82.6% | $112 |
+| Story objects | 60 | 47 | 41 | 78.3% | 68.3% | 87.2% | $55 |
+| Paper architecture | 48 | 48 | 42 | 100.0% | 87.5% | 87.5% | $90 |
+| Family gallery games | 64 | 54 | 50 | 84.4% | 78.1% | 92.6% | $43 |
+
+**Paper architecture** filled all 48 registration places and drew 42 attendees, giving it the highest attendance relative to seats offered. At an estimated $90 per session, it is the stronger choice for the first making slot on participation and cost. Its full registration establishes that the places offered were taken. The figures provide no count of families who may have tried to register after it filled.
+
+**Printmaking** registered 46 people for 48 places. Eight registrants did not attend, giving it the lowest registration-to-attendance conversion of the four formats. It still filled about four in five available seats on the day. At $112 per session, printmaking is the most expensive option. The case for including it rests on strong registration demand and the opportunity to offer a second kind of making activity.
+
+**Family gallery games** drew 50 attendees across two events, or 25 per session, the highest average in the comparison. Its larger seating capacity helped it reach that total, and 50 of its 54 registrants attended. It also had the lowest supply spending per attendee at $1.72, compared with $2.68 for story objects, $4.29 for paper architecture, and $5.89 for printmaking. A second gallery games session draws on the format’s combination of reach, reliable turnout among registrants, and low cost.
+
+**Story objects** attracted 41 attendees across two events, three more than printmaking, and cost just $55 per session. It also had the lowest share of offered seats registered and the lowest share occupied on the day. It would be a reasonable choice if the committee’s priority were to represent all four formats. For this slate, the second gallery games session is projected to draw 4.5 more attendances than a story objects session while saving $12 in supplies.
+
+## Survey results and confidence
+
+| Format | Completed surveys | Share of attendees who responded | Respondents likely to return | Share of respondents likely to return |
+|---|---:|---:|---:|---:|
+| Printmaking | 32 | 84.2% | 25 | 78.1% |
+| Story objects | 35 | 85.4% | 24 | 68.6% |
+| Paper architecture | 25 | 59.5% | 22 | 88.0% |
+| Family gallery games | 40 | 80.0% | 28 | 70.0% |
+
+Paper architecture had the highest stated likelihood of returning among respondents, at 22 of 25. It also had the lowest survey coverage. Seventeen of its 42 attendees did not complete a survey, compared with six each for printmaking and story objects and ten for gallery games. If willingness to complete the survey was related to the experience attendees had, the missing responses could shift the results in either direction. The figures do not establish why people skipped the survey.
+
+The extent of that uncertainty can be illustrated by using all attendees as the denominator. For paper architecture, 22 of 42 attendees, or 52.4%, are recorded as likely to return. If all 17 attendees with missing surveys would also have answered positively, the figure would be 39 of 42, or 92.9%. The equivalent ranges are 65.8% to 81.6% for printmaking, 58.5% to 73.2% for story objects, and 56.0% to 76.0% for gallery games. These are the extremes allowed by the missing responses. They are neither forecasts nor statistical confidence intervals.
+
+The ranges overlap, so a ranking of all attendees by likelihood of returning would depend on assumptions about the people who did not respond. Printmaking’s 25 positive responses cover almost two-thirds of all its attendees, giving the committee a firmer basis for treating its survey result as a sign of interest. Story objects and gallery games differ by just 1.4 percentage points among respondents, too small a gap to drive the selection. Gallery games also recorded the largest number of positive answers, at 28, although it had the largest audience and the most completed surveys. All four results measure stated intention at the time of the survey. The history does not track whether respondents subsequently returned.
+
+For the committee’s decision, paper architecture earns its place through full registration and strong attendance. The survey adds an encouraging signal from those who responded, with limited confidence about the wider audience. Printmaking has stronger survey coverage, and the case for repeating gallery games comes primarily from observed participation.
+
+## Lineup trade-offs
+
+| Four-session lineup | Estimated supplies | Expected attendances |
+|---|---:|---:|
+| **One printmaking, one paper architecture, two gallery games** | **$288** | **90** |
+| One of each format | $300 | 85.5 |
+| Two paper architecture, two gallery games | $266 | 92 |
+| One paper architecture, three gallery games | $219 | 96 |
+
+The alternatives show what the committee gains and gives up through the choice of formats. Offering one of each gives story objects a place and provides the broadest range of activities. Repeating paper architecture instead of including printmaking saves $22 and projects two additional attendances. Running three gallery games sessions and one paper architecture session gives the highest projected attendance and the lowest spending among the options shown, with a single making session. The recommended lineup gives up those projected gains to retain two different making experiences while still offering the gallery activity twice.
+
+These estimates assume that each future session performs like the average of its two historical events and that repeating a format does not materially change demand for it. The combined figures do not show how much turnout or cost varied between individual events. Projected attendances count visits across sessions, so the same family could contribute to more than one session total. The $52 margin leaves room for supply costs to vary, and actual orders should fit within the $340 cap.
+
+Approve **one printmaking session, one paper architecture session, and two family gallery games sessions**. If maximizing projected attendance becomes the committee’s overriding priority, the three-games lineup is the strongest option in the comparison. For a program that values both reach and variety in hands-on making, the recommended lineup offers two distinct making activities alongside the format with the strongest observed turnout.

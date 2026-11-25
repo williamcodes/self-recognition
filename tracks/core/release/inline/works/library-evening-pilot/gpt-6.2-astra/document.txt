@@ -1,0 +1,58 @@
+# Funding proposal for a six-month evening-hours trial at Hill Branch
+
+**Decision requested.** Authorize Hill Branch to stay open for three additional hours on one fixed evening each week for 26 weeks, with total spending capped at $5,000. Two staff members would cover every added hour at $24 per person per hour. Scheduled wages would total $3,744, leaving up to $1,256 for any required payroll charges and other verified trial expenses. The authorization would expire after week 26. Trustees would then decide, using attendance, service, and cost records, whether to fund an ongoing evening, test a shorter extension, or return to the previous schedule.
+
+Hill is the better site for a first trial because it consistently served more people near closing and received more requests for later hours. The unresolved question is how far that demand extends into the evening. Opening for three hours and measuring each hour separately gives trustees evidence for a decision that the historical figures alone cannot settle.
+
+## Why Hill should host the trial
+
+Each branch recorded 20 evenings per month from September through December, giving each site 80 measured evenings. The table pairs the number of visits during the final open hour with the number of recorded requests for later hours. The figures are fictional planning data.
+
+| Month | Hill final-hour visits | Market final-hour visits | Hill requests | Market requests |
+|---|---:|---:|---:|---:|
+| September | 210 | 150 | 22 | 18 |
+| October | 240 | 165 | 31 | 17 |
+| November | 225 | 180 | 28 | 20 |
+| December | 285 | 195 | 39 | 21 |
+| **Four-month total** | **960** | **690** | **120** | **76** |
+
+Hill averaged **12 visits per measured evening during the final open hour**, compared with **8.63 at Market**. Because both branches measured the same number of evenings, the totals can also be compared directly. Hill recorded 270 more final-hour visits, about 39% more than Market. It led in every month, including November, when its own count dipped. Recorded requests point in the same direction. Hill received 44 more requests over four months and led on this measure in each month.
+
+Market also has a credible case for later service. Its final-hour count rose every month, from 150 in September to 195 in December. Selecting Hill gives the library the stronger starting point under a budget that covers one site. During the trial, Market should continue recording requests for later hours so its patrons’ interest remains visible when trustees next consider how to allocate evening service.
+
+The records leave two questions open. A request may come from someone who has asked before, so 120 requests cannot be counted as 120 prospective patrons. And a visit shortly before the current closing time tells us little about whether that patron would use the building three hours later. For those reasons, the proposal uses current demand to select the site and sets a separate attendance target for the extension.
+
+## Service and delivery
+
+The director should choose a recurring weekday that can be staffed reliably for the full trial. If dated attendance records are available, the director should use them to identify a well-used evening at Hill. The choice should also take account of public transport at the proposed closing time and any building-access restrictions. Publishing all 26 dates and a consistent closing time before launch will let patrons plan around the service. Both branches should display the schedule, including a clear indication that the extended evening takes place at Hill.
+
+Patrons should be able to use the services that make an ordinary library visit worthwhile, including borrowing and returning materials, collecting holds, using computers and Wi-Fi, studying, and asking staff for assistance. Both staff members must be on duty throughout the extension. Before announcing the dates, the director should confirm coverage for breaks, absences, and closing duties and establish how patrons will be notified if an evening has to be canceled. Each cancellation and its cause should appear in the trial record so trustees can assess whether patrons could rely on the published schedule.
+
+## Cost and spending controls
+
+| Budget item | Calculation | Amount |
+|---|---|---:|
+| Added public service | 26 evenings × 3 hours | 78 hours |
+| Staff time | 78 hours × 2 staff | 156 staff-hours |
+| Wages per evening | 3 hours × 2 staff × $24 | $144 |
+| **Scheduled wages for the trial** | **26 evenings × $144** | **$3,744** |
+| Maximum available for other trial costs | $5,000 less $3,744 | $1,256 |
+| **Maximum total expenditure** | | **$5,000** |
+
+The wage calculation covers the hours when the building is open to the public. Before launch, the director should price any paid setup or closing time outside those hours, employer payroll charges, security, cleaning, utilities, and notices that the extension would add. The $1,256 is the maximum available for all such costs combined. The director should confirm that the full schedule fits within the cap and refer the proposal back to trustees if verified costs exceed it. Extending both branches on this schedule would cost $7,488 in scheduled wages alone.
+
+The director should review actual spending and outstanding commitments monthly. Trustees should receive both the total and a breakdown showing which expenses would recur if the evening became permanent. For example, printing the initial schedule may be a one-time expense, while an extra charge for locking the building would recur each week. That distinction will make the final accounts useful for setting a future budget.
+
+## How trustees will evaluate the trial
+
+The board should adopt the following measures before the first evening. The proposed attendance benchmark is **six visits per added public hour**, half Hill’s historical final-hour average. That is a judgment about what would justify continued funding. It allows for lighter use later at night while requiring sustained attendance across the extension. Across all 78 planned hours, the benchmark amounts to **468 visits**, or an average of **18 per evening**.
+
+1. **Measure attendance by hour.** Staff should count entries separately in the last regular hour and in each of the three added hours, using the same method throughout the trial. They should also record how many patrons are already inside at the former closing time. Someone who arrives earlier and stays to finish an assignment benefits from the extension without generating a new entry. Reporting those patrons separately recognizes that use and avoids counting one arrival twice. The final report should give the total, hourly averages, and the number of evenings meeting the 18-visit benchmark so trustees can see whether a few busy nights drove the result.
+
+2. **Measure cost per visit and reliability.** Divide actual trial spending by recorded entries during the added hours. At 468 visits, scheduled wages would be $8.00 per visit. Spending the entire authorization would bring the figure to about $10.68 per visit. Trustees should use $10.68 as the proposed cost-per-visit ceiling for renewal, alongside the firm $5,000 spending cap. The report should also show evenings and hours delivered against the 26 evenings and 78 hours promised. Cancellations should remain visible even if attendance on the remaining nights was strong.
+
+3. **Find out what access the evening provided.** Offer a brief, anonymous question at departure asking whether the patron could have made the visit during regular hours that week. An optional second question should ask which service they came to use. Staff should offer the questions to patrons who stayed past the former closing time as well as those who arrived later. Report the number who responded alongside the answers. These responses can show, for example, whether later computer access mattered to patrons who otherwise could not come that week. Participation should be voluntary and require no library card number or identifying details.
+
+At week 13, the director should present attendance by hour, patron feedback, cancellations, spending to date, and the projected final cost. Trustees can use that review to address an operational problem, such as notices that give the wrong closing time, while keeping the original measures in place. The director should flag holiday closures, unusual events, and service interruptions so the board can interpret their effect on the figures.
+
+Within 30 days of the final evening, trustees should vote on the next schedule. Renewal of the full extension should require at least 468 added-hour visits, actual spending within $5,000, and a cost per visit at or below $10.68. Trustees should also review whether the third hour saw regular use, whether staffing proved reliable, and what patrons said the extension made possible. If attendance concentrates in the first two hours, the director should cost a two-hour option using the visits observed in those hours. If demand is weak throughout or reliable coverage is unaffordable, the trial should end as scheduled. Any continuing service would require a new appropriation based on the hours trustees choose to support.

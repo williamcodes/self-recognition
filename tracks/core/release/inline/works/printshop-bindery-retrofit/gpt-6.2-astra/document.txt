@@ -1,0 +1,73 @@
+# Capital proposal for booklet binding
+
+## Decision requested
+
+Approve the **$7,600 replacement binder**, subject to a fixed installed price, a vendor commitment to complete the changeover within one eight-hour closure, and an expected service period of at least three years. At the projected reductions in rework and overtime, the replacement pays for itself in **18.6 months** against continued operation. It recovers its **$4,400 premium over the retrofit in 21.3 months**. Over three years, it leaves the shop $7,104 ahead of continued operation and $3,025 ahead of the retrofit, rounded to the nearest dollar.
+
+The $3,200 retrofit is a sound alternative if the owners need to conserve cash or expect to use the binder for less than two years. It has the shorter standalone payback and requires less than half the upfront cash. The case for spending more rests on whether the replacement can consistently eliminate overtime as well as improve binding quality. The shop should test both claims before placing an order.
+
+## What the current binder costs
+
+Over the four months supplied, the binder processed 84,000 booklets. Of those, 2,955 required rework, a volume-weighted rate of 3.52%. At $0.40 per affected booklet, rework cost $1,182. Binding also consumed 42 overtime hours at $32 per hour, costing $1,344. Together, these two costs averaged $631.50 per month.
+
+| Month | Booklets processed | Booklets reworked | Rework cost | Overtime hours | Overtime cost | Combined cost |
+|---|---:|---:|---:|---:|---:|---:|
+| 1 | 18,000 | 540 | $216 | 8 | $256 | $472 |
+| 2 | 21,000 | 735 | $294 | 11 | $352 | $646 |
+| 3 | 20,000 | 680 | $272 | 9 | $288 | $560 |
+| 4 | 25,000 | 1,000 | $400 | 14 | $448 | $848 |
+| **Total** | **84,000** | **2,955** | **$1,182** | **42** | **$1,344** | **$2,526** |
+
+The busiest month also had the highest rework rate, at 4.0%, and accounted for one-third of the period’s binding overtime. Four observations cannot establish that higher volume caused either result. They do, however, give the shop a reason to include a demanding production job in the vendor trial. A short demonstration using only an easy format would leave much of the financial question unanswered.
+
+For planning, repeating the four-month period three times gives annual production of 252,000 booklets, annual rework cost of $3,546 and annual binding overtime cost of $4,032. **Continued operation therefore carries an estimated $7,578 per year in the two measured costs.** This estimate assumes a similar job mix and workload across the year. The owners can check that assumption against the order book before committing capital.
+
+## Economics of the three choices
+
+The retrofit is projected to reduce rework by 40% and overtime by 25%. Applied separately to their annual cost bases, those improvements save $1,418.40 in rework and $1,008 in overtime. The replacement’s projected reductions of 70% and 60% save $2,482.20 and $2,419.20 respectively. The comparison credits overtime savings when the shop can actually remove paid hours from the schedule.
+
+| Measure | Continue operating | Retrofit | Replace |
+|---|---:|---:|---:|
+| Initial outlay | $0 | $3,200 | $7,600 |
+| Annual rework and overtime cost after change | $7,578.00 | $5,151.60 | $2,676.60 |
+| Annual savings against current operation | $0 | $2,426.40 | $4,901.40 |
+| Simple payback against current operation | — | 15.8 months | 18.6 months |
+| Three-year savings after initial outlay | $0 | $4,079.20 | $7,104.20 |
+
+The timing matters for a small shop. After one year, the retrofit still has $773.60 of its purchase price to recover, while the replacement has $2,698.60 to recover. The replacement then gains $2,475 per year on the retrofit. At the end of year two, its cumulative advantage is just $550. A modest installation overrun could use up that two-year advantage, which is why the installed price belongs in the approval conditions.
+
+These are simple, undiscounted cash comparisons starting when the equipment enters service. They assign no value to possible extra sales, improved delivery performance or resale of the existing binder. Financing, differences in service charges and any lost production during the closure are also outside the figures supplied. Before signing, the owners should obtain delivery, rigging, installation, training and service prices in writing and update the comparison for any additional costs. They should also confirm that the $0.40 rework allowance and the overtime charge cover separate expenses so the same labor is counted only once.
+
+## Sensitivity to lower savings
+
+The table tests what happens if each option delivers only part of its projected dollar savings while the purchase price stays fixed. At 75% realization, for example, the replacement reduces rework by 52.5% and overtime by 45%. Three-year net savings are measured against keeping the current binder and include the initial outlay.
+
+| Share of projected savings achieved | Retrofit payback | Replacement payback | Retrofit three-year net | Replacement three-year net |
+|---|---:|---:|---:|---:|
+| 100% | 15.8 months | 18.6 months | $4,079 | $7,104 |
+| 75% | 21.1 months | 24.8 months | $2,259 | $3,428 |
+| 50% | 31.7 months | 37.2 months | $440 | −$248 |
+
+At 75% realization, the replacement still earns about $1,169 more than the retrofit over three years. At 50%, the retrofit leads and is the only investment to recover its cost within that period. If both options achieve the same proportion of their forecasts, the replacement needs roughly **59.3% of the projected incremental savings** to justify its premium over three years.
+
+Overtime deserves a separate check because it may depend on staffing and dispatch deadlines as much as on binder performance. If both machines deliver their full rework improvements but neither reduces paid overtime, the retrofit returns $1,055 over three years after purchase, while the replacement falls about $153 short of recovering its price. The production lead should review the 42 recorded overtime hours with the scheduler and identify which shifts could actually have ended earlier. If that review supports little overtime reduction, choose the retrofit. Continued operation preserves cash and remains reasonable if neither vendor can demonstrate sufficient savings or meet the closure limit.
+
+## Installation within one eight-hour closure
+
+Schedule the closure between committed jobs and complete preparation while the current binder remains available. Have the vendor inspect access, electrical service, floor space and guarding, then deliver and stage the replacement, tools and test stock in advance. Run representative shop stock through the replacement before installation if feasible. The production lead should select a standard booklet and a difficult format, record their existing quality requirements and agree on the acceptance checks with the vendor. Keep the existing binder available for reconnection until the new unit passes.
+
+| Closure window | Work and decision |
+|---|---|
+| Hours 0–1 | Finish the last scheduled job, clear work in progress and have qualified personnel isolate the existing binder. Confirm that the staged equipment and crew are ready. |
+| Hours 1–3 | Move the existing binder to its agreed holding position. Position, level and connect the replacement. Preserve the access needed to restore the old machine. |
+| Hours 3–4 | Have the installer check guards, interlocks, emergency stops and basic machine functions. Release the binder for loaded trials once these checks pass. |
+| Hours 4–6 | Run both selected jobs with the operator. Check binding integrity, alignment and finished appearance against approved samples. Record rejects, adjustments and elapsed time. Make the acceptance or rollback decision by the agreed deadline. |
+| Hours 6–8 | If accepted, finish operator handover and release the first production job. If acceptance fails, use the reserved time to restore the existing binder and verify it with a sample run. |
+
+The eight-hour plan depends on the vendor confirming how long restoration takes. If reconnection and testing require more than two hours, move the decision deadline earlier and complete more of the loaded trial before closure. The owners should authorize the outage only when the installer and production lead agree that either route returns a tested binder to service by hour eight.
+
+## Confirming the return
+
+For the first four months, have the shift lead record booklets processed, rework counts, binding overtime and the reason for each overtime shift. At the historical volume of 84,000 booklets, the replacement projection corresponds to about **887 reworked booklets and 16.8 overtime hours**, compared with 2,955 and 42 in the baseline. If volume changes, compare rework per thousand booklets and review overtime alongside job mix and shift schedules. Use payroll records to verify the cash savings.
+
+Review results after the first month while the installer can still address setup and training issues, then again after four months against the projected **$1,633.80 in four-month savings**. That review gives the owners a direct answer to the question behind the purchase decision: how much binding rework disappeared, how many paid hours came off the schedule, and how quickly the shop is recovering its $7,600 investment.

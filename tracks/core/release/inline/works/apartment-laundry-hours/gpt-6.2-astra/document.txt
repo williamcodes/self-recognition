@@ -1,0 +1,51 @@
+# Shared laundry service review
+
+## Decision for the residents’ committee
+
+The committee should pilot **40 additional weekday evening cycle slots for one four-week period**. Weekday evenings were the busiest block in both periods. Residents completed 175 of 200 available cycles in the first period and 184 in the second, while logged turnaways rose from 36 to 44. Weekend evenings, the other block the caretaker could extend, had more than 140 unused slots in each period. Adding time on weekday evenings gives the committee a direct way to test whether more capacity at a popular time improves access.
+
+Keep the existing 200 weekday evening slots available on their usual terms during the pilot. Make the 40 additional slots bookable, with an in-person option, so residents can plan around the new times. This also gives the committee a limited setting in which to assess how well in-person booking works before considering reservations across existing hours. The pilot can establish whether this combination delivers a better service. A decline in turnaways alone would leave open how much of the improvement came from the extra time and how much came from knowing a washer was booked.
+
+## What the two periods show
+
+Each figure below covers four weeks. Utilization is completed cycles divided by the 200 slots offered in that block. A turnaway is a logged visit on which the resident could not use a washer. The same resident may account for several visits.
+
+| Time block | Period 1 completed | Period 1 utilization | Period 1 turnaways | Period 2 completed | Period 2 utilization | Period 2 turnaways |
+|---|---:|---:|---:|---:|---:|---:|
+| Weekday mornings | 71 | 35.5% | 8 | 78 | 39.0% | 10 |
+| Weekday evenings | 175 | 87.5% | 36 | 184 | 92.0% | 44 |
+| Weekend mornings | 113 | 56.5% | 22 | 119 | 59.5% | 29 |
+| Weekend evenings | 56 | 28.0% | 5 | 59 | 29.5% | 7 |
+| **All blocks** | **415** | **51.9%** | **71** | **440** | **55.0%** | **90** |
+
+Across the building, residents completed 25 more cycles in the second period. Logged turnaways also increased, by 19. Both measures rose in every block, and the ranking of the blocks stayed the same. The overall utilization figure of 55% therefore gives an incomplete picture of service in the second period. A resident arriving on a weekday evening faced a substantially different situation from one able to come on a weekend evening.
+
+Weekday evenings accounted for 44 of the 90 second-period turnaways, just under half. Weekend mornings accounted for another 29, taking the two busiest blocks together to 73 of 90. Weekend mornings deserve particular attention because 81 slots went unused even as turnaways reached 29. Residents might be arriving in a short rush or finding that the slots still available are too late for them to finish. The totals cannot distinguish those possibilities. Recording the time of a turnaway would help the committee locate the difficulty more precisely.
+
+Turnaways measure the inconvenience of unsuccessful visits. For a 48-unit building, 44 weekday evening turnaways in four weeks could represent a recurring difficulty for a small group or a problem spread across many households. A resident who made two unsuccessful trips and then completed one wash contributes two turnaways and one cycle. It would therefore be a mistake to read 44 turnaways as 44 additional cycles that residents would have completed. Equally, both unsuccessful trips cost that resident time, so repeat visits belong in the service review even when the wash eventually gets done.
+
+## Why test weekday evening capacity first
+
+Forty extra weekday evening slots would raise the four-week allocation from 200 to 240, an average of ten extra cycles a week. The most recent period had only 16 unused weekday evening slots. Reservations within those hours might help residents find some of those openings and save a trip when the room is full. Even if every opening were filled, however, the existing schedule could accommodate only 16 more completions than it did in that period. The extension gives residents more room to shift a wash while keeping a weekday evening routine.
+
+The case for adding weekend evening hours is weaker. In the second period, 59 cycles were completed and 141 slots went unused in that block. Seven turnaways suggest some difficulty even there, but the committee has little evidence that a longer weekend evening would address it. Posting the quieter times may help residents with flexible schedules. The pilot should still be judged on whether it helps people who need a weekday evening wash.
+
+A reservations-only pilot would be a reasonable lower-capacity-cost option if the main difficulty is uncertainty about washer availability. It has particular promise for weekend mornings, where substantial spare capacity coexists with repeated turnaways. For the first trial, changing access rules across all existing hours would expose more residents to the inconvenience of booking and make comparisons with earlier periods harder. Preserving the familiar walk-in hours gives residents a fallback while the committee learns how they use the extension.
+
+## Running the pilot and protecting in-person access
+
+Before the pilot, post the exact extra times in the laundry room and at the in-person booking point. Use a short resident preference check to help the caretaker place the new slots on evenings when residents can use them, including enough time to finish a cycle before closing. Publish the booking opening time, the cancellation procedure and the point at which an unclaimed washer becomes available to someone waiting. A resident reading the notice should be able to arrange, change and use a booking entirely in person.
+
+If the committee also accepts remote bookings, use one schedule so a slot confirmed at the desk immediately disappears from remote availability. Open bookings while the desk is staffed. As a starting allocation, protect five of each week’s ten extra slots for in-person requests, spread across the available evenings. Release any unclaimed protected slots to all residents at a posted time. Half is a trial allocation chosen without evidence about channel preference. The caretaker should record when the protected slots run out and when they go unused, so the committee can adjust both their number and their timing.
+
+Assess in-person access from the **first request through the completed wash**. For each booking channel, record requests received, requests filled within the resident’s stated acceptable times, bookings accepted outside those times, requests left unfilled and booked cycles completed. A request that ends when the caretaker says “nothing available” belongs in the count. Give each request a simple reference so a resident checking back about the same wash can be counted once for booking success while the extra trip is recorded separately.
+
+Report in-person requests filled within acceptable times as a count and a fraction of all in-person requests. Compare that result with remote requests, alongside the time residents waited for a usable slot and the number of repeat trips. Include a short paper feedback slip available in the laundry room throughout opening hours. Ask whether the resident could reach the booking desk, whether they obtained a suitable time and, if they gave up before asking, what stopped them. Desk records alone will miss the resident whose work hours coincide with every booking window.
+
+## How to decide after four weeks
+
+Continue the original completion and turnaway counts in all four blocks. Record walk-in turnaways separately from unsuccessful booking requests to preserve the comparison with earlier periods. For weekday evenings, show completions in the original hours and the extension separately, then report their combined total against 240 offered slots. With the larger denominator, utilization could fall even while more residents complete washes and fewer make wasted trips. Report the caretaker’s additional hours alongside these outcomes so the committee can weigh the service gain against the staffing commitment.
+
+A practical case for continuing would be **more than 184 weekday evening completions and fewer than 36 walk-in turnaways**, improving on both earlier periods on their respective measures. Treat those figures as decision guides. Check whether booking refusals or turnaways in other blocks suggest the difficulty has moved, and review the in-person figures even if the overall targets are met. With small numbers, a report such as “three of eight in-person requests could not get a suitable time” is more informative than a percentage alone.
+
+If new slots go unused while residents are still turned away earlier on the same evenings, change the timing before paying for another identical extension. If the slots fill but in-person residents repeatedly miss out, adjust the staffed booking window or the protected allocation. If extra hours yield few additional washes and residents chiefly value knowing when a washer will be free, the next trial should test reservations within existing hours. The committee’s decision can then rest on completed washes, trips saved and the experience of residents who need to make arrangements face to face.

@@ -1,0 +1,61 @@
+# Annual greenway upkeep plan
+
+Allocate the 275 volunteer hours as follows: **82 hours to Depot, 71 to Canal, 66 to Meadow, and 56 to Orchard.** Give Depot the most time because it has both the longest route and the heaviest recorded collection workload. Give Canal first consideration for extra visits if its sharp rise in overflow reports continues. Retain regular coverage on Meadow, where volunteers have 1.4 km to inspect even when bins are quiet, and on Orchard, where reports declined but volunteers still collected more than 50 bags per kilometre.
+
+The group worked 310 hours last year, so the plan must absorb a reduction of 35 hours, or about 11%. Every segment receives fewer hours under this allocation. The coordinator should tell volunteers where shorter visits or fewer trips are expected and ask them to record unfinished work. Otherwise, a fall in next year’s collections could look like an improvement when crews simply ran out of time.
+
+## Workload and overflow trends
+
+The table treats the supplied bag counts as last year’s collections and pairs them with last year’s volunteer hours. Overflow reports compare this year with last year. Keeping those periods clear matters because the group has no figure for hours worked this year, so it cannot tell whether the latest reports rose or fell alongside volunteer coverage.
+
+| Segment | Last year’s hours per km | Last year’s bags per km | Last year’s bags per volunteer hour | Overflow reports, last year → this year | Change in reports per km |
+|---|---:|---:|---:|---:|---:|
+| Canal | 70.0 | 80.0 | 1.14 | 11 → 19 | +6.7 |
+| Orchard | 76.3 | 52.5 | 0.69 | 9 → 7 | −2.5 |
+| Depot | 57.5 | 83.8 | 1.46 | 21 → 28 | +4.4 |
+| Meadow | 52.1 | 41.4 | 0.79 | 5 → 5 | 0.0 |
+
+**Depot has the strongest claim on routine collection time.** Volunteers collected 134 bags there, just over 40% of the greenway’s 330 bags, in about 30% of its hours. Length explains some of that workload, but Depot also leads after adjusting for distance, at 83.8 bags per km. Its 28 overflow reports amount to 17.5 per km this year, the highest current rate. A Depot shift that repeatedly ends with bags still to collect would therefore deserve close attention at the quarterly review.
+
+**Canal shows the fastest deterioration in reported conditions.** Its eight additional reports represent a 73% rise from 11, compared with Depot’s seven additional reports and 33% rise from 21. Canal also has the larger increase per kilometre. Across the full five-kilometre greenway, reports rose from 46 to 59, a net increase of 13. Canal and Depot together accounted for 15 additional reports, partly offset by two fewer at Orchard. For scheduling, those figures answer different questions. Depot has the greatest current volume, while Canal gives the coordinator the strongest reason to investigate what has changed.
+
+**Orchard and Meadow warrant different kinds of coverage.** Orchard received the most volunteer time per kilometre last year. Its decline from nine reports to seven is encouraging, but those figures alone cannot establish whether the previous level of attention helped keep bins manageable. Meadow has the lowest bag density and five reports in each year. Its length still makes a full inspection a substantial commitment. On both routes, crews should record how much of the segment they reached so the coordinator can distinguish a quiet route from a partly inspected one.
+
+Bags per hour describe what volunteers collected during the time available. They help explain why Depot shifts may fill quickly, but they would make a poor target for crews. Walking between bins, carrying bags to a pickup point, and inspecting a clean stretch all consume time. The history gives no bag weights, bin counts, or visitor numbers. Reports per kilometre support a comparison across routes of unequal length, while leaving open whether individual bins overflow more often or whether more people are present to report them.
+
+## How the hours were assigned
+
+First reserve 40 hours for each segment, using 160 hours and leaving 115. Divide those remaining hours equally between two demands on volunteers. Allocate 57.5 hours in proportion to route length and 57.5 in proportion to last year’s bag count. Length allows time for walking and inspection across the whole route. Collection share directs additional time toward places where crews have demonstrated work to do. The equal weighting is a planning judgment that the coordinator can revisit once volunteers have recorded time spent on each activity.
+
+| Segment | Guaranteed hours | Additional hours after rounding | Annual hours | Change from last year |
+|---|---:|---:|---:|---:|
+| Canal | 40 | 31 | **71** | −13 |
+| Orchard | 40 | 16 | **56** | −5 |
+| Depot | 40 | 42 | **82** | −10 |
+| Meadow | 40 | 26 | **66** | −7 |
+| **Total** | **160** | **115** | **275** | **−35** |
+
+Canal takes the largest cut despite its rising reports. That is the main trade-off to monitor. Last year it received 70 hours per km against Depot’s 57.5, although the two had similar bag densities. The proposed plan narrows that difference while still assigning Canal about 59 hours per km against Depot’s 51. Start Canal’s shifts by checking the locations behind the increase. If repeated inspections find fresh overflows after bins have been emptied, Canal has a stronger case for additional hours.
+
+## How repeat reports could change the decision
+
+Several walkers may report the same full bin before anyone empties it. As an illustration, if eight of Canal’s 19 reports were additional descriptions of already reported overflows, this year’s count would fall to 11 distinct incidents. If last year’s 11 reports each described a separate incident, the apparent increase would disappear. The historical records do not establish either assumption. Apply the same review to both years wherever the detail permits, especially before interpreting a percentage change on a small segment.
+
+Give each bin a simple location code and log the first report time, subsequent reports, and the observed clearance time. Link reports that clearly concern the same unresolved overflow. Count a new overflow after confirmed clearance as a new incident, and flag cases with uncertain timing. Keep the original report count as well. Six reports about one bin left full over a weekend may point to a clearance delay, while six separate overflows after six clearances may call for a different emptying schedule. The initial hour allocation uses length and bags, so duplicate reports would chiefly change where crews check first and whether the coordinator moves hours later.
+
+## Quarterly volunteer review
+
+Use the following hours as a starting roster. The history gives no seasonal breakdown, so the small differences between quarters are rounding choices. Count volunteer time consistently: a two-hour shift with three people uses six hours.
+
+| Segment | Q1 | Q2 | Q3 | Q4 |
+|---|---:|---:|---:|---:|
+| Canal | 18 | 18 | 18 | 17 |
+| Orchard | 14 | 14 | 14 | 14 |
+| Depot | 20 | 21 | 21 | 20 |
+| Meadow | 16 | 17 | 17 | 16 |
+| **Total** | **68** | **70** | **70** | **67** |
+
+- **Quarter 1 — establish coverage.** Give each shift lead a route sheet for volunteer hours, distance inspected, bags collected, bin condition, and work left unfinished. At quarter-end, compare actual hours with the roster and mark gaps on the route map. Check the locations behind Canal’s reports and identify any stretch of Depot that crews routinely fail to finish.
+- **Quarter 2 — test one scheduling change.** Review distinct overflows alongside clearance delays and volunteer observations. If a bin repeatedly fills before a scheduled visit, move an existing visit closer to that period. Record what changed and what improvement the crew expects. Keep track of route coverage so attention to a single bin does not leave a distant section unchecked.
+- **Quarter 3 — decide whether to transfer hours.** Compare the trial period with earlier visits, taking account of how often crews inspected the location. If Canal or Depot still has verified recurring overflows or unfinished collections, move an upcoming shift from a segment whose crews are completing their rounds. Record the hours transferred and confirm that each segment can still receive its promised 40 hours within the 275-hour budget.
+- **Quarter 4 — close the year.** Reconcile actual hours by segment, check delivery against the guarantee, and summarize collections, inspected distance, distinct incidents, and clearance delays. Ask each crew which task most often went unfinished and where a change in visit timing helped. Use those observations alongside the annual totals to decide how much of the following year’s time belongs in route inspection and how much in collection.
