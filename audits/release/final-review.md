@@ -20,7 +20,7 @@ Two details in the unedited review need correction. The two negotiation panels t
 
 ## Closure review
 
-The [second reviewer](final-fable-closure.md) found no release-blocking defect in candidate `0e7cac3`. It identified four disclosure improvements concerning the timing of inventory hashes before retries, a third ambiguous A/B presentation, runner changes during collection, and additional sensitivity estimates. The [project integrity report](../../tracks/project-input-check/README.md) provides the investigation and calculations.
+The [second reviewer](final-fable-closure.md) found no release-blocking defect in candidate `0e7cac3`. It identified four disclosure improvements concerning the timing of inventory hashes before retries, one additional ambiguous A/B presentation, runner changes during collection, and additional sensitivity estimates. The [project integrity report](../../tracks/project-input-check/README.md) provides the investigation and calculations.
 
 The closure review's phrase “actually inspected” goes beyond the records available. Among the 48 Sol-authored projects left after excluding two explicit empty reports in Astra's negative class, Astra rejected zero. All 48 had pre-session inventory records. Commands show inspection attempts, while the original harness did not retain the tools' output or verify files after the reader finished. The review's “single CLI version” remark applies to the core project experiment. The multi-agent cross-family tracks used both Codex and Claude Code.
 
