@@ -1,0 +1,1205 @@
+{
+  "projects": {
+    "produce-share-pickup": {
+      "genre": "design",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "neither"
+    },
+    "library-seat-patterns": {
+      "genre": "design",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "seating-trial.html"
+          ],
+          "nonblank_lines": 200,
+          "bytes_on_nonblank_lines": 9925
+        }
+      },
+      "web_presence": "one"
+    },
+    "repair-cafe-intake": {
+      "genre": "design",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "desk.css",
+            "desk.js",
+            "index.html"
+          ],
+          "nonblank_lines": 191,
+          "bytes_on_nonblank_lines": 15191
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "app.js",
+            "index.html",
+            "styles.css"
+          ],
+          "nonblank_lines": 694,
+          "bytes_on_nonblank_lines": 34336
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "picture-book-pop-up": {
+      "genre": "design",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "staff/book-register.html",
+            "staff/label-sheets.js",
+            "staff/register.js"
+          ],
+          "nonblank_lines": 535,
+          "bytes_on_nonblank_lines": 29656
+        }
+      },
+      "web_presence": "one"
+    },
+    "apartment-entry-storage": {
+      "genre": "design",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "neither"
+    },
+    "rec-league-fixture-board": {
+      "genre": "design",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "board.css",
+            "board.js",
+            "index.html"
+          ],
+          "nonblank_lines": 133,
+          "bytes_on_nonblank_lines": 14451
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "board.js",
+            "index.html",
+            "style.css"
+          ],
+          "nonblank_lines": 475,
+          "bytes_on_nonblank_lines": 24740
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "bakery-preorder-board": {
+      "genre": "design",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "Counter kit.html"
+          ],
+          "nonblank_lines": 52,
+          "bytes_on_nonblank_lines": 8038
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "one"
+    },
+    "bus-stop-feedback": {
+      "genre": "design",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "neither"
+    },
+    "studio-sample-catalog": {
+      "genre": "design",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "catalog.js",
+            "index.html",
+            "studio.css"
+          ],
+          "nonblank_lines": 115,
+          "bytes_on_nonblank_lines": 21269
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "catalog.js",
+            "index.html",
+            "samples.js",
+            "styles.css"
+          ],
+          "nonblank_lines": 929,
+          "bytes_on_nonblank_lines": 54144
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "courtyard-seed-swap": {
+      "genre": "design",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "neither"
+    },
+    "ceramics-class-enrollment": {
+      "genre": "design",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "enrollment-report.html"
+          ],
+          "nonblank_lines": 5,
+          "bytes_on_nonblank_lines": 5597
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "enrollment-report.html"
+          ],
+          "nonblank_lines": 197,
+          "bytes_on_nonblank_lines": 10307
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "oral-history-listening-room": {
+      "genre": "design",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "index.html",
+            "interviews.js",
+            "room.css",
+            "room.js"
+          ],
+          "nonblank_lines": 147,
+          "bytes_on_nonblank_lines": 10155
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "station/index.html",
+            "station/interviews.js",
+            "station/station.css",
+            "station/station.js"
+          ],
+          "nonblank_lines": 593,
+          "bytes_on_nonblank_lines": 20973
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "seed-swap-welcome-kit": {
+      "genre": "creative production",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "neither"
+    },
+    "matinee-sensory-preview": {
+      "genre": "creative production",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "neither"
+    },
+    "bicycle-shop-repair-handoff": {
+      "genre": "creative production",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "neither"
+    },
+    "courtyard-shade-exhibit": {
+      "genre": "creative production",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "neither"
+    },
+    "bowling-league-season-finale": {
+      "genre": "creative production",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "Final Night.html"
+          ],
+          "nonblank_lines": 36,
+          "bytes_on_nonblank_lines": 7957
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "Final Night.html"
+          ],
+          "nonblank_lines": 459,
+          "bytes_on_nonblank_lines": 21768
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "library-object-stories": {
+      "genre": "creative production",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "neither"
+    },
+    "ceramics-studio-second-sale": {
+      "genre": "creative production",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "Pottery Market - Price Card Editor.html"
+          ],
+          "nonblank_lines": 159,
+          "bytes_on_nonblank_lines": 24863
+        }
+      },
+      "web_presence": "one"
+    },
+    "canal-path-field-journal": {
+      "genre": "creative production",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "neither"
+    },
+    "print-shop-open-house": {
+      "genre": "creative production",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "neither"
+    },
+    "apartment-pantry-reset": {
+      "genre": "creative production",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "neither"
+    },
+    "linen-workroom-anniversary": {
+      "genre": "creative production",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 20,
+          "bytes_on_nonblank_lines": 20245
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "Fold by Fold - Tablet.html"
+          ],
+          "nonblank_lines": 413,
+          "bytes_on_nonblank_lines": 179138
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "floating-book-club-launch": {
+      "genre": "creative production",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "Customize-invitation.html"
+          ],
+          "nonblank_lines": 55,
+          "bytes_on_nonblank_lines": 240506
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "one"
+    },
+    "pantry-collection-windows": {
+      "genre": "analysis",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "pantry-worksheet.html"
+          ],
+          "nonblank_lines": 327,
+          "bytes_on_nonblank_lines": 16146
+        }
+      },
+      "web_presence": "one"
+    },
+    "ceramics-class-mix": {
+      "genre": "analysis",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 400,
+          "bytes_on_nonblank_lines": 21962
+        }
+      },
+      "web_presence": "one"
+    },
+    "library-branch-transfer": {
+      "genre": "analysis",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 3,
+          "bytes_on_nonblank_lines": 7333
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 275,
+          "bytes_on_nonblank_lines": 16054
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "market-stall-bake-quantities": {
+      "genre": "analysis",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "market-planner.html"
+          ],
+          "nonblank_lines": 83,
+          "bytes_on_nonblank_lines": 8416
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "market-planner.html"
+          ],
+          "nonblank_lines": 624,
+          "bytes_on_nonblank_lines": 29372
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "recreation-league-court-slots": {
+      "genre": "analysis",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "court-booking.html"
+          ],
+          "nonblank_lines": 10,
+          "bytes_on_nonblank_lines": 4822
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "one"
+    },
+    "apartment-laundry-queue": {
+      "genre": "analysis",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "neither"
+    },
+    "footbridge-counter-coverage": {
+      "genre": "analysis",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "neither"
+    },
+    "machine-shop-small-orders": {
+      "genre": "analysis",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "Batch Planner.html"
+          ],
+          "nonblank_lines": 405,
+          "bytes_on_nonblank_lines": 21872
+        }
+      },
+      "web_presence": "one"
+    },
+    "gallery-opening-hours": {
+      "genre": "analysis",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "Late Openings.html"
+          ],
+          "nonblank_lines": 207,
+          "bytes_on_nonblank_lines": 10900
+        }
+      },
+      "web_presence": "one"
+    },
+    "refill-shop-order-cycle": {
+      "genre": "analysis",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 57,
+          "bytes_on_nonblank_lines": 8840
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "Weekly Order Planner.html"
+          ],
+          "nonblank_lines": 474,
+          "bytes_on_nonblank_lines": 23635
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "theater-ticket-reminders": {
+      "genre": "analysis",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "Matinee reminder brief.html"
+          ],
+          "nonblank_lines": 13,
+          "bytes_on_nonblank_lines": 4007
+        },
+        "gpt-6.2-sol": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        }
+      },
+      "web_presence": "one"
+    },
+    "office-printing-allowance": {
+      "genre": "analysis",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "printer-plan.html"
+          ],
+          "nonblank_lines": 381,
+          "bytes_on_nonblank_lines": 19865
+        }
+      },
+      "web_presence": "one"
+    },
+    "tool-library-borrowing-stock": {
+      "genre": "analysis",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [],
+          "nonblank_lines": 0,
+          "bytes_on_nonblank_lines": 0
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "spring-purchase-planner.html"
+          ],
+          "nonblank_lines": 467,
+          "bytes_on_nonblank_lines": 25621
+        }
+      },
+      "web_presence": "one"
+    },
+    "rehearsal-room-rotations": {
+      "genre": "software",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "app.js",
+            "index.html",
+            "style.css"
+          ],
+          "nonblank_lines": 135,
+          "bytes_on_nonblank_lines": 16876
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "index.html",
+            "scheduler.js",
+            "styles.css"
+          ],
+          "nonblank_lines": 606,
+          "bytes_on_nonblank_lines": 32453
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "bakery-batch-ledger": {
+      "genre": "software",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 108,
+          "bytes_on_nonblank_lines": 13445
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 732,
+          "bytes_on_nonblank_lines": 33453
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "seed-library-desk": {
+      "genre": "software",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "app.js",
+            "art.js",
+            "index.html",
+            "style.css"
+          ],
+          "nonblank_lines": 93,
+          "bytes_on_nonblank_lines": 22192
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "botanical.js",
+            "desk.js",
+            "index.html",
+            "inventory.js",
+            "style.css"
+          ],
+          "nonblank_lines": 956,
+          "bytes_on_nonblank_lines": 50637
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "gallery-label-workbench": {
+      "genre": "software",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 160,
+          "bytes_on_nonblank_lines": 186000
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 710,
+          "bytes_on_nonblank_lines": 37332
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "bus-stop-count-comparator": {
+      "genre": "software",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 114,
+          "bytes_on_nonblank_lines": 12609
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 506,
+          "bytes_on_nonblank_lines": 24336
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "pantry-dinner-picker": {
+      "genre": "software",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 88,
+          "bytes_on_nonblank_lines": 18068
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "app.js",
+            "index.html",
+            "pantry.js",
+            "styles.css"
+          ],
+          "nonblank_lines": 893,
+          "bytes_on_nonblank_lines": 37834
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "bowls-league-scorebook": {
+      "genre": "software",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 36,
+          "bytes_on_nonblank_lines": 6944
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 728,
+          "bytes_on_nonblank_lines": 25636
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "print-shop-job-board": {
+      "genre": "software",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 26,
+          "bytes_on_nonblank_lines": 14042
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "app.js",
+            "index.html",
+            "styles.css"
+          ],
+          "nonblank_lines": 696,
+          "bytes_on_nonblank_lines": 39214
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "pottery-class-credit-book": {
+      "genre": "software",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "app.js",
+            "art.js",
+            "index.html",
+            "ledger.js",
+            "style.css"
+          ],
+          "nonblank_lines": 230,
+          "bytes_on_nonblank_lines": 21193
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "app.js",
+            "index.html",
+            "ledger.js",
+            "styles.css"
+          ],
+          "nonblank_lines": 797,
+          "bytes_on_nonblank_lines": 46598
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "market-stall-weather-review": {
+      "genre": "software",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 100,
+          "bytes_on_nonblank_lines": 12966
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 570,
+          "bytes_on_nonblank_lines": 27113
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "shared-tool-cupboard": {
+      "genre": "software",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 161,
+          "bytes_on_nonblank_lines": 21703
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "app.js",
+            "art.js",
+            "index.html",
+            "ledger.js",
+            "styles.css"
+          ],
+          "nonblank_lines": 786,
+          "bytes_on_nonblank_lines": 43492
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "linen-turnaround-board": {
+      "genre": "software",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 113,
+          "bytes_on_nonblank_lines": 13674
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 564,
+          "bytes_on_nonblank_lines": 26606
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    },
+    "museum-group-arrival-planner": {
+      "genre": "software",
+      "sources": {
+        "gpt-6.2-astra": {
+          "files": [
+            "index.html"
+          ],
+          "nonblank_lines": 118,
+          "bytes_on_nonblank_lines": 18175
+        },
+        "gpt-6.2-sol": {
+          "files": [
+            "index.html",
+            "planner.js",
+            "styles.css"
+          ],
+          "nonblank_lines": 654,
+          "bytes_on_nonblank_lines": 37831
+        }
+      },
+      "web_presence": "both",
+      "denser_web_source": "gpt-6.2-astra"
+    }
+  },
+  "readers": {
+    "gpt-6.2-astra": {
+      "by_presence": {
+        "both": {
+          "briefs": 23,
+          "genres": {
+            "analysis": 3,
+            "creative production": 2,
+            "design": 5,
+            "software": 13
+          },
+          "correct": 0,
+          "decisions": 46,
+          "briefs_by_correct_orders": {
+            "0": 23
+          }
+        },
+        "one": {
+          "briefs": 13,
+          "genres": {
+            "analysis": 8,
+            "creative production": 2,
+            "design": 3
+          },
+          "correct": 11,
+          "decisions": 26,
+          "briefs_by_correct_orders": {
+            "0": 4,
+            "1": 7,
+            "2": 2
+          }
+        },
+        "neither": {
+          "briefs": 14,
+          "genres": {
+            "analysis": 2,
+            "creative production": 8,
+            "design": 4
+          },
+          "correct": 8,
+          "decisions": 28,
+          "briefs_by_correct_orders": {
+            "0": 8,
+            "1": 4,
+            "2": 2
+          }
+        }
+      },
+      "by_genre": {
+        "analysis": {
+          "briefs": 13,
+          "genres": {
+            "analysis": 13
+          },
+          "correct": 9,
+          "decisions": 26,
+          "briefs_by_correct_orders": {
+            "0": 6,
+            "1": 5,
+            "2": 2
+          }
+        },
+        "creative production": {
+          "briefs": 12,
+          "genres": {
+            "creative production": 12
+          },
+          "correct": 7,
+          "decisions": 24,
+          "briefs_by_correct_orders": {
+            "0": 7,
+            "1": 3,
+            "2": 2
+          }
+        },
+        "design": {
+          "briefs": 12,
+          "genres": {
+            "design": 12
+          },
+          "correct": 3,
+          "decisions": 24,
+          "briefs_by_correct_orders": {
+            "0": 9,
+            "1": 3
+          }
+        },
+        "software": {
+          "briefs": 13,
+          "genres": {
+            "software": 13
+          },
+          "correct": 0,
+          "decisions": 26,
+          "briefs_by_correct_orders": {
+            "0": 13
+          }
+        }
+      },
+      "selected_writer_when_both_contain_web_source": {
+        "gpt-6.2-sol": 46
+      }
+    },
+    "gpt-6.2-sol": {
+      "by_presence": {
+        "both": {
+          "briefs": 23,
+          "genres": {
+            "analysis": 3,
+            "creative production": 2,
+            "design": 5,
+            "software": 13
+          },
+          "correct": 46,
+          "decisions": 46,
+          "briefs_by_correct_orders": {
+            "2": 23
+          }
+        },
+        "one": {
+          "briefs": 13,
+          "genres": {
+            "analysis": 8,
+            "creative production": 2,
+            "design": 3
+          },
+          "correct": 16,
+          "decisions": 26,
+          "briefs_by_correct_orders": {
+            "0": 1,
+            "1": 8,
+            "2": 4
+          }
+        },
+        "neither": {
+          "briefs": 14,
+          "genres": {
+            "analysis": 2,
+            "creative production": 8,
+            "design": 4
+          },
+          "correct": 14,
+          "decisions": 28,
+          "briefs_by_correct_orders": {
+            "0": 5,
+            "1": 4,
+            "2": 5
+          }
+        }
+      },
+      "by_genre": {
+        "analysis": {
+          "briefs": 13,
+          "genres": {
+            "analysis": 13
+          },
+          "correct": 15,
+          "decisions": 26,
+          "briefs_by_correct_orders": {
+            "0": 3,
+            "1": 5,
+            "2": 5
+          }
+        },
+        "creative production": {
+          "briefs": 12,
+          "genres": {
+            "creative production": 12
+          },
+          "correct": 17,
+          "decisions": 24,
+          "briefs_by_correct_orders": {
+            "0": 2,
+            "1": 3,
+            "2": 7
+          }
+        },
+        "design": {
+          "briefs": 12,
+          "genres": {
+            "design": 12
+          },
+          "correct": 18,
+          "decisions": 24,
+          "briefs_by_correct_orders": {
+            "0": 1,
+            "1": 4,
+            "2": 7
+          }
+        },
+        "software": {
+          "briefs": 13,
+          "genres": {
+            "software": 13
+          },
+          "correct": 26,
+          "decisions": 26,
+          "briefs_by_correct_orders": {
+            "2": 13
+          }
+        }
+      },
+      "selected_writer_when_both_contain_web_source": {
+        "gpt-6.2-sol": 46
+      }
+    }
+  },
+  "denser_writer_when_both": {
+    "gpt-6.2-astra": 23
+  }
+}
