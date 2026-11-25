@@ -1,0 +1,22 @@
+[
+  {
+    "audited_local_revision": "f3c1ac465a78a36674fbf7fa5cfbc7380b989ae2",
+    "public_revision": "efda72b2d8043b07a22d4838cc71c382cee31172",
+    "change": "Archive all 100 original documents for the frozen inline panel"
+  },
+  {
+    "audited_local_revision": "7c4f917c20c1e31cdac6d201ccadf155dbef1b87",
+    "public_revision": "50a9040fb002a522f33b36769d1cd697cd8e54c1",
+    "change": "Bind new core model calls to exact prompts, artifacts and durable attempt receipts"
+  },
+  {
+    "audited_local_revision": "62cac0a20db39f8acd3dc57adcf72f2f57948843",
+    "public_revision": "66990e0255b8048318a8c4bb5094752d0196d55d",
+    "change": "Record frozen typography ablation and all 32 paired inputs"
+  },
+  {
+    "audited_local_revision": "f5268cd5358eba38d21152322b755f42823f6734",
+    "public_revision": "e1bec2a2b91abe1f6c3fecc144ee8b93a718db51",
+    "change": "Archive the development pilots separately from the scored release"
+  }
+]
