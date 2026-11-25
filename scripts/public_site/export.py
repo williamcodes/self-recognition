@@ -168,7 +168,8 @@ def pack_project(directory):
             digest = hashlib.sha256(raw).hexdigest()
             info = zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
             info.compress_type = zipfile.ZIP_DEFLATED
-            info.external_attr = 0o100644 << 16
+            info.create_system = 3
+            info.external_attr = (0o100755 if path.stat().st_mode & 0o111 else 0o100644) << 16
             zf.writestr(info, raw)
             ext = path.suffix.lower()
             item = {"name": name, "bytes": len(raw), "sha256": digest, "kind": "binary"}

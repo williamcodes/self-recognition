@@ -45,6 +45,9 @@ def check_work(work, folder, inline):
             name = item["name"]
             contents = source_files[name].read_bytes()
             assert not source_files[name].is_symlink() and zf.read(name) == contents
+            assert bool(zf.getinfo(name).external_attr >> 16 & 0o111) == bool(
+                source_files[name].stat().st_mode & 0o111
+            )
             assert len(contents) == item["bytes"] and hashlib.sha256(contents).hexdigest() == item["sha256"]
             if item["kind"] in {"text", "vector"}:
                 assert contents.decode("utf-8") == item["body"]
@@ -168,6 +171,7 @@ def verify_run(track, run, exported_files=None):
             else:
                 game = source["games"][t["sourceRef"][1]]
                 from tracks.negotiation.run import reader_prompt
+
                 kind = "fresh" if run["id"].endswith("-fresh") else "participant"
                 assert t["exactInput"] == reader_prompt(game, row["role"], kind)
                 assert (
