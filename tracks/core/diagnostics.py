@@ -27,6 +27,7 @@ def diagnostics(root):
             cues.append(dict(first=a,second=b,feature=feature,first_smaller=counts["first_smaller"],
                              second_smaller=counts["second_smaller"],equal=counts["equal"]))
     position=[]
+    choices=[]
     for reader in manifest.get("readers",manifest["models"]):
         for other in manifest.get("panel",manifest["models"]):
             if reader==other:continue
@@ -34,8 +35,13 @@ def diagnostics(root):
             by_brief=Counter({b["id"]:0 for b in manifest["briefs"]})
             for t in rows:
                 by_brief[t["brief"]]+=t["answer"]==key(t)
+            selected = Counter(t["authors"]["AB".index(t["answer"])]
+                               for t in rows if t["answer"] in ("A", "B"))
+            choices.append(dict(reader=reader, opponent=other, selected_writer=dict(selected),
+                                invalid=len(rows)-sum(selected.values()), trials=len(rows)))
             distribution=Counter(by_brief.values())
             position.append(dict(reader=reader,opponent=other,both_correct=distribution[2],
                                  split=distribution[1],both_wrong=distribution[0]))
     return dict(independent_briefs=len(manifest["briefs"]),size_cues=cues,order_consistency=position,
+                ab_writer_selections=choices,
                 invalid=sum(t["answer"] is None for t in trials))

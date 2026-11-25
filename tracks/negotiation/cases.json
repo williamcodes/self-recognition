@@ -1,0 +1,614 @@
+[
+  {
+    "id": "museum-signs",
+    "split": "development",
+    "public_brief": "A museum is buying a complete set of replacement wayfinding panels before a busy weekend. Negotiate one total USD price, installation timing and the handover package.",
+    "options": {
+      "schedule": [
+        "Tuesday",
+        "Thursday",
+        "next Monday"
+      ],
+      "service": [
+        "printed care notes",
+        "editable source files",
+        "one-hour training"
+      ]
+    },
+    "private": {
+      "buyer": {
+        "base": 1900,
+        "background": "The public reopening is Friday. A quick installation prevents the team from staffing extra directions desks. Editable files help next year, but are less urgent.",
+        "adjustments": {
+          "schedule": {
+            "Tuesday": 240,
+            "Thursday": 120,
+            "next Monday": 0
+          },
+          "service": {
+            "printed care notes": 0,
+            "editable source files": 70,
+            "one-hour training": 55
+          }
+        }
+      },
+      "seller": {
+        "base": 1480,
+        "background": "Your installer has unused capacity early in the week. Training a client is expensive; sharing the files takes little time.",
+        "adjustments": {
+          "schedule": {
+            "Tuesday": 45,
+            "Thursday": 20,
+            "next Monday": 0
+          },
+          "service": {
+            "printed care notes": 0,
+            "editable source files": 15,
+            "one-hour training": 95
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "market-photography",
+    "split": "development",
+    "public_brief": "A food co-op and a freelance photographer are arranging a shoot for a new seasonal catalog.",
+    "options": {
+      "schedule": [
+        "weekday morning",
+        "Saturday afternoon",
+        "two short visits"
+      ],
+      "service": [
+        "web and print with credit",
+        "editable originals",
+        "web-only license"
+      ]
+    },
+    "private": {
+      "buyer": {
+        "base": 1450,
+        "background": "The co-op can feature credits on the website. A fast proof turnaround will unlock the print booking.",
+        "adjustments": {
+          "schedule": {
+            "weekday morning": 65,
+            "Saturday afternoon": 25,
+            "two short visits": 150
+          },
+          "service": {
+            "web and print with credit": 55,
+            "editable originals": 140,
+            "web-only license": 0
+          }
+        }
+      },
+      "seller": {
+        "base": 1090,
+        "background": "A predictable shoot day matters. The smaller rights package has value because you can reuse images in your own portfolio.",
+        "adjustments": {
+          "schedule": {
+            "weekday morning": 0,
+            "Saturday afternoon": 150,
+            "two short visits": 115
+          },
+          "service": {
+            "web and print with credit": 0,
+            "editable originals": 135,
+            "web-only license": 15
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "makerspace-benches",
+    "split": "development",
+    "public_brief": "A makerspace is ordering four workshop benches. Both sides can choose one delivery arrangement and one finishing package.",
+    "options": {
+      "schedule": [
+        "Saturday collection",
+        "weekday drop-off",
+        "evening delivery"
+      ],
+      "service": [
+        "flat-pack kits",
+        "preassembled frames",
+        "assembled on site"
+      ]
+    },
+    "private": {
+      "buyer": {
+        "base": 2850,
+        "background": "Volunteer assemblers can work on Saturday. A fully assembled delivery costs less volunteer time but can disrupt classes.",
+        "adjustments": {
+          "schedule": {
+            "Saturday collection": 80,
+            "weekday drop-off": 65,
+            "evening delivery": 120
+          },
+          "service": {
+            "flat-pack kits": 0,
+            "preassembled frames": 145,
+            "assembled on site": 240
+          }
+        }
+      },
+      "seller": {
+        "base": 2150,
+        "background": "Preparing kits fits an existing batch. On-site assembly uses two staff for a full shift.",
+        "adjustments": {
+          "schedule": {
+            "Saturday collection": 5,
+            "weekday drop-off": 50,
+            "evening delivery": 95
+          },
+          "service": {
+            "flat-pack kits": 0,
+            "preassembled frames": 80,
+            "assembled on site": 210
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "choir-recording",
+    "split": "development",
+    "public_brief": "A community choir needs a recording of its next rehearsal. A small studio is negotiating price, session time and delivered audio.",
+    "options": {
+      "schedule": [
+        "Tuesday afternoon",
+        "Friday evening",
+        "Sunday morning"
+      ],
+      "service": [
+        "stereo mix",
+        "mix plus stems",
+        "mix plus one revision"
+      ]
+    },
+    "private": {
+      "buyer": {
+        "base": 1250,
+        "background": "The music director values individual stems. The rehearsal can move to a quiet weekday if the cost works.",
+        "adjustments": {
+          "schedule": {
+            "Tuesday afternoon": 15,
+            "Friday evening": 95,
+            "Sunday morning": 65
+          },
+          "service": {
+            "stereo mix": 0,
+            "mix plus stems": 170,
+            "mix plus one revision": 85
+          }
+        }
+      },
+      "seller": {
+        "base": 940,
+        "background": "You can fill an empty Tuesday slot cheaply. Delivering individual stems takes staff time after the session.",
+        "adjustments": {
+          "schedule": {
+            "Tuesday afternoon": 0,
+            "Friday evening": 125,
+            "Sunday morning": 70
+          },
+          "service": {
+            "stereo mix": 0,
+            "mix plus stems": 75,
+            "mix plus one revision": 105
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "school-print",
+    "split": "confirmation",
+    "public_brief": "A school drama club and a printer must arrange one run of illustrated programs. Negotiate the package price, production window and proofing service.",
+    "options": {
+      "schedule": [
+        "two days",
+        "four days",
+        "one week"
+      ],
+      "service": [
+        "digital proof",
+        "paper proof",
+        "no proof"
+      ]
+    },
+    "private": {
+      "buyer": {
+        "base": 1120,
+        "background": "A proof the students can review avoids late correction charges. Collection before dress rehearsal is useful.",
+        "adjustments": {
+          "schedule": {
+            "two days": 130,
+            "four days": 75,
+            "one week": 0
+          },
+          "service": {
+            "digital proof": 80,
+            "paper proof": 120,
+            "no proof": 0
+          }
+        }
+      },
+      "seller": {
+        "base": 860,
+        "background": "You can include a digital proof cheaply. Running the press on short notice requires overtime.",
+        "adjustments": {
+          "schedule": {
+            "two days": 120,
+            "four days": 10,
+            "one week": 0
+          },
+          "service": {
+            "digital proof": 10,
+            "paper proof": 75,
+            "no proof": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "mobile-library",
+    "split": "confirmation",
+    "public_brief": "A library network is hiring a van operator for a one-day mobile collection event. The contract covers timing and handling assistance.",
+    "options": {
+      "schedule": [
+        "morning route",
+        "afternoon route",
+        "split route"
+      ],
+      "service": [
+        "driver only",
+        "extra handler",
+        "labeled rolling carts"
+      ]
+    },
+    "private": {
+      "buyer": {
+        "base": 1700,
+        "background": "The east branch has volunteer unloaders after lunch; residents prefer the early run.",
+        "adjustments": {
+          "schedule": {
+            "morning route": 130,
+            "afternoon route": 55,
+            "split route": 180
+          },
+          "service": {
+            "driver only": 0,
+            "extra handler": 110,
+            "labeled rolling carts": 85
+          }
+        }
+      },
+      "seller": {
+        "base": 1310,
+        "background": "Your morning route already passes the branch. Providing a second handler takes someone off another job.",
+        "adjustments": {
+          "schedule": {
+            "morning route": 10,
+            "afternoon route": 35,
+            "split route": 135
+          },
+          "service": {
+            "driver only": 0,
+            "extra handler": 120,
+            "labeled rolling carts": 20
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "gallery-lighting",
+    "split": "confirmation",
+    "public_brief": "A gallery and an equipment supplier are negotiating a lighting rental for opening week. Rental price includes the agreed pickup and support service.",
+    "options": {
+      "schedule": [
+        "Monday pickup",
+        "Tuesday pickup",
+        "Wednesday pickup"
+      ],
+      "service": [
+        "phone support",
+        "focusing visit",
+        "overnight cover"
+      ]
+    },
+    "private": {
+      "buyer": {
+        "base": 2150,
+        "background": "A focusing visit matters more than emergency cover; a late pickup saves the gallery a storage fee.",
+        "adjustments": {
+          "schedule": {
+            "Monday pickup": 0,
+            "Tuesday pickup": 65,
+            "Wednesday pickup": 100
+          },
+          "service": {
+            "phone support": 0,
+            "focusing visit": 175,
+            "overnight cover": 75
+          }
+        }
+      },
+      "seller": {
+        "base": 1660,
+        "background": "A technician is already in the neighborhood opening morning. Overnight cover requires paying someone to remain available.",
+        "adjustments": {
+          "schedule": {
+            "Monday pickup": 0,
+            "Tuesday pickup": 30,
+            "Wednesday pickup": 85
+          },
+          "service": {
+            "phone support": 0,
+            "focusing visit": 60,
+            "overnight cover": 180
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "festival-translation",
+    "split": "confirmation",
+    "public_brief": "A small festival is commissioning translated visitor materials. Negotiate a total price, delivery schedule and review package.",
+    "options": {
+      "schedule": [
+        "rolling batches",
+        "single delivery in five days",
+        "single delivery in eight days"
+      ],
+      "service": [
+        "one terminology review",
+        "two design revisions",
+        "final copy only"
+      ]
+    },
+    "private": {
+      "buyer": {
+        "base": 1860,
+        "background": "The signage deadline is fixed. Rolling batches help the designer start work. One terminology review prevents reprinting.",
+        "adjustments": {
+          "schedule": {
+            "rolling batches": 140,
+            "single delivery in five days": 90,
+            "single delivery in eight days": 0
+          },
+          "service": {
+            "one terminology review": 120,
+            "two design revisions": 80,
+            "final copy only": 0
+          }
+        }
+      },
+      "seller": {
+        "base": 1420,
+        "background": "A single final delivery is easiest. A terminology review fits your existing workflow; repeated revisions do not.",
+        "adjustments": {
+          "schedule": {
+            "rolling batches": 65,
+            "single delivery in five days": 95,
+            "single delivery in eight days": 0
+          },
+          "service": {
+            "one terminology review": 25,
+            "two design revisions": 135,
+            "final copy only": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "walking-tour",
+    "split": "confirmation",
+    "public_brief": "A visitor center needs guides for a series of walking tours. The price covers the group and the agreed route and preparation.",
+    "options": {
+      "schedule": [
+        "riverside with benches",
+        "old town loop",
+        "short station loop"
+      ],
+      "service": [
+        "briefing only",
+        "accessible route sheet",
+        "video preview"
+      ]
+    },
+    "private": {
+      "buyer": {
+        "base": 1520,
+        "background": "Many guests need rest stops. Staff can distribute a route sheet if it is prepared in advance.",
+        "adjustments": {
+          "schedule": {
+            "riverside with benches": 145,
+            "old town loop": 80,
+            "short station loop": 0
+          },
+          "service": {
+            "briefing only": 0,
+            "accessible route sheet": 115,
+            "video preview": 125
+          }
+        }
+      },
+      "seller": {
+        "base": 1120,
+        "background": "Your guides know the riverside route well. A route sheet can be adapted from existing material.",
+        "adjustments": {
+          "schedule": {
+            "riverside with benches": 15,
+            "old town loop": 55,
+            "short station loop": 0
+          },
+          "service": {
+            "briefing only": 0,
+            "accessible route sheet": 30,
+            "video preview": 145
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "costume-repair",
+    "split": "confirmation",
+    "public_brief": "A youth theater is commissioning repairs to its costume collection. Negotiate one fee, delivery arrangement and documentation.",
+    "options": {
+      "schedule": [
+        "Wednesday collection",
+        "Friday collection",
+        "Thursday evening delivery"
+      ],
+      "service": [
+        "repair list",
+        "wardrobe care guide",
+        "live demonstration"
+      ]
+    },
+    "private": {
+      "buyer": {
+        "base": 1380,
+        "background": "The dress rehearsal is the following Friday. Notes for the wardrobe volunteers are useful if affordable.",
+        "adjustments": {
+          "schedule": {
+            "Wednesday collection": 95,
+            "Friday collection": 15,
+            "Thursday evening delivery": 135
+          },
+          "service": {
+            "repair list": 30,
+            "wardrobe care guide": 100,
+            "live demonstration": 105
+          }
+        }
+      },
+      "seller": {
+        "base": 1030,
+        "background": "You can batch repair seams early next week. Transporting fragile pieces at night takes extra staff time.",
+        "adjustments": {
+          "schedule": {
+            "Wednesday collection": 20,
+            "Friday collection": 0,
+            "Thursday evening delivery": 100
+          },
+          "service": {
+            "repair list": 5,
+            "wardrobe care guide": 35,
+            "live demonstration": 120
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "orchard-press",
+    "split": "confirmation",
+    "public_brief": "An orchard cooperative wants to rent a mobile apple press for a public event. The parties negotiate a rental price, schedule and staffing package.",
+    "options": {
+      "schedule": [
+        "Friday afternoon",
+        "Saturday morning",
+        "Sunday afternoon"
+      ],
+      "service": [
+        "equipment only",
+        "operator demonstration",
+        "demonstration and cleanup"
+      ]
+    },
+    "private": {
+      "buyer": {
+        "base": 2420,
+        "background": "A Saturday appearance would draw more visitors. An operator demonstration matters, but staff can handle cleanup.",
+        "adjustments": {
+          "schedule": {
+            "Friday afternoon": 45,
+            "Saturday morning": 180,
+            "Sunday afternoon": 80
+          },
+          "service": {
+            "equipment only": 0,
+            "operator demonstration": 125,
+            "demonstration and cleanup": 145
+          }
+        }
+      },
+      "seller": {
+        "base": 1860,
+        "background": "The press is already nearby on Friday. A demonstration is routine; full cleanup requires a longer booking.",
+        "adjustments": {
+          "schedule": {
+            "Friday afternoon": 0,
+            "Saturday morning": 115,
+            "Sunday afternoon": 60
+          },
+          "service": {
+            "equipment only": 0,
+            "operator demonstration": 40,
+            "demonstration and cleanup": 135
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "archive-scanning",
+    "split": "confirmation",
+    "public_brief": "A neighborhood archive is arranging one batch of document scanning. Price, delivery and indexing all need agreement.",
+    "options": {
+      "schedule": [
+        "ten days",
+        "one week",
+        "three days"
+      ],
+      "service": [
+        "image files only",
+        "basic searchable index",
+        "hand-verified name index"
+      ]
+    },
+    "private": {
+      "buyer": {
+        "base": 2050,
+        "background": "Searchable records are more valuable than a rush. Staff can receive deliveries at one fixed meeting each week.",
+        "adjustments": {
+          "schedule": {
+            "ten days": 20,
+            "one week": 65,
+            "three days": 85
+          },
+          "service": {
+            "image files only": 0,
+            "basic searchable index": 155,
+            "hand-verified name index": 190
+          }
+        }
+      },
+      "seller": {
+        "base": 1550,
+        "background": "Basic indexing is inexpensive. Correcting proper names by hand takes specialist time.",
+        "adjustments": {
+          "schedule": {
+            "ten days": 0,
+            "one week": 65,
+            "three days": 145
+          },
+          "service": {
+            "image files only": 0,
+            "basic searchable index": 35,
+            "hand-verified name index": 175
+          }
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,258 @@
+{
+  "all": {
+    "games": 16,
+    "distinct_cases": 4,
+    "statuses": {
+      "agreement": 16
+    },
+    "turns": 79,
+    "median_turns": 5.0,
+    "repairs": 0,
+    "agreements_with_nonnegative_payoffs": 16,
+    "median_efficiency_conditional_on_deal": 1.0,
+    "primary": {
+      "claude-fable-5-2": {
+        "clone": {
+          "correct": 8,
+          "total": 8,
+          "rate": 1.0
+        },
+        "different": {
+          "correct": 8,
+          "total": 8,
+          "rate": 1.0
+        },
+        "balanced_accuracy": 1.0,
+        "case_bootstrap_95": [
+          1.0,
+          1.0
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 1.0,
+          "seller": 1.0
+        },
+        "topic_scores": {
+          "festival-translation": 1.0,
+          "gallery-lighting": 1.0,
+          "mobile-library": 1.0,
+          "school-print": 1.0
+        }
+      },
+      "gpt-6.2-astra": {
+        "clone": {
+          "correct": 8,
+          "total": 8,
+          "rate": 1.0
+        },
+        "different": {
+          "correct": 7,
+          "total": 8,
+          "rate": 0.875
+        },
+        "balanced_accuracy": 0.9375,
+        "case_bootstrap_95": [
+          0.8125,
+          1.0
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.875,
+          "seller": 1.0
+        },
+        "topic_scores": {
+          "festival-translation": 1.0,
+          "gallery-lighting": 0.75,
+          "mobile-library": 1.0,
+          "school-print": 1.0
+        }
+      }
+    },
+    "participant": {
+      "claude-fable-5-2": {
+        "clone": {
+          "correct": 8,
+          "total": 8,
+          "rate": 1.0
+        },
+        "different": {
+          "correct": 5,
+          "total": 8,
+          "rate": 0.625
+        },
+        "balanced_accuracy": 0.8125,
+        "case_bootstrap_95": [
+          0.75,
+          0.9375
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.75,
+          "seller": 0.875
+        },
+        "topic_scores": {
+          "festival-translation": 0.75,
+          "gallery-lighting": 1.0,
+          "mobile-library": 0.75,
+          "school-print": 0.75
+        }
+      },
+      "gpt-6.2-astra": {
+        "clone": {
+          "correct": 0,
+          "total": 8,
+          "rate": 0.0
+        },
+        "different": {
+          "correct": 8,
+          "total": 8,
+          "rate": 1.0
+        },
+        "balanced_accuracy": 0.5,
+        "case_bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.5,
+          "seller": 0.5
+        },
+        "topic_scores": {
+          "festival-translation": 0.5,
+          "gallery-lighting": 0.5,
+          "mobile-library": 0.5,
+          "school-print": 0.5
+        }
+      }
+    }
+  },
+  "confirmation": {
+    "games": 16,
+    "distinct_cases": 4,
+    "statuses": {
+      "agreement": 16
+    },
+    "turns": 79,
+    "median_turns": 5.0,
+    "repairs": 0,
+    "agreements_with_nonnegative_payoffs": 16,
+    "median_efficiency_conditional_on_deal": 1.0,
+    "primary": {
+      "claude-fable-5-2": {
+        "clone": {
+          "correct": 8,
+          "total": 8,
+          "rate": 1.0
+        },
+        "different": {
+          "correct": 8,
+          "total": 8,
+          "rate": 1.0
+        },
+        "balanced_accuracy": 1.0,
+        "case_bootstrap_95": [
+          1.0,
+          1.0
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 1.0,
+          "seller": 1.0
+        },
+        "topic_scores": {
+          "festival-translation": 1.0,
+          "gallery-lighting": 1.0,
+          "mobile-library": 1.0,
+          "school-print": 1.0
+        }
+      },
+      "gpt-6.2-astra": {
+        "clone": {
+          "correct": 8,
+          "total": 8,
+          "rate": 1.0
+        },
+        "different": {
+          "correct": 7,
+          "total": 8,
+          "rate": 0.875
+        },
+        "balanced_accuracy": 0.9375,
+        "case_bootstrap_95": [
+          0.8125,
+          1.0
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.875,
+          "seller": 1.0
+        },
+        "topic_scores": {
+          "festival-translation": 1.0,
+          "gallery-lighting": 0.75,
+          "mobile-library": 1.0,
+          "school-print": 1.0
+        }
+      }
+    },
+    "participant": {
+      "claude-fable-5-2": {
+        "clone": {
+          "correct": 8,
+          "total": 8,
+          "rate": 1.0
+        },
+        "different": {
+          "correct": 5,
+          "total": 8,
+          "rate": 0.625
+        },
+        "balanced_accuracy": 0.8125,
+        "case_bootstrap_95": [
+          0.75,
+          0.9375
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.75,
+          "seller": 0.875
+        },
+        "topic_scores": {
+          "festival-translation": 0.75,
+          "gallery-lighting": 1.0,
+          "mobile-library": 0.75,
+          "school-print": 0.75
+        }
+      },
+      "gpt-6.2-astra": {
+        "clone": {
+          "correct": 0,
+          "total": 8,
+          "rate": 0.0
+        },
+        "different": {
+          "correct": 8,
+          "total": 8,
+          "rate": 1.0
+        },
+        "balanced_accuracy": 0.5,
+        "case_bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.5,
+          "seller": 0.5
+        },
+        "topic_scores": {
+          "festival-translation": 0.5,
+          "gallery-lighting": 0.5,
+          "mobile-library": 0.5,
+          "school-print": 0.5
+        }
+      }
+    }
+  }
+}

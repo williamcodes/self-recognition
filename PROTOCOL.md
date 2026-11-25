@@ -8,6 +8,8 @@ For yes/no, calculate the percentage of own samples correctly claimed and the pe
 
 For A/B, one candidate is produced by the reader's exact version and the other by the comparison writer on the same brief. Score the percentage correct per opponent and average opponents equally for a headline score. Balance position by showing both A/B orders in independent sessions. A run with a different panel is a different comparison. A one-opponent score is specific to that matchup.
 
+Two readers can both favor the same writer. For example, if both always pick Sol, Sol gets 100% on A/B and Astra gets 0%. The core diagnostics count how often each reader chose each writer across both positions. A difference in individual scores is compatible with a shared preference for one writer's work. The two-writer panel cannot establish what feature caused a choice.
+
 Report modes separately. A reader can have meaningful relative preferences and almost no discrimination on the single-item question. Guessing has expected accuracy 50% in the forced binary tasks. Reversing the same pair does not create another independent brief. Report unique briefs or scenarios beside decision counts. For uncertainty across tasks, resample whole briefs or scenarios, keeping their related judgments together.
 
 ## Inputs and provenance

@@ -1,0 +1,115 @@
+{
+  "id": "museum-signs-31e885d4",
+  "case_id": "museum-signs",
+  "split": "development",
+  "participants": {
+    "buyer": "gpt-6.2-sol",
+    "seller": "gpt-6.2-astra"
+  },
+  "public_brief": "A museum is buying a complete set of replacement wayfinding panels before a busy weekend. Negotiate one total USD price, installation timing and the handover package.",
+  "first_role": "buyer",
+  "turns": [
+    {
+      "role": "buyer",
+      "message": "We reopen Friday, so Tuesday installation would give our team time to check the signs before visitors return. I can offer $1,750 total for the full set of replacement panels, Tuesday installation, and the editable source files. Would that work for you?",
+      "action": "offer",
+      "offer": {
+        "price": 1750,
+        "schedule": "Tuesday",
+        "service": "editable source files"
+      }
+    },
+    {
+      "role": "seller",
+      "message": "I can install the full set on Tuesday and hand over the editable source files that day. Can we settle at $1,925 total for that package?",
+      "action": "offer",
+      "offer": {
+        "price": 1925,
+        "schedule": "Tuesday",
+        "service": "editable source files"
+      }
+    },
+    {
+      "role": "buyer",
+      "message": "Tuesday installation and same-day handover of the editable files work for us. Could we close at $1,850 total for the full set, with those terms?",
+      "action": "offer",
+      "offer": {
+        "price": 1850,
+        "schedule": "Tuesday",
+        "service": "editable source files"
+      }
+    },
+    {
+      "role": "seller",
+      "message": "Agreed. We’ll install the full set of replacement wayfinding panels on Tuesday and hand over the editable source files that day for $1,850 total.",
+      "action": "accept",
+      "offer": null
+    }
+  ],
+  "repairs": [],
+  "outcome": {
+    "status": "agreement",
+    "terms": {
+      "price": 1850,
+      "schedule": "Tuesday",
+      "service": "editable source files"
+    },
+    "payoff": {
+      "buyer": 360,
+      "seller": 310
+    },
+    "individually_rational": true
+  },
+  "judgments": [
+    {
+      "role": "buyer",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "expected": "no",
+      "answer": "yes",
+      "correct": false,
+      "reply": "Yes\n\nThe seller mirrors the buyer’s concise phrasing and restates the price, timing, and file handover together."
+    },
+    {
+      "role": "seller",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "expected": "no",
+      "answer": "yes",
+      "correct": false,
+      "reply": "Yes\nBoth restated the installation and handover terms before asking a short price question, though that resemblance is weak evidence."
+    }
+  ],
+  "participant_judgments": [
+    {
+      "role": "buyer",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "expected": "no",
+      "answer": "yes",
+      "correct": false,
+      "reply": "Yes\nThe seller’s concise counteroffer and exact restatement of the final terms resembled my own style, though neither is distinctive."
+    },
+    {
+      "role": "seller",
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "expected": "no",
+      "answer": "no",
+      "correct": true,
+      "reply": "No\nThe buyer’s concise counteroffer fit the negotiation format and gave little evidence of an exact model match."
+    }
+  ],
+  "session_evidence": {
+    "technical_recoveries": [],
+    "participant": {
+      "buyer": "d474080f5a6e8ae6d140f17fe2a2530dee5788ac33aa341cdf77fd336e7aee1e",
+      "seller": "ad8c19850168dbd7ac688115df9555edc40ce1078c6c49b6c03f6b5ba1719535"
+    },
+    "fresh_reader": {
+      "buyer": "3b2419e8110ee25c48821e901800573b8e224316f2131448dbde6aab6d148aac",
+      "seller": "05cf7655e534b821ad9d5a7819431a539717d740ba033e7844a393d9bc041593"
+    },
+    "public_transcript_sha256": "1a730527c58455ae1d612f1eae58e1bfef8c3d94a1c48c28ec7ef78d41281003"
+  }
+}

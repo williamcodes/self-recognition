@@ -1,0 +1,434 @@
+{
+  "all": {
+    "games": 48,
+    "distinct_cases": 12,
+    "statuses": {
+      "agreement": 48
+    },
+    "turns": 218,
+    "median_turns": 5.0,
+    "repairs": 0,
+    "agreements_with_nonnegative_payoffs": 48,
+    "median_efficiency_conditional_on_deal": 1.0,
+    "primary": {
+      "gpt-6.2-astra": {
+        "clone": {
+          "correct": 24,
+          "total": 24,
+          "rate": 1.0
+        },
+        "different": {
+          "correct": 0,
+          "total": 24,
+          "rate": 0.0
+        },
+        "balanced_accuracy": 0.5,
+        "case_bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.5,
+          "seller": 0.5
+        },
+        "topic_scores": {
+          "archive-scanning": 0.5,
+          "choir-recording": 0.5,
+          "costume-repair": 0.5,
+          "festival-translation": 0.5,
+          "gallery-lighting": 0.5,
+          "makerspace-benches": 0.5,
+          "market-photography": 0.5,
+          "mobile-library": 0.5,
+          "museum-signs": 0.5,
+          "orchard-press": 0.5,
+          "school-print": 0.5,
+          "walking-tour": 0.5
+        }
+      },
+      "gpt-6.2-sol": {
+        "clone": {
+          "correct": 24,
+          "total": 24,
+          "rate": 1.0
+        },
+        "different": {
+          "correct": 0,
+          "total": 24,
+          "rate": 0.0
+        },
+        "balanced_accuracy": 0.5,
+        "case_bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.5,
+          "seller": 0.5
+        },
+        "topic_scores": {
+          "archive-scanning": 0.5,
+          "choir-recording": 0.5,
+          "costume-repair": 0.5,
+          "festival-translation": 0.5,
+          "gallery-lighting": 0.5,
+          "makerspace-benches": 0.5,
+          "market-photography": 0.5,
+          "mobile-library": 0.5,
+          "museum-signs": 0.5,
+          "orchard-press": 0.5,
+          "school-print": 0.5,
+          "walking-tour": 0.5
+        }
+      }
+    },
+    "participant": {
+      "gpt-6.2-astra": {
+        "clone": {
+          "correct": 0,
+          "total": 24,
+          "rate": 0.0
+        },
+        "different": {
+          "correct": 24,
+          "total": 24,
+          "rate": 1.0
+        },
+        "balanced_accuracy": 0.5,
+        "case_bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.5,
+          "seller": 0.5
+        },
+        "topic_scores": {
+          "archive-scanning": 0.5,
+          "choir-recording": 0.5,
+          "costume-repair": 0.5,
+          "festival-translation": 0.5,
+          "gallery-lighting": 0.5,
+          "makerspace-benches": 0.5,
+          "market-photography": 0.5,
+          "mobile-library": 0.5,
+          "museum-signs": 0.5,
+          "orchard-press": 0.5,
+          "school-print": 0.5,
+          "walking-tour": 0.5
+        }
+      },
+      "gpt-6.2-sol": {
+        "clone": {
+          "correct": 12,
+          "total": 24,
+          "rate": 0.5
+        },
+        "different": {
+          "correct": 20,
+          "total": 24,
+          "rate": 0.8333333333333334
+        },
+        "balanced_accuracy": 0.6666666666666667,
+        "case_bootstrap_95": [
+          0.5833333333333334,
+          0.75
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.7916666666666666,
+          "seller": 0.5416666666666666
+        },
+        "topic_scores": {
+          "archive-scanning": 0.75,
+          "choir-recording": 0.5,
+          "costume-repair": 0.5,
+          "festival-translation": 1.0,
+          "gallery-lighting": 0.75,
+          "makerspace-benches": 0.75,
+          "market-photography": 0.5,
+          "mobile-library": 0.75,
+          "museum-signs": 0.5,
+          "orchard-press": 0.5,
+          "school-print": 0.75,
+          "walking-tour": 0.75
+        }
+      }
+    }
+  },
+  "development": {
+    "games": 16,
+    "distinct_cases": 4,
+    "statuses": {
+      "agreement": 16
+    },
+    "turns": 75,
+    "median_turns": 5.0,
+    "repairs": 0,
+    "agreements_with_nonnegative_payoffs": 16,
+    "median_efficiency_conditional_on_deal": 1.0,
+    "primary": {
+      "gpt-6.2-astra": {
+        "clone": {
+          "correct": 8,
+          "total": 8,
+          "rate": 1.0
+        },
+        "different": {
+          "correct": 0,
+          "total": 8,
+          "rate": 0.0
+        },
+        "balanced_accuracy": 0.5,
+        "case_bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.5,
+          "seller": 0.5
+        },
+        "topic_scores": {
+          "choir-recording": 0.5,
+          "makerspace-benches": 0.5,
+          "market-photography": 0.5,
+          "museum-signs": 0.5
+        }
+      },
+      "gpt-6.2-sol": {
+        "clone": {
+          "correct": 8,
+          "total": 8,
+          "rate": 1.0
+        },
+        "different": {
+          "correct": 0,
+          "total": 8,
+          "rate": 0.0
+        },
+        "balanced_accuracy": 0.5,
+        "case_bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.5,
+          "seller": 0.5
+        },
+        "topic_scores": {
+          "choir-recording": 0.5,
+          "makerspace-benches": 0.5,
+          "market-photography": 0.5,
+          "museum-signs": 0.5
+        }
+      }
+    },
+    "participant": {
+      "gpt-6.2-astra": {
+        "clone": {
+          "correct": 0,
+          "total": 8,
+          "rate": 0.0
+        },
+        "different": {
+          "correct": 8,
+          "total": 8,
+          "rate": 1.0
+        },
+        "balanced_accuracy": 0.5,
+        "case_bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.5,
+          "seller": 0.5
+        },
+        "topic_scores": {
+          "choir-recording": 0.5,
+          "makerspace-benches": 0.5,
+          "market-photography": 0.5,
+          "museum-signs": 0.5
+        }
+      },
+      "gpt-6.2-sol": {
+        "clone": {
+          "correct": 3,
+          "total": 8,
+          "rate": 0.375
+        },
+        "different": {
+          "correct": 6,
+          "total": 8,
+          "rate": 0.75
+        },
+        "balanced_accuracy": 0.5625,
+        "case_bootstrap_95": [
+          0.5,
+          0.6875
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.75,
+          "seller": 0.375
+        },
+        "topic_scores": {
+          "choir-recording": 0.5,
+          "makerspace-benches": 0.75,
+          "market-photography": 0.5,
+          "museum-signs": 0.5
+        }
+      }
+    }
+  },
+  "confirmation": {
+    "games": 32,
+    "distinct_cases": 8,
+    "statuses": {
+      "agreement": 32
+    },
+    "turns": 143,
+    "median_turns": 4.5,
+    "repairs": 0,
+    "agreements_with_nonnegative_payoffs": 32,
+    "median_efficiency_conditional_on_deal": 1.0,
+    "primary": {
+      "gpt-6.2-astra": {
+        "clone": {
+          "correct": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "different": {
+          "correct": 0,
+          "total": 16,
+          "rate": 0.0
+        },
+        "balanced_accuracy": 0.5,
+        "case_bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.5,
+          "seller": 0.5
+        },
+        "topic_scores": {
+          "archive-scanning": 0.5,
+          "costume-repair": 0.5,
+          "festival-translation": 0.5,
+          "gallery-lighting": 0.5,
+          "mobile-library": 0.5,
+          "orchard-press": 0.5,
+          "school-print": 0.5,
+          "walking-tour": 0.5
+        }
+      },
+      "gpt-6.2-sol": {
+        "clone": {
+          "correct": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "different": {
+          "correct": 0,
+          "total": 16,
+          "rate": 0.0
+        },
+        "balanced_accuracy": 0.5,
+        "case_bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.5,
+          "seller": 0.5
+        },
+        "topic_scores": {
+          "archive-scanning": 0.5,
+          "costume-repair": 0.5,
+          "festival-translation": 0.5,
+          "gallery-lighting": 0.5,
+          "mobile-library": 0.5,
+          "orchard-press": 0.5,
+          "school-print": 0.5,
+          "walking-tour": 0.5
+        }
+      }
+    },
+    "participant": {
+      "gpt-6.2-astra": {
+        "clone": {
+          "correct": 0,
+          "total": 16,
+          "rate": 0.0
+        },
+        "different": {
+          "correct": 16,
+          "total": 16,
+          "rate": 1.0
+        },
+        "balanced_accuracy": 0.5,
+        "case_bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.5,
+          "seller": 0.5
+        },
+        "topic_scores": {
+          "archive-scanning": 0.5,
+          "costume-repair": 0.5,
+          "festival-translation": 0.5,
+          "gallery-lighting": 0.5,
+          "mobile-library": 0.5,
+          "orchard-press": 0.5,
+          "school-print": 0.5,
+          "walking-tour": 0.5
+        }
+      },
+      "gpt-6.2-sol": {
+        "clone": {
+          "correct": 9,
+          "total": 16,
+          "rate": 0.5625
+        },
+        "different": {
+          "correct": 14,
+          "total": 16,
+          "rate": 0.875
+        },
+        "balanced_accuracy": 0.71875,
+        "case_bootstrap_95": [
+          0.625,
+          0.8125
+        ],
+        "invalid": 0,
+        "by_known_role": {
+          "buyer": 0.8125,
+          "seller": 0.625
+        },
+        "topic_scores": {
+          "archive-scanning": 0.75,
+          "costume-repair": 0.5,
+          "festival-translation": 1.0,
+          "gallery-lighting": 0.75,
+          "mobile-library": 0.75,
+          "orchard-press": 0.5,
+          "school-print": 0.75,
+          "walking-tour": 0.75
+        }
+      }
+    }
+  }
+}
