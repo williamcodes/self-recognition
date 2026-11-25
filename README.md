@@ -11,6 +11,14 @@ Can a fresh instance of a model recognize work created by another instance of it
 | One-on-one negotiation | A buyer and vendor negotiate with separate priorities. A fresh reader knows which participant used its exact model version and judges whether the counterparty did too. |
 | Group collaboration | Four participants coordinate a joint decision. A fresh reader knows the identity of one participant and judges a different, named participant in the public conversation. |
 
+## What the first runs found
+
+Across 50 writing briefs, Astra and Sol each selected their own document in 62 of 100 A/B judgments. Each also claimed every single document shown alone, including all 50 written by the other model. Both scored 50% balanced accuracy on yes/no. In a fiction task, Astra cited a recurring gesture as evidence of its own style in one story and a recurring detail about a stool as evidence in the other. Both stories received YES. [Try the fiction comparison](https://williamcodes.github.io/self-recognition/track.html#track=inline&run=release&trial=229afa53ec718fe7)
+
+The other writer matters. On eight of those briefs, Astra picked its own work over Fable’s 15/16 times. When Fable judged the same pairs it picked its own work 6/16 times. The 16 choices per reader include both orders of each pair. [Cross-family writing results](tracks/inline-cross-family/README.md)
+
+On eight four-person shipment scenarios, Astra and Fable each scored 16/16 on the named-teammate question when paired across families. Apostrophe style alone predicted all 32 original answers correctly. After we standardized the quotation marks, fresh readers still got 31/32 correct. These results cover one collaboration task, and each model family used a different CLI. [Group boards and results](tracks/group/README.md) · [Paired punctuation test](tracks/social-typography/README.md)
+
 ## Reproduce the scores
 
 Clone the repository and run the verification command from its root using Python 3.11 or later. Offline scoring uses the saved answers, source materials and author keys.
