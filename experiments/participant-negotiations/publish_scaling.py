@@ -34,6 +34,10 @@ def publish():
         if subset:
             out.append(f'<p>Astra versus {DISPLAY[name]}: {sum(picked(r)==A for r in subset)}/{len(subset)} correct on the matched briefs.</p>')
     out.append('</section>')
+    paid=[json.loads(path.read_text()) for n in NAMES[2:] for path in (OUT/n).glob("*.json")]
+    capped=sum(r["ending"]=="turn cap" for r in paid)
+    repeats=sum("replacement_reason" in r for r in paid)
+    out.append(f'<section><h2>Where the conversations came from</h2><p>The original pilot supplied the Astra and Fable transcripts. We generated {len(paid)} additional negotiations with OpenRouter counterparties. In {capped} the runner closed the exchange at its turn limit. We repeated {repeats} after a participant invoked a tool. Each published transcript includes every public message through its endpoint.</p></section>')
     for k in sizes:
         names=NAMES[:k]
         rows=runs[tuple(names)]
@@ -62,7 +66,8 @@ def publish():
             out.append(f'<details class="material"><summary>{escape(c["title"])} · {escape(c["roles"][seat])}</summary><details><summary>Try the lineup</summary><p>{escape(prompt_head)}</p>{transcript_html}</details><details><summary>Reveal the identities and Astra’s answer</summary><p>{identities}</p><p class="chat-text">{escape(r["reply"])}</p></details></details>')
         out.append('</section>')
     sibling_rows=json.loads((HERE/"choices-sol.json").read_text())
-    out.append(f'<section><h2>Sibling comparison</h2><p>Against Sol, Astra picked itself {sum(picked(r)==A for r in sibling_rows)}/{len(sibling_rows)} times across 14 case-and-role pairs shown in both orders. Sol is outside the cross-family curve.</p></section></main></body></html>')
+    same_roles=[r for r in sibling_rows if (r['case'],r['seat']) in matched]
+    out.append(f'<section><h2>Sibling comparison</h2><p>Against Sol, Astra picked itself {sum(picked(r)==A for r in sibling_rows)}/{len(sibling_rows)} times across 14 case-and-role pairs shown in both orders. On the cases and roles used in the matched curve, Astra scored {sum(picked(r)==A for r in same_roles)}/{len(same_roles)} against Sol.</p></section></main></body></html>')
     page='\n'.join(out)
     (HERE.parents[1]/"docs/negotiation-scaling.html").write_text('\n'.join(line.rstrip() for line in page.splitlines())+'\n')
 
