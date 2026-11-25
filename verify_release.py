@@ -2,6 +2,7 @@
 from pathlib import Path
 from tracks.negotiation.analyze import analyze
 from tracks.core.diagnostics import diagnostics
+from tracks.core.scoring import digest, read
 import json
 import subprocess
 import sys
@@ -17,17 +18,25 @@ def main():
         raise SystemExit("Run verification without Python's optimization flag.")
     for track in ("inline","projects"):
         archive = ROOT / "tracks" / "core" / "release" / track
+        bank = archive.parents[1] / (track + "-briefs.json")
+        if read(archive / "manifest.json")["briefs"] != read(bank):
+            raise ValueError(f"Published {track} briefs differ from the frozen bank")
         if diagnostics(archive) != json.loads((archive / "diagnostics.json").read_text()):
             raise ValueError(f"Published {track} diagnostics differ from underlying works and judgments")
         print(f"Verified {track} scores, raw works, judgments and diagnostics.", flush=True)
     python("tracks/inline-cross-family/run.py", "verify")
     python("tracks/social-typography/analyze.py", "--verify")
     negotiation=ROOT/"tracks"/"negotiation"
+    bank = read(negotiation / "cases.json")
+    bank_hash = digest(negotiation / "cases.json")
     known = {}
     for name in ("seed", "cross-family"):
         path = negotiation / (name + ".json")
         python(negotiation / "verify.py", path)
         archive = json.loads(path.read_text())
+        cases = bank if name == "seed" else [case for case in bank if case["split"] == "confirmation"][:4]
+        if archive["cases"] != cases or archive["generation"]["case_file_sha256"] != bank_hash:
+            raise ValueError(f"Published {name} cases differ from the negotiation bank")
         analysis = json.loads((negotiation / (name + "-analysis.json")).read_text())
         if analyze(archive) != analysis:
             raise ValueError(f"Published negotiation analysis differs for {name}")
