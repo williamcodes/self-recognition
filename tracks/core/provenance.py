@@ -156,6 +156,59 @@ def event_summary(stdout, folder):
                 tools=sorted(tool_types),boundary_indicators=sorted(reasons)),agent_messages
 
 
+def failure_diagnostics(raw,stderr):
+    """Only transport/error envelopes supply evidence. Export fixed labels and bounded durations."""
+    counts={}
+    delays=set()
+    for line in (raw+"\n"+stderr).splitlines():
+        try:
+            event=json.loads(line)
+        except (TypeError,ValueError):
+            continue
+        if not isinstance(event,dict):
+            continue
+        typ=event.get("type")
+        if typ in ("error","turn.failed","turn.error"):
+            envelope=event
+        elif typ=="item.completed" and isinstance(event.get("item"),dict) and event["item"].get("type")=="error":
+            envelope=event["item"]
+        else:
+            continue
+        detail=envelope.get("error")
+        parts=[envelope]
+        if isinstance(detail,dict):
+            parts.append(detail)
+        words=[]
+        if isinstance(detail,str):
+            words.append(detail)
+        for part in parts:
+            for key in ("message","code","additionalDetails","codexErrorInfo"):
+                val=part.get(key)
+                if isinstance(val,str):
+                    words.append(val)
+                elif key=="codexErrorInfo" and isinstance(val,dict):
+                    words.extend(val.keys())
+            if part.get("httpStatusCode") in (429,503):
+                words.append("HTTP "+str(part["httpStatusCode"]))
+            for key,scale in (("retryAfterSeconds",1000),("retry_after_seconds",1000),
+                              ("retryAfterMs",1),("retry_after_ms",1)):
+                val=part.get(key)
+                if type(val) in (int,float) and 0<=val<=604800000/scale:
+                    delays.add(round(val*scale))
+        text=" ".join(words)
+        for label,pattern in (
+                ("rate_limit",r"rate[ _-]?limit|usage[ _-]?limit|too many requests|HTTP\s*429\b"),
+                ("transport",r"transport|stream[ _-]?(?:disconnect|lost)|connection[ _-]?(?:reset|closed|refused)|reconnect|network[ _-]?error|responseStreamDisconnected"),
+                ("service_capacity",r"at capacity|overload|serverOverloaded|service unavailable|HTTP\s*503\b")):
+            if re.search(pattern,text,re.I):
+                counts[label]=counts.get(label,0)+1
+        for m in re.finditer(r"\bretry(?:ing)?\s+(?:after|in)\s+(\d{1,7}(?:\.\d{1,3})?)\s*(milliseconds?|ms|seconds?|s)\b",text,re.I):
+            ms=round(float(m[1])*(1 if m[2].lower().startswith("m") else 1000))
+            if ms<=604800000:
+                delays.add(ms)
+    return dict(event_counts=counts,reported_retry_delays_ms=sorted(delays))
+
+
 def content_blob(root, text):
     checksum=text_hash(text)
     path=root/"provenance"/"prompts"/(checksum+".txt")
@@ -189,7 +242,7 @@ class AttemptLog:
         files=sorted(self.group.glob("*.json"))
         return (files[-1],read(files[-1])) if files else (None,None)
 
-    def start(self, prompt, exe, model, sandbox, inline):
+    def start(self, prompt, exe, model, sandbox, inline, timeout_seconds=None):
         last_path,prev=self.last()
         if prev and prev["status"]!="no_answer_failure":
             raise RuntimeError(f"Prior {self.kind} attempt needs review before another session: {last_path}")
@@ -199,6 +252,8 @@ class AttemptLog:
                        prompt_contract_sha256=self.contract_hash,prompt_sha256=content_blob(self.root,prompt),
                        input_files=self.input_files,requested_model=model,codex_cli_version=cli_version(exe),
                        code_sha256=CODE,ephemeral=True,sandbox=sandbox,inline=inline,reasoning_effort="medium")
+        if timeout_seconds is not None:
+            self.data["timeout_seconds"]=timeout_seconds
         save(self.path,self.data)
 
     def update(self,status,**fields):
@@ -230,6 +285,7 @@ class AttemptLog:
             fields.update(public_fields(self.root,self.path,events["commands"],Path.home()))
         fields["reply"]=evidence
         if timeout or rc!=0 or not reply.strip():
+            fields["cli_failure_signals"]=failure_diagnostics(raw,error)
             self.update("observed_failure" if evidence else "no_answer_failure",**fields)
             return None
         self.update("response_recorded",**fields)

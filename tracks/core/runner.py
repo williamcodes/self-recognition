@@ -36,8 +36,9 @@ def subscription():
         env.update(CODEX_HOME=home)
         yield env
 
-def session(model, question, folder, env, audit, writing=False, inline=False):
+def session(model, question, folder, env, audit, writing=False, inline=False, reader_timeout_seconds=480):
     sandbox = "workspace-write" if writing else "read-only"
+    timeout_bound = reader_timeout_seconds if audit.kind=="reader" else (1200 if writing else 480)
     with tempfile.TemporaryDirectory(prefix="selfrec-answer-") as log_folder:
         answer_file = Path(log_folder)/"answer.txt"
         cmd = [codec(), "exec", "--ephemeral", "--skip-git-repo-check", "-C", str(folder),
@@ -45,11 +46,11 @@ def session(model, question, folder, env, audit, writing=False, inline=False):
                "--json", "-o", str(answer_file), "-"]
         for attempt in range(2):
             answer_file.unlink(missing_ok=True)
-            audit.start(question, cmd[0], model, sandbox, inline)
+            audit.start(question, cmd[0], model, sandbox, inline, timeout_seconds=timeout_bound)
             timeout = False
             try:
                 result = subprocess.run(cmd, input=question, capture_output=True, cwd=folder, env=env,
-                                        text=True, timeout=1200 if writing else 480)
+                                        text=True, timeout=timeout_bound)
                 raw, error, rc = result.stdout, result.stderr, result.returncode
             except subprocess.TimeoutExpired as exc:
                 def decoded(v):
@@ -188,7 +189,7 @@ def present_trial(t, root, manifest, folder):
             os.utime(folder,(NORMAL_TIME,NORMAL_TIME))
     return prompt
 
-def judge(t, root, manifest, env, quarantined_as_misses=False):
+def judge(t, root, manifest, env, quarantined_as_misses=False, reader_timeout_seconds=480):
     tag = hashlib.sha256(json.dumps(t,sort_keys=True).encode()).hexdigest()
     cache = root/".state"/"judgments"/(tag+".json")
     if cache.is_file():
@@ -206,7 +207,8 @@ def judge(t, root, manifest, env, quarantined_as_misses=False):
             reply, commands = audit.data["reply"], audit.data["commands"]
         elif not audit.data or audit.data["status"]!="quarantined":
             try:
-                reply, commands = session(t["reader"],prompt,folder,env,audit,inline=manifest["track"] == "inline")
+                reply, commands = session(t["reader"],prompt,folder,env,audit,inline=manifest["track"] == "inline",
+                                          reader_timeout_seconds=reader_timeout_seconds)
             except QuarantinedSession:
                 if not quarantined_as_misses:
                     raise
@@ -281,6 +283,9 @@ def run(args):
         validate_manifest(manifest)
         if (root/"manifest.json").exists() and read(root/"manifest.json") != manifest:
             raise ValueError("This archive belongs to a different run. Resume with identical arguments or choose a new directory.")
+        reader_timeout_seconds = getattr(args,"reader_timeout_seconds",480)
+        if type(reader_timeout_seconds) is not int or not 1 <= reader_timeout_seconds <= 1800:
+            raise ValueError("Reader timeout must be between 1 and 1800 seconds")
         quarantined_as_misses = getattr(args,"quarantined_readers_as_misses",False)
         selected = getattr(args,"judge_reader",None)
         if selected:
@@ -304,7 +309,7 @@ def run(args):
                 if not files or files!=w["files"]:
                     raise ValueError("Writing samples differ from the frozen inventory")
             with subscription() as env:
-                batch(assignments(manifest),lambda t:judge(t,root,manifest,env,quarantined_as_misses),args.workers,
+                batch(assignments(manifest),lambda t:judge(t,root,manifest,env,quarantined_as_misses,reader_timeout_seconds),args.workers,
                       "Judgments",include=lambda t:t["reader"]==selected)
             print(f"Cached judgments for {selected}. Run without --judge-reader to verify and assemble the full archive.")
             return
@@ -334,7 +339,7 @@ def run(args):
             save(root/"inventory.json",inventory)
             if args.writers_only:
                 return
-            trials=batch(assignments(manifest),lambda t:judge(t,root,manifest,env,quarantined_as_misses),args.workers,"Judgments")
+            trials=batch(assignments(manifest),lambda t:judge(t,root,manifest,env,quarantined_as_misses,reader_timeout_seconds),args.workers,"Judgments")
             trials.sort(key=lambda t:(t["brief"],t["reader"],t["opponent"],t["mode"],t["authors"]))
             save(root/"judgments.json", trials)
             save(root/"scores.json", scores(trials))

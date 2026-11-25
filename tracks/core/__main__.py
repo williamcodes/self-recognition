@@ -33,6 +33,8 @@ def main():
     live.add_argument("--writers-only",action="store_true")
     live.add_argument("--judge-reader", metavar="MODEL",
                       help="Advance one scheduled reader in a frozen archive. A full run assembles scores.")
+    live.add_argument("--reader-timeout-seconds", type=positive, default=480, metavar="SECONDS",
+                      help="Per-attempt reader CLI timeout, 1–1800 seconds (default 480)")
     live.add_argument("--quarantined-readers-as-misses", action="store_true",
                       help="Retain quarantined reader trials as invalid misses and continue the schedule")
     args=cli.parse_args()

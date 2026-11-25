@@ -56,10 +56,10 @@ class ReceiptTest(unittest.TestCase):
         item("agent_message",text=answer)
         return subprocess.CompletedProcess(cmd,0,"\n".join(map(json.dumps,events)),"")
 
-    def run_fixture(self, track="inline", writers_only=False, judge_reader=None, quarantined_readers_as_misses=False):
+    def run_fixture(self, track="inline", writers_only=False, judge_reader=None, quarantined_readers_as_misses=False, reader_timeout_seconds=480):
         args = SimpleNamespace(archive=self.root, track=track,briefs=self.briefs, models=["alpha","beta"],
                                panel_archive=None, limit=None, workers=1, writers_only=writers_only, judge_reader=judge_reader,
-                               quarantined_readers_as_misses=quarantined_readers_as_misses)
+                               quarantined_readers_as_misses=quarantined_readers_as_misses,reader_timeout_seconds=reader_timeout_seconds)
         with redirect_stdout(StringIO()):
             runner.run(args)
 
@@ -251,6 +251,33 @@ class ReceiptTest(unittest.TestCase):
             with self.assertRaises(BlockingIOError):
                 self.run_fixture(judge_reader="beta")
         self.assertEqual(self.calls,2)
+
+    def test_reader_timeout_bound_is_applied_and_receipted_only_for_readers(self):
+        with patch("tracks.core.runner.subprocess.run",wraps=self.cli) as fake:
+            self.run_fixture(track="projects",reader_timeout_seconds=1800)
+        self.assertEqual([call.kwargs["timeout"] for call in fake.call_args_list],[1200]*2+[1800]*8)
+        self.assertTrue(all(a["timeout_seconds"]==(1800 if a["kind"]=="reader" else 1200) for a in self.receipts()))
+        verify(self.root)
+        with self.assertRaisesRegex(ValueError,"timeout"):
+            self.run_fixture(track="projects",reader_timeout_seconds=1801)
+
+    def test_only_structured_error_envelopes_contribute_transport_signals(self):
+        events=[{"type":"error","message":"Reconnecting after stream disconnected",
+                 "retryAfterSeconds":2.5},
+                {"type":"turn.failed","error":{"message":"rate limit; retry in 400 ms; private fixture",
+                                                "httpStatusCode":429}},
+                {"type":"item.completed","item":{"type":"error","message":"service unavailable"}},
+                {"type":"item.completed","item":{"type":"agent_message","text":"rate limit, retry in 8s"}},
+                {"type":"item.completed","item":{"type":"command_execution","output":"rate limit, retry in 8s"}}]
+        raw="\n".join(json.dumps(e) for e in events)
+        sig=provenance.failure_diagnostics(raw,"Unstructured secret-bearing 503 error")
+        self.assertEqual(sig,dict(event_counts={"rate_limit":1,"service_capacity":1,"transport":1},
+                                  reported_retry_delays_ms=[400,2500]))
+        self.failures=["empty error"]
+        self.run_fixture()
+        failed=next(a for a in self.receipts() if a["status"]=="no_answer_failure")
+        self.assertEqual(failed["cli_failure_signals"],{"event_counts":{},"reported_retry_delays_ms":[]})
+        self.assertTrue(all(a["timeout_seconds"]==480 for a in self.receipts()))
 
     def test_legacy_receipts_are_never_implied(self):
         save(self.root/"manifest.json",{"track":"inline"})
