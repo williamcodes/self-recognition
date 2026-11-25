@@ -1,0 +1,265 @@
+{
+  "protocol": "self-recognition-core-1",
+  "track": "projects",
+  "models": [
+    "gpt-6.2-astra",
+    "gpt-6.2-sol"
+  ],
+  "briefs": [
+    {
+      "id": "produce-share-pickup",
+      "genre": "design",
+      "prompt": "Design a pickup experience for a neighborhood produce share serving 64 households from a community center lobby. Members enter through one door, collect a standard or small box, and may exchange one item at a swap table. Six volunteers rotate through shifts, and some members read limited English. The lobby has a single 8-foot table, two folding stands, and an 11-by-17-inch printer. Create a coordinated set of materials that members and volunteers can use on pickup day. Start from an empty directory and choose the deliverables, tools, and file layout. Use original graphics and make the materials usable offline."
+    },
+    {
+      "id": "library-seat-patterns",
+      "genre": "design",
+      "prompt": "Design a visual decision aid for a branch librarian choosing where to add four seats for an eight-week trial. Existing capacities are 12 quiet seats, 8 group seats, and 6 window seats. Fictional historical data from four consecutive Saturdays gives occupied seats at 11 a.m. and 2 p.m., respectively. Quiet: 9/12, 10/12, 8/11, 11/12. Group: 5/7, 7/8, 6/8, 8/8. Window: 6/5, 6/6, 5/6, 6/6. Show how capacity affects the comparison and make the trial recommendation traceable to the counts. The librarian needs a view suitable for grayscale printing. Choose the deliverables, tools, and layout starting from an empty directory."
+    },
+    {
+      "id": "repair-cafe-intake",
+      "genre": "design",
+      "prompt": "Design and implement a small offline intake tool for volunteers at a monthly clothing repair café. Visitors bring up to three items, each tagged with a ticket number and a request such as hemming, patching, or replacing a button. Volunteers use one shared laptop to add tickets, find items, and mark them waiting, in progress, or ready. Design for a busy table where people switch roles without training. Keep records through an accidental refresh, support correcting a mistaken status, and avoid collecting names or contact details. Starting from an empty directory, choose the implementation, supporting materials, and file layout. Use tools available locally."
+    },
+    {
+      "id": "picture-book-pop-up",
+      "genre": "design",
+      "prompt": "Design a visual identity and coordinated visitor materials for a one-room exhibition of handmade picture books at a neighborhood arts center. The show is called Fold and Find. It has 18 books across three tables organized by paper folds, movable pieces, and illustrated stories. Visitors include families with children ages five to nine. Two books per table can be handled, and the remaining books are display copies. Budget supports black ink plus one accent color on ordinary paper. Develop a system that helps families explore independently and lets staff update individual book information. Begin with an empty directory and choose the artifacts, tools, and file layout."
+    },
+    {
+      "id": "apartment-entry-storage",
+      "genre": "design",
+      "prompt": "Design a renter-friendly entryway storage plan for two adults sharing an apartment. The available wall is 46 inches wide and 92 inches high. A door swings across the first 16 inches of the wall on the left, and storage can project up to 13 inches from the wall beyond that point. The household needs space for four pairs of everyday shoes, two shoulder bags, keys, mail, and a folded umbrella. One resident sorts mail while standing. The lease rules out new holes in walls. Starting from an empty directory, choose the design artifacts, local tools, and file layout. Show dimensions and how the layout supports the daily routine."
+    },
+    {
+      "id": "rec-league-fixture-board",
+      "genre": "design",
+      "prompt": "Design and build an offline fixture board for the coordinator of a casual six-team table tennis league. Meetings run on Thursdays with two tables and three 25-minute slots beginning at 6:30 p.m. Seed the board with teams named Birch, Chalk, Fern, Lark, Moss, and Reed. The coordinator needs to enter pairings, spot double bookings, change a pairing at the venue, and print an evening sheet players can read from several feet away. Schedule changes should survive closing the app. Start from an empty directory and choose the deliverables, implementation, and file layout. The ordinary workflow should run on one laptop using free local tools."
+    },
+    {
+      "id": "bakery-preorder-board",
+      "genre": "design",
+      "prompt": "Design a counter display and preorder experience for a bakery offering Saturday pickup. The menu is a $7 seeded loaf, a $5 plain loaf, and a $12 box of four buns. Each order has a Friday noon cutoff and one of two Saturday pickup windows, 8–10 a.m. or 10 a.m.–noon. Customers place orders at the counter, where staff have about 30 seconds to record a typical order. The display must fit within an 8.5-by-11-inch upright holder, and the owner changes prices by hand or on a basic laptop. Start from an empty directory and choose coordinated deliverables, technologies, and file layout. Design with editable local materials."
+    },
+    {
+      "id": "bus-stop-feedback",
+      "genre": "design",
+      "prompt": "Design a public-facing visual summary for a neighborhood association comparing passenger preferences at three bus stops. Fictional historical surveys used one choice per respondent. Counts for bench, shade, and route map, in that order, were Mill Street: May 18/9/3, August 16/24/5. Orchard Lane: May 7/12/11, August 9/26/10. Market Square: May 16/5/19, August 20/11/29. The audience will see the work at a drop-in meeting and should be able to compare the stops despite different response totals. Make the numbers available for readers who want detail. Choose the deliverables, tools, and file layout from an empty directory. Work offline."
+    },
+    {
+      "id": "studio-sample-catalog",
+      "genre": "design",
+      "prompt": "Design and build an offline sample catalog for a small upholstery studio. Three staff members use a shared laptop to find fabric swatches and track which ones are out with clients. Each record needs a sample code, color family, fabric type, drawer location, and checkout status. The physical cabinet has drawers A through F, and existing paper tags use codes such as C-014. Include enough fictional sample records to demonstrate searching and filtering. Staff should be able to correct records and export a copy of their data. Starting from an empty directory, choose the technologies, deliverables, and file layout. Favor a workflow that works with keyboard entry at the counter."
+    },
+    {
+      "id": "courtyard-seed-swap",
+      "genre": "design",
+      "prompt": "Design the information system for a spring seed swap hosted in a housing co-op courtyard. About 45 residents are expected, including children and first-time gardeners. The event has three tables for herbs, flowers, and vegetables, plus one shared station for labeling blank envelopes. Hosts open the swap with basil, calendula, and snap pea packets, and attendees can bring their own garden seeds. Create coordinated materials that guide visitors through browsing, labeling, and exchanging packets. Supplies include letter-size paper, markers, masking tape, and plain envelopes. Start from an empty directory and choose the artifacts, tools, and file layout. Make the designs practical to reproduce with a home printer."
+    },
+    {
+      "id": "ceramics-class-enrollment",
+      "genre": "design",
+      "prompt": "Design an enrollment report a community ceramics studio director can use to compare class sessions before setting next quarter's schedule. Fictional historical data for six class runs lists offered seats, enrollments, and waitlist requests. January: Tuesday evening 12/12/6, Saturday morning 10/8/0. February: Tuesday evening 12/11/0, Saturday morning 10/10/4. March: Tuesday evening 14/14/3, Saturday morning 12/12/7. A person may appear on both session waitlists, and each count describes a single class run. Make occupancy and unmet demand easy to interpret in a short staff meeting. Start from an empty directory and choose the deliverables, tools, and file layout."
+    },
+    {
+      "id": "oral-history-listening-room",
+      "genre": "design",
+      "prompt": "Design the visitor experience for a local history room presenting six fictional audio interviews about a former indoor market. The topics are early deliveries, stall displays, lunch breaks, price signs, closing routines, and the annual winter fair. The room has two seated listening stations, a single entrance, and space for one wall panel. Typical visits last eight minutes. Create coordinated materials that let visitors choose a topic, locate it at either station, and share the space when both seats are occupied. Use the topic descriptions as content inputs and build the presentation with free offline tools. Start from an empty directory and choose the deliverables and file layout."
+    },
+    {
+      "id": "seed-swap-welcome-kit",
+      "genre": "creative production",
+      "prompt": "Create a coordinated welcome kit for a free neighborhood seed swap at Fern Court Community Room. First-time visitors need to understand where to drop off seeds, how to browse, and what they can take. The event runs from 10 a.m. to noon, with 12 volunteers and six tables. Guests can take up to five packets whether or not they bring seeds. Packets need a plant name and harvest year. Choose a set of artifacts that helps visitors prepare and navigate the room. The organizers have a black-and-white printer, letter paper, and tape."
+    },
+    {
+      "id": "matinee-sensory-preview",
+      "genre": "creative production",
+      "prompt": "Develop a pre-visit and on-site communication package for families attending a 45-minute puppet matinee at a small arts center. The audience includes children who benefit from knowing what to expect. The room seats 60, house lights stay half up, and guests can leave and return through the side door. The show includes two short drum rolls, a blue lighting change, and a cloth bird moving above the stage. Choose complementary artifacts for caregivers and children. Staff need materials they can share as a small digital download and print on an office printer."
+    },
+    {
+      "id": "bicycle-shop-repair-handoff",
+      "genre": "creative production",
+      "prompt": "Build a visual and editorial kit for a bicycle shop's repair pickup counter. Customers often arrive during the evening rush, and both they and the cashier need to see what work was done, what they paid for, and whom to ask about a follow-up. Create an example customer handoff using this fictional job: rear tube $9, rear flat repair $18, and chain cleaning $12. The shop takes questions in person on weekdays from 4 to 6 p.m. Choose artifacts for the counter and for customers to keep. The counter has a single upright display holder and little spare surface space."
+    },
+    {
+      "id": "courtyard-shade-exhibit",
+      "genre": "creative production",
+      "prompt": "Produce a small exhibit for apartment residents comparing how shade moves across their shared courtyard. The display will hang by the mailboxes during a two-week vote on where to put a movable reading bench. Fictional observations from a single clear June day record shaded area at 9 a.m., noon, and 4 p.m. as follows: gate alcove 80%, 25%, 10%; fig tree 35%, 70%, 85%; west wall 15%, 20%, 75%. Residents usually pause for under a minute. Choose visual and participation materials that fit a board 90 cm wide and allow residents to mark a preferred location."
+    },
+    {
+      "id": "bowling-league-season-finale",
+      "genre": "creative production",
+      "prompt": "Create a cohesive event package for the final night of a six-team recreational bowling league. The audience includes regular players and family members who have never attended. Doors open at 6 p.m., warmups start at 6:20, two games start at 6:40, and recognition begins at 8:30. The league will recognize highest single game, most improved average, and the team spirit vote. Results arrive during the evening. Choose artifacts that guide spectators and let the host insert winners quickly. The venue has one widescreen TV and a letter-size printer."
+    },
+    {
+      "id": "library-object-stories",
+      "genre": "creative production",
+      "prompt": "Create a mini exhibition about everyday objects from a fictional neighborhood library's lending collection. The three objects are a 1978 metal recipe box with 46 handwritten cards, a 1996 cassette recorder that belonged to a local bird club, and a 2011 folding shopping trolley repaired twice by its owner. The exhibition sits in a shallow display case for visitors aged 10 and up. Use the objects to invite reflection on reuse and memory, and choose artifacts for both reading and visitor participation. The case has no power and is viewed from one side."
+    },
+    {
+      "id": "ceramics-studio-second-sale",
+      "genre": "creative production",
+      "prompt": "Develop a market-day identity and shopper materials for a pottery studio selling display pieces and cosmetic seconds. The sale is Saturday from 11 a.m. to 3 p.m. Prices are $8 for small dishes, $12 for planters, and $18 for vases. Cosmetic variations include uneven glaze color and slight asymmetry. The studio marks planters and vases as decorative. Shoppers will browse three racks and pay at one table. Choose materials that are easy to read in a crowded room and practical for two volunteers to set up. Use at most two ink colors and allow for price changes."
+    },
+    {
+      "id": "canal-path-field-journal",
+      "genre": "creative production",
+      "prompt": "Design a short field-journal experience for families walking a fictional 650-meter canal path. The walk begins at a painted arch, passes a bench facing rows of warehouse windows, and ends at a plaza with a circular brick pattern. Create complementary materials that prompt children ages 7 to 10 to notice shapes, repeat patterns, and record observations. Include something adults can use to guide the outing. Families should be able to finish in 30 minutes with a pencil and one small printed handout per child. All activities should work while standing or sitting along the path."
+    },
+    {
+      "id": "print-shop-open-house",
+      "genre": "creative production",
+      "prompt": "Produce a visitor experience package for a small print shop's open house. The shop wants potential customers to understand the choices behind a simple two-color poster. Visitors rotate through paper samples, a table showing how two ink layers combine, and a gallery of finished posters. The three stations take about eight minutes each, and groups of six start every 15 minutes. One staff member greets arrivals and two circulate. Choose artifacts that explain the process visually and support self-guided browsing. Use fictional sample artwork that the shop can print on its own equipment."
+    },
+    {
+      "id": "apartment-pantry-reset",
+      "genre": "creative production",
+      "prompt": "Create a practical labeling and reference system for a kitchen shared by three adult housemates. They have one 75-cm-wide pantry shelf each, one shared shelf, and a shallow basket for items people are happy to give away. The shared shelf holds oil, salt, rice, and tea. Each housemate buys one shared staple when it runs low, then marks it as replenished. Design complementary artifacts that make ownership and restocking easy to understand at a glance. The household uses painter's tape and plain paper, and the refrigerator door is the only available place for a shared reference."
+    },
+    {
+      "id": "linen-workroom-anniversary",
+      "genre": "creative production",
+      "prompt": "Create a compact anniversary feature for employees and their families at a small commercial linen workroom. The company started in 2001 with six employees and two hotel clients, added a folding room in 2009, introduced reusable delivery totes in 2017, and now employs 34 people serving 18 local businesses. The celebration takes place in the break room during staggered lunch breaks. Choose complementary artifacts that make the milestones easy to explore and invite staff to contribute a memory during the event. There is one empty wall and a tablet available. Employee photos are unavailable."
+    },
+    {
+      "id": "floating-book-club-launch",
+      "genre": "creative production",
+      "prompt": "Create a launch package for a book club that meets in a different independent café each month. The intended audience includes people who have never joined a book club and readers who prefer to listen before speaking. The kickoff is on the second Wednesday in March, from 6:30 to 7:30 p.m., at a café with 16 seats. Everyone brings a short passage from a book they chose. The café sells drinks, and purchases are optional. Choose coordinated artifacts for attracting participants and running the first meeting. The organizer can print at home and share static files."
+    },
+    {
+      "id": "pantry-collection-windows",
+      "genre": "analysis",
+      "prompt": "A neighborhood pantry coordinator needs to decide where to assign twelve volunteer hours next month. Fictional historical data for January through April, in the same order: weekday pickups 82, 91, 88, 96 and volunteer hours 24, 24, 26, 26. Saturday pickups 54, 63, 71, 74 and volunteer hours 16, 18, 18, 20. Missed reservations were 14, 16, 19, 17 on weekdays and 8, 7, 6, 6 on Saturdays. Compare service volume, pickups per volunteer hour, and missed reservations as a share of all reservations. Assume reservations equal pickups plus misses. Start from an empty directory and choose offline deliverables the coordinator can use at a planning meeting."
+    },
+    {
+      "id": "ceramics-class-mix",
+      "genre": "analysis",
+      "prompt": "A community ceramics studio can schedule six classes next term. Its manager wants a class mix that covers direct costs while leaving at least two slots for beginners. Fictional historical enrollment for the last four sessions of each format: beginner wheel 7, 8, 6, 8; handbuilding 5, 6, 4, 6; glazing workshop 4, 5, 5, 6. Price, materials per attendee, and instructor cost per session are respectively $45, $9, $120 for wheel; $38, $6, $95 for handbuilding; $32, $8, $80 for glazing. Only beginner wheel counts toward the beginner requirement. Compare margins and test a one-attendee decline per class. Start from an empty directory and choose offline deliverables."
+    },
+    {
+      "id": "library-branch-transfer",
+      "genre": "analysis",
+      "prompt": "A two-branch library wants to know whether to shift some circulating copies of three titles from West to East. Fictional historical monthly loans for May through August are East A 15, 17, 16, 18; B 9, 11, 10, 12; C 5, 4, 6, 5. West A 12, 13, 11, 12; B 10, 8, 9, 9; C 7, 6, 8, 7. Copy counts for A, B, and C were constant at East 3, 3, 2 and West 6, 4, 3. At most three copies can move, and each branch must retain at least two copies of every title. Compare loans per copy and show how candidate transfers change the imbalance if demand holds. Choose offline deliverables and start from an empty directory."
+    },
+    {
+      "id": "market-stall-bake-quantities",
+      "genre": "analysis",
+      "prompt": "A Saturday market baker needs starting quantities for muffins and scones. Fictional historical data for six consecutive markets give baked/sold pairs. Muffins: 40/35, 40/40, 48/45, 48/48, 56/49, 56/52. Scones: 32/28, 32/30, 32/32, 40/35, 40/34, 40/38. Muffins sell for $4 and cost $1.20 each to make. Scones sell for $3.50 and cost $1.05 each. Unsold goods bring no revenue. Next market allows 88 items total, baked in batches of eight by product. Compare waste and contribution, flag what sellouts hide about demand, and evaluate candidate batch mixes. Start from an empty directory and choose offline deliverables the baker can reuse."
+    },
+    {
+      "id": "recreation-league-court-slots",
+      "genre": "analysis",
+      "prompt": "A recreational badminton club can rent only two of its three weekly court slots next season. Fictional historical data for the last five weeks give attendance and total waitlist counts by slot. Tuesday attendance was 10, 11, 12, 10, 12 with waitlists 0, 1, 3, 0, 2. Thursday attendance was 8, 9, 8, 11, 9 with waitlists 0, 0, 0, 1, 0. Sunday attendance was 12, 12, 11, 12, 12 with waitlists 4, 5, 1, 4, 3. Each slot holds 12 players and weekly rents are $44, $36, and $62 respectively. Compare all pairs under a $110 weekly cap using attendance, unmet demand, and cost per visit. Choose offline deliverables and start from an empty directory."
+    },
+    {
+      "id": "apartment-laundry-queue",
+      "genre": "analysis",
+      "prompt": "A tenant committee can reserve one two-hour block each week for residents who need a predictable laundry time. Fictional historical counts of arrivals and waits longer than ten minutes from four sampled weeks are Monday evening arrivals 9, 10, 8, 11 and long waits 3, 4, 2, 5; Wednesday evening arrivals 6, 7, 8, 7 and waits 1, 1, 2, 1; Sunday morning arrivals 11, 12, 10, 13 and waits 4, 6, 4, 7. Both washers operated throughout. Compare queue pressure across blocks and assess the tradeoff between choosing a busy block and preserving it for walk-ins. Start from an empty directory and choose offline deliverables suitable for a tenant meeting."
+    },
+    {
+      "id": "footbridge-counter-coverage",
+      "genre": "analysis",
+      "prompt": "A parks department has budget to move a pedestrian counter to one of two paths for the next quarter. Fictional historical data for four consecutive weeks give weekday passages and valid weekdays, then weekend passages and valid weekend days. Canal Path records are 980/5 and 610/2; 800/4 and 290/1; 1,020/5 and 640/2; 590/3 and 580/2. Orchard Path records are 750/5 and 760/2; 770/5 and 400/1; 620/4 and 800/2; 790/5 and 780/2. Missing days reflect battery outages. Compare normalized usage and test whether the ranking depends on weighting weekdays and weekends. Start from an empty directory and choose offline deliverables for a parks analyst."
+    },
+    {
+      "id": "machine-shop-small-orders",
+      "genre": "analysis",
+      "prompt": "A small shop making decorative cabinet knobs wants to decide whether to batch low-volume orders once or twice weekly. Fictional historical weekly data for six weeks show orders 9, 12, 7, 15, 10, 13; pieces 35, 48, 28, 62, 41, 53; and orders received by Wednesday noon 5, 8, 3, 10, 6, 7. Assume each piece takes four minutes and each production run requires 25 minutes of setup. One run ships Friday. Two runs ship Wednesday and Friday, with orders through Wednesday noon eligible for Wednesday shipment. Estimate labor and earlier shipments under both schedules alongside a 270-minute weekly labor allowance. Start from an empty directory and choose offline deliverables for the production planner."
+    },
+    {
+      "id": "gallery-opening-hours",
+      "genre": "analysis",
+      "prompt": "A volunteer-run gallery can staff just two late openings per month, choosing between Thursday and Friday. Fictional historical observations for four late openings on each day give visitors, shop receipts, and volunteer hours. Thursday: 18/$92/6, 27/$145/6, 21/$110/5, 24/$128/6. Friday: 31/$125/8, 38/$184/8, 29/$142/7, 35/$160/8. Each proposed mix has a 15-hour monthly volunteer allowance. Compare visitors and receipts per volunteer hour, then model the three possible monthly mixes using historical averages and a high-hours scenario. Start from an empty directory and choose offline deliverables the gallery board can review before committing."
+    },
+    {
+      "id": "refill-shop-order-cycle",
+      "genre": "analysis",
+      "prompt": "A refill shop manager is choosing weekly order quantities for three dry goods. Fictional historical weekly sales in kilograms over six weeks were oats 19, 24, 22, 26, 21, 28; rice 32, 29, 38, 34, 41, 36; lentils 11, 15, 13, 17, 12, 19. Every historical week had enough stock to meet demand. Supplier sack sizes are 10 kg for oats, 15 kg for rice, and 5 kg for lentils. Current stock is 6, 9, and 4 kg respectively. Total shelf capacity after delivery is 90 kg. Compare feasible orders against historical demand and show shortage and leftover quantities under typical and high-demand weeks. Start from an empty directory and choose offline deliverables."
+    },
+    {
+      "id": "theater-ticket-reminders",
+      "genre": "analysis",
+      "prompt": "A community theater box-office lead wants to decide when to send a single reminder to patrons who reserve free matinee tickets. Fictional historical data for eight matinees list reminder timing and reservations/attendances. One day before: 72/58, 80/67, 66/55, 75/59. Three days before: 69/49, 82/68, 77/54, 71/52. Timing was assigned by staffing availability. The second matinee in each group was a school-holiday performance. Compare attendance rates by timing, including weighted versus per-show rates and a sensitivity check excluding holidays. Explain how the assignment limits the comparison. Start from an empty directory and choose offline deliverables for the box-office lead."
+    },
+    {
+      "id": "office-printing-allowance",
+      "genre": "analysis",
+      "prompt": "A coworking manager is comparing two monthly plans for a shared monochrome printer. Fictional historical monthly page totals were 820, 940, 1,110, 1,360, 990, 1,480, 1,220, and 870. Plan A costs $29 per month including 800 pages, plus $0.065 for each extra page. Plan B costs $53 per month including 1,400 pages, plus $0.045 for each extra page. Included pages reset each month, and one plan will be selected for the whole next year. Calculate historical costs and the break-even page count. Compare costs if every month repeats historical usage, falls 15%, or rises 20%, rounding to whole pages. Start from an empty directory and choose offline deliverables."
+    },
+    {
+      "id": "tool-library-borrowing-stock",
+      "genre": "analysis",
+      "prompt": "A tool library has $180 to buy extra hand tools before spring and wants to reduce unfilled reservations. Fictional historical fulfilled/unfilled reservation counts for four months were clamps 22/6, 24/8, 19/5, 25/10; tile cutters 12/3, 10/4, 11/2, 13/5; socket sets 16/2, 18/3, 20/4, 17/3. Current stock is eight clamps, three cutters, and five socket sets. Additional units cost $22, $85, and $48 respectively. For planning, assume each added unit can fill two otherwise unfilled reservations per month, capped by observed unmet demand. Compare feasible purchases and test sensitivity to one extra reservation filled per unit. Start from an empty directory and choose offline deliverables for the volunteer buyer."
+    },
+    {
+      "id": "rehearsal-room-rotations",
+      "genre": "software",
+      "prompt": "Build an offline rehearsal scheduler for a community theater coordinator. Four groups need weekly slots in two rooms between 17:00 and 21:00 on weekdays. The Main Room holds 24 and has a piano. The Studio holds 10 and has no piano. Seed the app with Chorus (18 people, piano, 90 minutes, Monday or Wednesday), Duet (2, piano, 60 minutes, Wednesday), Movement (8, 90 minutes, any weekday), and Readers (12, 60 minutes, Monday or Thursday). Let the coordinator place and move bookings, see conflicts with specific reasons, and print one weekly schedule. Preserve manually placed bookings between sessions."
+    },
+    {
+      "id": "bakery-batch-ledger",
+      "genre": "software",
+      "prompt": "Build an offline production and leftovers ledger for the owner of a neighborhood bakery. Each row records trays baked and individual items left at closing. A tray holds 12 buns or 8 rolls. Use this fictional history in the format date, bun trays, buns left, roll trays, rolls left: Nov 2, 4, 8, 3, 3; Nov 3, 5, 14, 4, 10; Nov 9, 4, 4, 3, 2; Nov 10, 5, 18, 4, 12. All dates are in 2026. Support adding and correcting days, and show estimated sold quantities and weighted leftover rates by product and weekday. Flag impossible counts before saving."
+    },
+    {
+      "id": "seed-library-desk",
+      "genre": "software",
+      "prompt": "Build an offline desk app for volunteers at a seed library who track packet quantities by variety and lot. Start with Snow Pea P26-01 at 17 packets, Calendula C26-02 at 9, and Bush Bean B25-04 at 4. Each checkout reduces available stock, each donation creates or adds to a lot, and a stock count correction records the difference with a short reason. Let volunteers search the catalog, see recent activity for a lot, and undo an accidental entry while keeping a visible history. Never require patron names. Provide a printable shelf list and indicate when a lot has three or fewer packets."
+    },
+    {
+      "id": "gallery-label-workbench",
+      "genre": "software",
+      "prompt": "Build an offline label workbench for a volunteer preparing a gallery show. Each artwork has a title, fictional artist display name, year, medium, dimensions, and optional credit line. Include three sample works: Tide Marks, graphite on paper, 2024, 21 × 30 cm; Window Light After Rain, oil on panel, 2025, 40 × 50 cm; and Fold Study IV, folded linen, 2023, 18 × 18 × 6 cm. Let the volunteer edit and reorder works, preview their labels, and print a checklist in matching order. Labels should fit a 90 × 55 mm trim size on A4 paper. Warn about text overflow while preserving the entered text."
+    },
+    {
+      "id": "bus-stop-count-comparator",
+      "genre": "software",
+      "prompt": "Build an offline tool for a neighborhood group comparing manual bus boarding counts at Maple Corner and Library Square. Use fictional observations with columns date, stop, minutes observed, boardings, and buses: Jun 1, Maple, 30, 18, 3; Jun 1, Library, 45, 36, 4; Jun 3, Maple, 45, 24, 4; Jun 3, Library, 30, 20, 3; Jun 8, Maple, 60, 33, 6; Jun 8, Library, 30, 0, 0. All dates are in 2026. Support session entry, date filters, and comparisons of boardings per observed hour and per bus using pooled totals. Show a zero-bus session without inventing a per-bus value."
+    },
+    {
+      "id": "pantry-dinner-picker",
+      "genre": "software",
+      "prompt": "Build an offline dinner picker for a household that wants to use ingredients already on hand. Start with 500 g rice, 300 g lentils, 4 carrots, 6 eggs, and 2 onions. Seed two recipes for two servings. Carrot lentils uses 150 g lentils, 2 carrots, and 1 onion. Egg rice uses 160 g rice, 2 eggs, and 1 carrot. Let the household add recipes and pantry entries, adjust serving counts, and see exact shortages for each recipe. Only deduct ingredients when the cook confirms a meal. Keep grams and item counts distinct, and round whole-item requirements up when scaling a recipe."
+    },
+    {
+      "id": "bowls-league-scorebook",
+      "genre": "software",
+      "prompt": "Build an offline scorebook for a six-team lawn bowls league. A win earns 2 standings points, a draw earns 1 per team, and an unplayed match earns none. Break standings ties by score difference, then scores for. Teams are Cedar, Fern, Lark, Moss, Reed, and Wren. Seed these fictional results: round 1, Cedar 14–9 Fern, Lark 11–11 Moss, Reed 8–13 Wren; round 2, Cedar 10–12 Lark, Fern 15–10 Reed, with Moss versus Wren unplayed. Let the secretary enter or correct scores, recalculate standings, and print a league table. Teams tied on every sporting criterion should share a rank."
+    },
+    {
+      "id": "print-shop-job-board",
+      "genre": "software",
+      "prompt": "Build an offline job board for a two-person copy shop. Orders move through Intake, Proofing, Ready to Print, Printing, and Pickup. Seed a 75-copy recital program due Tuesday at 15:00 awaiting proof, a 200-copy museum flyer due Wednesday at 10:00 ready to print, and a 30-copy class booklet due Tuesday at noon ready for pickup. Let staff set actual due dates and times, move jobs forward or back, record partial pickups, and see outstanding quantities. Highlight overdue jobs that still have copies to hand over. Include a printable daily queue grouped by what staff can act on."
+    },
+    {
+      "id": "pottery-class-credit-book",
+      "genre": "software",
+      "prompt": "Build an offline attendance and credit tracker for a small pottery studio. Each workshop has eight seats, and students may use prepaid visit credits. Start with fictional student codes P01, P02, and P03 with balances of 4, 2, and 1. Add two sample workshops, Tuesday Handbuilding at 18:00 and Saturday Glazing at 10:00. A reservation holds a seat and leaves the balance alone. Attendance uses a credit, while cancellation releases a seat. Support adding workshops, correcting attendance with a visible adjustment, and viewing each student's balance history. Prevent a student from being booked twice into the same workshop."
+    },
+    {
+      "id": "market-stall-weather-review",
+      "genre": "software",
+      "prompt": "Build an offline sales review tool for a weekend flower stall. Include this fictional 2026 history in the format date, weather, hours open, bouquets brought, bouquets sold, revenue in whole dollars: May 2, dry, 4, 36, 31, 310; May 3, rain, 3, 30, 14, 140; May 9, dry, 5, 45, 42, 420; May 10, rain, 4, 32, 19, 190; May 16, dry, 4, 40, 35, 350; May 17, rain, 2, 25, 9, 90. Allow new entries and corrections. Compare sell-through and revenue per open hour by weather using pooled totals, and display the underlying counts alongside each rate."
+    },
+    {
+      "id": "shared-tool-cupboard",
+      "genre": "software",
+      "prompt": "Build an offline lending tool for an apartment building's shared cupboard. Start with two folding tables individually tagged T-01 and T-02, one projector tagged P-01, and three indistinguishable extension cords tracked by quantity. A volunteer records the borrowing household using a short label, the checkout date, and the expected return date. Allow partial returns of pooled items and flag loans past their expected return date. Support a future reservation for either one specified tagged item or a quantity of pooled items. Show availability for a chosen date range, explain any overlap that blocks a reservation, and print a current loans sheet."
+    },
+    {
+      "id": "linen-turnaround-board",
+      "genre": "software",
+      "prompt": "Build an offline linen planning board for a five-room guesthouse. Each queen room needs one queen set and two towels. Each twin room needs two twin sets and two towels. Rooms 1–3 are queen and rooms 4–5 are twin. Start with two clean queen sets, three clean twin sets, and eight clean towels. Saturday departures are rooms 1, 2, and 4, and all three have same-day arrivals. A laundry batch expected at 13:00 contains two queen sets, two twin sets, and six towels. Let staff record actual returns, reserve clean stock for arrivals, and see which rooms can be prepared by a chosen time. Keep expected and received quantities visible."
+    },
+    {
+      "id": "museum-group-arrival-planner",
+      "genre": "software",
+      "prompt": "Build an offline arrival planner for a local museum's education desk. The workshop room seats 18 visitors, the gallery takes groups of up to 24, and the courtyard seats 30. Use three sample bookings: a school group of 28 arriving at 10:00, a club of 14 arriving at 10:30, and a family group of 9 arriving at 11:00. Activities last 30 minutes and each group may be split into named subgroups. Let staff assign time slots and spaces, spot capacity and overlapping bookings, and print a front-desk schedule showing where each subgroup goes. Support editing arrival times after a schedule has been drafted."
+    }
+  ],
+  "writer_effort": "medium",
+  "reader_effort": "medium",
+  "reader_engine": "Codex CLI",
+  "schedule_seed": 4195,
+  "yes_no_prior": 0.5
+}

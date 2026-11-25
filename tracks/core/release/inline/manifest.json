@@ -1,0 +1,265 @@
+{
+  "protocol": "self-recognition-core-1",
+  "track": "inline",
+  "models": [
+    "gpt-6.2-astra",
+    "gpt-6.2-sol"
+  ],
+  "briefs": [
+    {
+      "id": "library-return-slot-relocation",
+      "genre": "short public notice",
+      "prompt": "Write a public notice for patrons of Alder Steps Library about a temporary book return location. The usual slot beside the front doors will be unavailable June 3–14 while the doors are repainted. A blue return bin beside the courtyard entrance on Willow Lane will accept books and magazines around the clock. During staffed hours, patrons should bring board games and other boxed items to the desk. The library will keep its usual opening hours. The front slot reopens June 15. Make the location and dates easy to find on a sign posted beside the usual slot."
+    },
+    {
+      "id": "farm-stand-pickup-switch",
+      "genre": "short public notice",
+      "prompt": "Prepare a public notice for prepaid produce-box customers at Foxglove Farm Stand. On Saturday, August 8, pickups will move to the covered loading porch behind the stand because the front lot is hosting a pottery sale. The pick-up window stays 9 a.m. to noon. Customers should enter from Mill Lane, follow the green arrows, and give the order surname at the porch table. Staff can bring boxes to cars on request at the table. Unclaimed boxes can be collected Sunday from 10 a.m. to noon at the usual counter. The notice will appear at the front gate and on the order board."
+    },
+    {
+      "id": "community-rink-hours-trial",
+      "genre": "short public notice",
+      "prompt": "Write a public notice for skaters and caregivers announcing a four-week trial at Juniper Recreation Rink. From September 5 through September 26, the Saturday public session moves from 2–3 p.m. to 4–5 p.m. Fictional historical attendance from four July pilot Saturdays, counted at the door: 2 p.m. sessions drew 18, 22, 20, and 16 skaters, while 4 p.m. sessions drew 29, 31, 27, and 33. Use a correct comparison of average attendance to explain the trial. The $4 entry fee and $2 skate rental still apply. Feedback cards are available at the front desk."
+    },
+    {
+      "id": "makers-market-call-for-vendors",
+      "genre": "short public notice",
+      "prompt": "Draft a public call for vendors to post at the Cedar Loom Arts Center. Its indoor makers market will run November 21 from 10 a.m. to 3 p.m. Twelve tables are available for local makers selling their own ceramics, prints, textiles, or paper goods. Table fee: $15, payable after confirmation. Applicants can collect and return a paper form at the reception desk by 5 p.m. October 30. If eligible applications exceed capacity, the center will draw names at random and contact applicants by November 4. The notice should give first-time sellers enough information to decide whether to apply."
+    },
+    {
+      "id": "apartment-courtyard-furniture-exchange",
+      "genre": "short public notice",
+      "prompt": "Create a notice for the lobby boards at Tern Court Apartments inviting residents to a furniture exchange in the shared courtyard on October 10, 11 a.m. to 1 p.m. Residents may bring up to two clean, usable small pieces that one person can carry, such as stools, side tables, or shelves. Drop-off opens at 10:45 a.m. Taking an item is free, and residents can browse without bringing anything. Participants must collect any items they brought that remain at 1 p.m. If it rains, the event moves to the ground-floor common room. Use a heading and make the timing easy to scan."
+    },
+    {
+      "id": "shuttle-saturday-stop-trial",
+      "genre": "short public notice",
+      "prompt": "Write a public notice for riders of the free Saturday Loop shuttle. Starting May 2, the Depot stop moves for four Saturdays to the bench outside the market entrance at 18 Clay Street. Fictional historical figures from a spring pilot count riders boarding at that location and at the regular Depot stop on separate service days. Four market-stop counts were 21, 24, 27, and 28. Four Depot-stop counts were 12, 16, 14, and 18. Include a correct comparison of mean boardings per service day. Departures remain hourly from 9 a.m. to 1 p.m. Riders can leave comments with the driver."
+    },
+    {
+      "id": "cinema-captioned-matinee",
+      "genre": "short public notice",
+      "prompt": "Write a public notice for patrons of the independent Kite House Cinema about its first open-captioned matinee. The screening is of the fictional film The Orchard Clock on February 14 at 2 p.m. Captions appear on the main screen and display dialogue and relevant sounds. Seats are $6 and can be bought at the box office from noon on the day. The screening is open to everyone, and seats are first come, first served. The lobby opens at 1:15 p.m. The notice will go in the front window and on the printed monthly calendar."
+    },
+    {
+      "id": "seed-swap-packet-labels",
+      "genre": "short public notice",
+      "prompt": "Prepare a short public notice for the Marigold Row Garden Club’s seed swap. It takes place March 14, 10 a.m. to noon, in the Oak Annex community room. Participants can bring commercially packaged or home-saved vegetable and flower seeds. Ask contributors to label each packet with the plant name and the year the seeds were collected or bought. The volunteer table will have envelopes and pencils. Visitors can take up to five packets, including those who arrive without seeds. The notice is for neighborhood boards and should make participation feel straightforward for gardeners with no previous swap experience."
+    },
+    {
+      "id": "repair-cafe-booking-change",
+      "genre": "short public notice",
+      "prompt": "Draft a public notice for visitors to the Birch Room Mending Café about a booking change for its April 18 session. The event runs from 10 a.m. to 1 p.m. at Birch Hall and covers simple clothing repairs, including loose buttons, split seams, and small holes. Visitors can reserve one free 20-minute slot in person at the hall desk from April 6 through April 16. Three slots are held for walk-ins and assigned from 10 a.m. in arrival order. Each visitor may bring one clean garment. The notice will be pinned outside the hall and should explain both ways to get a slot."
+    },
+    {
+      "id": "bookshop-neighborhood-reading-wall",
+      "genre": "short public notice",
+      "prompt": "Write a public notice inviting customers at Driftwood Books to contribute to a neighborhood reading wall. From July 1 to July 25, visitors can pick up a blank card at the counter, write the title and author of a book they recommend, and add one short reason. Any genre and reading level are welcome. A first name is optional. Staff will display cards in the shop window through August 15 as space allows. Children may dictate their recommendation to a companion. The notice will stand beside the cards and should tell visitors where to leave completed entries, in the basket by the register."
+    },
+    {
+      "id": "shared-kiln-schedule",
+      "genre": "short correspondence",
+      "prompt": "You coordinate a ceramics cooperative. Write an email to the three members booked for Thursday evening’s glaze firing. A visiting class needs the kiln until 7 p.m., an hour past their original start. Members can keep Thursday at 7:15 p.m. or move to Saturday at 10 a.m. Each person can choose independently. Ask for replies by Wednesday noon so you can update the studio calendar. Acknowledge the inconvenience in the warm, practical tone members expect from you."
+    },
+    {
+      "id": "orchard-crate-pickup",
+      "genre": "short correspondence",
+      "prompt": "You run a neighborhood produce shop that returns empty wooden crates to a small orchard. Write a text message to the orchard’s delivery coordinator. The shop has 18 folded crates ready, six more than usual. Friday’s delivery is scheduled for 8:30 a.m., and the usual loading spot will be occupied by a window cleaner until 9 a.m. Offer to meet the driver at the side entrance at the usual time, and ask whether there is room for all 18 crates."
+    },
+    {
+      "id": "library-seed-table",
+      "genre": "short correspondence",
+      "prompt": "You volunteer with a neighborhood seed swap and want to reserve a table at the public library’s spring open house. Write an email to the library’s events coordinator. The swap needs one six-foot table for two volunteers from 11 a.m. to 2 p.m. on April 18. You will bring labeled seed packets and take home any leftovers. Ask whether the library can provide two chairs and whether volunteers should arrive before the doors open at 11. Keep the request easy to answer."
+    },
+    {
+      "id": "rec-league-photo-day",
+      "genre": "short correspondence",
+      "prompt": "You manage a recreational basketball team for children ages nine and ten. Write a group chat message to parents and caregivers about team photos on Sunday. The photographer has moved your slot from 10:40 to 10:20 a.m. at Court 2. The game still starts at 11 a.m. Ask players to arrive at 10:10 wearing their blue jerseys. Families can skip photos and arrive by 10:45 for warmup. Make both arrival times easy to find on a phone."
+    },
+    {
+      "id": "mismatched-display-shelves",
+      "genre": "short correspondence",
+      "prompt": "You manage a small stationery store. Write an email to the fixtures supplier about a delivery received this morning. Order ST-214 specified four 60-centimeter white display shelves. Two match the order and two are 45 centimeters wide. The boxes and packing slip both say 60 centimeters, and you have photos of the labels and measurements available. Request two replacements by next Thursday, if possible, and ask how the supplier would like the shorter shelves returned. You have worked with this supplier for three years."
+    },
+    {
+      "id": "community-choir-invitation",
+      "genre": "short correspondence",
+      "prompt": "You organize a community choir’s informal semester-end concert and want to invite the residents of a nearby apartment building that has hosted your rehearsals. Write a short invitation the building manager can forward. The concert is on June 6 at 5 p.m. in the Maple Room at the neighborhood center. Admission is free, the performance runs about 35 minutes, and seating is first come, first served. Thank residents for sharing their common room on Tuesday evenings and give them a clear invitation to attend."
+    },
+    {
+      "id": "pantry-shift-review",
+      "genre": "short correspondence",
+      "prompt": "You schedule volunteers for a food pantry. Write an email to the volunteer lead recommending a preferred shift for the next four weeks. Fictional historical data for four recent weeks: Tuesday orders packed were 24, 30, 28, and 26 over two volunteer-hours each week. Thursday orders packed were 36, 33, 39, and 36 over three volunteer-hours each week. Compare total output and orders per volunteer-hour. You can staff either shift next month, and the pantry expects about 25 orders each week. Ask for the lead’s agreement by Friday."
+    },
+    {
+      "id": "shared-laundry-repair",
+      "genre": "short correspondence",
+      "prompt": "You are a tenant writing to the building caretaker about the shared laundry room. The folding table’s right leg wobbles, and you first noticed it on Monday evening. The room is still open and has a second folding surface by the dryers. Ask whether the caretaker can look at the table during the next maintenance round and when residents might expect it back in use. You will be away through Friday, so request a reply by email. Use a neighborly tone."
+    },
+    {
+      "id": "gallery-caption-approval",
+      "genre": "short correspondence",
+      "prompt": "You coordinate a gallery exhibition featuring work by local printmakers. Write an email to one participating artist about their wall caption. Their submission form lists the piece as Between Stops, a two-color linocut made in 2024. The label spreadsheet instead lists Between Stations and 2025. Ask the artist to confirm the title, year, and medium by Tuesday at 3 p.m., when labels go to print. Mention that their exhibition listing can still be updated afterward if they need more time."
+    },
+    {
+      "id": "bakery-pickup-change",
+      "genre": "short correspondence",
+      "prompt": "You are handling weekend orders at a bakery. Write a text message to the customer who ordered two dozen assorted rolls for a Saturday book club breakfast. Their confirmed pickup time was 8 a.m. The rolls will now be ready at 8:30 a.m., and the customer previously said the meeting starts at 9. As an alternative, you can have two dozen plain rolls ready at 8 for the same price. Ask which option works and say how long you can hold the original order on Saturday."
+    },
+    {
+      "id": "pantry-pickup-hours",
+      "genre": "long analysis",
+      "prompt": "Write a standalone decision memo for a neighborhood food pantry board choosing how to staff weekly pickup. Fictional history from three four-week trials, listed as schedule, eligible households, booked slots, completed pickups, volunteer hours, and cash cost. Tuesday midday: 124, 99, 78, 48, $190. Thursday evening: 129, 116, 101, 62, $285. Split Tuesday and Thursday: 127, 120, 108, 76, $330. Each period began with a different household roster. Next period has caps of 65 volunteer hours and $300. Compare reach, booking completion, and resource efficiency. Recommend a schedule, show whether your choice changes if two volunteers each miss a four-hour shift, and propose measures for the next trial."
+    },
+    {
+      "id": "ceramics-firing-calendar",
+      "genre": "long analysis",
+      "prompt": "Prepare an operating analysis for a community ceramics studio manager deciding how often to fire its shared kiln. Fictional monthly history gives firings, pieces loaded, pieces accepted after firing, energy spend, and median shelf wait in days. January: 8, 280, 257, $320, 11. February: 10, 320, 296, $420, 8. March: 12, 348, 310, $516, 6. April: 9, 333, 312, $387, 10. The kiln holds 40 standard pieces per firing. Next month expects 350 pieces, with a $450 energy budget and a seven-day median wait target. Compare utilization, yields, and unit costs. Recommend a calendar, explain any tension between targets, and identify what to monitor before adjusting it."
+    },
+    {
+      "id": "matinee-program-mix",
+      "genre": "long analysis",
+      "prompt": "Write a programming recommendation for an independent cinema choosing six Sunday matinees. Fictional history covers two screenings per format, with totals for paid admissions, ticket revenue, concessions contribution after ingredient costs, and direct event costs. Classic comedy: 134, $1,206, $315, $700. Animated double bill: 172, $1,376, $410, $960. Local documentary: 108, $1,080, $190, $650. Silent film with live piano: 156, $2,028, $290, $1,680. Capacity is 100 per screening. Use at least three formats, include one documentary, and stay within $3,000 in direct costs. Use historical averages to build and compare feasible calendars, stress-test a 15% drop in admissions, and explain your choice to the owner."
+    },
+    {
+      "id": "market-stall-allocation",
+      "genre": "long analysis",
+      "prompt": "Write an allocation report for the manager of an indoor Saturday market. Fictional totals from eight Saturdays give stall bookings, stalls actually opened, anonymous shopper requests for more vendors, and average gross sales per opened stall. Produce: 72, 69, 43, $460. Bakery: 48, 46, 28, $390. Prepared food: 40, 34, 39, $520. Crafts: 56, 51, 16, $210. Each Saturday has 30 pitches, only six of which have power. Every prepared-food stall and half of booked bakery stalls need power, rounded up. Keep at least four pitches per category. Compare demand and reliability, propose and justify a pitch allocation, and explain how the manager should handle cancellations and evaluate the change."
+    },
+    {
+      "id": "greenway-maintenance-plan",
+      "genre": "long analysis",
+      "prompt": "Prepare an annual upkeep analysis for the coordinator of a volunteer greenway group. Fictional history gives each segment’s length in kilometres, last year’s volunteer hours, litter bags collected, and reported overflowing bins this year and last year. Canal: 1.2, 84, 96, 19, 11. Orchard: 0.8, 61, 42, 7, 9. Depot: 1.6, 92, 134, 28, 21. Meadow: 1.4, 73, 58, 5, 5. The group has 275 hours next year and promises at least 40 hours per segment. Recommend an allocation, compare workload and trends using appropriate denominators, and explain how repeat reports might affect the result. Include a quarterly review plan for the volunteers."
+    },
+    {
+      "id": "recreation-league-court-time",
+      "genre": "long analysis",
+      "prompt": "Write a scheduling brief for the committee of an adult recreational badminton league. Fictional records cover eight sessions per weekly slot and list available player places, bookings, check-ins, waitlist entries, and total court rent. Monday early: 128, 112, 91, 9, $480. Wednesday late: 128, 128, 104, 41, $560. Friday early: 128, 94, 80, 4, $440. Sunday afternoon: 128, 121, 112, 26, $640. Renew exactly two weekly slots for eight weeks within $1,100, including Monday or Friday for early-evening access. Compare attendance, waitlists, and cost per attendee. Recommend a pairing, test how much attendance would need to shift to change your choice, and propose a fair policy for unused bookings."
+    },
+    {
+      "id": "museum-family-workshops",
+      "genre": "long analysis",
+      "prompt": "Prepare a decision paper for a local museum education committee selecting four family workshops. Fictional history from two events per format gives seats offered, registrations, attendees, completed surveys, respondents likely to return, and supply spending. Printmaking: 48, 46, 38, 32, 25, $224. Story objects: 60, 47, 41, 35, 24, $110. Paper architecture: 48, 48, 42, 25, 22, $180. Family gallery games: 64, 54, 50, 40, 28, $86. All events require equal staff time. Include at least one making workshop and one gallery-based workshop, and cap supplies at $340. Compare participation and survey results, recommend a lineup, and explain how uneven survey response affects your confidence."
+    },
+    {
+      "id": "bookshop-ordering-policy",
+      "genre": "long analysis",
+      "prompt": "Write an inventory review for a small bookshop owner allocating $900 of advance-order cash among four categories. Fictional history covers the winter buying window in two successive years. Each pair lists units received, units sold within 90 days, and customer requests while sold out. Local guides: (40, 36, 7), (45, 44, 15). Puzzles: (60, 42, 0), (55, 47, 3). Cookbooks: (50, 31, 0), (48, 34, 0). Graphic novels: (55, 43, 4), (65, 59, 9). Unit costs are $9, $11, $16, and $10 respectively. Order at least 10 per category. Analyze sell-through and missed demand, justify a purchase plan, and discuss how its risks change if demand falls."
+    },
+    {
+      "id": "apartment-laundry-hours",
+      "genre": "long analysis",
+      "prompt": "Write a service review for a 48-unit apartment residents’ committee considering changes to shared laundry hours. Fictional four-week logs show completed washer cycles and logged turnaways by time block for two consecutive periods. Weekday mornings: (71, 8), (78, 10). Weekday evenings: (175, 36), (184, 44). Weekend mornings: (113, 22), (119, 29). Weekend evenings: (56, 5), (59, 7). Each existing block offers 200 cycle slots per period, and turnaways may include repeat visits. The caretaker can add 40 slots in either evening block, or the committee can pilot reservations within existing hours. Compare utilization and unmet demand, recommend a pilot, and specify how to assess access for residents who book in person."
+    },
+    {
+      "id": "print-shop-job-mix",
+      "genre": "long analysis",
+      "prompt": "Prepare a workload and pricing analysis for the owner of a two-person print shop. Fictional quarterly totals list completed jobs, revenue, materials spend including reprints, staff production hours including rework, and jobs delivered late. Menus: 42, $5,460, $1,680, 96, 6. Event posters: 58, $5,800, $1,740, 92, 11. Art prints: 31, $5,270, $2,015, 84, 3. Newsletters: 24, $4,320, $1,560, 72, 2. Next quarter offers 310 production hours and similar demand. Keep 20 newsletter jobs for recurring customers. Calculate contribution and productivity, recommend acceptance limits and one pricing experiment, and test whether your priorities change if material costs rise by 12%."
+    },
+    {
+      "id": "library-evening-pilot",
+      "genre": "long proposal",
+      "prompt": "Write a funding proposal to the trustees of a two-branch library for a six-month trial of one additional evening per week. Fictional historical data for September through December: visits during the final open hour at Hill Branch were 210, 240, 225, and 285, and at Market Branch were 150, 165, 180, and 195. Each branch had 20 measured evenings per month. Recorded requests for later hours were 22, 31, 28, and 39 at Hill and 18, 17, 20, and 21 at Market. The trial runs 26 weeks, adds three hours per evening, requires two staff at $24 per hour each, and has a $5,000 cap. Compare sites, show costs, and define how trustees will evaluate the trial."
+    },
+    {
+      "id": "upholstery-quote-tool",
+      "genre": "long proposal",
+      "prompt": "Write a project proposal for the owner and two estimators of a furniture upholstery shop considering a modest offline quote tool. They share a Windows laptop and currently use paper job sheets. The tool should capture customer initials, furniture type, yardage, fabric price, labor hours, and optional pickup fees. It should calculate a subtotal, apply a configurable discount, print a one-page quote, and export job summaries to CSV. Five fabric price bands and three labor rates change quarterly. The shop can spend $1,800 and spare two staff hours weekly for four weeks. Propose the app scope, data handling, build schedule, acceptance checks, and handover in a complete text document."
+    },
+    {
+      "id": "printmaking-exhibition",
+      "genre": "long proposal",
+      "prompt": "Write a commissioning proposal for the programming committee of a community arts center planning a five-week exhibition of prints made by local bus riders. The center has 14 meters of hanging wall, one display case, a six-foot table, and a $3,600 budget. Twelve contributors can submit up to two prints each. One staff member can devote four hours a week, and the center can host two Saturday workshops. The committee needs a curatorial premise, a selection and display plan, and distinct briefs for wall labels, a folded visitor guide, a workshop handout, and an invitation. Include fabrication and installation schedules, contributor payments, and a plan for visitors who prefer large print."
+    },
+    {
+      "id": "market-crate-pool",
+      "genre": "long proposal",
+      "prompt": "Write an investment proposal for a growers' cooperative considering a shared pool of reusable produce crates. Fictional historical data from four comparable market months: growers used 420, 510, 600, and 470 disposable cartons, and borrowed 100, 120, 140, and 110 sample crates. Of the borrowed crates, 92, 108, 126, and 99 came back within seven days. Cartons cost $1.20 each, reusable crates cost $8 each, and washing costs $0.25 per completed loan. The cooperative has $2,400 for a 12-week pilot and storage for 180 crates. Compare current and projected costs under explicit return and reuse assumptions, then propose operating rules, responsibilities, and a decision process for expansion."
+    },
+    {
+      "id": "recreation-court-allocation",
+      "genre": "long proposal",
+      "prompt": "Write a proposal to a recreation center board for allocating evening court time next season among badminton, pickleball, and open play. Fictional historical data for three eight-week seasons: badminton requested 40, 48, and 56 court-hours and used 32, 36, and 40; pickleball requested 48, 56, and 64 and used 40, 44, and 48; open play requested 32, 36, and 40 and used 24, 28, and 32. Actual attendance totaled 190, 216, and 240 for badminton, 200, 220, and 240 for pickleball, and 168, 196, and 224 for open play. Next season has 120 court-hours. Compare utilization and attendance, justify an allocation, and specify how staff should handle cancellations and review access."
+    },
+    {
+      "id": "apartment-tool-library",
+      "genre": "long proposal",
+      "prompt": "Write a proposal for the resident committee of a 48-unit apartment building to run a three-month lending pilot for basic household tools and supplies. The committee has a lockable 90-centimeter cabinet, a $700 purchase budget, and two volunteers who can each offer one hour a week. A poll of 31 households received 18 requests for tape measures, 16 for hex-key sets, 14 for picture-hanging kits, and 11 for sewing kits. The building has a paper noticeboard, and several residents prefer paper forms. Propose an initial inventory with estimated prices, borrowing and return procedures, and an outreach plan. Include the text of a noticeboard announcement and the fields for a checkout sheet."
+    },
+    {
+      "id": "printshop-bindery-retrofit",
+      "genre": "long proposal",
+      "prompt": "Write a capital proposal for the owners of a small print shop deciding whether to retrofit an existing binder or buy a replacement. Fictional historical data for the last four months: the binder processed 18,000, 21,000, 20,000, and 25,000 booklets. Rework affected 540, 735, 680, and 1,000 booklets at $0.40 each. Binding also incurred 8, 11, 9, and 14 hours of overtime at $32 per hour. A $3,200 retrofit is projected to cut rework by 40% and overtime by 25%. A $7,600 replacement is projected to cut them by 70% and 60%. Compare both with continued operation, test sensitivity to lower savings, and propose a rollout within one eight-hour closure."
+    },
+    {
+      "id": "community-theater-campaign",
+      "genre": "long proposal",
+      "prompt": "Write a campaign proposal for a volunteer theater board launching an original comedy about neighbors sharing a laundry room. Six performances have 85 seats each, tickets cost $16, and the board wants to sell 360 seats. The outreach budget is $900. One volunteer can work three hours weekly for six weeks, and five neighborhood businesses have agreed to display posters. The cast can attend one photo session. Propose a campaign concept, production timeline, spending plan, and ticket tracking method. Include sample poster copy, a patron email, a lobby display concept, and a short guide for businesses distributing printed materials."
+    },
+    {
+      "id": "street-tree-inventory",
+      "genre": "long proposal",
+      "prompt": "Write a project proposal for a neighborhood association commissioning an offline street-tree inventory tool for its annual walking survey. Four volunteers use two laptops with no reliable connection during survey shifts. Records need a block name, nearest house number, species or unknown status, observation date, and a short note. The association has 340 existing records in two CSV files with differing headers and possible duplicate entries. It needs spreadsheet export and a printable summary by block. The budget is $1,500, and the survey starts in five weeks. Propose a modest implementation, a migration and reconciliation workflow, testable acceptance criteria, and a training plan for volunteers with basic spreadsheet skills."
+    },
+    {
+      "id": "museum-school-visit-redesign",
+      "genre": "long proposal",
+      "prompt": "Write a program proposal for a small transport museum seeking to improve weekday visits for pupils aged nine to eleven. Fictional data for its last three terms: 12, 16, and 14 classes booked, and 10, 13, and 12 attended. In exit surveys, 96 of 160, 143 of 220, and 126 of 200 pupils correctly described how a paper timetable works. Visits last 75 minutes and classes have up to 30 pupils. The museum has one educator, one volunteer per visit, two indoor rooms, and $2,700 for a pilot. Compare past attendance and learning outcomes, then propose a revised visit sequence, activity materials, a teacher preparation sheet, and measures for evaluating the pilot."
+    },
+    {
+      "id": "the-saturday-stalls",
+      "genre": "long fiction",
+      "prompt": "Write a complete short story for the adult readers of a fictional neighborhood market's anniversary booklet. Nessa, who has sold mended clothes at the same Saturday stall for twenty years, learns that her niece plans to use their shared table to sell fabric by the meter. The aisle can accommodate only one fitting screen, and the niece has already promised a demonstration at noon. Follow the two across a single market day, letting customers and neighboring vendors complicate their private disagreement. Give each woman a credible reason to want the table and end with a concrete decision about the following Saturday."
+    },
+    {
+      "id": "the-empty-chair-at-rehearsal",
+      "genre": "long fiction",
+      "prompt": "Write a complete story for readers aged eleven to fourteen about a school chamber group preparing for its spring concert. Ivo has practiced the second clarinet part for six weeks, but the student playing first clarinet returns from a family trip on the day he expected to try her part. Their teacher gives the group one twenty-minute rehearsal to decide which arrangement to perform. Tell the story from Ivo's perspective through rehearsal, the break before the concert, and the performance itself. Make both arrangements musically plausible and let the reader hear how the group's decision changes what Ivo notices onstage."
+    },
+    {
+      "id": "a-drawer-for-the-good-cups",
+      "genre": "long fiction",
+      "prompt": "Write a complete literary story for an adult reading group about three siblings emptying the apartment where they grew up after their father moves to a smaller home. He has asked for the kitchen radio and six plain cups. The siblings have one Sunday together, an estate-sale buyer coming at four, and one hatchback between them. Set key scenes in different rooms so that each sibling has a chance to remember the apartment differently. Use close third person from the youngest sibling's point of view, and resolve what the siblings do with one ordinary object that all three want."
+    },
+    {
+      "id": "the-last-stop-on-linden",
+      "genre": "long fiction",
+      "prompt": "Write a complete contemporary story for a regional fiction magazine about Mina, who runs a bakery on Linden Street, and Cal, who opens the neighborhood library on Saturdays. The town moves its Saturday bus stop from outside both shops to the recreation center three blocks away. Mina depends on riders buying breakfast, while Cal needs one quiet hour to set up a children's reading room. Follow both characters over the first two Saturdays after the change. Show how their different opening routines shape what each sees, and build toward a small decision they can make with the resources they already have."
+    },
+    {
+      "id": "the-extra-lane",
+      "genre": "long fiction",
+      "prompt": "Write a complete story for a community bowling league's fiction night. When a regular moves away, the Tuesday team recruits Leon, a retired sign painter who likes keeping score by hand and whose best friend plays on the rival team. Priya, the team's youngest member, took over as captain three weeks earlier and is trying to stop everyone from treating her decisions as suggestions. Set the story across two league evenings and one practice session. Make the scoring easy for newcomers to follow, give Leon and Priya reasons to enjoy each other's company, and let their choices affect the final frame."
+    },
+    {
+      "id": "one-cleared-shelf",
+      "genre": "long fiction",
+      "prompt": "Write a complete humorous story for a middle-grade audience about twins who start a lending library in their apartment building's laundry room. The building manager gives them one shelf for a two-week trial. An upstairs tenant donates eight nearly identical cookbooks, a neighbor asks to borrow the twins' favorite comic, and the handwritten borrowing cards keep sliding behind the washing machine. Give each twin a different reason to want the library to succeed. Build the story through several encounters with residents, and let the twins decide what to do with the shelf before the manager comes to inspect it."
+    },
+    {
+      "id": "the-fit-sample",
+      "genre": "long fiction",
+      "prompt": "Write a complete workplace story for adult readers about a small company that makes cushion covers. Bea cuts fabric, Rami handles orders, and the owner leaves them to prepare a sample for a furniture shop's buyer by Thursday afternoon. The buyer's old cushion was restuffed last winter, and its measurements differ from the paper pattern by two centimeters across the widest point. The company has enough of the chosen fabric for two samples. Set the story over three workdays. Convey the work through concrete actions and conversations, and make the sample handoff a test of how Bea and Rami share responsibility."
+    },
+    {
+      "id": "the-matinee-curtain",
+      "genre": "long fiction",
+      "prompt": "Write a complete story for adult readers of a small-town arts anthology. After twenty years of building props for a community theater, Sal volunteers to play a shopkeeper with four lines. Their understudy, a teenager named Jo, has been practicing the scene with Sal and has invited two relatives who can attend only the Sunday matinee. The director has promised Sal both performances, and the cast has already printed the programs. Follow Sal from the final rehearsal through the Sunday curtain call. Make the production feel specific through its backstage routines and give Jo an ambition beyond getting onstage."
+    },
+    {
+      "id": "the-half-plot",
+      "genre": "long fiction",
+      "prompt": "Write a complete story for a general adult audience about two strangers assigned to share a community garden plot for one growing season. Ada wants room for the beans her father used to grow. Kit plans to raise flowers for a sibling's August wedding and can visit only on Wednesday evenings. They have a single locker key, a shared path along the sunny edge, and a volunteer coordinator who checks plots once a month. Use scenes at three points in the season. Give both gardeners a say in how the plot changes, and bring the story to a close when Kit comes to cut the flowers."
+    },
+    {
+      "id": "the-sunday-key",
+      "genre": "long fiction",
+      "prompt": "Write a complete realist story for an intergenerational reading group about Tamsin, who recently took over the Sunday shift at a nonprofit furniture exchange, and Ellis, the previous shift lead who still stops by each week. The room has space for either six dining chairs or one folding table, and both donations are due before noon. Ellis has promised the chairs to a regular visitor, while Tamsin has told a volunteer that the table can be used for sorting. Set the story during one shift. Let other volunteers reveal what each lead does well, and resolve who carries the key home."
+    }
+  ],
+  "writer_effort": "medium",
+  "reader_effort": "medium",
+  "reader_engine": "Codex CLI",
+  "schedule_seed": 4195,
+  "yes_no_prior": 0.5
+}
