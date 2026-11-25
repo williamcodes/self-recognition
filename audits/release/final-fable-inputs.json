@@ -1,0 +1,33 @@
+{
+  "sha256": {
+    "tracks/core/release/inline/judgments.json": "34f76df5ad647732bcbb35060b881759d8c310f6c14a9ede26c1f3930f0ece74",
+    "tracks/core/release/inline/inventory.json": "f10482e23df67b914a5137257667a3a144bcdb27868b0da4845358cd527a0bf3",
+    "tracks/core/release/projects/judgments.json": "6c58ec344db8e65e1bbe1ec2389174b0e001523c06c8ac89c3c3d558dc4a2b8c",
+    "tracks/core/release/projects/inventory.json": "9855acec3a0af7a2ac3307faf2ceda0f83a3cf758f66f63cc95072b4c87c294a",
+    "tracks/group/examples.json": "19bf7914d020c38880fabb7e69e5559d6f06fe62cdfc170211bcec4dff1a925c",
+    "tracks/group/provenance.json": "db33a295e206315523d018fd3c20d7e9f7bdb2bda5e99a54e39bff771bea5f91",
+    "tracks/negotiation/seed.json": "c9b60b671528f8ef0abc392772415ec3f3510fc924b5ece69a157fceaa276572",
+    "tracks/negotiation/cross-family.json": "9f7690d0d4b34a1c194d07b0ac27ef60f1c22bf3fd29d9a04d2b89afd0ab814e",
+    "tracks/inline-cross-family/scores.json": "fdce1a513d37900eabbee5a58cb5b48fff0aa070b4749dddb2dfd3e65d8bd62e",
+    "tracks/social-typography/README.md": "59a713c411946b4c344783bf08fcb2557c0c98c2838134399d2591d21650468f",
+    "audits/release/fable-rubric.md": "7eb29de80dd5c4307759d4a8ca10802b756c88f75ff904564796dedf3fb56c22",
+    "docs/data/release/index.json": "1538fbb8e23da42dfd175b82c7004e35fb6ff31fa25f41fe277938644c675473"
+  },
+  "integration_review": {
+    "model_usage_ids": [
+      "claude-fable-5-2"
+    ],
+    "succeeded": true,
+    "turns": 33,
+    "duration_ms": 333386
+  },
+  "closure_review": {
+    "candidate": "0e7cac368b2a24cb3e36f5a5bd82cb94d26f032a",
+    "model_usage_ids": [
+      "claude-fable-5-2"
+    ],
+    "succeeded": true,
+    "turns": 26,
+    "duration_ms": 258006
+  }
+}
