@@ -16,9 +16,11 @@ def main():
     for track in ("inline","projects"):
         python("-m","tracks.core","verify",ROOT/"tracks"/"core"/"release"/track)
     negotiation=ROOT/"tracks"/"negotiation"
-    archives=sorted(negotiation.glob("seed*.json"))
+    archives=[negotiation/"seed.json"]
     if not (negotiation/"seed.json").is_file():
         raise ValueError("Missing primary negotiation archive")
+    if (negotiation/"cross-family.json").is_file():
+        archives.append(negotiation/"cross-family.json")
     for path in archives:
         python(negotiation/"verify.py",path)
     group=ROOT/"tracks"/"group"
