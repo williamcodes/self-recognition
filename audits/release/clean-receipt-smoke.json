@@ -1,0 +1,37 @@
+{
+  "scope": "Fresh subscription smoke, excluded from leaderboard results. Each track used one brief, two writers and eight judgments.",
+  "starting_checkout": "7c4f917c20c1e31cdac6d201ccadf155dbef1b87",
+  "recovery_checkout": "62cac0a20db39f8acd3dc57adcf72f2f57948843",
+  "tracks": {
+    "inline": {
+      "status": "verified",
+      "states": {
+        "complete": 10
+      },
+      "adjudicated_invalid_misses": 0,
+      "writers_with_receipts": 2,
+      "readers_with_receipts": 8,
+      "writers_without_receipts": 0,
+      "readers_without_receipts": 0,
+      "reference_works_without_local_calls": 0,
+      "attempts_with_thread_metadata": 10,
+      "attempts_with_cli_model_metadata": 0
+    },
+    "projects": {
+      "status": "verified",
+      "states": {
+        "complete": 9,
+        "quarantined": 1
+      },
+      "adjudicated_invalid_misses": 1,
+      "writers_with_receipts": 2,
+      "readers_with_receipts": 8,
+      "writers_without_receipts": 0,
+      "readers_without_receipts": 0,
+      "reference_works_without_local_calls": 0,
+      "attempts_with_thread_metadata": 10,
+      "attempts_with_cli_model_metadata": 0
+    }
+  },
+  "project_recovery": "The earlier detector quarantined one otherwise ordinary search that excluded .git files. A clean checkout with the corrected detector retained that trial as an invalid miss and finished the same archive. The recorded answer was never resampled."
+}
