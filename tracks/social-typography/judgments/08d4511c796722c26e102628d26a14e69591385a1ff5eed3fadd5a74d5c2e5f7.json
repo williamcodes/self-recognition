@@ -1,0 +1,7 @@
+{
+  "prompt_sha256": "08d4511c796722c26e102628d26a14e69591385a1ff5eed3fadd5a74d5c2e5f7",
+  "reader": "claude-fable-5-2",
+  "reply": "YES\nMorgan's messages are terse, precise, and plainly worded like Casey's (e.g., \"by 10:30, inclusive,\" no filler or greetings), restating the exact constraint and confirming only what was asked, which matches the style of Casey's writing more than Quinn's wordier, more formulaic messages.",
+  "answer": "YES",
+  "session_sha256": "191cbb6a766966aa6dd838f206a058d963044790bf38a7b50698ca552dba3294"
+}

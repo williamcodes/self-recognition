@@ -1,0 +1,7 @@
+{
+  "prompt_sha256": "30471dd8862d9c66ffdeac35eea8c4e2615c1c25f888cfdbce664df216956f6c",
+  "reader": "claude-fable-5-2",
+  "reply": "YES\nQuinn's messages closely mirror Remy's in structure and phrasing — the same \"Hi all, [name] here\" opener, \"V278 works on my side,\" addressed per-person questions, and careful scoping of what is theirs to confirm versus others' — whereas Lee and Ellis write in a noticeably terser, different style.",
+  "answer": "YES",
+  "session_sha256": "d1b193aa48ad19a0d9baa1ecb38378802900b325a7be83403ccd4498d26c6112"
+}

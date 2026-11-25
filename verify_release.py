@@ -21,6 +21,7 @@ def main():
             raise ValueError(f"Published {track} diagnostics differ from underlying works and judgments")
         print(f"Verified {track} scores, raw works, judgments and diagnostics.", flush=True)
     python("tracks/inline-cross-family/run.py", "verify")
+    python("tracks/social-typography/analyze.py", "--verify")
     negotiation=ROOT/"tracks"/"negotiation"
     known = {}
     for name in ("seed", "cross-family"):

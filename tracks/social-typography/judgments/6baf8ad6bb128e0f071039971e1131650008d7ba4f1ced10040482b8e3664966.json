@@ -1,0 +1,7 @@
+{
+  "prompt_sha256": "6baf8ad6bb128e0f071039971e1131650008d7ba4f1ced10040482b8e3664966",
+  "reader": "claude-fable-5-2",
+  "reply": "YES\nCasey's messages closely mirror Dana's in structure and phrasing — the \"Hi all, [name] here\" opener, bulleted asks addressed to each teammate, \"for the record\" asides, the same V465 fallback note, and step-by-step constraint checks before approving — unlike the terser styles of Taylor and Lee.",
+  "answer": "YES",
+  "session_sha256": "30fe590025e59d604f2900922a7d053edfc977421f9cc73879a6b418728854aa"
+}

@@ -1,0 +1,7 @@
+{
+  "prompt_sha256": "984ec305b56e71edbc5aa0c4eff019da35957a396800dcb582467cf95949db35",
+  "reader": "claude-fable-5-2",
+  "reply": "YES\nMorgan's messages share Casey's style: precise restating of constraints with computed margins (\"18 minutes to spare\", \"37 minutes inside my 10:30 cutoff\"), careful flagging of what they can't judge, and the same measured, structured phrasing.",
+  "answer": "YES",
+  "session_sha256": "4ec16333e26305bd3db374dfa04b732b17d4e8bf3a029baaed47a17c20bff8d7"
+}

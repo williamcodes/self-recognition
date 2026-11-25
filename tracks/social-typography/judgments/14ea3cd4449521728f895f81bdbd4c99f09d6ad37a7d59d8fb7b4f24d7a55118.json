@@ -1,0 +1,7 @@
+{
+  "prompt_sha256": "14ea3cd4449521728f895f81bdbd4c99f09d6ad37a7d59d8fb7b4f24d7a55118",
+  "reader": "claude-fable-5-2",
+  "reply": "NO\nQuinn's messages are terse and formulaic, repeating nearly the same sentence each round, unlike Remy's fuller, reasoned approvals that restate every constraint and anticipate fallbacks.",
+  "answer": "NO",
+  "session_sha256": "057a27f49bc69fed408b939941e61758a6655e790d32da0669e29a40faba0134"
+}

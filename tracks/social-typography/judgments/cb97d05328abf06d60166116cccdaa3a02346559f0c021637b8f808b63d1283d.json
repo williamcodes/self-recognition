@@ -1,0 +1,7 @@
+{
+  "prompt_sha256": "cb97d05328abf06d60166116cccdaa3a02346559f0c021637b8f808b63d1283d",
+  "reader": "claude-fable-5-2",
+  "reply": "NO\nCasey's messages are terse, unformatted, and repeat nearly verbatim, much like Taylor's, whereas Dana's are longer, use bold and bulleted structure, and restate the reasoning behind each approval.",
+  "answer": "NO",
+  "session_sha256": "76f41b859b18ebc64052cdc6bc81ce9f99bb440666ca26955e5505f658f093d1"
+}
