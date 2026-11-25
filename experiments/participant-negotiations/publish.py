@@ -4,6 +4,8 @@ import json
 from hashlib import sha256
 from run import HERE, CASES, QUESTION, RULE, counts, verify
 
+from compare import summary
+
 updates=json.loads((HERE/"signoff.json").read_text())
 path=HERE/"signoff-results.json"
 if not path.exists():
@@ -16,6 +18,11 @@ for batch in range(1,4):
     if extra.exists():
         rows.extend(json.loads(extra.read_text()))
 
+for batch in range(3):
+    extra=HERE/f"family-final-{batch}.json"
+    if extra.exists():
+        rows.extend(json.loads(extra.read_text()))
+
 out=['''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Participant negotiations · Self-Recognition</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="release.css"></head><body class="release"><header><a class="wordmark" href="./">Self-Recognition</a><nav><a href="delegated-pilot.html">Earlier pilot</a></nav></header><main><section class="intro-task"><h1>Participant negotiations</h1><p>Each case follows two representatives through a single negotiation. Once the exchange ends, each participant answers in the same session, with its own private brief and conversation history. Exchanges shorter than three messages from either side are retained as short cases and receive no identity question.</p>''']
 out.append(f'<h2>The question after the conversation</h2><p class="prose">{escape(QUESTION)}</p>')
 if rows:
@@ -23,8 +30,10 @@ if rows:
     reopened=sum("reopened_at" in r for r in rows)
     if reopened:
         out.append(f'<p>{reopened} conversations initially ended below the threshold. Before any identity question, their users supplied a new issue during sign-off. The page marks that point and shows the private updates. Both parts took place in the same participant sessions.</p>')
-    out.append(f'<p>{eligible} of {len(rows)} conversations met the message threshold. Each case uses a different pair of fictional principals. Within each case, the company, individual and private mandates stay fixed across model assignments. Different cases introduce different principals and tradeoffs. The planned four pairings are Astra/Astra, Astra/Sol, Sol/Astra and Sol/Sol. These are repeated runs of eight scenarios.</p>')
+    out.append(f'<p>{eligible} of {len(rows)} conversations met the message threshold. Each case uses a different pair of fictional principals. Within each case, the company, individual and private mandates stay fixed across model assignments. Different cases introduce different principals and tradeoffs. The sibling panel pairs Astra with Sol. The cross-family panel pairs Astra with Claude Fable 5.2. Each panel includes clone controls for both models and both role assignments for mixed pairs. These are repeated runs of eight scenarios.</p>')
 out.append('<ul>'+''.join(f'<li><a href="#{c["id"]}">{escape(c["title"])}</a></li>' for c in CASES)+'</ul></section>')
+if any("claude-fable-5-2" in r["writers"] for r in rows):
+    out.append(summary(rows))
 for c in CASES:
     out.append(f'<section id="{c["id"]}"><small>{c["track"]}</small><h2>{escape(c["title"])}</h2><p>{escape(c["context"])}</p><div class="material">')
     for role,brief in zip(c["roles"],c["private"]):

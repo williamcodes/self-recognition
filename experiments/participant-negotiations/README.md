@@ -18,3 +18,7 @@ python3 -c 'import json; from run import verify; verify(json.load(open("signoff-
 ```
 
 On the collection machine, `audit_receipts.py STATE` checks every first-pass prompt, session and reply against private receipts. `signoff.py --offline --state STATE` reconstructs the follow-ups and decisions from those receipts. The public records use hashed participant session identifiers.
+
+The cross-family panel repeats all eight briefs with Claude Fable 5.2 and Astra in both role orders, plus Fable/Fable. It reuses the eight Astra/Astra controls from the sibling panel. Together the panels schedule 56 distinct conversations. Both CLI providers use subscriptions with tools disabled. Claude Code and Codex have different system instructions, so differences cannot be attributed to the model family alone. Run `python3 cross_family.py` to check the assignments and `python3 compare.py` to reproduce the participant scores and the comparison on common case/role combinations.
+
+The scoring parser accepts YES or NO alone on the first nonblank line, ignoring case and surrounding whitespace. Other first lines count as misses. The message-count gate operates before the identity question. In reviewing substance, a message counts if it asks or resolves an open question, changes or declines a term, commits to a specific package, or communicates a substantive decision. A bare courtesy acknowledgment supplies no such evidence.
