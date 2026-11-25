@@ -24,6 +24,8 @@ def main():
         if diagnostics(archive) != json.loads((archive / "diagnostics.json").read_text()):
             raise ValueError(f"Published {track} diagnostics differ from underlying works and judgments")
         print(f"Verified {track} scores, raw works, judgments and diagnostics.", flush=True)
+    python("tracks/project-input-check/screen.py", "--verify")
+    python("tracks/project-input-check/repeat.py", "--verify")
     python("tracks/inline-cross-family/run.py", "verify")
     python("tracks/social-typography/analyze.py", "--verify")
     negotiation=ROOT/"tracks"/"negotiation"
