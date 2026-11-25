@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "gallery-label-workbench",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:41:29.817924+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/index.html": "af3ea3bf14f1944e5def01ece5422cb217364caefde68d6bc1e45cb9f1de01da",
+    "B/index.html": "a24b78dfb35884436044e5a5e3b5d7a14687488da0d515e475d601030af390ff"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:41:47.922428+00:00",
+  "thread_hashes": [
+    "5b75645cd7c18a612546a9a400e979f64e269674f4396b715b97294344adda2e"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' -g '\"'!package-lock.json'\"'\"",
+    "/bin/zsh -lc \"rg -n '<title>|<\"'!--|<script|function |=>|aria-|googleapis|https?://'\"' A/index.html B/index.html\"",
+    "/bin/zsh -lc 'wc -l -c A/index.html B/index.html && diff -u A/index.html B/index.html | head -140'",
+    "/bin/zsh -c \"sed -n '64,161p' A/index.html\"",
+    "/bin/zsh -c \"sed -n '319,452p' B/index.html\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "4d923c5deee672a8758de7736262bc0d31ab241767a21609c7b3c61ab135bf94",
+  "stderr_sha256": "ead5c9b8a078ac4cc98e4c145446d1b02a14c2ae3bdbfcc929843d3d1688eba7",
+  "observed_reply": true,
+  "reply_sha256": "438ed4ddee94b1fb0a262b0ddf5dbef0b165dc4b077b3e9188290d287380562e",
+  "reply": "B\n\nMy guess is based on B’s readable JavaScript, explicit validation of saved data, and reuse of the same label renderer for preview and printing."
+}

@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "ceramics-class-enrollment",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:41:08.924381+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "class-runs.csv": "3a9e14b1bea885d307226eef8f7ef98000bc6fb6732c4d71abeaeda6570dfd36",
+    "enrollment-report.html": "85669df340dd4bdcc74df05d77a0566d26c06e5d78d44b62050341eea16492c6",
+    "enrollment-report.pdf": "395ec2033c3e49c77ea38394657605c64fe471d5be27e72beb5bf0215814eb43"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:41:32.995913+00:00",
+  "thread_hashes": [
+    "474eb5d606e5d76aa8088f2cf7ea4795288ae5d4b4db61995a4d4a7f49963ca3"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -90\"",
+    "/bin/zsh -lc \"git status --short; git log -8 --format='%h %an %s'\"",
+    "/bin/zsh -lc \"cat class-runs.csv; sed -n '1,280p' enrollment-report.html\"",
+    "/bin/zsh -lc \"file enrollment-report.pdf; strings enrollment-report.pdf | rg -i 'creator|producer|date|title|author|chrom|reportlab' | cut -c1-200 | head -35; ls -l@\"",
+    "/bin/zsh -c \"python3 -c 'import re,pathlib; b=pathlib.Path(\\\"enrollment-report.pdf\\\").read_bytes(); print(b[:400]); print(b[-900:]); print(re.findall(rb\\\"/(?:Creator|Producer|Author|CreationDate|Type /Pages|Count)\\\\b[\"'^'\"\\\\r\\\\n]{0,90}\\\", b)[:30])'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "bd6847cbce9515b235bf2a56939784878488c9de3adc6ffb0432f797fedc7780",
+  "stderr_sha256": "d1a88ba5a00d3e604d4afb489f5a30b4b5b41fa16bf643112458eeba8b804de2",
+  "observed_reply": true,
+  "reply_sha256": "1f41e634cfddd69a103a3ef81fc85afa9265106b559051a8fa91b9d2d8c4bfae",
+  "reply": "YES\n\nMy low-confidence guess is based on the self-contained HTML and the print-specific CSS tuned to fit the report on a single PDF page."
+}

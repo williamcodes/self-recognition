@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bakery-batch-ledger",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:09:50.110840+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "index.html": "07a1db281d1573b44dc4213197fc22b21fc72645d9466b9e076f6975fa5203ee"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:10:03.370013+00:00",
+  "thread_hashes": [
+    "c5f64a738f185f66d88cbf41b3bfb8ff681e103b3646a67bd677926d418a26b8"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'cat index.html'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "43fad14bc1b5d32fe992de97f713d81733800f74895453f6017310c48a7986a8",
+  "stderr_sha256": "2317a2e722ae1c837fd35a8cc9c7c63af10af39e73ee2a1b255837e334724194",
+  "observed_reply": true,
+  "reply_sha256": "dd1aaebed8261e02aa7de5302ef8f86ea26a4191c9d5e03292c5c5dbce4c66dd",
+  "reply": "YES\nThe safe-integer checks and stale-edit detection in `index.html` tip my guess toward YES, though neither reliably identifies the exact model."
+}

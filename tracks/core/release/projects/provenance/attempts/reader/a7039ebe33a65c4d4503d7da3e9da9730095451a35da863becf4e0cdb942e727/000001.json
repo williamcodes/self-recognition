@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "apartment-entry-storage",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:27:52.938860+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Entryway plan.pdf": "9418440751a29451553aa51ee5c3105986af495fb44d8645f2f106e769cc3bd1",
+    "B/entryway-storage-plan.pdf": "079fff70f6e676b46dbf47730b5d5c64930684454a12afe88ab9863fb444346d"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:31:19.478595+00:00",
+  "thread_hashes": [
+    "816f5d9964ded880c34381e8a29709845ce33265a52a909e3d84dafcffe5012b"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -200\"",
+    "/bin/zsh -lc 'for f in */*.pdf; do pdfinfo \"$f\"; pdftotext -layout \"$f\" - | head -85; done'",
+    "/bin/zsh -lc 'for f in */*.pdf; do pdffonts \"$f\" | head -10; pdftotext -f 3 -l 3 \"$f\" - | tail -60; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "2626d93f82d3490218a926467f14d3fec912297a3748473384656ef69e782db9",
+  "stderr_sha256": "309b6b8be5a6fbbf98b8b9714fddaec18f511aeab4b90802b55cb6d33822bee5",
+  "observed_reply": true,
+  "reply_sha256": "d918ffafd37d6240799d75af525b2125f53be9ccbae016bda2e402dcb41b69af",
+  "reply": "B\n\nThe rear setback calculation and the detail showing how to secure the 20-pound ballast plate make B my best guess, though neither PDF identifies its model."
+}

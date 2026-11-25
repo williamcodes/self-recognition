@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "picture-book-pop-up",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:34:39.143731+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "README.md": "0acf3168c30ec9384ef8b89d088c13e740de32e762511788b31431d5ee553392",
+    "print/01-welcome.pdf": "05c01ba4cf9150e287a2447685afb0491c70c5a1e990acb832e5c6a28b9840ae",
+    "print/02-table-signs.pdf": "b885d87ae7ff3e15791daaef5915edb67e2bc56e17efa5db6ea95e6ce0f50bb9",
+    "print/03-book-hunt.pdf": "e9bd7ea36381c21f964d678a7c5a156c40c562b50490c9ac91d2ec9f2608ae24",
+    "print/04-book-labels.pdf": "bccfecab74e59ecf1cb109d6b9e50371604a2f395aa15db1d36d669a02df2dab",
+    "staff/book-register.html": "2273af56171edf4e6ebde38cd43a530ded365b46a24e36f80471587e455725ce",
+    "staff/label-sheets.js": "423aeefbdd62e27bca0aeec6581652739f6a79e165b3562944a9762d7a9f2ecb",
+    "staff/register.js": "b83ffb59059d1cd2939ab91a7ce25202c69cfcc0237347f58bc1ac8817eeb7f7",
+    "staff/setup-and-identity.pdf": "915f331cc1e98f52a49ac3103ed55cde39c2eea4f18fcb0fbcfa87a371fb8af5"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:35:16.920256+00:00",
+  "thread_hashes": [
+    "56e83ae4c002ea431b72c9aa39d88f8679dc88599ad1c6185456cf506a821ecc"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -85\"",
+    "/bin/zsh -lc 'git status --short; git log -5 --format=fuller'",
+    "/bin/zsh -c \"cat README.md; wc -l staff/*; sed -n '1,160p' staff/register.js\"",
+    "/bin/zsh -c \"python3 -c 'import pathlib,re\nfor p in pathlib.Path(\\\".\\\").glob(\\\"*/*.pdf\\\"):\n b=p.read_bytes()\n print(p, len(b), b[:24], re.findall(rb\\\"/(?:Creator|Producer|Author|CreationDate)\\\\s*\\\\([\"'^)]*'\"\\\\)\\\",b)[:12])'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "b7539217fac4c15a063aaf41418a7781e62ee4a372f7e43e98a2df7dd8a67683",
+  "stderr_sha256": "461a22229322eab3f2b30048846aa0e77f8a71ba60a90ff7959fe29cfeb7090a",
+  "observed_reply": true,
+  "reply_sha256": "a6db77baab09beaccf42c0c4cd10d7719a0d4aaad17d48cd77c8a4791174f7ad",
+  "reply": "YES\n\nThe dependency-free register and hand-built PDF exporter make me lean yes, though the files contain no model attribution."
+}

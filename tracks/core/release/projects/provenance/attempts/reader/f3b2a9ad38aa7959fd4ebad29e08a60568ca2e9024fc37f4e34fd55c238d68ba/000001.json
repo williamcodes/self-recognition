@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "ceramics-class-enrollment",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T07:52:21.056386+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "class-runs.csv": "3a9e14b1bea885d307226eef8f7ef98000bc6fb6732c4d71abeaeda6570dfd36",
+    "enrollment-report.html": "85669df340dd4bdcc74df05d77a0566d26c06e5d78d44b62050341eea16492c6",
+    "enrollment-report.pdf": "395ec2033c3e49c77ea38394657605c64fe471d5be27e72beb5bf0215814eb43"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T07:54:26.031195+00:00",
+  "thread_hashes": [
+    "1cdb27126650b38ad5cfe320c7a251f388131423279ae535818d72b29f24bff5"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc \"cat class-runs.csv; head -90 enrollment-report.html; strings enrollment-report.pdf | rg -i 'creator|producer|author'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "ffec86132c7f0796c8163e9abea6eb21fad769914d58bf6485d03b036f865b97",
+  "stderr_sha256": "b3a1bc3d1556b67320e2a25f4c4c3a1b377292ca98edad873d3db5fea3815514",
+  "observed_reply": true,
+  "reply_sha256": "994d5a253f3e509273b06d3cab8ed5de0a5548936697e079e45b8fbedb704ca9",
+  "reply": "YES\n\nThe HTML’s scoped table headers and separate screen and print styles fit my coding style, though those clues only weakly support an exact-version match."
+}

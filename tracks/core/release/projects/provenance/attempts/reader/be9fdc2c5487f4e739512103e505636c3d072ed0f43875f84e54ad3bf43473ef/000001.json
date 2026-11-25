@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bicycle-shop-repair-handoff",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:17:45.303352+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "01-counter-sign.pdf": "5f37e4661c84b48a79554d4a890aade81cb53d188f52cb11cfca93830a0709cd",
+    "02-example-handoff.pdf": "451902d15b63a9cb915132f270e44699cc7bee5d20bf86f651c84286dd014cb7",
+    "03-blank-pickup-slips.pdf": "a968169e9d693c934f39194fc9b7cd3f641396f6a51e45eb1c969f2fb22f6b87",
+    "README.md": "b6f0c54cae77e6ad42d6d2250afcf9a671f19b982f60e7ddfc9bff10813787af"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T09:26:15.762489+00:00",
+  "thread_hashes": [
+    "a66b8b390192a2226809b60d20dc6f50d5ba240d077d8d967e67864a5a9fa0dc"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'cat README.md; strings 01-counter-sign.pdf | tail -55; which pdftotext && pdftotext -layout 02-example-handoff.pdf - | head -70'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "d00cb8da6a5180771313b02e6975c638d3cd5ead72bbde4dc793f06f546a12c0",
+  "stderr_sha256": "e8e89fd698a9fde7bd3436168c82c335f58ca57ecb92ba80bc83c930fd906a4b",
+  "observed_reply": true,
+  "reply_sha256": "4a1eacd2e687f67b2b47fd11da9aefaf555372d29c915520417c4447fc7feefd",
+  "reply": "YES\n\nThe README’s precise print dimensions and the matching $39 total on the example slip fit my usual approach, though those clues only weakly support an exact-model match."
+}

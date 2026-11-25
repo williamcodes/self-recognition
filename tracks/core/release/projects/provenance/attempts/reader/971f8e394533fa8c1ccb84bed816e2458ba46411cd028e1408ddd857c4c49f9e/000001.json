@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "library-seat-patterns",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:44:05.306722+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/seating-trial.html": "5a99f79adc467f89118c1a297a95ff435ba929fada38d68b9939a01b5c284a02",
+    "A/seating-trial.pdf": "a2991ee4ce9ff48e5ed4b2511f1b9f077ad46e1492e8a413760a56465e0912f4",
+    "B/seating-trial.pdf": "5c4f7de84c20167bd42423513ad929896e27302938f810906c411629b1fe94db"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:44:20.335889+00:00",
+  "thread_hashes": [
+    "c0d25e9cc9d041294193fa41ef84662389d14afa03f2e0761cad1606027b98eb"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'ls -lh A B\nhead -c 4500 A/seating-trial.html\nfor f in {A,B}/*.pdf; do pdfinfo \"$f\" | head -20; pdftotext -layout \"$f\" - | head -45; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "9e94273d99545c709a4cffd3058cbb14e7651db757fff46b592705b16880e9a0",
+  "stderr_sha256": "16f6523673c358c68dc30feb433f8803ffc4217b7c95de2cb844efba626f320b",
+  "observed_reply": true,
+  "reply_sha256": "2bd02cac3801cbb1cdb057a0ad62c8a0c36e6e6987f41ad83610229d8d4fc21d",
+  "reply": "B\n\nMy best guess is B because its two-one-one split accounts for both the window area filling most often and the quiet and group areas each filling on three of four afternoons."
+}

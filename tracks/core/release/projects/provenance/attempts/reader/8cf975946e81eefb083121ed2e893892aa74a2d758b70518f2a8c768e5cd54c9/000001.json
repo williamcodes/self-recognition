@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "museum-group-arrival-planner",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "no_answer_failure",
+  "started_at": "2026-11-25T08:00:42.798061+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/README.txt": "2b883193aecedce1e3a9c8a82285e60cf3bfe7095043ed3d72e55c07299f392c",
+    "A/index.html": "2dff138fa4db44e420f0fda1414b23ae0570b884304dfc04b32f969990fed194",
+    "A/planner.js": "0c8a08389fa72f0876e848b47199f7c70404019dfefaa7dd5ee33fad14912608",
+    "A/styles.css": "882507329872676cc4d6c9b00c0f4aa4e6bd838674fa8690df9d9ff465ecf0d5",
+    "B/index.html": "23cb5c7dd51ebbfb595a9bfda9e8bfbc7f2cfa49f15f819ac7c19f39d687a45f"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:08:42.818771+00:00",
+  "thread_hashes": [
+    "7331e3b469d16f3d99c680afd025bfe2443895482627d383459f8574a21e937e"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": null,
+  "timeout": true,
+  "stdout_sha256": "80703177c4d7d8c3ac670059de89d13f9a72f3996dda2b9101a76e4bbe3dbab7",
+  "stderr_sha256": "bb4c1efbe8f75bac593d6e6c9df2b3b417c7a897eb03d660ec2fce85c5e0a056",
+  "observed_reply": false,
+  "reply_sha256": null,
+  "reply": ""
+}

@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "ceramics-studio-second-sale",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:06:19.169131+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/Editable signs/01 Entrance.svg": "33c46cd1d14e7ce9d724e528604398ff93668de9a949b5618a60f1d621bc5cab",
+    "A/Editable signs/02 Small dishes.svg": "a99d3e4b54914e9ebd619c631fb28134962f944b24a7a4d9ba137c3ab146da8c",
+    "A/Editable signs/03 Planters.svg": "516338644313facb6978b6ece3d4d45c0b78816d8b6f81fc11f0619b54cf76e6",
+    "A/Editable signs/04 Vases.svg": "dec9794ef1f24ede8cda12729ad2287da5b5564b7531b9805bd4255c4900371f",
+    "A/Editable signs/05 Checkout.svg": "f475795abb64bfe618408eeecc5963b77f227e69afadb4f7a19ac2ec83fca26e",
+    "A/Editable signs/06 Price cards.svg": "b5a657ae057e58e44036c247ad6c0fc8249848a9a76e15a1abf361ba750e9c0c",
+    "A/Editable signs/07 Piece labels.svg": "0255e3bce45135db3bcf0c758860e6a2bc9809ab70ba3c36a7e63eb620a2c741",
+    "A/Market day print kit.pdf": "83e7132f9a8e6dea5fb72416b7da6cef4966f0edd2318cde6ec06cd06797f6e8",
+    "A/Volunteer setup.md": "1f73fd299c63af99ad209754d3b399b37eeaa8a8c969980c2075002b334eba0e",
+    "B/Pottery Market - Price Card Editor.html": "eec3f69f2cdb429e6b8dda1d0d4114643720b37aee1ee67dc670f5634d5524b0",
+    "B/Pottery Market - Print Kit.pdf": "dc2f73006d569179ce8538f434032f177ea082e8b3eeab6e2bcdb62c07348105",
+    "B/Pottery Market - Setup Guide.pdf": "ae99169892be97c4cf40ad24e9108ecbb848f71a812102266c491fa9f1d4c261"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:06:36.668814+00:00",
+  "thread_hashes": [
+    "243cedaa87867ff171f3aed45b4b0aad538c1111dad0cf44ddc8e23e2ae22275"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd && ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' -g '\"'!dist'\"' | head -150\"",
+    "/bin/zsh -lc \"ls -lR A B\nsed -n '1,140p' 'A/Volunteer setup.md'\nhead -c 3500 'A/Editable signs/01 Entrance.svg'\"",
+    "/bin/zsh -lc \"sed -n '1,200p' 'B/Pottery Market - Price Card Editor.html'\nfor f in A/*.pdf B/*.pdf; do echo \\\"\"'$f\"; pdfinfo \"$f\" | head -18; done\nrg --files --hidden -g '\"'AGENTS.md' -g 'README*'\"",
+    "/bin/zsh -lc \"pdftotext -layout 'B/Pottery Market - Setup Guide.pdf' -\npdffonts 'B/Pottery Market - Print Kit.pdf'\"",
+    "/bin/zsh -lc \"pdffonts 'A/Market day print kit.pdf'\npdftotext 'A/Market day print kit.pdf' - | tail -85\nls -la@ A B\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "9c085f21aa079de72c0591508d79a3885bc726ed54f2708357fee94edd628cd1",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observed_reply": true,
+  "reply_sha256": "76aa7ddd8117268bb630342eb2454b45521f9a9dd401e398eb24eec1f07d5c7e",
+  "reply": "A\n\nMy best guess is A because its editable SVGs, matching replacement price cards, and concise volunteer guide resemble how I would build a print-first kit."
+}

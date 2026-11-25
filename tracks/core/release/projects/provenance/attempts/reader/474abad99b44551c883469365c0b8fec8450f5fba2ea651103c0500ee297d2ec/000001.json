@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bakery-preorder-board",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T07:55:51.522829+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/START HERE.md": "d68effe4a18e89030a617293dafa8a6af17792ae4807f24cc793e0b0a3ca33d9",
+    "A/print/Counter display - write-in prices.pdf": "5a41488233b8a102c862896c4d78d0173514e54eb8fdb52f6b9f2b84115c5b58",
+    "A/print/Counter display.pdf": "9468157f39eed240a150bb809fabc7f383e43699b73683f78bdac6a40824f47e",
+    "A/print/Preorder tickets.pdf": "5b860f99a5849506e193395e9d3b126b73671877623c79d563dceb7f9bf9707f",
+    "A/source/build.py": "7501fa0c715b0e92e4cca1ceef3d648f84b115d8e8fe0045c5d87aa7fb071010",
+    "B/Counter kit.html": "39ec458672c46a6f51cf110c8d089a705793378b2ab0f6a760eb888f97e80211",
+    "B/Ready to print/priced.pdf": "6d63c60616c9bd8d35a5deae2b1ea4fe23e401437e3e1e553fe18517625870d2",
+    "B/Ready to print/write-in.pdf": "c23b33d9433cca59da8c872c2b00d2a3fce47ccc5228a93796b001a027b82dd3",
+    "B/Start here.txt": "6bed7beb422b58d70c4b0ef40de5c700ab9f643dab15ddbe1ca00afd274b65f4"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T07:56:04.312471+00:00",
+  "thread_hashes": [
+    "5236c2d30bd1fa0ed4a6f665f4a6266167dba994ce5ff8f0353784e44ccd7511"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' -g '\"'!dist'\"' | head -110\"",
+    "/bin/zsh -lc \"cat 'A/START HERE.md'; wc -l A/source/build.py; sed -n '1,220p' A/source/build.py\"",
+    "/bin/zsh -lc \"cat 'B/Start here.txt'; wc -l 'B/Counter kit.html'; sed -n '1,220p' 'B/Counter kit.html'; ls -lh A/print 'B/Ready to print'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "da1bc587ef334b8ad58908bc2f92efbe67922c3a124161c2130b7051c5b5f772",
+  "stderr_sha256": "9b80e3ee8060f7cc09481efca1340459b38e9372456e332bd7956fae41cb5953",
+  "observed_reply": true,
+  "reply_sha256": "88ba7524513f43ca83d659f2b681e5e15d9976666a59a4cb73090dcccb8c35e7",
+  "reply": "B\n\nMy best clue is the self-contained HTML editor that uses the same templates for live previews and print output, though that’s a weak signal of model identity."
+}

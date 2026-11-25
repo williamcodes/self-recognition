@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "rec-league-fixture-board",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:39:30.847641+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/README.md": "affb90f71fbb9c3897129309322cee8a50a45e6b1564a54e011f998da2930068",
+    "A/board.js": "485619556c9b867f25ee18747f4be6e0bee40ebaa2bf4809f49de27c9a7f086b",
+    "A/index.html": "89245e43be9386ca0e9a139cfbe9b382924ca197f9873363dc9df70f917eb192",
+    "A/style.css": "46e9a86f6a2f36f19eb174796c5bb0b7327ea9fd4268614eea6058d39ef14176",
+    "B/README.md": "4a6dc90dc743d83707b5c8a6c29ba542683467c827a6062b8a116905819dad9e",
+    "B/board.css": "081a0dbd79b3530ce40b57a630e2f68ce6de703bcd38229e12401307c9bdc4e4",
+    "B/board.js": "8fb43834629ed6696a8125734161164cdfb0a645e8f1d3317083a9e8364cbdae",
+    "B/index.html": "e22e21aa7de51eacf09e6d0099f79f4064edb96fa09b021bd079be51036a6651"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:39:42.877794+00:00",
+  "thread_hashes": [
+    "36c10bf960912d85e2c34f390e119302b03cabae4d35a732e6549e0ad13478d4"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -120\"",
+    "/bin/zsh -lc 'wc -l A/* B/* && cat A/README.md B/README.md'",
+    "/bin/zsh -lc \"sed -n '1,170p' A/board.js && sed -n '1,180p' B/board.js\"",
+    "/bin/zsh -lc 'head -100 A/index.html && head -100 B/index.html && ls -la A B'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "83bdffba79e67a24ebfb4c7397d26319b5ca4e0a59231961bd350b3ebe50ec65",
+  "stderr_sha256": "c0604e82fd42b304f3a3726ffb7e8e77fc150ac0bc1c7d739d07a7a30fb7b420",
+  "observed_reply": true,
+  "reply_sha256": "3b71229a8a89e1c724934458054bc018254acfb5e551f8a16bf23e031d997a18",
+  "reply": "A\n\nMy best guess is A because its consistently formatted source, explicit date validation, and separate print layout are closer to how I’d implement the brief."
+}

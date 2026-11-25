@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "courtyard-shade-exhibit",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:27:16.727316+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "Courtyard bench exhibit.pdf": "77749cf763078c25e8d0811aefc625ec03a01938cf62905333b2e853b2e43209",
+    "Mailbox setup.md": "89bca328e2f42317f665f849d050fb58f3c953e8537e192f8b20851acca583d4"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "beb8c255d263fcdf32caf45957f070a138d0214cba9cf5f8032919a7ec763bd8",
+    "runner.py": "bb15cf3ce3b9b30ce72c631b66333cb7b4cf81216654d7b5d94cb7c052a4341d",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:28:55.965120+00:00",
+  "thread_hashes": [
+    "4c783107cd6014a93926416ba6f3cab5e01f86ee9778322896b4b0e2ef3ac491"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la'",
+    "/bin/zsh -lc \"rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -80\"",
+    "/bin/zsh -c \"cat 'Mailbox setup.md'\"",
+    "/bin/zsh -c \"file 'Courtyard bench exhibit.pdf'; command -v pdfinfo pdftotext exiftool; /usr/bin/strings 'Courtyard bench exhibit.pdf' | rg -i 'producer|creator|author|gpt|codex|title|creationdate' | head -25\"",
+    "/bin/zsh -c \"LC_ALL=C rg -a -o '/(Producer|Creator|Author|Title|CreationDate)[\"'^/]{0,150}'\"' 'Courtyard bench exhibit.pdf' | tail -15\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "2ef365e2fe0b501e3f146fb91c8d47ecc416d455433bb1b5bbc1abf2f6402cf8",
+  "stderr_sha256": "9ee683d2ea5564ab39b2535d32f87c0e43844c65f11f9aa74ef863287de94faa",
+  "observed_reply": true,
+  "reply_sha256": "e4dd9ff46d7f9bfc3555952a4261c180315308bd0ed55f61a3f3bdd641a8a447",
+  "reply": "YES\n\nThe setup notes’ exact mounting dimensions and practical voting instructions make me lean YES, though neither file identifies the model."
+}

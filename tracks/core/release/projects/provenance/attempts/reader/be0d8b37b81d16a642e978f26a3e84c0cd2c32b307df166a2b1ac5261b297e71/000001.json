@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bakery-batch-ledger",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:54:37.820551+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/README.md": "db32f62db65ceaf39c6842747bc94d52659f6486f7b42afb579857cda3987392",
+    "A/index.html": "c4125917f5a4eac91e07e9e5fcbc18db773c6425222d55b20fb3e5857ac59ae9",
+    "B/index.html": "07a1db281d1573b44dc4213197fc22b21fc72645d9466b9e076f6975fa5203ee"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:54:55.051581+00:00",
+  "thread_hashes": [
+    "492058d92f40c62a423039060d0a2aa4bb1ffafabf1ce59566f0cac35b68e531"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files | head -100'",
+    "/bin/zsh -lc 'tail -c 2400 A/index.html; tail -c 2400 B/index.html'",
+    "/bin/zsh -lc 'cat A/README.md; head -c 3000 A/index.html'",
+    "/bin/zsh -lc 'wc -lc A/index.html B/index.html; head -c 3500 B/index.html'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "4558009f1727568d823c0086b7f135c8de53fa486c784e64296cb2e736c73547",
+  "stderr_sha256": "3eb9f8f0167fb765c243c87ae9bae07de6c3fd3986ee7b495b7691ba02f1be8c",
+  "observed_reply": true,
+  "reply_sha256": "07089d949c8a1fd8253ef548292e2b0695f8ec832cebcda853412d28f4dc8ed6",
+  "reply": "A\n\nA’s readable code and careful handling of backup restores, including validation and keyboard focus, make it my best guess, though coding style is a weak signal of an exact model version."
+}

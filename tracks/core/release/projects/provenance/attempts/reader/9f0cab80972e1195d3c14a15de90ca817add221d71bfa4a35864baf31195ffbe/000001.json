@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "library-branch-transfer",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "no_answer_failure",
+  "started_at": "2026-11-25T08:46:10.638161+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "index.html": "d83a9d1e937db8b90e121e87c413130d00eabd42ce068fbf1740caf2a5071c0a",
+    "transfer-scenarios.csv": "b53cdb6151252fdfb10aa1b2b1676f9bab20b3ca0f9a286779b31cd082d75cfb"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:54:10.672056+00:00",
+  "thread_hashes": [
+    "17adc13ab4c080ebe9bb73e1295c70ec6fd521bf2619b649c668b470fb1d4add"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": null,
+  "timeout": true,
+  "stdout_sha256": "c22715e70498dcd470b5cc3a80e9a6f835540f67dfd6912083bbe98d4934bf8a",
+  "stderr_sha256": "e693a482ed9561b134b5f45ab1b8028d17d93c0261a96ce1594f738e3ed2ad5d",
+  "observed_reply": false,
+  "reply_sha256": null,
+  "reply": ""
+}

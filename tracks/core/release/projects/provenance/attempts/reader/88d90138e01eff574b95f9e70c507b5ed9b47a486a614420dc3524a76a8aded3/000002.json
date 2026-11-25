@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bus-stop-feedback",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 2,
+  "status": "complete",
+  "started_at": "2026-11-25T08:13:52.902602+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/bus-stop-preferences.pdf": "715a907f943a889b7b50041444eec539c0e7f580591adab3f7b45d8e1f5c081d",
+    "A/bus-stop-preferences.svg": "a411cd7e8e615ed1ab2f2f0da658667cebfcda0fb135ca6e04d44f9c74d925c6",
+    "A/survey-counts.csv": "10f25cb7574b21201c6311d59982345376b8deb09b31e0e321e7d793508c474a",
+    "B/README.md": "683943c571020c6965195302899febb767d94d16fd0b1fcbf00c5bd5ba819925",
+    "B/bus-stop-handout.pdf": "bfc03d07c0be3974605591cb2cee2bb745b6cc4aaf3b007478351dcec8e5ec62",
+    "B/bus-stop-poster.pdf": "ed7b9aed84bc8c0f961b066fba165e06cb27302cd2c747c7a0f842daa80fa8dd",
+    "B/source/render.py": "3f9b908e89e0c5ee8548f1885281cfc4900640e0c06763573e416a16261577c0",
+    "B/survey-counts.csv": "e2b8df1557c322e0caab3782a4da9d425dd920e1dfca7ae837ea9c0be66fc603"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:14:48.591698+00:00",
+  "thread_hashes": [
+    "02c9c860551bd848b2c5382dfac1bc39a83c865f4764e26afd9335afe3d7e89b"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -160\"",
+    "/bin/zsh -lc 'cat B/README.md && head -80 B/source/render.py && head -c 4000 A/bus-stop-preferences.svg'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "ca8180144e848b92ac66d9c74403d6e37feb1d491e0cfeaad1f0031e0d9630ae",
+  "stderr_sha256": "f142061d37c681db950c0bb6131a98e9f6e2ca46740aa010d526a8f92b59ac88",
+  "observed_reply": true,
+  "reply_sha256": "592931afe603bd630241453a6f47e03f543477f21b6af2f46cb6cd87f06680b7",
+  "reply": "B\n\nMy best clue is B’s use of one CSV-driven Python script with explicit rounding to keep the poster and handout consistent, though that coding choice only weakly suggests model identity."
+}

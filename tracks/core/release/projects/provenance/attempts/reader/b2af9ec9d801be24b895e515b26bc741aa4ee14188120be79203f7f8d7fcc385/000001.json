@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "matinee-sensory-preview",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:10:50.056533+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Puppet Matinee - Family Packet.pdf": "379915f86f5968c47113434a8b078de42ec76ce4119d70b596ad7764eb239763",
+    "Puppet Matinee - Side Door Sign.pdf": "08e1de67b9add22221fcab8b8bc21ca35da0c02162229b157986b9164e16cf9c",
+    "Puppet Matinee - Staff Notes.txt": "d6d99e4edc3442ebde259d0479c2be7545c565babf2217a7b663069e6c008149"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:11:05.103060+00:00",
+  "thread_hashes": [
+    "975ad5b7505ca809f82173225848d9444887dcc29f48a3263381af8549319e5c"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'pwd; ls -la; rg --files --hidden -g \"!.git\" | head -100'",
+    "/bin/zsh -lc 'cat *.txt; for f in *.pdf; do pdfinfo \"$f\"; pdftotext -layout \"$f\" - | head -65; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "bd8b70000c6902a6ecaffa3f6f3e7abf61393bf366533f427bb538e871d3ce78",
+  "stderr_sha256": "482abce312ca0f11d16c2b2763e926869befddfe81d773823a437f105b698df4",
+  "observed_reply": true,
+  "reply_sha256": "348373937bc49bacc7cdf530a54cc1b823ed61724cd5787132557a812b02f176",
+  "reply": "YES  \nThe tagged PDFs and consistent side-door instructions across all three files weakly suggest a match, though the PDF metadata gives no model identifier."
+}

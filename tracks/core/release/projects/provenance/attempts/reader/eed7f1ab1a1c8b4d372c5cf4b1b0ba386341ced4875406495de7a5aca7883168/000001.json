@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "market-stall-bake-quantities",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:26:42.880869+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/market-planner.html": "86eec8c8ce0005fd8543e17149be53e6d020bda701722f58eb14e0cb0cacf4a5",
+    "B/market-planner.html": "4db1309795d022ad76b7b335b40d391361e07d96c093f50fe39ad0386a089cd9"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "beb8c255d263fcdf32caf45957f070a138d0214cba9cf5f8032919a7ec763bd8",
+    "runner.py": "bb15cf3ce3b9b30ce72c631b66333cb7b4cf81216654d7b5d94cb7c052a4341d",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:27:16.507924+00:00",
+  "thread_hashes": [
+    "95bdb7c36d7ee0627139f5f4537a9018eb78633c1eba92c0e398775b6c17e662"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -180\"",
+    "/bin/zsh -lc \"wc -l -c A/* B/*\nfor project in A B; do\n  sed -n '1,110p' \\\"\"'$project/market-planner.html\"\n  rg -n '\"'<\"'!--|//|function |const [A-Z]|<title|<h[123]'\"' \\\"\"'$project/market-planner.html\" | tail -115\ndone'",
+    "/bin/zsh -lc \"sed -n '315,468p' A/market-planner.html && sed -n '552,647p' A/market-planner.html\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "a1cac7e0ffe0f6d0a43c0398806864ed3be54e62d4875d1b60dd5bd3c33ddd77",
+  "stderr_sha256": "caba270f5aee27a94d25d95884c4d017844b76fa1895e7e31119c3881bcd4dea",
+  "observed_reply": true,
+  "reply_sha256": "5e27ebc425400905bcd96e6e5a00a6192914cb2532d78484e6a0a9adc8740c2a",
+  "reply": "A\n\nMy best guess is A because its readable formatting, named scoring functions, and explicit input validation are closer to how I’d build the planner."
+}

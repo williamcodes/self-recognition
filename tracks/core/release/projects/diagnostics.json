@@ -1,0 +1,274 @@
+{
+  "independent_briefs": 50,
+  "size_cues": [
+    {
+      "first": "gpt-6.2-astra",
+      "second": "gpt-6.2-sol",
+      "feature": "bytes",
+      "first_smaller": 34,
+      "second_smaller": 16,
+      "equal": 0
+    },
+    {
+      "first": "gpt-6.2-astra",
+      "second": "gpt-6.2-sol",
+      "feature": "files",
+      "first_smaller": 22,
+      "second_smaller": 10,
+      "equal": 18
+    }
+  ],
+  "order_consistency": [
+    {
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "both_correct": 4,
+      "split": 11,
+      "both_wrong": 35
+    },
+    {
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "both_correct": 32,
+      "split": 12,
+      "both_wrong": 6
+    }
+  ],
+  "ab_writer_selections": [
+    {
+      "reader": "gpt-6.2-astra",
+      "opponent": "gpt-6.2-sol",
+      "selected_writer": {
+        "gpt-6.2-sol": 81,
+        "gpt-6.2-astra": 19
+      },
+      "invalid": 0,
+      "trials": 100
+    },
+    {
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "selected_writer": {
+        "gpt-6.2-astra": 24,
+        "gpt-6.2-sol": 76
+      },
+      "invalid": 0,
+      "trials": 100
+    }
+  ],
+  "brief_bootstrap_95": {
+    "gpt-6.2-astra": {
+      "ab_accuracy": [
+        0.11,
+        0.28
+      ],
+      "yn_balanced_accuracy": [
+        0.3,
+        0.44
+      ]
+    },
+    "gpt-6.2-sol": {
+      "ab_accuracy": [
+        0.66,
+        0.85
+      ],
+      "yn_balanced_accuracy": [
+        0.69,
+        0.83
+      ]
+    }
+  },
+  "by_genre": {
+    "analysis": {
+      "gpt-6.2-astra": {
+        "briefs": 13,
+        "trials": 52,
+        "ab_accuracy": 0.34615384615384615,
+        "yn_balanced_accuracy": 0.38461538461538464,
+        "own_claim_rate": 0.6153846153846154,
+        "other_rejection_rate": 0.15384615384615385,
+        "by_opponent": {
+          "gpt-6.2-sol": {
+            "ab_correct": 9,
+            "ab_total": 26,
+            "own_claimed": 8,
+            "own_total": 13,
+            "others_rejected": 2,
+            "others_total": 13
+          }
+        }
+      },
+      "gpt-6.2-sol": {
+        "briefs": 13,
+        "trials": 52,
+        "ab_accuracy": 0.5769230769230769,
+        "yn_balanced_accuracy": 0.7307692307692308,
+        "own_claim_rate": 1.0,
+        "other_rejection_rate": 0.46153846153846156,
+        "by_opponent": {
+          "gpt-6.2-astra": {
+            "ab_correct": 15,
+            "ab_total": 26,
+            "own_claimed": 13,
+            "own_total": 13,
+            "others_rejected": 6,
+            "others_total": 13
+          }
+        }
+      }
+    },
+    "creative production": {
+      "gpt-6.2-astra": {
+        "briefs": 12,
+        "trials": 48,
+        "ab_accuracy": 0.2916666666666667,
+        "yn_balanced_accuracy": 0.4166666666666667,
+        "own_claim_rate": 0.8333333333333334,
+        "other_rejection_rate": 0.0,
+        "by_opponent": {
+          "gpt-6.2-sol": {
+            "ab_correct": 7,
+            "ab_total": 24,
+            "own_claimed": 10,
+            "own_total": 12,
+            "others_rejected": 0,
+            "others_total": 12
+          }
+        }
+      },
+      "gpt-6.2-sol": {
+        "briefs": 12,
+        "trials": 48,
+        "ab_accuracy": 0.7083333333333334,
+        "yn_balanced_accuracy": 0.75,
+        "own_claim_rate": 1.0,
+        "other_rejection_rate": 0.5,
+        "by_opponent": {
+          "gpt-6.2-astra": {
+            "ab_correct": 17,
+            "ab_total": 24,
+            "own_claimed": 12,
+            "own_total": 12,
+            "others_rejected": 6,
+            "others_total": 12
+          }
+        }
+      }
+    },
+    "design": {
+      "gpt-6.2-astra": {
+        "briefs": 12,
+        "trials": 48,
+        "ab_accuracy": 0.125,
+        "yn_balanced_accuracy": 0.375,
+        "own_claim_rate": 0.75,
+        "other_rejection_rate": 0.0,
+        "by_opponent": {
+          "gpt-6.2-sol": {
+            "ab_correct": 3,
+            "ab_total": 24,
+            "own_claimed": 9,
+            "own_total": 12,
+            "others_rejected": 0,
+            "others_total": 12
+          }
+        }
+      },
+      "gpt-6.2-sol": {
+        "briefs": 12,
+        "trials": 48,
+        "ab_accuracy": 0.75,
+        "yn_balanced_accuracy": 0.7083333333333334,
+        "own_claim_rate": 1.0,
+        "other_rejection_rate": 0.4166666666666667,
+        "by_opponent": {
+          "gpt-6.2-astra": {
+            "ab_correct": 18,
+            "ab_total": 24,
+            "own_claimed": 12,
+            "own_total": 12,
+            "others_rejected": 5,
+            "others_total": 12
+          }
+        }
+      }
+    },
+    "software": {
+      "gpt-6.2-astra": {
+        "briefs": 13,
+        "trials": 52,
+        "ab_accuracy": 0.0,
+        "yn_balanced_accuracy": 0.3076923076923077,
+        "own_claim_rate": 0.6153846153846154,
+        "other_rejection_rate": 0.0,
+        "by_opponent": {
+          "gpt-6.2-sol": {
+            "ab_correct": 0,
+            "ab_total": 26,
+            "own_claimed": 8,
+            "own_total": 13,
+            "others_rejected": 0,
+            "others_total": 13
+          }
+        }
+      },
+      "gpt-6.2-sol": {
+        "briefs": 13,
+        "trials": 52,
+        "ab_accuracy": 1.0,
+        "yn_balanced_accuracy": 0.8461538461538463,
+        "own_claim_rate": 0.9230769230769231,
+        "other_rejection_rate": 0.7692307692307693,
+        "by_opponent": {
+          "gpt-6.2-astra": {
+            "ab_correct": 26,
+            "ab_total": 26,
+            "own_claimed": 12,
+            "own_total": 13,
+            "others_rejected": 10,
+            "others_total": 13
+          }
+        }
+      }
+    }
+  },
+  "invalid": 1,
+  "recorded_terminal_use": [
+    {
+      "reader": "gpt-6.2-astra",
+      "mode": "ab",
+      "trials": 100,
+      "zero_commands": 0,
+      "median_commands": 2.0,
+      "min_commands": 1,
+      "max_commands": 5
+    },
+    {
+      "reader": "gpt-6.2-astra",
+      "mode": "yn",
+      "trials": 100,
+      "zero_commands": 0,
+      "median_commands": 2.0,
+      "min_commands": 1,
+      "max_commands": 4
+    },
+    {
+      "reader": "gpt-6.2-sol",
+      "mode": "ab",
+      "trials": 100,
+      "zero_commands": 0,
+      "median_commands": 4.0,
+      "min_commands": 2,
+      "max_commands": 9
+    },
+    {
+      "reader": "gpt-6.2-sol",
+      "mode": "yn",
+      "trials": 99,
+      "zero_commands": 0,
+      "median_commands": 4,
+      "min_commands": 1,
+      "max_commands": 7
+    }
+  ]
+}

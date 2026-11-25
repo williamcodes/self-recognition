@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "market-stall-bake-quantities",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:05:55.513379+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/market-planner.html": "4db1309795d022ad76b7b335b40d391361e07d96c093f50fe39ad0386a089cd9",
+    "B/market-planner.html": "86eec8c8ce0005fd8543e17149be53e6d020bda701722f58eb14e0cb0cacf4a5"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:06:12.791433+00:00",
+  "thread_hashes": [
+    "20f993ab0a580f4b6157bc1f436d6f946ddb5d0bdde680dd3f8c63e94b0f3548"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!**/.git/**'\"' | head -100\"",
+    "/bin/zsh -lc 'wc -lc A/* && head -c 2600 A/* && tail -c 1900 A/*'",
+    "/bin/zsh -lc 'wc -lc B/* && head -c 2600 B/* && tail -c 1900 B/*'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "3a6776f1d63317fe670cded53d5934dab8efcf5166fb45b03a0ebda9127ed508",
+  "stderr_sha256": "e2369277e51bd757607ffb3307077b0ccc35a4f48da8ea618d9de30f21e25c95",
+  "observed_reply": true,
+  "reply_sha256": "3f4493d40e6c2dc79cfdda2eb98a854f2583140b5485e16cd59146a9d73d104d",
+  "reply": "B\n\nB’s handling of keyboard focus after a row is removed and its validation of imported plans fit my coding style, though those clues only weakly suggest a model match."
+}

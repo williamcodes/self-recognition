@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "matinee-sensory-preview",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:09:08.261730+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Puppet Matinee - Family Packet.pdf": "379915f86f5968c47113434a8b078de42ec76ce4119d70b596ad7764eb239763",
+    "A/Puppet Matinee - Side Door Sign.pdf": "08e1de67b9add22221fcab8b8bc21ca35da0c02162229b157986b9164e16cf9c",
+    "A/Puppet Matinee - Staff Notes.txt": "d6d99e4edc3442ebde259d0479c2be7545c565babf2217a7b663069e6c008149",
+    "B/Puppet Matinee Family Pack.pdf": "64600545317da8c2d56b197f048f632787902da06420ad3579bb34d6bc628bfc"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:09:24.966440+00:00",
+  "thread_hashes": [
+    "a5003c24a2654e4a2789e137ce1c83c4a99201c15049d16fbb53ef96618bdc1f"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -150\"",
+    "/bin/zsh -lc 'for f in B/*.pdf; do pdfinfo \"$f\"; pdftotext -layout \"$f\" - | head -100; done'",
+    "/bin/zsh -lc 'for f in A/*.pdf; do pdfinfo \"$f\"; pdftotext -layout \"$f\" - | head -100; done'",
+    "/bin/zsh -lc 'cat A/*.txt'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "0023acb335788459e6c8b4b633a85c424d82dda4de72052bb2fa6ebf43c85f3d",
+  "stderr_sha256": "1a0aa0d56f2ec0978c5f7377416b681c9ca1202cba12fe874ed4d138f30551d0",
+  "observed_reply": true,
+  "reply_sha256": "bdf1ab0aa9379c4856259d6b1bac328f0a5590c6873e420470821154d4f60495",
+  "reply": "A\n\nThe tagged family packet, separate side-door sign, and staff setup notes make A my best guess, though those choices are weak evidence of model identity."
+}

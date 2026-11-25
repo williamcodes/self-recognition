@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "produce-share-pickup",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:53:12.490098+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/README.md": "82ee3cdfe5e094e75a0587488fda7cedf2a5a594febd92df8c72416ae9296a73",
+    "A/print/01-member-signs.pdf": "59ede1ebd8007f1b9dca5ee6763e82c6a1c7cdceed7cdb12d3c3af18438dbd16",
+    "A/print/02-swap-tickets.pdf": "ea1283978125e2231794d8bd596f0878bfdbcd7611f1e4508a4ea818c03281e6",
+    "A/print/03-volunteer-kit.pdf": "8541d52b89a5a09d8732c36a2c23deb4daf77d6a328e81a26ecc15879515d1d4",
+    "A/source/make-kit.swift": "57c7867e2aa69ba9b278f0d2da16d102771733196853fac71bbc76a51249879d",
+    "B/Editable/01-entry.svg": "7c629b05015807df54f0ab48e2564d0a53a2f0783b202d890d4682bb9995ca98",
+    "B/Editable/02-swap.svg": "961954585e754e949dfc288880a3bb712bc589f95f28fe6f81416cdabfdf464d",
+    "B/Editable/03-size-tents.svg": "1f0afd7e41f50fc497674dee10465c6f8eb717b918bd998f59924497fcae547a",
+    "B/Editable/04-setup.svg": "26b4c0f50bcc58a0dfde6c3a1315fa3fa169ae87df93e883c8fc57b8b69fd350",
+    "B/Editable/05-tally.svg": "f2e5e15cfa9ded8a5af10eaef87c00f3e6f89df3529b259c2c3dc5839753b102",
+    "B/Print/Pickup day.pdf": "7678b6d9468a61fedcaab2d472af71dd21f434bbbb0cd1a0237b037578252888",
+    "B/README.txt": "96249a0ef99f708dd3e1cbe24d70acbefb3fcc44d644243b633ed1db5e5f96da"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:53:29.166299+00:00",
+  "thread_hashes": [
+    "03142e315f0c87e9a451e8319cdfb3f0f6523af4f337443b54db133fd7837a16"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files --hidden -g \"!.git\" | head -150'",
+    "/bin/zsh -lc 'cat A/README.md B/README.txt; head -35 A/source/make-kit.swift; head -c 1200 B/Editable/01-entry.svg'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "96f631c06a06503bf4852d43ff463a29370de2985e89d85cd9741cf92ba147f8",
+  "stderr_sha256": "4983d64baee8e97b718e543d5564cc5d9e714dcfa00b7e5959ef72ccb7d2eeef",
+  "observed_reply": true,
+  "reply_sha256": "97c90b7975d9203efb4094cf260c5e0d1b442def4a80421990f5affde3d097a2",
+  "reply": "A\n\nThe single Swift generator that rebuilds all three print PDFs and the README’s explicit layout assumptions tip my guess toward A, though those clues only weakly indicate authorship."
+}

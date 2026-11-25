@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bakery-preorder-board",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:41:06.117515+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/Counter kit.html": "39ec458672c46a6f51cf110c8d089a705793378b2ab0f6a760eb888f97e80211",
+    "A/Ready to print/priced.pdf": "6d63c60616c9bd8d35a5deae2b1ea4fe23e401437e3e1e553fe18517625870d2",
+    "A/Ready to print/write-in.pdf": "c23b33d9433cca59da8c872c2b00d2a3fce47ccc5228a93796b001a027b82dd3",
+    "A/Start here.txt": "6bed7beb422b58d70c4b0ef40de5c700ab9f643dab15ddbe1ca00afd274b65f4",
+    "B/START HERE.md": "d68effe4a18e89030a617293dafa8a6af17792ae4807f24cc793e0b0a3ca33d9",
+    "B/print/Counter display - write-in prices.pdf": "5a41488233b8a102c862896c4d78d0173514e54eb8fdb52f6b9f2b84115c5b58",
+    "B/print/Counter display.pdf": "9468157f39eed240a150bb809fabc7f383e43699b73683f78bdac6a40824f47e",
+    "B/print/Preorder tickets.pdf": "5b860f99a5849506e193395e9d3b126b73671877623c79d563dceb7f9bf9707f",
+    "B/source/build.py": "7501fa0c715b0e92e4cca1ceef3d648f84b115d8e8fe0045c5d87aa7fb071010"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:41:17.796269+00:00",
+  "thread_hashes": [
+    "07afedcb300ab63e0cffbbb6567199b4847f4823228509a1f5d00dd59edb3eb4"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc \"wc -l A/*txt A/*html B/*md B/source/* && cat 'A/Start here.txt' 'B/START HERE.md' && sed -n '1,210p' B/source/build.py && sed -n '1,160p' 'A/Counter kit.html'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "0990ad00608ddf548bca0159174b572b65bb50447571697a18f4f98459ab37c3",
+  "stderr_sha256": "8cf8ddbe3f74b36ed96602357a08d93345274f8fedff9e7764d5c164bdc9daba",
+  "observed_reply": true,
+  "reply_sha256": "edb58c9d1e4f50d61386842f44a2c2b86cce7fc1aeb39d59c24a2abdda9ef1ae",
+  "reply": "B\n\nThe dependency-free PDF generator and the shared date and order-number fields across ticket halves make B my best guess."
+}

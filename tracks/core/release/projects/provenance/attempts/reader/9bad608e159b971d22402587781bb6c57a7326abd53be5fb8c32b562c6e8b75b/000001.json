@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "linen-turnaround-board",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:36:07.771112+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/README.md": "4fcc24cac7113f7363bbb29825301840793c90e194327542e62049ff3d68047a",
+    "A/index.html": "da6887addafbea959f2b3eeb47b3689899c26b3f368fe9b6bc53639d4b6044c6",
+    "B/index.html": "ad53006cef0c0ec90d9a9d2d40589f334f3ac238b2371729923a8df15d8c1f1b"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:36:49.849549+00:00",
+  "thread_hashes": [
+    "de074a8039359ef6cfa9b03e780ed4217678171be15ba9abddb39bd4a7fa6d15"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -150\"",
+    "/bin/zsh -c 'head -85 A/index.html && tail -85 A/index.html'",
+    "/bin/zsh -c 'head -85 B/index.html && tail -85 B/index.html'",
+    "/bin/zsh -c 'wc -lc A/* B/* && cat A/README.md && ls -la A B'",
+    "/bin/zsh -c \"sed -n '265,430p' A/index.html && rg -n 'gpt|codex|generator|model' A B\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "5f550feae47dce47146c7efa92cb6353d6d859690ddaae73629557f2073b204a",
+  "stderr_sha256": "11abf6c3ef5db1027b97cb13e6ff686e565cd1265a359cdcf391772428c35624",
+  "observed_reply": true,
+  "reply_sha256": "743857ce41850cd52ff9ad06ae3d4d8513da0a621539c52c5b72527f81f75ef6",
+  "reply": "A\n\nA’s named inventory fields, readable formatting, and validation of saved reservations make it the closer match to my coding style."
+}

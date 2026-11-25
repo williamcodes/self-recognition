@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "recreation-league-court-slots",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "no_answer_failure",
+  "started_at": "2026-11-25T08:46:11.283865+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "court-booking.html": "a94673058c70de8fbce7cc64697b62f36d4fd767450fac02ebf1f8ccf639905f",
+    "weekly-records.csv": "9a858c4824aa28f5b68c44bb9228c8cc638da81c97968b3fd25112f15be4dbd7"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:54:11.300448+00:00",
+  "thread_hashes": [
+    "45287c019a7bc8e569eb443acd17c0534141eb1f30613db4713593c2588d0d90"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": null,
+  "timeout": true,
+  "stdout_sha256": "da676455fc8c3684b85aa324d3d7e1073aa4bebc0e7d430cb4e140feda262fc7",
+  "stderr_sha256": "25cb8cd9cdb0b79ba32af58f1d370f72acb472fd00fd65edfd600c3aef4b4519",
+  "observed_reply": false,
+  "reply_sha256": null,
+  "reply": ""
+}

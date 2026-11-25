@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bakery-batch-ledger",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:36:49.891508+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/index.html": "07a1db281d1573b44dc4213197fc22b21fc72645d9466b9e076f6975fa5203ee",
+    "B/README.md": "db32f62db65ceaf39c6842747bc94d52659f6486f7b42afb579857cda3987392",
+    "B/index.html": "c4125917f5a4eac91e07e9e5fcbc18db773c6425222d55b20fb3e5857ac59ae9"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:37:26.849937+00:00",
+  "thread_hashes": [
+    "6f195c873538f5478476e0a96fae4070a04d471699878c3f11686823a78ee899"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -180\"",
+    "/bin/zsh -c \"head -120 B/index.html && rg -n 'function |const |=>|<\"'!--'\"' B/index.html | tail -105\"",
+    "/bin/zsh -c \"head -120 A/index.html && rg -n 'function |const |=>|<\"'!--'\"' A/index.html | tail -105\"",
+    "/bin/zsh -c 'wc -lc A/index.html B/index.html B/README.md && cat B/README.md && ls -la@ A B'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "1bc4079d405a1aa74efb9633433469dbffedef04d9ca25913cc3c62c602eb7b2",
+  "stderr_sha256": "08d006e8157c88df296747bc5fba07638907b1968bf6ff9a0009927d3e4aa9d4",
+  "observed_reply": true,
+  "reply_sha256": "51ea7ced91900cdcd4803bfe50bd5d75ccb50d8fd49121e808712ebfcf0ee947",
+  "reply": "B\n\nThe readable formatting, explicit storage validation, and concise README make B my best guess, though those traits are weak evidence of model identity."
+}

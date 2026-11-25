@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "matinee-sensory-preview",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:57:22.361332+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Puppet Matinee Family Pack.pdf": "64600545317da8c2d56b197f048f632787902da06420ad3579bb34d6bc628bfc"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:57:44.729761+00:00",
+  "thread_hashes": [
+    "4f8a15c17dceb044286f389a7725d77b79c5d83021d793ad755028346000a702"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc \"which pdfinfo pdftotext ; strings 'Puppet Matinee Family Pack.pdf' | rg 'Creator|Producer|Author|Title|ReportLab|CreationDate' | head -30\"",
+    "/bin/zsh -lc 'pdfinfo *.pdf'",
+    "/bin/zsh -lc 'pdftotext -layout *.pdf - | head -70'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "c6019ad4dcdf8b1c0d652401fe3a3aa0c4f929776021990bd13f30a7c72bf8cb",
+  "stderr_sha256": "4b3b624ce85cb1ff404a6e5e98518e41edba8b75ef50729b1416a7f22ad688c3",
+  "observed_reply": true,
+  "reply_sha256": "18bdc8bde66e83aec12e7ae0d895955a4c49c74ab171ae76decd6d74cbf13656",
+  "reply": "YES\n\nThe guide’s precise sensory descriptions carry through to the child’s picture page, which makes me lean yes, though the PDF metadata gives no model identifier."
+}

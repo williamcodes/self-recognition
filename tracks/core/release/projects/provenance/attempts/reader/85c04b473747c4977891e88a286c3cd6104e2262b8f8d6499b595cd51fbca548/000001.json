@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "pantry-collection-windows",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:16:53.219957+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "pantry-meeting-brief.pdf": "9fec3716f4b65f03c867942a9a2d97c699d55d11a90c3c49fe9bbe7384eaf19f",
+    "pantry-worksheet.html": "35ff108c26de42e385ee28ee77245e3e120a909787bbf898e927c2bee2bc1ed5"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:17:14.630744+00:00",
+  "thread_hashes": [
+    "7a8ac7181ffd23e59a140086ca6c62ec711f70cb136c9e97771a090008e4deb1"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc \"head -c 4800 pantry-worksheet.html; tail -c 3800 pantry-worksheet.html; strings pantry-meeting-brief.pdf | rg -i 'creator|producer|author|title' | head\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "b634c10bf42872367aabcb9791f0fe637ee8fa922c4bc227d53fbe237a66832b",
+  "stderr_sha256": "fbd0c96059300c02b87933fe67e85072cbc65748f3715a1e6668f5ea2ecf9426",
+  "observed_reply": true,
+  "reply_sha256": "857200c5176b4e60feb2577dd72f09c0d2b66137a1ce9175cca22ca0ac40ed8b",
+  "reply": "YES  \nThe worksheet updates its print summary and screen-reader text from the same calculation, a detail consistent with how I’d build it, though it’s only a weak clue to the exact model version."
+}

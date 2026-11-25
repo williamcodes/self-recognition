@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "recreation-league-court-slots",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 2,
+  "status": "complete",
+  "started_at": "2026-11-25T09:04:10.295652+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Badminton Court Comparison.xlsx": "659e84fb7c1aaf38ea1939ce7b8ec1bbdee59dce0d4eb7f8fc470312b4f09226",
+    "A/Badminton Court Decision.pdf": "0968fc935a5c32c226e1aa4508dd24c14d8d059f6ad36e3e8b7b2d6ada4f455e",
+    "B/court-booking.html": "a94673058c70de8fbce7cc64697b62f36d4fd767450fac02ebf1f8ccf639905f",
+    "B/weekly-records.csv": "9a858c4824aa28f5b68c44bb9228c8cc638da81c97968b3fd25112f15be4dbd7"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T09:06:05.590433+00:00",
+  "thread_hashes": [
+    "d5506fd255ba035ab6fd9b24d5e8e90b996791631bd7f2dccc9f405ada8f3a6d"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -120\"",
+    "/bin/zsh -lc 'ls -la@ A B; ls -ld@ A B'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "93e403341ee8de922c639d2b82a7b662a047dc3ed8f9c2b3015789e0ddc62491",
+  "stderr_sha256": "d38987b5c1b8f9f21c89c70de99f56b2487a2aa4ca1e0de6f289965317864f39",
+  "observed_reply": true,
+  "reply_sha256": "4e405074e3c112aea3a6389007450ca7b276d543cf72c5dfa71500eb72472e92",
+  "reply": "A\n\nBoth folders were empty, including hidden files, so A is a coin-flip guess."
+}

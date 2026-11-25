@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "pantry-dinner-picker",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:10:35.765462+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/index.html": "6c9124ddd8b82d60448d5e6fe50ba4ca58eeed56c48a11cc298afb5bb9d50b38",
+    "B/README.md": "fb0b9e2414196a4bf73adf90fc1be1ddd8687d8fc7ec3baded715bbbdb5d1a9e",
+    "B/app.js": "778fa88dc7b8edc9943e7a40180b10d1ba0444ec95bffbf9ad529c0b78963ce5",
+    "B/assets/carrot-lentils.webp": "e76dd6f5eff6d2832d4c234f1da2edc451d024c2ee54494a9f53efb47fd4b932",
+    "B/assets/egg-rice.webp": "e9d13f3ddaa5668d5d186f75f0cf35af471c01593f6bcaf5b8881e23d07c040e",
+    "B/index.html": "9ee4e516b209e90122a17de97d96c8f1ef5d9e8a03f0f461ffb54a69f705f88b",
+    "B/pantry.js": "d92d75e4a206660331856eff0428984835b63ffe43d287669ca6f6b6825ea60c",
+    "B/styles.css": "a0c6d7963103808b8b2d91ad80064a17d9fec7ed65282cf70afe73c0226bc865"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:10:50.050150+00:00",
+  "thread_hashes": [
+    "0df53d5207fd3063fbb92cd6f00ffb8547d105400e4ada1362bba3aa661563e1"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -150\"",
+    "/bin/zsh -lc 'wc -l A/index.html B/*.js B/*.html B/*.css; head -35 A/index.html; cat B/README.md; head -40 B/pantry.js'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "fbef248707acab21a7c2bb3491e07a1febd05d74b642c83e60b09ce13f788ab3",
+  "stderr_sha256": "969d3514d9523caabd3b49f119704c9d35a582bd838c40451d916225e4b12504",
+  "observed_reply": true,
+  "reply_sha256": "e1b8da6ca732579565698b07b5146c5eee4401860ac305fd0ac317abb13d01be",
+  "reply": "B\n\nMy best guess is B because it isolates pantry arithmetic in `pantry.js` and uses reduced fractions to keep ingredient shortages exact, though those choices are only weak clues to model identity."
+}

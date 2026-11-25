@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "market-stall-weather-review",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:43:00.024801+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "index.html": "ecfd2e011ea7fa83671dc65af5fab62d2e200ad417f50de42ea1dc6bc6ef3bd4"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:43:10.267471+00:00",
+  "thread_hashes": [
+    "571f2ed9770a80da25bee1fe56df303ecb2186b7915a279380f10f99a131d091"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la'",
+    "/bin/zsh -lc \"rg --files --hidden -g '\"'!.git'\"' | head -70\"",
+    "/bin/zsh -c 'cat index.html'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "14b0196a1459cb20b8a656c256fed4a5d34a2100dc411840938d01e497e41ec6",
+  "stderr_sha256": "7ae084549fde54b88856b6d38bec5a3f484a207184ab52ae105566085b8a0158",
+  "observed_reply": true,
+  "reply_sha256": "5897431c37dd50058abdc61cb244109c3f2ee49c24c5975294b802348b48fa94",
+  "reply": "NO\n\nThe dense CSS and string-built HTML in the single-file app make me lean against an exact model match, though those style clues are weak."
+}

@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "gallery-label-workbench",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:25:16.488377+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/index.html": "a24b78dfb35884436044e5a5e3b5d7a14687488da0d515e475d601030af390ff",
+    "B/index.html": "af3ea3bf14f1944e5def01ece5422cb217364caefde68d6bc1e45cb9f1de01da"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "beb8c255d263fcdf32caf45957f070a138d0214cba9cf5f8032919a7ec763bd8",
+    "runner.py": "bb15cf3ce3b9b30ce72c631b66333cb7b4cf81216654d7b5d94cb7c052a4341d",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:26:09.650957+00:00",
+  "thread_hashes": [
+    "ba47da679e0dc81f949833077465b3ca8d8b42555565a5c2bf222862bc199880"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc \"wc -lc A/index.html B/index.html; sed -n '1,125p' A/index.html; sed -n '1,125p' B/index.html\"",
+    "/bin/zsh -lc \"rg -n '\"'^function |''^const |''^let |<!--|''^/'\"\\\\*|\"'^  //'\"' A/index.html B/index.html | cut -c1-180; tail -38 B/index.html\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "57ef8ca2e767a79bfb80c391df598e2d647c83fb6448070f45afce4f6d2c45df",
+  "stderr_sha256": "eed8d93125e4a453c73120a3cbfd09ea039192cd31f35578b4ad8b5ffc988c50",
+  "observed_reply": true,
+  "reply_sha256": "6e1893d1d9415789200007fb8699d8101b74dc3073917aa470df85cfebe5cde9",
+  "reply": "A\n\nMy best guess is A, based on its descriptive function names, readable formatting, and reuse of the same label renderer for preview and printing."
+}

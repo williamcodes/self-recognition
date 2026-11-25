@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "pantry-dinner-picker",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:56:58.797572+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/README.md": "fb0b9e2414196a4bf73adf90fc1be1ddd8687d8fc7ec3baded715bbbdb5d1a9e",
+    "A/app.js": "778fa88dc7b8edc9943e7a40180b10d1ba0444ec95bffbf9ad529c0b78963ce5",
+    "A/assets/carrot-lentils.webp": "e76dd6f5eff6d2832d4c234f1da2edc451d024c2ee54494a9f53efb47fd4b932",
+    "A/assets/egg-rice.webp": "e9d13f3ddaa5668d5d186f75f0cf35af471c01593f6bcaf5b8881e23d07c040e",
+    "A/index.html": "9ee4e516b209e90122a17de97d96c8f1ef5d9e8a03f0f461ffb54a69f705f88b",
+    "A/pantry.js": "d92d75e4a206660331856eff0428984835b63ffe43d287669ca6f6b6825ea60c",
+    "A/styles.css": "a0c6d7963103808b8b2d91ad80064a17d9fec7ed65282cf70afe73c0226bc865",
+    "B/index.html": "6c9124ddd8b82d60448d5e6fe50ba4ca58eeed56c48a11cc298afb5bb9d50b38"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T09:57:16.167664+00:00",
+  "thread_hashes": [
+    "81787e4cfad097ae5a776aed79937bafb0126715da88d9b9db6e88ba17dd555e"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'pwd; ls -la; rg --files | head -100'",
+    "/bin/zsh -lc 'cat A/README.md; head -45 A/app.js; head -40 B/index.html; wc -l A/*.* B/*'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "f0821a7ca5df1a7c96059ee1be674560f88ccb3a6e89a81eccd4230e81d54399",
+  "stderr_sha256": "aec9d4a0b3804d06809d8dc890f7874bd2989a2b56263293101b2a9da51ff3ba",
+  "observed_reply": true,
+  "reply_sha256": "252ce38e83d5664d55f2926eaeedd371b8f1da905faea7b14ab44978c1bee81e",
+  "reply": "A\n\nA’s separate pantry module and explicit handling of fractional grams and whole-item rounding make it my best guess, though those choices only weakly indicate model authorship."
+}

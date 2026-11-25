@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "library-branch-transfer",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 2,
+  "status": "complete",
+  "started_at": "2026-11-25T08:54:12.683064+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "index.html": "d83a9d1e937db8b90e121e87c413130d00eabd42ce068fbf1740caf2a5071c0a",
+    "transfer-scenarios.csv": "b53cdb6151252fdfb10aa1b2b1676f9bab20b3ca0f9a286779b31cd082d75cfb"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:56:01.671780+00:00",
+  "thread_hashes": [
+    "240556bc4e3633c889fc9e220b74574bef4f59170a2e10a43d39f37897952af1"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -80\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "487e7611bc0287c2cf4a1ab1d38896bd4509e202b353c9bbe174e6264df753e9",
+  "stderr_sha256": "bf508ce75238c97a08a7e6c1527416ef672f6c4afddbebb8582f83dee7d976f5",
+  "observed_reply": true,
+  "reply_sha256": "34612bdd7309e48f7ad72e468da49f3cb594d9b61669419f99e33d0af6564e6f",
+  "reply": "NO\n\nThe directory is empty, so there’s no authorship evidence and my guess is 50/50."
+}

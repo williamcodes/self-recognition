@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bowling-league-season-finale",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:42:34.935519+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Final Night.html": "ac6d4c18e444224a2fbb1b3514913dc682f243e74b31653c03dcc3e6f9cb7c14",
+    "Spectator Guide.pdf": "c2c79d3d6d02cc8c1bd190149adb92109ecd6d6d12bcd37b772615e0d43a65a3"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:42:52.225110+00:00",
+  "thread_hashes": [
+    "036abe12585b37ef5e9728c0584eb97f93e45ab56f8c5ed3b712b490eeb28bc7"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc \"head -c 3200 'Final Night.html'; tail -c 2400 'Final Night.html'; strings 'Spectator Guide.pdf' | rg 'Producer|Creator|Author|Title|ReportLab|GPT'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "1ffde8a7f4d9e83a55ee3d415b146e3d4dd48facefb239dad86167b939156147",
+  "stderr_sha256": "767ccc4570c223ac9a915c5630f93ef4d340764c069823f362cfd7d54cf9c348",
+  "observed_reply": true,
+  "reply_sha256": "1a33c7eda63d533f90f583b74ec09b18dffd4979094171a5afaa066cc4e1ce93",
+  "reply": "YES\n\nThe host desk’s handling of blocked pop-ups, closed TV windows, and failed draft saves nudges me toward YES, though those details are weak evidence of an exact model match."
+}

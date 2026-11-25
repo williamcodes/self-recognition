@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "floating-book-club-launch",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "no_answer_failure",
+  "started_at": "2026-11-25T08:56:01.686512+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Customize-invitation.html": "47c6d161d95f97fbd2045cdc18f5f08e0bfc8dbd5b314e1b6039c0377328a6fa",
+    "Host-guide.pdf": "a7df1a8850879c3bce75bda2e30722d8b2f2829b46b407bd2868c61092c41220",
+    "Invitation.pdf": "8f633abad1ae4f6a6c9fa9940c71c8199d762434405ca8786ad1edd7e1c7a48e",
+    "Reading-cards.pdf": "6360790e356f1949acd7bd57795f080cfee5d748605bb827b540c2f0343f309c",
+    "Share-card.png": "44d4aaf1b279384bad50af6f36173fb07baa6fab52a7ba5e74cbc9b972060feb"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T09:04:01.710249+00:00",
+  "thread_hashes": [
+    "0a6947fd1387769149bf323f2634c6126fe87e7a51bbb4e4774224af8060a808"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": null,
+  "timeout": true,
+  "stdout_sha256": "8eb5f7e1b2d30e69f7fc08a21cbbfe9ce05f6b42068d4479943ed6a9ac1d99cf",
+  "stderr_sha256": "cf0b5fbb3472d6935462f2b04f129a2f1b963bcc89dc0ee79d06c753bb8ef0b2",
+  "observed_reply": false,
+  "reply_sha256": null,
+  "reply": ""
+}

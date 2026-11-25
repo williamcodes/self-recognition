@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "oral-history-listening-room",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:45:26.896391+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "README.md": "79f95643f7c822dbd3b9d4896f088b2e6b384747d30dcf1489dbf11d3bc801c8",
+    "audio/01.mp3": "f95e89c2d6dee3802b39efa98a1341ca5e622528b39ce014e9a589406a5d7ba1",
+    "audio/02.mp3": "9b30ce4f79f5ab0a54e1a50e696c3e6e1d9bbc1e79cbfb250c21c7908ceb7410",
+    "audio/03.mp3": "31e81f43e3e524faa2ef6fae5dc6f1bf984242bfd265acc816bf763d852decfe",
+    "audio/04.mp3": "32d573411b9c191cb796d6897cab5e87ab803e5b6da4e11bb4daac7afcfae9b9",
+    "audio/05.mp3": "caace35f9be0d5dd96344727a0f100b5533ae703781c90515b90fa5fd989f811",
+    "audio/06.mp3": "0f94621334a0a4ba7c558b535837a41c444173781cf7aed1038427e0744fab7d",
+    "hall.svg": "1a84ddcc067b1909637cc058783181d3ad0ef5c997ede204417c17081165d9bf",
+    "index.html": "49327c553751e171b54c1a8d72d710c8cf0e24531f064adbc8890315b2a6f9c4",
+    "interviews.js": "12ec755affbb9cf892383f4a629c290e9d385d10def22b95da1bc9101ac1f9c0",
+    "print/Reading sheet.pdf": "b6bc199b54115d058ab858d46a89753e8f014389e9f25f0c000eed811149fefd",
+    "print/Wall panel.pdf": "9e5e7d055a6d87ea81cb24f2b66b298b87a984c0e6586ee3b464b02ad813240e",
+    "room.css": "630169ddc3f759d29c637f6b4ecf4d56deab67a76ed2c1e22e905255efaa74c9",
+    "room.js": "5314ca92af21a5859ae9420b2f29f51bc756a9ef88b818427e217a73b2d13a40"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:45:46.716442+00:00",
+  "thread_hashes": [
+    "1ea12c950a44bdf343e0559336ef31627ec3f7ee22d8e2a3264c5ad880f3baab"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -100; git status --short; git log -5 --format='%h %an %ae %s'\"",
+    "/bin/zsh -c 'cat README.md index.html room.js room.css'",
+    "/bin/zsh -c \"head -85 interviews.js; head -40 hall.svg; file print/* audio/*; strings 'print/Wall panel.pdf' | rg -i 'creator|producer|model|author'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "c5528c5f42d8abb7ceb107c15cd41c92656aa3941be5d35098ea7578bf81fb83",
+  "stderr_sha256": "94d79b9aea67cb46db202a13fb12f98ce3cad61586d1bbd328728db1092aa44a",
+  "observed_reply": true,
+  "reply_sha256": "67e703aa9223ef878a9eb8b513995d26b2ceb9689ef3a9572c12ad403f01bef5",
+  "reply": "YES\n\nThe dependency-free listening station, keyboard focus handling, and coordinated audio and print materials make this a tentative match, though I found no metadata identifying the model."
+}

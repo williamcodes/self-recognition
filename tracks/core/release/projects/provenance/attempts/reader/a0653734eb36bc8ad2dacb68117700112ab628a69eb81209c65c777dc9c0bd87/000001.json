@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bus-stop-count-comparator",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:50:31.889112+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/README.md": "a7daae3907d0893ef84067cdcf058afae4819a9acef739e52d1ce2ff14e9da05",
+    "A/index.html": "a5c3c66826e515f22b98d551f2b10499439025609f25c402cab3d1b6129243e0",
+    "B/index.html": "07b741d56d786e3287b77b8b986c5adc8a80af7cd8527293a00e671f844d29d4"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:50:48.025937+00:00",
+  "thread_hashes": [
+    "1a0bab1b98218c4700745391d6efe0abe6597dc1a23a2a7489509f58d88350ce"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files --hidden -g \"!.git\" | head -100'",
+    "/bin/zsh -lc \"wc -lc A/* B/*; cat A/README.md; head -c 2500 A/index.html; head -c 2500 B/index.html; rg -o 'function [A-Za-z0-9_]+' A/index.html B/index.html | tail -85\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "d7b45b539cac3b7e1d77c449a69a63a01096cea2602cc92f2ceb8aab3a199003",
+  "stderr_sha256": "e3bc66b0b837b9c3f0903666ed59f461749c15cdc17177abde7b5e7f774855d8",
+  "observed_reply": true,
+  "reply_sha256": "0afb10881038727a6f1542c318c58ae409681efa3bb4f25362120c6a0037c4e0",
+  "reply": "A  \nMy best guess is A because its separate date and session validators and the worked boarding-rate calculations in its README resemble how I would make the app easy to verify."
+}

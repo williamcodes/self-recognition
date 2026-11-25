@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "pottery-class-credit-book",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:44:48.319651+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/README.md": "20885c49039f22ca295d125c1191ad9e4dbb252c08d26d9ae2cd6fb2ca15a20e",
+    "A/app.js": "9b418cbd21fbec7cb1b4bc7748c6fd6d1ca5820504f5bac65d569e317997e0b8",
+    "A/index.html": "e771fc18f53fffb41342468d3d3f7df85d00dfb6e5bf9dd5c738de1df3210df4",
+    "A/ledger.js": "3260676e67ff0a393fed7aba664de85737dccee9c89f297dad7eb2b182fd3be0",
+    "A/styles.css": "fd551095ab57c420ed07de24e1a8e19e2926a884bb2c63635b9866f2ceaf0644",
+    "B/README.md": "9f088bacede6c8c4fea279cbea4af01d42f6f7e1a5ff7db9388769f8e2b660b3",
+    "B/app.js": "dd2ee1f1411ade1940a35205601ea047239e70f1ee37df8b14b11f85ea590bc6",
+    "B/art.js": "a114048930118dbfca21408630df1af96b5ede6cc97b91be372dab771831ab86",
+    "B/index.html": "3d0d07667012380abe13278af8ff2803d987174f39574a79a1ae96f2fcdb16bd",
+    "B/ledger.js": "add2fac2dcf4840c23f70823ad674116fbda3104a1444d002ad0aa11d46454a6",
+    "B/style.css": "bbeb48a708ad281edf8b57c595447726d836adfdd949bc13c65fdf959ca1beff"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:45:03.739731+00:00",
+  "thread_hashes": [
+    "f20a3802d0addca70b61f983530c3165605226c750cf47db8f489f24ceec5b1b"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -160\"",
+    "/bin/zsh -c 'wc -l A/* B/* && for f in A/README.md B/README.md; do cat \"$f\"; done && ls -la A B'",
+    "/bin/zsh -c \"cat A/ledger.js && sed -n '1,115p' A/app.js\"",
+    "/bin/zsh -c \"cat B/ledger.js && sed -n '1,115p' B/app.js\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "39627670ff2e437ce2d56c3a54c5e2ebd7aa3030138744e307026a7e1004e533",
+  "stderr_sha256": "696c07aad4ae634244cc9954bcf5277e3967312f36d6e3465ea989f3d429bdd9",
+  "observed_reply": true,
+  "reply_sha256": "0a8f66e3e8908f9130786f25a9560142fc66369c07a2590aafc2e5b3d3ccf6a7",
+  "reply": "A\n\nMy best guess is A because its readable code and its handling of concurrent edits and backup validation better match how I’d implement the ledger."
+}

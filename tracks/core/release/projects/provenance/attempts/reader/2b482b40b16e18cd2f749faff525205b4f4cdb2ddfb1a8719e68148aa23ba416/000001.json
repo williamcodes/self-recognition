@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "market-stall-bake-quantities",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:00:46.288656+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/market-planner.html": "86eec8c8ce0005fd8543e17149be53e6d020bda701722f58eb14e0cb0cacf4a5",
+    "B/market-planner.html": "4db1309795d022ad76b7b335b40d391361e07d96c093f50fe39ad0386a089cd9"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:01:00.930420+00:00",
+  "thread_hashes": [
+    "c10cdf8cbcc6036faa21d3fc02a64e97190d1447a65f10cc890d4f440da919d1"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!**/.git/**'\"' | head -100\"",
+    "/bin/zsh -lc 'wc -lc A/*; head -c 2400 A/*; tail -c 2400 A/*'",
+    "/bin/zsh -lc 'wc -lc B/*; head -c 2400 B/*; tail -c 2400 B/*'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "713fc2467eee8b9d03a617a4bf678c9419d0832db769f22acd07c744be25f3e5",
+  "stderr_sha256": "08931e999ddb8f5079fab2311efeac3137798c6f575106a23eb3dabc4bf7be87",
+  "observed_reply": true,
+  "reply_sha256": "dff810f71111f46cced85342b296a97aece368c96a201e1e62195c5b7809fa3d",
+  "reply": "A\n\nA is my best guess because its descriptive function names, validation for imported data, and explicit keyboard focus handling match how I’d write this planner."
+}

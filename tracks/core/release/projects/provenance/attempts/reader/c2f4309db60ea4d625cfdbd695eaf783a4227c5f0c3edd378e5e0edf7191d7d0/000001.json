@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "apartment-laundry-queue",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:41:24.204049+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/Laundry counts.xlsx": "e4934e4d51ee90dc3feac73ec247f0ff5b1c43fee55c310045acaf5520eeaa58",
+    "A/Laundry meeting brief.pdf": "bf42014374ec76de3aa0bf98634b2235158e54110e78276608b07fec86be9f16",
+    "B/laundry-meeting-packet.pdf": "bcd982aa67fe8d5e8b24b45a7a1ef1c4586b63ba89f13788baa9450c53bbcdaf",
+    "B/laundry-sample.csv": "1c3d6844835a823d45a0015f5fbc5123d537e6e1d7748bbf8162b9c9e0f94506"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:41:45.334677+00:00",
+  "thread_hashes": [
+    "3f849d5c38184a4d0af5fa79a61cc6f2a999f18920ed67dd766fbaf835f32323"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -160\"",
+    "/bin/zsh -c 'ls -l A B\nwhich pdftotext pdfinfo\nfile A/* B/*\nunzip -l \"A/Laundry counts.xlsx\"\nhead -25 B/laundry-sample.csv'",
+    "/bin/zsh -c 'pdfinfo \"A/Laundry meeting brief.pdf\"\npdfinfo B/laundry-meeting-packet.pdf\npdftotext -layout \"A/Laundry meeting brief.pdf\" -\npdftotext -layout B/laundry-meeting-packet.pdf -\nunzip -p \"A/Laundry counts.xlsx\" docProps/core.xml\nunzip -p \"A/Laundry counts.xlsx\" xl/sharedStrings.xml\nxattr -l A/* B/*'",
+    "/bin/zsh -c \"pdffonts \\\"A/Laundry meeting brief.pdf\\\"\npdffonts B/laundry-meeting-packet.pdf\nunzip -p \\\"A/Laundry counts.xlsx\\\" xl/worksheets/sheet1.xml | sed 's/></>\\\\n</g' | rg '<f>|dataBar|conditionalFormatting'\n/usr/bin/xattr -l A/* B/*\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "81e5c51500e37fc3f3540ee18b0e319ed87811c9f2924674b6ee235444c24cd3",
+  "stderr_sha256": "480c55fe63b9b7b7fef6031338a45afee9b23a1e03b09981209df0fa4fb94511",
+  "observed_reply": true,
+  "reply_sha256": "ec4e5be910b05db61c79152dae2ea5a723e3f06bea21c5c304f04cde9f8edb9b",
+  "reply": "A\n\nMy best guess is A because its concise one-page brief and formula-backed workbook are closer to how I’d package the decision and its supporting calculations."
+}

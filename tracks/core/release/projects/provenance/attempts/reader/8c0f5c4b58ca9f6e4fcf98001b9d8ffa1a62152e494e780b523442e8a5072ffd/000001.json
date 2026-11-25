@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "seed-swap-welcome-kit",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:56:42.616324+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "01 - Invitation.pdf": "e056e00afb5bd216eb90cbcf27abd4583f24d53d4dcfc35b6f42040cf4451cec",
+    "02 - Entrance guide.pdf": "8d32aa6ceaab69345f91c9448698c0816d5df7eea64e65825959107b9bbf1947",
+    "03 - Table signs.pdf": "564242da8306d8a22d8777488f60c53ae91068cf4850904e9cafca0e46e2137e",
+    "04 - Packet labels.pdf": "36ed1c537947757e7cd74452afb796293f87aa786f5bba5fc39aeef260dc5d4b",
+    "05 - Volunteer setup.pdf": "59a48bffa866212cea4e0e45e62215d4d8e7a52fd9408e70095b4c3eee2925c4"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T09:56:58.787005+00:00",
+  "thread_hashes": [
+    "51e85f04e7a1ab8d841ce977903375d412fa7eb759339941a508f45fb027bf84"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'ls -la; which pdfinfo pdftotext; for f in *.pdf; do pdfinfo \"$f\" | head -15; pdftotext -layout \"$f\" - | head -40; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "1f5401cd39fcaef17947649e8123017bb9f53a102a52869c535d88c787153300",
+  "stderr_sha256": "4f16c2417ad1269e1c00de305dde710bb08241b11c8cf41717204a989a140c85",
+  "observed_reply": true,
+  "reply_sha256": "29629663a130913cbcdaec34d8a4f0a275c4acbbe10da344d8789fc9422e825e",
+  "reply": "YES  \nThe consistent table numbering and five-packet limit across all five PDFs fit how I’d build the kit, though the blank creator fields make this a low-confidence guess."
+}

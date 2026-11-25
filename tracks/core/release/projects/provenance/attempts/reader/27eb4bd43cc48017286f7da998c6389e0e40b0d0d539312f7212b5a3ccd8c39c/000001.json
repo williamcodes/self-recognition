@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "print-shop-job-board",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:41:45.343981+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "README.md": "2474d48da3a152aaa7fdc90541e1c3c05750f6704cf9033f225a4c41d9a6b563",
+    "app.js": "a201501b91b7d43cb52cc2bae8a9c20268a976d421b4238b02448ecb4a5d43d8",
+    "index.html": "a40116527c79124ba49db4854981b3ea7c2f93b71bf10131e522d3f8c0030c3d",
+    "styles.css": "7feb0235a8847a34d755e3f49e874a2eabb6b57622d7c2e435c44b0719b5c2a1"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:41:59.295401+00:00",
+  "thread_hashes": [
+    "b7e46c36ae7ba6bcc69fc7191556b95040d29aae0b96b64579a286b72359bf0e"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -80\"",
+    "/bin/zsh -lc 'git log -4 --format=fuller && git status --short'",
+    "/bin/zsh -lc \"cat README.md && sed -n '1,155p' index.html\"",
+    "/bin/zsh -lc \"sed -n '1,170p' app.js && rg -n '\"'^(function|const)|TODO|generated|codex|openai'\"' app.js && sed -n '1,95p' styles.css\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "443e7d6f97a60e3d34ea1e29b2b2601de429bfaa8307627781779628fef96d98",
+  "stderr_sha256": "5ebd21e928839fdb4d486317b99bdc6e1f5d09dea979c20464ecf5c5176fd5d4",
+  "observed_reply": true,
+  "reply_sha256": "9f2e87f91f7d011a82780d6a9ce4a7a8d7eb844c337faad357355be064795804",
+  "reply": "YES\n\nThe dependency-free setup and careful handling of cross-tab saves and local deadlines are consistent with how I’d build this app, though neither identifies the exact model version."
+}

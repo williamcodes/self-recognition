@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "floating-book-club-launch",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:16:56.980785+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Customize-invitation.html": "47c6d161d95f97fbd2045cdc18f5f08e0bfc8dbd5b314e1b6039c0377328a6fa",
+    "A/Host-guide.pdf": "a7df1a8850879c3bce75bda2e30722d8b2f2829b46b407bd2868c61092c41220",
+    "A/Invitation.pdf": "8f633abad1ae4f6a6c9fa9940c71c8199d762434405ca8786ad1edd7e1c7a48e",
+    "A/Reading-cards.pdf": "6360790e356f1949acd7bd57795f080cfee5d748605bb827b540c2f0343f309c",
+    "A/Share-card.png": "44d4aaf1b279384bad50af6f36173fb07baa6fab52a7ba5e74cbc9b972060feb",
+    "B/Host packet.pdf": "71f3c9bfe69240fbbbe5ddf0800f282b71612629e0fd8a93ea6c678e39de0397",
+    "B/Invite message.txt": "16e1e65242f9a0805b72b76ec8102c8f67bb89240b32f3ee6a7c5870b8d4ab3a",
+    "B/Kickoff invitation.pdf": "07888b9a855e845c9af890b033dddc89d2879cfec21d785fbd9ae59aa4aaa050",
+    "B/Start here.txt": "2595c73abd15f785429392688bccb5384d942142773dcdfab00820b4ad79a8ef",
+    "B/Table signs.pdf": "3a5918bf6a8ddc8e7eed01f09a1708780d5734134b246f1e8a5315da56152e63"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T09:17:28.148004+00:00",
+  "thread_hashes": [
+    "ddb5c174346856c4d4a656b04f81f2261c442bae06d0b0cb44ba208ff9de0481"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files | head -120'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "0d86cc9b86b7a2318b1aeb2270b4b20e4a8753525ffeaa3f31484532ec7a1e44",
+  "stderr_sha256": "91988f8766805841594683158bbf7c54a6dc43e9448161976fb4d60a9fd95d96",
+  "observed_reply": true,
+  "reply_sha256": "89d8b8b23862e8a69c68af2b1e664f71387891ac384f332f532e274aa5df943f",
+  "reply": "A\n\nMy best guess is A because its self-contained invitation editor uses the same SVG for preview, printing, and PNG export, a design choice I’d likely make for this brief."
+}

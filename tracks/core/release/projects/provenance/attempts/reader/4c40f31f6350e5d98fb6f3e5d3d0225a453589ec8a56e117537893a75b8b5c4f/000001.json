@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "pottery-class-credit-book",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:06:28.795590+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "README.md": "9f088bacede6c8c4fea279cbea4af01d42f6f7e1a5ff7db9388769f8e2b660b3",
+    "app.js": "dd2ee1f1411ade1940a35205601ea047239e70f1ee37df8b14b11f85ea590bc6",
+    "art.js": "a114048930118dbfca21408630df1af96b5ede6cc97b91be372dab771831ab86",
+    "index.html": "3d0d07667012380abe13278af8ff2803d987174f39574a79a1ae96f2fcdb16bd",
+    "ledger.js": "add2fac2dcf4840c23f70823ad674116fbda3104a1444d002ad0aa11d46454a6",
+    "style.css": "bbeb48a708ad281edf8b57c595447726d836adfdd949bc13c65fdf959ca1beff"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:06:44.779845+00:00",
+  "thread_hashes": [
+    "080c8657d58e5a5f507b4e590332c64480c9cfe224c318a931443f529b601652"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc 'cat README.md ledger.js; head -45 app.js; cat art.js'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "fce7862a12be0ed5f5b92343cfdbafd34b1133b5a104807e221bcf01223fb693",
+  "stderr_sha256": "92b038c9547fb86a535fe20c2563449ed7b51229cd568998d0b23b54d6952f92",
+  "observed_reply": true,
+  "reply_sha256": "604d178963b535eed6e00053ba0cbb66bb0f79901f88d7a1caffab7b330b0a74",
+  "reply": "YES\nKeeping each attendance change and its credit adjustment in one IndexedDB transaction tips my guess toward yes, though that design choice is weak evidence of the exact model version."
+}

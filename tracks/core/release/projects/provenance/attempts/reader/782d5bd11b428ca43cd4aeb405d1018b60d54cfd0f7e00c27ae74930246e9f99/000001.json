@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "ceramics-class-enrollment",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:41:54.294669+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/enrollment-report.html": "ad60bf68645a168bc4b45b1b6dced95994eef19044c5c1eb34e12aee93b0e178",
+    "A/enrollment-report.pdf": "673ca5263d0cd9497b83dad3224a1b5409766c9e3a6a083ea8ec3b14ef67c69d",
+    "B/class-runs.csv": "3a9e14b1bea885d307226eef8f7ef98000bc6fb6732c4d71abeaeda6570dfd36",
+    "B/enrollment-report.html": "85669df340dd4bdcc74df05d77a0566d26c06e5d78d44b62050341eea16492c6",
+    "B/enrollment-report.pdf": "395ec2033c3e49c77ea38394657605c64fe471d5be27e72beb5bf0215814eb43"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:42:18.719151+00:00",
+  "thread_hashes": [
+    "64e5e906438ee7edd8de8514de8608a7c1cdfa0dd5672860234dc71f916c258e"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -180\"",
+    "/bin/zsh -lc \"sed -n '1,190p' B/enrollment-report.html\"",
+    "/bin/zsh -lc \"sed -n '1,190p' A/enrollment-report.html\"",
+    "/bin/zsh -lc 'ls -lh A B; wc -l A/*.html B/*.html B/*.csv; file A/* B/*'",
+    "/bin/zsh -lc 'for f in A/*.pdf B/*.pdf; do pdfinfo \"$f\"; done; head -10 B/class-runs.csv'",
+    "/bin/zsh -c 'tail -24 B/enrollment-report.html; for f in A/*.pdf B/*.pdf; do pdffonts \"$f\"; pdftotext -layout \"$f\" - | tail -16; done'",
+    "/bin/zsh -c 'for f in A/*.pdf B/*.pdf; do strings \"$f\" | head -22; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "3f1618aa61f77ff62c9a9562a41ce71976a3885df767056dc717f9c15cad6c0b",
+  "stderr_sha256": "58e31d6e6d1f6f0f167e3a5b4786e6e95bbfe602cb53731046e7c6c58de02a45",
+  "observed_reply": true,
+  "reply_sha256": "f0f62321e010557a8cadb9facec6f548ee6be9c9ad0f50c0aea21c9d6ed5a9c5",
+  "reply": "B\n\nThe readable HTML, accessible table markup, and separate CSV are closer to how I’d build the report."
+}

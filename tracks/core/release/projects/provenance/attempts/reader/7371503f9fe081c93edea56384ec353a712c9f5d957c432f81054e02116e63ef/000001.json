@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "library-branch-transfer",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:05:27.882024+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/index.html": "d83a9d1e937db8b90e121e87c413130d00eabd42ce068fbf1740caf2a5071c0a",
+    "A/transfer-scenarios.csv": "b53cdb6151252fdfb10aa1b2b1676f9bab20b3ca0f9a286779b31cd082d75cfb",
+    "B/index.html": "537556dcb98e9c3548faf9fa4d541c76163bc5f9ce5d88cfb760d05eedba52a4"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:05:38.297488+00:00",
+  "thread_hashes": [
+    "c6e8390d390b22accc94dcb8b663a666c91d0c5150b3bc1903e993a83e680104"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -c \"wc -lc A/* && sed -n '1,72p' A/index.html && rg -n 'function |=>|<title>|<\"'!--'\"' A/index.html | tail -65\"",
+    "/bin/zsh -c \"wc -lc B/* && sed -n '1,72p' B/index.html && rg -n 'function |=>|<title>|<\"'!--'\"' B/index.html | tail -65\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "3122293dac4117b013065530e5c7df0d3495fa0ad0b505e45376b6b2a5d31c5c",
+  "stderr_sha256": "9290265dfb12423ce0c74273c372b69b09ef120617dcbc4ee780862f3bd340ec",
+  "observed_reply": true,
+  "reply_sha256": "f98f234e32c24cdfa7346dbe1e608952ff7b5b2524f4c832a307494a007d0fbe",
+  "reply": "A\n\nThe readable implementation, interactive scenario comparison, and downloadable CSV make A my best guess, though these choices are weak evidence of model identity."
+}

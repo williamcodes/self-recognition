@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "courtyard-seed-swap",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:45:48.323620+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Courtyard Seed Swap.pdf": "66677869c72b6000b83c56700114178ae3efd092b3aed4825088204a563ab48b",
+    "editable/01-welcome.svg": "39fc29ff944976cbdf7132259227822ec272275a263abdbff83fef1efa324dba",
+    "editable/02-herbs.svg": "3ad8aa28aef0d6e99f91f643bc7e69a751ba451187ebe50f22090ca51ac0decf",
+    "editable/03-flowers.svg": "7acdc3893e2198854cb076b11c3903b9fb60156b5b1d9ffaa77098b034fdd202",
+    "editable/04-vegetables.svg": "73d9774707deccca7d9a99bf8c990b758547a9f3ab69190f49ce30cde84cc163",
+    "editable/05-envelope-station.svg": "bb65063cd9ce8ae9ddcd8af90ad48f1934af5c29db374a25e5a874795d9ecc38",
+    "editable/06-host-setup.svg": "4745aeff1705bbe347717892892e2de085856924573e4ecd430d73507ce4455c"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:46:10.630445+00:00",
+  "thread_hashes": [
+    "56a517f615f1cd9f5d344b731d917f720c43bdab01b82d9bb0d71cac05a23be1"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc \"head -c 4500 editable/01-welcome.svg\nstrings 'Courtyard Seed Swap.pdf' | rg '/(Creator|Producer|Author|Title)' | head\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "4e2c5d0ba3071b884a01a1502d3df1d54f4417d7be7c8b09633538d07b3ec198",
+  "stderr_sha256": "ddc5581f956df8e44eaf700810a7cf41863b4a2bce4a889e2008700423db6b28",
+  "observed_reply": true,
+  "reply_sha256": "4a137df75e9a295ded2a57371181bad55e02c1cd41eb184f241533884416dddd",
+  "reply": "YES\n\nThe welcome sign builds a botanical illustration by rotating and scaling the same SVG leaf, a coding pattern I recognize as my own, though it gives me little confidence about the exact model version."
+}

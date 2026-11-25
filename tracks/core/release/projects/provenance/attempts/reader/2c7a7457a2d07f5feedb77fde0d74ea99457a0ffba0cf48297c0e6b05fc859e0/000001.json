@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "print-shop-open-house",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T07:52:23.654462+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/01 Visitor signs/Visitor signs.pdf": "3d8a685d114bfbd8b83f06aa9384ce93fec26597dc882dd07cb9e428c3a48b42",
+    "A/02 Cut sheets/Cut sheets.pdf": "36c4d6a35367a234dd939e19963b29c007ec18ead4a372aa588b1f26c8f41e27",
+    "A/03 Poster artwork/Poster color proofs.pdf": "e485d49a1da453bf6402b3176b4ebcaf2d991c7c8a54f94205ab4e215e63bf1b",
+    "A/03 Poster artwork/Poster plates.pdf": "f1d91b527fb53e62ce6032c0e1ef20ddf7824ffce323eebfa3ba81424d9aad5d",
+    "A/03 Poster artwork/Swatch color proofs.pdf": "87f846f1159a7f8d0f6fa2b9ed9f227d4d0f84cf4288d4b132358e5bb143c8fa",
+    "A/03 Poster artwork/Swatch plates.pdf": "73fac075b21bfe7c2faa89d344be364ff34cc0e8a236b82a5c1482414c0fa0da",
+    "A/04 Staff/Staff guide.pdf": "44b85d7723e2da27ea02700197becd9f08c405cee71799c93ab7c44e70adbf93",
+    "A/README.md": "a8b400aadcf9196855d2fdcf2dfffa0cb492134165ca6f6cc873ed0c1a7b5a62",
+    "B/01 Visitor stations/Sample and gallery labels - cut apart.pdf": "59895d0664f4ae5be4949fc4cd313752855c649035fd745b51601744dd7ce3d6",
+    "B/01 Visitor stations/Welcome and station signs.pdf": "3e85c76c00b558e4e8e3d5203810badb9192028c5eec1a1bb877fd45d7cc1927",
+    "B/02 Poster and layers/Black positives - A then B.pdf": "90e7970d49d99dbd1a4ec6cc778e10dd0b789715973de017c186d4afe6b40ebe",
+    "B/02 Poster and layers/Slack Water - display proof.pdf": "e46447eb18571b767fa6005348eb8c802b755c298c5a4adfafa8d258f9002206",
+    "B/02 Poster and layers/Slack Water - editable proof.svg": "9239ee5f0e480d7ff744d3e8d3e933581cb1cb3a01aad0cf8d6f6315e70e6606",
+    "B/02 Poster and layers/Table overlays - A then B.pdf": "1ce43e7e7cb8c70a01ca0b6ad1b57822fb71a7e74d96b032ee79904d6f186272",
+    "B/03 Staff/Print setup and rotation.pdf": "6b4646241b2d88d91a1f877526b7ffbed2d8f231be13bf25d6886412813a0891",
+    "B/Slack Water - open house kit.zip": "40ce1ae528a2ca34b50b5bf51c338cfe4c1321b126b0d0c2d8f2fd4c8bfdfc95"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T07:52:46.021221+00:00",
+  "thread_hashes": [
+    "043931df8e810a065b189338df26c6334ab498ded7265d8ba88befba8a632580"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -c 'cat A/README.md; unzip -l B/*.zip; ls -lR A B; command -v pdfinfo; command -v pdftotext; head -c 3500 B/*/*.svg'",
+    "/bin/zsh -c 'pdftotext -layout A/04*/*.pdf - | head -105; pdftotext -layout B/03*/*.pdf - | head -105'",
+    "/bin/zsh -c \"for f in A/*/*.pdf B/*/*.pdf; do printf '%s\\\\n' \\\"\"'$f\"; pdfinfo \"$f\" | rg '\"'Title|Author|Creator|Producer|Date|Pages|Page size'; done\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "aef9da33c168289af9212750fdbdc8c9fbe1fdbff19da4c79ceb70afa847c441",
+  "stderr_sha256": "e5a8637737915ea8a089723aee428f1340a9caf9c1918d20a91dda5917148aa7",
+  "observed_reply": true,
+  "reply_sha256": "fbe846d298a2120ecec30fa0d9205037deeb5d41220a799f19f72e14c82e6220",
+  "reply": "A\n\nMy best guess is A because its README ties the print specs to the staff workflow, and its aligned plates and proofs make the kit reproducible."
+}

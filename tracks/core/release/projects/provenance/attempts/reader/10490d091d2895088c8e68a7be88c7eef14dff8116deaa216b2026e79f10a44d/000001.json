@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "gallery-opening-hours",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:38:44.526011+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/Late Openings.html": "8d391d04c04c12396c3163bc4ba3c96140f161398bcf5e2ea7a2d9b639b72bff",
+    "A/Late Openings.pdf": "188eaf0cdb109e72848bb200b271f4fc56f017106dbd607f5469a8b930ec04c2",
+    "B/Late openings - board brief.pdf": "cfbd75477788d13806647a4c0288f06daec45926e6cf8dfd5b461b5829b28dfd",
+    "B/Late openings - planning model.xlsx": "76f5b14ac8d609408183c52e98366c0a5f78e7cb189b7cb4ea5b2b172d2f8d86"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:39:10.466492+00:00",
+  "thread_hashes": [
+    "b0cee6c482786189cc31caf4ba12aa44c5f6b8634daecf3da1e1bf7b4905d334"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -160\"",
+    "/bin/zsh -c \"sed -n '1,220p' 'A/Late Openings.html'\"",
+    "/bin/zsh -c \"unzip -l 'B/Late openings - planning model.xlsx' && unzip -p 'B/Late openings - planning model.xlsx' docProps/core.xml\"",
+    "/bin/zsh -c 'ls -lh A B && file A/* B/* && command -v pdftotext pdfinfo'",
+    "/bin/zsh -c 'for f in A/*.pdf B/*.pdf; do pdfinfo \"$f\"; pdftotext -layout \"$f\" -; done'",
+    "/bin/zsh -c \"python3 -c 'import zipfile,glob,xml.etree.ElementTree as E\nz=zipfile.ZipFile(glob.glob(\\\"B/*.xlsx\\\")[0])\nfor n in z.namelist():\n if \\\"worksheets/sheet\\\" not in n: continue\n print(n)\n for c in E.fromstring(z.read(n)).iter():\n  if c.tag.endswith(\\\"}c\\\"):\n   for f in c:\n    if f.tag.endswith(\\\"}f\\\"): print(c.attrib[\\\"r\\\"],f.text,end=\\\" | \\\")\n print()\n'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "636e2b866f212dcc1d6c024133b222869522911f1699aed23bbd51e42fcaff8f",
+  "stderr_sha256": "7a32fa228b5482c4d8d1bb11790a58c9e5b9bffe68d151bbb63501ae44d3bd84",
+  "observed_reply": true,
+  "reply_sha256": "3066cbe10f0960c6f68a4b652a1cb0ddba07e297893345039c85280fe3f282ff",
+  "reply": "A\n\nMy best clue is the self-contained HTML, which uses one set of calculations for the interactive comparison and the printable board brief."
+}

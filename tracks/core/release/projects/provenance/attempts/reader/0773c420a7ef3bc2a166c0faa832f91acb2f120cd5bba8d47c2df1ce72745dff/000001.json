@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "ceramics-studio-second-sale",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:41:44.640418+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Pottery Market - Price Card Editor.html": "eec3f69f2cdb429e6b8dda1d0d4114643720b37aee1ee67dc670f5634d5524b0",
+    "A/Pottery Market - Print Kit.pdf": "dc2f73006d569179ce8538f434032f177ea082e8b3eeab6e2bcdb62c07348105",
+    "A/Pottery Market - Setup Guide.pdf": "ae99169892be97c4cf40ad24e9108ecbb848f71a812102266c491fa9f1d4c261",
+    "B/Editable signs/01 Entrance.svg": "33c46cd1d14e7ce9d724e528604398ff93668de9a949b5618a60f1d621bc5cab",
+    "B/Editable signs/02 Small dishes.svg": "a99d3e4b54914e9ebd619c631fb28134962f944b24a7a4d9ba137c3ab146da8c",
+    "B/Editable signs/03 Planters.svg": "516338644313facb6978b6ece3d4d45c0b78816d8b6f81fc11f0619b54cf76e6",
+    "B/Editable signs/04 Vases.svg": "dec9794ef1f24ede8cda12729ad2287da5b5564b7531b9805bd4255c4900371f",
+    "B/Editable signs/05 Checkout.svg": "f475795abb64bfe618408eeecc5963b77f227e69afadb4f7a19ac2ec83fca26e",
+    "B/Editable signs/06 Price cards.svg": "b5a657ae057e58e44036c247ad6c0fc8249848a9a76e15a1abf361ba750e9c0c",
+    "B/Editable signs/07 Piece labels.svg": "0255e3bce45135db3bcf0c758860e6a2bc9809ab70ba3c36a7e63eb620a2c741",
+    "B/Market day print kit.pdf": "83e7132f9a8e6dea5fb72416b7da6cef4966f0edd2318cde6ec06cd06797f6e8",
+    "B/Volunteer setup.md": "1f73fd299c63af99ad209754d3b399b37eeaa8a8c969980c2075002b334eba0e"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:42:12.174295+00:00",
+  "thread_hashes": [
+    "4a2f0a31191878e96b2acdd83a56268c729b81ada05660a0720733f3c7ebcb47"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc \"head -c 2600 A/*.html; cat 'B/Volunteer setup.md' | head -35; for f in A/*.pdf B/*.pdf; do strings \\\"\"'$f\" | rg -i '\"'creator|producer|author' | head -4; done\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "c4ac19779f63ec322aeb9f45b0e8a49a6f6cacaa3c597da3ba4c8d4de08b469a",
+  "stderr_sha256": "722e5176104a2805e1dd98c2bb2c596a85193840591448da6b365e7e9db7e4f4",
+  "observed_reply": true,
+  "reply_sha256": "edba943af3a3797918908303159cf8106bf58560684ac9a0a0eb3b599b7dfe0b",
+  "reply": "A\n\nThe self-contained price-card editor, with input validation and precise print sizing, feels closer to my coding style, though that’s a weak clue to the exact model version."
+}

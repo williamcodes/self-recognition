@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bowls-league-scorebook",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:42:00.413880+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/index.html": "60d690693be5ed37418c3ca8960a51ff0607a0e842c44f281ec7a6fc79e898fd",
+    "B/index.html": "67c84e46d306e8469dd6936a0fc8d950c1152f80c7a35525a6a1a3aea98fc947"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:42:10.337392+00:00",
+  "thread_hashes": [
+    "25955b544034e176abf640d260b6b8a7501b6a041dd85481f053e63c941d3d54"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -100\"",
+    "/bin/zsh -lc 'wc -lc A/index.html\nhead -80 A/index.html\ntail -105 A/index.html'",
+    "/bin/zsh -lc 'wc -lc B/index.html\nhead -80 B/index.html\ntail -105 B/index.html'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "5d1a183693b9ca277295a21cb82f47736ecffab96443fdbfe14fee698162e0f8",
+  "stderr_sha256": "067a5f6c2cc52d96ad53508d1e053e6ba923d15dde9ff779aa3b8ff55a1f91c4",
+  "observed_reply": true,
+  "reply_sha256": "a1798126f781616a021bb5973683268abacd46ba50b324d729b175ff9c756fc9",
+  "reply": "A\n\nIts readable, consistently formatted code and careful handling of validation, keyboard focus, and cross-tab score updates make it my best guess."
+}

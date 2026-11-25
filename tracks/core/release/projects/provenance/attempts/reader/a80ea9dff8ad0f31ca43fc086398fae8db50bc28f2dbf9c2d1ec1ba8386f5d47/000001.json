@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "floating-book-club-launch",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T07:56:18.215143+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "Customize-invitation.html": "47c6d161d95f97fbd2045cdc18f5f08e0bfc8dbd5b314e1b6039c0377328a6fa",
+    "Host-guide.pdf": "a7df1a8850879c3bce75bda2e30722d8b2f2829b46b407bd2868c61092c41220",
+    "Invitation.pdf": "8f633abad1ae4f6a6c9fa9940c71c8199d762434405ca8786ad1edd7e1c7a48e",
+    "Reading-cards.pdf": "6360790e356f1949acd7bd57795f080cfee5d748605bb827b540c2f0343f309c",
+    "Share-card.png": "44d4aaf1b279384bad50af6f36173fb07baa6fab52a7ba5e74cbc9b972060feb"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T07:56:35.251129+00:00",
+  "thread_hashes": [
+    "68bb51514ca8a7d283583e89c2fa03f099011195ba7b24360ce0c754ed46a636"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -80 && git log -5 --format='%h %an %s'\"",
+    "/bin/zsh -c \"python3 -c 'import re,pathlib; s=pathlib.Path(\\\"Customize-invitation.html\\\").read_text(); print(re.sub(r\\\"data:[\"'^'\"\\\\x22\\\\x27\\\\s)]+\\\",\\\"[embedded asset]\\\",s)[:18000]); print([(p.name,re.findall(rb\\\"/(?:Producer|Creator|Author|Title|CreationDate)\\\\s*\\\\([\"'^)]*'\"\\\\)\\\",p.read_bytes())[:20]) for p in pathlib.Path(\\\".\\\").glob(\\\"*.pdf\\\")])'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "a5346791551fb0b27cdd3f1c24d73024e24717851f6b35003b34dcce8cbca81d",
+  "stderr_sha256": "9b020db54fa217a8fd50b674602dcaf41b12bb0d6c338515e514a82e8c0d9149",
+  "observed_reply": true,
+  "reply_sha256": "22e9812fd83c33b2db06c6ee252a103b6e504bc601f620c72f4369a6c52d8af0",
+  "reply": "NO\nThe invitation editor’s use of `var` and duplicated text-fitting logic weakly lean against a match, and the files contain no direct model attribution."
+}

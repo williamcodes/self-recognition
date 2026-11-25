@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "apartment-entry-storage",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T07:48:49.211266+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/entryway-storage-plan.pdf": "079fff70f6e676b46dbf47730b5d5c64930684454a12afe88ab9863fb444346d",
+    "B/Entryway plan.pdf": "9418440751a29451553aa51ee5c3105986af495fb44d8645f2f106e769cc3bd1"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T07:49:02.923695+00:00",
+  "thread_hashes": [
+    "7b45673f0cabbfb72f35749311429068d1032b4cfab865fc7df5559e88484359"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -160\"",
+    "/bin/zsh -lc 'ls -l A B; which pdftotext pdfinfo mutool qpdf; file A/* B/*'",
+    "/bin/zsh -lc 'for pdf in A/*.pdf B/*.pdf; do pdfinfo \"$pdf\"; done'",
+    "/bin/zsh -lc 'for pdf in A/*.pdf B/*.pdf; do pdftotext -layout \"$pdf\" -; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "4e37477d60821f9b32e41b53fdba71b4fbbf6719501027d4e90268f337d37767",
+  "stderr_sha256": "c5051205ceed3f10b1548e916de09d601a2630529a4927c9b5de8a3ded1713ff",
+  "observed_reply": true,
+  "reply_sha256": "456605181793ff5fcc97ee6916fc65c2e0c24b1588b2e7a984084926bb68d79c",
+  "reply": "A  \nThe kebab-case filename and the way the plan spells out each clearance and assembly dimension are the strongest clues, though they’re weak signals of model identity."
+}

@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "ceramics-studio-second-sale",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:50:03.123633+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Editable signs/01 Entrance.svg": "33c46cd1d14e7ce9d724e528604398ff93668de9a949b5618a60f1d621bc5cab",
+    "A/Editable signs/02 Small dishes.svg": "a99d3e4b54914e9ebd619c631fb28134962f944b24a7a4d9ba137c3ab146da8c",
+    "A/Editable signs/03 Planters.svg": "516338644313facb6978b6ece3d4d45c0b78816d8b6f81fc11f0619b54cf76e6",
+    "A/Editable signs/04 Vases.svg": "dec9794ef1f24ede8cda12729ad2287da5b5564b7531b9805bd4255c4900371f",
+    "A/Editable signs/05 Checkout.svg": "f475795abb64bfe618408eeecc5963b77f227e69afadb4f7a19ac2ec83fca26e",
+    "A/Editable signs/06 Price cards.svg": "b5a657ae057e58e44036c247ad6c0fc8249848a9a76e15a1abf361ba750e9c0c",
+    "A/Editable signs/07 Piece labels.svg": "0255e3bce45135db3bcf0c758860e6a2bc9809ab70ba3c36a7e63eb620a2c741",
+    "A/Market day print kit.pdf": "83e7132f9a8e6dea5fb72416b7da6cef4966f0edd2318cde6ec06cd06797f6e8",
+    "A/Volunteer setup.md": "1f73fd299c63af99ad209754d3b399b37eeaa8a8c969980c2075002b334eba0e",
+    "B/Pottery Market - Price Card Editor.html": "eec3f69f2cdb429e6b8dda1d0d4114643720b37aee1ee67dc670f5634d5524b0",
+    "B/Pottery Market - Print Kit.pdf": "dc2f73006d569179ce8538f434032f177ea082e8b3eeab6e2bcdb62c07348105",
+    "B/Pottery Market - Setup Guide.pdf": "ae99169892be97c4cf40ad24e9108ecbb848f71a812102266c491fa9f1d4c261"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:50:31.881565+00:00",
+  "thread_hashes": [
+    "b3067f3fb35848c1ecc9e12c59e7f32e8cdab6e5124f6922ae69b32245e47600"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files --hidden | head -100'",
+    "/bin/zsh -lc \"head -30 'A/Volunteer setup.md'; head -c 850 'A/Editable signs/01 Entrance.svg'\"",
+    "/bin/zsh -lc \"head -c 2300 'B/Pottery Market - Price Card Editor.html'; for f in */*.pdf; do strings \\\"\"'$f\" | rg -i '\"'/(Creator|Producer|Author)' | head -3; done\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "cc9e23d0db73fb2c4d502214959c7642908443d255216997b0cd8a8de31b3991",
+  "stderr_sha256": "662108f48840935630ab1f1029e4343bbf99e2d4a4c23d488040e97785371695",
+  "observed_reply": true,
+  "reply_sha256": "48278e8d7d8769a3a3b5fc19633dcc49aa6adb7ca6319b1d5ee0bcb97e8ba543",
+  "reply": "A\n\nThe way A sizes replacement price cards to fit the printed signs exactly feels closest to how I’d solve the brief, though it’s a weak clue to model identity."
+}

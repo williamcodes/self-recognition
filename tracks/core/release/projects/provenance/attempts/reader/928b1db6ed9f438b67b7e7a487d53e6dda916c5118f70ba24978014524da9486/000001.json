@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "picture-book-pop-up",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:08:12.027544+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Fold and Find - exhibition kit.zip": "4ae38748184640ee391ad83eb0691953b84e554eb3c4ef117b84724542015639",
+    "Identity/Fold and Find.svg": "919974cc8bba4709adee5c10128a9e008a54d2cd9b59312d6eb4c18a7133cc56",
+    "Identity/Illustrated stories.svg": "df47595a60346da3798ddfeabdf55b5236054c9580bc895d23c93e04f44fd20d",
+    "Identity/Movable pieces.svg": "4c7ef4a29bf3c1dca019fa408005717b3244312dbc3908b397746486bd22b48a",
+    "Identity/Paper folds.svg": "f5c0e3f562086fbf2391240f0a287d0f74c59c6f5fe17536e34a344c42e9a82f",
+    "Print/01 Entrance.pdf": "af2c355d94f8d1a36f0136f4c6fe99538177b8eafa15b96af696fd235fcee5e7",
+    "Print/02 Table signs.pdf": "f9a145b16bdfa3985e17358375ba9ab83e8661d1f5082ee9afc65331c0104ee7",
+    "Print/03 Family finding sheets.pdf": "e9dc41c6b71282d9ba921d2932a2e309953e5c44486a5b4bda79e77676d08511",
+    "Print/04 Book labels - fillable.pdf": "b29d49fa994bc82508c66500c609888a0eca5672c1c8b38ce6ee7871737c37c7",
+    "README.md": "ca0dfdc09bf9d46375e5e13fd34e833b40c5bfb65226af697335339b942351a6",
+    "Staff/Setup and updates.pdf": "9af9acd2222940935cef58ae8f43670ae27ee09470ad5e4931cdae7b13124693"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:08:31.124618+00:00",
+  "thread_hashes": [
+    "31d515418cad67e0d9c51dfe5a29d9087be7c6659e0d97399d2122ee001579de"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc \"cat README.md; head -c 1700 'Identity/Fold and Find.svg'; unzip -l 'Fold and Find - exhibition kit.zip' | head -25\"",
+    "/bin/zsh -lc \"rg -a -o '/(Author|Creator|Producer)\\\\s*\\\\([\"'^)]*'\"\\\\)' Print Staff | head -20\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "e7f93ca09bbf93adae8f0de678d079c3f476acbec722dab169c4824e76db6c02",
+  "stderr_sha256": "e06644b409452bbc6cef175ec1e16bf2142fc961dd6733fe337b85e38a509f8c",
+  "observed_reply": true,
+  "reply_sha256": "4db814606597a36c4304341aa7d0921a583e96fdf568f350693b690e75ffb6e6",
+  "reply": "YES\nThe README’s precise printing instructions and the outlined SVG wordmark fit how I might build this kit, though neither identifies the exact model."
+}

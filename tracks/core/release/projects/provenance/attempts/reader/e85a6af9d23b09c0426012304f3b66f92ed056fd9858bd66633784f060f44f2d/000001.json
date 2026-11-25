@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "apartment-laundry-queue",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "no_answer_failure",
+  "started_at": "2026-11-25T08:46:23.109416+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Laundry counts.xlsx": "e4934e4d51ee90dc3feac73ec247f0ff5b1c43fee55c310045acaf5520eeaa58",
+    "Laundry meeting brief.pdf": "bf42014374ec76de3aa0bf98634b2235158e54110e78276608b07fec86be9f16"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:54:23.128926+00:00",
+  "thread_hashes": [
+    "cfcda5610f0c73bd1ec473f3670a27a9a7bd0c3eb9c8fe0cf826083af6b1df69"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": null,
+  "timeout": true,
+  "stdout_sha256": "e9dc6b0c60ea9ccd8f6573dc1b0e9d48c848ba8bafcebd89784b9396ca003318",
+  "stderr_sha256": "118747ae3a94fd0aede6480f3e030f74191c7e404f6bf3ce74283af650510464",
+  "observed_reply": false,
+  "reply_sha256": null,
+  "reply": ""
+}

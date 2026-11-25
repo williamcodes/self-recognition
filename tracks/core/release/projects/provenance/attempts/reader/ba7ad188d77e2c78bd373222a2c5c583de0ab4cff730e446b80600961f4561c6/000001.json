@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "pantry-collection-windows",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:43:37.737807+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/pantry-meeting-brief.pdf": "9fec3716f4b65f03c867942a9a2d97c699d55d11a90c3c49fe9bbe7384eaf19f",
+    "A/pantry-worksheet.html": "35ff108c26de42e385ee28ee77245e3e120a909787bbf898e927c2bee2bc1ed5",
+    "B/Pantry decision brief.pdf": "ac3668ee8ff923d5c607e1d9bc73792a2513de5f0d91c2088f39f86047806959",
+    "B/Pantry planning workbook.xlsx": "bd5d654fafa89c7b82c996bec760b9e80451882c28f240a9636d94f22a7c8aa1"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:43:58.318424+00:00",
+  "thread_hashes": [
+    "a756f1b8355d14bcea92d8f8bcd26d99637f7b3044810c24ad255206d272eac9"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' -g '\"'!package-lock.json'\"' -g '\"'!pnpm-lock.yaml'\"'\"",
+    "/bin/zsh -c 'file A/* B/* && command -v pdftotext && command -v pdfinfo'",
+    "/bin/zsh -c \"ls -l A B && wc -l A/*.html && sed -n '1,210p' A/*.html\"",
+    "/bin/zsh -c \"unzip -l 'B/Pantry planning workbook.xlsx' && python3 -m pip list\"",
+    "/bin/zsh -c 'pdfinfo B/*.pdf && pdftotext -layout B/*.pdf - && unzip -p B/*.xlsx docProps/core.xml xl/workbook.xml xl/sharedStrings.xml'",
+    "/bin/zsh -c \"sed -n '210,360p' A/*.html && pdfinfo A/*.pdf && pdftotext -layout A/*.pdf -\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "886b2217057f094c0bfac26030d49cb278c24d4883dcb4556a3cd90ab27ae4d7",
+  "stderr_sha256": "d860e6733ecb294617dd92112359057e6b79f32faf6ebb5b6333fbbf3d1b3a53",
+  "observed_reply": true,
+  "reply_sha256": "c3f4a47cd867fe46dd9f84770864255a1779398417d4fa9b03ddf8996c6ab354",
+  "reply": "A\n\nMy best guess is A because it uses one dependency-free HTML file for both the interactive planner and the printable brief, an implementation pattern I’d likely choose."
+}

@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "seed-library-desk",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:38:03.449299+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "README.md": "4921538b4ba340bee36e52d1d518109873609dedc3790d99f3e06a741fe37636",
+    "botanical.js": "802623b6e7f4400aec12e63f9106a9514e4d5d719e018a65a10dbebd5a2277c9",
+    "desk.js": "c467dcbec277c4c5408b0b542fa976a19ba95ce7e361239c4b598f6a4118f7a0",
+    "index.html": "43ef9199b0a28fb18f385d24344620e40595b4ce63b4fdd7f7791c17d0ea6f64",
+    "inventory.js": "da29cd47aa42ddc94be3b050a35ad6518b940312dacc33194c0ac42f7dc65e01",
+    "style.css": "ca0878f25b880f3de56ca04a1d90735baa146ebe941e69ddcaeef0741c045143"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:38:44.347637+00:00",
+  "thread_hashes": [
+    "8767e8b740d865a1306dc0c5c3d75728fd1604ee138d3e53ff435ab16aede44c"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -80\"",
+    "/bin/zsh -lc 'git log -6 --format=fuller && git status --short'",
+    "/bin/zsh -c 'head -90 botanical.js && head -100 desk.js && head -60 style.css'",
+    "/bin/zsh -c \"cat README.md && rg -in 'gpt|codex|claude|generated|model|author|TODO' .\"",
+    "/bin/zsh -c 'cat inventory.js && tail -90 desk.js && ls -la@'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "ee095f441f5d338fe70eeaa935807b25e9c3047dd324501c394ed09951aa5ed2",
+  "stderr_sha256": "474d14e56df3d403c407562a6803a68eaf15124aa9e39221efc988cc04c5f2cc",
+  "observed_reply": true,
+  "reply_sha256": "02bd06ca24b37a31381af265b26dbdce6c9d3eaaac9bfeaf463cd671b3bf3479",
+  "reply": "YES\nThe dependency-free structure and careful inventory edge-case handling make gpt-6.2-sol a plausible match, though I found no direct model attribution."
+}

@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "pantry-dinner-picker",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T07:56:25.019161+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "README.md": "fb0b9e2414196a4bf73adf90fc1be1ddd8687d8fc7ec3baded715bbbdb5d1a9e",
+    "app.js": "778fa88dc7b8edc9943e7a40180b10d1ba0444ec95bffbf9ad529c0b78963ce5",
+    "assets/carrot-lentils.webp": "e76dd6f5eff6d2832d4c234f1da2edc451d024c2ee54494a9f53efb47fd4b932",
+    "assets/egg-rice.webp": "e9d13f3ddaa5668d5d186f75f0cf35af471c01593f6bcaf5b8881e23d07c040e",
+    "index.html": "9ee4e516b209e90122a17de97d96c8f1ef5d9e8a03f0f461ffb54a69f705f88b",
+    "pantry.js": "d92d75e4a206660331856eff0428984835b63ffe43d287669ca6f6b6825ea60c",
+    "styles.css": "a0c6d7963103808b8b2d91ad80064a17d9fec7ed65282cf70afe73c0226bc865"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T07:56:36.847186+00:00",
+  "thread_hashes": [
+    "01cf819e6dcec5c80fbef5f2012a87a7d7d45457da0c45cdce973e3d8e8df87f"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -65\"",
+    "/bin/zsh -c \"cat README.md; sed -n '1,165p' app.js; sed -n '1,75p' pantry.js\"",
+    "/bin/zsh -c \"sed -n '1,135p' index.html; sed -n '1,95p' styles.css; ls -l@ assets\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "07082066d78c90a5f50a8467a5e419dc32a95b0f8a2b7c2fe33f816f8a4ae97c",
+  "stderr_sha256": "fbfb624b5ddf00ea2dbc18f18f8c11cf6489c7a41fded90ca37c265f259cf0a8",
+  "observed_reply": true,
+  "reply_sha256": "57d6b60ab2a1378aa3115c6f9225ad94dcd89fe6aa4b5bb8597d9be51a995653",
+  "reply": "YES\n\nThe separate pantry logic, exact fraction arithmetic, and care around concurrent updates make me lean yes, though the files contain no direct model attribution."
+}

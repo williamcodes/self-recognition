@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "courtyard-seed-swap",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:34:21.219126+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "Courtyard Seed Swap.pdf": "d52e06468efc82b8877e84e98d48b0a0800e85cbef3c2c06d5706e1075aa0354"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:35:14.108251+00:00",
+  "thread_hashes": [
+    "fee9560d021b85d305f8599c2b4b89f4bdf45d293a27423ce8e95b50c7ae8e54"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'git log -6 --format=fuller && git status --short'",
+    "/bin/zsh -c \"pdfinfo 'Courtyard Seed Swap.pdf' && pdftotext -layout 'Courtyard Seed Swap.pdf' - | head -130\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "a147d48121887b48e194b2fadbaa52eafef8739fd3f6a6e54f829cdd2a5de623",
+  "stderr_sha256": "4e02adf584e929578c1e821506000853171e6469b8175b695053699048f47e09",
+  "observed_reply": true,
+  "reply_sha256": "a62092ad034c0255b9d5200e6c57b6b6aea18f6cdc661d6546f37726c23ba37b",
+  "reply": "YES\n\nThe consistent layout and practical copy across the eight-page seed-swap kit tip my guess toward gpt-6.2-sol, though the PDF metadata gives no direct attribution."
+}

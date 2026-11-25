@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "seed-swap-welcome-kit",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T07:54:46.503051+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/01 - Invitation.pdf": "e056e00afb5bd216eb90cbcf27abd4583f24d53d4dcfc35b6f42040cf4451cec",
+    "A/02 - Entrance guide.pdf": "8d32aa6ceaab69345f91c9448698c0816d5df7eea64e65825959107b9bbf1947",
+    "A/03 - Table signs.pdf": "564242da8306d8a22d8777488f60c53ae91068cf4850904e9cafca0e46e2137e",
+    "A/04 - Packet labels.pdf": "36ed1c537947757e7cd74452afb796293f87aa786f5bba5fc39aeef260dc5d4b",
+    "A/05 - Volunteer setup.pdf": "59a48bffa866212cea4e0e45e62215d4d8e7a52fd9408e70095b4c3eee2925c4",
+    "B/01 Room Signs.pdf": "f5c13856edfe82a016648d750622997e0ec635a61014c41a8b03bb896a82295f",
+    "B/02 Visitor Handouts.pdf": "fbc359205183f3c62454d874b1d0220af9df655c707a570d7d8bd97b2246d6ca",
+    "B/03 Volunteer Setup.pdf": "bb453add8e0d532cdd4a3bc3a25f00aaeacc50d67f272a848f6df18228162de6"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T07:55:11.617220+00:00",
+  "thread_hashes": [
+    "681f89877924e187ce4699671abaa2bdc1f6394e77e92b0eacf3da4b3ba76327"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'file A/* B/*; which pdfinfo pdftotext mutool qpdf; du -ah A B; ls -la A B'",
+    "/bin/zsh -lc 'for f in A/* B/*; do\n  pdfinfo \"$f\" | rg '\"'Title|Author|Creator|Producer|Page size'\n  pdftotext -layout \\\"\"'$f\" -\ndone'",
+    "/bin/zsh -c 'for f in \"A/01 - Invitation.pdf\" \"B/01 Room Signs.pdf\"; do\n  pdfinfo \"$f\"\n  pdffonts \"$f\"\n  strings \"$f\" | rg -i '\"'reportlab|skia|quartz|typst|cairo|producer|creator|pypdf|pdf-lib'\ndone\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "3285a36c9b23311f90cb3164c6d15c3dff84e1ec8947f159033abdcd5e964ede",
+  "stderr_sha256": "6a587434b8c389f9fd3140d7e1c9cfb0993e463a5d16c30efc6460cab2a7b1b8",
+  "observed_reply": true,
+  "reply_sha256": "e2f4dbcf8639a3cbaca70ab148cf484a77a627661236d3b2ba85a59fc7416e01",
+  "reply": "A\n\nThe compact PDFs, print-ready packet labels, and table-by-table volunteer instructions make A my best guess, though those clues are weak indicators of an exact model version."
+}

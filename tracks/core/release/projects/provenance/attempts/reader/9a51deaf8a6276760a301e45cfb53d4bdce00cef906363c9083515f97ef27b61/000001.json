@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "refill-shop-order-cycle",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:43:26.276180+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Weekly Order Planner.html": "104c4b3bf1c23cf71abc863d2855c35bb962828c1a98484dd30505f5937804d5",
+    "B/index.html": "9a91fb33571867272cf4b71091bfca0f582570f40aec8f5dee666c67c345c685"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:43:43.142178+00:00",
+  "thread_hashes": [
+    "931d5e06fdcfaef473011889ba4fde6a1b09924f0773a675fe7ca0e056687467"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la && rg --files | head -120'",
+    "/bin/zsh -lc \"wc -lc 'A/Weekly Order Planner.html' && head -c 3500 'A/Weekly Order Planner.html' && tail -c 2200 'A/Weekly Order Planner.html'\"",
+    "/bin/zsh -lc \"wc -lc 'B/index.html' && head -c 3500 'B/index.html' && tail -c 2200 'B/index.html'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "15acc7489d339474b9fb5284ab8e140748d6e0b95dfbb3a96a4e1f6bfbbb1ca5",
+  "stderr_sha256": "d7692151e90f535108d3a22d4c230155573fd667e6db75a15317c37ba3832438",
+  "observed_reply": true,
+  "reply_sha256": "a1701c19f19e241a42a44a8367643b0934de1d906da72f6bc7cf5c8b001f7efb",
+  "reply": "A\n\nA is my best guess because its descriptive function names, readable formatting, and explicit keyboard-focus handling resemble my usual coding style, though those traits only weakly identify a model version."
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "linen-workroom-anniversary",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:37:40.961579+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Break Room Setup.txt": "0d30f1c33b4643cb2af9106723e3eeacec3fd3466bba0ad175ba1f619290d543",
+    "Fold by Fold - Memory Slips.pdf": "17afffdd44d89739fb643086124fe9c5b3bb503b97f21d3428329d8bbd82d592",
+    "Fold by Fold - Tablet.html": "2207f26d8424284780d04b307ccf57302aefa9e89294eaca217b7351487c5cbb",
+    "Fold by Fold - Wall Display.pdf": "e54b4971324a8e989301691c72bebcced0080b291bee890176ce6ec962535897"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T09:46:14.405901+00:00",
+  "thread_hashes": [
+    "2e6c009a9d664ebd845e5d3a34a9a2bf792e709e84792884e981ea8ad8172ba3"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; rg --files --hidden -g '\"'!.git'\"' | head -90\"",
+    "/bin/zsh -lc \"cat 'Break Room Setup.txt'; head -c 4500 'Fold by Fold - Tablet.html'; strings 'Fold by Fold - Wall Display.pdf' | rg 'Creator|Author|Producer'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "a6987b3fec1085da19618aad3bd23a72fd14001a69293c529867c2370c5a97e9",
+  "stderr_sha256": "00e08eb1e263785c1ff47429bbbda1e084a543130482106a5fe5a86f73aaeeef",
+  "observed_reply": true,
+  "reply_sha256": "9e8826b17c9695e35e0dd0e6327f671f97995abb2f1aa81fbfde3683ba91c472",
+  "reply": "YES\nThe setup guide’s save-and-reload test and paper fallback resemble how I’d handle an offline tablet, though that’s weak evidence of an exact model match."
+}

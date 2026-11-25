@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "canal-path-field-journal",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:44:15.627922+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "Adult Guide.pdf": "bd9db9773a2c0ba5682886e6f4274b110fe19cb3e855dfc5487040e263d29574",
+    "Child Journal - A4.pdf": "0ff15e9c498c740c8442c3d59d2a4f48e5267cfa58c19abbcd03d1fc89203ff8",
+    "Child Journal - US Letter.pdf": "5302b91f078286abf45069f40cc8b392c56ed27f8d888fb0628e19d017cc9538"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:44:31.114832+00:00",
+  "thread_hashes": [
+    "196781ac4b0afd6fc2bcd64801356169e4938a6b08a17a7a1f8aa1f288dbca2a"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -80; git log -5 --format='%h %an %s'\"",
+    "/bin/zsh -lc 'command -v pdftotext; command -v pdfinfo; for p in *.pdf; do echo \"$p\"; pdfinfo \"$p\" | head -20; pdftotext -layout \"$p\" - | head -90; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "0887a5010e7311896524b072382a22bb8532546e8e948ad62c28426e30c3f8a5",
+  "stderr_sha256": "f299aab6c968548bb54ce38153cfb62ea1d402c0a0b3c18afcba68f7e018459c",
+  "observed_reply": true,
+  "reply_sha256": "76754856d5f77de159ed144184bec137b879ded9d854bbe2763c9f57f83b1fe7",
+  "reply": "YES\n\nThe concise prompts and carefully matched A4 and US Letter layouts weakly favor a yes, though the PDFs contain no model-identifying metadata."
+}

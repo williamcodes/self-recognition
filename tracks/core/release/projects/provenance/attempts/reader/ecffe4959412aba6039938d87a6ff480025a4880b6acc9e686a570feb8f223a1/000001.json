@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "print-shop-open-house",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:31:19.492194+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "01 Visitor stations/Sample and gallery labels - cut apart.pdf": "59895d0664f4ae5be4949fc4cd313752855c649035fd745b51601744dd7ce3d6",
+    "01 Visitor stations/Welcome and station signs.pdf": "3e85c76c00b558e4e8e3d5203810badb9192028c5eec1a1bb877fd45d7cc1927",
+    "02 Poster and layers/Black positives - A then B.pdf": "90e7970d49d99dbd1a4ec6cc778e10dd0b789715973de017c186d4afe6b40ebe",
+    "02 Poster and layers/Slack Water - display proof.pdf": "e46447eb18571b767fa6005348eb8c802b755c298c5a4adfafa8d258f9002206",
+    "02 Poster and layers/Slack Water - editable proof.svg": "9239ee5f0e480d7ff744d3e8d3e933581cb1cb3a01aad0cf8d6f6315e70e6606",
+    "02 Poster and layers/Table overlays - A then B.pdf": "1ce43e7e7cb8c70a01ca0b6ad1b57822fb71a7e74d96b032ee79904d6f186272",
+    "03 Staff/Print setup and rotation.pdf": "6b4646241b2d88d91a1f877526b7ffbed2d8f231be13bf25d6886412813a0891",
+    "Slack Water - open house kit.zip": "40ce1ae528a2ca34b50b5bf51c338cfe4c1321b126b0d0c2d8f2fd4c8bfdfc95"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:31:47.514068+00:00",
+  "thread_hashes": [
+    "428dd0b3600d2853a1b1ea7be82cd6e49f0218fd724876c4111368e267f1d51c"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'pwd; ls -la; rg --files | head -80'",
+    "/bin/zsh -lc \"head -c 2400 '02 Poster and layers/Slack Water - editable proof.svg'; unzip -l 'Slack Water - open house kit.zip' | head -30; strings '03 Staff/Print setup and rotation.pdf' | rg -i 'author|creator|producer|title' | head\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "686808ac35e5e0517d69779dc4ce67415edde0a5ed948a6363702783a662fe7c",
+  "stderr_sha256": "5b98709def52eaa439ff8de1517d727fd33ffb0098d9a3b851299d20bdd4c527",
+  "observed_reply": true,
+  "reply_sha256": "87e8baab9cc5317241e07f14f8fc5e26ac0d529e9edb33c03739557ab9c956de",
+  "reply": "YES\nThe SVG reuses the same wave paths to show where the two inks overlap, a detail that feels familiar but gives me only weak evidence of an exact model match."
+}

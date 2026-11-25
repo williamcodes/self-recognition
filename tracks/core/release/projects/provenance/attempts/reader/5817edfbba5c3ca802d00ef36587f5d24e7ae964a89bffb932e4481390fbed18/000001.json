@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "apartment-entry-storage",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:07:25.014370+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Entryway plan.pdf": "9418440751a29451553aa51ee5c3105986af495fb44d8645f2f106e769cc3bd1"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:16:15.362204+00:00",
+  "thread_hashes": [
+    "6688ee25543cee930e8d06c88c334b2568f04cf3688f6e98cd04d3b0869cd1e4"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la\nrg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc \"pdfinfo 'Entryway plan.pdf'\npdftotext -layout 'Entryway plan.pdf' - | head -100\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "6fb8672ccfdc808cd3b2badadf5df043f98cf86d2c95e171f1316a79ff8ede96",
+  "stderr_sha256": "88f1f6699a36ad6a2fd205433683fb4424be95eb423be6188c0bcc969688f602",
+  "observed_reply": true,
+  "reply_sha256": "d7d15ae34c820efa2018d916a53c6cb8a9617b4ac4abe3e3cd21a524e14e5bbb",
+  "reply": "YES\n\nThe dimensions agree across the drawings, cut list, and fit checks, which weakly favors a match in my judgment, though the PDF metadata does not identify the model."
+}

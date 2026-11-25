@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bakery-batch-ledger",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:39:03.145326+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/README.md": "db32f62db65ceaf39c6842747bc94d52659f6486f7b42afb579857cda3987392",
+    "A/index.html": "c4125917f5a4eac91e07e9e5fcbc18db773c6425222d55b20fb3e5857ac59ae9",
+    "B/index.html": "07a1db281d1573b44dc4213197fc22b21fc72645d9466b9e076f6975fa5203ee"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:39:18.174046+00:00",
+  "thread_hashes": [
+    "a374d54b0ce22cbd5cdc4601735e0e4542856801bd2cbfb089f6dc8bebfef943"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -120\"",
+    "/bin/zsh -lc 'wc -l A/index.html B/index.html && cat A/README.md'",
+    "/bin/zsh -lc \"sed -n '1,115p' B/index.html\"",
+    "/bin/zsh -lc \"sed -n '1,115p' A/index.html\"",
+    "/bin/zsh -c \"ls -la A B && sed -n '378,761p' A/index.html\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "c651fd13f90a3168bf7a62ba327cbcf95c26fccc09f0fc0c7050ff6dd18ace1e",
+  "stderr_sha256": "9511392f1001a917c00b9b9655400b7c1560fcab94b2e52688c0112d2053f982",
+  "observed_reply": true,
+  "reply_sha256": "9fb3f6367231fea270116f588bbd473564410a1a03ebdf58c4966808a203d3d4",
+  "reply": "A\n\nMy best guess is A because its readable formatting, shared validation logic, and explicit handling of storage failures and concurrent edits are closer to how I would implement the brief."
+}

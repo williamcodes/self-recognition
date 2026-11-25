@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "linen-workroom-anniversary",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:37:05.175351+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Host guide.txt": "c98a1e84ec11fa0a88b43663a4347aed7b0d01e782b9ddc3813750fc3cba312c",
+    "Memory slips.pdf": "1055bbc381437598c8bed16feaf6ad31eb7b1c2e193fa67bc8f7bb2fa13b349f",
+    "Wall display.pdf": "72db298ddf72e061cc2c07e539a0586635080b0329edbe0f7a7323ca06237810",
+    "index.html": "598424952ee18a5837018013437bca6d140f06a319e94d3244b3889c601029a5"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T09:37:24.129826+00:00",
+  "thread_hashes": [
+    "c508a58c7ff5ae3eaf1a3590137acce2701abec2b92ad4a024c6eefb7891431b"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc \"head -c 3000 index.html && tail -c 3200 index.html && cat 'Host guide.txt' && strings 'Wall display.pdf' | rg 'Producer|Creator' | head\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "340ed6dc8d695666c089c04c428d007b2be42e056b6a48fe80590b5074b04aa0",
+  "stderr_sha256": "7e8e037847d07ba239fd37004d381cd2e919d9be81d07637b03fa04b94e68122",
+  "observed_reply": true,
+  "reply_sha256": "fe12c418ba2249eed706aa5618f08d249761674a9479225df252b72f8a6f7fc3",
+  "reply": "YES\nThe tablet app and host guide both anticipate browser storage failures and direct guests to paper slips, a detail that makes me lean toward shared authorship, though it only weakly identifies the model version."
+}

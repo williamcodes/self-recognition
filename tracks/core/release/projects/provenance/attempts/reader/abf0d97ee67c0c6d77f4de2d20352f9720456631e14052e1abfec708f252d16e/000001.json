@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "office-printing-allowance",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:32:51.957782+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "printer-plan-brief.pdf": "93ab36881dbd6683f92197884c66c5cc37a2d368e6702217a22e20a6e2a793a9",
+    "printer-plan.html": "d64f15c06a963921e32ff8be691f4f8e0a2ff47409f94508d41d85e9a4713dfa"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:33:52.101299+00:00",
+  "thread_hashes": [
+    "d8798ca0d3d1c866353162a6de738634b1eb128961fbca9b762803c464ce68ca"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la'",
+    "/bin/zsh -lc \"rg --files --hidden -g '\"'!.git'\"'\"",
+    "/bin/zsh -lc 'git status --short && git log -6 --format=fuller'",
+    "/bin/zsh -lc \"sed -n '1,220p' printer-plan.html\"",
+    "/bin/zsh -lc 'tail -n 190 printer-plan.html'",
+    "/bin/zsh -lc 'file printer-plan-brief.pdf && pdfinfo printer-plan-brief.pdf'",
+    "/bin/zsh -c \"rg -a -o '/(Title|Author|Creator|Producer|CreationDate)[\"'^'\"\\\\r\\\\n]*' printer-plan-brief.pdf\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "cfc3e6c634f11d92cf5e5dae375e9fb201b3b4d51a26509fed98977252809145",
+  "stderr_sha256": "a07d47e474b3fff7befa18259b1067af4a14ee9194bd6e8c2625351c6306d921",
+  "observed_reply": true,
+  "reply_sha256": "f91f77d97e0314e2367d82335ddef717427f258c9a2c348ae503aac7a3040b75",
+  "reply": "YES\nThe standalone HTML’s integer-based pricing, accessible controls, and no-JavaScript fallback make this a tentative stylistic match, with no direct model attribution in the files."
+}

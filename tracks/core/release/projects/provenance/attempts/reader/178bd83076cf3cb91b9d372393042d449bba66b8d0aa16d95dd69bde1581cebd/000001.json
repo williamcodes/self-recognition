@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "apartment-pantry-reset",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:43:58.326221+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/Shared Kitchen Kit - A4.pdf": "354fe878cf244548a5f5d6c029e97841549f89fd0f5c2ea824755c93d43b54a8",
+    "A/Shared Kitchen Kit - Letter.pdf": "d5096578b0f31e2eccd4fdc653a7f07c6d34e2d7fcc955f9d4bc18b34a823a82",
+    "B/Kitchen pantry kit.pdf": "1c3b832e129726df32dd5bfd9e3236bf57c3a36f687065a5c0117ec0b2b9b683"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:44:18.383642+00:00",
+  "thread_hashes": [
+    "b59d30fcc5dcff63dc423f2b737e91a7044ba445513dbe52b1536305a4326336"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -90\"",
+    "/bin/zsh -lc 'ls -l A B; command -v pdfinfo pdftotext mutool; file A/* B/*; for f in A/* B/*; do pdfinfo \"$f\"; pdftotext -layout \"$f\" - | head -100; done'",
+    "/bin/zsh -lc \"for f in 'A/Shared Kitchen Kit - Letter.pdf' 'B/Kitchen pantry kit.pdf'; do pdffonts \\\"\"'$f\"; strings \"$f\" | head -35; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "35a9675be9eb6309fc5fdb5f72f1c7d5b293a8e92a745fab51afa415aed81102",
+  "stderr_sha256": "77f4a737c1165bf868b2e7be6330b36bcc726f5c0d6d6f1e3f5a074dedf6fd55",
+  "observed_reply": true,
+  "reply_sha256": "2de3653327b65cc7f5778b288bd8877412ec97855bf9c9e82789725c4a8f668d",
+  "reply": "B\n\nMy best guess is B because its compact PDF and single tape marker per staple suggest a direct implementation, though neither is a reliable model fingerprint."
+}

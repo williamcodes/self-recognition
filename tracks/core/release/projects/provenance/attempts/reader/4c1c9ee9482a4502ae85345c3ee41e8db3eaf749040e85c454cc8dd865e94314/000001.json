@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "produce-share-pickup",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:43:43.153845+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Editable/01-entry.svg": "7c629b05015807df54f0ab48e2564d0a53a2f0783b202d890d4682bb9995ca98",
+    "Editable/02-swap.svg": "961954585e754e949dfc288880a3bb712bc589f95f28fe6f81416cdabfdf464d",
+    "Editable/03-size-tents.svg": "1f0afd7e41f50fc497674dee10465c6f8eb717b918bd998f59924497fcae547a",
+    "Editable/04-setup.svg": "26b4c0f50bcc58a0dfde6c3a1315fa3fa169ae87df93e883c8fc57b8b69fd350",
+    "Editable/05-tally.svg": "f2e5e15cfa9ded8a5af10eaef87c00f3e6f89df3529b259c2c3dc5839753b102",
+    "Print/Pickup day.pdf": "7678b6d9468a61fedcaab2d472af71dd21f434bbbb0cd1a0237b037578252888",
+    "README.txt": "96249a0ef99f708dd3e1cbe24d70acbefb3fcc44d644243b633ed1db5e5f96da"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:44:05.296824+00:00",
+  "thread_hashes": [
+    "b96c1f9de23696e30a30d9f91235c340148cfc933842c3c73e2c5587276de62d"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc \"cat README.txt; head -c 3000 Editable/01-entry.svg; strings 'Print/Pickup day.pdf' | rg '/(Creator|Producer|Author)' | head\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "09f2828c5d5d4d4981bd6dbaa61330d86bc56fcba117a4df427216d1e784ccb8",
+  "stderr_sha256": "a12d850af94e6a49d7b7e1ae27ddb57c9aeff15c2615b43accd0c86473662392",
+  "observed_reply": true,
+  "reply_sha256": "25c12c2c3bd03edab0f11c00c5e3fd8ea58291b57346d2ac5ccd14340285100c",
+  "reply": "YES\nThe custom SVG pictograms and precise print-and-fold instructions look familiar, though those stylistic clues provide only weak evidence of the exact model version."
+}

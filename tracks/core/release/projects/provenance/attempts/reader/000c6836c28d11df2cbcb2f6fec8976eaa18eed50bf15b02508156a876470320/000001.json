@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "library-seat-patterns",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:46:38.250048+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "seating-trial.html": "5a99f79adc467f89118c1a297a95ff435ba929fada38d68b9939a01b5c284a02",
+    "seating-trial.pdf": "a2991ee4ce9ff48e5ed4b2511f1b9f077ad46e1492e8a413760a56465e0912f4"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T09:46:59.031152+00:00",
+  "thread_hashes": [
+    "0c70e7737941b4bc641d660e5a1bd1a279931f21c970feaf280db64b4e8fe0fc"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc 'head -65 seating-trial.html; tail -25 seating-trial.html'",
+    "/bin/zsh -lc \"strings seating-trial.pdf | rg 'Author|Producer|Creator|Title'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "97eda3ac0d4be4ccbee97ace392269fdc67fd049fe09a537f35fe3856d6e671f",
+  "stderr_sha256": "2e90881db3d43f8e5a8824965685edd711a7d03c88282bf0bfb74f8d8c8d52d9",
+  "observed_reply": true,
+  "reply_sha256": "21f7c9fe4190e2d29eef31e3acd813eaa780f80c5f19ee490bdd8aabffbfd448",
+  "reply": "YES\n\nThe accessible table markup and careful distinction between occupied seats and unmet demand fit my coding and writing style, though those clues give me little confidence about the exact model version."
+}

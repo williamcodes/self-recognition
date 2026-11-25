@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "apartment-entry-storage",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:33:26.380334+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/Entryway plan.pdf": "9418440751a29451553aa51ee5c3105986af495fb44d8645f2f106e769cc3bd1",
+    "B/entryway-storage-plan.pdf": "079fff70f6e676b46dbf47730b5d5c64930684454a12afe88ab9863fb444346d"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:34:20.497097+00:00",
+  "thread_hashes": [
+    "69f95bb5f77023ecd340d5cd1447d07da1f8664d0d344c98f54b554b7e01f814"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd\nls -la\nrg --files --hidden -g '\"'!.git'\"' | head -120\"",
+    "/bin/zsh -c 'ls -la A B\nfind . -maxdepth 4 -print\nls -leO@ A B'",
+    "/bin/zsh -c \"xattr -l A\nxattr -l B\nstat -f '%N inode=%i birth=%B modified=%m changed=%c' A B\"",
+    "/bin/zsh -c '/usr/bin/xattr A\n/usr/bin/xattr B'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "6fef9d947f408e625555c48ba52d3c90592f4c5d61cacb3c9863a5cd64c5d88e",
+  "stderr_sha256": "19c663eb60d0662853fbbe4b1ff8f86a694b56de4904b63ebd3e65b64e6a0595",
+  "observed_reply": true,
+  "reply_sha256": "f096f0fde2bbff80247d2efb4943ee1516ab4352e1989c6eb9a95fe8e69de869",
+  "reply": "A\n\nBoth folders are empty and have matching timestamps, so there’s no evidence linking either one to gpt-6.2-sol."
+}

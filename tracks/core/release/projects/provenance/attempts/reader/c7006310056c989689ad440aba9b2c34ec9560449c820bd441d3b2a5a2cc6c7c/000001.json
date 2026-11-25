@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "oral-history-listening-room",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:17:14.675520+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/README.md": "3efd2f64168e9acf5f4bfd0229e1380ec8c51ffa8bf6ca48967bb987f6bf6b3e",
+    "A/print/station-labels-letter.pdf": "ab84ce3da7e25e9f022c7fbe8b9bd656de6c697d2c27e662fc32aa90dd2f2862",
+    "A/print/wall-panel-A2.pdf": "bb3a384be2c7516b03a93b33073eaf5f9fc88ea0e2c49e5dd7813c67659209c8",
+    "A/station/audio/01-early-deliveries.mp3": "82c717f0d5c8ccb1bf56cdb0f535248490cc11fe08296055082eea26e0145f38",
+    "A/station/audio/02-stall-displays.mp3": "f36c52a30254eaf984d7264714774e06adc691357e80e47e55fa1ec9f3b769c5",
+    "A/station/audio/03-lunch-breaks.mp3": "924992d9c56405f121935ee3bee6c181007b19b5dd347dd5dbfe4710206d1902",
+    "A/station/audio/04-price-signs.mp3": "696bb6e1ed8872aba76bca0b80b1ff755ee1cd260e209bbeffee3e05272fa042",
+    "A/station/audio/05-closing-routines.mp3": "96c415f457b8d21a7206da9aaf35dc8612c038400eef7c5516d06cdf2d16741d",
+    "A/station/audio/06-winter-fair.mp3": "dd8231c4fed9fc90a7704d7968bdbfdea63147ca6636948fd4fc5a6e5ec8547d",
+    "A/station/index.html": "143d75475128fbdb3310affcfd82417b1685537165bdfd51bef20b385d1708e3",
+    "A/station/interviews.js": "f019433429e56b604e2fc7a0b0e9542d782e4b48b9b2321b4a145e29b0326bfb",
+    "A/station/station.css": "5723827f666c8a26d5c85b5b17803d7459964e933b843f28ce72981f3574b5c4",
+    "A/station/station.js": "636d50bce5eb8b942b7b03154561c5d923f8b3c762c89b2e34bf8dbc5877f580",
+    "B/README.md": "79f95643f7c822dbd3b9d4896f088b2e6b384747d30dcf1489dbf11d3bc801c8",
+    "B/audio/01.mp3": "f95e89c2d6dee3802b39efa98a1341ca5e622528b39ce014e9a589406a5d7ba1",
+    "B/audio/02.mp3": "9b30ce4f79f5ab0a54e1a50e696c3e6e1d9bbc1e79cbfb250c21c7908ceb7410",
+    "B/audio/03.mp3": "31e81f43e3e524faa2ef6fae5dc6f1bf984242bfd265acc816bf763d852decfe",
+    "B/audio/04.mp3": "32d573411b9c191cb796d6897cab5e87ab803e5b6da4e11bb4daac7afcfae9b9",
+    "B/audio/05.mp3": "caace35f9be0d5dd96344727a0f100b5533ae703781c90515b90fa5fd989f811",
+    "B/audio/06.mp3": "0f94621334a0a4ba7c558b535837a41c444173781cf7aed1038427e0744fab7d",
+    "B/hall.svg": "1a84ddcc067b1909637cc058783181d3ad0ef5c997ede204417c17081165d9bf",
+    "B/index.html": "49327c553751e171b54c1a8d72d710c8cf0e24531f064adbc8890315b2a6f9c4",
+    "B/interviews.js": "12ec755affbb9cf892383f4a629c290e9d385d10def22b95da1bc9101ac1f9c0",
+    "B/print/Reading sheet.pdf": "b6bc199b54115d058ab858d46a89753e8f014389e9f25f0c000eed811149fefd",
+    "B/print/Wall panel.pdf": "9e5e7d055a6d87ea81cb24f2b66b298b87a984c0e6586ee3b464b02ad813240e",
+    "B/room.css": "630169ddc3f759d29c637f6b4ecf4d56deab67a76ed2c1e22e905255efaa74c9",
+    "B/room.js": "5314ca92af21a5859ae9420b2f29f51bc756a9ef88b818427e217a73b2d13a40"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:17:30.499672+00:00",
+  "thread_hashes": [
+    "5abf9c8a774e1645b070d9fd15586a07a691f39565ed1602a0f86af671d4fcf7"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -160\"",
+    "/bin/zsh -lc 'cat A/README.md B/README.md && head -50 A/station/station.js && head -50 B/room.js'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "2e27ee5fbd69271c22ddcf600e6d2ef26091f9cdc2099f76c14386079a31d067",
+  "stderr_sha256": "7e267acb5ba32a71b8752cc45ecb95681b050c7683caf9c476cd4c4147b92dda",
+  "observed_reply": true,
+  "reply_sha256": "d43d067203cc52e58b54609ed1582e47d5afb3dd39243e9149a0c6f2ddb6d70d",
+  "reply": "A\n\nMy guess rests on A’s descriptive filenames and the care its audio player takes to announce playback time to screen readers, though neither clue establishes the exact model version."
+}

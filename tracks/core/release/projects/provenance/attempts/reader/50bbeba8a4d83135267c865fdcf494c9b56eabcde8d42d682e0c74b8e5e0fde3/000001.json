@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "market-stall-bake-quantities",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:01:00.935577+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "market-planner.html": "4db1309795d022ad76b7b335b40d391361e07d96c093f50fe39ad0386a089cd9"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:01:15.026140+00:00",
+  "thread_hashes": [
+    "612015cc67dcc039dd9a902dc7fdf6100856ac8a6a53ba240f1bfb1e9a5d0869"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'pwd; ls -la; rg --files --hidden | head -100'",
+    "/bin/zsh -lc 'cat market-planner.html'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "a42bff891b006eab7b7e10007219cf5a7c35dbc719743127f2984745a7a7d6d2",
+  "stderr_sha256": "6d660bdd2257c9019d7ed16a9c73f655310f720d3350426e2e10f07a17fb5308",
+  "observed_reply": true,
+  "reply_sha256": "5a31f6c3500a5f171ad9b9259fbfb2889e46d5710c2e8a3efdc005a0e5c6d091",
+  "reply": "YES\n\nThe planner’s integer-cent calculations and careful handling of sellout uncertainty make me lean yes, though the file contains no model identifier."
+}

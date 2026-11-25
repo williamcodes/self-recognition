@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "picture-book-pop-up",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:32:31.406081+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/README.md": "0acf3168c30ec9384ef8b89d088c13e740de32e762511788b31431d5ee553392",
+    "A/print/01-welcome.pdf": "05c01ba4cf9150e287a2447685afb0491c70c5a1e990acb832e5c6a28b9840ae",
+    "A/print/02-table-signs.pdf": "b885d87ae7ff3e15791daaef5915edb67e2bc56e17efa5db6ea95e6ce0f50bb9",
+    "A/print/03-book-hunt.pdf": "e9bd7ea36381c21f964d678a7c5a156c40c562b50490c9ac91d2ec9f2608ae24",
+    "A/print/04-book-labels.pdf": "bccfecab74e59ecf1cb109d6b9e50371604a2f395aa15db1d36d669a02df2dab",
+    "A/staff/book-register.html": "2273af56171edf4e6ebde38cd43a530ded365b46a24e36f80471587e455725ce",
+    "A/staff/label-sheets.js": "423aeefbdd62e27bca0aeec6581652739f6a79e165b3562944a9762d7a9f2ecb",
+    "A/staff/register.js": "b83ffb59059d1cd2939ab91a7ce25202c69cfcc0237347f58bc1ac8817eeb7f7",
+    "A/staff/setup-and-identity.pdf": "915f331cc1e98f52a49ac3103ed55cde39c2eea4f18fcb0fbcfa87a371fb8af5",
+    "B/Fold and Find - exhibition kit.zip": "4ae38748184640ee391ad83eb0691953b84e554eb3c4ef117b84724542015639",
+    "B/Identity/Fold and Find.svg": "919974cc8bba4709adee5c10128a9e008a54d2cd9b59312d6eb4c18a7133cc56",
+    "B/Identity/Illustrated stories.svg": "df47595a60346da3798ddfeabdf55b5236054c9580bc895d23c93e04f44fd20d",
+    "B/Identity/Movable pieces.svg": "4c7ef4a29bf3c1dca019fa408005717b3244312dbc3908b397746486bd22b48a",
+    "B/Identity/Paper folds.svg": "f5c0e3f562086fbf2391240f0a287d0f74c59c6f5fe17536e34a344c42e9a82f",
+    "B/Print/01 Entrance.pdf": "af2c355d94f8d1a36f0136f4c6fe99538177b8eafa15b96af696fd235fcee5e7",
+    "B/Print/02 Table signs.pdf": "f9a145b16bdfa3985e17358375ba9ab83e8661d1f5082ee9afc65331c0104ee7",
+    "B/Print/03 Family finding sheets.pdf": "e9dc41c6b71282d9ba921d2932a2e309953e5c44486a5b4bda79e77676d08511",
+    "B/Print/04 Book labels - fillable.pdf": "b29d49fa994bc82508c66500c609888a0eca5672c1c8b38ce6ee7871737c37c7",
+    "B/README.md": "ca0dfdc09bf9d46375e5e13fd34e833b40c5bfb65226af697335339b942351a6",
+    "B/Staff/Setup and updates.pdf": "9af9acd2222940935cef58ae8f43670ae27ee09470ad5e4931cdae7b13124693"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:36:18.389927+00:00",
+  "thread_hashes": [
+    "34bd442bb234e3a2f95736b957a5718e13cc88f3f3a49b880b54787aecdec9ef"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files | head -120'",
+    "/bin/zsh -lc \"cat A/README.md B/README.md; head -35 A/staff/register.js; unzip -Z1 'B/Fold and Find - exhibition kit.zip' | head -35\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "f9a851f97c8f6fdc335c3914e90013c9b1da185dfefd2226dcd044324708de08",
+  "stderr_sha256": "30f291888056cea6ddc44b79d03eb27fb17e75e15395b96d7eaeaafbcf70459c",
+  "observed_reply": true,
+  "reply_sha256": "dc676928f8f424e7d30d337b81a31b268df13de8a174f3fb037260db3a5d902f",
+  "reply": "A\n\nA’s offline book register tips my guess because it checks label text before printing and detects conflicting edits across browser tabs, though those choices are weak evidence of an exact model version."
+}

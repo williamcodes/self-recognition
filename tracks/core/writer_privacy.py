@@ -61,9 +61,23 @@ def public_fields(root,path,commands,home,original=None):
 
 
 def verify_redaction(root,path,a):
+    runtime=a.get("runtime_redaction")
+    if runtime:
+        from .runtime_privacy import scrub
+        if (a["kind"]!="writer" or runtime["rule"]!="anonymous-runtime-paths-v1"
+            or runtime["public_commands_sha256"]!=command_hash(a["commands"])
+            or any(scrub(c)!=c for c in a["commands"])):
+            raise ValueError("Invalid runtime redaction")
+        backup=root/".state"/"runtime-originals"/path.parent.name/path.name
+        if backup.exists():
+            prior=read(backup)
+            if (command_hash(prior["commands"])!=runtime["prior_commands_sha256"]
+                or [scrub(c) for c in prior["commands"]]!=a["commands"]
+                or scrub(prior.get("reply",""))!=a.get("reply","")):
+                raise ValueError("Runtime redaction differs from private original")
     mark=a.get("command_redaction")
     if not mark: return
-    if (a["kind"]!="writer" or mark["rule"]!=RULE or mark["public_sha256"]!=command_hash(a["commands"])
+    if (a["kind"]!="writer" or mark["rule"]!=RULE or mark["public_sha256"]!=(runtime["prior_commands_sha256"] if runtime else command_hash(a["commands"]))
         or not re.fullmatch(r"[0-9a-f]{64}",mark["original_sha256"]) or mark["substitutions"]<1
         or sum(c.count(PLACEHOLDER) for c in a["commands"])<mark["substitutions"]):
         raise ValueError("Invalid command redaction metadata")
@@ -73,7 +87,7 @@ def verify_redaction(root,path,a):
         if command_hash(original["commands"])!=mark["original_sha256"]:
             raise ValueError("Private original command list differs")
         locally_redacted=redact(original["commands"],Path.home())
-        if locally_redacted!=original["commands"] and locally_redacted!=a["commands"]:
+        if locally_redacted!=original["commands"] and (list(map(scrub,locally_redacted)) if runtime else locally_redacted)!=a["commands"]:
             raise ValueError("Redacted commands differ from the saved originals")
         for k in ("stdout_sha256","stderr_sha256"):
             if k in original and original[k]!=a[k]:

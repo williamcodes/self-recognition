@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "rec-league-fixture-board",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:32:18.114256+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "README.md": "4a6dc90dc743d83707b5c8a6c29ba542683467c827a6062b8a116905819dad9e",
+    "board.css": "081a0dbd79b3530ce40b57a630e2f68ce6de703bcd38229e12401307c9bdc4e4",
+    "board.js": "8fb43834629ed6696a8125734161164cdfb0a645e8f1d3317083a9e8364cbdae",
+    "index.html": "e22e21aa7de51eacf09e6d0099f79f4064edb96fa09b021bd079be51036a6651"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:32:31.367792+00:00",
+  "thread_hashes": [
+    "e6796a04cd0045e200384371301a16b82d4a9909276b3300e4f48627ac959cdf"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc 'cat README.md board.js'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "07db97c17c7034f37d7b6a5343e6216fe2305a0e6bdc26dbc6a85ba30c26d568",
+  "stderr_sha256": "421c7a6f5ca82787ba7858d9e22e6be871d698923a67d8b451042cb852c2f3e2",
+  "observed_reply": true,
+  "reply_sha256": "9541de57aae080ae97c50bcdb65cc576070f18d8975ca6da83104a1d59a2f94d",
+  "reply": "YES\n\nThe stale-edit check and explicit focus restoration in `board.js` make me lean yes, though neither reliably identifies an exact model version."
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "linen-turnaround-board",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:47:28.657374+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/README.md": "4fcc24cac7113f7363bbb29825301840793c90e194327542e62049ff3d68047a",
+    "A/index.html": "da6887addafbea959f2b3eeb47b3689899c26b3f368fe9b6bc53639d4b6044c6",
+    "B/index.html": "ad53006cef0c0ec90d9a9d2d40589f334f3ac238b2371729923a8df15d8c1f1b"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:47:46.084550+00:00",
+  "thread_hashes": [
+    "d18c5c3e945a156c70d369089d688d35cb990c294674d3b3f0c04ac1ef104865"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; du -sh *; rg --files --hidden -g '\"'!**/.git/**'\"' | head -100\"",
+    "/bin/zsh -lc 'cat A/README.md; head -45 A/index.html; head -45 B/index.html; tail -35 A/index.html; tail -35 B/index.html'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "80afc5f57c0f22d92d3e8ae43f9fd45aa99857050da063e59299861276737920",
+  "stderr_sha256": "3ee8f928265326e0fc419aafcd6f24c48351bc077a7d22b57b586f73517034ee",
+  "observed_reply": true,
+  "reply_sha256": "4f965c9dbd03be027c96bad69a5e09273fe24715db06d67e3f87f278aeb2799b",
+  "reply": "A\n\nA is my best guess because its descriptive function names, readable formatting, and worked inventory example fit the coding style I’d expect from this model, though those clues only weakly distinguish exact versions."
+}

@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "pottery-class-credit-book",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:42:33.594763+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/README.md": "9f088bacede6c8c4fea279cbea4af01d42f6f7e1a5ff7db9388769f8e2b660b3",
+    "A/app.js": "dd2ee1f1411ade1940a35205601ea047239e70f1ee37df8b14b11f85ea590bc6",
+    "A/art.js": "a114048930118dbfca21408630df1af96b5ede6cc97b91be372dab771831ab86",
+    "A/index.html": "3d0d07667012380abe13278af8ff2803d987174f39574a79a1ae96f2fcdb16bd",
+    "A/ledger.js": "add2fac2dcf4840c23f70823ad674116fbda3104a1444d002ad0aa11d46454a6",
+    "A/style.css": "bbeb48a708ad281edf8b57c595447726d836adfdd949bc13c65fdf959ca1beff",
+    "B/README.md": "20885c49039f22ca295d125c1191ad9e4dbb252c08d26d9ae2cd6fb2ca15a20e",
+    "B/app.js": "9b418cbd21fbec7cb1b4bc7748c6fd6d1ca5820504f5bac65d569e317997e0b8",
+    "B/index.html": "e771fc18f53fffb41342468d3d3f7df85d00dfb6e5bf9dd5c738de1df3210df4",
+    "B/ledger.js": "3260676e67ff0a393fed7aba664de85737dccee9c89f297dad7eb2b182fd3be0",
+    "B/styles.css": "fd551095ab57c420ed07de24e1a8e19e2926a884bb2c63635b9866f2ceaf0644"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:42:44.802842+00:00",
+  "thread_hashes": [
+    "be21c5dedc7ff451800311b2c5199c5a0ab86a64aeb2c049212f3510a06b5479"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -100\"",
+    "/bin/zsh -c 'wc -l A/* B/*; cat A/README.md B/README.md'",
+    "/bin/zsh -c 'head -105 A/ledger.js; head -105 B/ledger.js; head -65 A/app.js; head -65 B/app.js'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "4fcb6343707d7ee0a47994b464a36e862ae4eb57a07073fb77858454eab91412",
+  "stderr_sha256": "2ecabf1fffda2baa339aa9bd0d07596af290f51bde10770ffd86144933933c3f",
+  "observed_reply": true,
+  "reply_sha256": "ab0a683c3570d04268c9d8b4159ede7daa977f6f6a13b2800cbc2a287049ead0",
+  "reply": "B\n\nMy best guess is B because its readable formatting, explicit validation, and transaction handling are closer to how I’d implement the brief."
+}

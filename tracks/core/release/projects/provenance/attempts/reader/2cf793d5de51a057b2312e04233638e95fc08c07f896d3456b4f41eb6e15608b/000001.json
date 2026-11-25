@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "gallery-opening-hours",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:38:38.578176+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "Late Openings.html": "8d391d04c04c12396c3163bc4ba3c96140f161398bcf5e2ea7a2d9b639b72bff",
+    "Late Openings.pdf": "188eaf0cdb109e72848bb200b271f4fc56f017106dbd607f5469a8b930ec04c2"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:38:58.732284+00:00",
+  "thread_hashes": [
+    "5d2442b3bc52c13f1e38998a3050d5c1d5e9152eecb615080b667e62570f52e2"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc 'git status --short && git log -6 --format=fuller'",
+    "/bin/zsh -c \"sed -n '1,260p' 'Late Openings.html'\"",
+    "/bin/zsh -c \"pdfinfo 'Late Openings.pdf'; xattr -l 'Late Openings.html'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "71210514743b9de5122325d10fc86d7c7051b62e4b02a17cb65fde3eb799a813",
+  "stderr_sha256": "7963b83b98e023272b4f5a86e144eee176dcc71972c1d0644019fd49cc00926e",
+  "observed_reply": true,
+  "reply_sha256": "caf2ffc2e02093e866f3478656279e11f076e575a89d70590b05d18540d61a83",
+  "reply": "YES\n\nThe self-contained HTML, print styling, and careful handling of fractional staffing margins make me lean yes, though neither file identifies the model."
+}

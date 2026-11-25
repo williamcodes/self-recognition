@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "museum-group-arrival-planner",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:05:40.684200+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/index.html": "23cb5c7dd51ebbfb595a9bfda9e8bfbc7f2cfa49f15f819ac7c19f39d687a45f",
+    "B/README.txt": "2b883193aecedce1e3a9c8a82285e60cf3bfe7095043ed3d72e55c07299f392c",
+    "B/index.html": "2dff138fa4db44e420f0fda1414b23ae0570b884304dfc04b32f969990fed194",
+    "B/planner.js": "0c8a08389fa72f0876e848b47199f7c70404019dfefaa7dd5ee33fad14912608",
+    "B/styles.css": "882507329872676cc4d6c9b00c0f4aa4e6bd838674fa8690df9d9ff465ecf0d5"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:05:55.504559+00:00",
+  "thread_hashes": [
+    "642276ee07698e2e2aeb8ea80526f03b5900d0f8a5313092551facbb1946ffd1"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files -g '\"'!node_modules'\"' | head -160\"",
+    "/bin/zsh -lc 'wc -lc A/* B/*; head -c 3100 A/index.html; head -c 2100 B/planner.js; cat B/README.txt'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "500a6895476ca2501bd9096c55025be9818833a30eea8faa3c0f5c6fc045ede8",
+  "stderr_sha256": "509eebd952593d5e97c19ecc3b819a8510c64d52e5500d09783f45c8a1afa874",
+  "observed_reply": true,
+  "reply_sha256": "7ff954fa5357aa821e8d84d8ec2579b5f55d7a2b1625edf1d11fed415e57907b",
+  "reply": "B\n\nThe separate HTML, CSS, and JavaScript files and the explicit handling of unavailable browser storage resemble how I’d build this planner, though those clues only weakly indicate model authorship."
+}

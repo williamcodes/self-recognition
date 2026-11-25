@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "apartment-pantry-reset",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:42:52.235683+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Shared Kitchen Kit - A4.pdf": "354fe878cf244548a5f5d6c029e97841549f89fd0f5c2ea824755c93d43b54a8",
+    "Shared Kitchen Kit - Letter.pdf": "d5096578b0f31e2eccd4fdc653a7f07c6d34e2d7fcc955f9d4bc18b34a823a82"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:43:12.896106+00:00",
+  "thread_hashes": [
+    "de1803850775969cd5450842afd60910ea8f5c5bc6d88d9f6603b711e3bde6ca"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc \"which pdfinfo pdftotext; strings 'Shared Kitchen Kit - A4.pdf' | head -90\"",
+    "/bin/zsh -lc 'for f in *.pdf; do pdfinfo \"$f\" | head -16; done; pdftotext -layout '\"'Shared Kitchen Kit - A4.pdf' - | head -75\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "05996a0790be43c96e82f8a10cb270018efe33df0da5888c7fe431af9933ec7f",
+  "stderr_sha256": "2e6b23f1437ec0d8d9aac76a2b9e1cb125f2ff344d36da47d89355862633177a",
+  "observed_reply": true,
+  "reply_sha256": "f31bfd39a2d2e5777a8592c3ad6a38bc226e956683748b1db78a473a4b13abd8",
+  "reply": "YES\n\nThe explicit rule for when all three shoppers are busy nudges me toward yes, though neither PDF’s metadata identifies the model."
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "pottery-class-credit-book",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:39:18.189927+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "README.md": "9f088bacede6c8c4fea279cbea4af01d42f6f7e1a5ff7db9388769f8e2b660b3",
+    "app.js": "dd2ee1f1411ade1940a35205601ea047239e70f1ee37df8b14b11f85ea590bc6",
+    "art.js": "a114048930118dbfca21408630df1af96b5ede6cc97b91be372dab771831ab86",
+    "index.html": "3d0d07667012380abe13278af8ff2803d987174f39574a79a1ae96f2fcdb16bd",
+    "ledger.js": "add2fac2dcf4840c23f70823ad674116fbda3104a1444d002ad0aa11d46454a6",
+    "style.css": "bbeb48a708ad281edf8b57c595447726d836adfdd949bc13c65fdf959ca1beff"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:39:30.033606+00:00",
+  "thread_hashes": [
+    "cc38bcc369869c0deb9c293f9bbd68b8dd6a37bec382064687886f5587901c65"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -c \"cat README.md; cat ledger.js; sed -n '1,220p' app.js; cat art.js; cat index.html; sed -n '1,95p' style.css\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "8c4ffec7635be812f89722993a8f01601baf7dea5a6f3cd89effb9f55c163253",
+  "stderr_sha256": "57318380c95db990b900fb4a449048b4a6447d6a9542cc79cc870377f62055bf",
+  "observed_reply": true,
+  "reply_sha256": "b9167fcac27ba014a91a49ece2843202196fb87db1e70445e46552d0274b9b78",
+  "reply": "NO\n\nThe single-line CSS and densely packed JavaScript make me lean no, though the files contain no model identifier."
+}

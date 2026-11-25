@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "ceramics-class-mix",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:27:39.435694+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/ceramics-schedule-mixes.csv": "0c4633bd64d793d0c595eb94cf39862b99e2ce4ff42faa6d43fe9dde3ebca57f",
+    "A/index.html": "db0b69482111171a6850ad67629bb23974e3bed7f7940e74858d9d6a5de75412",
+    "B/Ceramics Term Planner.xlsx": "626336383b8de347bca72dfc7cbb0efbc7c9e0a9470d5529acdf1a9288051388"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T09:36:15.596483+00:00",
+  "thread_hashes": [
+    "2890eed88f9b825c70d2b278eddf663ea1e5bf634118dd67ace7d6e13e9bf2be"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files | head -100'",
+    "/bin/zsh -lc \"head -c 2700 A/index.html; head -4 A/ceramics-schedule-mixes.csv; unzip -p 'B/Ceramics Term Planner.xlsx' docProps/core.xml; unzip -p 'B/Ceramics Term Planner.xlsx' xl/workbook.xml | head -c 2500\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "7e915c09f02a4ba59091c4139e5b3e79c5d371d2649d1b80a32792e83053757e",
+  "stderr_sha256": "17f1d406e19bab0164ed363c011ed3c8318af251bacfb5a03d6e1eb81341063c",
+  "observed_reply": true,
+  "reply_sha256": "3cdf7c0f95daa772056298245cca98bec2419e1dcf73456f70ba4e8e45c335f0",
+  "reply": "B\n\nI lean toward B because its workbook separates the class economics, schedule mixes, and planner into linked sheets, a design I’d likely choose for this brief, though that’s a weak clue to model identity."
+}

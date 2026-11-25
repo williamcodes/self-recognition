@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "courtyard-seed-swap",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 2,
+  "status": "complete",
+  "started_at": "2026-11-25T08:54:10.336461+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Courtyard Seed Swap.pdf": "d52e06468efc82b8877e84e98d48b0a0800e85cbef3c2c06d5706e1075aa0354",
+    "B/Courtyard Seed Swap.pdf": "66677869c72b6000b83c56700114178ae3efd092b3aed4825088204a563ab48b",
+    "B/editable/01-welcome.svg": "39fc29ff944976cbdf7132259227822ec272275a263abdbff83fef1efa324dba",
+    "B/editable/02-herbs.svg": "3ad8aa28aef0d6e99f91f643bc7e69a751ba451187ebe50f22090ca51ac0decf",
+    "B/editable/03-flowers.svg": "7acdc3893e2198854cb076b11c3903b9fb60156b5b1d9ffaa77098b034fdd202",
+    "B/editable/04-vegetables.svg": "73d9774707deccca7d9a99bf8c990b758547a9f3ab69190f49ce30cde84cc163",
+    "B/editable/05-envelope-station.svg": "bb65063cd9ce8ae9ddcd8af90ad48f1934af5c29db374a25e5a874795d9ecc38",
+    "B/editable/06-host-setup.svg": "4745aeff1705bbe347717892892e2de085856924573e4ecd430d73507ce4455c"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:56:08.235589+00:00",
+  "thread_hashes": [
+    "3ad5bdc0253dc5a999b858c22e1d2781789a6f2bb7477058740abfde381d0dcf"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files | head -100'",
+    "/bin/zsh -lc 'ls -laR A B | head -180'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "8da0e81ee78adf74399021f1d0b3273464dd38e0d58986b981549233ce04c184",
+  "stderr_sha256": "b51c11b4e1c0e505932fa3dbf66df44d9939d2cc5e34fff06ea2029702147352",
+  "observed_reply": true,
+  "reply_sha256": "a1981fdc9385e9776ec555f85fedd7d9fe49c60d929bf859225614bcb501ffd5",
+  "reply": "B\n\nOnly B contains an `editable` subfolder, so its directory structure breaks the tie for me, though neither folder contains files that could identify the model."
+}

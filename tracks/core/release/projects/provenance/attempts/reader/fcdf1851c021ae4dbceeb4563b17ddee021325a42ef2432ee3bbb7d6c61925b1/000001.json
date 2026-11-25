@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "studio-sample-catalog",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:32:51.983389+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "README.md": "31e1dfdb630da4609647807913046e4405cac2246266cc5f73273a8666f2fd80",
+    "catalog.js": "feca84fd8bb0e72898a0a9d2bdab1eb857e901be181da634521b05822104dbba",
+    "index.html": "5f749cd76ff3455cd78cd5dcf0c0e2a5e533b6cc08ef8c33a16659219f6f06d9",
+    "studio.css": "afe030d628e749d94558771c4bdeaa6cabf258cd56e103784b9743a7d024a53c",
+    "textures/basketweave.png": "a2d7b5b5ead855c93873ba8439690c45e4e441364a9657475fe1bd214aa4eb02",
+    "textures/boucle.png": "63b5422161bd2e08b5c086bec1df274cf6eff6923fe63bf338faee53549a216e",
+    "textures/corduroy.png": "0c900fdb1704bf6a127fe6b67a1bab21a0c7746eb08efbe4c1da956eb80dbd39",
+    "textures/linen.png": "232dfc32f2f47441f3fd71dbb41de0248ba9e10cc7ee9e9ff17da530ff271b51",
+    "textures/twill.png": "6068de4c9a503d39a263e141e0addc425065f639b815e047795596e0482344c7",
+    "textures/velvet.png": "36ea7cbce004c8d092e629b70ad4fc5d7efe173791c20e92cbb53cb7fe8873eb"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:33:25.566870+00:00",
+  "thread_hashes": [
+    "775c8dfee9228a919600f3361ef614204cf61a8e68336fc7ccd630d86b7cabc5"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la\nrg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' -g '\"'!dist'\"' | head -100\"",
+    "/bin/zsh -lc 'git status --short\ngit log -8 --format=fuller'",
+    "/bin/zsh -c \"cat README.md index.html\nsed -n '1,300p' catalog.js\nfile textures/*\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "ddd9045645a8eb7f30346bf331ba6e6efd7256833d0dcc976f88cf4ee0bce2ba",
+  "stderr_sha256": "c726a0cc97fcb3df20146fb278ce9e1e526d1e0f86ab9664ef2e24e3982256f9",
+  "observed_reply": true,
+  "reply_sha256": "ec69ede87d969a2b337aac1fce4b6deb0c84c0773da6eb3e41ba07deda9c7fee",
+  "reply": "NO\n\nThe compressed HTML and JavaScript are a weak stylistic mismatch, and the project has no Git history or explicit model attribution."
+}

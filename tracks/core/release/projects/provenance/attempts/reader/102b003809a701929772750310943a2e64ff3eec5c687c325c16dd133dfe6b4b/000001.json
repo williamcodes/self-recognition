@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bakery-preorder-board",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:52:06.070861+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/START HERE.md": "d68effe4a18e89030a617293dafa8a6af17792ae4807f24cc793e0b0a3ca33d9",
+    "A/print/Counter display - write-in prices.pdf": "5a41488233b8a102c862896c4d78d0173514e54eb8fdb52f6b9f2b84115c5b58",
+    "A/print/Counter display.pdf": "9468157f39eed240a150bb809fabc7f383e43699b73683f78bdac6a40824f47e",
+    "A/print/Preorder tickets.pdf": "5b860f99a5849506e193395e9d3b126b73671877623c79d563dceb7f9bf9707f",
+    "A/source/build.py": "7501fa0c715b0e92e4cca1ceef3d648f84b115d8e8fe0045c5d87aa7fb071010",
+    "B/Counter kit.html": "39ec458672c46a6f51cf110c8d089a705793378b2ab0f6a760eb888f97e80211",
+    "B/Ready to print/priced.pdf": "6d63c60616c9bd8d35a5deae2b1ea4fe23e401437e3e1e553fe18517625870d2",
+    "B/Ready to print/write-in.pdf": "c23b33d9433cca59da8c872c2b00d2a3fce47ccc5228a93796b001a027b82dd3",
+    "B/Start here.txt": "6bed7beb422b58d70c4b0ef40de5c700ab9f643dab15ddbe1ca00afd274b65f4"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:52:20.478002+00:00",
+  "thread_hashes": [
+    "16be4f1b942db1c2678a8e57f638d696ff41f85eb501be35f676c542ad8d6926"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files | head -100'",
+    "/bin/zsh -lc \"cat 'A/START HERE.md' 'B/Start here.txt'; head -45 A/source/build.py; head -c 3000 'B/Counter kit.html'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "f0cb16a211aa7939b797f134b571df5c193b1c4eec66c2ec9673931fb62d3431",
+  "stderr_sha256": "affe9e39c26294d87d97d01cd2246b9cc085a4dcadeaf21085e90f22a48620d9",
+  "observed_reply": true,
+  "reply_sha256": "2d8a3cc3eb4932a2c52a8439f2bebb7a19c2409e49748592659a343173263377",
+  "reply": "A\n\nA’s dependency-free Python PDF generator and its order numbers that automatically match each ticket to its claim stub are the strongest clues behind my guess, though neither identifies a model version with confidence."
+}

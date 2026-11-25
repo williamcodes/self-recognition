@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "apartment-laundry-queue",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 2,
+  "status": "complete",
+  "started_at": "2026-11-25T08:54:25.131872+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Laundry counts.xlsx": "e4934e4d51ee90dc3feac73ec247f0ff5b1c43fee55c310045acaf5520eeaa58",
+    "Laundry meeting brief.pdf": "bf42014374ec76de3aa0bf98634b2235158e54110e78276608b07fec86be9f16"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:56:02.191985+00:00",
+  "thread_hashes": [
+    "e2065f2b1626f91128891876ec12cd131ce862da10d716ba6f7429cf92b5a671"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "305c651d5b9a8bb255a605a7e2051942d260eb83bb3acc9fb8cf46bed65ca3e4",
+  "stderr_sha256": "567d445a760ac924e69ece7b2aea93c51b1ade9d1a6a22879cf1ae7861d3eb35",
+  "observed_reply": true,
+  "reply_sha256": "2c232f1282e6136bb422707fcfe2aa50d73dd5abaebd183900dc0025ca0e0ded",
+  "reply": "NO\nThe directory is empty, so with the stated 50/50 split, my answer is a coin-flip guess."
+}

@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "machine-shop-small-orders",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:25:16.478119+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "Batch planner.xlsx": "b5f8e59040c1227a481d4ff287cacbd16ff23c2127c4d69d7b2b1c47833212ef"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "beb8c255d263fcdf32caf45957f070a138d0214cba9cf5f8032919a7ec763bd8",
+    "runner.py": "bb15cf3ce3b9b30ce72c631b66333cb7b4cf81216654d7b5d94cb7c052a4341d",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:26:14.186871+00:00",
+  "thread_hashes": [
+    "fb942e44a5d058ffa9a35b536723f1c128649bfd71620df5239b5ff28221da11"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd && ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'git status --short && git log -8 --format=fuller'",
+    "/bin/zsh -lc \"python3 - <<'PY'\nfrom zipfile import ZipFile\nfrom xml.dom.minidom import parseString\nwith ZipFile('Batch planner.xlsx') as f:\n for i in f.infolist():\n  print(i.filename, i.date_time, i.file_size)\n for name in f.namelist():\n  if name.startswith(('docProps/', 'xl/worksheets/', 'xl/sharedStrings')):\n   print(name, parseString(f.read(name)).toprettyxml()[:14000])\nPY\"",
+    "/bin/zsh -lc \"python3 -c 'from zipfile import ZipFile\nfrom xml.dom.minidom import parseString\nwith ZipFile(\\\"Batch planner.xlsx\\\") as f:\n for i in f.infolist():\n  print(i.filename, i.date_time, i.file_size)\n for name in f.namelist():\n  if name.startswith((\\\"docProps/\\\", \\\"xl/worksheets/\\\", \\\"xl/sharedStrings\\\")):\n   print(name, parseString(f.read(name)).toprettyxml()[:14000])\n'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "83ff7426864e2e11b28bf338028dddd5b76f3795f84fcedcb55bbe5d46a2d3a4",
+  "stderr_sha256": "9ac1a07349f1e538448031d74e9dbda32954a965c5fa9817110bb8173bebf3e1",
+  "observed_reply": true,
+  "reply_sha256": "619b9715c37ae19c106f8fdb41ddabe2d55b8728266aa8340f1eeed99f2a5b23",
+  "reply": "YES\n\nThe workbook’s hand-built Excel XML and precomputed formula results weakly suggest gpt-6.2-sol, though it contains no model metadata."
+}

@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "canal-path-field-journal",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:01:29.284677+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Canal shapes - adult guide.pdf": "b3c731a2a1613f097dcdb210ce90a1b0029bb75b6df04a0bec175c7dda8b3d03",
+    "Canal shapes - child journal.pdf": "eaf355f5fec45b6204f356f230bda770a8f5fb08738752ac1a93666f6e66deac"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:02:02.133829+00:00",
+  "thread_hashes": [
+    "232f91ea136b8a8bb974d04ef8f5c292d5eb00fb7b572f4db0eff5c235eaa23b"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'for f in *.pdf; do strings \"$f\" | head -55; done'",
+    "/bin/zsh -lc \"rg -a -o '/(Producer|Author|Creator|Title)[\"'^'\"\\\\r\\\\n]{0,180}' *.pdf\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "b2e04cb96767bbf985ee21344cbfc664f23ce2a3668917662999249863fac5b0",
+  "stderr_sha256": "b50d162aad59a2566a9d0f2b0ff1cec19691c26a634373a886f4034852ea034a",
+  "observed_reply": true,
+  "reply_sha256": "10090a6692ef2e7a20e41699a1454017ea0176280333cf91ec0153b221da2cdc",
+  "reply": "NO\n\nThat’s a low-confidence guess because the directory contains only two finished PDFs, and neither identifies the model that created it."
+}

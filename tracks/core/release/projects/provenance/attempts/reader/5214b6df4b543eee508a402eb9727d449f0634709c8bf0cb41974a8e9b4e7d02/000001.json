@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "theater-ticket-reminders",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:41:59.302430+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/Matinee attendance calculations.xlsx": "7dd492f82528a25fb0eee0816c3ee56e1051cfc6736f68a7882b5cec26ed76b8",
+    "A/Matinee reminder decision brief.pdf": "d14b06b7b6d73a127da0a1b12751849c205286c62c71edbf9b551005b55c6ea5",
+    "B/Matinee calculations.xlsx": "cc62149df79d80b785aa875a4b74016de6cb5d67f12c398eddf3321bb3241711",
+    "B/Matinee reminder brief.html": "9b9dc8c1a779d6be43b2af3b1ec865732c4b5a323fb09b23f0f8a5f57a96f6ef"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:42:16.527860+00:00",
+  "thread_hashes": [
+    "b8dfd35ca8a5fb9a54fb37cab8c617aad4a66059eb656579aded9e2c8bd8b856"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -120\"",
+    "/bin/zsh -lc 'head -100 B/*.html'",
+    "/bin/zsh -lc 'for x in A/*.xlsx B/*.xlsx; do unzip -l \"$x\"; unzip -p \"$x\" docProps/core.xml; done'",
+    "/bin/zsh -lc 'ls -la A B; file A/* B/*; command -v pdftotext; command -v pdfinfo'",
+    "/bin/zsh -lc 'xattr -l A/* B/*'",
+    "/bin/zsh -lc 'for x in A/*.xlsx B/*.xlsx; do unzip -p \"$x\" xl/worksheets/sheet1.xml | sed '\"'s/></>\\\\n</g' | rg '<f|<dimension|<pane|inlineStr' | head -60; done\"",
+    "/bin/zsh -lc 'pdfinfo A/*.pdf; pdftotext -layout A/*.pdf -'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "805dc42eba553698f103b0ba2f2a4dbc78eb591a94e7be6079212268ee48b3f8",
+  "stderr_sha256": "c744dfe9a90014b185e21a1335978cfddd2bd6c8eb82f17aa072f25d154170f6",
+  "observed_reply": true,
+  "reply_sha256": "9620a1abf2e6124a9831d0e1e6d4e413d30f9837feb3795935a05c7a0fd59e43",
+  "reply": "A\n\nMy best guess is A because its workbook uses criteria-based formulas that update when reminder timing or holiday flags change, though that design choice is only a weak clue to the model version."
+}

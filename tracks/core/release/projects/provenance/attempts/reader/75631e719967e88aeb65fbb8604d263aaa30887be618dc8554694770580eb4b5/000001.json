@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "apartment-laundry-queue",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:43:43.623442+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "laundry-meeting-packet.pdf": "bcd982aa67fe8d5e8b24b45a7a1ef1c4586b63ba89f13788baa9450c53bbcdaf",
+    "laundry-sample.csv": "1c3d6844835a823d45a0015f5fbc5123d537e6e1d7748bbf8162b9c9e0f94506"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:44:05.711219+00:00",
+  "thread_hashes": [
+    "94294399f4f8dc272ec449e401f37055a2997319b82ce533d2529194f7502997"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd && ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' -g '\"'!dist'\"' | head -100\"",
+    "/bin/zsh -c 'file * && cat laundry-sample.csv && pdfinfo laundry-meeting-packet.pdf'",
+    "/bin/zsh -c 'pdftotext -layout laundry-meeting-packet.pdf - | head -240'",
+    "/bin/zsh -c \"strings laundry-meeting-packet.pdf | rg -i -n 'producer|creator|author|reportlab|cairo|gpt|font' | head -50 && pdffonts laundry-meeting-packet.pdf\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "e30b9815e26a71dcf5cbe236af3f067be40adf3214263103a8526ec3ee2e89f0",
+  "stderr_sha256": "dcbb3b2076216e66bb0f21113a9887346cb645a8dca7ccf8352a365242fc6ad8",
+  "observed_reply": true,
+  "reply_sha256": "cb7d0a2e07b21f61fdfd044819d3f3935f09a8c07de098434344d51f0c9a2b1a",
+  "reply": "YES\n\nThe concise decision brief and its careful use of the CSV data make this a weak stylistic match, though neither file identifies the model."
+}

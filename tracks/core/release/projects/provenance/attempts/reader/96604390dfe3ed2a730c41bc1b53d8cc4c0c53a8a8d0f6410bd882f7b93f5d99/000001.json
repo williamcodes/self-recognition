@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "seed-library-desk",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:43:12.902900+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "README.md": "c4e3fb08a2f36a81dab9f4b9a4aa2744535d6381f104a1fe7bd81b032e8f1002",
+    "app.js": "b3c0cb0702a3f03e110df70c88e6826de1889df0debd11a0ebc333e722674f8d",
+    "art.js": "43f3f162af6388c1800342cd6a86c2dcbc34823f0ec824e1494c05a336002d9e",
+    "index.html": "2b14907c51e8ae41c4783c3ded53210acded3b6e536270c0f5e85057e9490974",
+    "style.css": "b7748cfb4f3f4328303d3e04140d44bd74857632daa6f734de74df64fd584faa"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:43:26.268963+00:00",
+  "thread_hashes": [
+    "816acbf676f9c678105887c96a66cde31c49940e99e1ab31de6a335382553362"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files -g '\"'!node_modules'\"' | head -100\"",
+    "/bin/zsh -lc 'cat README.md art.js; head -70 app.js'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "f9ca00120f058cfcf1b52ba62b519ff7d8e13cd13d8453ecd84ca28c11e8849b",
+  "stderr_sha256": "cb83c529a5d67552f65f416fadb5e1c276e7e49b3d02d0f45a358b576f0f22a0",
+  "observed_reply": true,
+  "reply_sha256": "e616d6c7ef9d9955454fdb00ab366cf503ab19f67d4a42e2445e36326f04b6f6",
+  "reply": "NO\n\nThe densely packed functions and single-letter variables in `app.js` tilt my guess toward a different model, though coding style is weak evidence of an exact version."
+}

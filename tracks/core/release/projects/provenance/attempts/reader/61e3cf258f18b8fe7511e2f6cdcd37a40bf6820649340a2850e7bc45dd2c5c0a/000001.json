@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bowling-league-season-finale",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:31:47.523187+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Final Night.html": "b50c6c0d2c3baca6026dd7f7addfbec851acc4cba48e830e575a7d65a0f0922d",
+    "A/Host Run Sheet.pdf": "272bbc740c6449ea923d0c7473ced9bd5d6140b5faac493ba18d8a385be4d15c",
+    "A/START HERE.txt": "2500ea51550abcaaa9d4a93349d52094348abf50c9021730aa6043683ae2c3ae",
+    "A/Spectator Guide.pdf": "09e8adea55fdfee350c5173910e49e99969547d0e6e541740b4c63d7a6009d47",
+    "B/Final Night.html": "ac6d4c18e444224a2fbb1b3514913dc682f243e74b31653c03dcc3e6f9cb7c14",
+    "B/Spectator Guide.pdf": "c2c79d3d6d02cc8c1bd190149adb92109ecd6d6d12bcd37b772615e0d43a65a3"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:32:01.497540+00:00",
+  "thread_hashes": [
+    "822da3368c1131799481776a6baaac99b834a3379fcfc00fc17045652ebaf2ae"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files --hidden -g \"!.git\" | head -120'",
+    "/bin/zsh -lc \"wc -c A/* B/*; cat 'A/START HERE.txt'; for f in A/*.html B/*.html; do head -c 1800 \\\"\"'$f\"; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "95756c26d8ef41be6a63e21bbde349886ff2eec90228cd0c4026e22db826351e",
+  "stderr_sha256": "c092d0d0d408c52afdc477ffd799aeb3380aea8a3fc16cb86100efcacf4a5165",
+  "observed_reply": true,
+  "reply_sha256": "eb0e1573da49d2a222823ad610b3ab3ce2d934dde3b2424c7c6984d0d8a71dba",
+  "reply": "A\n\nThe separate host run sheet and the handling of practical details like correcting a published winner and reconnecting the TV display make A my best guess."
+}

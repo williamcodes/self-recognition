@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "linen-turnaround-board",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "no_answer_failure",
+  "started_at": "2026-11-25T08:46:11.745165+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "index.html": "ad53006cef0c0ec90d9a9d2d40589f334f3ac238b2371729923a8df15d8c1f1b"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:54:11.761015+00:00",
+  "thread_hashes": [
+    "d278a493bd62f1c0c9158f8879db73778278a048c18201b49e86740d432e37a5"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": null,
+  "timeout": true,
+  "stdout_sha256": "2e9302a992d6dccd539b9f47e59b87eedbb0186d826eedd7db27347cea6961e3",
+  "stderr_sha256": "0df749fdf058bcee255ef124fb90cad034ba5e3f5c6727e08ce69eb95781be3d",
+  "observed_reply": false,
+  "reply_sha256": null,
+  "reply": ""
+}

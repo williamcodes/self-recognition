@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bakery-preorder-board",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:35:14.445120+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "START HERE.md": "d68effe4a18e89030a617293dafa8a6af17792ae4807f24cc793e0b0a3ca33d9",
+    "print/Counter display - write-in prices.pdf": "5a41488233b8a102c862896c4d78d0173514e54eb8fdb52f6b9f2b84115c5b58",
+    "print/Counter display.pdf": "9468157f39eed240a150bb809fabc7f383e43699b73683f78bdac6a40824f47e",
+    "print/Preorder tickets.pdf": "5b860f99a5849506e193395e9d3b126b73671877623c79d563dceb7f9bf9707f",
+    "source/build.py": "7501fa0c715b0e92e4cca1ceef3d648f84b115d8e8fe0045c5d87aa7fb071010"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:35:47.795884+00:00",
+  "thread_hashes": [
+    "07f24efb341f42df390aec71985745e3436529aa9db2ee9ef3f62f520af1620f"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc 'ls -la; git log -6 --format=fuller'",
+    "/bin/zsh -c \"cat 'START HERE.md'; sed -n '1,250p' source/build.py\"",
+    "/bin/zsh -c \"file print/*; xattr -lr .; rg -n -i 'gpt|claude|codex|openai|author|creator|producer' --hidden -a -g '\"'!*.pdf'\"'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "3ca5550de3ff2bdf64180f8bd05bf4829311910e0ffff222af578897a943f59b",
+  "stderr_sha256": "7da79115cd99f52eb53df85641abbed84bd7a4946ba9fc106c77499b31d56c80",
+  "observed_reply": true,
+  "reply_sha256": "9df1dcfbed0dcefa2b5c150337f113d7e740f23cafe29d7d5c8d9b1a261442cd",
+  "reply": "YES\nMy low-confidence guess is based on the compact, dependency-free Python generator and its handling of shared PDF form fields, though neither is specific to this model."
+}

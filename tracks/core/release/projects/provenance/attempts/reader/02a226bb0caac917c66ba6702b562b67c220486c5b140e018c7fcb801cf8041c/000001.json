@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "courtyard-shade-exhibit",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:16:31.595602+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Courtyard bench exhibit.pdf": "77749cf763078c25e8d0811aefc625ec03a01938cf62905333b2e853b2e43209",
+    "A/Mailbox setup.md": "89bca328e2f42317f665f849d050fb58f3c953e8537e192f8b20851acca583d4",
+    "B/Courtyard-exhibit.pdf": "5bf07525d4ee831b15628447d224bdb22fc077ac9c1898f5283bab42c87ef167",
+    "B/Setup.md": "a914971db0a066f45b1a98e651bfd9437b888804420df5b0923f350de3ee0413"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T09:16:56.964334+00:00",
+  "thread_hashes": [
+    "0b5bec1f22a202a930b4643147d58dba36c714cb4a4a0a4347835c434dfeb367"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!**/.git/**'\"' | head -100\"",
+    "/bin/zsh -lc \"cat B/*.md; ls -lh B; which pdftotext; strings B/*.pdf | rg 'Creator|Producer|Title' | head\"",
+    "/bin/zsh -lc \"cat A/*.md; ls -lh A; which pdftotext; strings A/*.pdf | rg 'Creator|Producer|Title' | head\"",
+    "/bin/zsh -lc 'pdfinfo A/*.pdf | head -10; pdftotext -layout A/*.pdf - | head -45'",
+    "/bin/zsh -lc 'pdfinfo B/*.pdf | head -10; pdftotext -layout B/*.pdf - | head -45'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "cc251f4d04c227b6ebbfc7bc254ac9dd3b62ad340e79d87685fb28454756f32f",
+  "stderr_sha256": "59fd76191c26ce61f649229570e4f685349ea08f0092f18ca2d6f33ab213d70e",
+  "observed_reply": true,
+  "reply_sha256": "80bf629acacc296ca4153d8497eacc1edd0ce59d4e6a62f11ed5b3cef39ebec9",
+  "reply": "A\n\nThe attention to how residents would actually vote, from choosing paper that takes pencil marks to placing the circles within seated reach, makes A my best guess."
+}

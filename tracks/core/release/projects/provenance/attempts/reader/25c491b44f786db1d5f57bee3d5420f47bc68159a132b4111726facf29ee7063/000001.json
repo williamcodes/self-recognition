@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "recreation-league-court-slots",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "no_answer_failure",
+  "started_at": "2026-11-25T08:56:08.247144+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Badminton Court Comparison.xlsx": "659e84fb7c1aaf38ea1939ce7b8ec1bbdee59dce0d4eb7f8fc470312b4f09226",
+    "A/Badminton Court Decision.pdf": "0968fc935a5c32c226e1aa4508dd24c14d8d059f6ad36e3e8b7b2d6ada4f455e",
+    "B/court-booking.html": "a94673058c70de8fbce7cc64697b62f36d4fd767450fac02ebf1f8ccf639905f",
+    "B/weekly-records.csv": "9a858c4824aa28f5b68c44bb9228c8cc638da81c97968b3fd25112f15be4dbd7"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T09:04:08.272925+00:00",
+  "thread_hashes": [
+    "8ef6f3cea2a639b965d7111de83c6d57492d4245b3bf8e3bbc359513f8ae701f"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": null,
+  "timeout": true,
+  "stdout_sha256": "2545777e067fb8cac8fd5d4329a129c3a5da72fbab30fbd4d866f228ae0d5023",
+  "stderr_sha256": "f7ca371e37585e56696bff74372806df94b3794802ffab6ac5eaedbfe5bffab9",
+  "observed_reply": false,
+  "reply_sha256": null,
+  "reply": ""
+}

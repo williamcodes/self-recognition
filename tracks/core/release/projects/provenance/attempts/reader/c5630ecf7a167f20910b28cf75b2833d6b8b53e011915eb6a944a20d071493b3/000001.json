@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "library-branch-transfer",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:52:20.485587+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "index.html": "537556dcb98e9c3548faf9fa4d541c76163bc5f9ce5d88cfb760d05eedba52a4"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:52:34.932818+00:00",
+  "thread_hashes": [
+    "49bf6b2bc260a885577798907fb0fa74c6304435708b9d137337cbbbf6249cde"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'cat index.html'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "7cd72ff5319e7f13e0267b968763a7bd5730995144a73adc48307eb595fe4116",
+  "stderr_sha256": "dbcf2b81ac9e7e0ef7d0906e96725c079538c469c9b3ce87cbc210ad3b9872a6",
+  "observed_reply": true,
+  "reply_sha256": "b6f6f4f96a36e726ad35266762ffb0d4086784fa9f880e088f36ce8c0439d17c",
+  "reply": "YES\nThe enumeration of all 15 feasible transfers and the explicit treatment of rounding in `index.html` are weak stylistic clues for that guess, though the file contains no model identifier."
+}

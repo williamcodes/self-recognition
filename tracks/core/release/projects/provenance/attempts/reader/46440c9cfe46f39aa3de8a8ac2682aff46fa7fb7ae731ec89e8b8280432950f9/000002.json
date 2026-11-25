@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "rehearsal-room-rotations",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 2,
+  "status": "complete",
+  "started_at": "2026-11-25T08:22:52.945921+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "app.js": "8a7ac76fc5efd5d701765a1037ad27c2cd3098dc66f8a539abe8656d4eb39a7d",
+    "index.html": "1ec31cd8ccc6203c246ebf8bd350d1fead26874f447578ab696327d966304509",
+    "style.css": "c7736d28c049c2439cfd6af9547ec6d6ff215227a5d9a7529ffc8a75c18aa650"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:25:06.948906+00:00",
+  "thread_hashes": [
+    "12ba6b5483b7487ed818716e3ffcb8c5e4fb0b26a548dfc07e6d4fefdd721542"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc 'cat index.html; head -90 app.js; head -25 style.css'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "7a6c0036b28b0385b0477061c4098df52c72e450442da9e08213fa1ea4243cb5",
+  "stderr_sha256": "248c57ba11a4c26aad814012ba3a59eda3984ed89b77421ae854090b0f952ba4",
+  "observed_reply": true,
+  "reply_sha256": "b07c47efdde098bf573607d800729e43e4958fc8440ed24d9a829fc7c059dc2d",
+  "reply": "NO  \nThe tightly packed CSS and long JavaScript strings used to build the timetable make me lean toward a different model, though those are weak authorship clues."
+}

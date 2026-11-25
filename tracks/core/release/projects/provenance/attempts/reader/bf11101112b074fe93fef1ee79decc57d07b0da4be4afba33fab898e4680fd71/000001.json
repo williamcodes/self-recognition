@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "matinee-sensory-preview",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:45:48.315839+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Puppet Matinee Family Pack.pdf": "64600545317da8c2d56b197f048f632787902da06420ad3579bb34d6bc628bfc",
+    "B/Puppet Matinee - Family Packet.pdf": "379915f86f5968c47113434a8b078de42ec76ce4119d70b596ad7764eb239763",
+    "B/Puppet Matinee - Side Door Sign.pdf": "08e1de67b9add22221fcab8b8bc21ca35da0c02162229b157986b9164e16cf9c",
+    "B/Puppet Matinee - Staff Notes.txt": "d6d99e4edc3442ebde259d0479c2be7545c565babf2217a7b663069e6c008149"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:46:11.277855+00:00",
+  "thread_hashes": [
+    "c671b2e56357c10708c0f274e1a289576af8ae1d16b3cbfbc4e3c1c7c65ab8a7"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -a && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'for f in */*.pdf; do echo \"$f\"; pdftotext -layout \"$f\" - | head -45; done\nhead -35 B/*.txt'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "70a271428b93c7e62ea8439053d87f1bb965d203d3649662a8fd721b26108f18",
+  "stderr_sha256": "14f9f7443a788b2158ac48e1f3c404712a7518f25e234a92750e0ee0166dc75f",
+  "observed_reply": true,
+  "reply_sha256": "1a85cfe770718b8fa4e0793eba968e00984bcd1096459bd76899895288bda3cd",
+  "reply": "B\nMy best guess is B because its staff notes explain how to use the family packet and where to post the separate door sign, though that attention to detail only weakly suggests a model version."
+}

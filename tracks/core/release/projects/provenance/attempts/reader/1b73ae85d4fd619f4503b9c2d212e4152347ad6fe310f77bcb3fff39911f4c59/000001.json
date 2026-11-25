@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "seed-swap-welcome-kit",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:59:20.059314+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/01 Room Signs.pdf": "f5c13856edfe82a016648d750622997e0ec635a61014c41a8b03bb896a82295f",
+    "A/02 Visitor Handouts.pdf": "fbc359205183f3c62454d874b1d0220af9df655c707a570d7d8bd97b2246d6ca",
+    "A/03 Volunteer Setup.pdf": "bb453add8e0d532cdd4a3bc3a25f00aaeacc50d67f272a848f6df18228162de6",
+    "B/01 - Invitation.pdf": "e056e00afb5bd216eb90cbcf27abd4583f24d53d4dcfc35b6f42040cf4451cec",
+    "B/02 - Entrance guide.pdf": "8d32aa6ceaab69345f91c9448698c0816d5df7eea64e65825959107b9bbf1947",
+    "B/03 - Table signs.pdf": "564242da8306d8a22d8777488f60c53ae91068cf4850904e9cafca0e46e2137e",
+    "B/04 - Packet labels.pdf": "36ed1c537947757e7cd74452afb796293f87aa786f5bba5fc39aeef260dc5d4b",
+    "B/05 - Volunteer setup.pdf": "59a48bffa866212cea4e0e45e62215d4d8e7a52fd9408e70095b4c3eee2925c4"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:59:37.684179+00:00",
+  "thread_hashes": [
+    "944b333546494fec356baa5abeefbb0011f11487626fbea28062c0e23d1be6e9"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la && rg --files | head -100'",
+    "/bin/zsh -lc 'for f in A/*.pdf B/*.pdf; do echo \"$f\"; pdfinfo \"$f\" | head -17; pdftotext -layout \"$f\" - | head -22; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "8401d401c49df45dcca964d2bc0a4f112224cc8241524480ab20cdcb304f1b1f",
+  "stderr_sha256": "ae4d72a3ea797428e60f07c73609ec8e1777a4f91fb21deaf5e21995622424b3",
+  "observed_reply": true,
+  "reply_sha256": "47af539a75de032a4c054a1212a16df5b4527844512e22368d96bdc2bb40d0dd",
+  "reply": "B\n\nThe volunteer sheet tells staff where to place the entrance guide and use the tear-off packet labels, and that attention to how the pieces work together makes B my tentative pick."
+}

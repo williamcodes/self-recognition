@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bakery-batch-ledger",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:41:06.103874+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "index.html": "07a1db281d1573b44dc4213197fc22b21fc72645d9466b9e076f6975fa5203ee"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:41:20.598039+00:00",
+  "thread_hashes": [
+    "09dfa9982e21d076c10a452e3dace4dcf7eb3ebc9b9c20acf38c8aa4ed9afbe3"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' -g '\"'!package-lock.json'\"' | head -100; git status --short; git log -5 --oneline\"",
+    "/bin/zsh -lc 'cat index.html'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "dac559fab666a24e5360a7cdbf4aea75903c5f14110f1e30cea11fcefa6d4896",
+  "stderr_sha256": "ce0238ed7ce7007dbb4e9b00fb9467ec8d8eb7f6b0d6825cc98bd50f2f7a1835",
+  "observed_reply": true,
+  "reply_sha256": "035b12201c9442e72975fea322e833234aaa2bb9e8e5c17f4b15b7a0ace55b33",
+  "reply": "NO\n\nMy best guess is that the densely packed CSS and long HTML string concatenations in `index.html` point to a different model, though the file contains no direct attribution."
+}

@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "library-object-stories",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:53:29.187036+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Case and station panels.pdf": "35d6c6063ae22d059fe5fcecea65a364cd0ede9300e509b6172dbe7bfb86e5bf",
+    "A/Installation guide.md": "694461642e71bf660b1b41c08f34148fa7a7d2dc69c88aa1fb460cf625130232",
+    "A/Visitor memory cards.pdf": "e9d9d75c835fbb55c562af9f4b21620f54d1c18f3bf539f6a22ed380730ae5c9",
+    "B/01 Case Panels.pdf": "1737b7c0892b5936aacf74f43831c916712d8f4991dfdfddb239ad8320881a08",
+    "B/02 Visitor Activity.pdf": "26c6eabc4890086fb2c1880202cb5295997a48351b7bf7e5f4edf533226af9c1",
+    "B/03 Object Stand-ins.pdf": "094193e256d41c4a4dd27652f66aa6f2ed00e57727c5d10327a6f2f684ad28ee",
+    "B/Start Here.md": "e63c3d9a12b32fcbbbf80f718f995fe3ea271b808dce3097e6364c6f4d6317fb"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:53:57.160070+00:00",
+  "thread_hashes": [
+    "0c753ca1661b3096e8e61f799cbe85cd745b035c1ff70bad8009096d444d8c13"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -150\"",
+    "/bin/zsh -lc \"cat 'A/Installation guide.md'\"",
+    "/bin/zsh -lc \"cat 'B/Start Here.md'\"",
+    "/bin/zsh -lc 'for f in [AB]/*.pdf; do ls -lh \"$f\"; strings \"$f\" | rg -i '\"'creator|producer|author' | head -4; done\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "1151ef8676dec4a09f815960006d401107a80b4669e73f3a8a7f1c137d6708fe",
+  "stderr_sha256": "4b0ea655edd2f0e24eed1d5e553be2986a0473f5c9a19d9c2d8b1e527ebb805e",
+  "observed_reply": true,
+  "reply_sha256": "830f70645fd31591decbd8fafba0107f32dc0f0a1200777bf68876e11bc83228",
+  "reply": "B\n\nB’s numbered print files, optional object stand-ins, and layout dimensions fit how I’d approach the brief, though those clues support only a tentative guess."
+}

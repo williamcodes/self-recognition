@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "machine-shop-small-orders",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:44:30.016322+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/Batch planner.xlsx": "b5f8e59040c1227a481d4ff287cacbd16ff23c2127c4d69d7b2b1c47833212ef",
+    "B/Batch Comparison.pdf": "b539fc9d4d798ccdceb8bd72281fb2e3fbb25b87e18548381d49a7680f32c04c",
+    "B/Batch Planner.html": "c508957ce104825cc135fc2446bc55acb16d69bbe625569490201a09577a4881"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:44:52.580977+00:00",
+  "thread_hashes": [
+    "a62ee7c7ffb8c983e21e540a5772bcc00b6bede32f2dc84870fe6a2833b8da61"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -160\"",
+    "/bin/zsh -c \"wc -l 'B/Batch Planner.html' && sed -n '1,220p' 'B/Batch Planner.html' && (command -v pdftotext || true)\"",
+    "/bin/zsh -c \"ls -l A B && unzip -l 'A/Batch planner.xlsx' && unzip -p 'A/Batch planner.xlsx' docProps/core.xml\"",
+    "/bin/zsh -c \"sed -n '245,430p' 'B/Batch Planner.html' && pdfinfo 'B/Batch Comparison.pdf' && pdftotext -layout 'B/Batch Comparison.pdf' -\"",
+    "/bin/zsh -c \"unzip -p 'A/Batch planner.xlsx' xl/worksheets/sheet1.xml | sed 's/<row/\\\\n<row/g' | sed -E 's/<[\"'^>]*>/ /g; s/ +/ /g'\"'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "bbfe91bd112bb5c78078d13182fcc1305b31ffadaae507e0ead6ed21f4d2f5e8",
+  "stderr_sha256": "890214787afabc6fcc07ed7014a675dd060b8dd86c659da3d1ae76e799472969",
+  "observed_reply": true,
+  "reply_sha256": "da84abcf99a6e8bec1033b4cbc342fb56957f5cab7a8018ceb99d4780d7d8f3c",
+  "reply": "A\n\nMy best guess is A because its single, formula-driven workbook is the more direct implementation of the batch-planning brief."
+}

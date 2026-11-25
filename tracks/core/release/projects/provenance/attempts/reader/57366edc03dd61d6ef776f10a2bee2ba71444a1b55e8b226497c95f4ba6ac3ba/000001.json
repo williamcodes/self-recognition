@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "rec-league-fixture-board",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:45:16.977905+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "README.md": "affb90f71fbb9c3897129309322cee8a50a45e6b1564a54e011f998da2930068",
+    "board.js": "485619556c9b867f25ee18747f4be6e0bee40ebaa2bf4809f49de27c9a7f086b",
+    "index.html": "89245e43be9386ca0e9a139cfbe9b382924ca197f9873363dc9df70f917eb192",
+    "style.css": "46e9a86f6a2f36f19eb174796c5bb0b7327ea9fd4268614eea6058d39ef14176"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:45:29.564979+00:00",
+  "thread_hashes": [
+    "8d143ab5fe43f3251d9d0f38b0c90bd294a4cda2f35ad65de10fb5dc54214555"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'git status --short; git log -6 --format=fuller'",
+    "/bin/zsh -lc 'cat board.js'",
+    "/bin/zsh -lc 'cat README.md; cat index.html'",
+    "/bin/zsh -lc \"sed -n '1,220p' style.css; xattr -l README.md\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "7ab0cd26046e73f64c008039624379d03bd809048bf07a33e3cea4c138597ad5",
+  "stderr_sha256": "b1f6d7a9d8dcf2fb2cf43f7750b2c8b77ad8d4db65ab32fa85f137243e7b8ceb",
+  "observed_reply": true,
+  "reply_sha256": "c39dd162b7660046727dbd8c8212c4abd72b57eccd404b336f07c5f291bea48d",
+  "reply": "YES\n\nThe compact vanilla JavaScript and careful handling of saved data, keyboard focus, and printing are consistent with my coding style, though the files contain no direct model attribution."
+}

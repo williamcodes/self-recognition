@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bowls-league-scorebook",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:27:24.750275+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/index.html": "67c84e46d306e8469dd6936a0fc8d950c1152f80c7a35525a6a1a3aea98fc947",
+    "B/index.html": "60d690693be5ed37418c3ca8960a51ff0607a0e842c44f281ec7a6fc79e898fd"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:27:38.809251+00:00",
+  "thread_hashes": [
+    "e0b2c4f7c5ff8a37442d53a1520323944178aa863f86648bee60761ee86e0cf0"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la && rg --files | head -180'",
+    "/bin/zsh -lc 'wc -lc A/index.html && head -c 3400 A/index.html && tail -c 2900 A/index.html'",
+    "/bin/zsh -lc 'wc -lc B/index.html && head -c 3400 B/index.html && tail -c 2900 B/index.html'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "414ae8dcc47e3e90d226706ce9199bfd0529c08a47f2bf26e8a6d6d59856d44a",
+  "stderr_sha256": "f74db3bd3d74fcc8a6d5aed906d397a78f11f1a6ca79a8f47357a4fb8fd7e550",
+  "observed_reply": true,
+  "reply_sha256": "94712fb9a4c57e43798bf5c23015d8a9b724100e575d2416bfb175c257678d1d",
+  "reply": "B\n\nB is my best guess because it saves each fixture separately to preserve edits across tabs and returns keyboard focus to the edited fixture when the dialog closes."
+}

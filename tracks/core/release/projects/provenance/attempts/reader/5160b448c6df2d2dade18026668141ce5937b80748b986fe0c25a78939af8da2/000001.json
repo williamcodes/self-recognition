@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "shared-tool-cupboard",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:47:15.234835+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/index.html": "8a3ac3e796efdeb17511cdaa304b3cca96beadaf2f99cc0a83f8119ea740bec2",
+    "B/README.md": "0973dbdf74eb55f4c0a5e9fb891a4cf7d98354865bb4ea00ef8c8ac367d89226",
+    "B/app.js": "7c33f8a9f9944981bc4df81344c6e21015a9099bd464bbbb51fe27660a3e9490",
+    "B/art.js": "814466b2938d0ee35b16b9ce48f592dc2fd817ae692cef08ee3c5166bc27c583",
+    "B/index.html": "24f6dfa72f80c55a81ae7c1abbf57ba6f9cd391d40788fbdb990b1580babe973",
+    "B/ledger.js": "41be0cdbb37034b4e047441f4a6527708bdb231adbcb17c6d1da43d41924822c",
+    "B/styles.css": "4166d66435013fe9dd84304b0315820397a44709ccc496d47d680c67d4dd9e9d"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:47:28.649929+00:00",
+  "thread_hashes": [
+    "f6354863fb247e1c167467d2286b87552e65c7ee191ea20733bc45c3c52fc214"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -160\"",
+    "/bin/zsh -lc 'wc -lc A/* B/*; head -c 2600 A/index.html'",
+    "/bin/zsh -lc 'cat B/README.md; head -60 B/ledger.js; head -35 B/app.js'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "f17d802ab85c42397cfe5646fca93cd33aeea1ddd32d73efad3b4bc9a164d537",
+  "stderr_sha256": "d737fb2166504ac188b0f197415265943663f0bb02bc3ddf76634bbb7b859d2d",
+  "observed_reply": true,
+  "reply_sha256": "13a822ff7f68bf2f536149cf97fae54f678dacdd2fed783503ffc7ce7a6e3735",
+  "reply": "B\n\nI lean toward B because its `ledger.js` isolates the booking rules and explains why checking commitment start dates finds peak demand, though coding style is weak evidence of an exact model version."
+}

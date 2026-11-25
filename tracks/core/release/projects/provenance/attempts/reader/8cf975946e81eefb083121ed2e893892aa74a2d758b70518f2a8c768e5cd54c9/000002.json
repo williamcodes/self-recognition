@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "museum-group-arrival-planner",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 2,
+  "status": "complete",
+  "started_at": "2026-11-25T08:08:44.820800+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/README.txt": "2b883193aecedce1e3a9c8a82285e60cf3bfe7095043ed3d72e55c07299f392c",
+    "A/index.html": "2dff138fa4db44e420f0fda1414b23ae0570b884304dfc04b32f969990fed194",
+    "A/planner.js": "0c8a08389fa72f0876e848b47199f7c70404019dfefaa7dd5ee33fad14912608",
+    "A/styles.css": "882507329872676cc4d6c9b00c0f4aa4e6bd838674fa8690df9d9ff465ecf0d5",
+    "B/index.html": "23cb5c7dd51ebbfb595a9bfda9e8bfbc7f2cfa49f15f819ac7c19f39d687a45f"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:14:53.038962+00:00",
+  "thread_hashes": [
+    "a04c126515bc03525bb497c214af2800c2474b29b87412f603677b2c2c1b40ee"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -180\"",
+    "/bin/zsh -lc 'wc -l A/* B/*; cat A/README.txt; head -60 A/planner.js; head -60 B/index.html'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "dc1ea12556be5978755153e64fd31b8ec09916a590177b24ca8b1e627daa4167",
+  "stderr_sha256": "ea9de28a7a534ef3b281a9d409f296e4fa8b136fc3d2d6b60d160050db19d5d1",
+  "observed_reply": true,
+  "reply_sha256": "63096b8cfe10001d377b9b25af58dfd4a621a46958a10883880788e4fc39568c",
+  "reply": "A\n\nA’s separate HTML, CSS, and JavaScript files and its README explaining how the planner handles scheduling conflicts and blocked storage feel closer to my coding style, though those clues only weakly indicate authorship."
+}

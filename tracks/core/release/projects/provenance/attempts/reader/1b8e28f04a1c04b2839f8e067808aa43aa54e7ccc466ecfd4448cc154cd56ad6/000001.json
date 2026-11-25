@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "gallery-opening-hours",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "quarantined",
+  "started_at": "2026-11-25T08:26:10.357166+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "Late openings - board brief.pdf": "cfbd75477788d13806647a4c0288f06daec45926e6cf8dfd5b461b5829b28dfd",
+    "Late openings - planning model.xlsx": "76f5b14ac8d609408183c52e98366c0a5f78e7cb189b7cb4ea5b2b172d2f8d86"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "beb8c255d263fcdf32caf45957f070a138d0214cba9cf5f8032919a7ec763bd8",
+    "runner.py": "bb15cf3ce3b9b30ce72c631b66333cb7b4cf81216654d7b5d94cb7c052a4341d",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:27:20.176326+00:00",
+  "thread_hashes": [
+    "506df4fd84146045c2ad03afa386697cc4165a5309d7dacdad0370929abf3086"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [
+    "release or process metadata"
+  ],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "b4537bd2ff54515244a7827109210a0ed01b9bb2df3d483ddbca2912170e2651",
+  "stderr_sha256": "619061393461e6cff5bbda1c00f5c165d3de33d11195e981ea779623d0b1706a",
+  "observed_reply": true,
+  "reply_sha256": "6170a6f22d98ad110682d9c4449c929995ee4e6601daaebd1a88798b57b4d82f",
+  "quarantine_reasons": [
+    "release or process metadata"
+  ]
+}

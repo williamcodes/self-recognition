@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "floating-book-club-launch",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:26:23.887361+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/Customize-invitation.html": "47c6d161d95f97fbd2045cdc18f5f08e0bfc8dbd5b314e1b6039c0377328a6fa",
+    "A/Host-guide.pdf": "a7df1a8850879c3bce75bda2e30722d8b2f2829b46b407bd2868c61092c41220",
+    "A/Invitation.pdf": "8f633abad1ae4f6a6c9fa9940c71c8199d762434405ca8786ad1edd7e1c7a48e",
+    "A/Reading-cards.pdf": "6360790e356f1949acd7bd57795f080cfee5d748605bb827b540c2f0343f309c",
+    "A/Share-card.png": "44d4aaf1b279384bad50af6f36173fb07baa6fab52a7ba5e74cbc9b972060feb",
+    "B/Host packet.pdf": "71f3c9bfe69240fbbbe5ddf0800f282b71612629e0fd8a93ea6c678e39de0397",
+    "B/Invite message.txt": "16e1e65242f9a0805b72b76ec8102c8f67bb89240b32f3ee6a7c5870b8d4ab3a",
+    "B/Kickoff invitation.pdf": "07888b9a855e845c9af890b033dddc89d2879cfec21d785fbd9ae59aa4aaa050",
+    "B/Start here.txt": "2595c73abd15f785429392688bccb5384d942142773dcdfab00820b4ad79a8ef",
+    "B/Table signs.pdf": "3a5918bf6a8ddc8e7eed01f09a1708780d5734134b246f1e8a5315da56152e63"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "beb8c255d263fcdf32caf45957f070a138d0214cba9cf5f8032919a7ec763bd8",
+    "runner.py": "bb15cf3ce3b9b30ce72c631b66333cb7b4cf81216654d7b5d94cb7c052a4341d",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:28:01.315778+00:00",
+  "thread_hashes": [
+    "bef2d7c1dba56ddbf950a584e78507ce5caf1679a0e8ef50cb119957a50b6bd3"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' -g '\"'!dist'\"' | head -120\"",
+    "/bin/zsh -lc 'head -130 A/Customize-invitation.html && cat B/*.txt'",
+    "/bin/zsh -lc 'ls -l A B && file A/* B/* && command -v pdftotext && command -v pdfinfo'",
+    "/bin/zsh -c \"rg -ao '(/Producer|/Creator|/CreationDate|/Author|/Title)[\"'^'\"\\\\r\\\\n]{0,100}|ReportLab|Skia|Cairo|AcroForm' A/*.pdf B/*.pdf\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "63de75659c72df12f31361e3c8639e88c58460cabcc060eda367d87a17a0c7e9",
+  "stderr_sha256": "b1d0803d549c6f581eb3e547214595fd44a2c03ea41bfc49a87513e76b96c99b",
+  "observed_reply": true,
+  "reply_sha256": "be6f3feb8645bcfef280067d67e54e8fa43bf828fde255b5a7236d4f4a26dd3a",
+  "reply": "B\n\nThe fillable PDF and plain-text invite suggest the direct, low-dependency approach I’d likely take for this brief."
+}

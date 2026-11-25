@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "theater-ticket-reminders",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:49:24.044233+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Matinee attendance calculations.xlsx": "7dd492f82528a25fb0eee0816c3ee56e1051cfc6736f68a7882b5cec26ed76b8",
+    "A/Matinee reminder decision brief.pdf": "d14b06b7b6d73a127da0a1b12751849c205286c62c71edbf9b551005b55c6ea5",
+    "B/Matinee calculations.xlsx": "cc62149df79d80b785aa875a4b74016de6cb5d67f12c398eddf3321bb3241711",
+    "B/Matinee reminder brief.html": "9b9dc8c1a779d6be43b2af3b1ec865732c4b5a323fb09b23f0f8a5f57a96f6ef"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:49:49.131626+00:00",
+  "thread_hashes": [
+    "3ae1ab588ee711f644335ef6752a4e147d256047046ad287bb1de1d85668b3fe"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files | head -100'",
+    "/bin/zsh -lc \"ls -lh A B\nhead -c 4500 B/*.html\npython3 - <<'PY'\nimport glob,zipfile\nfor p in glob.glob('*/*.xlsx'):\n z=zipfile.ZipFile(p)\n print(p,z.namelist(),z.read('docProps/core.xml')[:800],z.read('xl/workbook.xml')[:1500])\nPY\nwhich pdftotext && pdftotext -layout A/*.pdf - | head -55\"",
+    "/bin/zsh -lc \"python3 -c 'import zipfile,glob,re\nfor p in glob.glob(\\\"*/*.xlsx\\\"):\n z=zipfile.ZipFile(p); print(p,z.namelist(),re.findall(r\\\"<sheet [\"'^>]+\",z.read(\"xl/workbook.xml\").decode())); print([re.findall(r\"<f>(.*?)</f>\",z.read(s).decode())[:3] for s in z.namelist() if s.startswith(\"xl/worksheets/sheet\")])'\"'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "4c7a53d6bfe4db63406721b54bc4a625326642ed2e8d2499a91b9e322d867fbc",
+  "stderr_sha256": "163b22497e321533f9fc4d29b1163d2415d23233c2c7ca576cb8fd9e96c3ca59",
+  "observed_reply": true,
+  "reply_sha256": "ae1cdd85bec1c002a4d7b57f39549087eb846bf1e8b2a5a527b6e7d6a260782b",
+  "reply": "A\n\nMy best guess is A because its separate “Matinees” and “Comparison” sheets let a reader trace the PDF’s figures back to individual shows, which fits how I’d structure the project."
+}

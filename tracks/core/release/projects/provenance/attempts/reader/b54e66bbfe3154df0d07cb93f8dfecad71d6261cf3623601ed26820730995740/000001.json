@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "seed-swap-welcome-kit",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:57:16.181157+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "01 Room Signs.pdf": "f5c13856edfe82a016648d750622997e0ec635a61014c41a8b03bb896a82295f",
+    "02 Visitor Handouts.pdf": "fbc359205183f3c62454d874b1d0220af9df655c707a570d7d8bd97b2246d6ca",
+    "03 Volunteer Setup.pdf": "bb453add8e0d532cdd4a3bc3a25f00aaeacc50d67f272a848f6df18228162de6"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:06:12.413957+00:00",
+  "thread_hashes": [
+    "bd6227fd4b6c259e0aecba091ddf3bafe035739290cb8a8941d29a993c334821"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc 'for f in *.pdf; do pdfinfo \"$f\" | head -18; pdftotext -layout \"$f\" - | head -28; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "d4f40da0918589da2d938bf24596fd59d1f0918ee24201dad618dd65a98edbc4",
+  "stderr_sha256": "bf44b07bf2b78396049df6232bda42fabf4ab8ab4930c63ddfab425d1cc2581d",
+  "observed_reply": true,
+  "reply_sha256": "06b439ded9312e9bcad2356394e767d2fe291bd1df801a277d1b90f3d73aa2b1",
+  "reply": "YES\nThe signs, handouts, and volunteer sheet use consistent table numbers and packet limits throughout, but that stylistic clue is weak because none of the PDFs identifies the model."
+}

@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "repair-cafe-intake",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:51:32.574728+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/README.md": "07d9e1dcb769d6d774a88c9c4a8df6d4ac819ac86eb459b76084a49e9fcc1d32",
+    "A/desk.css": "819f38a90bc875a1feb2aed12ac23a5201880f4202917fcd1f167f91a044d40a",
+    "A/desk.js": "c99a36f282f65d5850502bf84ea5559a0bfff80b62c4085e1713fee860afcc9c",
+    "A/index.html": "069abb6d19510250bba2b65465ceb5203cda2836dd5e807a5a640d29429c65b9",
+    "A/machine.svg": "f5b46b01a3f8ba9db181e253c0f960b88224cc5f45ca104741366437959acb59",
+    "B/README.md": "90d1b1cf79552e388b3b02a009561d2c97263602d81ef1d14cf96447b8338545",
+    "B/app.js": "ea11bddd9c8ebe097505f8c69a3a6281256e0821ad1ed49616c2f13d025a8ca0",
+    "B/index.html": "773681152b1a319e1b037fa6be743ea2209d66cfa1b2e313f3b547f8a8ef482a",
+    "B/styles.css": "c4748c41cc7aade5593c29b2ed31d0371a72e80504dbe844641431f900bc6cae"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:51:50.899894+00:00",
+  "thread_hashes": [
+    "b7dd66b4b8a62e1bcc1c312566e34a5e4bf0ceecc872a3338c79a29b5fd9afeb"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -160\"",
+    "/bin/zsh -lc 'cat A/README.md B/README.md\nwc -l A/* B/*\nhead -45 A/desk.js B/app.js'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "0727edec82ed0821da931673a2b7d5227cd6078e0ccac312e3f732bae2e68fa3",
+  "stderr_sha256": "ef0aa0c067f26e1fa23df05b7644177c4d5ce7769d5c647e94702069c509a3fd",
+  "observed_reply": true,
+  "reply_sha256": "d4dbc58c7f9fbfa2df7a5fc80bd47fd07cbcfd3be55466ea9df0094176008921",
+  "reply": "B\n\nB is my best guess because its readable JavaScript handles details like cross-tab updates and undo, though coding style alone is weak evidence of an exact model version."
+}

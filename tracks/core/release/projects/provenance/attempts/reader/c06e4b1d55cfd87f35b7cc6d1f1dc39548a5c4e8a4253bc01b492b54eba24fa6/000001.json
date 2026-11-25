@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "library-object-stories",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:04:41.596338+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Case and station panels.pdf": "35d6c6063ae22d059fe5fcecea65a364cd0ede9300e509b6172dbe7bfb86e5bf",
+    "Installation guide.md": "694461642e71bf660b1b41c08f34148fa7a7d2dc69c88aa1fb460cf625130232",
+    "Visitor memory cards.pdf": "e9d9d75c835fbb55c562af9f4b21620f54d1c18f3bf539f6a22ed380730ae5c9"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:05:01.759124+00:00",
+  "thread_hashes": [
+    "7b387e59622e9c5494d017465a58ff2626b5331a1405ecfe83942f46c7a85610"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files --hidden | head -100'",
+    "/bin/zsh -lc \"cat 'Installation guide.md'; strings 'Case and station panels.pdf' | rg -i 'creator|producer|author|title' | tail -10\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "31bf7d6e3e70d2a22400be63d1239bad1df42a2a6261b3463ac7538182be88a6",
+  "stderr_sha256": "8c50c9d9e26173dc2479c5f69978fb7cbf29487ed5b41e5ce126abcdedb5d47b",
+  "observed_reply": true,
+  "reply_sha256": "6c247aeadbae87d55cea1d9b94a5d98b861a04e100d6912ae7bca88a54f86384",
+  "reply": "YES\n\nThe guide’s precise cut dimensions and practical test for the return pocket make me lean toward the same model, though those details are weak evidence of an exact version."
+}

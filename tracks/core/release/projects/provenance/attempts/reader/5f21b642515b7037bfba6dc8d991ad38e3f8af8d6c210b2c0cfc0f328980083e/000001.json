@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "rehearsal-room-rotations",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:45:17.326766+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/README.md": "7b84ffe8c13aafdfbf5826c1a2e3aba20678297ffca47600f51cbee3395c10b8",
+    "A/index.html": "ea40452772d79a72cea8d73654ba76970358aac6720de3c8baba4c38a5f4585a",
+    "A/scheduler.js": "21255020f76552e82598ae662aecb9007cd9432b325bdbf1c57c590b265b9fc6",
+    "A/styles.css": "73df91deeaad7cb4dbce111463ba54022733bbd48a3f92189ff5c3e5b9c1d71c",
+    "B/app.js": "8a7ac76fc5efd5d701765a1037ad27c2cd3098dc66f8a539abe8656d4eb39a7d",
+    "B/index.html": "1ec31cd8ccc6203c246ebf8bd350d1fead26874f447578ab696327d966304509",
+    "B/style.css": "c7736d28c049c2439cfd6af9547ec6d6ff215227a5d9a7529ffc8a75c18aa650"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:45:29.633157+00:00",
+  "thread_hashes": [
+    "6bc46b247a3925871d8f5dde610d80463a5fe3f45fe320b0aa8c498acc74b3f9"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -100\"",
+    "/bin/zsh -lc 'wc -l A/* B/* && cat A/README.md && ls -la A B'",
+    "/bin/zsh -lc \"sed -n '1,245p' B/app.js\"",
+    "/bin/zsh -lc \"sed -n '1,145p' A/index.html && sed -n '1,150p' B/index.html\"",
+    "/bin/zsh -lc \"sed -n '1,220p' A/scheduler.js\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "723368d801149c7c29451ef9fe4d711bfc5d84b07cb57ceb291d89c92882a259",
+  "stderr_sha256": "d4cb1e2f29451e0a111c6a49ffe3e2b6385af53eb7d895430a2e92ccd1fef0e7",
+  "observed_reply": true,
+  "reply_sha256": "8b87820b721b757ff57995761daf322e494adfbae68ef2ca126210d8d61568f7",
+  "reply": "A\n\nMy low-confidence guess is A because its readable formatting, explicit booking validation, and careful keyboard focus handling are closer to how I would build the scheduler."
+}

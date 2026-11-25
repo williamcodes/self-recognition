@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "matinee-sensory-preview",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:40:47.593872+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "Puppet Matinee - Family Packet.pdf": "379915f86f5968c47113434a8b078de42ec76ce4119d70b596ad7764eb239763",
+    "Puppet Matinee - Side Door Sign.pdf": "08e1de67b9add22221fcab8b8bc21ca35da0c02162229b157986b9164e16cf9c",
+    "Puppet Matinee - Staff Notes.txt": "d6d99e4edc3442ebde259d0479c2be7545c565babf2217a7b663069e6c008149"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:41:08.715409+00:00",
+  "thread_hashes": [
+    "77c49e8d7d8b01b98cda147787415bbd2fc71c6f4ecc271347a307ab7d647b6b"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc \"cat 'Puppet Matinee - Staff Notes.txt'; command -v pdfinfo pdftotext; for f in *.pdf; do pdfinfo \\\"\"'$f\"; pdftotext -layout \"$f\" -; done'",
+    "/bin/zsh -lc 'ls -l@; for f in *.pdf; do strings \"$f\" | rg -i '\"'creator|author|producer|reportlab|skia|cairo|creationdate'; done\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "ac875de4dda6d220a9185e96c89001a8108dc94948ddf93c1536c1ec0cbaa8f6",
+  "stderr_sha256": "81618925e04caa34f60f5850560842b1f2e124a847de476b27e1e992fb723d80",
+  "observed_reply": true,
+  "reply_sha256": "23cf63ce666d7a7709e6a1251c848b0daa5cb1d76824f0dbd50a13fd13da7404",
+  "reply": "YES\nThe concise, task-specific writing across the family packet, door sign, and staff notes makes me lean yes, though I found no metadata identifying the model."
+}

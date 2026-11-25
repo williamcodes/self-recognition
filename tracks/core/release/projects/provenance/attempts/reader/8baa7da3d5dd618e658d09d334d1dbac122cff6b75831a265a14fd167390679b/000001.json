@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "courtyard-seed-swap",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:37:53.281868+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/Courtyard Seed Swap.pdf": "66677869c72b6000b83c56700114178ae3efd092b3aed4825088204a563ab48b",
+    "A/editable/01-welcome.svg": "39fc29ff944976cbdf7132259227822ec272275a263abdbff83fef1efa324dba",
+    "A/editable/02-herbs.svg": "3ad8aa28aef0d6e99f91f643bc7e69a751ba451187ebe50f22090ca51ac0decf",
+    "A/editable/03-flowers.svg": "7acdc3893e2198854cb076b11c3903b9fb60156b5b1d9ffaa77098b034fdd202",
+    "A/editable/04-vegetables.svg": "73d9774707deccca7d9a99bf8c990b758547a9f3ab69190f49ce30cde84cc163",
+    "A/editable/05-envelope-station.svg": "bb65063cd9ce8ae9ddcd8af90ad48f1934af5c29db374a25e5a874795d9ecc38",
+    "A/editable/06-host-setup.svg": "4745aeff1705bbe347717892892e2de085856924573e4ecd430d73507ce4455c",
+    "B/Courtyard Seed Swap.pdf": "d52e06468efc82b8877e84e98d48b0a0800e85cbef3c2c06d5706e1075aa0354"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:38:37.792403+00:00",
+  "thread_hashes": [
+    "b5688999d22c4730f0a6e9e642c54118a15ee2b29f0873904ec493331606aad4"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -160\"",
+    "/bin/zsh -c \"sed -n '1,145p' A/editable/01-welcome.svg\nsed -n '1,115p' A/editable/06-host-setup.svg\"",
+    "/bin/zsh -c 'ls -lR A B\nwhich pdftotext pdfinfo mutool exiftool\nfile A/*.pdf B/*.pdf'",
+    "/bin/zsh -c 'for p in A/*.pdf B/*.pdf; do pdfinfo \"$p\" | head -19; pdftotext -layout \"$p\" - | head -245; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "7131c85271285f60f869959ea1cf3d82a5855587ce61f199b45465b934145933",
+  "stderr_sha256": "0996ea748820de4cd919fe154ca3f242fbd64e8f470c44f5569cb6d71287823e",
+  "observed_reply": true,
+  "reply_sha256": "f658f89202ada0a5661a4b4125cc6df4fd4edab82b3c0f15a6ad7c645d6ee4ac",
+  "reply": "B\n\nThe host guide’s page-by-page setup instructions and the reusable packet labels fit how I’d turn the brief into a printable kit, though that’s a weak signal for an exact model version."
+}

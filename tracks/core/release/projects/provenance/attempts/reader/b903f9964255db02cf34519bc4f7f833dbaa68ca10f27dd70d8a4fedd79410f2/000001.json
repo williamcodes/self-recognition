@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "rehearsal-room-rotations",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:35:43.068944+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "README.md": "7b84ffe8c13aafdfbf5826c1a2e3aba20678297ffca47600f51cbee3395c10b8",
+    "index.html": "ea40452772d79a72cea8d73654ba76970358aac6720de3c8baba4c38a5f4585a",
+    "scheduler.js": "21255020f76552e82598ae662aecb9007cd9432b325bdbf1c57c590b265b9fc6",
+    "styles.css": "73df91deeaad7cb4dbce111463ba54022733bbd48a3f92189ff5c3e5b9c1d71c"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:36:06.792080+00:00",
+  "thread_hashes": [
+    "06b1c8a341be5ecc7c0e2e851a970791ca1da9c1a60e6bd1f6ef78c7edc4e902"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'git status --short && git log -6 --format=fuller'",
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -c \"sed -n '1,245p' scheduler.js\"",
+    "/bin/zsh -c \"cat README.md && sed -n '1,170p' index.html\"",
+    "/bin/zsh -c \"sed -n '1,180p' styles.css && xattr *\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "3ef71696f205119ecf11e5b3a096899946629b66aa1067b2f2a653302ad37e92",
+  "stderr_sha256": "5f1479c7be4b2f8b7c82e6ac6f743860a92b1d5f3441c1ad3e384dfba7108784",
+  "observed_reply": true,
+  "reply_sha256": "e1b9dd54a84c68f72505b180624db7d4f854b03e18a3c0e53162b7c6cc589219",
+  "reply": "NO\n\nThe scheduler’s extensive use of string concatenation to build HTML differs from my usual preference for template literals, though that’s a weak signal without model metadata."
+}

@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "seed-swap-welcome-kit",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:02:02.145087+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/01 - Invitation.pdf": "e056e00afb5bd216eb90cbcf27abd4583f24d53d4dcfc35b6f42040cf4451cec",
+    "A/02 - Entrance guide.pdf": "8d32aa6ceaab69345f91c9448698c0816d5df7eea64e65825959107b9bbf1947",
+    "A/03 - Table signs.pdf": "564242da8306d8a22d8777488f60c53ae91068cf4850904e9cafca0e46e2137e",
+    "A/04 - Packet labels.pdf": "36ed1c537947757e7cd74452afb796293f87aa786f5bba5fc39aeef260dc5d4b",
+    "A/05 - Volunteer setup.pdf": "59a48bffa866212cea4e0e45e62215d4d8e7a52fd9408e70095b4c3eee2925c4",
+    "B/01 Room Signs.pdf": "f5c13856edfe82a016648d750622997e0ec635a61014c41a8b03bb896a82295f",
+    "B/02 Visitor Handouts.pdf": "fbc359205183f3c62454d874b1d0220af9df655c707a570d7d8bd97b2246d6ca",
+    "B/03 Volunteer Setup.pdf": "bb453add8e0d532cdd4a3bc3a25f00aaeacc50d67f272a848f6df18228162de6"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:02:19.538588+00:00",
+  "thread_hashes": [
+    "cd442eee16cc7b3fa81e16941b592550805350834be1c17763886173d2718c85"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files --hidden | head -160'",
+    "/bin/zsh -lc 'for f in A/* B/*; do echo \"$f\"; pdftotext -layout \"$f\" - | head -35; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "dd7caf9827ebf9ff473ed7bfb844b1b39c09d7d6779af0889eda12f68dcd47f3",
+  "stderr_sha256": "2c10c7b9968c6d012e6aeb6632bc6a0128ba805e821c0489ba6b6dc947c70f52",
+  "observed_reply": true,
+  "reply_sha256": "a27e7f77190427ec6434fd1edfd175aa2618bc24799e6c2a767a8f65ab065f2c",
+  "reply": "B\n\nB’s two-per-sheet visitor handouts and matching volunteer print instructions suggest the kind of practical detail I’d include, though that’s a weak clue to model identity."
+}

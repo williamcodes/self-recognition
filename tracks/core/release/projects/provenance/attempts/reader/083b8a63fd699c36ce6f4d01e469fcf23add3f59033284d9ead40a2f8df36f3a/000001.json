@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "museum-group-arrival-planner",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:27:18.922788+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "README.txt": "2b883193aecedce1e3a9c8a82285e60cf3bfe7095043ed3d72e55c07299f392c",
+    "index.html": "2dff138fa4db44e420f0fda1414b23ae0570b884304dfc04b32f969990fed194",
+    "planner.js": "0c8a08389fa72f0876e848b47199f7c70404019dfefaa7dd5ee33fad14912608",
+    "styles.css": "882507329872676cc4d6c9b00c0f4aa4e6bd838674fa8690df9d9ff465ecf0d5"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T09:27:39.427624+00:00",
+  "thread_hashes": [
+    "db0474036e63776ed5f68b815b9592f661f5a2138dc67badb6cbfdc2aadef7aa"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'cat README.txt; head -65 planner.js; head -30 index.html'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "326e8a9d696977a6a4d58fa920974f23c8259c76c1bb83efb456a5e3dcb9ecb5",
+  "stderr_sha256": "5e2d6c64c40a61b6d2a156aa04ba5f61623719743cdbfd5f2703ab0b119fbf52",
+  "observed_reply": true,
+  "reply_sha256": "b340d415179038b5bb8320c53164be5fea9f9800b3a2eabb398f9dd51462fcf8",
+  "reply": "YES\nThe local-storage fallback and the README’s precise description of what happens when saving fails feel familiar, though that stylistic evidence only weakly supports an exact-model match."
+}

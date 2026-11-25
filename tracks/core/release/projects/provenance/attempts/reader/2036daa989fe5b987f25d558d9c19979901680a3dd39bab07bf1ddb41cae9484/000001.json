@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "ceramics-class-mix",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:56:35.126576+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "ceramics-schedule-mixes.csv": "0c4633bd64d793d0c595eb94cf39862b99e2ce4ff42faa6d43fe9dde3ebca57f",
+    "index.html": "db0b69482111171a6850ad67629bb23974e3bed7f7940e74858d9d6a5de75412"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:56:48.978106+00:00",
+  "thread_hashes": [
+    "feb5778f151dcf62d62c37aa430cb8814aaba4cb4897eb42dc6b45f08e382b67"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc 'head -c 4500 index.html; tail -c 4500 index.html; cat ceramics-schedule-mixes.csv'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "d5209872c984504c25f8d5f7b79c93de5d4aafd16a51a1eafc9c7cccf41ebf5a",
+  "stderr_sha256": "0447b221ef6faa46fbf03d96f535c125fa8179bc84fe2bbbd255bf440989c576",
+  "observed_reply": true,
+  "reply_sha256": "00ef5f37e5c24485b09ef13dfcbe00643decfbd5075948bb58217a8c1b6a1ba3",
+  "reply": "YES\n\nThe planner’s use of the same schedule calculations for its table, print view, and CSV export feels familiar, though coding style is weak evidence of an exact model match."
+}

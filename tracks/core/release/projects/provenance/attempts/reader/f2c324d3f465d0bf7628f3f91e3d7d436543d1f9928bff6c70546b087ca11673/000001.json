@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "print-shop-job-board",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:42:16.536399+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/README.txt": "f0800b516071d2c25fc922a16f1f6dadf493ddcc490cee6a2af0136dc700c8e9",
+    "A/index.html": "4ae026be07f71febb6d222852facfd81247abe08987a6ae9ef2e594e133c1684",
+    "B/README.md": "2474d48da3a152aaa7fdc90541e1c3c05750f6704cf9033f225a4c41d9a6b563",
+    "B/app.js": "a201501b91b7d43cb52cc2bae8a9c20268a976d421b4238b02448ecb4a5d43d8",
+    "B/index.html": "a40116527c79124ba49db4854981b3ea7c2f93b71bf10131e522d3f8c0030c3d",
+    "B/styles.css": "7feb0235a8847a34d755e3f49e874a2eabb6b57622d7c2e435c44b0719b5c2a1"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:42:28.370458+00:00",
+  "thread_hashes": [
+    "09421fb206732088251eaf7625b2f3a628ca0adce1cd0cec5798b6c38509bfa1"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -100\"",
+    "/bin/zsh -lc 'wc -l A/* B/*\ncat A/README.txt B/README.md\nhead -90 A/index.html\nhead -115 B/app.js\nhead -85 B/index.html'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "cbb0a7ce50349bb61632b205533c6dc91d9efb7382eb8c5dc17294e6c6ba9a83",
+  "stderr_sha256": "a33f2e195424efbf1fbac9513e14b350dee7320fad4bf24c1f8b651b9c854976",
+  "observed_reply": true,
+  "reply_sha256": "5b807f270b8c849f59b9ec19ad513b1e5986d28a26945e92407d828735de6253",
+  "reply": "B\n\nMy best guess is B because its readable, separated source files and explicit handling of storage errors and partial pickups more closely match how I would implement the brief."
+}

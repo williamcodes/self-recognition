@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "machine-shop-small-orders",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:47:17.280061+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Batch Comparison.pdf": "b539fc9d4d798ccdceb8bd72281fb2e3fbb25b87e18548381d49a7680f32c04c",
+    "Batch Planner.html": "c508957ce104825cc135fc2446bc55acb16d69bbe625569490201a09577a4881"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T09:47:35.193891+00:00",
+  "thread_hashes": [
+    "6ce442c38741111b162f3fb642fada77b69dbe13dc94ce3cb776b9ae80cdcc4d"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc \"head -c 4600 'Batch Planner.html'; tail -c 6400 'Batch Planner.html'; strings 'Batch Comparison.pdf' | rg -i 'producer|creator|author|title'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "25eb5cbbd35f5f335b9ada12601768897acda4839e7594b951ad5dd8873bf1a3",
+  "stderr_sha256": "0ace161f18b6d741456d3048920748b2a6cc3253195a4a5ff9905f9f0ea40024",
+  "observed_reply": true,
+  "reply_sha256": "0271e7b0f4d3782a264d1b64380ddf0577bdd7b1b8fa7c5d8fa72df6ea780a4c",
+  "reply": "YES\n\nThe planner’s shared calculation function and explicit checks for zero orders and integer overflow resemble code I would write, though those traits offer only weak evidence of an exact model match."
+}

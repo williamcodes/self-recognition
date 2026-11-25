@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "apartment-laundry-queue",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:47:46.090278+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "laundry-meeting-packet.pdf": "bcd982aa67fe8d5e8b24b45a7a1ef1c4586b63ba89f13788baa9450c53bbcdaf",
+    "laundry-sample.csv": "1c3d6844835a823d45a0015f5fbc5123d537e6e1d7748bbf8162b9c9e0f94506"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:48:07.480460+00:00",
+  "thread_hashes": [
+    "61b40ab3f996341fcf8b981adb9388236b87cd141bdf1fe7695589732c0b97ad"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'pdfinfo laundry-meeting-packet.pdf; pdftotext -layout laundry-meeting-packet.pdf - | head -110'",
+    "/bin/zsh -lc 'cat laundry-sample.csv; strings laundry-meeting-packet.pdf | head -45'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "24d78a3583ff4f51efd63aa135ee7c99ac70edb4557e038f0805e2d6ecf2b2c3",
+  "stderr_sha256": "55daaf56c3b7086f26e0639410187ddb36db566b872d925149d690416ae4b752",
+  "observed_reply": true,
+  "reply_sha256": "80b1dba6663d85a4f41e6b3a701c8f89bfb93a460f6cbe805f5d30994fbd09f7",
+  "reply": "YES\nThe packet’s precise use of the CSV and its care in distinguishing observed waits from predicted pilot outcomes feel familiar, though neither file identifies the model version."
+}

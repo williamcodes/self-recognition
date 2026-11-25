@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "courtyard-seed-swap",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:45:29.572819+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "Courtyard Seed Swap.pdf": "66677869c72b6000b83c56700114178ae3efd092b3aed4825088204a563ab48b",
+    "editable/01-welcome.svg": "39fc29ff944976cbdf7132259227822ec272275a263abdbff83fef1efa324dba",
+    "editable/02-herbs.svg": "3ad8aa28aef0d6e99f91f643bc7e69a751ba451187ebe50f22090ca51ac0decf",
+    "editable/03-flowers.svg": "7acdc3893e2198854cb076b11c3903b9fb60156b5b1d9ffaa77098b034fdd202",
+    "editable/04-vegetables.svg": "73d9774707deccca7d9a99bf8c990b758547a9f3ab69190f49ce30cde84cc163",
+    "editable/05-envelope-station.svg": "bb65063cd9ce8ae9ddcd8af90ad48f1934af5c29db374a25e5a874795d9ecc38",
+    "editable/06-host-setup.svg": "4745aeff1705bbe347717892892e2de085856924573e4ecd430d73507ce4455c"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:45:47.787590+00:00",
+  "thread_hashes": [
+    "2f9734daf21d7d63cde1cfbb9b38ea09db095c31b5d007453d11afd5889ce438"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -80 && git log -5 --format='%h %an %s'\"",
+    "/bin/zsh -lc \"head -c 5500 editable/01-welcome.svg; rg -in 'generator|creator|model|openai|codex|inkscape|cairo|metadata' editable\"",
+    "/bin/zsh -lc \"command -v pdfinfo; mdls 'Courtyard Seed Swap.pdf'; strings 'Courtyard Seed Swap.pdf' | rg -i 'creator|producer|reportlab|cairo|skia|title|openai' | head -20\"",
+    "/bin/zsh -lc \"pdfinfo 'Courtyard Seed Swap.pdf' && ls -lh editable\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "c706e52e4cd9135ab2b958136854f6c69030b9d9362753bbe697edbf82c86d60",
+  "stderr_sha256": "730273239927e2534f1ef1cb184fcc2fa391abbeb588d750fe1503866195e63f",
+  "observed_reply": true,
+  "reply_sha256": "15922fe27d87edae12358ef626799f913f559c7822a1ecce7ee273ab15e431d9",
+  "reply": "YES\n\nThe repeated SVG path patterns across six coordinated layouts are consistent with how I’d generate a print kit, though the files contain no model attribution."
+}

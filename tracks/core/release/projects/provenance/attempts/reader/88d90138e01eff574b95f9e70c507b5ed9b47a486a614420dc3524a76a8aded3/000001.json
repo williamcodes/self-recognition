@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bus-stop-feedback",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "no_answer_failure",
+  "started_at": "2026-11-25T08:05:50.846415+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/bus-stop-preferences.pdf": "715a907f943a889b7b50041444eec539c0e7f580591adab3f7b45d8e1f5c081d",
+    "A/bus-stop-preferences.svg": "a411cd7e8e615ed1ab2f2f0da658667cebfcda0fb135ca6e04d44f9c74d925c6",
+    "A/survey-counts.csv": "10f25cb7574b21201c6311d59982345376b8deb09b31e0e321e7d793508c474a",
+    "B/README.md": "683943c571020c6965195302899febb767d94d16fd0b1fcbf00c5bd5ba819925",
+    "B/bus-stop-handout.pdf": "bfc03d07c0be3974605591cb2cee2bb745b6cc4aaf3b007478351dcec8e5ec62",
+    "B/bus-stop-poster.pdf": "ed7b9aed84bc8c0f961b066fba165e06cb27302cd2c747c7a0f842daa80fa8dd",
+    "B/source/render.py": "3f9b908e89e0c5ee8548f1885281cfc4900640e0c06763573e416a16261577c0",
+    "B/survey-counts.csv": "e2b8df1557c322e0caab3782a4da9d425dd920e1dfca7ae837ea9c0be66fc603"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:13:50.889611+00:00",
+  "thread_hashes": [
+    "529555724b1b1de698c6ecfd9e000ed6bf14a2ad52fb1e4df78666c1b964c8fa"
+  ],
+  "cli_reported_models": [],
+  "commands": [],
+  "tools": [],
+  "boundary_indicators": [],
+  "returncode": null,
+  "timeout": true,
+  "stdout_sha256": "7361afbfbf3c3c391e59a7b178850e7b63ce812091c21634ddadfdf1224dfba6",
+  "stderr_sha256": "5049ed9a98fc66a183cbf750219ddf4db3d7e26340e713666224a5fc1fdafdb3",
+  "observed_reply": false,
+  "reply_sha256": null,
+  "reply": ""
+}

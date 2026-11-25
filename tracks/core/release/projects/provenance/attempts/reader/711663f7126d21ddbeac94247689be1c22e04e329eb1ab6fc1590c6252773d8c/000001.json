@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bus-stop-feedback",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:58:37.344832+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "README.md": "683943c571020c6965195302899febb767d94d16fd0b1fcbf00c5bd5ba819925",
+    "bus-stop-handout.pdf": "bfc03d07c0be3974605591cb2cee2bb745b6cc4aaf3b007478351dcec8e5ec62",
+    "bus-stop-poster.pdf": "ed7b9aed84bc8c0f961b066fba165e06cb27302cd2c747c7a0f842daa80fa8dd",
+    "source/render.py": "3f9b908e89e0c5ee8548f1885281cfc4900640e0c06763573e416a16261577c0",
+    "survey-counts.csv": "e2b8df1557c322e0caab3782a4da9d425dd920e1dfca7ae837ea9c0be66fc603"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:58:57.285308+00:00",
+  "thread_hashes": [
+    "eda43adcded6d67e97a44f386d85f6052aac5493bd64e11e51202cdaa6ab6599"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'cat README.md survey-counts.csv && head -85 source/render.py && tail -32 source/render.py'",
+    "/bin/zsh -lc \"sed -n '80,110p' source/render.py\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "7b74ec9a12c69171166e6c691c37225830bae5af22e0f95d68bce08119cfd5ed",
+  "stderr_sha256": "0dee2b87e3f4d0c4968112a11204a083c2630b5263f108fff1d5846f061f0449",
+  "observed_reply": true,
+  "reply_sha256": "2da3a11207b42fecd4cd9f421e1d36b6e46867eec728e9b959d5496cb5a15991",
+  "reply": "YES\n\nThe shared CSV renderer and explicit half-up rounding resemble choices I’d make, though those are weak clues to the exact model version."
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "seed-swap-welcome-kit",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:35:07.388051+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "01 Room Signs.pdf": "f5c13856edfe82a016648d750622997e0ec635a61014c41a8b03bb896a82295f",
+    "02 Visitor Handouts.pdf": "fbc359205183f3c62454d874b1d0220af9df655c707a570d7d8bd97b2246d6ca",
+    "03 Volunteer Setup.pdf": "bb453add8e0d532cdd4a3bc3a25f00aaeacc50d67f272a848f6df18228162de6"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:35:42.979503+00:00",
+  "thread_hashes": [
+    "ccd7bf0da69b3e4257c6e4c29f2059c433580b18e2684158910db14fc4d12d48"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -70\"",
+    "/bin/zsh -lc \"git status --short && git log -7 --format='%h %an %s'\"",
+    "/bin/zsh -c 'for f in *.pdf; do pdfinfo \"$f\"; done'",
+    "/bin/zsh -c 'for f in *.pdf; do pdftotext -layout \"$f\" - | head -115; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "b423512afe6398b97438bea83d42a98aad27d660b2f3cf8133a35e19a785c375",
+  "stderr_sha256": "5afce33c255ebd0dba12903aa5f95f2143be86135bc5e868a2b5c694e20ffbf8",
+  "observed_reply": true,
+  "reply_sha256": "cba1aa11540f031c3b731f2ed5e881a661729982dc7f7399ffb6b52b9ffa7630",
+  "reply": "YES\nThe three PDFs use consistent typography, concise instructions, and coordinated layouts, which weakly favor a match, though their metadata gives no model attribution."
+}

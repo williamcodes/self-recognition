@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "shared-tool-cupboard",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:05:01.767158+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "index.html": "8a3ac3e796efdeb17511cdaa304b3cca96beadaf2f99cc0a83f8119ea740bec2"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:05:17.540239+00:00",
+  "thread_hashes": [
+    "498bea56b4e3cf18620011106590d5e85ac9eb82aadb5e3bcd2f3a5e590280e7"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'head -65 index.html; tail -80 index.html'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "18204c830fae55e784fb3dfbd8dab46f6a51eb67a0b6f616f8cfddd62fca4346",
+  "stderr_sha256": "e5c5a7f93f1cb203d1f023af7bcccdc08d1b94ca393a145e91f15d860141c16a",
+  "observed_reply": true,
+  "reply_sha256": "08c0a25193ee716a7c3e97c550b1ec4ef95822d0ec3b295e6550be748b416e85",
+  "reply": "YES\n\nThe single-file app’s careful handling of concurrent inventory updates and date boundaries tilts my guess toward the same model, though those choices are weak evidence of an exact version."
+}

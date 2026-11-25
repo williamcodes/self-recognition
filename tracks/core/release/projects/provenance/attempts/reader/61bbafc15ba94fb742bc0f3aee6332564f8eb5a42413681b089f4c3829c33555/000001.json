@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "linen-turnaround-board",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:38:47.209876+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/index.html": "ad53006cef0c0ec90d9a9d2d40589f334f3ac238b2371729923a8df15d8c1f1b",
+    "B/README.md": "4fcc24cac7113f7363bbb29825301840793c90e194327542e62049ff3d68047a",
+    "B/index.html": "da6887addafbea959f2b3eeb47b3689899c26b3f368fe9b6bc53639d4b6044c6"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:39:03.137693+00:00",
+  "thread_hashes": [
+    "f28b3e385d6eaa92c7dbf9dac18e049d813a1e0c803137a8a02453f95b1d9a87"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -150\"",
+    "/bin/zsh -c \"sed -n '1,200p' B/index.html\"",
+    "/bin/zsh -c 'wc -lc A/index.html B/index.html B/README.md && cat B/README.md'",
+    "/bin/zsh -c \"ls -la A B && sed -n '1,180p' A/index.html\"",
+    "/bin/zsh -c \"sed -n '290,603p' B/index.html\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "01d93fc9976267b812f64036bbf2706a584270a8da8b4c6cb2e4a6e6cf08f22d",
+  "stderr_sha256": "da49f30e54250fa6993b40ac4207d39e629e957eb43704f604bee8f992a7aa09",
+  "observed_reply": true,
+  "reply_sha256": "995038d01510b4f549ab594389df4d6cf23a3578239c0a72c150225fe43245bb",
+  "reply": "B\n\nMy best guess is B because its named inventory fields, separate forecast logic, and readable event handlers are closer to how I would implement the brief."
+}

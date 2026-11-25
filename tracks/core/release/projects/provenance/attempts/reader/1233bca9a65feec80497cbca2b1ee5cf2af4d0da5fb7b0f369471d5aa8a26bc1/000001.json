@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "museum-group-arrival-planner",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:44:16.617507+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "index.html": "23cb5c7dd51ebbfb595a9bfda9e8bfbc7f2cfa49f15f819ac7c19f39d687a45f"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:44:30.008792+00:00",
+  "thread_hashes": [
+    "12e5985f0aa239f6a29e02defc2f113ef58d8e95d53f18ebf5ff8d8b3d0628e3"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc \"git status --short && git log -5 --format='%h %an %s'\"",
+    "/bin/zsh -lc \"sed -n '1,230p' index.html && tail -150 index.html\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "151e0a2c3b861013f5df6a1c77b2c30339b1c35962bb249a0c3fb4627e1489e6",
+  "stderr_sha256": "2e86fd24fde046aa171128be11f21b870673915d3f34c2cbd128c1d69a10fc87",
+  "observed_reply": true,
+  "reply_sha256": "868251023ffcb8a8c0532d006ae4e667697e4640386cdea648d92e890b3b8b31",
+  "reply": "NO\nMy low-confidence guess comes from the single HTML file’s compressed CSS and long, concatenated JavaScript render expressions, which differ from how I would usually structure this app."
+}

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "ceramics-class-enrollment",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:45:55.678530+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/enrollment-report.html": "ad60bf68645a168bc4b45b1b6dced95994eef19044c5c1eb34e12aee93b0e178",
+    "A/enrollment-report.pdf": "673ca5263d0cd9497b83dad3224a1b5409766c9e3a6a083ea8ec3b14ef67c69d",
+    "B/class-runs.csv": "3a9e14b1bea885d307226eef8f7ef98000bc6fb6732c4d71abeaeda6570dfd36",
+    "B/enrollment-report.html": "85669df340dd4bdcc74df05d77a0566d26c06e5d78d44b62050341eea16492c6",
+    "B/enrollment-report.pdf": "395ec2033c3e49c77ea38394657605c64fe471d5be27e72beb5bf0215814eb43"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:46:10.033511+00:00",
+  "thread_hashes": [
+    "911a2cfb72669a395444c819fca835bab803fad99d9fd34e0823a38b58c35872"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -160\"",
+    "/bin/zsh -lc 'wc -c B/*; head -c 4800 B/enrollment-report.html; tail -c 1800 B/enrollment-report.html'",
+    "/bin/zsh -lc 'wc -c A/*; head -c 4800 A/enrollment-report.html; tail -c 1800 A/enrollment-report.html'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "73390bbd14c1fe867da0c427b1b9dd1ccb75f0936ea3371579b73f1294157fa3",
+  "stderr_sha256": "816967e39978a32985c778cdfc321ad3cc1a764c773c3f36c4aa0abb59ce7550",
+  "observed_reply": true,
+  "reply_sha256": "147ef4bc1fc2597be8d0ada95b7a86651b9897f2148793934e4b7184088bbdad",
+  "reply": "B\n\nB’s readable HTML, explicit row-group headers, and companion CSV resemble choices I’d make for this report, though they provide only weak evidence of the exact model version."
+}

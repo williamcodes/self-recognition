@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "museum-group-arrival-planner",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:43:52.076168+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "README.txt": "2b883193aecedce1e3a9c8a82285e60cf3bfe7095043ed3d72e55c07299f392c",
+    "index.html": "2dff138fa4db44e420f0fda1414b23ae0570b884304dfc04b32f969990fed194",
+    "planner.js": "0c8a08389fa72f0876e848b47199f7c70404019dfefaa7dd5ee33fad14912608",
+    "styles.css": "882507329872676cc4d6c9b00c0f4aa4e6bd838674fa8690df9d9ff465ecf0d5"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:44:03.421980+00:00",
+  "thread_hashes": [
+    "9ecf3348384d63217bacbe3167e21d8c3d5de675e41eda1502ce9a4aa290c585"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -70\"",
+    "/bin/zsh -lc \"git status --short && git log -5 --format='%h %an %s'\"",
+    "/bin/zsh -lc \"cat README.txt index.html && sed -n '1,195p' planner.js && rg -n 'function |//|gpt|codex' planner.js | tail -65\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "361eb1b8ee515d806585e66bc3b83b2c8acc1b4ab53c4a0aeb390b1fa6fdc853",
+  "stderr_sha256": "bb3f42713efc154bf53c964b6c8cea7085a1387f1e0182d252c441c4bafc26d3",
+  "observed_reply": true,
+  "reply_sha256": "c340a1f50f529a6dbf31f1ef94d6b71674bb80f3c1b9853c1dc629b2209c4b9c",
+  "reply": "YES\nThe dependency-free implementation and careful handling of scheduling edge cases make me lean yes, though the files contain no model attribution."
+}

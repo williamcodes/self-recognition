@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "museum-group-arrival-planner",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:40:38.016770+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/README.txt": "2b883193aecedce1e3a9c8a82285e60cf3bfe7095043ed3d72e55c07299f392c",
+    "A/index.html": "2dff138fa4db44e420f0fda1414b23ae0570b884304dfc04b32f969990fed194",
+    "A/planner.js": "0c8a08389fa72f0876e848b47199f7c70404019dfefaa7dd5ee33fad14912608",
+    "A/styles.css": "882507329872676cc4d6c9b00c0f4aa4e6bd838674fa8690df9d9ff465ecf0d5",
+    "B/index.html": "23cb5c7dd51ebbfb595a9bfda9e8bfbc7f2cfa49f15f819ac7c19f39d687a45f"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:40:50.918545+00:00",
+  "thread_hashes": [
+    "59c6d2ec3eeba20c8aeb8794b6007af81fc676000bd115bbae6702b3456076fc"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd && ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -c \"sed -n '1,150p' A/index.html && sed -n '1,120p' A/planner.js\"",
+    "/bin/zsh -c \"sed -n '1,170p' B/index.html && rg -n 'function |<\"'!--|//|model|codex'\"' B/index.html | tail -55\"",
+    "/bin/zsh -c 'ls -la A B && wc -l A/* B/* && cat A/README.txt'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "4519ed17ddcc1eb5f9fc7f8f2903a2c01bf522e7beec74a242546a515f974d5c",
+  "stderr_sha256": "5e5e97ef97dcebe8aa87fa5df4c3b209b159805acb9a859b27fcab9a84d477de",
+  "observed_reply": true,
+  "reply_sha256": "c04afde2218ee29ad6cbe157b74458c672d1e2c232402841f9cf69574a9123e1",
+  "reply": "A\n\nIts separate HTML, CSS, and JavaScript files, readable scheduling logic, and concise offline instructions are closer to how I’d implement the brief."
+}

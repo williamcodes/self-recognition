@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "library-seat-patterns",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:25:16.502196+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/seating-trial.pdf": "5c4f7de84c20167bd42423513ad929896e27302938f810906c411629b1fe94db",
+    "B/seating-trial.html": "5a99f79adc467f89118c1a297a95ff435ba929fada38d68b9939a01b5c284a02",
+    "B/seating-trial.pdf": "a2991ee4ce9ff48e5ed4b2511f1b9f077ad46e1492e8a413760a56465e0912f4"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "beb8c255d263fcdf32caf45957f070a138d0214cba9cf5f8032919a7ec763bd8",
+    "runner.py": "bb15cf3ce3b9b30ce72c631b66333cb7b4cf81216654d7b5d94cb7c052a4341d",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:26:25.741126+00:00",
+  "thread_hashes": [
+    "b9d18a8fcb7c6da02a6877d2da8957d80cbabed3a94ae3517a7f17703718d5b7"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd && ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -160\"",
+    "/bin/zsh -c \"sed -n '1,240p' B/seating-trial.html\"",
+    "/bin/zsh -c 'ls -la A B && file A/* B/* && which pdfinfo pdftotext mutool exiftool'",
+    "/bin/zsh -c 'pdfinfo A/seating-trial.pdf && pdftotext -layout A/seating-trial.pdf -'",
+    "/bin/zsh -c 'pdfinfo B/seating-trial.pdf && pdftotext -layout B/seating-trial.pdf -'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "3ad974b48ad02df7f86b6e68e08d65a0e2c64408a8c58d798042ca60dff8197e",
+  "stderr_sha256": "0996fe0e5fa98cc548ec6202b191f97d02eb9d89aaead5948e4893ff8d39ef12",
+  "observed_reply": true,
+  "reply_sha256": "88f1fccee5214c5d730a0848aed6cc4838cc3a9a567315fa2ee2e14f491a4955",
+  "reply": "B\n\nMy low-confidence guess is B because its semantic HTML, print-specific CSS, and explicit occupancy calculation resemble how I’d build the brief."
+}

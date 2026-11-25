@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "market-stall-weather-review",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:44:03.427413+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "index.html": "48e652cb1039ace9009ba85922923edde28bb3bb2c361d8b46a3cd9ae7e71637"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:44:15.620747+00:00",
+  "thread_hashes": [
+    "6c37be13eef5b66a8ff7992430e60f9b4f2cb7bd466ad2a36e18a9c37dffda9e"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd && ls -la && rg --files --hidden -g '\"'!.git'\"' | head -90\"",
+    "/bin/zsh -c \"sed -n '256,650p' index.html\"",
+    "/bin/zsh -c \"sed -n '1,255p' index.html\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "7197b0e55eef2cf0fe8750df84c78a603b09bb6a7def6e9028a26d8b9f048e8b",
+  "stderr_sha256": "bdda39a2be8e9c967987dfeb9ead117b22b36862b3d5cbe7524b3b1968bb9cd0",
+  "observed_reply": true,
+  "reply_sha256": "661ebfecde737e30073da431b31d7d1a60a156eb058c9b7a7c021ac72edb7f15",
+  "reply": "YES\n\nMy best guess comes from the self-contained HTML, custom canvas artwork, and careful handling of validation and cross-tab edits, though the file contains no direct model attribution."
+}

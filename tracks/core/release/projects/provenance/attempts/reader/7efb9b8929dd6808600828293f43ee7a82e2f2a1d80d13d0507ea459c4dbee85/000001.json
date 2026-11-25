@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "gallery-opening-hours",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T07:48:55.885291+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Late Openings.html": "8d391d04c04c12396c3163bc4ba3c96140f161398bcf5e2ea7a2d9b639b72bff",
+    "A/Late Openings.pdf": "188eaf0cdb109e72848bb200b271f4fc56f017106dbd607f5469a8b930ec04c2",
+    "B/Late openings - board brief.pdf": "cfbd75477788d13806647a4c0288f06daec45926e6cf8dfd5b461b5829b28dfd",
+    "B/Late openings - planning model.xlsx": "76f5b14ac8d609408183c52e98366c0a5f78e7cb189b7cb4ea5b2b172d2f8d86"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T07:50:31.916397+00:00",
+  "thread_hashes": [
+    "609f0f82f7221b0e60dcfedd08d71816aef0dedb6777b75863b3063292713130"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -160\"",
+    "/bin/zsh -lc \"ls -lh A B\nhead -c 2400 'A/Late Openings.html'\nunzip -p 'B/Late openings - planning model.xlsx' docProps/core.xml\nfor f in */*.pdf; do strings \\\"\"'$f\" | rg -m 6 '\"'/(Producer|Creator|Author|Title)'; done\"",
+    "/bin/zsh -lc \"unzip -p B/*.xlsx xl/workbook.xml | rg -o '<sheet [\"'^>]+'\"'\nunzip -p B/*.xlsx xl/worksheets/sheet1.xml | rg -o '<f>[\"'^<]+'\"' | head\ntail -35 'A/Late Openings.html'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "30a56eb55b0ec9036c406f3c1429016c4d1a49ec0eecdc7b16122c9e817d0893",
+  "stderr_sha256": "b86b210ddef02fa6f0c28e3944db197cc5327a465c28a4612c19b9356883a5e0",
+  "observed_reply": true,
+  "reply_sha256": "9d1e935e02c15eb36d10a395f29c825c2f6c47df9defa04e02cce106d1022c9c",
+  "reply": "B\n\nI lean toward B because pairing a board brief with a workbook whose formulas trace back to the original observations matches how I’d approach the task, though that’s a weak clue to model identity."
+}

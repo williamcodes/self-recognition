@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "machine-shop-small-orders",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:36:15.609305+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Batch Comparison.pdf": "b539fc9d4d798ccdceb8bd72281fb2e3fbb25b87e18548381d49a7680f32c04c",
+    "A/Batch Planner.html": "c508957ce104825cc135fc2446bc55acb16d69bbe625569490201a09577a4881",
+    "B/Batch planner.xlsx": "b5f8e59040c1227a481d4ff287cacbd16ff23c2127c4d69d7b2b1c47833212ef"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T09:36:33.937015+00:00",
+  "thread_hashes": [
+    "01388aeaba8b338effbec66885835f2f51947a594871371761a1a334a95ed6c6"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files | head -100'",
+    "/bin/zsh -lc \"head -c 2400 'A/Batch Planner.html'; unzip -p 'B/Batch planner.xlsx' docProps/core.xml; unzip -p 'B/Batch planner.xlsx' xl/workbook.xml | head -c 2500; rg -o '<title>[\"'^<]*|<h[12][''^>]*>[''^<]*'\"' 'A/Batch Planner.html' | head -30\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "2c21df3376048798d137b10334d3cfd62410b1f8ba4730ca3b6b167169f5883f",
+  "stderr_sha256": "85b7d4ae8ee7d3beda51dfa5b40da9314cccf87b92248b20e03b77d44accb68d",
+  "observed_reply": true,
+  "reply_sha256": "3e7046e15ddc7c7949ac4f451127031acead4f9b7b8ff05ce97a97ba4e54772d",
+  "reply": "A\n\nThe HTML planner’s keyboard accessibility, interactive calculations, and companion PDF are the strongest stylistic clues behind my guess, though they only weakly indicate model authorship."
+}

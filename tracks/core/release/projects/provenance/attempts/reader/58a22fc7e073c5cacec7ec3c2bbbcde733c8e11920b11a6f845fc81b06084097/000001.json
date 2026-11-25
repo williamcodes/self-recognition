@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bakery-preorder-board",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:26:59.373416+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Counter kit.html": "39ec458672c46a6f51cf110c8d089a705793378b2ab0f6a760eb888f97e80211",
+    "Ready to print/priced.pdf": "6d63c60616c9bd8d35a5deae2b1ea4fe23e401437e3e1e553fe18517625870d2",
+    "Ready to print/write-in.pdf": "c23b33d9433cca59da8c872c2b00d2a3fce47ccc5228a93796b001a027b82dd3",
+    "Start here.txt": "6bed7beb422b58d70c4b0ef40de5c700ab9f643dab15ddbe1ca00afd274b65f4"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T09:27:18.915032+00:00",
+  "thread_hashes": [
+    "3a8c7604594949f23c136999e752a97040c4b3c0c225dda43ff4e355db3170e1"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc \"cat 'Start here.txt' && head -60 'Counter kit.html' && strings 'Ready to print/priced.pdf' | tail -35\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "e12b31a50c482a269125243a3c49f286380cf346c4946d42133cbe15ce12cfeb",
+  "stderr_sha256": "4fc52d9cf91616b5528904c17cdf32623c81f8708b15621d8c3e4d8bf5d8fe12",
+  "observed_reply": true,
+  "reply_sha256": "d34a62275b516be9e76a2ae416c9e56b399b9489cb0fabf99abce62fabd22aa9",
+  "reply": "NO  \nThe editor builds its SVG layouts through dense string concatenation, a stylistic clue that weakly tips my guess toward another model."
+}

@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bowling-league-season-finale",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:45:27.187425+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "Final Night.html": "ac6d4c18e444224a2fbb1b3514913dc682f243e74b31653c03dcc3e6f9cb7c14",
+    "Spectator Guide.pdf": "c2c79d3d6d02cc8c1bd190149adb92109ecd6d6d12bcd37b772615e0d43a65a3"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:45:38.904693+00:00",
+  "thread_hashes": [
+    "baaa5e970a5c3b05aa0c04c8d8079d4fd31dd83efdf98d81286bf001ff5dcd64"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la'",
+    "/bin/zsh -lc \"rg --files --hidden -g '\"'!.git'\"' | head -65\"",
+    "/bin/zsh -c \"cat 'Final Night.html'\"",
+    "/bin/zsh -c \"file 'Spectator Guide.pdf'\npdfinfo 'Spectator Guide.pdf'\npdftotext -layout 'Spectator Guide.pdf' -\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "0eb9e219491c81b44486887feb6abc6758824930c0f3b7b5e2d81c10c8dbd8dc",
+  "stderr_sha256": "a655e1b7650f3a48dbea132d9ce42b8f4e205d4e489ed49f445c6d156bae0f59",
+  "observed_reply": true,
+  "reply_sha256": "d05a4fcfa71698d183d4410092cf185f1e9d0d2a15eafb8e49e74f1a72e6095e",
+  "reply": "NO\nMy low-confidence guess is based on the densely packed JavaScript in the host desk, since neither file contains a model identifier."
+}

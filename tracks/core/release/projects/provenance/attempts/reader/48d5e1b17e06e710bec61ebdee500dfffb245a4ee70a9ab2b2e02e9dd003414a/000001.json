@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "canal-path-field-journal",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:36:08.308143+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/Canal shapes - adult guide.pdf": "b3c731a2a1613f097dcdb210ce90a1b0029bb75b6df04a0bec175c7dda8b3d03",
+    "A/Canal shapes - child journal.pdf": "eaf355f5fec45b6204f356f230bda770a8f5fb08738752ac1a93666f6e66deac",
+    "B/Adult Guide.pdf": "bd9db9773a2c0ba5682886e6f4274b110fe19cb3e855dfc5487040e263d29574",
+    "B/Child Journal - A4.pdf": "0ff15e9c498c740c8442c3d59d2a4f48e5267cfa58c19abbcd03d1fc89203ff8",
+    "B/Child Journal - US Letter.pdf": "5302b91f078286abf45069f40cc8b392c56ed27f8d888fb0628e19d017cc9538"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:37:40.884340+00:00",
+  "thread_hashes": [
+    "177294cd44aeb47c00403b2b31772f22a43913317bf21d55a259eaafe88837fc"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -150\"",
+    "/bin/zsh -c 'ls -lR; which pdfinfo pdftotext pdftoppm; for f in {A,B}/*.pdf; do pdfinfo \"$f\"; done'",
+    "/bin/zsh -c \"for f in A/*.pdf 'B/Adult Guide.pdf' 'B/Child Journal - US Letter.pdf'; do printf '\\\\n%s\\\\n' \\\"\"'$f\"; pdftotext -layout \"$f\" -; pdffonts \"$f\"; done'",
+    "/bin/zsh -c \"rg -a -o -i '.{0,25}(creator|producer|reportlab|quartz|pymupdf|cairo|skia|author).{0,60}' A B\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "7650c3d7d15c79426ecef76e56e6cc2293339554375ae016873fba7f5be7200f",
+  "stderr_sha256": "0d3510689f83a2a49ed4f8a2df68c335cd8effde3938dcf233c04ecd4d2334cc",
+  "observed_reply": true,
+  "reply_sha256": "80eb069444970bedfa93def6dcfa07b2ffddfc0ddd4b178393f32a654275ce2d",
+  "reply": "A\n\nMy best guess is A because its foldable four-panel journal and tightly matched adult guide look like the compact, print-first solution I’d likely build."
+}

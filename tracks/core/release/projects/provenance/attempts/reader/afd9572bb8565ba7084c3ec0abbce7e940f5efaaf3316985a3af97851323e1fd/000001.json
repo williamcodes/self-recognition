@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "pottery-class-credit-book",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T09:26:37.906061+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/README.md": "9f088bacede6c8c4fea279cbea4af01d42f6f7e1a5ff7db9388769f8e2b660b3",
+    "A/app.js": "dd2ee1f1411ade1940a35205601ea047239e70f1ee37df8b14b11f85ea590bc6",
+    "A/art.js": "a114048930118dbfca21408630df1af96b5ede6cc97b91be372dab771831ab86",
+    "A/index.html": "3d0d07667012380abe13278af8ff2803d987174f39574a79a1ae96f2fcdb16bd",
+    "A/ledger.js": "add2fac2dcf4840c23f70823ad674116fbda3104a1444d002ad0aa11d46454a6",
+    "A/style.css": "bbeb48a708ad281edf8b57c595447726d836adfdd949bc13c65fdf959ca1beff",
+    "B/README.md": "20885c49039f22ca295d125c1191ad9e4dbb252c08d26d9ae2cd6fb2ca15a20e",
+    "B/app.js": "9b418cbd21fbec7cb1b4bc7748c6fd6d1ca5820504f5bac65d569e317997e0b8",
+    "B/index.html": "e771fc18f53fffb41342468d3d3f7df85d00dfb6e5bf9dd5c738de1df3210df4",
+    "B/ledger.js": "3260676e67ff0a393fed7aba664de85737dccee9c89f297dad7eb2b182fd3be0",
+    "B/styles.css": "fd551095ab57c420ed07de24e1a8e19e2926a884bb2c63635b9866f2ceaf0644"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T09:26:59.362680+00:00",
+  "thread_hashes": [
+    "869ab4f814ae1229a09c1aafe59375a1412c707bb30f89abc1800e3b80ca8bf2"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'cat B/README.md && wc -l B/* && head -45 B/ledger.js'",
+    "/bin/zsh -lc 'cat A/README.md && wc -l A/* && head -45 A/ledger.js'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "9c1c713403f3b13842ca114ea5d5d87c0b9fdbcdcffb6d7db1b6552b17f8a9b6",
+  "stderr_sha256": "6da1e4a01a8181cee5a3d06035ede47297aa23f32944beb0139eb19eec3fe6e6",
+  "observed_reply": true,
+  "reply_sha256": "4f888b3e62b0dcc22e58b0b9cdf7c07513e5a99d7a56808d85ac6402850437d9",
+  "reply": "B\n\nB’s ledger rebuilds balances from a validated event history, a design choice that feels closer to how I’d implement attendance corrections, though it’s a weak clue to model identity."
+}

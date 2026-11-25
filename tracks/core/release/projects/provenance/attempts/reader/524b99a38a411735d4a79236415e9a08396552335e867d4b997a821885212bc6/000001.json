@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "footbridge-counter-coverage",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:42:12.180871+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Counter placement.xlsx": "69079af35caba21a42e1d1c3dcb6212282dad0c38f4335964a98f5c491c2f629",
+    "Placement brief.pdf": "fa794a8db34a61b85ca32a2d701ca0b0e81779e4bb7e7723248675fad94b151a"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:42:34.929301+00:00",
+  "thread_hashes": [
+    "40c4d03fde4c55daa5ac72b11da3a7198db93231fac1f796d29568520608ad10"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc \"unzip -p 'Counter placement.xlsx' docProps/core.xml; unzip -p 'Counter placement.xlsx' xl/workbook.xml | head -c 3000; strings 'Placement brief.pdf' | tail -70\"",
+    "/bin/zsh -lc \"unzip -p 'Counter placement.xlsx' xl/sharedStrings.xml | sed 's/<[\"'^>]*>/ /g'\"' | head -c 3800\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "cbfcf3a11b1e902ee7412b9bc43b768aac2433c44aaec106e5d7f2382953b015",
+  "stderr_sha256": "04dd76e46624ecbdbd76085df009dc1689257187be1b832753202d346ad8182e",
+  "observed_reply": true,
+  "reply_sha256": "234d7268cbdfcaf35d88bc91fd23388debc37292c9c0f7b34a6babe64c64e1ca",
+  "reply": "YES  \nThe workbook’s editable weekend weight and break-even calculation resemble how I’d approach the placement decision, though that’s a weak clue to the exact model version."
+}

@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "floating-book-club-launch",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:50:48.038212+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Host packet.pdf": "71f3c9bfe69240fbbbe5ddf0800f282b71612629e0fd8a93ea6c678e39de0397",
+    "A/Invite message.txt": "16e1e65242f9a0805b72b76ec8102c8f67bb89240b32f3ee6a7c5870b8d4ab3a",
+    "A/Kickoff invitation.pdf": "07888b9a855e845c9af890b033dddc89d2879cfec21d785fbd9ae59aa4aaa050",
+    "A/Start here.txt": "2595c73abd15f785429392688bccb5384d942142773dcdfab00820b4ad79a8ef",
+    "A/Table signs.pdf": "3a5918bf6a8ddc8e7eed01f09a1708780d5734134b246f1e8a5315da56152e63",
+    "B/Customize-invitation.html": "47c6d161d95f97fbd2045cdc18f5f08e0bfc8dbd5b314e1b6039c0377328a6fa",
+    "B/Host-guide.pdf": "a7df1a8850879c3bce75bda2e30722d8b2f2829b46b407bd2868c61092c41220",
+    "B/Invitation.pdf": "8f633abad1ae4f6a6c9fa9940c71c8199d762434405ca8786ad1edd7e1c7a48e",
+    "B/Reading-cards.pdf": "6360790e356f1949acd7bd57795f080cfee5d748605bb827b540c2f0343f309c",
+    "B/Share-card.png": "44d4aaf1b279384bad50af6f36173fb07baa6fab52a7ba5e74cbc9b972060feb"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:51:02.416734+00:00",
+  "thread_hashes": [
+    "4c9a51affb51858599abf3fc46b2cf35b7b0121632892030ddddc0c603ec34f9"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'ls -la; rg --files | head -100'",
+    "/bin/zsh -lc 'cat A/*.txt; head -c 2300 B/*.html; ls -lh A B; which pdftotext'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "7be234aed996a708d0a259a4843ab2a735f4183d346fa5c89e4dfc7d766b702b",
+  "stderr_sha256": "d4f5214b84d03fa3e122fc6b226b7418041383d801938aa8dae36ddf4177775a",
+  "observed_reply": true,
+  "reply_sha256": "921c11e65f09743b043c0dc174efa8cfb603ff9d92d98c8057d2a5b92448aec2",
+  "reply": "B\n\nMy best clue is B’s self-contained invitation editor, which uses one SVG for both print and PNG export, though that implementation choice offers only weak evidence of model identity."
+}

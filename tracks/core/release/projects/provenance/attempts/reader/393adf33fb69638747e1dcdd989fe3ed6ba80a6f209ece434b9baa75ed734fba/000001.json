@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "picture-book-pop-up",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:06:06.848878+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "Fold and Find - exhibition kit.zip": "4ae38748184640ee391ad83eb0691953b84e554eb3c4ef117b84724542015639",
+    "Identity/Fold and Find.svg": "919974cc8bba4709adee5c10128a9e008a54d2cd9b59312d6eb4c18a7133cc56",
+    "Identity/Illustrated stories.svg": "df47595a60346da3798ddfeabdf55b5236054c9580bc895d23c93e04f44fd20d",
+    "Identity/Movable pieces.svg": "4c7ef4a29bf3c1dca019fa408005717b3244312dbc3908b397746486bd22b48a",
+    "Identity/Paper folds.svg": "f5c0e3f562086fbf2391240f0a287d0f74c59c6f5fe17536e34a344c42e9a82f",
+    "Print/01 Entrance.pdf": "af2c355d94f8d1a36f0136f4c6fe99538177b8eafa15b96af696fd235fcee5e7",
+    "Print/02 Table signs.pdf": "f9a145b16bdfa3985e17358375ba9ab83e8661d1f5082ee9afc65331c0104ee7",
+    "Print/03 Family finding sheets.pdf": "e9dc41c6b71282d9ba921d2932a2e309953e5c44486a5b4bda79e77676d08511",
+    "Print/04 Book labels - fillable.pdf": "b29d49fa994bc82508c66500c609888a0eca5672c1c8b38ce6ee7871737c37c7",
+    "README.md": "ca0dfdc09bf9d46375e5e13fd34e833b40c5bfb65226af697335339b942351a6",
+    "Staff/Setup and updates.pdf": "9af9acd2222940935cef58ae8f43670ae27ee09470ad5e4931cdae7b13124693"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "8aadc6a205898aa90dd2223922f6d41a8b6ab4b4889402e8d0f458c428f1f186",
+    "runner.py": "81d690da2a2199e7b1cfe86ea1d558c8062a50aa40b87d35438cc25de0a55706"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:06:19.156753+00:00",
+  "thread_hashes": [
+    "928141a10b147588d2c8b347f5c7ae72c5a5ca7a8102bcc6d2a70a1be8142003"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc \"git status --short; git log -6 --format='%h %an %s'\"",
+    "/bin/zsh -lc \"cat README.md; head -50 'Identity/Fold and Find.svg'\"",
+    "/bin/zsh -lc \"unzip -l 'Fold and Find - exhibition kit.zip'; for f in Print/*.pdf Staff/*.pdf; do pdfinfo \\\"\"'$f\" | head -9; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "17d05d74046f4cc4182a7cdf598d1003cd1a5317daf678e31130ceca155d8a34",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observed_reply": true,
+  "reply_sha256": "27c5ced854da7773e400466eb80ad20c588f900f3b99d56a145f80d3f52fce9f",
+  "reply": "YES\n\nThe Cairo-generated print files, fillable labels, and concise setup guide fit how I’d build this kit, though the files contain no model identifier."
+}

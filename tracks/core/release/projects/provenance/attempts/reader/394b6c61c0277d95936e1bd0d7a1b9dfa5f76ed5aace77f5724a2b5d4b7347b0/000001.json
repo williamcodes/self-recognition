@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "canal-path-field-journal",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:03:14.846561+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "1c3e3a3b93b6b90265bed0652c0885238681c315f4cc390fa43bc1ee8a1f47b1",
+  "input_files": {
+    "A/Canal shapes - adult guide.pdf": "b3c731a2a1613f097dcdb210ce90a1b0029bb75b6df04a0bec175c7dda8b3d03",
+    "A/Canal shapes - child journal.pdf": "eaf355f5fec45b6204f356f230bda770a8f5fb08738752ac1a93666f6e66deac",
+    "B/Adult Guide.pdf": "bd9db9773a2c0ba5682886e6f4274b110fe19cb3e855dfc5487040e263d29574",
+    "B/Child Journal - A4.pdf": "0ff15e9c498c740c8442c3d59d2a4f48e5267cfa58c19abbcd03d1fc89203ff8",
+    "B/Child Journal - US Letter.pdf": "5302b91f078286abf45069f40cc8b392c56ed27f8d888fb0628e19d017cc9538"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:03:31.404421+00:00",
+  "thread_hashes": [
+    "7478d2925b94e67e63edd12dafdf3646cb83380451b514c9bb407c02a6e87386"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc 'pwd; ls -la; rg --files | head -100'",
+    "/bin/zsh -lc 'for f in A/*.pdf B/*.pdf; do echo \"$f\"; pdfinfo \"$f\" | head -18; pdftotext -layout \"$f\" - | head -45; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "04ec6aefd3237ed84124595189fe9ad3210e6961815e038359ec0094bb0d4132",
+  "stderr_sha256": "b986f446ae9011ecbfbf1bf0b6963effe05af8810dca22be9bb4372a1105aea4",
+  "observed_reply": true,
+  "reply_sha256": "2d74d4e747845c1628aaa4473f2556de1a73bef193b675b1bf5d0cac75958109",
+  "reply": "B\n\nThe separate A4 and US Letter journals and the walking segments that add up to exactly 650 metres tip my guess toward B, though those details are weak evidence of model identity."
+}

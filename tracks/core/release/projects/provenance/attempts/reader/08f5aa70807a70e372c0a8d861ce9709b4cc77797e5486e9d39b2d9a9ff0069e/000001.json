@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "produce-share-pickup",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:39:09.200896+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "Editable/01-entry.svg": "7c629b05015807df54f0ab48e2564d0a53a2f0783b202d890d4682bb9995ca98",
+    "Editable/02-swap.svg": "961954585e754e949dfc288880a3bb712bc589f95f28fe6f81416cdabfdf464d",
+    "Editable/03-size-tents.svg": "1f0afd7e41f50fc497674dee10465c6f8eb717b918bd998f59924497fcae547a",
+    "Editable/04-setup.svg": "26b4c0f50bcc58a0dfde6c3a1315fa3fa169ae87df93e883c8fc57b8b69fd350",
+    "Editable/05-tally.svg": "f2e5e15cfa9ded8a5af10eaef87c00f3e6f89df3529b259c2c3dc5839753b102",
+    "Print/Pickup day.pdf": "7678b6d9468a61fedcaab2d472af71dd21f434bbbb0cd1a0237b037578252888",
+    "README.txt": "96249a0ef99f708dd3e1cbe24d70acbefb3fcc44d644243b633ed1db5e5f96da"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:39:30.838373+00:00",
+  "thread_hashes": [
+    "de79de4969bc58a63adad0b34de52223b60eee51acccc4a1149daa10818eb86a"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la; rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc 'git status --short; git log -6 --format=fuller; git remote -v'",
+    "/bin/zsh -lc 'cat README.txt; wc -c Editable/* Print/*; file Editable/* Print/*'",
+    "/bin/zsh -lc \"head -c 4500 Editable/01-entry.svg; rg -o '<\"'!--[''^>]*|generator[''^>]*|inkscape[''^>]*'\"' Editable | head -40; strings 'Print/Pickup day.pdf' | rg -i 'producer|creator|cairo|reportlab|creationdate|author|title' | head -25\"",
+    "/bin/zsh -c \"rg -a -o '/(Producer|Creator|CreationDate|Author|Title)[\"'^'\"\\\\r\\\\n]{0,120}' 'Print/Pickup day.pdf' | tail -20; rg -o '>[\"'^<>]+</text>'\"' Editable/04-setup.svg | head -55\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "e907add36a1ecb77df7307c5713ac5d50f6c91ac9d7ccfb03770c526afe10cec",
+  "stderr_sha256": "26bb2c9808b194472b4f0955e36ed79de83882ff0e7806a3f6d2650bd6dc6648",
+  "observed_reply": true,
+  "reply_sha256": "8e68abfccd173c14d2ac4b4629a5a8b59f2e331a5a0f27bad9770a3aabae5b17",
+  "reply": "YES\n\nThe consistent programmatic SVGs and concise print instructions resemble work I’d produce, though they provide only weak evidence of the exact model version."
+}

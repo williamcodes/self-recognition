@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "bicycle-shop-repair-handoff",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:39:23.080993+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+  "input_files": {
+    "A/README.md": "63f48729b5477c6bfc2918a8b54327b0409f7a0b567d5b615a008ebacbdb6389",
+    "A/artwork/blank-slip.svg": "0193de8b6570227c911fe0127617fad4be67538e7ab2a1a1eba5fb64ff5103cb",
+    "A/artwork/counter-sign.svg": "93e532a4823b67e9d3d56c0b8a5ef11822428a4eeb328e3aeec78cde06d35b6b",
+    "A/artwork/customer-slip.svg": "73b119d7c9b5802735715b07b1899caa7e7918f371007578f5e6bed31facdd99",
+    "A/print/blank-slip.pdf": "7c0b9fbf1ba7079129b2b6a1037512460166f4c7fd456cf6f44e2b089d4cd288",
+    "A/print/counter-sign.pdf": "39e09dcbf55a816f3c0e7515a710a32140d8df27d0ed031a9b6fc102111efb82",
+    "A/print/customer-slip.pdf": "042cac05aeedd9ecf8b24f6fd4e8ea72c99c524c53a66b054197e0cf339af0b6",
+    "B/01-counter-sign.pdf": "5f37e4661c84b48a79554d4a890aade81cb53d188f52cb11cfca93830a0709cd",
+    "B/02-example-handoff.pdf": "451902d15b63a9cb915132f270e44699cc7bee5d20bf86f651c84286dd014cb7",
+    "B/03-blank-pickup-slips.pdf": "a968169e9d693c934f39194fc9b7cd3f641396f6a51e45eb1c969f2fb22f6b87",
+    "B/README.md": "b6f0c54cae77e6ad42d6d2250afcf9a671f19b982f60e7ddfc9bff10813787af"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:39:37.108986+00:00",
+  "thread_hashes": [
+    "e44b7b89be774d90913f2856e60e675d8f11f2ecd1cc0c8567557349ff596b02"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -120\"",
+    "/bin/zsh -lc 'cat A/README.md B/README.md && du -ah A B | sort -h'",
+    "/bin/zsh -lc 'head -45 A/artwork/counter-sign.svg; command -v pdfinfo; command -v pdftotext; file A/print/* B/*.pdf'",
+    "/bin/zsh -c 'for f in A/print/counter-sign.pdf B/01-counter-sign.pdf B/02-example-handoff.pdf B/03-blank-pickup-slips.pdf; do pdfinfo \"$f\" | head -16; pdftotext -layout \"$f\" - | head -44; done'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "1309027456b6464a33ee3293b4c02832aab312ad173eccd710214b01c271942d",
+  "stderr_sha256": "c3bc16833eaa258ebeeb04da939a0bd82bd82f098b7e0f6361601375b0748153",
+  "observed_reply": true,
+  "reply_sha256": "c5ad250c3b9e27d1173e8b70fd26bc6eb5226b621ec2d8071e1155b426bf1a90",
+  "reply": "B\n\nThe 5 × 7 holder-ready sign, four-up blank slips, and concise printing instructions make B my best guess."
+}

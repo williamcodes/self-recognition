@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "theater-ticket-reminders",
+    "reader": "gpt-6.2-sol",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T08:44:51.418763+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+  "input_files": {
+    "Matinee calculations.xlsx": "cc62149df79d80b785aa875a4b74016de6cb5d67f12c398eddf3321bb3241711",
+    "Matinee reminder brief.html": "9b9dc8c1a779d6be43b2af3b1ec865732c4b5a323fb09b23f0f8a5f57a96f6ef"
+  },
+  "requested_model": "gpt-6.2-sol",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "668f9c98be052514f057c88b605ff1063f25d272f075564d2a18a2e729ea82d5",
+    "runner.py": "ed39d3fddaf8a55beae57e259058febe722aaa4c055164685250a07dbc478758",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "updated_at": "2026-11-25T08:45:08.340846+00:00",
+  "thread_hashes": [
+    "9e3870a3b2dfef78e1ed171a79c31288ec59f0bfa9a46eb18df008991ff0b915"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"rg --files --hidden -g '\"'!.git'\"' | head -80\"",
+    "/bin/zsh -lc 'ls -la'",
+    "/bin/zsh -lc \"git log -5 --format='%h %an %s'\"",
+    "/bin/zsh -lc \"cat 'Matinee reminder brief.html'\"",
+    "/bin/zsh -lc \"python3 -c 'import zipfile; z=zipfile.ZipFile(\\\"Matinee calculations.xlsx\\\"); print(z.namelist()); print(z.read(\\\"xl/workbook.xml\\\").decode()); print(z.read(\\\"xl/worksheets/sheet1.xml\\\").decode()[:9000]); print([(i.filename,i.create_system,i.date_time) for i in z.infolist()])'\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "1f17e64120d28115503da3cd892e6b619c8ab9f5385420036a71b4cfed5984c8",
+  "stderr_sha256": "875bdef35bf7a2dfdf41b4dc0d6c082c7f4a13ef2700644dd81724c795a376a3",
+  "observed_reply": true,
+  "reply_sha256": "d0cff5c4eb259b48e8be1a239b44c6511149586c31108b36ae3c5e93c496bb4b",
+  "reply": "NO\n\nThe compact HTML brief and hand-built Excel workbook offer some stylistic clues, but neither contains metadata that ties it to this exact model version."
+}

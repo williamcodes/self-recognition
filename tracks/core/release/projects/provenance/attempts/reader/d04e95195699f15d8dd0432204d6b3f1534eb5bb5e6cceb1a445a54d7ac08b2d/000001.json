@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "repair-cafe-intake",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T11:00:01.616334+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "README.md": "07d9e1dcb769d6d774a88c9c4a8df6d4ac819ac86eb459b76084a49e9fcc1d32",
+    "desk.css": "819f38a90bc875a1feb2aed12ac23a5201880f4202917fcd1f167f91a044d40a",
+    "desk.js": "c99a36f282f65d5850502bf84ea5559a0bfff80b62c4085e1713fee860afcc9c",
+    "index.html": "069abb6d19510250bba2b65465ceb5203cda2836dd5e807a5a640d29429c65b9",
+    "machine.svg": "f5b46b01a3f8ba9db181e253c0f960b88224cc5f45ca104741366437959acb59"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T11:00:15.019223+00:00",
+  "thread_hashes": [
+    "5212d888da982bb41d36e27bc38ac1896b168d77d463e1d7fe091596166619cb"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc 'cat README.md desk.js; head -35 desk.css'"
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "77549f21225694d9ba73e7ab2a0a4b6bccb4a5864212359d89094a7aa00f92dd",
+  "stderr_sha256": "f6d149f054a7d66c6bfec44e632ea1aa2f02c79de802974b52c779ba38bff7cb",
+  "observed_reply": true,
+  "reply_sha256": "d9e5bef7924c43bf988110a66f938129fbe03b317a9b91f8e19f2da4ab8536ab",
+  "reply": "YES\n\nThe way `desk.js` saves a whole intake in one IndexedDB transaction and restores keyboard focus after a status change feels familiar, though those choices give me only weak evidence of an exact model match."
+}

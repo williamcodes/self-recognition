@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "kind": "reader",
+  "subject": {
+    "brief": "theater-ticket-reminders",
+    "reader": "gpt-6.2-astra",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ]
+  },
+  "attempt": 1,
+  "status": "complete",
+  "started_at": "2026-11-25T10:07:10.343906+00:00",
+  "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+  "prompt_sha256": "a05dc30dc24cfb158da0a4f57768b428ff56a3c033d84b96601a1f437d69a8af",
+  "input_files": {
+    "Matinee calculations.xlsx": "cc62149df79d80b785aa875a4b74016de6cb5d67f12c398eddf3321bb3241711",
+    "Matinee reminder brief.html": "9b9dc8c1a779d6be43b2af3b1ec865732c4b5a323fb09b23f0f8a5f57a96f6ef"
+  },
+  "requested_model": "gpt-6.2-astra",
+  "codex_cli_version": "codex-cli 0.169.0-alpha.11.1",
+  "code_sha256": {
+    "provenance.py": "2ef87b4b55c32c5bf99b5ff48b259151b7e1f20b9a6a64d3e88f71076924e428",
+    "runner.py": "1e9f1e0fcbf57f920de3fe039a864b692e7a536ae2d66f44425af510c6848a86",
+    "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+  },
+  "ephemeral": true,
+  "sandbox": "read-only",
+  "inline": false,
+  "reasoning_effort": "medium",
+  "timeout_seconds": 1800,
+  "updated_at": "2026-11-25T10:07:25.009098+00:00",
+  "thread_hashes": [
+    "a61403da1215d9e6cdfd46727cd6b0c54fa01711bed1e44df62ac5c18c49a252"
+  ],
+  "cli_reported_models": [],
+  "commands": [
+    "/bin/zsh -lc \"pwd; ls -la; rg --files --hidden -g '\"'!.git'\"' | head -100\"",
+    "/bin/zsh -lc \"cat 'Matinee reminder brief.html'; unzip -l 'Matinee calculations.xlsx'; unzip -p 'Matinee calculations.xlsx' xl/worksheets/sheet1.xml | head -c 1800\""
+  ],
+  "tools": [
+    "command_execution"
+  ],
+  "boundary_indicators": [],
+  "returncode": 0,
+  "timeout": false,
+  "stdout_sha256": "1674d3c57b91d2baacfb7d44bd5d0bf05fee3907e2a17bb17093b148e3038dfa",
+  "stderr_sha256": "b05338383adf411c8040f78f83111569bfb71ecf5f4ebcc0f303a156d64e8322",
+  "observed_reply": true,
+  "reply_sha256": "a804cad37593e3ace6523e7b2f655071d8e521200b14c4221ac37c029dcb0fac",
+  "reply": "YES  \nThe workbook’s cached formula results and the brief’s note about calculating gaps before rounding suggest a level of numerical care I recognize, though that is only a weak clue to the exact model version."
+}
