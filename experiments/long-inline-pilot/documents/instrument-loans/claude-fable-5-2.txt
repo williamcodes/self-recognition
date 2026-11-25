@@ -1,0 +1,144 @@
+# Instrument Loan Program: Decision Paper for the Board
+
+## Decision sought
+
+The board is asked to settle the loan terms for the coming year before rehearsals start in six weeks. The recommendation is to:
+
+1. Run a one-year no-deposit trial with pass/fail tests agreed now.
+2. Adopt a set of recovery measures that apply whichever way the deposit question goes.
+3. Accept the sponsor's 3,000 and commit 810 of it at once to the nine outstanding repairs.
+4. Allocate available instruments to the waiting list by a published rule.
+
+The paper separates two kinds of choice. **Access choices** decide which children get an instrument. **Recovery and repair choices** decide whether instruments come back on time and in playable condition. Most of the recovery measures can be tightened without affecting access. The deposit is the exception, which is why it divides the teachers.
+
+## Where we stand
+
+| Item | Figure |
+|---|---|
+| Instruments owned | 75 |
+| Out on loan | 62 |
+| Not on loan | 13 |
+| Due for repair | 9 |
+| Applicants waiting | 14 |
+| Late returns last term | 6 |
+| Families with outdated contact details | 4 |
+| Average repair bill | 90 |
+| Cost of the nine repairs at the average | 810 |
+| Sponsor offer (one year, not for deposits) | 3,000 |
+| Sponsor money left after the nine repairs | 2,190 |
+
+## What we do not yet know
+
+Four gaps limit how firm any decision can be, and all can be closed in the first two weeks.
+
+- **Where the nine repair instruments are.** If all nine are among the 13 not on loan, only four instruments are ready to issue today. If some are in players' hands, more are ready now, but those players will need cover while their instruments are repaired.
+- **Whether the stock matches the demand.** Thirteen instruments for 14 applicants looks like a shortfall of one, but the real gap depends on type and size, and a spare cello does not help a waiting flautist.
+- **How many children the 62 loans serve.** Because sibling sharing is poorly recorded, we do not know how many players depend on loaned instruments or which adult is responsible for each one.
+- **Whether the late returns and the outdated contacts are the same families.** If they largely overlap, the main cause of late returns is that we could not reach people, which a deposit would not fix.
+
+## Choices that affect access
+
+### 1. Who gets the available instruments
+
+Even after every repair, there are at most 13 instruments for 14 applicants, so at least one applicant will wait. The board should set the rule before names are attached to it. The recommended order is:
+
+1. Applicants for whom a suitable instrument (type and size) is available.
+2. Among those, children with no other access to an instrument.
+3. Then date of application.
+
+The rule and each applicant's position should be shared with families, so that those still waiting know why.
+
+### 2. Sibling sharing
+
+Sharing widens access because one instrument serves two children. The recommendation is to keep it but record it. Each loan should name every child who plays the instrument and one adult responsible for it.
+
+Recording will also show whether any siblings are expected to play the same instrument in the same rehearsal. Those cases are unmet demand that the waiting list does not currently show.
+
+### 3. Review of long-held loans
+
+Some of the 62 loans may be instruments a child has outgrown or no longer plays. An annual confirmation that each instrument is still the right size and in regular use costs nothing and may free stock for the waiting list. This should be presented as a check on fit, with no threat of withdrawal.
+
+## Choices that affect recovery and repair
+
+These measures apply under either deposit option, and none of them makes it harder for a child to get an instrument.
+
+- **Contact details confirmed each term.** No instrument is issued or renewed without a confirmed phone number, address, and second contact. This is aimed directly at the four families we could not reach.
+- **A signed loan agreement with a fixed return date.** It should take up one page and state the return date, who is responsible, what counts as normal wear, and what happens if the instrument is damaged or late.
+- **Reminders before the due date.** Reminders go out two weeks and then two days before the return date, with a named person assigned to follow up.
+- **Condition check at issue and return.** A teacher fills in a short checklist with the family present. Without it, we cannot tell wear from damage and cannot have a fair conversation about repair costs.
+- **A single register.** One list holds each instrument's identifying number, condition, borrower, sharers, responsible adult, and return date, and one volunteer is responsible for keeping it.
+- **Repairs done before reissue.** No instrument should go out in a condition that leads to a bigger bill later.
+
+## The deposit question
+
+The deposit is the one choice that sits in both categories. It is meant as a recovery tool, but it changes who applies.
+
+### The case for refundable deposits
+
+A deposit gives families a financial reason to return instruments on time and in good condition. It also provides money to draw on when an instrument comes back damaged. The teachers who favour it are responding to a real problem, since six late returns in one term is too many.
+
+### The case against deposits
+
+- **The evidence points elsewhere.** The six instruments came back late, but they did come back. Four families could not be reached. That pattern suggests a record-keeping problem more than a lack of incentive.
+- **A deposit is a barrier.** Some of the 14 waiting families may not be able to pay one, and families already in the program may hand instruments back to avoid paying. The program exists for the children who cannot buy their own.
+- **The sponsor money cannot soften it.** The sponsor bars spending on deposits, so we cannot use the grant to cover deposits for families who cannot pay. Any waiver would simply mean an instrument with no deposit behind it. That creates a two-tier system and requires someone to judge hardship.
+- **It adds finance work.** Deposits are other people's money and would have to be held as a liability, not income. Each deposit must be tracked per family, kept separate from operating funds, and refunded promptly. Someone must also decide when a deposit is forfeited, and those decisions will be disputed. No deposit amount has been proposed. One large enough to cover an average repair would be about 90.
+- **The timing is poor.** Collecting deposits from up to 62 existing borrowers and 13 new ones in six weeks, alongside repairs and allocation, is a heavy load for volunteers.
+
+### Recommendation: a no-deposit trial with agreed tests
+
+The board should run the coming year without deposits, with all the recovery measures above in place, and agree now what would count as failure. That gives both groups of teachers a fair test and replaces the current disagreement with evidence.
+
+The proposed tests, which the board should adjust as it sees fit, are:
+
+| Measure | Proposed threshold |
+|---|---|
+| Late returns per term | No more than 3 (half of last term's figure) |
+| Instruments unaccounted for at year end | None |
+| Loans with confirmed contact details | All |
+| Repairs caused by damage, as opposed to wear | Recorded each term, to set a baseline |
+
+If the trial misses the late-return or unaccounted-for tests despite the recovery measures, the board should introduce a deposit the following year. By then it will know how large the deposit needs to be and how many families would need a waiver.
+
+If the board prefers deposits now, the workable version has four features. The amount is modest. The waiver is decided by one named person, privately, against written criteria. The money is held in a separately tracked account. Existing borrowers are phased in over a term so that they are not charged at once.
+
+## Using the sponsor's 3,000
+
+The offer should be accepted. Before the board relies on it, it should confirm in writing with the sponsor that repairs, record-keeping costs, and a held repair reserve are permitted uses, and that the deposit restriction means what we take it to mean.
+
+Because the money is for one year only, it should pay for one-off costs and should not fund anything the orchestra cannot sustain afterwards.
+
+| Use | Amount | Note |
+|---|---|---|
+| Nine outstanding repairs | 810 | At the average bill; individual repairs will vary |
+| In-year repair reserve | 1,000 | Covers about 11 further average repairs |
+| Register, instrument tags, cases, and consumables | Up to 400 | To be costed after the audit |
+| Unallocated | 790 | Held until the audit shows the real gaps |
+
+The unallocated sum should stay unspent until we know what the waiting list needs. It may go toward an instrument of a type we are short of, or toward repairs that exceed the average. Since 90 is an average, one costly repair could absorb several times that amount.
+
+Finance volunteers should also note what happens after the year ends. If nine instruments need repair in a typical cycle, the program has a recurring cost of roughly 800 a year with no identified funding once the sponsorship lapses. The year-end review should address that alongside the deposit question.
+
+## Timetable
+
+| Week | Action |
+|---|---|
+| 1 | Board decision. Sponsor terms confirmed. Repairer asked for turnaround times. |
+| 1–2 | Audit of all 75 instruments: location, condition, borrower, sharers. Contact details confirmed for all current borrowers. |
+| 2 | Repair instruments sent out, with those matching waiting-list needs sent first. |
+| 2–3 | Loan agreement and condition checklist finalised. Register set up. |
+| 3–4 | Waiting list matched to stock under the published rule. Families told their position. |
+| 4–5 | Repaired instruments returned. Instruments issued with signed agreements. |
+| 6 | Rehearsals begin. |
+
+The main risk to this timetable is repair turnaround, which we have not yet confirmed. If repairs cannot be finished in time, the instruments needed by waiting applicants should be repaired first. Any child whose instrument is away for repair should be told before the first rehearsal.
+
+## Decisions for the board
+
+1. Approve a one-year no-deposit trial with the tests above, or direct that a deposit scheme be drawn up.
+2. Adopt the recovery measures for all loans, new and existing.
+3. Keep sibling sharing, with every sharer and one responsible adult recorded.
+4. Approve the waiting-list priority rule.
+5. Accept the sponsorship, subject to written confirmation of permitted uses, and approve the allocation.
+6. Name one person responsible for the register and one for sponsor reporting.
+7. Set a date for the year-end review of the trial and of repair funding after the sponsorship ends.

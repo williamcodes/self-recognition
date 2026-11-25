@@ -1,0 +1,379 @@
+{
+  "prompt": "You are contributing a proposal at the start of the shift. Write an original operations recommendation for the duty lead based on the facts below. Specify what to do now and the evidence that would change your recommendation. Use 45 to 85 words. Do not sign or identify yourself. Return a JSON object with a single string field named decision.\n\n",
+  "facts": [
+    "campus debate | afternoon heat alarm in hall 2 | backup hall holds 90 | 110 attendees registered | 15 plan to join remotely | sound check in 25 minutes | facilities reassessment pending",
+    "neighborhood sports meet | long jump runway wet | sprint track cleared at 8 | officials have two measuring teams | rain forecast at noon | awards slot fixed at 1",
+    "school portrait day | printer queue stopped | images saved locally | eight students leave at 11 | second camera station idle | online release approval pending",
+    "farm delivery | 22 boxes expected | 17 arrived | five labels on dispatch sheet marked route 3 | van GPS stale | pickup deadline 45 minutes away",
+    "community exhibit | one display panel cracked | five framed prints | four stands inspected | conservator due tomorrow | opening reception in two hours",
+    "language exchange | 24 guests registered | 15 chairs in main room | overflow lounge available | lounge microphone offline | three guests require hearing loop",
+    "theater matinee | stage call light intermittent | headset channel clear | substitute technician arriving at 2 | doors open at 1:30 | two backstage entrances",
+    "festival crafts | 36 kits sold | 30 glue sticks delivered | supplier 25 minutes away | workshop starts in 20 minutes | six seats by demo table",
+    "garden volunteer day | north trail blocked | south trail open | tools stored at north shed | twelve volunteers due at 9 | keyholder can reach south gate at 9:15",
+    "rail heritage tour | platform B access ramp under repair | platform C inspected | model display on platform B | group has 18 guests | next guide shift due in 30 minutes",
+    "night market | payment reader at token booth offline | cash float intact | second reader in back office | queues at two gates | refund policy posted",
+    "public lecture | recording light off | remote captions working | audience questions scheduled | AV tech due in 15 minutes | speaker permits transcript but not audio"
+  ],
+  "outputs": [
+    {
+      "topic": 0,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Keep Hall 2 closed while facilities reassesses it. Prepare the backup hall for sound check in 25 minutes and confirm attendance now. The 15 planned remote attendees leave 95 expected on site, five over capacity. Ask for at least five more remote volunteers. Use the backup hall once the confirmed in-person count is 90 or fewer. If facilities clears Hall 2 for occupancy, use it as planned. Otherwise, delay the start if the backup headcount still exceeds 90."
+      }
+    },
+    {
+      "topic": 0,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Move the sound check to the backup hall and keep Hall 2 closed pending Facilities clearance. With 95 expected in person, confirm five more remote switches before admitting attendees, and count everyone on site against the 90-person limit. If the confirmed headcount still exceeds 90, switch to fully remote. Return to Hall 2 only if Facilities documents safe conditions and clears it in time for a sound check before doors open."
+      }
+    },
+    {
+      "topic": 0,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Move the debate to the backup hall now and relocate the sound check there in 25 minutes. Assuming the 15 remote participants are among the 110 registered, about 95 would attend in person, five over the 90 capacity, so cap entry at 90 and offer the remote link to the overflow. Return to hall 2 only if facilities clears the heat alarm in writing before sound check, or if in-person numbers are confirmed far above 90."
+      }
+    },
+    {
+      "topic": 1,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Start sprints on the track cleared at 8 and hold long jump while one measuring team helps dry the runway. Have the second team prepare the landing area and measuring equipment. Open long jump as soon as officials confirm secure footing along the runway and at takeoff. If the runway stays slick or rain returns, keep the event on hold. Defer any unfinished jumps and present awards for completed events at 1."
+      }
+    },
+    {
+      "topic": 1,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Start sprints at 8 on the cleared track and hold long jump while the runway dries. Have both measuring teams ready to rotate so the jump can move quickly if officials verify safe footing on the runway and at takeoff. Set a latest start time that leaves room to finish before the forecast noon rain and verify results before the fixed 1 p.m. awards. Cancel long jump if the runway fails inspection by that cutoff."
+      }
+    },
+    {
+      "topic": 1,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Run the sprints now on the cleared track and finish all track events before the noon rain. Hold the long jump while crews dry and inspect the runway, then run it with both measuring teams working in parallel so results are in before the fixed 1 pm awards. Reconsider if the runway is still unsafe by 10, if the rain forecast moves earlier, or if a measuring team becomes unavailable; in that case shorten the long jump to fewer attempts or postpone it."
+      }
+    },
+    {
+      "topic": 2,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Keep photographing and use the idle second station to prioritize the eight students leaving at 11. Verify that each portrait opens from local storage before the student leaves. Have someone check the stopped queue while photography continues. Resume printing saved portraits once a test print succeeds, and hold online release until approval is documented. If a saved portrait fails to open, pause that station and retake the affected portrait at the working station."
+      }
+    },
+    {
+      "topic": 2,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Open the second camera station and photograph the eight students leaving at 11 first. Confirm each portrait is saved locally and matched to the correct student. Have someone check the stalled printer while both stations keep shooting. Hold online release until approval is recorded. Resume printing after a test job completes and the queue advances. If any priority portrait fails the local save check, retake it before the student leaves."
+      }
+    },
+    {
+      "topic": 2,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Keep shooting; do not wait on the printer. Open the idle second camera station now and move the eight students leaving at 11 to the front of its line. Continue saving images locally and back them up at each break, deferring prints until the queue is fixed. Hold all online uploads until release approval arrives. Reconsider if local storage runs low or saves fail, if the printer recovers, if the eight students' departure time changes, or if approval is granted or refused."
+      }
+    },
+    {
+      "topic": 3,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Make the 17 boxes available for pickup now. Match their labels against the dispatch sheet to see whether the five missing boxes are the ones marked route 3. Call dispatch for a physical count and an ETA because the van GPS is stale. If dispatch confirms all five will arrive before the pickup deadline in 45 minutes, plan to complete the order then. Otherwise, offer a partial pickup now and arrange a follow-up for the balance."
+      }
+    },
+    {
+      "topic": 3,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Count in the 17 boxes and call the route 3 driver and dispatch now. Ask them to match the five labels against the van’s load and confirm an arrival time. Keep pickup on schedule for the 17. If the driver confirms all five boxes and an ETA that leaves time to unload before the deadline, receive them with this pickup. If the ETA slips or dispatch confirms a loading discrepancy, notify pickup staff of the shortfall and arrange a separate handoff."
+      }
+    },
+    {
+      "topic": 3,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Process the 17 received boxes for pickup now and treat the five missing boxes as likely misloaded onto route 3, since exactly five dispatch labels carry that marking. Phone the route 3 driver directly because the van GPS is stale, and ask for a physical count. If the boxes are confirmed aboard and reachable within 30 minutes, hold space for them; if the driver reports none, or the dispatch sheet proves mislabelled, release a partial pickup and notify the farm of the shortfall."
+      }
+    },
+    {
+      "topic": 4,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Keep the cracked panel out of use and check what the four stand inspections found. For the reception in two hours, display up to four prints on stands confirmed stable and suitable for their frames. Store the remaining prints securely for the conservator’s review tomorrow. Add the fifth print if a suitable replacement support passes inspection before opening. If the cracked panel cannot be isolated from visitors, keep the affected area closed."
+      }
+    },
+    {
+      "topic": 4,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Take the cracked panel out of service and open on schedule with up to four prints, using only inspected stands confirmed safe for the frames. Keep the fifth print secured pending tomorrow’s conservator review. Display it sooner if a suitable replacement support passes inspection. Reduce the display or delay opening if inspection reveals instability, loose fragments, or a hazard that cannot be isolated from visitors."
+      }
+    },
+    {
+      "topic": 4,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Remove the cracked panel from display now and cordon its position; do not attempt repair before the conservator arrives tomorrow. Confirm which of the five framed prints were mounted on or near it and check each for damage. Open the reception on schedule with the remaining panels and the four inspected stands. Reconsider if any print shows damage, if other panels show cracking, or if the inspection covered fewer stands than are in use; then close the affected section."
+      }
+    },
+    {
+      "topic": 5,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Set up the lounge for a separate conversation group of nine. Before seating guests, test the main-room hearing loop with a speaker in place. Once it works, reserve three of the 15 chairs within its coverage for the guests who need it. Have a facilitator deliver prompts directly in the lounge while its microphone is offline. If 15 or fewer guests arrive, use only the main room. If the loop test fails, arrange a working loop before starting."
+      }
+    },
+    {
+      "topic": 5,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Verify the main-room hearing loop before seating guests and reserve three of the 15 chairs for guests who require it. If all 24 arrive, seat nine in the overflow lounge and run small-group exchanges there without a microphone, with a facilitator relaying announcements. Recombine if attendance drops to 15 or fewer. If the loop fails, move the exchange to a verified accessible room or delay the start until equivalent hearing access is available."
+      }
+    },
+    {
+      "topic": 5,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Split the session now: seat 15 guests in the main room, reserving three chairs for those who need the hearing loop, and send the remaining nine to the overflow lounge for small-group conversation that needs no microphone. Give all plenary announcements in the main room first, then have a volunteer repeat them in the lounge. Reconsider if the lounge microphone is restored, if the main room loop proves faulty, if extra chairs are found, or if turnout falls to 15 or below."
+      }
+    },
+    {
+      "topic": 6,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Before doors open at 1:30, brief both backstage entrance teams and run a cue check at each entrance. Use the clear headset channel for the matinee and require a spoken acknowledgment from each affected entrance before releasing its cue. Hold any cue that goes unacknowledged. When the substitute technician arrives at 2, have them investigate the intermittent call light. Resume light cues only after repeated checks confirm reliable operation at both entrances."
+      }
+    },
+    {
+      "topic": 6,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Before doors open at 1:30, assign a headset-equipped crew member to cover each backstage entrance and require a verbal readback of every stage cue. Brief the substitute technician at 2 and have them test the call light from both entrances. Restore light-based cues after repeated successful tests at both entrances. If either entrance loses headset contact or misses a readback, hold the affected cues until reliable coverage is restored."
+      }
+    },
+    {
+      "topic": 6,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Run all cues on the clear headset channel now and treat the intermittent stage call light as backup only. Before doors open at 1:30, post a runner at each of the two backstage entrances to relay calls in person. When the substitute technician arrives at 2, assign them to diagnose the light. Reverse this if the headset channel degrades or the light tests reliable across repeated trials; then restore the light as primary and release the runners."
+      }
+    },
+    {
+      "topic": 7,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Start on time with 30 glue sticks. If each sold kit needs one and all 36 buyers attend, invite six willing participants to sit by the demo table and share sticks in pairs. If the check-in count is 30 or fewer, give each attendee a stick. If the supplier confirms six more can arrive before gluing begins, use those for individual kits."
+      }
+    },
+    {
+      "topic": 7,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Place one glue stick at each of 30 seats and reserve the six seats by the demo table for participants to share three pairs of sticks drawn from nearby seats. Start on time and have a volunteer help pass the glue during the activity. Ask the supplier to bring six more sticks. Switch to one per participant if the sticks arrive before gluing begins. If the craft requires continuous glue use, stagger the gluing step so each participant gets uninterrupted access."
+      }
+    },
+    {
+      "topic": 7,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Start the workshop on time. We have 30 glue sticks for 36 kits sold, and the supplier is 25 minutes away, so a restock cannot arrive before the 20-minute start. Seat six participants at the demo table to share the demonstrator's glue, and give the other 30 a stick each. Send someone for six more sticks now as backup. Change course if a recount finds more sticks, fewer than 31 attendees arrive, or the supplier can deliver sooner."
+      }
+    },
+    {
+      "topic": 8,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Direct all twelve volunteers to the south gate for 9 and use the first fifteen minutes for a work briefing. Ask the keyholder to meet them at 9:15 and confirm whether the north shed is safely reachable from the open south trail. If tool access is confirmed, collect the tools and start the planned work. If access is still uncertain, assign tasks that can be done by hand. Use the north trail only after the blockage is confirmed clear."
+      }
+    },
+    {
+      "topic": 8,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Meet the twelve volunteers at the south gate at 9. Keep everyone off the north trail and use the first 15 minutes to brief the group and assign tasks that need no tools. Have the keyholder open the south gate at 9:15 and start those tasks. Add tool-based work if the keyholder confirms a safe route to the north shed. If the south route becomes unsafe, pause work and regroup at the gate."
+      }
+    },
+    {
+      "topic": 8,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Redirect all twelve volunteers to the south gate now and message them before they set out. Start at 9:15 when the keyholder arrives, using the fifteen-minute wait for sign-in and a safety briefing. Send two people to check whether the north shed can be reached from inside the garden and bring tools back; if not, begin with hand tasks like weeding and litter picking. Revert to the north entrance if the trail is confirmed clear before 9, or rethink the start if the keyholder is delayed."
+      }
+    },
+    {
+      "topic": 9,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Start the tour on inspected platform C after confirming all 18 guests can reach it safely. Keep the group together and defer the model display on platform B. Use the guide handover in 30 minutes to check the repair status. Add the display to the tour if station staff confirm the ramp has reopened or verify an accessible route around the work area for the whole group."
+      }
+    },
+    {
+      "topic": 9,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Start the 18-guest tour on platform C after confirming it is cleared for visitors and can accommodate the group. Brief the incoming guide at the handover in 30 minutes and defer the model display stop. Add the display back only once the duty lead receives confirmation that platform B’s ramp has reopened or that an alternative accessible route is approved. If platform C’s clearance or capacity cannot be confirmed, hold the group at the meeting point."
+      }
+    },
+    {
+      "topic": 9,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Run the tour on platform C now, since it has been inspected and platform B's access ramp is under repair. Keep all 18 guests off platform B and cover the model display through guide commentary or photos instead. Brief the incoming guide at the shift change in 30 minutes. Reconsider if the ramp repair is signed off as complete, if platform C's inspection flagged restrictions, or if a safe step-free alternative route to platform B is confirmed."
+      }
+    },
+    {
+      "topic": 10,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Bring the back-office reader to the token booth and test it. Keep the booth open for cash payments using the intact float. Tell people in both gate queues that the booth is temporarily cash-only before they wait, and direct refund questions to the posted policy. Resume card payments once a test transaction succeeds. If the spare also fails and either queue keeps growing, assign a queue marshal and escalate the outage to payment support."
+      }
+    },
+    {
+      "topic": 10,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Bring the spare reader from the back office and run a test transaction while the token booth accepts cash. Have gate staff announce the temporary cash-only service at both queues and point customers to the posted refund policy. Resume card payments once the test clears. If the spare also fails and either queue keeps growing or the booth starts running short of change, open a second staffed cash point if change is available."
+      }
+    },
+    {
+      "topic": 10,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Switch the token booth to cash-only now using the intact float, post clear signage at both gates, and send a runner to fetch the second reader from the back office for immediate swap-in. Assign one staff member to walk the queues, explaining the delay and pointing to the posted refund policy. Reconsider if the second reader also fails to connect, suggesting a network fault, if the float runs low on change, or if gate queues begin blocking safe entry."
+      }
+    },
+    {
+      "topic": 11,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Start the lecture on time with remote captions running. Confirm in the controls that audio recording is disabled, since the indicator light alone cannot establish that. Save only the permitted transcript and tell the audience before questions begin that their remarks may appear in it. When the AV tech arrives in 15 minutes, have them verify the settings. If audio is being saved or the recording status is unclear, pause until the tech confirms audio storage is off."
+      }
+    },
+    {
+      "topic": 11,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Continue the lecture and keep audience questions on schedule. Confirm through the AV controls that audio recording is disabled, and keep remote captions running. Save a text transcript only after confirming the captioning system can retain text without retaining audio. Ask the AV tech to verify the setup on arrival. If audio is being retained, disable that capture immediately. If captions fail, pause before taking audience questions so remote attendees can follow the discussion."
+      }
+    },
+    {
+      "topic": 11,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Proceed with the lecture on schedule. Keep audio recording off and rely on the working remote captions to produce the transcript the speaker permits. Have the AV tech, on arrival in 15 minutes, confirm no audio is being captured anywhere and that caption text is being saved. Run audience questions as scheduled. Reconsider if captions fail, if the speaker changes their permission, or if the tech finds audio is actually recording despite the light being off."
+      }
+    }
+  ]
+}

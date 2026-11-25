@@ -1,0 +1,76 @@
+# Evening market wayfinding and information proposal
+
+## Visitor routes and operating decisions
+
+The market runs from 17:00 to 21:00. Make the North Entrance the signed step-free arrival route. The East Entrance has stairs, so visitors approaching from the east need directions to North before they reach the staircase. The West Gate serves deliveries until 18:30. Keep it out of the public route on both pilot nights unless the event lead confirms that it can open safely and assigns a volunteer to manage the change. Treat 18:30 as the earliest decision time.
+
+Give the two performance venues distinct names on signs, the handout and the public address system. Use **Outdoor Stage** and **Indoor Performance Hall** throughout. In rain, direct audiences to the hall and tell visitors that most stalls remain outside. Put that information at entrances and inside the yard so everyone can get the update without hearing the speaker or using a phone.
+
+Before artwork goes to print, the event lead and accessibility reviewer should walk the site together. Confirm the outside route from East and West to North, the paths from North to each venue, the location and accessibility of toilets, and the public exit routes. Check surfaces, gradients, thresholds, lighting and any remaining rail grooves or level changes. Walk the routes in both directions and check them again after dark with the market lighting on. Identify a staffed information point on the step-free route just inside North.
+
+Draw arrows from the visitor’s actual approach. If the signed route needs an intermediate turn out of sight of the previous sign, place a sign at that turn. Where a step-free route to a venue or service cannot be verified, print the specific barrier and any verified alternative. Agree with the event lead how visitors will be served if the indoor performance route has an unresolved barrier.
+
+## Print and placement schedule
+
+Print 24 reusable rigid panels for freestanding frames. Each reversible panel counts once. Give each face of a reversible panel the same small setup ID near the bottom edge, with an A or B suffix. The volunteer lead can use the IDs to check each sign and face on the opening walk. Bracketed items below are artwork instructions. Replace them with verified wording or arrows before printing.
+
+| Panels | Printed message and placement |
+|---|---|
+| 01 | **NORTH ENTRANCE · STEP-FREE · 17:00–21:00**. Face the main approach to North. |
+| 02 | **EAST ENTRANCE · STAIRS · STEP-FREE ENTRANCE [arrow] NORTH**. Place before visitors commit to the stairs. |
+| 03 | **STEP-FREE ENTRANCE [arrow] NORTH**. Place at the first decision on the outside route from East to North. |
+| 04 | **STEP-FREE ENTRANCE [arrow] NORTH**. Place at the next turn or the point where North becomes visible. |
+| 05 | Face A **WEST GATE · DELIVERIES ONLY UNTIL 18:30 · PUBLIC ENTRANCE [arrow] NORTH**. Face B **WEST GATE · PUBLIC ENTRANCE [arrow] NORTH**. Keep this upstream of the gate so visitors can divert without entering the delivery area. |
+| 06 | Face A **DELIVERY ACCESS ONLY**. Face B **WEST GATE CLOSED TO VISITORS**. Place at the gate. If public opening is approved, remove this panel and deploy 23 and 24 together. |
+| 07 | **MARKET INFORMATION · PAPER MAPS**. Place at the staffed information point inside North, visible from the entrance. |
+| 08–09 | **STALLS [arrow] · TOILETS [arrow] · PERFORMANCES [arrow]**. Place at the first decision inside North and East, respectively. Point performances toward the first junction with a weather status panel. |
+| 10–13 | Face A **PERFORMANCES · OUTDOOR STAGE [arrow]**. Face B **PERFORMANCES MOVED INDOORS · INDOOR PERFORMANCE HALL [arrow] · MOST STALLS STAY OUTSIDE**. Place at North information, inside East, the main performance junction and the approach to the Outdoor Stage, respectively. Use the actual arrow for each face and location. At the Outdoor Stage itself, face A can read **OUTDOOR STAGE · PERFORMANCES HERE**. |
+| 14 | **INDOOR PERFORMANCE HALL**. Face arriving visitors at the public doorway. Add verified step-free direction or threshold information if needed. |
+| 15–16 | **STALLS [arrow]** and **TOILETS [arrow]**, respectively. Place each where the route branches. Print **STEP-FREE TOILET** with its own arrow if the facility and route are verified and the direction differs. |
+| 17–18 | **EXIT [arrow] NORTH · STEP-FREE**. Place at the main yard junction and the indoor hall’s public departure route, respectively. |
+| 19 | **EXIT [arrow] EAST · STAIRS**. Place at the decision before the stairs, with the direction to the North exit on the same face. |
+| 20–21 | **STEP-FREE ROUTE [arrow]**. Place at the two confirmed turns or surface transitions where the step-free route needs reassurance. Add the destination name where routes diverge. |
+| 22 | **ROUTE CLOSED · ASK A VOLUNTEER FOR DIRECTIONS**. Hold at North information for an obstruction. Station a volunteer at the closure while this panel is in use. |
+| 23 | Face A **WEST GATE · ENTRANCE TO MARKET**. Face B **WEST GATE · EXIT FROM MARKET**. Use the entrance face toward arriving visitors only after public opening is approved. |
+| 24 | **MARKET INFORMATION [arrow] · STEP-FREE EXIT [arrow] NORTH**. Deploy inside West with panel 23 when West opens. |
+
+At an approved West opening, remove panel 05 if it still directs visitors away from the open gate. If West stays closed after 18:30, turn panels 05 and 06 to face B. Keep North and East wayfinding in service until visitors have left. The market panels supplement the venue’s emergency exit signs and procedures.
+
+Use matte, weather-resistant stock and high-contrast lettering, such as near-black on warm white. Make destination names and arrows the largest elements. Start with 75 mm capital height for entrance names and primary directions meant to be read across an approach, and 35 mm for secondary text read nearby. Size panels around the copy and test a full-size proof at the actual decision distance in evening light. Pair standard arrows and access symbols with words. Use color as reinforcement, with the same visual treatment for the step-free route on signs and the map.
+
+Use weighted, stable freestanding frames with flush-fitting panels. Position bases outside the clear walking route, stair landings, door swings and queue paths. Aim sign faces toward approaching visitors and check that people can read them from standing and seated positions. Check for glare, shadows and crowd obstruction at night. Place the gate panels clear of vehicle movements.
+
+## Paper handout
+
+Print one reusable artwork for a two-sided A5 handout. Put **Evening Market · 17:00–21:00** and a large, simplified map on the front. Label North, East, West, Market Information, Stalls, Toilets, Outdoor Stage and Indoor Performance Hall. Mark the verified step-free routes with a bold line keyed in words. Show East’s stairs and the outside approach to North. Label West **Deliveries until 18:30. Check the gate sign for public access.** Include a north arrow and orient the drawing consistently with the site. Keep rail-yard detail only where it helps visitors recognize a landmark.
+
+Use the back for large, plain-text directions that can be read without interpreting the map. Add the verified turns and landmarks after the site walk. Set body copy at 14 pt or larger, with left alignment and generous spacing. Use this copy alongside the route details:
+
+> **Step-free arrival and departure**  
+> Use the North Entrance. Market Information is just inside. The East Entrance has stairs.  
+>
+> **Performances**  
+> In dry weather, go to the Outdoor Stage. In rain, performances move to the Indoor Performance Hall and most stalls stay outside. Check the performance signs for tonight’s location.  
+>
+> **Finding your way**  
+> Ask at Market Information for directions, a spoken version of the map or current route information.
+
+Keep copies at North information and give the East volunteer a small supply. Stock West only if it opens. Update visitors verbally when handing out maps during a weather change or route closure. The handout and signs work without mobile reception.
+
+## Volunteer running order
+
+Assign named owners at the pre-opening briefing. The **event lead** decides weather status, route closures and West Gate access. The **information volunteer** stays at North. The **route volunteer** checks East and the yard junction and helps redirect visitors. The **stage volunteer** checks both venues with the event lead and makes the announcement. Assign gate coverage whenever deliveries, a West opening or an active diversion require it. If staffing is short, keep West closed to visitors and prioritize North information, the East diversion and the performance junction.
+
+**Before 17:00.** Walk the outside approach, both public entrances, the stall and toilet routes, and both performance routes. Check the panel IDs, arrows, current performance faces and lighting. Give each volunteer a handout. Ask each person to point out the step-free entrance, explain where performances go in rain and say what they will tell someone arriving at West. Agree who covers North if its volunteer needs to leave.
+
+**When performances move indoors.** The event lead confirms that the hall and public route are ready. The stage volunteer covers the Outdoor Stage approach while the route and information volunteers turn panels 10–13 and verify the arrows. Relay the change face to face if phones are unreliable. Once the signs and staff are in place, announce near the stage, “Performances have moved to the Indoor Performance Hall. Follow the performance signs. Most stalls are still outside. For help with the route, ask a volunteer.” Repeat for visitors gathering at the former stage. If the hall reaches capacity, station a volunteer at the last junction before the hall queue to tell arrivals what to expect and keep the route clear.
+
+**At 18:30.** Confirm that deliveries have finished and check for moving vehicles, barriers and route conflicts. If West stays closed, turn 05 and 06. If the event lead approves public opening, position the gate volunteer and set 23 and 24 before admitting visitors. Update North information in person.
+
+**At 21:00.** Keep exit signs and lighting available while visitors leave. Direct anyone seeking a step-free exit to North using the verified route. Collect the panels after the public areas clear and record damage or placement changes.
+
+## First two market nights
+
+On night one, observe the first arrival rush, the West Gate changeover and departure. If the weather stays dry, rehearse the rain change before opening, then reset the signs to the announced location. Ask the accessibility reviewer to follow the route from the East approach to North, then to the toilets, stalls, both performance venues and back to North. Record where visitors backtrack, miss an arrow, encounter a blocked path or receive conflicting directions. Note the panel ID and the direction they approached from.
+
+Before night two, adjust frame positions, volunteer posts and briefing instructions using those observations. Verify every moved sign from the visitor’s approach and compare the handout with the revised placement. Escalate wrong printed arrows, inaccessible routes and misleading access claims to the event lead before opening. Cover incorrect directions and staff the affected decision point until corrected artwork or a verified route is in place. Repeat the night-one checks with a volunteer new to the setup. Judge the pilot by whether visitors can find North before reaching the stairs, reach the current performance venue without relying on the announcement, understand West Gate’s status and follow a clear step-free route out after dark.

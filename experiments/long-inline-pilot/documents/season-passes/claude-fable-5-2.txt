@@ -1,0 +1,112 @@
+# Annual Pass Pilot: What the Evidence Supports and a Proposal for Next Season
+
+## Recommendation
+
+The board should continue the annual pass next season and allow it to grow to a hard cap of 200 passes, but should not approve open-ended expansion. The pilot shows the pass covers its direct costs and has not visibly harmed single-ticket sales. It does not show whether the pass adds income or merely discounts tickets that would have been bought anyway. That question decides whether expansion is worthwhile, and the pilot was not set up to answer it. Next season should be run so that it does.
+
+## What the pilot recorded
+
+| | Jan | Feb | Mar | Apr | Total |
+|---|---|---|---|---|---|
+| Passes active | 80 | 95 | 105 | 112 | n/a |
+| Pass-holder visits | 180 | 250 | 205 | 280 | 915 |
+| Single tickets | 940 | 880 | 1,020 | 865 | 3,705 |
+| Available seats | 2,000 | 1,840 | 2,100 | 1,750 | 7,690 |
+| Occupancy | 56.0% | 61.4% | 58.3% | 65.4% | 60.1% |
+| Visits per active pass | 2.25 | 2.63 | 1.95 | 2.50 | 2.33 |
+| Pass share of admissions | 16.1% | 22.1% | 16.7% | 24.5% | 19.8% |
+| Single tickets per seat | 47.0% | 47.8% | 48.6% | 49.4% | 48.2% |
+
+The financial figures assume that "passes active" means passes sold to date at the full price of 100, and that the 2-unit royalty applies to every admission, including pass visits.
+
+- **Single tickets:** revenue of 33,345, less 7,410 in royalties, gives a contribution of 25,935.
+- **Passes, cash basis:** 112 passes brought in 11,200. Most of this pays for visits not yet made.
+- **Passes, earned basis:** spreading each pass over twelve months, the 392 pass-months to date earned about 3,267. Royalties on pass visits were 1,830, leaving a contribution of about 1,437.
+- **Yield per visit:** a pass visit earns about 3.57 before royalty and 1.57 after. A single ticket earns 9 and 7.
+
+Pass holders therefore account for about 20% of admissions and about 9% of earned revenue.
+
+## What can be inferred
+
+**The pass covers its royalties at current usage.** At 2.33 visits a month, a holder makes about 28 visits a year, costing 56 in royalties against the 100 price. The pass only falls below royalty cost at 50 visits a year, or more than four a month. No month came close to that on average.
+
+**Average occupancy leaves room.** With 40% of seats empty overall, most pass visits filled seats that would otherwise have been unsold.
+
+**Single-ticket sales did not fall relative to capacity.** Raw single-ticket sales moved up and down, but they tracked the number of seats offered. Single tickets per available seat rose slightly each month, from 47.0% to 49.4%, while passes grew by 40%. This is the most encouraging pattern in the data. It rules out heavy, obvious cannibalisation, though not the moderate kind discussed below.
+
+**Sign-ups are slowing.** Net additions were 15, 10 and 7 in successive months. At the current price and level of promotion, demand appears to be levelling off, so a cap of 200 is unlikely to be reached without active selling.
+
+## What cannot be inferred
+
+**Whether pass holders would have bought tickets anyway.** This is the central unknown. The pilot has no record of what holders bought before they held a pass. The steady single-ticket rate per seat is only four data points, and programming changed every month, so a stronger programme could easily mask lost sales.
+
+**How many friends pass holders bring.** The volunteer survey says holders bring friends. It gives no number, relies on self-report, and cannot show whether those friends would have come anyway. It supports the idea but cannot be entered into a budget.
+
+**How many paying customers were turned away.** Some screenings sold out, but the times were not recorded, and neither were turn-aways. A pass holder occupying a seat that a single-ticket buyer wanted costs the cinema 9 units. Capacity is uneven across nights, so a 60% monthly average is compatible with regular full houses on the popular nights. Those are the nights pass holders are most likely to choose.
+
+**Annual usage.** The figure of 28 visits a year extrapolates from four months, January to April. Usage may differ in summer, and it may fade as the novelty of the pass wears off. Early buyers are also likely to be the keenest attenders, so later buyers may visit less.
+
+**The spread of usage across holders.** Only monthly totals were kept. An average of 2.33 could mean most holders come twice a month, or that a few come weekly while many rarely come. These have different implications for pricing and for seat pressure.
+
+**Renewal.** No pass has reached its anniversary. The pilot says nothing about whether holders will pay again.
+
+**The effect of programming.** Pass visits were highest in February and April, the two months with the fewest seats. That could reflect the films shown, the schedule, or chance. With four months and a different programme in each, these cannot be separated.
+
+## What the unknowns are worth
+
+The incremental value of one pass over a year can be written as:
+
+**100 − (2 × pass visits) − (7 × single tickets the holder would otherwise have bought) + (7 × extra friend tickets) − (9 × paying customers displaced)**
+
+At 28 visits a year, the first two terms come to 44. The pass therefore breaks even against the alternative of no pass if the holder would otherwise have bought about six single tickets a year, roughly one every two months. Each genuinely additional friend ticket offsets one lost ticket.
+
+| Type of holder | Tickets otherwise bought | Extra friend tickets | Customers displaced | Net effect per pass per year |
+|---|---|---|---|---|
+| Occasional visitor | 2 | 0 | 0 | +30 |
+| Regular | 6 | 0 | 0 | +2 |
+| Regular, some sold-out visits | 6 | 0 | 3 | −25 |
+| Enthusiast | 12 | 0 | 0 | −40 |
+| Enthusiast who brings friends | 12 | 4 | 0 | −12 |
+
+These rows are illustrations, not estimates. They show that the answer turns on who buys the pass. Someone who already came monthly gets a large discount at the cinema's expense. Someone who came twice a year becomes a better customer.
+
+Displacement matters on the same scale. If one pass visit in ten during the pilot took a seat from a paying customer, the cost would have been about 820 units, more than half of the pass's earned contribution for the period.
+
+Scaled up, the exposure is bounded. If the four pilot months are typical, single tickets contribute roughly 78,000 a year. At 200 passes, the scenarios above range from about +6,000 if every holder is an occasional visitor to about −8,000 if every holder is an enthusiast. The realistic outcome lies between these. The pass is therefore unlikely to change the cinema's finances by more than about a tenth in either direction. A capped expansion at that level of risk is acceptable as a way of finding out, but selling without limit is not.
+
+## Proposal for next season
+
+**1. Cap the scheme at 200 passes.** This includes renewals of the existing 112. It allows meaningful growth, keeps the worst case within the range above, and gives a large enough group to measure.
+
+**2. Hold the price at 100.** Changing the price at the same time as collecting the first usable data would make the results harder to read. The price should be reviewed at the mid-season checkpoint with evidence in hand.
+
+**3. Require pass holders to book, and limit pass bookings to 25% of seats per screening in advance.** Unsold seats are released to pass holders on the day. Pass holders averaged 20% of admissions and reached about 25% in the busiest month, so this limit would rarely be felt on ordinary nights. It would bind only where demand is strong, which is where displacement occurs.
+
+**4. Record what the pilot did not.** None of this needs new equipment, only a consistent log at the box office.
+
+- **Per screening:** seats available, single tickets sold, pass admissions, the time the screening sold out, and the number of people turned away.
+- **Per pass visit:** the pass number, so that visits per holder can be counted.
+- **Per pass transaction:** the number of single tickets bought alongside it, as a direct measure of friends brought.
+- **At purchase or renewal:** one question on how often the buyer attended in the previous twelve months. This is self-reported and imperfect, but it is the only available evidence on prior buying.
+
+**5. Set a mid-season review with stated tests.** After six months the board should look at four measures.
+
+| Measure | Signal to expand | Signal to restrict or reprice |
+|---|---|---|
+| Typical prior attendance of holders | Under 6 visits a year | Over 6 visits a year, without matching friend tickets |
+| Friend tickets per pass per year | Enough to cover any shortfall above | Negligible |
+| Turn-aways at screenings with pass admissions | Rare | Frequent despite the 25% limit |
+| Visits per pass per year | Well under 50 | Approaching 50 |
+
+If the signals favour expansion, the cap can be lifted for the following season. If they do not, the options are a higher price, a pass valid only on off-peak nights, or a limit on visits. The data will show which of these fits the problem.
+
+**6. Report pass income on an earned basis.** Cash from pass sales arrives up front and can make the scheme look stronger than it is. Board reports should show one-twelfth of each pass per month against that month's royalties, with the cash figure shown separately.
+
+## Decision requested
+
+The board is asked to approve:
+
+- continuation of the annual pass at 100 units, capped at 200 passes;
+- advance booking for pass holders with a 25% per-screening limit;
+- the record-keeping set out in item 4;
+- a review at six months against the tests in item 5.

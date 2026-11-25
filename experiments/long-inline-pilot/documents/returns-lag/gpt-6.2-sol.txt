@@ -1,0 +1,56 @@
+# Tool library operations review: April and May
+
+Harbor sent 20 fewer overdue notices in May while recording 30 more loans. Its count of unique items still overdue after manual reconciliation rose from 12 to 14. Park, which did not pilot reminder texts, also recorded more loans and substantially fewer notices, while its final overdue count fell by one. Across all three branches, notices fell from 103 to 70, and the final overdue count fell from 41 to 40.
+
+The May figures establish that Harbor sent fewer notices during the first month of the reminder pilot. They do not establish that the texts caused the decline or improved returns. Harbor’s scanner outages also fell from seven days to one, and Park saw a similar drop in notices as its outages fell from three days to zero. Keep the pilot at Harbor and collect loan-level records for a controlled follow-up. The decision to expand should rest on whether texts improve returns, with changes in notice workload measured separately.
+
+## What changed
+
+Each cell shows the April figure followed by the May figure.
+
+| Branch | Loan transactions | Overdue notices | Unique items still overdue after reconciliation | Scanner outage days |
+|---|---:|---:|---:|---:|
+| Harbor | 510 → 540 | 48 → 28 | 12 → 14 | 7 → 1 |
+| Hill | 320 → 300 | 19 → 20 | 13 → 11 | 0 → 0 |
+| Park | 400 → 430 | 36 → 22 | 16 → 15 | 3 → 0 |
+| **Total** | **1,230 → 1,270** | **103 → 70** | **41 → 40** | **10 → 1** |
+
+**Harbor** handled about 6% more loan transactions and sent about 42% fewer overdue notices. Notices per 100 recorded loans fell from 9.4 to 5.2. Meanwhile, the final overdue count increased by two, from 2.4 to 2.6 items per 100 loans. The branch therefore saw a substantial reduction in outgoing overdue notices while ending the reconciliation process with slightly more overdue items. The lower notice volume may have reduced some follow-up work, but the figures contain no measure of staff time or total communications, including the new texts.
+
+**Hill** handled 20 fewer loan transactions and sent one more notice. Notices per 100 loans rose from 5.9 to 6.7. The final overdue count fell by two, from 4.1 to 3.7 items per 100 loans. Hill had no scanner outages in either month. Its results show that the two overdue measures can move in different directions even with no recorded scanner interruption. With changes of only one or two in the raw counts, Hill’s two months provide little evidence of a sustained change.
+
+**Park** handled 30 more loan transactions and sent 14 fewer notices, a decline of about 39%. Notices per 100 loans fell from 9.0 to 5.1, close to Harbor’s May level and close to Harbor’s decline of 4.2 notices per 100 loans. Park’s final overdue count fell from 16 to 15, or from 4.0 to 3.5 items per 100 loans. Park reached a similar notice result without piloting texts. Its scanner was also available on more days in May.
+
+Across the three branches, 40 additional loan transactions coincided with 33 fewer notices. Harbor and Park together sent 34 fewer notices, and Hill sent one more. The systemwide notice count fell by about 32%, from 8.4 to 5.5 notices per 100 loans, while the final overdue count changed by one item. The largest measured change was in how many notices went out. The count that remained after reconciliation was broadly stable.
+
+## What the figures say about reminders
+
+Notice totals count notifications, so several notices may concern the same item. A branch could send fewer notices because fewer items reached the first overdue threshold, because it sent fewer repeat notices, or because it changed when notices went out. Those possibilities have different implications for returns and staff workload. The monthly totals cannot distinguish among them.
+
+The rates per 100 loans help account for differences in recorded transaction volume, but they are descriptive ratios. The notices or reconciled items counted in May may relate to loans made in April, and some loans made in late May may come due in June. The number of unique items remaining overdue after reconciliation also does not capture every item returned late. An item could have triggered a notice and then been returned before the final count. To judge whether more borrowers returned tools on time, managers need to follow loans by due date and link each loan to its return and notification history.
+
+Harbor’s decline is consistent with several effects a text reminder could have. If texts prompted borrowers to return tools before the first overdue notice, both first notices and late returns could have fallen. If the text took the place of a communication previously counted as an overdue notice, the notice count could have fallen even if return behavior stayed the same. The reported totals give no indication of how many borrowers were eligible, how many texts were delivered, or whether the texts went out before the due date or after it. Harbor’s increase of two in the final overdue count likewise cannot establish that reminders made returns worse. The count is small, and the set of items due may have differed between months.
+
+Comparing branches helps put the pilot in context. Harbor’s notice rate fell about 4.2 per 100 loans, and Park’s fell about 3.9 without texts. Hill moved in the opposite direction. Combining Hill and Park produces a smaller decline of about 1.9 notices per 100 loans, but subtracting that decline from Harbor’s would give a misleading estimate of the reminder effect. The comparison branches had different changes in volume and scanner availability, and there is only one month before the pilot to show how their numbers usually move relative to Harbor’s.
+
+Scanner availability is a plausible contributor that can be investigated with records. For example, if staff accepted returns during an outage but logged them later, notices could have gone out for tools already back at the branch. Manual reconciliation could then remove those tools from the final overdue count. That sequence would produce more notices without an equivalent increase in finally overdue items. The outage day totals do not show whether it happened, how long each interruption lasted, or how many returns were affected. The same uncertainty applies to any changes in notice scheduling or reconciliation practice.
+
+## Records to collect next
+
+Use a stable loan identifier to link the following records. Start by recovering the April and May history where available, and use the same definitions and observation windows across branches going forward.
+
+1. **Loan and return history.** Record the branch, loan ID, item ID, checkout time, original and revised due dates, renewals, physical return time where known, and system check-in time. Retain a borrower identifier suitable for linking multiple loans without putting names or phone numbers into the analysis file. Group loans by the date they were due and allow each group the same follow-up period. This makes it possible to calculate the share returned by the due date, the share still out after a defined interval, and the number of unique items still overdue after reconciliation.
+
+2. **Reminder and notice activity.** Record who was eligible for the pilot, whether a reminder was assigned, its scheduled and actual send times, and its delivery status. For each overdue notice, record its time, channel, and whether it was the first or a repeat for that loan. Include any rule that suppresses or replaces a notice after a text. These records will show whether fewer loans generated notices, each affected loan generated fewer notices, or the branch shifted traffic from one channel to another.
+
+3. **Scanner interruptions and manual reconciliation.** Record outage start and end times, which operations were affected, and when any backlog was entered. Where staff accept a return manually, capture when they received the tool and when they updated the loan record. Log any notice sent in between, along with the reconciliation date and the reason for correcting the overdue status. This will show how often delayed check-ins lead to notices and whether that pattern differs across branches or months.
+
+4. **Changes in operating practices and staff effort.** Record effective dates for changes in due dates, grace periods, notice schedules, opening hours, and reconciliation procedures. If reducing staff work is an objective, track time spent handling notices, resolving disputed overdue records, and reconciling returns. Automated notices and manual follow-up can have very different costs, so the notification count alone cannot answer whether the pilot saved time.
+
+## Recommendation
+
+Continue the Harbor pilot as a controlled trial before expanding it. Randomly assign eligible Harbor borrowers to receive the pilot text or continue with the standard process, keeping the usual overdue notice and reconciliation rules consistent across groups. Assign at the borrower level so that someone with multiple loans receives a consistent experience. Compare outcomes according to the original assignment and track delivery failures separately. Running both groups at Harbor over the same weeks gives them the same branch operating conditions, including scanner interruptions, and makes the effect of offering the text easier to estimate.
+
+Use the share of loans returned by their due date as the primary measure. Track the share still out after a fixed follow-up interval and the reconciled count of unique overdue items to see whether any improvement persists. Review first notices, repeat notices, total communications, and staff time as operational measures. Agree before the trial on an improvement large enough to justify expansion, and collect enough completed due-date groups to assess it. With only 12 to 16 finally overdue items per branch per month in the current figures, one month’s movement in that count is a weak basis for a rollout decision.
+
+In parallel, examine any April and May return logs that can link scanner downtime to delayed check-ins and notices. Confirmed cases can guide changes to how branches record manual returns and process notices during a backlog. If the Harbor trial shows a meaningful improvement in returns, use that result to decide whether to extend the texts. If it shows fewer overdue notices with similar return outcomes, judge the text on measured staff time and total contact volume and treat any expansion as a change to the communications process.

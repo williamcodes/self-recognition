@@ -1,0 +1,176 @@
+# Wayfinding and Information Service: Evening Market at the Train Yard
+
+**Proposal for market nights 1 and 2**
+
+## 1. Design approach
+
+The service has four parts: 24 freestanding sign panels, one paper handout, scripted announcements from the stage speaker, and volunteers with fixed posts and a pocket card. Nothing depends on phones, so there are no QR codes.
+
+Three rules shape everything:
+
+- **Signs carry what stays the same every month.** Panels show no dates, stall names or performer names; anything that varies is written by hand in a wipe-clean box.
+- **Every spoken message has a written twin.** The single speaker only reaches people near the stage, so each announcement is also written on the board at the information point.
+- **Volunteers need no memory of last month.** Each sign has a letter, a labelled position and a setup photo, and each post has a one-page role card.
+
+## 2. Points to confirm before artwork is final
+
+The proposal makes working assumptions where site facts are not yet known. The volunteer lead should confirm these on a site walk.
+
+| # | To confirm | Working assumption |
+|---|---|---|
+| 1 | Name, location and door of the indoor performance space | Called "the Hall" here; one public door |
+| 2 | Whether the Hall door and the toilets are step-free | Unknown; no access symbol is printed until checked |
+| 3 | Whether the public may use the west gate after 18:30, and whether it is step-free | Wording works either way (see sign D) |
+| 4 | Distance and surface of the outside route from the east entrance to the north entrance | Distance is added to sign B once measured |
+| 5 | Lighting at each sign position after dusk | Entrance stands may need clip-on battery lights |
+| 6 | Whether chalk or tape position marks are allowed under the permit | If not, rely on setup photos |
+
+## 3. Sign system
+
+### 3.1 Specification for the printer
+
+- **Quantity:** 24 single-sided panels, mounted back to back in 12 weighted A-frame stands (lettered A–L).
+- **Size:** A1 portrait (594 × 841 mm), in 5 mm rigid board with a matte anti-glare laminate. Faces marked "write-on" need a dry-wipe laminate.
+- **Frames:** these should be solid to the ground with no open crossbar, so a long cane detects them, and weighted against wind.
+- **Type:** a sans-serif face in sentence case, never all capitals. Destination names have a minimum 60 mm capital height, secondary lines 30 mm, and nothing is smaller than 15 mm.
+- **Colour:** near-black text on a white or pale yellow background. Colour is never the only carrier of meaning; each destination has a word, a symbol and an arrow.
+- **Arrows:** these are supplied as removable vinyl decals for nights 1 and 2. Arrow directions depend on final stand positions, which will be adjusted after night 1; permanent arrows are applied after night 2.
+- **Labels:** each panel has its letter and face number (for example "F1") printed small at the bottom corner. A label on the back reads "Stand F: [position], this face towards [landmark]".
+- **Symbols:** the standard pictograms are step-free access, stairs, toilets, information, stage, covered space and exit.
+
+### 3.2 Panel schedule
+
+| Stand | Position | Face 1 | Face 2 |
+|---|---|---|---|
+| **A** | North entrance, just inside | Welcome, site map and "Tonight" box (write-on) | "Exit: north. Step-free." |
+| **B** | East entrance, street side, before the stairs | "This entrance has stairs. Step-free entrance: North, [distance], [arrow]" | Same as face 1, for the other street approach |
+| **C** | East entrance, market side of the stairs | Welcome, site map and "Tonight" box (write-on) | "Exit: east. Stairs. Step-free exit: North [arrow]" |
+| **D** | West gate | Outer: "Deliveries only until 18:30. Vehicles moving. Public entrances: North (step-free), East (stairs)" | Inner: "No public access through this gate before 18:30" |
+| **E** | Information point | "Information: ask here", site map, "Tonight" box (write-on) | Same as face 1 |
+| **F–I** | Four decision points, set on the site walk | Directional | Directional |
+| **J** | Stage | "Stage: tonight's performances" (write-on times) | Directional: Hall, Toilets, Information, Exits |
+| **K** | Hall door | "The Hall. Performances are here when it rains." | Directional: Stage, Toilets, Information, Exits |
+| **L** | Rain overlays, stored at the information point | "It's raining: performances are now in the Hall [arrow]. Stalls are open outside." | Identical; the two panels slip over both faces of stand J |
+
+**Directional panels (F–I, J2, K2).** Each lists the same destinations in the same order: Stage, the Hall, Toilets, Information, Exit north (step-free), Exit east (stairs). Stage and Hall both appear all the time, so these signs never change with the weather.
+
+**"Tonight" box (A1, C1, E).** This is a wipe-clean panel with two tick boxes, "Performances tonight: ☐ at the Stage ☐ in the Hall (rain)", and three blank lines for start times. It is the only part of the entrance signs that a volunteer edits.
+
+**West gate (D).** The wording is true all evening, so no swap is needed at 18:30. If the organizers open the gate to the public after 18:30, the stand is moved to the side of the gateway. If they do not, it stays in place and a volunteer closes the gate.
+
+**Site map (A1, C1, E, handout).** There is one drawing, used everywhere, and each sign version is rotated so that "up" on the map is straight ahead for the reader.
+
+- It has a "You are here" marker.
+- The step-free route from the north entrance to the stage, the Hall, the toilets and the information point is drawn as a bold dashed line.
+- Stairs are marked with the stairs symbol.
+- Stall areas are shown as zones (for example "Food", "Makers"), not as individual stalls.
+- The west gate is labelled "Deliveries until 18:30".
+
+### 3.3 Placement rules
+
+- Stands must leave at least 1.5 m of clear width on every path and must never sit on the step-free route line itself.
+- Each stand goes at the decision point, not after it, with the face square to the direction people approach from.
+- Stands should go under existing lighting where possible.
+- Stand B is the most important sign on site. It must be visible before anyone commits to the stairs, from both directions along the street.
+
+## 4. The handout
+
+The handout is one A4 sheet, double-sided and folded to A5. It is undated so the same print run serves both nights and beyond. Body text is 14 pt minimum, in black on white or pale yellow uncoated paper, so it does not glare and can be written on.
+
+**Side 1 is the map.** It is the same drawing as the signs, with north entrance at the bottom, the step-free route marked and a key that uses words alongside symbols.
+
+**Side 2 has six short blocks:**
+
+1. **Times.** The market is open 17:00–21:00.
+2. **Getting in and out.** The north entrance is step-free. The east entrance has stairs. The west gate is for deliveries only until 18:30.
+3. **If it rains.** Performances move into the Hall. Most stalls stay open outside.
+4. **Finding things.** This covers toilets, the information point and seating, once confirmed.
+5. **Announcements.** These are made from the speaker by the stage. If you cannot hear them, the same information is written up at the information point.
+6. **Need help?** Volunteers wear [identifier: hi-vis or lanyard colour]. Ask any of them, or go to the information point.
+
+Handouts are given out at the north entrance, the east entrance and the information point. They are offered to every visitor, not left in a pile. Print enough for roughly a third of expected attendance on night 1, then recount the leftovers to set the quantity for night 2.
+
+## 5. Stage speaker announcements
+
+Announcements are read from a laminated script at the stage, slowly, twice each. The information point volunteer writes the same message on the "Tonight" box of stand E at the same time.
+
+| Time | Script |
+|---|---|
+| 17:00 | "Welcome to the market. We're open until nine. Maps are on the signs at each entrance and at the information point. Volunteers in [identifier] can help you." |
+| 18:30 | "Deliveries through the west gate have now finished." If applicable: "The west gate is now open to everyone." |
+| On rain | "Because of the rain, performances are moving indoors to the Hall. Follow the signs marked Hall. The stalls are staying open outside." |
+| 20:45 | "The market closes in fifteen minutes. The step-free exit is the north entrance. The east exit has stairs." |
+| 21:00 | "The market is now closed. Thank you for coming. Please make your way to the exits." |
+
+Performers' start times are announced only if the stage manager wants them. They are always written on stand J and in the "Tonight" boxes.
+
+## 6. Volunteer operation
+
+### 6.1 Posts
+
+There are four posts, each with a role card kept in the sign store.
+
+| Post | Where | Main job |
+|---|---|---|
+| North | Stand A | Offer handouts; write up the "Tonight" box |
+| East | Between stands B and C | Offer handouts; redirect anyone who needs the step-free entrance, and walk with them if they wish |
+| Information | Stand E | Answer questions; keep a tally of questions; mirror announcements in writing |
+| Rover | Stage, Hall and west gate | Set stand J times; handle the west gate at 18:30; lead the rain switch |
+
+With fewer than four volunteers, the first post to drop is North (stand A does the work), then Rover (the Information post takes those duties). East is never left uncovered while the market is open.
+
+### 6.2 Pocket card
+
+Every volunteer gets a credit-card-sized card, printed with the handouts. It gives the five answers most often needed:
+
+1. The step-free way in and out is the north entrance.
+2. The east entrance has stairs.
+3. The west gate is for deliveries only until 18:30.
+4. When it rains, performances are in the Hall and stalls stay outside.
+5. If you don't know, send or walk the person to the information point.
+
+### 6.3 Evening timeline
+
+| Time | Action |
+|---|---|
+| 16:15 | Place stands A–K using the back labels and setup photos; stand D goes out first. |
+| 16:45 | Lead walks the step-free route from north entrance to every destination, checking that it is clear and that signs are lit and legible. Fill in the "Tonight" boxes and stand J. |
+| 17:00 | Opening announcement. |
+| 18:30 | Rover confirms the last delivery vehicle has left, then moves stand D aside or closes the gate. Announcement. |
+| 20:45 | Closing announcement. |
+| 21:00 | Collect stands in letter order, wipe the write-on boxes and return the tally sheet to the lead. |
+
+### 6.4 Rain switch
+
+The event lead decides, and no one else does. If rain is forecast, the decision is made by 16:30 and the market opens in rain mode. If rain starts mid-event, the sequence is:
+
+1. The lead tells the stage manager and the Rover.
+2. The Rover fits the two L panels over stand J.
+3. The rain announcement is made from the stage.
+4. The North, East and Information volunteers re-tick their "Tonight" boxes to "in the Hall".
+5. The Rover stands at the Hall door for ten minutes to direct people.
+
+Once made, the switch is not reversed that evening, because a second change would confuse more people than it helps.
+
+## 7. Notes for the accessibility reviewer
+
+Please check the following and mark each as accepted, to be changed or to be tested on site.
+
+- **Step-free journey.** Does the dashed route reach every destination, including the Hall and a toilet (items 1–2 in section 2)? Are surfaces such as rails, ballast and cobbles passable for wheels?
+- **East entrance.** Is stand B seen early enough, and is the outside route to the north entrance itself step-free, lit and a reasonable distance?
+- **Legibility.** Review the type sizes, contrast and glare under the actual evening lighting, and whether pale yellow or white reads better on site.
+- **Non-visual access.** There is no tactile or audio map. The fallback is a volunteer who describes the route or walks it with the visitor. Is that adequate for nights 1 and 2?
+- **Non-audio access.** Every announcement is mirrored in writing at stand E. Is one location enough?
+- **Obstruction.** Review cane detectability of the frames and the 1.5 m clear width.
+- **Language.** Review the plain wording, and whether "step-free" and "stairs" are the right terms for this audience.
+- **Rain mode.** Does moving indoors change the step-free route or create a pinch point at the Hall door?
+
+## 8. Plan for the first two nights
+
+**Night 1 is a trial.** Arrows are removable decals. The lead photographs each stand in position for the setup sheet. The Information volunteer keeps a tally of questions under five headings: toilets, stage or Hall, entrances and exits, a specific stall, and other. The East volunteer counts how many people are redirected to the north entrance.
+
+**Between the nights.** The lead and the accessibility reviewer meet for 30 minutes with the tallies and photographs. Changes are limited to moving stands, re-pointing arrows, rewording the scripts and adjusting the handout quantity. No panel is reprinted unless the reviewer finds a safety or access fault.
+
+**Night 2 is confirmation.** Volunteers run the same tallies. If the commonest question is the same on both nights, that answer goes on a sign: one of the directional faces is reassigned to it.
+
+**After night 2.** The printer applies permanent arrows. The setup photos, role cards, scripts and pocket card are stored as one laminated pack with the stands.

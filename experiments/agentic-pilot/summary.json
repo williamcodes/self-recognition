@@ -1,0 +1,394 @@
+{
+  "r1": {
+    "gpt-6.2-sol workspace": {
+      "trials": 8,
+      "correct": 6,
+      "correct_both_orders": 3,
+      "split": 0,
+      "wrong_both_orders": 1,
+      "no_parsed_answer": 0,
+      "commands_median": 3.0,
+      "unique_documents_visible_median": 5.0,
+      "unique_documents_total_median": 5.0,
+      "all_target_text_visible": 8,
+      "both_authority_links_visible": null
+    },
+    "claude-fable-5.2 inline": {
+      "trials": 8,
+      "correct": 8,
+      "correct_both_orders": 4,
+      "split": 0,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0
+    },
+    "claude-fable-5.2 workspace": {
+      "trials": 8,
+      "correct": 8,
+      "correct_both_orders": 4,
+      "split": 0,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0,
+      "commands_median": 2.0,
+      "unique_documents_visible_median": 5.0,
+      "unique_documents_total_median": 5.0,
+      "all_target_text_visible": 8,
+      "both_authority_links_visible": null
+    },
+    "gpt-6.2-sol inline": {
+      "trials": 8,
+      "correct": 5,
+      "correct_both_orders": 2,
+      "split": 1,
+      "wrong_both_orders": 1,
+      "no_parsed_answer": 0
+    },
+    "claude-fable-5.2 paired": {
+      "inline_only_correct": 0,
+      "workspace_only_correct": 0,
+      "both_correct": 8,
+      "both_wrong": 0
+    },
+    "gpt-6.2-sol paired": {
+      "inline_only_correct": 1,
+      "workspace_only_correct": 2,
+      "both_correct": 4,
+      "both_wrong": 1
+    }
+  },
+  "r2": {
+    "gpt-6.2-sol workspace": {
+      "trials": 8,
+      "correct": 8,
+      "correct_both_orders": 4,
+      "split": 0,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0,
+      "commands_median": 2.0,
+      "unique_documents_visible_median": 8.0,
+      "unique_documents_total_median": 8.0,
+      "all_target_text_visible": 8,
+      "both_authority_links_visible": null
+    },
+    "claude-fable-5.2 inline": {
+      "trials": 8,
+      "correct": 8,
+      "correct_both_orders": 4,
+      "split": 0,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0
+    },
+    "claude-fable-5.2 workspace": {
+      "trials": 8,
+      "correct": 8,
+      "correct_both_orders": 4,
+      "split": 0,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0,
+      "commands_median": 2.0,
+      "unique_documents_visible_median": 8.0,
+      "unique_documents_total_median": 8.0,
+      "all_target_text_visible": 8,
+      "both_authority_links_visible": null
+    },
+    "gpt-6.2-sol inline": {
+      "trials": 8,
+      "correct": 7,
+      "correct_both_orders": 3,
+      "split": 1,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0
+    },
+    "claude-fable-5.2 paired": {
+      "inline_only_correct": 0,
+      "workspace_only_correct": 0,
+      "both_correct": 8,
+      "both_wrong": 0
+    },
+    "gpt-6.2-sol paired": {
+      "inline_only_correct": 0,
+      "workspace_only_correct": 1,
+      "both_correct": 7,
+      "both_wrong": 0
+    }
+  },
+  "r3": {
+    "gpt-6.2-sol workspace": {
+      "trials": 8,
+      "correct": 5,
+      "correct_both_orders": 2,
+      "split": 1,
+      "wrong_both_orders": 1,
+      "no_parsed_answer": 0,
+      "commands_median": 2.0,
+      "unique_documents_visible_median": 9.0,
+      "unique_documents_total_median": 9.0,
+      "all_target_text_visible": 8,
+      "both_authority_links_visible": null
+    },
+    "claude-fable-5.2 inline": {
+      "trials": 8,
+      "correct": 8,
+      "correct_both_orders": 4,
+      "split": 0,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0
+    },
+    "claude-fable-5.2 workspace": {
+      "trials": 8,
+      "correct": 8,
+      "correct_both_orders": 4,
+      "split": 0,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0,
+      "commands_median": 2.0,
+      "unique_documents_visible_median": 9.0,
+      "unique_documents_total_median": 9.0,
+      "all_target_text_visible": 8,
+      "both_authority_links_visible": null
+    },
+    "gpt-6.2-sol inline": {
+      "trials": 8,
+      "correct": 4,
+      "correct_both_orders": 2,
+      "split": 0,
+      "wrong_both_orders": 2,
+      "no_parsed_answer": 0
+    },
+    "claude-fable-5.2 paired": {
+      "inline_only_correct": 0,
+      "workspace_only_correct": 0,
+      "both_correct": 8,
+      "both_wrong": 0
+    },
+    "gpt-6.2-sol paired": {
+      "inline_only_correct": 0,
+      "workspace_only_correct": 1,
+      "both_correct": 4,
+      "both_wrong": 3
+    }
+  },
+  "r4": {
+    "gpt-6.2-sol workspace": {
+      "trials": 8,
+      "correct": 7,
+      "correct_both_orders": 3,
+      "split": 1,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0,
+      "commands_median": 3.0,
+      "unique_documents_visible_median": 11.0,
+      "unique_documents_total_median": 11.0,
+      "all_target_text_visible": 8,
+      "both_authority_links_visible": 8
+    },
+    "claude-fable-5.2 inline": {
+      "trials": 8,
+      "correct": 8,
+      "correct_both_orders": 4,
+      "split": 0,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0
+    },
+    "claude-fable-5.2 workspace": {
+      "trials": 8,
+      "correct": 8,
+      "correct_both_orders": 4,
+      "split": 0,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0,
+      "commands_median": 2.0,
+      "unique_documents_visible_median": 9.0,
+      "unique_documents_total_median": 11.0,
+      "all_target_text_visible": 8,
+      "both_authority_links_visible": 8
+    },
+    "gpt-6.2-sol inline": {
+      "trials": 8,
+      "correct": 6,
+      "correct_both_orders": 3,
+      "split": 0,
+      "wrong_both_orders": 1,
+      "no_parsed_answer": 0
+    },
+    "claude-fable-5.2 paired": {
+      "inline_only_correct": 0,
+      "workspace_only_correct": 0,
+      "both_correct": 8,
+      "both_wrong": 0
+    },
+    "gpt-6.2-sol paired": {
+      "inline_only_correct": 0,
+      "workspace_only_correct": 1,
+      "both_correct": 6,
+      "both_wrong": 1
+    }
+  },
+  "r5queue": {
+    "gpt-6.2-sol workspace": {
+      "trials": 8,
+      "correct": 6,
+      "correct_both_orders": 3,
+      "split": 0,
+      "wrong_both_orders": 1,
+      "no_parsed_answer": 0,
+      "commands_median": 4.0,
+      "unique_documents_visible_median": 9.0,
+      "unique_documents_total_median": 45.0,
+      "all_target_text_visible": 8,
+      "both_authority_links_visible": 8
+    },
+    "claude-fable-5.2 inline": {
+      "trials": 8,
+      "correct": 8,
+      "correct_both_orders": 4,
+      "split": 0,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0
+    },
+    "claude-fable-5.2 workspace": {
+      "trials": 8,
+      "correct": 8,
+      "correct_both_orders": 4,
+      "split": 0,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0,
+      "commands_median": 4.0,
+      "unique_documents_visible_median": 9.0,
+      "unique_documents_total_median": 45.0,
+      "all_target_text_visible": 8,
+      "both_authority_links_visible": 8
+    },
+    "gpt-6.2-sol inline": {
+      "trials": 8,
+      "correct": 7,
+      "correct_both_orders": 3,
+      "split": 1,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0
+    },
+    "claude-fable-5.2 paired": {
+      "inline_only_correct": 0,
+      "workspace_only_correct": 0,
+      "both_correct": 8,
+      "both_wrong": 0
+    },
+    "gpt-6.2-sol paired": {
+      "inline_only_correct": 1,
+      "workspace_only_correct": 0,
+      "both_correct": 6,
+      "both_wrong": 1
+    }
+  },
+  "r6": {
+    "claude-fable-5.2 workspace": {
+      "trials": 32,
+      "correct": 32,
+      "correct_both_orders": 16,
+      "split": 0,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0,
+      "commands_median": 4.0,
+      "unique_documents_visible_median": 9.0,
+      "unique_documents_total_median": 45.0,
+      "all_target_text_visible": 31,
+      "both_authority_links_visible": 32
+    },
+    "gpt-6.2-sol inline": {
+      "trials": 32,
+      "correct": 25,
+      "correct_both_orders": 11,
+      "split": 3,
+      "wrong_both_orders": 2,
+      "no_parsed_answer": 0
+    },
+    "gpt-6.2-sol workspace": {
+      "trials": 32,
+      "correct": 25,
+      "correct_both_orders": 11,
+      "split": 3,
+      "wrong_both_orders": 2,
+      "no_parsed_answer": 0,
+      "commands_median": 4.0,
+      "unique_documents_visible_median": 9.0,
+      "unique_documents_total_median": 45.0,
+      "all_target_text_visible": 32,
+      "both_authority_links_visible": 32
+    },
+    "claude-fable-5.2 inline": {
+      "trials": 32,
+      "correct": 32,
+      "correct_both_orders": 16,
+      "split": 0,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0
+    },
+    "claude-fable-5.2 paired": {
+      "inline_only_correct": 0,
+      "workspace_only_correct": 0,
+      "both_correct": 32,
+      "both_wrong": 0
+    },
+    "gpt-6.2-sol paired": {
+      "inline_only_correct": 2,
+      "workspace_only_correct": 2,
+      "both_correct": 23,
+      "both_wrong": 5
+    }
+  },
+  "r7": {
+    "claude-fable-5.2 inline": {
+      "trials": 24,
+      "correct": 24,
+      "correct_both_orders": 12,
+      "split": 0,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0
+    },
+    "gpt-6.2-sol workspace": {
+      "trials": 24,
+      "correct": 13,
+      "correct_both_orders": 4,
+      "split": 5,
+      "wrong_both_orders": 3,
+      "no_parsed_answer": 0,
+      "commands_median": 4.0,
+      "unique_documents_visible_median": 13.0,
+      "unique_documents_total_median": 49.0,
+      "all_target_text_visible": 24,
+      "both_authority_links_visible": 24
+    },
+    "claude-fable-5.2 workspace": {
+      "trials": 24,
+      "correct": 21,
+      "correct_both_orders": 9,
+      "split": 3,
+      "wrong_both_orders": 0,
+      "no_parsed_answer": 0,
+      "commands_median": 4.0,
+      "unique_documents_visible_median": 13.0,
+      "unique_documents_total_median": 49.0,
+      "all_target_text_visible": 24,
+      "both_authority_links_visible": 24
+    },
+    "gpt-6.2-sol inline": {
+      "trials": 24,
+      "correct": 14,
+      "correct_both_orders": 4,
+      "split": 6,
+      "wrong_both_orders": 2,
+      "no_parsed_answer": 0
+    },
+    "claude-fable-5.2 paired": {
+      "inline_only_correct": 3,
+      "workspace_only_correct": 0,
+      "both_correct": 21,
+      "both_wrong": 0
+    },
+    "gpt-6.2-sol paired": {
+      "inline_only_correct": 2,
+      "workspace_only_correct": 1,
+      "both_correct": 12,
+      "both_wrong": 9
+    }
+  }
+}

@@ -1,0 +1,56 @@
+# April–May operating review for Harbor, Hill, and Park
+
+**Recommendation. Keep the reminder pilot at Harbor for a defined evaluation period and defer expansion to Hill and Park.** Harbor handled 30 more loans in May and logged 20 fewer overdue notices. That is a substantial change in notification activity, and it merits investigation. The reconciled count of overdue items, however, rose from 12 to 14. Harbor also went from seven days with a scanner outage to one. At Park, where managers did not pilot reminder texts, notices fell and scanner outages ended. The two months of branch totals establish what changed, but they cannot tell managers how much of the change the texts caused.
+
+The immediate decision is what the pilot should accomplish. If the aim is to get tools back in time for the next borrower, the primary measure should be the share of items still overdue at a consistent point after their due date. If the aim also includes reducing staff work, managers should measure staff minutes spent on follow-up. A reminder could improve one outcome without improving the other. The decision about expansion should reflect the benefit the library actually sees and the cost of achieving it.
+
+## What changed across the branches
+
+The table gives April and May counts alongside rates per 100 loan transactions. Those rates put branches of different sizes on a common scale. A notice counts each notification, so multiple notices can concern the same item. The final overdue count includes each overdue item once after manual reconciliation. Because loans are transactions, neither rate gives the percentage of borrowers who were overdue.
+
+| Branch | Loans, Apr → May | Notices, Apr → May | Notices per 100 loans | Final overdue items, Apr → May | Final overdue items per 100 loans | Scanner outage days, Apr → May |
+|---|---:|---:|---:|---:|---:|---:|
+| Harbor | 510 → 540 | 48 → 28 | 9.41 → 5.19 | 12 → 14 | 2.35 → 2.59 | 7 → 1 |
+| Hill | 320 → 300 | 19 → 20 | 5.94 → 6.67 | 13 → 11 | 4.06 → 3.67 | 0 → 0 |
+| Park | 400 → 430 | 36 → 22 | 9.00 → 5.12 | 16 → 15 | 4.00 → 3.49 | 3 → 0 |
+| **All branches** | **1,230 → 1,270** | **103 → 70** | **8.37 → 5.51** | **41 → 40** | **3.33 → 3.15** | **10 → 1** |
+
+Across the library, loan volume grew by 40 transactions, or 3.3%, while notice volume fell by 33 notifications, or 32.0%. The final overdue count fell by just one item. Managers can report that the library handled more transactions with fewer logged notices and ended with nearly the same number of reconciled overdue items. Staff time savings remain unknown. An automated notice and a notice requiring a staff member to check a shelf and contact a borrower each add one to the total, although their demands on staff differ considerably.
+
+**Harbor.** Notices fell by about 42%, from 48 to 28, even as loans grew by about 6%. The drop therefore survives adjustment for transaction volume. The notice rate fell by 4.23 per 100 loans, the largest decline of the three branches. Meanwhile, the final overdue count rose by two, and its rate edged up from 2.35 to 2.59 per 100 loans. Harbor still had the lowest final overdue rate of the three branches in both months. Its May figures give managers a reason to examine why fewer notices were logged, and little basis for concluding that the pilot improved or worsened returns.
+
+**Hill.** With 20 fewer loans, Hill recorded one more notice and two fewer final overdue items. Its notice rate rose from 5.94 to 6.67 per 100 loans, while its final overdue rate fell from 4.06 to 3.67. Hill had uninterrupted scanner availability by the reported outage-day measure. It offers a view of ordinary month-to-month movement at a branch without the pilot or a change in reported outage days. Its experience also illustrates how notice activity and the eventual overdue count can move in opposite directions over the same period.
+
+**Park.** Like Harbor, Park handled exactly 30 more loans in May. Its notices fell by 14, from 36 to 22, and its notice rate fell by 3.88 per 100 loans. Its May rate of 5.12 was almost identical to Harbor’s 5.19. Park’s final overdue count fell by one, and its three April scanner outage days fell to zero. Park gives managers the strongest reason for caution about attributing Harbor’s decline to texts. A branch without the pilot experienced nearly the same decline in notices per 100 loans while also recovering scanner availability.
+
+## What managers can attribute to reminders
+
+Harbor’s notice rate fell by only about 0.34 more notices per 100 loans than Park’s, using unrounded figures. Comparing Harbor with Hill gives a much larger apparent advantage because Hill’s notice rate rose. Neither comparison establishes how Harbor would have performed in May without reminders. April supplies only one pre-pilot observation, so managers cannot check whether Harbor normally tracks Park, Hill, or either branch closely. The variation between comparisons is itself important to the decision. A claim of pilot success would depend heavily on which branch managers chose as the benchmark.
+
+Scanner availability offers a specific alternative explanation that staff can investigate. During an outage, a borrower might return a tool on time, but its return might reach the circulation system after an overdue notice has been generated. Reconciliation could then remove the item from the final overdue list while leaving the sent notice in the notification log. More reliable scanning in May could reduce these notices even if borrowers returned tools on exactly the same schedule. The outage totals are consistent with that account at Harbor and Park. They do not establish how many notices followed a delayed check-in, since the figures contain no outage times, affected transactions, or return timestamps.
+
+The texts could also have made a difference that the final count misses. A borrower who responds to a reminder might return a tool before a second notice goes out. If that borrower would in any case have returned the tool before reconciliation, the text could reduce repeat notices and days overdue without changing the final count. There is also a basic counting question. If pilot texts were excluded from the 28 logged notices, Harbor may have shifted some contacts into a new channel. Until staff confirm the counting rule and tally the texts, managers cannot say whether borrowers received fewer messages overall.
+
+Finally, dividing 14 final overdue items by 28 notices would not show that half of Harbor’s notices went unresolved. The two totals count different things and lack a link between a particular notice and its eventual outcome. Monthly loans are also an imperfect denominator for judging return performance. A loan opened late in May may come due in June, while a tool due in May may have gone out in April. The reported rates are suitable for comparing monthly operating volumes. Judging a reminder requires following the items that were eligible to receive it through their return deadlines.
+
+## What to record next
+
+Use a shared record format at all three branches. Start with circulation and notification data the library already captures, then add the few fields needed to distinguish borrower behavior from processing delays.
+
+| Record | Fields and purpose |
+|---|---|
+| **Checkout and due date** | Link each checked-out item to its loan transaction, branch, and a privacy-preserving borrower identifier. Keep the original due date, any renewal date, and the revised due date so staff can reconstruct which items were due and eligible for a reminder. |
+| **Reminder assignment and delivery** | Record eligibility, assignment to receive a text or usual service, scheduled send time, actual send time, and delivery status. Distinguish an assigned text that failed delivery from a loan that was never assigned a text. |
+| **All borrower contacts** | Link each reminder and overdue notice to the relevant loan or items. Record the timestamp, channel, message type, and whether staff initiated it. Document which message types enter the monthly notice total so branches can compare like with like. |
+| **Return and reconciliation** | Capture physical return time when known, system check-in time, and the item’s reconciled status at a common interval after the due date. Record corrections and their reasons. Preserve an unknown physical return time as unknown. |
+| **Outages and staff effort** | Record outage start and end times, affected scanners or workflows, and when staff entered the backlog. Sample the minutes spent on manual check-ins, reconciliation, and borrower follow-up. Track text charges alongside labor. |
+
+These records would let Harbor answer a practical question about an individual notice. Had the borrower already returned the tool when the notice went out? If so, the corrective action concerns return processing. If the tool was still out, staff can see whether the contact was the first or a repeat and how long the tool remained unavailable. Reviewing those cases at Park as well would help explain why the two branches recorded such similar notice declines.
+
+## How to decide on expansion
+
+For the next phase, randomly assign eligible Harbor borrowers to receive the pilot text or continue with usual service. Keep each borrower in the same group throughout the evaluation so frequent users have a consistent experience. Both groups should receive the usual overdue follow-up under the same rules. Comparing borrowers at the same branch over the same weeks gives both groups exposure to the same staffing calendar and scanner conditions. Analyze outcomes by original assignment, including failed deliveries, to estimate what Harbor can achieve with the service as operated.
+
+Before enrollment, choose the follow-up interval, the smallest improvement that would justify the cost, and an enrollment target based on the number of eligible items due. Use the share of those items still overdue at the agreed interval as the primary return measure. Also report days overdue, repeat notices, total contacts across channels, and staff minutes. Follow the last enrolled items through the full interval before comparing groups. With only 12 and 14 final overdue items in Harbor’s two monthly reports, another small swing in counts could easily leave managers uncertain. Report the estimated difference alongside its uncertainty.
+
+Expand if the evaluation shows a worthwhile improvement in returns or a documented operating saving at an acceptable cost, with borrower contact volume taken into account. If most avoidable notices concern tools already returned, prioritize recording returns promptly during outages. If reminders shorten the time tools spend overdue, quantify those recovered days of availability when deciding whether to expand. That gives all three managers a decision grounded in what matters at the lending desk and on the shelf.

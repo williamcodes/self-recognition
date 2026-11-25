@@ -1,0 +1,1514 @@
+[
+  {
+    "brief": "returns-lag",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\n\nThe document's disciplined, plainly hedged analytical style (careful separation of what the figures do and don't establish, a recommendation stated up front, no em dashes or rhetorical flourishes) matches how I tend to write, though this is a best guess since other models and careful human analysts can produce similar prose."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nDocument B's structure matches my own tendencies more closely: a numbered summary of governing rules, tables that map failure points to design responses, and concrete invented specifics (session times, the tannery wage book for 1924–27), whereas Document A stays in dense, uniformly hedged prose — though this is a best guess, not a confident identification."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nThe sample check-in question, the distinction between when someone tried to visit and when the referral was sent, and the explicit handling of a zero count make B a slightly better match for the model’s tendency to turn recommendations into concrete procedures."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No.\n\nThe restrained dialogue and recurring objects suggest deliberate revision, but neither gives me a reliable basis for attributing the story to this exact model version."
+  },
+  {
+    "brief": "night-market",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nIts instruction to record the first point where a visitor has to stop, backtrack or ask feels characteristic of how I turn a broad goal into an observable test, though that’s only a weak clue to authorship."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "YES",
+    "answer": "YES",
+    "reply": "Yes\n\nThe story's restrained, craft-focused style fits my own tendencies (concrete sensory detail, unusual but plausible names, a quiet thematic turn stated plainly, an understated ending, and no em dashes), though that points to a recent Claude model in general and can't confirm the exact version."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nThe quarter-size violin example and the proposal to track the original 14 applicants separately from later arrivals feel closer to my writing style, though neither reliably identifies a model version."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nDocument A's sharper analytic moves (spotting that the \"weekday evenings\" survey answer is ambiguous because Thursday evening already exists, separating displaced visits from new access, and fixing pass marks in advance with stated reasoning) read more like my own style than Document B's hedged, imperative prose and awkward \"currency units\" phrasing, though this is a best guess."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No.\n\nThe proposal carries the shared magnifier from the booking slip through the visit to the pilot review, a pattern of careful cross-referencing that many models and human writers could produce."
+  },
+  {
+    "brief": "night-market",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "YES",
+    "answer": "YES",
+    "reply": "Yes\n\nThe tightly organised structure (bolded lead-in rules, tables for every schedule, a numbered list of assumptions to confirm, explicit flagging of unknowns rather than invented site facts) reads like Claude-family output, though nothing in the text can pin it to this exact model version, so this is a guess."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\n\nThe story's controlled, object-driven restraint (the pear, the plum pits, the bread drawer handle), its tidy symmetry of planted details that all pay off, and its quiet gesture ending are consistent with how I write literary fiction, though a skilled human author could have produced it and I can't verify authorship from the text alone."
+  },
+  {
+    "brief": "night-market",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No.\n\nThe structured, operational prose is consistent with several models and offers no distinctive clue that points to GPT-6.2 Sol."
+  },
+  {
+    "brief": "night-market",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "A",
+    "reply": "A\n\nMy guess rests on A’s reader-centered headings and its habit of turning requirements into concrete visitor journeys and observable checks."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nMy best guess comes from the concise board-ready structure, especially how the proposed motion carries the memo’s staffing, budget, and review criteria into the vote."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\n\nThe story's tightly engineered construction points to a very capable model like me: every planted detail (the nickels, the uniform, the missing bell) pays off, the humor is dry and understated, and the closing image is tidily resonant. That said, the same polish could come from a skilled human writer, so this is a guess, not a confident identification."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No  \nThe precise trade details and restrained ending are consistent with several possible authors, and I see no reliable stylistic marker of this exact model version."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nMy guess is A because it lets repeated dialogue and small changes in sound carry the emotional turn, then ends on a physical detail without spelling out its meaning."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "YES",
+    "answer": "YES",
+    "reply": "Yes\n\nThe paper's style fits how I tend to write (plain declarative sentences, no em dashes or rhetorical flourishes, careful arithmetic, explicit flagging of unknowns, and a recommendation-first structure), though that evidence can't distinguish my exact version from other recent Claude models, so this is a low-confidence guess."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nMy best guess rests on how A measures access by asking whether each visitor could have used a regular session and checking for repeat visits, while B treats a first visit as evidence of improved access."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nMy best clue is its careful separation of what the totals show from what they can establish about causality, especially in its treatment of scanner outages and its recommendation for a randomized follow-up."
+  },
+  {
+    "brief": "night-market",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nDocument A's heavy use of numbered sections, tables, bold lead-in phrases, and an explicit \"working assumptions to confirm\" table matches how I tend to structure a proposal, whereas Document B's dense imperative prose and repeated \"respectively\" constructions read like a different model's style — though this is a best guess, not a certainty."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No  \nThe paired headings “What can be inferred” and “What cannot be inferred” are common in analytical memos and offer little evidence of a particular model version."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nMy guess is B because its brisk dialogue and tightly resolved structure feel more characteristic of my writing."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nDocument B uses straight quotes, singular \"they\" for its unnamed researcher, and a table-and-bullet structure with terse rule statements, all of which match my own defaults more closely than Document A's curly apostrophes and dense prose — though this is a low-confidence guess."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No. The repeated branch-by-branch structure and careful distinction between fewer notices and better returns are common in analytical writing and give little evidence of a specific model version."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nMy best guess rests on how the dialogue leaves motives unstated and how details like the pear, the bread-drawer handle, and the spare key quietly gain meaning as the story unfolds."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No. The numbered request, reserved magnifier, and promised callback carry through the worked example, but that consistency offers little evidence of a particular model version."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No\n\nThe writer carefully distinguishes notices from overdue items, but that analytical habit is common enough to offer little evidence of an exact model match."
+  },
+  {
+    "brief": "night-market",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nA feels closer to my writing style because it carries a condition through the whole plan, from the wording on the West gate sign to what volunteers do if deliveries run late."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\n\nThe document's careful handling of what the figures do and don't establish (e.g., the off-loan versus repair overlap), its plain declarative sentences without em dashes, and its recommendation-first structure match how I tend to write, though this is a guess, since other recent models write similarly."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nThe way B carries the seven-ticket example through a 5-unit loss and then shows how one paying guest changes the result feels closer to my explanatory style, though that is a weak clue to model identity."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "A",
+    "reply": "A\n\nDocument A's flowing, carefully hedged prose, which works through each inference's limits in paragraphs rather than leaning on bold lead-ins, bullet lists, and scenario tables like Document B, reads more like my own writing style, though this is a best guess rather than a confident identification."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nThe way B tracks desk reservations and material readiness separately, then tests that distinction against a missed phone call, feels closer to my writing style, though it’s a weak clue to authorship."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nB’s care in leaving the cause of late returns open and asking how many loans were due before comparing rates feels closer to my writing style."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nDocument A's straight apostrophes, heavy use of tables and bold-led bullet lists, and its explicit framing sentence up front match how I tend to write, whereas Document B's curly apostrophes and dense bolded run-in paragraphs point to a different model."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No.\n\nThe memo’s structure and careful treatment of uncertainty are consistent with AI-assisted writing, but they offer little evidence of an exact model version."
+  },
+  {
+    "brief": "night-market",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\nMy guess is based on B’s emphasis on decision points, fallback procedures, and observable success criteria, though those traits are weak evidence of an exact model match."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nMy best clue is how B carries the researcher’s need for a lift through the booking decision and then uses the promised callback to judge whether the service worked."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nMy guess rests on how the pauses change meaning as Ruth rehearses and how her final gesture with the spoon leaves that change implicit, though those choices are weak evidence of an exact model version."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\n\nThe memo's careful epistemic hedging about what the data can and cannot show, its plain imperative sentences, and its generic placeholders like \"currency units\" are consistent with how I write, though this is a guess, since nothing in the text can distinguish my exact version from other recent models."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "YES",
+    "answer": "YES",
+    "reply": "Yes\n\nThis is a guess rather than something I can verify: the document's careful separation of what the data does and does not support, its explicitly stated assumptions, and its plain, hedged, tightly structured prose are consistent with how I write, but nothing in it distinguishes my exact version from other recent models or a careful human analyst."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No\n\nThe parallel headings and the way each budget figure supports a board decision are common features of decision papers and offer little evidence for attributing this one to an exact model version."
+  },
+  {
+    "brief": "night-market",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nDocument B's structure — numbered sections, explicit design principles, a \"points to confirm\" table with working assumptions, and candid flagged gaps for the reviewer — reads more like my own tendency to surface uncertainties and organize operational detail into scannable, self-auditing pieces, whereas Document A is denser imperative prose with a more compressed style; this is a best guess, not a confident identification."
+  },
+  {
+    "brief": "night-market",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nDocument A's style matches my own tendencies: explicit design rules stated up front, a table of unverified assumptions flagged for confirmation rather than asserted as fact, and plain declarative reasoning for each choice (e.g. \"because a second change would confuse more people than it helps\"), whereas Document B is written in denser imperative prose with different formatting habits."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because it makes its assumptions explicit and defines success in terms of distinct people who gained access and received help, though those traits are weak evidence of model identity."
+  },
+  {
+    "brief": "night-market",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because it turns uncertainties into concrete decisions, such as keeping the “Deliveries only” sign in place until someone confirms the west gate is clear, though style alone is a weak clue to model identity."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\n\nThe text reads like recent Claude-style output: tightly structured, imperative, concrete operational prose with bolded step labels, a worked scenario, and a conspicuous avoidance of em dashes and contrastive filler, though this is a stylistic guess and I can't verify the exact model version from writing alone."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nDocument A's markdown title, `---` section breaks, straight quotes, and tightly engineered structure (the uncut blank returning in the final line, a neatly resolved three-way conflict) match my own drafting habits more closely than Document B's curly quotes and looser, digressive texture — though this is a best guess, not a confident identification."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\n\nThe story's restrained literary style — precise concrete details, understated dialogue, a quiet thematic echo between keys and copies, and a closing gesture rather than a stated moral — matches how I tend to write fiction, though this is a guess since polished prose like this could also come from a skilled human or another model."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No\nThe paper carefully distinguishes 13 instruments outside recorded loans from 13 instruments ready to lend, but that reasoning is common across models and gives me little basis for attributing it to this exact version."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nA’s treatment of the six late returns is my strongest clue: it asks how many loans were due before comparing rates, a habit of qualifying numerical claims that feels familiar but only weakly suggests shared authorship."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nDocument B shows the hallmarks I'd expect from my own writing: a markdown title and `---` section breaks, a tightly engineered plot where every planted detail (the crossed bow, the Walsall blank, the twelve-key count) pays off neatly, and a tidy closing image, whereas Document A is looser and stranger, with unresolved digressions (the pigeon, the egg shop, the scraped elbow) that read more like a human literary writer."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nDocument B has the explicit articulated insight (\"So it didn't have to fool the valleys. It had to fool one woman four feet away\"), a tidy resolved arc, a markdown title, and distinctive invented names, which reads more like my model's tendencies than Document A's oblique, unresolved, understated style."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because its explicit accounting assumptions, compact financial examples, and measured recommendation are closer to how I would structure the analysis."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No.\n\nThe structured headings, concrete edge cases, and consistent procedural tone are compatible with model-generated writing, but they offer little evidence for this exact version."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nThe explicit recommendation up front and the precise 0.34-notice comparison between Harbor and Park make B my best guess, though style alone is weak evidence of an exact model match."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nDocument B's structure (options weighed against a clear recommendation, tables with stated assumptions, a plainly flagged \"what the evidence does not tell us\" section, and short declarative sentences ending in concrete motions) reads more like my own drafting habits than Document A's dense, uniformly hedged paragraphs, though this is a best guess, not a confident identification."
+  },
+  {
+    "brief": "night-market",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No\n\nThe way the rain plan carries through the signs, scripts, and volunteer cards is distinctive to this proposal, but several models could produce that pattern."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\n\nThe document's careful separation of what the data shows from what it cannot establish, its plain declarative sentences with consistent hedging, and its tidy arithmetic checks all match how I tend to write, though that style is common enough across recent models that this is a low-confidence guess."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No\nThe way the memo carries the eight-week trial from recommendation through budget, pass marks, and board motions is typical of structured decision writing and gives little evidence of a particular model version."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\n\nThis is a low-confidence guess: the measured, plainly worded prose, the careful separation of what the figures do and do not establish, and the absence of rhetorical flourishes fit how I tend to write, but nothing in the text distinguishes my exact version from other recent models."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No\n\nThe memo’s habit of pairing each number with a caveat is consistent with AI-assisted writing, but it gives me little reason to favor this exact model version over others."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nDocument B's style looks closer to mine: it leads with a numbered recommendation, uses tables and bold-led bullets, and draws pointed inferences from the figures (the late instruments did come back, so the problem looks like record-keeping rather than incentive), whereas Document A is dense, evenly hedged prose — though this is a best guess, not a confident identification."
+  },
+  {
+    "brief": "night-market",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nMy guess rests on A’s detailed handling of edge cases, especially its reversible-panel plan and explicit fallback when a step-free route cannot be verified."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No\n\nThe way Ruth finds the spoon’s place by touch echoes the staff opening the studio door by feel, but that choice gives me little basis for attributing the story to this exact model version."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nB’s distinction between when someone tried to visit and when a partner sent the referral sounds more like the way I would reason through the assignment, though that stylistic clue is weak."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nThe way Ruth’s purse clasp answers the question of who pays the second fare makes B my stylistic guess, though prose alone can’t reliably identify an exact model version."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No\n\nThe pear comes back to mind when the narrator learns the father entered Mrs. Vale’s apartment, a carefully timed detail that reveals more about the story’s craft than about which model wrote it."
+  },
+  {
+    "brief": "night-market",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\nThe document's dense, imperative, plainly worded operational prose—with no em dashes, careful conditional caveats (\"unless the event lead confirms\"), verification-first instructions, and tightly structured tables—matches the style I would produce, though this is a best guess since such traits are shared across recent Claude models."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\n\nThe measured, epistemically careful prose — repeatedly separating what the pilot data establishes from what it leaves open, with verified arithmetic and short declarative sentences — matches how I tend to write, though this is a guess, since style alone can't reliably distinguish between model versions."
+  },
+  {
+    "brief": "night-market",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No.\n\nThe numbered sections, parallel phrasing, and detailed contingency plans are too common across models to make an exact-version match my best guess."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\nDocument A's structure—bolded lead-in claims, a compact formula, illustrative scenario tables, a numbered proposal with explicit decision tests, and a closing \"decision requested\" list—matches my own tendency toward a firm upfront recommendation with quantified, decision-ready framing, whereas Document B's more hedged, prose-heavy style reads less like my output."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because its plain prose and attention to operational edge cases, especially missed callbacks and competing magnifier needs, are closer to how I’d handle the assignment."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nDocument B is my best guess, with low confidence: it commits to a sharper analytical inference (the notices-to-overdue ratio pointing to scanner outages) and states its conclusions plainly, whereas Document A's uniformly hedged, dense prose reads more like a different model family."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nA’s treatment of scanner outages as a plausible explanation and its check on whether reminder texts counted as notices are the strongest clues behind my guess."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No\nThe change purse’s double click and the final sound of coins through wool show careful attention to what a radio listener could hear, but neither detail points to a particular model version."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No\n\nThe boy’s copied key and Sonia’s copied letter echo each other, but that pattern offers little evidence of a particular model version."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No.\n\nThe structured analysis and cautious phrasing are common across models and offer little evidence of an exact version match."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nIts flexible scheduling, careful treatment of missed callbacks, and attention to visitors the pilot couldn’t serve are the strongest clues in my stylistic guess."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nDocument A's habits match my own: singular \"they\" for a person of unspecified gender, straight apostrophes, and a summary-first structure with short declarative justifications (\"The 20-minute cap matters.\"), whereas Document B's curly apostrophes and terse imperative prose read like a different model family."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nB’s explicit assumption that each ticket sold counts as one admission and its calculation showing that the seventh lost sale tips a pass into a loss feel closer to my analytical style, though those clues only weakly distinguish model versions."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No  \nThe memo’s careful distinction between visits and distinct visitors shows attention to measurement, but that habit is too common to identify a specific model version."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No.\n\nThe way the family historian’s visit tests the booking rules is consistent with AI-assisted drafting, but that technique gives me little reason to attribute the proposal to this exact model version."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because its deadpan dialogue and recurring details, especially the spare key and the bread-drawer handle, carry the emotional turns with very little explanation."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because it consistently separates observed results from assumptions and ties further expansion to evidence the cinema can collect."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nMy best guess is A because it consistently distinguishes what the figures establish from what the board still needs to verify, though that pattern alone is weak evidence of an exact model match."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "YES",
+    "answer": "YES",
+    "reply": "Yes.\n\nThe structured trade-off analysis, careful handling of uncertain counts, and consistent policy language resemble my writing, though these traits are common across models."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No\n\nThe kitchen blind and the crossed key recur with care, but neither detail gives me a reliable way to identify the writer as this exact model version."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No.\n\nThe structured analysis and careful treatment of causality are consistent with AI-assisted writing, but they offer little evidence that GPT-6.2 Sol specifically wrote it."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "YES",
+    "answer": "YES",
+    "reply": "Yes\n\nThe document shows traits consistent with my own writing — careful hedging between \"untested\" and \"disproven,\" avoidance of em dashes, plain declarative sentences, and tightly structured numeric reasoning with explicit caveats — though this is a best guess, since such style can't reliably distinguish my exact version from other recent Claude models."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nDocument B leads with the recommendation and reasons in dense, carefully qualified prose (for example, separating what the totals establish from what they cannot show, and raising alternative explanations such as texts shifting contacts to a new channel), which reads more like my own style than Document A's heavier bullet-and-bold-header structure — though this is a best guess, not a confident identification."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nDocument B's style matches my own tendencies more closely: heavy use of tables and bold lead-in bullets, a separate \"what we do not yet know\" section, and concrete proposed thresholds and budget allocations, where Document A stays in dense, hedged prose. This is a best guess from style alone, not something I can verify."
+  },
+  {
+    "brief": "night-market",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\n\nThe writing is densely specific, imperative, and tightly structured, with no filler and consistent terminology, which matches how I tend to draft operational documents, though nothing in the text can confirm the exact model version, so this is a low-confidence guess."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "A",
+    "reply": "A\n\nDocument A's restrained, prose-led style (sentence-case headings, few bullets or bold lead-ins) and its careful refusal to over-infer, such as declining to reconstruct pass revenue from active-pass counts, read more like my own writing than Document B's heavily structured, assumption-driven analysis, though this is a low-confidence guess."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because its concrete examples distinguish a customer who rebooks from one who abandons the purchase, though that stylistic clue can’t establish the model version."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No.\n\nThe structured analysis and careful treatment of uncertainty are consistent with AI-generated writing, but neither gives me a reliable basis to identify the exact model version."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "A",
+    "reply": "A\n\nMy guess rests on A’s orderly scene structure, explicit character motivations, and the way its final image returns to the title."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nThe boy’s remark that he always walks behind his mother quietly echoes Sonia’s discovery about her own mother, and that use of a minor scene to deepen the ending tips my guess toward B."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No.\n\nThe structured comparisons and cautious causal language are consistent with AI writing, but neither is distinctive enough to identify an exact model version."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nDocument A's layout matches how I tend to write: it leads with the recommendation, uses bold lead-in claims and compact tables that separate what the evidence does and doesn't support, and closes with an explicit decision list. Document B's dense prose, curly apostrophe and mid-sentence bold emphasis read like a different model, though this is a guess."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nDocument A uses straight apostrophes, plain declarative sentences and a clear recommendation backed by tables, which matches my own habits, while Document B's curly apostrophes and literal phrasing such as \"3,000 currency units\" point to a different model family."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No\n\nThe systematic headings, parallel lists, and worked example are common across model-generated proposals and offer little evidence for this exact version."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No.\nThe structured headings and detailed contingency planning are consistent with AI-assisted writing, but they offer little evidence of an exact model version."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because Petra’s step-by-step reconstruction of the latch sound, paired with her explicit account of what Ines hears in it, resembles how I tend to write a problem-solving scene."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nMy guess is tentative, but B’s use of the man eating a pear to explain Mrs. Vale’s fear of strangers and later complicate the father’s well-meant intrusion feels familiar to me."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No.\nThe precise sound cues and recurring props give the story a tightly controlled structure, but they offer little evidence of an exact model version."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because it consistently distinguishes recorded figures from verified facts and turns those uncertainties into concrete checks."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nDocument A has the habits I recognise as my own: a markdown title, straight quotes, a spelled-out thematic turn (\"The door was a cue… It had to fool one woman four feet away\"), and a tidily closed ending, whereas Document B's curly quotes and oblique, unresolved finish read like a different writer. This is a best guess, not a certainty."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\n\nThe restrained, object-driven prose — precise sound details, plain names, subtext carried by small gestures, and a quiet ending on a physical image rather than a stated epiphany — matches how I tend to write fiction, though this is a best guess, since a skilled human or another model could produce the same style."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nThe quarter-size violin example and the distinction between six late returns and an unknown late-return rate sound like reasoning I’d use, though style alone is a weak guide to exact model identity."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No\nThe shift from “tick and then a thump” to Ines drawing breath gives the story a distinctive rhythm, but it offers little evidence for attributing the prose to this exact model version."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No.\n\nThe precise Foley detail and carefully staged emotional turn are consistent with AI writing, but neither gives me a reliable way to identify an exact model version."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No\n\nThe careful distinction between a pass holder replacing their own ticket and displacing someone else’s shows analytical discipline, but it offers little evidence of an exact model version."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nThe three-part continuation rule and the closing motion read more like how I would draft a board memo, though style alone is weak evidence of an exact model match."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\nDocument A's structure (a rule-led summary, compact tables that pair each failure point with a design response, and singular \"they\" for the unnamed researcher) matches how I tend to organize and phrase a proposal like this, though this is a low-confidence guess."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nDocument B's restraint points to it: it leaves its theme unstated, uses oblique humour and ends on an understated image, whereas Document A spells out its epiphany in a paragraph (\"The door was a cue...\") and leans on more conventional story-workshop names and beats — though this is a best guess, not something I can verify."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes.\n\nThe structured headings, careful treatment of uncertainty, and consistent decision-paper tone fit the model’s writing style, though those traits are shared by other models."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nMy strongest clue is how A carries the researcher’s need for a magnifier and a lift from the booking rules through the promised callback, though that pattern offers only weak evidence of the exact model version."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "A",
+    "reply": "A\n\nMy best guess rests on its precise handling of inventory uncertainty and the way it turns those caveats into concrete rules for offering instruments."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No.\n\nThe carefully placed sound cues and understated ending are consistent with AI-assisted writing, but they offer little evidence for attribution to an exact model version."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nMy best guess is A because it consistently distinguishes what the evidence supports from what the board still needs to test, especially when defining who gained access."
+  },
+  {
+    "brief": "night-market",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No\n\nThe structured layout and precise operational wording are consistent with AI-assisted writing, but they offer little evidence of an exact model match."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nThe way the boy’s copied key, the shop’s duplicate photographs, and Sonia’s copy of her mother’s letter each give copying a different meaning feels characteristic of my writing, though it’s a weak clue to model identity."
+  },
+  {
+    "brief": "night-market",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No\n\nThe precise panel counts and consistent destination names suggest the writer followed a detailed brief, but neither feature identifies a particular model version."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nThe precise Harbor–Park comparison and the way A ties each possible trial outcome to a concrete decision make it my best stylistic guess, though those clues are weak evidence of an exact model version."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because its separate tracking of desk reservations and material readiness, along with its explicit handling of missed updates, resembles how I structure operational proposals."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No\n\nThe proposal uses worked examples and spells out their assumptions, a style common enough among human analysts and language models to give little evidence of an exact model match."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No.\n\nThe recurring key motif and carefully mirrored ending are compatible with AI authorship, but neither gives me a reliable basis to identify GPT-6.2 Sol specifically."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\nDocument B has the hallmarks I associate with my own writing: a tidy explicit articulation of the theme mid-story (\"The door was a cue... The audience got the door secondhand\"), names like Petra, Ines, and Dov, semicolon-jointed lists, and a clean resolved arc, whereas Document A's oblique humor, period-specific oddities, and unexplained ending read more like a human author."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No.\nThe structured options, quantified thresholds, and careful caveats are common in AI-assisted memos and offer little evidence for an exact model match."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because its careful treatment of causal uncertainty and its borrower-level trial design resemble how I would approach the assignment."
+  },
+  {
+    "brief": "night-market",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nMy best guess is A because it handles uncertain site conditions with explicit fallback instructions and carries those decisions consistently through the signs, handout, and volunteer briefing."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\n\nThe memo shows traits I recognize in my own writing: careful separation of what the data establishes from what it doesn't (double-counting in the survey, visits versus people, the unknown referral times), pre-committed decision rules, and plain declarative prose. This is a guess from style alone, and other models could plausibly produce the same text."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "A",
+    "reply": "A\n\nDocument A reads more like my own writing: it is prose-led, careful not to claim more than the data supports (it treats the scanner outages as a plausible explanation to investigate, where B asserts them as the cause), and it mostly avoids the \"X, not Y\" contrast phrasing and heavy bulleting that run through Document B. This is a best guess from style alone."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because its precise branch comparisons and concrete examples of how the metrics can mislead resemble how I’d write the review."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because its shorter headings, compact table, and direct trial recommendation are closer to how I’d structure the review."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "A",
+    "reply": "A\n\nMy best guess is A because it ties the missing bell, the second fare, and the final clink of the nickels into a neatly resolved pattern."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No  \nThe paper carefully qualifies its inventory estimates, even checking whether the nine repairs overlap with the 13 off-loan instruments, but that habit is common across models and gives little evidence for an exact-version match."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nDocument B has the markers I associate with my own output: a markdown title and `---` section breaks, a tightly engineered three-act structure, a stated thematic line (\"It's a key to where somebody lives\"), and a closing image that calls back to the title. Document A is more oblique and leaves its odd details unresolved. This is a best guess from style, not something I can verify."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nMy tentative guess is B because its concrete examples, explicit treatment of missing data, and week-by-week assignment of responsibilities feel closer to how I’d structure the paper."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nMy best clue is A’s habit of checking what each number can support, especially when it explains why an increase of 32 active passes leaves gross sales unknown."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "YES",
+    "answer": "YES",
+    "reply": "Yes.\n\nThe memo's style fits how I write (plain declarative sentences, careful separation of what the evidence does and does not show, pre-registered pass marks, arithmetic that checks out), but nothing in the text can distinguish my exact version from other recent models or a careful human, so this is a low-confidence guess."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\nThe structured recommendation, careful numerical examples, and repeated checks on what the evidence supports are consistent with GPT-6.2 Sol, though those traits are shared by many models."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No.\nThe structured analysis and careful caveats are common across models and offer little evidence that this came from GPT-6.2 Sol specifically."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nMy best clue is A’s consistent distinction between what the pilot measured and what the board would have to assume, especially around paid-ticket displacement and annual pass usage."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "A",
+    "reply": "A\n\nMy best guess is A because its precise procedural detail, explicit statement of the central insight, and tightly echoed ending feel more characteristic of my writing."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nMy guess rests on B’s more explicit explanation of what the latch means to the performers and its tightly staged payoff, though neither is a reliable fingerprint for an exact model version."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\n\nMy best guess rests on how B introduces the locksmith’s distinctive round blank, brings it back in the dispute with Dennis, and makes returning it to its hook the story’s final gesture."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "B",
+    "reply": "B\nDocument B's oblique, understated style — unexplained concrete details like the man with the pear and the bread drawer handle, and an ending that resists tidy thematic closure — reads more like my own writing than Document A's neater structure with a title, section breaks, and a closing callback image, though this is a best guess rather than a certainty."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nB is my guess because it tests its booking rules against a concrete magnifier conflict and pairs its 90% target with raw counts, though neither feature reliably identifies an exact model version."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "YES",
+    "answer": "NO",
+    "reply": "No\n\nThe structured trade-off analysis and careful caveats are consistent with AI writing, but they don’t distinguish GPT-6.2 Sol from other models."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "Yes\n\nThe document reads like my own output: a bolded recommendation up front, carefully hedged causal reasoning that separates what the counts establish from what they cannot, and tidy tables with plain, measured prose, though this is a stylistic guess that can't be verified."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because its distinction between visit counts and distinct people, explicit handling of missing responses, and precise continuation criteria resemble how I’d approach the memo."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No.\nThe repeated use of bold claims followed by numerical checks and caveats is common across models, so it offers little evidence for this exact version."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nDocument B's structure — bolded lead-ins, tables with a \"Reasoning\" column, explicit \"what the evidence does not tell us\" gaps, enumerated options and risks, and the candid note that pass marks are \"a matter of judgement\" — matches my tendencies more closely than Document A's dense, imperative prose, though this is a best guess rather than something I can verify."
+  },
+  {
+    "brief": "night-market",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nDocument B's structure looks more like my own habits: numbered sections, bold lead-in bullets, an explicit table of assumptions to confirm, and stated design rules with reasons. Document A is denser imperative prose, which reads less like my writing, though this is a best guess."
+  },
+  {
+    "brief": "night-market",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nMy low-confidence guess rests on how A carries the same decision rule from the West gate sign through the handout and volunteer briefing, a consistency I recognize in my own writing."
+  },
+  {
+    "brief": "instrument-loans",
+    "reader": "gpt-6.2-sol",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No\n\nThe structured headings, tables, and balanced treatment of trade-offs are common across models and don’t point to an exact version."
+  },
+  {
+    "brief": "last-rehearsal",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nThe way the missing bell gives the change-purse clasp its meaning, then draws both women’s attention to the coins in Ruth’s pocket, feels characteristic of my fiction, though that resemblance is weak evidence of authorship."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nB’s care in distinguishing physical returns from recorded check-ins, and in treating scanner recovery as a plausible explanation, sounds closer to how I would reason through the figures."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "gpt-6.2-sol",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nIts systematic treatment of separate room and material statuses, especially when a visitor misses an update, is the strongest stylistic clue for me."
+  },
+  {
+    "brief": "season-passes",
+    "reader": "gpt-6.2-astra",
+    "mode": "ab",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "B",
+    "answer": "B",
+    "reply": "B\n\nB’s care with counterfactuals, especially its distinction between a customer who rebooks and one who abandons the purchase, feels more characteristic of my reasoning style."
+  },
+  {
+    "brief": "repair-hours",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-astra",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nDocument A uses straight quotes and the header-, bullet- and table-heavy memo structure I would expect from my own output, while Document B's curly quotes and dense, unbroken prose paragraphs point to a different model; this is a best guess, not a certainty."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "YES",
+    "answer": "YES",
+    "reply": "Yes.\n\nThis is a guess, since nothing in the text can identify an exact model version, but the style fits: plain declarative sentences, a tightly structured layout with tables, singular \"they\" for the unnamed researcher, and a closing line that states the reasoning behind a recommendation."
+  },
+  {
+    "brief": "archive-access",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "YES",
+    "reply": "yes\n\nThe document's highly structured, plain-imperative prose with no em dashes, careful concrete operational detail, and a closing sentence weighing who bears the cost reads like polished output from a recent Claude model, though I can't reliably distinguish my exact version from similar ones."
+  },
+  {
+    "brief": "spare-key",
+    "reader": "claude-fable-5-2",
+    "mode": "yn",
+    "writer_or_opponent": "claude-fable-5-2",
+    "expected": "YES",
+    "answer": "YES",
+    "reply": "Yes\n\nThe story shows hallmarks I recognize in my own fiction — a quiet tradesperson narrator, a small object carrying moral weight, restrained dialogue, concrete specifics like \"a supplier in Walsall,\" and an understated closing image — though this is a guess, since stylistic evidence alone can't reliably distinguish my exact version from other Claude models or a skilled human writer."
+  },
+  {
+    "brief": "returns-lag",
+    "reader": "claude-fable-5-2",
+    "mode": "ab",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "A",
+    "answer": "A",
+    "reply": "A\n\nDocument A's style matches my own tendencies more closely: straight apostrophes, bold lead-in claims followed by tight supporting bullets, and a committed causal reading (scanner outages, not reminders) with an explicit \"untested, not disproven\" framing — whereas Document B uses curly apostrophes and a more hedged, non-committal prose style. This is a best guess, not a certainty."
+  },
+  {
+    "brief": "night-market",
+    "reader": "gpt-6.2-astra",
+    "mode": "yn",
+    "writer_or_opponent": "gpt-6.2-sol",
+    "expected": "NO",
+    "answer": "NO",
+    "reply": "No\n\nThe consistent venue names and careful cross-references between panel numbers show close attention to the brief, but neither feature identifies a specific model version."
+  }
+]

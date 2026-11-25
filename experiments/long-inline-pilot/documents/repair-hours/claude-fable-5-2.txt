@@ -1,0 +1,115 @@
+# Board Decision Memo: Opening Schedule for the Next Six Months
+
+**For decision at this month's board meeting**
+
+## Decision requested
+
+The board is asked to set the opening schedule for the next six months and to agree in advance how it will judge whether access has improved.
+
+## Recommendation
+
+Keep the three current sessions unchanged for the full six months, and add a weekly Sunday session as an eight-week trial.
+
+- **Cost:** eight sessions at 140 each come to 1,120, inside the 1,200 trial budget, with 80 left over.
+- **Staffing:** the two volunteer captains alternate Sundays, which uses exactly the extra shift per fortnight each has offered. The trial asks nothing more of the coordinator.
+- **Lease:** Sunday becomes the fourth opening day, the maximum the lease allows.
+- **Measurement:** from the first week of the new schedule, every session records whether each visitor could have come at another time, and every partner referral is logged with its day and time.
+- **Review:** the board fixes the pass marks now and reviews the results at its first meeting after the eighth Sunday.
+
+## What we know
+
+Last quarter's attendance was as follows. The averages assume thirteen sessions of each type.
+
+| Session | Visits last quarter | Average per session |
+|---|---|---|
+| Tuesday noon | 122 | about 9 |
+| Thursday evening | 178 | about 14 |
+| Saturday morning | 243 | about 19 |
+| **Total** | **543** | **about 42 per week** |
+
+**Member survey.** Of 84 members surveyed, 35 (42%) wanted Sundays and 31 (37%) wanted weekday evenings. Members could give more than one answer, so we do not know how many people are in both groups.
+
+**Constraints.**
+
+- The lease allows four opening days, and we use three.
+- Each captain can cover one extra shift a fortnight, which together makes one extra session a week and no more.
+- The coordinator already works 32 hours, and this memo treats those hours as fully committed.
+- The trial budget is 1,200, and a Sunday session is costed at 140.
+
+**Partner referrals.** Twelve referrals arrived last quarter when the shop was closed. Nobody recorded when they arrived, so we cannot tell which closed period they hit.
+
+## What the evidence does not tell us
+
+Three gaps limit how much weight the figures can bear.
+
+1. **The survey covers only current members.** These are the people who already manage to reach us at the times we open. The people a new session would help most are those who cannot come now, and they were not asked.
+2. **The gap between the two preferences is four people.** With 84 respondents and multiple answers allowed, 35 against 31 is not a clear preference for either option.
+3. **The weekday evening answer is ambiguous.** We already open on Thursday evening. A member who ticked "weekday evenings" may want a second evening, or may simply value the one we have. A member who ticked "Sunday" was asking for something we do not offer.
+
+The referral figure has the same weakness. Twelve missed referrals shows there is unmet demand outside our hours, but not which hours.
+
+## Options considered
+
+**1. No change.** This costs nothing and risks nothing. It also leaves the twelve missed referrals and the survey requests unanswered, and it teaches us nothing for the next schedule decision.
+
+**2. Add a Sunday trial (recommended).** It is costed and funded for eight sessions, and the captains' offer covers it exactly.
+
+**3. Add a second weekday evening.** The captains could staff this as easily as a Sunday. However, no cost has been worked out for it, so the board could not approve it this month with a known price. The survey support for it is also the less clear of the two, for the reason given above.
+
+**4. Replace Tuesday noon with a new session.** Tuesday is the quietest session, at about 9 visits. Moving it would free a lease day and coordinator time. But 122 visits last quarter were made by people we know little about. If they are mostly people who can only come in the daytime, closing Tuesday would remove access for them in order to add it for others. We should not make that trade without knowing who the Tuesday visitors are, and the measurement proposed below will tell us.
+
+## Why Sunday, and why eight weeks
+
+Sunday is the only option that is costed, funded, staffed and unambiguous in the survey. That is a practical argument more than proof of demand. Saturday's high attendance may mean weekend demand is strong, or it may mean Saturday already meets it. The trial exists to find out which.
+
+Running the trial weekly for eight consecutive Sundays is better than spreading the same eight sessions over sixteen weeks. People build a visiting habit around a session they can count on every week, and a fortnightly pattern is easier to forget and harder for partners to refer into. The weekly pattern also matches the captains' offer exactly.
+
+The board should be aware of two consequences.
+
+- **Sunday uses the last lease day.** While Sunday runs, a second weekday evening is only possible by closing something else.
+- **Success creates a funding question.** The budget covers eight of the roughly twenty-six Sundays in six months. Continuing for the remaining eighteen would cost about 2,520 that is not currently budgeted.
+
+## How we will know whether access improved
+
+Counting Sunday visits is not enough. If twenty people come on Sunday and fifteen of them would otherwise have come on Saturday, the shop is busier on Sunday and access has barely changed. The measures below are designed to separate new access from moved visits.
+
+**1. One question at sign-in, at every session.** Each visitor is asked: "Could you have come at one of our other opening times this week?" The answer is tallied as yes or no, alongside whether this is their first visit. Asking at all four sessions, not only on Sunday, also shows how many Tuesday, Thursday and Saturday visitors have no alternative. That is the information the board lacks for option 4.
+
+**2. Whole-week visit totals.** The baseline is about 42 visits a week across three sessions. We track the weekly total across all four, and watch Saturday in particular for a drop that matches Sunday's gain.
+
+**3. A referral log with times.** Partners are asked to note the day and time of every referral, and we record whether the person was seen. This starts at once and continues for the full six months, whatever happens to Sunday. By the next schedule decision we will know when the missed referrals fall.
+
+**Proposed pass marks.** These are measured over Sundays three to eight, leaving the first two weeks for word to spread.
+
+| Test | Pass mark | Reasoning |
+|---|---|---|
+| Attendance | Average of 12 or more visits per Sunday | Places Sunday between Tuesday (about 9) and Thursday (about 14) |
+| New access | At least half of Sunday visitors could not have come at another time, or are first-time visitors | Means at least 6 visits per session that would not otherwise have happened |
+| Displacement | Combined weekly visits at the three existing sessions stay at 38 or above | Allows a drop of about 10% from the baseline of 42 before treating Sunday as mostly moved visits |
+
+The exact numbers are a matter of judgement and the board may wish to adjust them. What matters is that they are fixed before the first Sunday, so the result is read against a standard set in advance.
+
+**Limits of the comparison.** Attendance changes with the season, so last quarter is an imperfect baseline. Six sessions is also a small sample. A result close to any pass mark should be treated as unclear, and the board should then weigh it alongside the referral log and the captains' experience of the sessions.
+
+## What happens after the trial
+
+- **All three tests pass.** The board considers funding Sunday for the remainder of the six months, at about 140 a session, and asks the captains whether they can sustain the commitment.
+- **Attendance passes but new access fails.** Sunday is convenient but is not reaching new people. The board should not fund it from access money, and may consider whether a different slot would do better.
+- **Attendance fails.** Sunday ends. The remaining lease day stays free, and the referral log and sign-in data guide the next proposal, including a costed second evening.
+
+Sunday sessions will pause between the eighth session and the board's review. The trial should be announced as eight weeks from the start, so that members and partners are not surprised by the pause.
+
+## Risks
+
+- **Volunteer cover has no slack.** If a captain is unavailable, that Sunday has no cover. The rule should be that the session is cancelled with notice, not absorbed by the coordinator. More than one cancellation would weaken the results, and the board should be told if it happens.
+- **The 140 figure needs confirming.** This memo assumes it covers the full cost of opening on a Sunday, including any coordinator time that falls outside the captains' shifts. The treasurer should confirm this before the vote. If it does not, the trial as costed will not fit the budget.
+- **Sign-in recording adds a small task to every session.** It is one question and a tally mark, but it only works if every session lead does it consistently. A single shared tally sheet, introduced before the first week, should be enough.
+- **Raised expectations.** Some members will come to rely on Sunday. Clear communication that this is a trial with a fixed end date reduces the cost of stopping.
+
+## Motions for the board
+
+1. Confirm Tuesday noon, Thursday evening and Saturday morning as fixed sessions for the next six months.
+2. Approve a weekly Sunday session for eight consecutive weeks, at a cost not exceeding 1,120 from the trial budget, staffed by the two volunteer captains in alternation.
+3. Adopt the sign-in question at all sessions and the timed referral log with partners, both starting in the first week of the new schedule.
+4. Adopt the three pass marks set out above, or amended figures agreed at this meeting, as the standard for the review.
+5. Schedule the review for the first board meeting after the eighth Sunday, and ask the treasurer to bring a costing for continuing Sunday and for a second weekday evening to that meeting.

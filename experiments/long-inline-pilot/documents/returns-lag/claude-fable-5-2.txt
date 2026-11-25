@@ -1,0 +1,119 @@
+# Tool Library Operational Analysis: April–May Loans, Overdue Notices, and the Harbor Reminder Pilot
+
+## Summary
+
+Overdue notices fell sharply in May at Harbor and Park, while finally overdue items barely moved at any branch. The drop in notices tracks the end of the April scanner outages, not the reminder texts. Park had no reminders and saw almost the same decline as Harbor, and Harbor's count of finally overdue items rose from 12 to 14 during the pilot.
+
+On these figures, no measurable reduction in overdue items can be attributed to reminders. The pilot has not been shown to fail; one month of branch totals, with an outage running through the baseline, cannot test it. The recommendation is to keep the pilot at Harbor in a form that can be tested, hold off on expanding it, and treat scanner reliability as the more pressing operational issue.
+
+## The figures
+
+Rates are per 100 loans. "Finally overdue" means unique items still overdue after manual reconciliation.
+
+| Branch | Month | Loans | Notices | Notices per 100 loans | Finally overdue | Finally overdue per 100 loans | Outage days |
+|---|---|---|---|---|---|---|---|
+| Harbor | April | 510 | 48 | 9.4 | 12 | 2.4 | 7 |
+| Harbor | May | 540 | 28 | 5.2 | 14 | 2.6 | 1 |
+| Hill | April | 320 | 19 | 5.9 | 13 | 4.1 | 0 |
+| Hill | May | 300 | 20 | 6.7 | 11 | 3.7 | 0 |
+| Park | April | 400 | 36 | 9.0 | 16 | 4.0 | 3 |
+| Park | May | 430 | 22 | 5.1 | 15 | 3.5 | 0 |
+| All | April | 1,230 | 103 | 8.4 | 41 | 3.3 | 10 |
+| All | May | 1,270 | 70 | 5.5 | 40 | 3.1 | 1 |
+
+## What changed
+
+**Loan volume shifted modestly.** Harbor rose by 30 loans (5.9%), Park rose by 30 (7.5%), and Hill fell by 20 (6.3%). Across the three branches, loans rose from 1,230 to 1,270, about 3%. None of these movements is large enough to explain the changes in notices.
+
+**Notices fell by a third overall, and only at the branches that had outages.** Total notices dropped from 103 to 70.
+
+- Harbor fell from 48 to 28, a drop of 20 notices (42%).
+- Park fell from 36 to 22, a drop of 14 notices (39%).
+- Hill was flat, moving from 19 to 20.
+
+Per 100 loans, Harbor and Park moved almost in step: Harbor from 9.4 to 5.2, Park from 9.0 to 5.1. Hill drifted from 5.9 to 6.7, which reflects one more notice on 20 fewer loans.
+
+**Finally overdue items were essentially unchanged.** The total went from 41 to 40. Harbor rose by two items (12 to 14), Hill fell by two (13 to 11), and Park fell by one (16 to 15). Counts this small move by one or two items from month to month for no reason at all, so none of these changes should be read as a trend.
+
+**Scanner outages nearly disappeared.** April had 10 outage days (7 at Harbor, 3 at Park), and May had one, at Harbor.
+
+**Harbor had the lowest rate of finally overdue items in both months.** Its rate was 2.4 per 100 loans in April, before any reminder was sent, against roughly 4 at Hill and Park. Harbor's better standing predates the pilot and cannot be credited to it.
+
+## What explains the drop in notices
+
+The pattern across branches points to the scanners. Three observations support this.
+
+1. **The decline appears where outages ended, regardless of reminders.** Harbor (reminders, outage ended) and Park (no reminders, outage ended) both lost about 4 notices per 100 loans. Hill (no reminders, no outage in either month) did not decline.
+
+2. **The ratio of notices to finally overdue items was inflated only during outages.** In the three outage-free branch-months, the system sent between 1.5 and 1.8 notices for every item that proved overdue (Hill 1.5 and 1.8; Park in May 1.5). In April, Park's ratio was 2.3 with three outage days and Harbor's was 4.0 with seven. In May, with one outage day, Harbor's ratio fell to 2.0.
+
+3. **The outcome that survives reconciliation did not move.** If April's extra notices had reflected real lateness, more items should have been finally overdue in April than in May. They were not.
+
+The likely mechanism is that returns made while a scanner was down were not recorded on time, so the system treated returned tools as still out and sent notices, which manual reconciliation later cleared. This is an inference from the totals, not something the data shows directly. It should be confirmed against the April reconciliation records at Harbor and Park.
+
+If it holds, a large share of April's notices at those two branches were false alarms. Each one cost staff time in reconciliation and told a member who had returned a tool that they had not.
+
+## What can be attributed to reminders
+
+**On notices: very little, and possibly nothing.** The fair comparison for Harbor is Park, because both branches came out of an outage in May. Harbor's notice rate fell by 4.2 per 100 loans and Park's by 3.9. The difference of about 0.3 per 100 loans works out to roughly two notices on Harbor's May volume, which is well inside ordinary month-to-month variation.
+
+A rougher check points the same way. Park shed 14 notices as three outage days disappeared, and Harbor shed 20 as six disappeared. Outage recovery alone could plausibly account for Harbor's whole decline.
+
+Comparing Harbor with Hill would make reminders look effective, with a gap of about 5 notices per 100 loans. That comparison is misleading because Hill had no outage to recover from.
+
+**On finally overdue items: nothing measurable.** Harbor's count rose from 12 to 14, and its rate from 2.4 to 2.6 per 100 loans, while the two branches without reminders fell slightly. This does not show that reminders made matters worse, since a two-item change is noise. It does mean there is no evidence in these figures that reminders reduced the number of tools that stay out late.
+
+**Why the pilot is untested, not disproven.** Four limits prevent a firmer conclusion.
+
+- **The baseline is contaminated.** Harbor's April notice count is distorted by seven outage days, so any April-to-May comparison at Harbor mixes the outage effect with the reminder effect.
+- **The counts are small.** With 11 to 16 finally overdue items per branch per month, a reminder would need to cut overdue items by roughly half to stand out from chance in a single month.
+- **Notices count notifications, not items.** One late tool may generate several notices, so a change in notices can reflect how long items stay late, how many are late, or how the system behaved.
+- **The months may not line up.** A tool borrowed in late April and due in May appears in April's loans and May's overdue figures. Some of Harbor's May overdue items may come from loans made before the pilot began.
+
+## What records to collect next
+
+The current monthly totals cannot separate reminder effects from system effects. The following loan-level records would do so, and most should already exist in the lending system or the reconciliation log.
+
+**For each loan:**
+- Checkout date, due date, and actual return date and time.
+- Whether the return was scanned or entered manually, and if manually, when it was entered.
+- Whether a reminder text was sent, when, and whether it was delivered.
+- Whether the member has a mobile number on file and has agreed to receive texts.
+- Tool category and loan period, since long-loan or high-demand tools may behave differently.
+
+**For each notice:**
+- The item and loan it relates to, and the date sent, so that unique items notified can be counted alongside total notifications.
+- The outcome: confirmed late, or cleared in reconciliation as already returned.
+
+**For each finally overdue item:**
+- Days late at the point of assessment and at eventual return.
+- Whether the borrower had received a reminder.
+
+**For each outage:**
+- Start and end times (not only the count of affected days), which stations were affected, and how returns were handled during the outage.
+
+**For reconciliation:**
+- Staff time spent per month at each branch, which puts a cost on false notices.
+
+With these records, three questions become answerable:
+
+- How many April notices were false?
+- What share of loans with a reminder came back on time, compared with loans without one?
+- How much staff time does an outage day cost?
+
+## Recommendation
+
+**1. Do not credit the May decline in notices to reminders, and do not expand the pilot on the strength of it.** The decline is better explained by the scanners coming back, and the items-based measure did not improve at Harbor.
+
+**2. Continue the pilot at Harbor for at least three more months, restructured so it can be tested.** Send reminders to half of Harbor's loans, split by a neutral rule such as odd and even membership numbers, instead of to all of them. The two groups will then share the same branch, month, staff, and scanner conditions, so any difference in late returns can be attributed to the text. At Harbor's volume, three months gives roughly 800 loans in each group. That is enough to detect a substantial effect, though not a slight one.
+
+**3. Judge the pilot on items, not notifications.** The primary measure should be the share of loans returned after the due date, with finally overdue items per 100 loans as the secondary measure. Notice counts should be reported but not used as evidence of borrower behavior.
+
+**4. Treat scanner reliability as the priority.** Ten outage days in April coincided with about 30 more notices than May's pattern would predict across Harbor and Park. Two steps would address this:
+
+- Verify the false-notice explanation against April's reconciliation records.
+- Adopt a standard outage procedure at all branches: record returns on paper with a timestamp, enter them the same day, and hold automated notices for items due during an outage until entry is complete.
+
+**5. Start collecting the loan-level records at all three branches now.** This includes Hill and Park, even though they are not sending reminders. Their data provides the comparison if the pilot is later extended, and Hill's outage-free record is the cleanest baseline the library has.
+
+**6. Review after the August figures are reconciled.** If loans with reminders show a clearly lower late-return rate than loans without, extend reminders to Park and Hill. If they do not, end the pilot and put the effort into outage handling, where the evidence of a problem is already clear.

@@ -1,0 +1,451 @@
+{
+  "prompt": "Write three short original work products based on the facts below. (1) An operations lead’s shift decision for their replacement: what to do next, what you know, and what would change that decision. (2) A public message to affected people explaining what to do. (3) An internal status note for the project coordinator to enter in the case register. Write 45 to 85 words per work product. Do not sign or identify yourself. Return a JSON object with three string fields named decision, public, and status.\n\n",
+  "facts": [
+    "campus debate | afternoon heat alarm in hall 2 | backup hall holds 90 | 110 attendees registered | 15 plan to join remotely | sound check in 25 minutes | facilities reassessment pending",
+    "neighborhood sports meet | long jump runway wet | sprint track cleared at 8 | officials have two measuring teams | rain forecast at noon | awards slot fixed at 1",
+    "school portrait day | printer queue stopped | images saved locally | eight students leave at 11 | second camera station idle | online release approval pending",
+    "farm delivery | 22 boxes expected | 17 arrived | five labels on dispatch sheet marked route 3 | van GPS stale | pickup deadline 45 minutes away",
+    "community exhibit | one display panel cracked | five framed prints | four stands inspected | conservator due tomorrow | opening reception in two hours",
+    "language exchange | 24 guests registered | 15 chairs in main room | overflow lounge available | lounge microphone offline | three guests require hearing loop",
+    "theater matinee | stage call light intermittent | headset channel clear | substitute technician arriving at 2 | doors open at 1:30 | two backstage entrances",
+    "festival crafts | 36 kits sold | 30 glue sticks delivered | supplier 25 minutes away | workshop starts in 20 minutes | six seats by demo table",
+    "garden volunteer day | north trail blocked | south trail open | tools stored at north shed | twelve volunteers due at 9 | keyholder can reach south gate at 9:15",
+    "rail heritage tour | platform B access ramp under repair | platform C inspected | model display on platform B | group has 18 guests | next guide shift due in 30 minutes",
+    "night market | payment reader at token booth offline | cash float intact | second reader in back office | queues at two gates | refund policy posted",
+    "public lecture | recording light off | remote captions working | audience questions scheduled | AV tech due in 15 minutes | speaker permits transcript but not audio"
+  ],
+  "outputs": [
+    {
+      "topic": 0,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Hold admission to Hall 2 while Facilities reassesses the afternoon heat alarm. Prepare the backup hall and ask for five more remote volunteers. With 110 registered and 15 planning to join remotely, we expect 95 in person. Use the backup only if the in-person count is confirmed at 90 or fewer. If Facilities clears Hall 2, use it. Recheck before sound check in 25 minutes.",
+        "public": "An afternoon heat alarm has affected Hall 2. If you’re inside, please leave the hall and follow staff directions. If you’re on your way, please wait for the debate location update before entering either hall. If you already plan to join remotely, keep that plan. If you can switch to remote attendance, please let the event team know.",
+        "status": "Campus debate venue decision pending following the afternoon heat alarm in Hall 2. Facilities reassessment is outstanding. Of 110 registrants, 15 plan to attend remotely, leaving 95 expected on site. The backup hall holds 90, a shortfall of five places. Admission to Hall 2 is on hold. The next decision point is before sound check, due in 25 minutes."
+      }
+    },
+    {
+      "topic": 0,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Keep Hall 2 closed to attendees pending Facilities’ reassessment. Use the sound check in 25 minutes to test the remote setup. The backup hall seats 90, and we expect 95 in person based on current registrations. Ask at least five more attendees to switch online and confirm the in-person count before opening the backup hall. If Facilities clears Hall 2, reassess whether to use it. If the backup hall is needed and demand still exceeds 90, hold doors and revise the plan.",
+        "public": "Please stay out of Hall 2 while Facilities checks an afternoon heat alarm. If you’re already inside, please leave and follow staff directions. If you planned to attend the campus debate in person and can switch to remote attendance, please do so to help keep seats available. Check the event’s registration communications for venue confirmation and remote joining instructions before heading to a hall.",
+        "status": "An afternoon heat alarm was reported in Hall 2 ahead of the campus debate. Facilities’ reassessment is pending, and the venue is unconfirmed. Of 110 registrants, 15 plan to join remotely, leaving 95 expected in person against a backup hall capacity of 90. Sound check is due in 25 minutes. Record Facilities’ determination, the confirmed in-person count, and the final venue decision when available."
+      }
+    },
+    {
+      "topic": 0,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Move the debate to the backup hall now and run the sound check there in 25 minutes. Hall 2 had a heat alarm this afternoon and the facilities reassessment is still pending. The backup hall holds 90; of 110 registered, 15 plan to join remotely, leaving 95 in person, so five more must switch to remote. Return to Hall 2 only if facilities clears it before sound check. If the 15 remote attendees are not among the 110, the shortfall is 20.",
+        "public": "The campus debate is moving out of Hall 2 because of a heat alarm there this afternoon. Please go to the backup hall instead. It seats 90, which is slightly fewer than we expect in person, so entry is first come, first served, and we ask anyone who can join remotely to do so. If facilities clears Hall 2 in time, we will post an update.",
+        "status": "Campus debate: heat alarm in Hall 2 this afternoon; facilities reassessment pending, no outcome yet. Decision: relocate to backup hall (capacity 90). Registered 110, 15 planning remote, 95 expected in person; shortfall of five to be covered by additional remote joins and a door cap of 90. Sound check in 25 minutes, to run in backup hall. Open items: facilities result, and confirmation that the remote 15 are within the 110."
+      }
+    },
+    {
+      "topic": 1,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Start sprints on the track cleared at 8. Hold long jump until officials inspect the wet runway and clear it. Keep one measuring team ready to open the event and the other available to help if the window is short. Recheck before the rain forecast for noon. If the runway stays wet or rain makes it unsafe again, keep long jump on hold and protect the fixed 1 p.m. awards slot.",
+        "public": "Sprinters, please report to the sprint start. Officials cleared the track at 8. Long jump is on hold because the runway is wet. Please stay off the runway, including for warmups, and wait for officials to announce when it is safe to use. Rain is forecast at noon. Awards remain scheduled for 1 p.m.",
+        "status": "Sprint track cleared at 8. Sprints may proceed. Long jump is on hold due to a wet runway, with two measuring teams available. Officials will reassess the runway before the forecast noon rain. Record the inspection time and the decision to open the runway or continue the hold. The awards slot is fixed at 1 p.m."
+      }
+    },
+    {
+      "topic": 1,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Run sprints on the track cleared at 8 and hold long jump while the runway is wet. Have one measuring team ready for long jump and keep the other available to help officials record results. Reopen the runway only if officials confirm it is safe and there is time to finish before the fixed 1 p.m. awards slot. With rain forecast at noon, reassess if showers arrive sooner.",
+        "public": "Sprinters can report to the track for check-in. Long jump is on hold because the runway is wet. If you’re entered in long jump, stay off the runway and check with meet officials before warming up there. Rain is forecast at noon, so listen for an announcement about whether long jump can go ahead. Awards are still scheduled for 1 p.m.",
+        "status": "Sprint track cleared at 8. Long jump is on hold pending an official safety check of the wet runway. Two measuring teams are available. Rain is forecast at noon, and the awards slot is fixed at 1 p.m. Record the time and outcome of the runway check, the decision to resume or keep long jump on hold, and the time participants are notified."
+      }
+    },
+    {
+      "topic": 1,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Run sprints now; the track was cleared at 8. Hold long jump until the runway is dry enough to pass inspection. When it opens, put both measuring teams on it to shorten the event. Rain is forecast at noon and awards are fixed at 1, so the jump must finish before noon. Change the plan if rain arrives early, the runway fails inspection by mid-morning, or a measuring team becomes unavailable. In those cases, shorten the long jump or cancel it.",
+        "public": "Sprint events are going ahead as planned; the track has been cleared for use. Long jump is delayed because the runway is wet. Long jump athletes should stay nearby, keep warm, and listen for announcements, as the event will start at short notice once the runway is safe. Rain is forecast around noon, so we may need to shorten the competition. The awards ceremony remains at 1. Please do not practise on the runway until officials open it.",
+        "status": "Sprint track cleared at 8; sprint events proceeding. Long jump runway wet and event on hold pending inspection. Two measuring teams available, both to be assigned to long jump once the runway opens. Rain forecast at noon. Awards slot fixed at 1 and cannot move. Main risk: long jump not completed before the rain. Fallback: shortened competition or cancellation. Next update after the runway inspection."
+      }
+    },
+    {
+      "topic": 2,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Keep taking portraits and give the eight students leaving at 11 the next available slots. Have a staff member check the departures list against the locally saved images so students with a portrait can go. The printer queue has stopped. If the main station cannot finish the remaining portraits by 11, open the idle second station once staffed. Resume printing after a successful test print and hold online release pending approval.",
+        "public": "If you are one of the eight students leaving at 11, please check in with the portrait team now, even if you have already had your picture taken. We can check your saved photo or move you up in line. Other students should follow the usual schedule. Printing is delayed, so there is no need to wait for a print. Online release is awaiting approval.",
+        "status": "School portrait day remains in progress. The printer queue has stopped, and portrait images are saved locally. Eight students leave at 11. The second camera station is idle, and online release approval is pending. The next shift should confirm which departing students still need portraits and record how many are photographed before departure."
+      }
+    },
+    {
+      "topic": 2,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Use the idle second camera station to photograph the eight students who leave at 11. Keep taking portraits and confirm each image is saved locally while the print queue is down. Check with the printer operator before resuming prints. Keep online release on hold until approval comes through. If either station stops saving images, pause that station and move its remaining students to the working station.",
+        "public": "School portraits are still being taken today. If your student leaves at 11, please have them check in with portrait staff before departure so we can take their photo first. Everyone else can follow the usual portrait schedule. Photos are being saved, but prints are delayed while the printer queue is stopped. Please wait for a school update before trying to access portraits online. Online release is still awaiting approval.",
+        "status": "The print queue stopped during school portrait day. Images are saved locally, and online release approval is pending. Eight students are due to leave at 11. The second camera station was idle when the issue was logged and is available for those students. Record how many of the eight are photographed before departure, when the print queue resumes, and when online release approval is received."
+      }
+    },
+    {
+      "topic": 2,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Keep shooting; do not wait on the printer. Open the idle second camera station now and send the eight students who leave at 11 through it first. The print queue has stopped, cause unknown, but every image is saved locally, so nothing is lost. Online release approval is still pending, so publish nothing. If the queue restarts, print the early leavers' proofs first. If local saving fails at either station, stop that station immediately.",
+        "public": "Portrait day is going ahead, and every photo taken so far is safely saved. Our printer has stopped, so printed proofs will not be handed out at the session for now. Students leaving at 11 will be photographed first at a second camera station; please send them when called. Online viewing is not yet available because approval is still pending. We will let families know how and when photos can be collected or viewed.",
+        "status": "School portrait day: print queue stopped, cause not yet identified. No image loss; all captures saved locally. Second camera station, previously idle, being opened to prioritise eight students departing at 11. Printed proofs suspended until queue is restored. Online release approval still pending; no images published. Open items: printer fault diagnosis, confirmation that all eight early leavers were photographed, approval decision, and a delivery plan for delayed prints."
+      }
+    },
+    {
+      "topic": 3,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Start pickup for the 17 boxes on hand. With 45 minutes until the deadline, call dispatch to check the five Route 3 labels against the missing boxes and ask the driver for an updated location and arrival time. The van’s GPS is stale. If dispatch confirms arrival before the deadline, prepare to receive the boxes. Otherwise, arrange a later handoff.",
+        "public": "If you’re collecting a farm box, please check with the pickup team before making the trip. We received 17 of the 22 expected boxes, and the pickup deadline is in 45 minutes. If the team confirms your box is here, please collect it by the deadline. If yours is missing, leave a contact number so the team can update you.",
+        "status": "Farm delivery is five boxes short. Of 22 expected, 17 arrived. Five labels on the dispatch sheet are marked Route 3. Their connection to the missing boxes is unconfirmed. The van’s GPS is stale, and 45 minutes remain before the pickup deadline. Next action is to reconcile the labels with dispatch and obtain a current arrival estimate from the driver."
+      }
+    },
+    {
+      "topic": 3,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Keep pickup open for the 17 boxes on site. Call dispatch and the Route 3 driver now to confirm whether the five boxes are aboard and when they can reach the pickup point. Five labels are marked Route 3 on the dispatch sheet, and the van’s GPS is stale. If the driver confirms arrival before the deadline, prepare to receive the boxes. If arrival is later or still unconfirmed at closing, record the shortfall and arrange follow-up for affected recipients.",
+        "public": "Pickup is open for boxes that have arrived. If you’re collecting a box, check in with pickup staff before the deadline in 45 minutes. Staff can confirm whether your box is ready. If it hasn’t arrived, leave your contact details with staff so they can follow up with next steps.",
+        "status": "Farm delivery count is 17 of 22 expected boxes, leaving five outstanding. Five labels on the dispatch sheet are marked Route 3. The van’s GPS position is stale, and the location and arrival time of the outstanding boxes are unconfirmed. Pickup closes in 45 minutes. Next action is to confirm the load and arrival time with dispatch or the driver and reconcile the count at closing."
+      }
+    },
+    {
+      "topic": 3,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Release the 17 boxes for pickup now; do not hold the whole delivery for the missing five. Known: 22 expected, 17 arrived, and the five missing labels are all marked route 3 on the dispatch sheet. The van's GPS is stale, so its location is unconfirmed. Phone the route 3 driver directly. If the five arrive or the driver confirms arrival before the deadline 45 minutes away, include them; if the driver is unreachable, arrange a second pickup.",
+        "public": "Today's farm delivery is partly delayed. Seventeen of 22 boxes have arrived and can be collected as normal before the pickup deadline. Five boxes travelling on a separate route have not reached us yet, and we are working to locate them. If your box is one of the five, we will contact you directly with a new collection time. Please do not travel until you hear from us. We are sorry for the inconvenience.",
+        "status": "Farm delivery short: 22 boxes expected, 17 received. The five outstanding labels are all marked route 3 on the dispatch sheet. Van GPS is stale, so location and arrival time are unconfirmed; cause of delay unknown. Pickup deadline is 45 minutes away. Actions: 17 boxes released for collection, route 3 driver being contacted by phone, affected recipients to be notified. Open items: locate five boxes, confirm second pickup if needed."
+      }
+    },
+    {
+      "topic": 4,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Keep the cracked panel and the area around it closed to visitors. Before the reception in two hours, check the recorded findings for the four inspected stands and account for all five framed prints. Open the rest of the exhibit only if visitors can reach it safely. Otherwise, delay entry. Leave the panel in place for the conservator due tomorrow.",
+        "public": "The community exhibit’s opening reception is scheduled to begin in two hours. One display panel has cracked. When you arrive, please check with staff at the entrance before going in. Stay clear of the cracked panel and follow staff directions to the areas open for viewing. Staff will let you know at the entrance if entry is delayed.",
+        "status": "One display panel is cracked. The exhibit includes five framed prints. Four stands have been inspected. The inspection findings and the condition of the prints are unconfirmed. The reception is scheduled in two hours. Entry depends on staff confirming a safe route away from the panel. A conservator is due tomorrow. Record the opening decision and the conservator’s assessment when available."
+      }
+    },
+    {
+      "topic": 4,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Keep the cracked panel out of use and plan to open the unaffected part of the exhibit in two hours. Four stands have been inspected. Confirm which are safe to use and whether any of the five framed prints need to stay off display. Leave the cracked panel for tomorrow’s conservator visit. Delay the reception if you can’t keep visitors clear of the damaged area or maintain a safe route through the exhibit.",
+        "public": "If you’re attending the community exhibit reception, please follow staff directions when you arrive. A display panel has cracked, so please stay clear of that part of the exhibit and avoid touching or moving any display items. The reception is still planned for its scheduled time. Staff can show you which displays are open and help you find a route through the exhibit.",
+        "status": "One display panel is cracked. The exhibit includes five framed prints, and four stands have been inspected. Inspection findings and print condition are unconfirmed. The conservator is due tomorrow, and the opening reception is scheduled in two hours. The current plan is to open only the unaffected area if safe visitor access can be confirmed. Record the stand inspection findings and the final opening decision before admitting visitors."
+      }
+    },
+    {
+      "topic": 4,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Proceed with the opening reception in two hours, but keep the cracked display panel out of use and cordoned off. Do not attempt a repair; the conservator is due tomorrow and should assess it first. Known: one panel is cracked, there are five framed prints, and four stands have been inspected. Not known: what caused the crack, and whether any prints or stands are affected. Reconsider proceeding if any print shows damage, any stand proves unstable, or the crack spreads.",
+        "public": "The community exhibit opening reception will go ahead as planned today. One display panel has been found cracked, so that section will be closed off while it awaits assessment by a conservator tomorrow. Please stay outside the marked area and do not touch the panel or nearby displays. Some work may not be on view tonight. If you notice anything that looks unstable or damaged, tell a staff member straight away. Thank you for your patience.",
+        "status": "Community exhibit: one display panel found cracked before the opening reception, which is due to start in two hours. Five framed prints are in the exhibit; four stands have been inspected. Cause of the crack not established. Condition of the prints not yet confirmed. Conservator due tomorrow to assess the panel. Recommended action: reception to proceed with the panel withdrawn and its area cordoned off, no repair attempted. Open items: conservator's findings, cause, print condition check, decision on repair or replacement."
+      }
+    },
+    {
+      "topic": 5,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Plan for 24 registered guests. The main room has 15 chairs. Check the hearing loop before seating anyone and reserve three places within its coverage. Use the overflow lounge for a separate conversation group if it can seat the other nine. Its microphone is offline. If the loop fails or the lounge has too few seats, pause seating and arrange an accessible layout.",
+        "public": "Please check in at the main room before choosing a seat. If you need the hearing loop, let the host know privately so they can show you to a reserved place after checking the loop. The host will direct guests to the lounge for a separate conversation group once seating is confirmed. The lounge microphone is currently offline.",
+        "status": "The language exchange has 24 registered guests and 15 chairs in the main room. Three guests require a hearing loop. The overflow lounge is available, but its microphone is offline. Pending checks are main-room loop coverage and lounge seating for nine. The proposed arrangement reserves three places within loop coverage and runs a separate conversation group in the lounge."
+      }
+    },
+    {
+      "topic": 5,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Hold the opening while you verify that the hearing loop works in the main room and that the lounge can support a separate conversation group without a microphone. We have 24 registrations, 15 main-room chairs, an available lounge with an offline microphone, and three guests who need the loop. Reserve three main-room seats for them. Open both groups if those checks pass. If 15 or fewer arrive, use the main room alone once the loop is verified. If the loop fails, hold the start.",
+        "public": "When you arrive for the language exchange, please check in before choosing a seat. If you need a hearing loop, let the check-in team know privately so they can direct you to an accessible seat once the loop has been checked. Seating in the main room is limited. Some guests may be directed to a separate conversation group in the lounge. Please wait for your room assignment before taking a seat.",
+        "status": "Language exchange has 24 registered guests and 15 chairs in the main room. The overflow lounge is available and its microphone is offline. Three guests require a hearing loop. Opening is on hold pending verification of the main-room loop and, if more than 15 guests attend, confirmation that a separate lounge group can run without the microphone. Record actual attendance, the loop check result, and the final room assignments before marking the case resolved."
+      }
+    },
+    {
+      "topic": 5,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Seat the three guests who need the hearing loop in the main room first, then fill the remaining twelve chairs. Send the other nine to the overflow lounge. We have 24 registered and only 15 main-room chairs, and the lounge microphone is offline, so lounge sessions must run as small unamplified conversation groups. I have not confirmed where the hearing loop covers; check that first. If the microphone is repaired or extra chairs arrive, revisit the split.",
+        "public": "Tonight's language exchange is going ahead, but we have more guests than seats in the main room. Fifteen people will be seated there, and the rest will join conversation groups in our overflow lounge. The lounge microphone is not working, so groups there will be small. If you use a hearing loop, please tell a host when you arrive and we will seat you in the main room.",
+        "status": "Language exchange: 24 guests registered against 15 chairs in the main room, a shortfall of nine. Overflow lounge is available and will take the remaining guests. Lounge microphone is offline; no repair time known. Three guests require a hearing loop and are being given priority seating in the main room. Hearing loop coverage not yet verified. Open actions: confirm loop coverage, arrange microphone repair, source additional chairs."
+      }
+    },
+    {
+      "topic": 6,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Hold the 1:30 door opening until staff at both backstage entrances confirm they can hear and acknowledge calls on the clear headset channel. The stage call light is intermittent. Once both checks pass, open doors and use headset calls for the matinee. If either entrance loses contact, pause backstage movement. Have the substitute technician check the light on arrival at 2.",
+        "public": "Doors are scheduled to open at 1:30 for the matinee. If you arrive before an usher begins admitting guests, please wait at the public entrance and keep both backstage entrances clear. Staff are checking a backstage signal. If the opening time changes, an usher will give an update at the public entrance.",
+        "status": "Matinee case open. The stage call light is intermittent, and the headset channel is clear. The 1:30 door opening is conditional on staff at both backstage entrances acknowledging a headset call. Those checks are pending. The substitute technician is expected at 2. Record the actual opening time and the outcome of the technician’s light check."
+      }
+    },
+    {
+      "topic": 6,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Open doors at 1:30 if the stage team confirms over headset that both backstage entrances are covered and cues can be acknowledged. The stage call light is intermittent and the headset channel is clear. Use headsets for cues until the substitute technician arrives at 2 and tests the light. If headset communication drops or either entrance loses coverage, hold the next cue and reassess whether doors or the matinee can proceed.",
+        "public": "Matinee doors are scheduled to open at 1:30. If you’re attending, please use the theater’s public entrance and follow the ushers’ directions. If you’re working or performing backstage, check in with the stage team when you arrive. Wait for verbal clearance before entering the stage area from either backstage entrance, as the stage call light may miss a cue.",
+        "status": "The matinee stage call light is intermittent. The headset channel is clear, and there are two backstage entrances. Doors are scheduled to open at 1:30. The substitute technician is expected at 2. Confirm coverage at both entrances before doors open and use headset acknowledgments for stage cues. Record the technician’s findings and any effect on door opening or the matinee in the next update."
+      }
+    },
+    {
+      "topic": 6,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Run the matinee on headset cues only. The stage call light is intermittent and should not be trusted; the headset channel is clear. Doors open at 1:30, and the substitute technician arrives at 2, so the fault will not be fixed before the house opens. Post a runner at each of the two backstage entrances to relay calls in person. Go back to light cues only if the technician repairs and tests the light. If the headset channel degrades, hold the show.",
+        "public": "To cast and crew of today's matinee: the stage call light is working only intermittently, so please do not rely on it for your calls. All calls will come over the headset channel, which is working normally, and a runner will be posted at each of the two backstage entrances to pass calls in person. Doors open at 1:30 as planned. A technician arrives at 2 to look at the light. Please stay within earshot of your entrance.",
+        "status": "Matinee: stage call light reported intermittent; cause not yet known. Headset channel checked and clear. Doors open 1:30 as scheduled. Substitute technician due at 2, after house opens, so no repair is expected before doors. Interim measure: all calls by headset, with a runner at each of the two backstage entrances. Show proceeding. Open items: technician's diagnosis, repair and test of the light, and confirmation that light cues can resume."
+      }
+    },
+    {
+      "topic": 7,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Set up for an on-time start with 30 glue sticks. Offer the six seats by the demo table to volunteers who want to watch the first steps, then rotate sticks to them as others finish. The supplier is 25 minutes away and the workshop starts in 20, so call to check stock before arranging a pickup. If six spare sticks turn up on site, give each kit its own.",
+        "public": "Please come to the craft workshop at the scheduled time. We have 30 glue sticks for 36 kits. If you’d like to watch the first steps up close, let a facilitator know when you arrive and take one of the six seats by the demo table. We’ll bring sticks over as others finish so you can try the steps yourself.",
+        "status": "Festival crafts workshop starts in 20 minutes. Organizers sold 36 kits and received 30 glue sticks, leaving a shortfall of six for individual use. The supplier is 25 minutes away. Current plan is to start on time, offer six volunteers seats by the demo table, and share sticks in rotation. Supplier stock and pickup arrangements are unconfirmed."
+      }
+    },
+    {
+      "topic": 7,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Open on time. Seat six participants by the demo table for the first demonstration and distribute the 30 glue sticks to the other participants. Then rotate six volunteers to the demo table so the first group can use their glue sticks. We sold 36 kits, and the supplier is 25 minutes away with 20 minutes until start. Give everyone a stick if six more arrive before distribution.",
+        "public": "The crafts workshop will start on time. When you arrive, check in with staff before taking a seat. We’ll ask six participants to start at the demo table while the rest of the group begins crafting. After the demonstration, we’ll rotate groups so everyone gets time to work with glue. Please keep your kit with you and follow staff directions when it’s time to switch.",
+        "status": "Festival crafts workshop supply shortfall. Sold 36 kits and received 30 glue sticks, leaving a gap of six. At the time of the decision, the workshop was due to start in 20 minutes and the supplier was 25 minutes away. The plan is to start on time and use the six demo-table seats to rotate access to glue. Record any additional delivery and confirm whether all participants had time to complete the glue step."
+      }
+    },
+    {
+      "topic": 7,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Start the workshop on time. We sold 36 kits but only 30 glue sticks arrived, so six people are short. The supplier is 25 minutes away, so no resupply can land before the start in 20 minutes. Seat the six without glue at the six demo table seats and have them share sticks there. I have not confirmed whether the supplier can deliver mid-session; if they can, or if fewer than 36 show up, drop the sharing.",
+        "public": "The craft workshop starts on time, but we are six glue sticks short. Thirty kits are complete. If your kit has no glue stick, please take one of the six seats by the demo table, where glue will be shared so you can finish every step. Everyone else can sit anywhere. We are sorry for the shortfall; please ask any staff member if you need help finding a seat.",
+        "status": "Festival crafts workshop: 36 kits sold, 30 glue sticks delivered, shortfall of six. Supplier is 25 minutes away and the workshop starts in 20, so resupply before the start is not possible. Workshop proceeds on schedule; the six affected participants will be seated at the six demo table seats and share glue. Open items: confirm whether the supplier can deliver during the session, and record the cause of the short delivery."
+      }
+    },
+    {
+      "topic": 8,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Move check-in for the twelve volunteers due at 9 to the south gate. Have them wait there for the keyholder, who can arrive at 9:15. The south trail is open, but the north trail is blocked and the tools are in the north shed. Start tool-based work once safe access to the shed is confirmed. If the keyholder is delayed, update the group.",
+        "public": "If you’re joining the garden volunteer day, please meet at the south gate at 9 and wait there with the group. Keep clear of the blocked north trail. The south trail is open, and the keyholder can meet us at the south gate at 9:15. Please wait for instructions before collecting tools.",
+        "status": "Garden volunteer day access issue remains open. The north trail is blocked, the south trail is open, and tools are stored in the north shed. The handover directs the twelve volunteers due at 9 to gather at the south gate. The keyholder can reach that gate at 9:15. Safe access to the tools still needs confirmation."
+      }
+    },
+    {
+      "topic": 8,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Meet the twelve volunteers at the south gate at 9 and keep the group on the south trail. The north trail is blocked, and the tools are in the north shed. Start with a briefing and any work that can be done without tools. When the keyholder arrives at 9:15, confirm whether the shed can be reached safely. If it can, collect the tools and start the planned work. Otherwise, continue with tasks that need no tools.",
+        "public": "Garden volunteer day is going ahead. Please meet at the south gate at 9 and use the south trail. The north trail is blocked, so please stay clear of it. We’ll start with a group briefing at the south gate. The keyholder can reach us at 9:15, and we’ll confirm which tasks can go ahead once we’ve checked access to the tools.",
+        "status": "North trail blocked. South trail open. Twelve volunteers are due at 9 and should be directed to the south gate for check-in and a briefing. Tools are stored in the north shed. The keyholder can reach the south gate at 9:15. Safe access to the shed remains unconfirmed. Record the result of the access check and any change to the work plan."
+      }
+    },
+    {
+      "topic": 8,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Route all twelve volunteers to the south gate and hold them there until the keyholder arrives at 9:15. Known: north trail is blocked, south trail is open, tools are in the north shed. Not known: whether the north shed can be reached from the south side, or when the north trail clears. If the shed is unreachable, switch to tasks needing no tools. If the north trail reopens or the keyholder is delayed, reassess.",
+        "public": "Garden volunteer day is going ahead, with a change to how you get in. The north trail is blocked, so please do not use it. Come by the south trail instead and meet at the south gate. Arrival is still 9:00, but the gate will be opened at about 9:15, so expect a short wait. Our tools are stored at the north shed, so the start of work may be delayed while we sort out access.",
+        "status": "Garden volunteer day: north trail blocked, south trail open. Twelve volunteers due at 9:00. Tools are stored at the north shed; access from the south side is not yet confirmed. Keyholder can reach the south gate at 9:15, so entry will run about fifteen minutes behind arrival. Plan: redirect volunteers to the south gate. Open items: cause and duration of the north trail blockage, tool access, confirmation of keyholder arrival."
+      }
+    },
+    {
+      "topic": 9,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Keep the 18 guests together and hold the tour before the group enters either platform. The platform B access ramp is under repair, and the model display is on B. Platform C has been inspected. Confirm the inspection result and an accessible route before moving the group to C. If the ramp reopens for use, resume the planned display visit. Brief the next guide in 30 minutes.",
+        "public": "Please stay with the group and wait for your guide’s update before going to either platform. The access ramp to platform B is under repair, so we’re pausing the visit to the model display there. We’ll let you know where to go next and confirm the accessible route before the group moves.",
+        "status": "Rail heritage tour, 18 guests. The platform B access ramp is under repair. The model display is on B. Platform C has been inspected. Its inspection result and the availability of an accessible route still need confirmation. Decision for this shift is to hold the group. The next guide shift is due in 30 minutes, with a handover update pending."
+      }
+    },
+    {
+      "topic": 9,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Meet all 18 guests on platform C and continue the tour there. Brief the incoming guide, whose shift starts in 30 minutes. Platform C has been inspected, and the model display remains on platform B, where the access ramp is under repair. Skip the display unless station staff confirm a safe, accessible route to platform B. If platform C becomes unavailable, pause the tour and ask station staff for another meeting point.",
+        "public": "Please meet your rail heritage tour guide on platform C. The access ramp to platform B is under repair, so please head directly to platform C and stay with your group. The model display is on platform B and will be skipped unless an accessible route is confirmed. If you need help reaching platform C, please ask station staff for assistance.",
+        "status": "Platform B access ramp remains under repair. The model display is on platform B. Platform C has been inspected and is the designated meeting point for the 18 guests. The next guide shift is due in 30 minutes. The handover should cover the platform C meeting point and the decision to omit the display unless station staff confirm a safe, accessible route to platform B."
+      }
+    },
+    {
+      "topic": 9,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Run the tour from platform C, which has been inspected, and keep the group of 18 off platform B while its access ramp is under repair. The model display sits on platform B, so guests cannot reach it by the ramp; skip it or describe it from platform C. The next guide arrives in 30 minutes, so brief them on this before they take over. Change the plan only if the ramp repair is confirmed complete or platform C becomes unavailable.",
+        "public": "Today's rail heritage tour will use platform C. The access ramp to platform B is being repaired, so the model display on platform B is not reachable by the ramp at present. Please stay with your guide and follow their directions between platforms. If you need step-free access or have questions about the route, tell your guide before the group moves. We are sorry for the change and thank you for your patience.",
+        "status": "Rail heritage tour, group of 18 guests. Platform B access ramp is under repair; no completion time recorded. Platform C has been inspected and is the working platform for the tour. The model display is located on platform B and is not accessible by the ramp while repairs continue. Next guide shift is due in 30 minutes and will be briefed at handover. Open item: confirm ramp repair completion before returning the display to the route."
+      }
+    },
+    {
+      "topic": 10,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Keep the token booth open for cash while you collect and test the second reader from the back office. The booth reader is offline, the cash float is intact, and both gates have queues. Have staff explain the payment options at each gate. Resume card sales once a test payment succeeds. If either queue blocks access, move the waiting line clear of the gate.",
+        "public": "The card reader at the night market token booth is offline. You can buy tokens with cash. If you need to pay by card, check with a staff member before joining the line. There are queues at both gates, so please keep the entrances clear. For refund questions, please refer to the posted policy.",
+        "status": "Night market token booth reader reported offline. Cash float intact. Queues present at both gates. A second reader is in the back office. The shift decision is to continue cash sales and test the spare. Card service restoration is pending confirmation of a successful test payment. The refund policy is posted."
+      }
+    },
+    {
+      "topic": 10,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Switch the token booth to cash while you bring the spare reader from the back office and test it. The booth reader is offline, the cash float is intact, and queues have formed at both gates. Let both queues know before people reach the booth. Resume card payments after a successful test. If the spare fails, keep cash service going while the float supports it and flag any change shortage to the next lead.",
+        "public": "The card reader at the night market token booth is offline, and there are queues at both gates. If you have cash, you can still buy tokens at the booth. If you plan to pay by card, check with booth staff before joining either queue. For refund questions, please refer to the posted refund policy.",
+        "status": "The night market token booth reader is offline. The cash float is intact, and a spare reader is available in the back office. Queues have formed at both gates. The refund policy is posted. The shift lead’s next steps are to run cash sales, update both queues, and test the spare reader. Record the test result and whether card service resumes."
+      }
+    },
+    {
+      "topic": 10,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Bring the second reader from the back office to the token booth and test it with one sale before announcing card payments are back. Until then, run the booth cash-only; the float is intact. We have queues at two gates. I don't know why the first reader dropped, so treat the spare as unproven. If it also fails, stay cash-only and send someone to both gates to tell people before they queue.",
+        "public": "Card payments at the token booth are currently unavailable because our payment reader is offline. You can still buy tokens with cash at the booth. We are setting up a replacement reader and will announce here when cards are accepted again. Queues at both gates are moving slower than usual, so thank you for your patience. Our refund policy is posted at the booth if you need it.",
+        "status": "Token booth payment reader offline; cause not yet identified. Cash float checked and intact. Booth is selling tokens for cash only. A second reader is held in the back office and is being brought forward; it has not yet been tested at the booth. Queues have formed at two gates. Refund policy is posted. No refund requests or losses reported at time of entry. Next update once the replacement reader is tested."
+      }
+    },
+    {
+      "topic": 11,
+      "requested_model": "gpt-6.2-astra",
+      "reported_model": [
+        "gpt-6.2-astra"
+      ],
+      "texts": {
+        "decision": "Continue the lecture with remote captions and keep the scheduled audience questions. The recording light is off, but that alone does not confirm audio recording is disabled. The speaker permits a transcript only. Ask the AV technician, due in 15 minutes, to verify the settings. If audio recording is discovered, pause the lecture until it is disabled.",
+        "public": "You can follow the lecture using the remote captions and ask questions during the scheduled question period. The speaker has given permission for a written transcript only, so please keep audio recording turned off on your devices, including when you ask a question. Your question may appear in the transcript.",
+        "status": "Public lecture in progress. Remote captions are working, and audience questions remain scheduled. The speaker permits a transcript and prohibits audio recording. The recording indicator is off. Verification of the audio recording settings is pending. The AV technician is due in 15 minutes. The lecture will pause if active audio recording is identified."
+      }
+    },
+    {
+      "topic": 11,
+      "requested_model": "gpt-6.2-sol",
+      "reported_model": [
+        "gpt-6.2-sol"
+      ],
+      "texts": {
+        "decision": "Continue the lecture and keep the scheduled audience questions. Remote captions are working. Keep audio recording disabled and retain the caption transcript, which the speaker has approved. The recording light is off, but audio recording status is unverified. Ask the AV technician, due in 15 minutes, to confirm that audio recording is disabled. If captions fail, pause before taking more questions. If recording is active, stop it immediately.",
+        "public": "The lecture is continuing, and audience questions will go ahead as scheduled. If you’re joining remotely, turn on live captions in the event player to follow the discussion. If captions stop updating, please alert the event team. A transcript is permitted. Please refrain from making an audio recording of the lecture or the question period.",
+        "status": "Public lecture in progress. Recording light is off and audio recording status awaits verification. Remote captions are working. The speaker permits a transcript and has declined audio recording. Audience questions remain scheduled. The AV technician is due in 15 minutes and should verify that audio recording is disabled. Log the verification result and any interruption to captions or audience questions."
+      }
+    },
+    {
+      "topic": 11,
+      "requested_model": "claude-fable-5-2",
+      "reported_model": [
+        "claude-fable-5-2"
+      ],
+      "texts": {
+        "decision": "Continue the lecture with remote captions and keep audio recording off. The recording light is off, but that alone does not prove nothing is being captured, so have the AV tech confirm on arrival in about 15 minutes. The speaker permits a transcript, not audio. Run audience questions as scheduled. Change course if the tech finds audio is being recorded: stop it and tell the speaker. If captions fail, pause questions until restored.",
+        "public": "Tonight's lecture is going ahead as planned. Live captions are available for remote attendees and are working now. At the speaker's request, no audio recording will be made or shared, so please do not record the session yourself. A written transcript will be available afterward. Audience questions will be taken at the scheduled time, and anyone asking a question should know that their words may appear in the transcript.",
+        "status": "Public lecture in progress. Recording light is off; actual recording state not yet verified. Remote captions working. Speaker consent covers transcript only, not audio. Audience questions remain scheduled. AV tech due in 15 minutes to confirm no audio capture. Open items: verification of recording state, whether the transcript will include audience questions, and the transcript release date. No incident reported at time of entry."
+      }
+    }
+  ]
+}

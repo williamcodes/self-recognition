@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The tramway’s 1894 dip</title>
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #f7f3e9;
+    --surface: #fffcf5;
+    --ink: #202d29;
+    --muted: #485952;
+    --green: #22443a;
+    --bar: #536c5e;
+    --rust: #943e26;
+    --rule: #c9c7b7;
+    --tint: #efe1d1;
+    --serif: Georgia, "Times New Roman", serif;
+    font: 100% / 1.55 system-ui, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  h1, h2, h3, p, figure { margin: 0; }
+  h1, h2, h3 { font-family: var(--serif); line-height: 1.13; font-weight: 500; }
+  h1 { font-size: clamp(2.65rem, 6.4vw, 5.4rem); letter-spacing: -.055em; }
+  h2 { font-size: clamp(2rem, 4vw, 3.1rem); letter-spacing: -.035em; }
+  h3 { font-size: 1.45rem; }
+  a { color: var(--green); text-underline-offset: .2em; }
+  a:focus-visible { outline: 2px solid var(--rust); outline-offset: 4px; }
+  p + p { margin-top: .75rem; }
+
+  .wrap { width: min(69rem, calc(100% - 3rem)); margin-inline: auto; }
+  .masthead { border-top: .4rem solid var(--green); border-bottom: 1px solid var(--rule); }
+  .masthead .wrap { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
+  .masthead p, .eyebrow { color: var(--muted); font-size: .76rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+  .masthead a, .download { display: inline-flex; align-items: center; min-height: 44px; font-size: .92rem; font-weight: 650; }
+
+  .hero { display: grid; grid-template-columns: 1.5fr 1fr; gap: 2.5rem; align-items: center; padding-block: clamp(2.25rem, 6vw, 4.75rem); }
+  .hero .eyebrow { margin-bottom: .55rem; }
+  .lead { max-width: 37rem; margin-top: 1rem; font-size: clamp(1.08rem, 2vw, 1.25rem); }
+  .snapshot { background: var(--green); color: var(--surface); padding: 1.15rem clamp(1rem, 3vw, 1.75rem); }
+  .snapshot .eyebrow { color: #e6dec7; }
+  .metrics { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; margin: .8rem 0 0; }
+  .metrics div { display: grid; align-content: start; }
+  .metrics div + div { border-left: 1px solid #8d9e8c; padding-left: .75rem; }
+  .metrics dt { margin-top: .25rem; font-size: .9rem; }
+  .metrics dd { grid-row: 1; margin: 0; font: 2.2rem / 1 var(--serif); white-space: nowrap; }
+
+  .charts { border-top: 1px solid var(--rule); padding-top: 1.25rem; }
+  .charts h2 { margin-bottom: 1rem; }
+  .chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+  .chart { border: 1px solid var(--rule); background: var(--surface); padding: 1.1rem; min-width: 0; }
+  .chart-title { display: block; font: 1.4rem / 1.2 var(--serif); }
+  .chart-unit { color: var(--muted); font-size: .83rem; }
+  .chart-body { display: grid; grid-template-columns: 2rem 1fr; gap: .35rem; margin-top: 1.55rem; padding-bottom: 1.5rem; }
+  .axis { position: relative; color: var(--muted); font-size: .73rem; text-align: right; }
+  .axis span { position: absolute; right: 0; top: var(--position); transform: translateY(-50%); }
+  .bars { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); height: 9rem; list-style: none; padding: 0; margin: 0; border-bottom: 1px solid var(--muted); background: linear-gradient(var(--rule), var(--rule)) top / 100% 1px no-repeat, linear-gradient(var(--rule), var(--rule)) center / 100% 1px no-repeat; }
+  .bars li { position: relative; display: flex; justify-content: center; align-items: end; }
+  .bars .marked { background: #943e2610; }
+  .year { position: absolute; top: calc(100% + .3rem); font-size: .75rem; }
+  .bar { position: relative; display: grid; justify-items: center; width: 53%; height: calc(var(--value) * 100% / var(--max)); background: var(--bar); }
+  .value { position: absolute; bottom: calc(100% + .13rem); font-size: .78rem; font-variant-numeric: tabular-nums; font-weight: 650; line-height: 1; }
+  .marked .bar { background: var(--rust); }
+  .marked .year { color: var(--rust); font-weight: 750; }
+
+  .interpretation { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; margin-bottom: clamp(2.5rem, 7vw, 4.5rem); }
+  .interpretation > div { padding: 1.35rem; border-top: 2px solid var(--green); }
+  .interpretation .bridge { background: var(--tint); border-color: var(--rust); }
+  .interpretation h3 { margin-bottom: .45rem; }
+
+  .curator { border-top: .3rem solid var(--green); padding-block: 2.1rem 2.5rem; background: var(--surface); }
+  .section-head { margin-bottom: 1.4rem; }
+  .section-head p { margin-top: .55rem; max-width: 50rem; }
+  .tables { display: grid; grid-template-columns: 1fr 1.15fr; gap: 1.1rem; align-items: start; }
+  .table-panel { padding: 1rem; border: 1px solid var(--rule); min-width: 0; }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  caption { text-align: left; margin-bottom: .8rem; font: 1.4rem / 1.2 var(--serif); }
+  th, td { padding: .5rem .3rem; text-align: right; border-bottom: 1px solid var(--rule); }
+  th:first-child { text-align: left; }
+  thead th { vertical-align: bottom; font-size: .8rem; line-height: 1.24; color: var(--muted); }
+  tbody tr:last-child > * { border-bottom: 0; }
+  tbody tr.marked { background: var(--tint); }
+  .unit { display: block; font-weight: 400; margin-top: .15rem; }
+  .percent { display: block; color: var(--muted); font-size: .79rem; }
+  .table-note { color: var(--muted); font-size: .85rem; margin-top: .7rem; }
+  .methods { margin-top: 1.75rem; max-width: 58rem; }
+  .methods ul { padding-left: 1.3rem; margin-block: .6rem 1rem; }
+  .methods li + li { margin-top: .45rem; }
+  .methods p { margin-top: .7rem; }
+  footer { border-top: 1px solid var(--rule); padding-block: 1rem; color: var(--muted); font-size: .84rem; }
+
+  @media (max-width: 50rem) {
+    .hero, .tables { grid-template-columns: 1fr; }
+    .hero { gap: 1.3rem; }
+    .snapshot { max-width: 31rem; }
+  }
+
+  @media (max-width: 41rem) {
+    .wrap { width: calc(100% - 2rem); }
+    .chart-grid, .interpretation { grid-template-columns: 1fr; }
+    .chart, .table-panel { padding: .7rem; }
+  }
+
+  @media print {
+    @page { margin: 14mm; }
+    :root { background: white; }
+    body { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    .wrap { width: 100%; }
+    .masthead a, .download { display: none; }
+    .masthead p { padding-block: .4rem; }
+    .hero { grid-template-columns: 1.5fr 1fr; padding-block: 1.25rem; gap: 1rem; }
+    h1 { font-size: 2.9rem; }
+    .chart-grid, .interpretation { grid-template-columns: 1fr 1fr; }
+    .bars { height: 7rem; }
+    .interpretation { margin-bottom: 0; }
+    .curator { break-before: page; padding-block: 1rem; }
+    .tables { grid-template-columns: 1fr 1.15fr; gap: .5rem; }
+    .table-panel { padding: .55rem; }
+    th, td { padding-block: .3rem; }
+    .chart, .snapshot, .table-panel, .interpretation > div { break-inside: avoid; }
+    footer { padding-block: .5rem; }
+  }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <p>Local museum exhibit</p>
+    <nav aria-label="Exhibit navigation"><a href="#curator">Curator’s notes</a></nav>
+  </div>
+</header>
+
+<main>
+  <article class="wrap" aria-labelledby="title">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Fictional tramway · 1891–1896</p>
+        <h1 id="title">The tramway’s 1894 dip</h1>
+        <p class="lead">The tramway recorded 9,000 fewer passenger journeys and ran 2,000 fewer kilometres in 1894 than in 1893. Both totals rose above their 1893 levels the following year.</p>
+      </div>
+      <aside class="snapshot" aria-labelledby="snapshot-label">
+        <p class="eyebrow" id="snapshot-label">1894 compared with 1893</p>
+        <dl class="metrics">
+          <div><dt>Passenger journeys</dt><dd>−9.3%</dd></div>
+          <div><dt>Service kilometres</dt><dd>−8.0%</dd></div>
+        </dl>
+      </aside>
+    </header>
+
+    <section class="charts" aria-labelledby="charts-title">
+      <h2 id="charts-title">Journeys and service by year</h2>
+      <div class="chart-grid">
+        <figure class="chart" style="--max: 120">
+          <figcaption><span class="chart-title">Passenger journeys</span><span class="chart-unit">Thousands of journeys</span></figcaption>
+          <div class="chart-body">
+            <div class="axis" aria-hidden="true"><span style="--position: 0%">120</span><span style="--position: 50%">60</span><span style="--position: 100%">0</span></div>
+            <ol class="bars" role="list">
+              <li><span class="year">1891</span><span class="bar" style="--value: 84"><span class="value">84</span></span></li>
+              <li><span class="year">1892</span><span class="bar" style="--value: 94"><span class="value">94</span></span></li>
+              <li><span class="year">1893</span><span class="bar" style="--value: 97"><span class="value">97</span></span></li>
+              <li class="marked"><span class="year">1894</span><span class="bar" style="--value: 88"><span class="value">88</span></span></li>
+              <li><span class="year">1895</span><span class="bar" style="--value: 108"><span class="value">108</span></span></li>
+              <li><span class="year">1896</span><span class="bar" style="--value: 115"><span class="value">115</span></span></li>
+            </ol>
+          </div>
+        </figure>
+        <figure class="chart" style="--max: 30">
+          <figcaption><span class="chart-title">Service distance</span><span class="chart-unit">Thousands of kilometres</span></figcaption>
+          <div class="chart-body">
+            <div class="axis" aria-hidden="true"><span style="--position: 0%">30</span><span style="--position: 50%">15</span><span style="--position: 100%">0</span></div>
+            <ol class="bars" role="list">
+              <li><span class="year">1891</span><span class="bar" style="--value: 24"><span class="value">24</span></span></li>
+              <li><span class="year">1892</span><span class="bar" style="--value: 25"><span class="value">25</span></span></li>
+              <li><span class="year">1893</span><span class="bar" style="--value: 25"><span class="value">25</span></span></li>
+              <li class="marked"><span class="year">1894</span><span class="bar" style="--value: 23"><span class="value">23</span></span></li>
+              <li><span class="year">1895</span><span class="bar" style="--value: 27"><span class="value">27</span></span></li>
+              <li><span class="year">1896</span><span class="bar" style="--value: 28"><span class="value">28</span></span></li>
+            </ol>
+          </div>
+        </figure>
+      </div>
+
+      <div class="interpretation">
+        <div class="bridge">
+          <h3>A bridge closed for six weeks</h3>
+          <p>The closure was recorded in 1894. The ledger gives yearly totals, with no daily entries to show how many journeys were made or how far trams ran during those six weeks. The closure’s effect cannot be measured from these records.</p>
+        </div>
+        <div>
+          <h3>Both totals reached new highs</h3>
+          <p>In 1895, journeys rose 22.7% and service kilometres rose 17.4% from the year before. By 1896, journeys were 36.9% above their 1891 level and service kilometres were 16.7% higher.</p>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <section class="curator" id="curator" aria-labelledby="curator-title">
+    <div class="wrap">
+      <header class="section-head">
+        <h2 id="curator-title">Curator’s notes</h2>
+        <p>The ledger counts passenger journeys, so one person can account for several trips. Service kilometres measure distance operated. The fare totals are included in the transcription for reference.</p>
+        <a class="download" href="tramway-ledger.csv" download>Download ledger CSV</a>
+      </header>
+
+      <div class="tables">
+        <div class="table-panel">
+          <table id="ledger">
+            <caption>Annual ledger transcription</caption>
+            <thead>
+              <tr><th scope="col">Year</th><th scope="col">Journeys<span class="unit">thousands</span></th><th scope="col">Fare revenue<span class="unit">thousand crowns</span></th><th scope="col">Service<span class="unit">thousand km</span></th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">1891</th><td>84</td><td>42</td><td>24</td></tr>
+              <tr><th scope="row">1892</th><td>94</td><td>47</td><td>25</td></tr>
+              <tr><th scope="row">1893</th><td>97</td><td>48</td><td>25</td></tr>
+              <tr class="marked"><th scope="row">1894</th><td>88</td><td>45</td><td>23</td></tr>
+              <tr><th scope="row">1895</th><td>108</td><td>53</td><td>27</td></tr>
+              <tr><th scope="row">1896</th><td>115</td><td>58</td><td>28</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-panel">
+          <table id="calculations" aria-describedby="comparison-note">
+            <caption>Changes and journeys per km</caption>
+            <thead>
+              <tr><th scope="col">Year</th><th scope="col">Journey change<span class="unit">thousands / %</span></th><th scope="col">Service change<span class="unit">thousand km / %</span></th><th scope="col">Journeys<span class="unit">per service km</span></th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">1891</th><td>—</td><td>—</td><td>3.50</td></tr>
+              <tr><th scope="row">1892</th><td>+10 <span class="percent">+11.9%</span></td><td>+1 <span class="percent">+4.2%</span></td><td>3.76</td></tr>
+              <tr><th scope="row">1893</th><td>+3 <span class="percent">+3.2%</span></td><td>0 <span class="percent">0.0%</span></td><td>3.88</td></tr>
+              <tr class="marked"><th scope="row">1894</th><td>−9 <span class="percent">−9.3%</span></td><td>−2 <span class="percent">−8.0%</span></td><td>3.83</td></tr>
+              <tr><th scope="row">1895</th><td>+20 <span class="percent">+22.7%</span></td><td>+4 <span class="percent">+17.4%</span></td><td>4.00</td></tr>
+              <tr><th scope="row">1896</th><td>+7 <span class="percent">+6.5%</span></td><td>+1 <span class="percent">+3.7%</span></td><td>4.11</td></tr>
+            </tbody>
+          </table>
+          <p class="table-note" id="comparison-note">Changes use the preceding year as the baseline. Dashes indicate there is no preceding year in the ledger.</p>
+        </div>
+      </div>
+
+      <section class="methods" aria-labelledby="methods-title">
+        <h3 id="methods-title">How to verify the figures</h3>
+        <ul>
+          <li><strong>Absolute change.</strong> Subtract the baseline total from the later total. For 1894 journeys, 88 − 97 = −9 thousand journeys. For service, 23 − 25 = −2 thousand km.</li>
+          <li><strong>Percentage change.</strong> Divide the absolute change by the baseline total and multiply by 100. For 1894, −9 ÷ 97 × 100 ≈ −9.3% and −2 ÷ 25 × 100 = −8.0%. For 1891–1896, use 1891 as the baseline. Journeys rose by 31 thousand (31 ÷ 84 × 100 ≈ 36.9%) and service by 4 thousand km (4 ÷ 24 × 100 ≈ 16.7%).</li>
+          <li><strong>Journeys per service kilometre.</strong> Divide that year’s journeys by service kilometres. The thousands cancel. In 1894, 88 ÷ 23 ≈ 3.83, down slightly from 97 ÷ 25 = 3.88 in 1893.</li>
+        </ul>
+        <p class="table-note">Percentages are rounded to one decimal place and journeys per kilometre to two, using the ledger values before rounding.</p>
+        <p><strong>Interpretation.</strong> The small change in journeys per kilometre shows that the two annual totals fell by similar proportions. The yearly figures cannot establish what service or ridership would have been without the closure, or distinguish its effect from other possible changes during the year. A six-week duration supplies no basis for prorating annual totals because the records give no distribution of journeys or service across the year.</p>
+      </section>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="wrap">Sources for the fictional exhibit are the 1891–1896 annual tramway ledger and the 1894 record of a six-week bridge closure.</p>
+</footer>
+</body>
+</html>

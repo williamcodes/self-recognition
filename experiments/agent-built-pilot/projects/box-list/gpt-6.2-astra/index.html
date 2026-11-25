@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stagehand · Packing inventory</title><link rel="stylesheet" href="style.css"><script defer src="app.js"></script></head>
+<body>
+<header><div class="bar"><strong class="brand"><span class="mark" aria-hidden="true">▥</span> Stagehand</strong><span>Community theater</span></div></header>
+<main>
+<section class="hero"><div class="curtain" aria-hidden="true"></div><div class="heroText"><small>BACKSTAGE OPERATIONS</small><h1>Packing inventory</h1><p>Organize the props for your next move.</p></div><div class="stats" id="stats"></div></section>
+<div class="tools"><div class="switch"><button id="boxesTab">Boxes</button><button id="looseTab">Unassigned</button></div><div class="actions"><button id="print">Print inventory</button><button id="addBox">+ Add box</button><button class="primary" id="addProp">+ Add prop</button></div></div>
+<section id="work" aria-live="polite"></section>
+<footer><span id="status" role="status"></span><a id="demoLink" href="?demo">Try a sample move ↗</a></footer>
+</main><article id="paper"></article>
+<dialog aria-labelledby="formTitle"><form id="form"><h2 id="formTitle"></h2><label>Name<input id="name" maxlength="100" required></label><label id="assignment">Box<select id="box"></select></label><label>Notes <span>(optional)</span><textarea id="notes" maxlength="500" rows="3"></textarea></label><div class="dialogActions"><button type="button" id="cancel">Cancel</button><button class="primary" type="submit">Save</button></div></form></dialog>
+</body></html>

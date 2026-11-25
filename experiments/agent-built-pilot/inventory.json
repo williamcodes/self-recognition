@@ -1,0 +1,503 @@
+[
+  {
+    "brief": "repair-night",
+    "writer": "gpt-6.2-astra",
+    "files": [
+      {
+        "path": "01 - Volunteer door card.pdf",
+        "bytes": 3213,
+        "sha256": "8bad75640e159c0108518493c20ba40ff354a7ffd0d1c39d18cbc66d652dec60",
+        "text_words": 91,
+        "display_words": 94
+      },
+      {
+        "path": "02 - Take-along guide (cut in half).pdf",
+        "bytes": 3805,
+        "sha256": "5bef5f00d16cb84c65954d9726fc4094499989102fbee98723d04907811593f7",
+        "text_words": 56,
+        "display_words": 60
+      },
+      {
+        "path": "03 - Entrance and station signs.pdf",
+        "bytes": 8929,
+        "sha256": "e292d711bb3e345e9169cb062a442fdba0957fcc88fee4566b65e2dc8036c68d",
+        "text_words": 61,
+        "display_words": 71
+      }
+    ],
+    "writer_terminal_calls": 4,
+    "patch_events": 0,
+    "final_writer_response": "The offline **Repair Night welcome and wayfinding kit** is ready to print on US Letter paper.\n\n- [Volunteer door card](<./01 - Volunteer door card.pdf>) — Keep one at registration. It includes a welcome script, every station location, and what to say after the 19:15 intake cutoff.\n- [Attendee guide](<./02 - Take-along guide (cut in half).pdf>) — Print copies and cut along the center line. Each half includes the 17:30 opening time, last intake, all stations, and the accessible entrance on Pine Street.\n- [Entrance and station signs](<./03 - Entrance and station signs.pdf>) — Post one illustrated page at each named location.\n\nI rendered and checked all seven pages for layout and print margins."
+  },
+  {
+    "brief": "repair-night",
+    "writer": "gpt-6.2-sol",
+    "files": [
+      {
+        "path": "Door Volunteer Guide.pdf",
+        "bytes": 27378,
+        "sha256": "e9529d35f02fb96f71dd47e752dea30a2d4604bdfd0ced3ce17dced841119ff6",
+        "text_words": null,
+        "display_words": 128
+      },
+      {
+        "path": "Wayfinding Signs.pdf",
+        "bytes": 17301,
+        "sha256": "cb70d37bbdae2dc337da770f482737c5e5193b78f96573e6c87f6d7a37671606",
+        "text_words": null,
+        "display_words": 36
+      },
+      {
+        "path": "Welcome.pdf",
+        "bytes": 30915,
+        "sha256": "88f47fd0c40b76d721200008864af707ec5657b6c86f57915eb6124c6aa22936",
+        "text_words": null,
+        "display_words": 47
+      }
+    ],
+    "writer_terminal_calls": 8,
+    "patch_events": 0,
+    "final_writer_response": "The Repair Night kit is ready to print on US Letter paper.\n\n- Post the [Welcome sheet](<<TEMP>/tmpy5dnehjn/Welcome.pdf>) at both entrances or hand it out. It shows the 17:30 opening, 19:15 last intake, and where to go.\n- Keep the [Door volunteer guide](<<TEMP>/tmpy5dnehjn/Door Volunteer Guide.pdf>) at west entrance registration for setup, check-in, and intake cutoff.\n- Post the five [Wayfinding signs](<<TEMP>/tmpy5dnehjn/Wayfinding Signs.pdf>) at their destinations. Print extra copies of page 6 and rotate the arrow to match each turn after walking the routes.\n\nI checked all eight pages offline and reviewed the signs in grayscale."
+  },
+  {
+    "brief": "seed-swap",
+    "writer": "gpt-6.2-astra",
+    "files": [
+      {
+        "path": "Seed Swap - Event Poster.pdf",
+        "bytes": 113506,
+        "sha256": "81f915ad7d9286e01e47f84112b96b35a5ffbf0b139fa4aa3005fb4b5c7e8735",
+        "text_words": null,
+        "display_words": 72
+      },
+      {
+        "path": "Seed Swap - Packet Labels.pdf",
+        "bytes": 60294,
+        "sha256": "ca5c50315d3983c034a67454a94737d6297ef07d01b8880638a43285810beaee",
+        "text_words": null,
+        "display_words": 77
+      },
+      {
+        "path": "Seed Swap - Quiet Table.pdf",
+        "bytes": 68943,
+        "sha256": "d6feae0b88ed2c0fad4b706b45068df443a0a402ffc4d32dca54f65fd4051c96",
+        "text_words": null,
+        "display_words": 31
+      }
+    ],
+    "writer_terminal_calls": 7,
+    "patch_events": 0,
+    "final_writer_response": "The finished seed swap kit includes three anonymous, print-ready PDFs. A pea-vine illustration, leaf-green type, and terracotta accents give the pieces a shared identity.\n\n- [Event poster](./Seed%20Swap%20-%20Event%20Poster.pdf) — Announces April 12, 10 AM–2 PM, welcomes visitors with nothing to trade, and explains how to label packs.\n- [Quiet-table sign](./Seed%20Swap%20-%20Quiet%20Table.pdf) — A landscape sign inviting first-time gardeners to bring their questions.\n- [Seed-packet labels](./Seed%20Swap%20-%20Packet%20Labels.pdf) — Eight cut-apart labels with writing space for the plant name and harvest year.\n\nAll three were created and checked offline. Print on US Letter paper at actual size."
+  },
+  {
+    "brief": "seed-swap",
+    "writer": "gpt-6.2-sol",
+    "files": [
+      {
+        "path": "Seed Swap - Print Kit.pdf",
+        "bytes": 236037,
+        "sha256": "d078342c80a25394ed86cab4f0808c37c57938b3b3324e1be5f38656b933264e",
+        "text_words": null,
+        "display_words": 247
+      },
+      {
+        "path": "Seed Swap - Welcome Screen.png",
+        "bytes": 136136,
+        "sha256": "a09cc75e56d23812c6b7069db0f352fc1147c5ac0ab7b719ec1cde597d89dae9",
+        "text_words": null,
+        "display_words": null
+      }
+    ],
+    "writer_terminal_calls": 9,
+    "patch_events": 0,
+    "final_writer_response": "Created an offline seed swap kit with a botanical illustration and a forest-green, sage, and terracotta palette.\n\n- [Print kit (PDF)](<<TEMP>/tmpnk0d4gf7/Seed Swap - Print Kit.pdf>) includes four US Letter pages in order: the event poster, swap table sign, quiet table sign, and 12 cut-out seed pack labels. Print the label sheet at actual size.\n- [Welcome screen (PNG)](<<TEMP>/tmpnk0d4gf7/Seed Swap - Welcome Screen.png>) is a 1280 × 720 graphic ready to display full-screen.\n\nI checked the rendered layouts, event details, and both write-in fields on all 12 labels."
+  },
+  {
+    "brief": "lost-platform",
+    "writer": "gpt-6.2-astra",
+    "files": [
+      {
+        "path": "Sound/Q1.wav",
+        "bytes": 26444,
+        "sha256": "6824706f83e6fdfc77d146ad9c73224b1d5c4be706941f6362cd81bd42dd33d6",
+        "text_words": null,
+        "display_words": null
+      },
+      {
+        "path": "Sound/Q2.wav",
+        "bytes": 240044,
+        "sha256": "f1155584038d931f1f62d6bda6001eb441b3465fc4753b16a717bb9980248539",
+        "text_words": null,
+        "display_words": null
+      },
+      {
+        "path": "Sound/Q3.wav",
+        "bytes": 115244,
+        "sha256": "5fda6ef35f3506c62526fe1ee9d7002e1e56d2544efda2ef71e3e5293b180950",
+        "text_words": null,
+        "display_words": null
+      },
+      {
+        "path": "Top Pocket.html",
+        "bytes": 8029,
+        "sha256": "092dc261b6ece014631e5841e8f1e307b336e46cf9d8d0ef3654fe63ef183371",
+        "text_words": 872,
+        "display_words": 872
+      }
+    ],
+    "writer_terminal_calls": 5,
+    "patch_events": 0,
+    "final_writer_response": "[Open **Top Pocket**](<<TEMP>/tmpptdo04af/Top Pocket.html>), a two-performer radio drama. A ticket punch puts a hole through Thursday on an obsolete timetable, and a station wall slides aside. Behind it waits a sack of undelivered letters.\n\nThe package works offline. Print pages 1–3 for each performer and page 4 for the producer. The producer’s sheet links three original mono sound effects and gives live-foley alternatives. No narrator or music is required.\n\nI verified the four-page print layout and all three audio links. The 391 spoken words and timed cues target about three minutes. Exact runtime depends on the performers’ read."
+  },
+  {
+    "brief": "lost-platform",
+    "writer": "gpt-6.2-sol",
+    "files": [
+      {
+        "path": "01 - Performance script.md",
+        "bytes": 3111,
+        "sha256": "9d0656a0569aa322f17e3832d0999175b37a12804f5a11b3ca0c10e074d83c6f",
+        "text_words": 531,
+        "display_words": 544
+      },
+      {
+        "path": "02 - Producer sheet.md",
+        "bytes": 3446,
+        "sha256": "8190df0557723b6b70fc029806c6700fea0d0e1a7ca79c63312986c7313b47b3",
+        "text_words": 670,
+        "display_words": 643
+      },
+      {
+        "path": "03 - Tide at platform four.wav",
+        "bytes": 2496044,
+        "sha256": "93bad57c1eb5c3806e8a9122079a47f4973019d86d29df529aceb25d388fa027",
+        "text_words": null,
+        "display_words": null
+      }
+    ],
+    "writer_terminal_calls": 8,
+    "patch_events": 0,
+    "final_writer_response": "**Where the Tide Stops** is a three-minute audio drama for two performers. An obsolete timetable leads Mara and a former station worker to a platform buried beneath concrete. When they switch on the old signal lamp, they hear what used to come in under the boards.\n\n- [Performance script](<TEMP>/tmpxfssflxs/01%20-%20Performance%20script.md) with dialogue, timing marks, and sound cues.\n- [Producer sheet](<TEMP>/tmpxfssflxs/02%20-%20Producer%20sheet.md) with cue triggers, prop setup, and a live Foley fallback.\n- [Tide at platform four](<TEMP>/tmpxfssflxs/03%20-%20Tide%20at%20platform%20four.wav), a 26-second mono WAV ready for playback.\n\nThe piece uses dialogue and sound effects throughout. I checked all nine cues against the script, verified the WAV, and estimated the dialogue timing with an offline read. The exact runtime depends on the cast’s rehearsal pace."
+  },
+  {
+    "brief": "borrowed-window",
+    "writer": "gpt-6.2-astra",
+    "files": [
+      {
+        "path": "Borrowed Window - A4 fold sheet.pdf",
+        "bytes": 19555,
+        "sha256": "cf401bf05ad02687eeacf9781445e5b77a9a9158078309d207f3699a9599440a",
+        "text_words": null,
+        "display_words": 391
+      },
+      {
+        "path": "Borrowed Window - Letter fold sheet.pdf",
+        "bytes": 19452,
+        "sha256": "040c0d388516f46a5123846a396bd26b3ad8e95172e4e16fe26ed2f34f4647b0",
+        "text_words": null,
+        "display_words": 391
+      },
+      {
+        "path": "Borrowed Window - reading copy.pdf",
+        "bytes": 22996,
+        "sha256": "36afa7388c1e8fd8ae05341de97e3faac8e7bf203c4dcf1e8cbaa496ce81a4a8",
+        "text_words": null,
+        "display_words": 391
+      },
+      {
+        "path": "Stall folding guide.pdf",
+        "bytes": 16696,
+        "sha256": "4d2f02748e63fff83c7694a6c55c0ccb2b1eef74bd1d05d07a0ea2cb605d7bb1",
+        "text_words": null,
+        "display_words": 228
+      }
+    ],
+    "writer_terminal_calls": 5,
+    "patch_events": 0,
+    "final_writer_response": "**Borrowed Window** is an eight-page pocket zine told by two neighbors. From her kitchen, Nell sees a procession of people saluting. From his barber shop downstairs, Art knows what each one is looking for.\n\n[Read the zine](borrowed%20Window) \n\nFor the book fair, print one fold sheet **single-sided at 100%**. One center cut and a few folds make the booklet, with no staples or glue.\n\n- [A4 fold sheet](<<TEMP>/tmpnyme9w9i/Borrowed Window - A4 fold sheet.pdf>)\n- [US Letter fold sheet](<<TEMP>/tmpnyme9w9i/Borrowed Window - Letter fold sheet.pdf>)\n- [Illustrated folding guide for volunteers](<<TEMP>/tmpnyme9w9i/Stall folding guide.pdf>)\n- [Reading copy in page order](<<TEMP>/tmpnyme9w9i/Borrowed Window - reading copy.pdf>)\n\nAll four PDFs were created and checked offline. Both fold sheets were verified digitally. A physical print proof is still untested."
+  },
+  {
+    "brief": "borrowed-window",
+    "writer": "gpt-6.2-sol",
+    "files": [
+      {
+        "path": "Borrowed Window - A4 print master.pdf",
+        "bytes": 24640,
+        "sha256": "581b9c7606bac8c20fafa683b32b29bd0decbe5f939d55466bae8bb5ae58f464",
+        "text_words": null,
+        "display_words": 496
+      },
+      {
+        "path": "Borrowed Window - US Letter print master.pdf",
+        "bytes": 24388,
+        "sha256": "c4327d7ff5217b4c6565cf3503d907590a720502e4824aff94ec9ea6b0d3bf25",
+        "text_words": null,
+        "display_words": 496
+      },
+      {
+        "path": "Borrowed Window - folding guide.pdf",
+        "bytes": 22003,
+        "sha256": "012cbb7c720990a785ac582dd33b25499cf06e37ce5b3c2a4d23a72675fd1d2b",
+        "text_words": null,
+        "display_words": 185
+      },
+      {
+        "path": "Borrowed Window - reading copy.pdf",
+        "bytes": 24273,
+        "sha256": "b4b13ccac4346da216bcc5b85584b02730fb12fa3ec3b173bdba72982854e9e1",
+        "text_words": null,
+        "display_words": 481
+      }
+    ],
+    "writer_terminal_calls": 12,
+    "patch_events": 0,
+    "final_writer_response": "**Borrowed Window** is an eight-page pocket zine about two neighbors who see the same street from different vantage points. A folding chair gives them a reason to look again.\n\n- [Reading copy](<<TEMP>/tmpc36onp70/Borrowed Window - reading copy.pdf>)\n- Print masters for [US Letter](<<TEMP>/tmpc36onp70/Borrowed Window - US Letter print master.pdf>) and [A4](<<TEMP>/tmpc36onp70/Borrowed Window - A4 print master.pdf>)\n- [Illustrated folding guide for stall volunteers](<<TEMP>/tmpc36onp70/Borrowed Window - folding guide.pdf>)\n\nPrint the matching master single-sided at 100%. Each sheet folds into one 2½ × 3¾-inch booklet. I checked both print masters against the reading copy and verified the fold order digitally."
+  },
+  {
+    "brief": "tram-ledger",
+    "writer": "gpt-6.2-astra",
+    "files": [
+      {
+        "path": "Curator workbook.xlsx",
+        "bytes": 8461,
+        "sha256": "2d4b588399aeaa8cb73e51392a0b2126bfaa65bec56b8917b3f2a16f21e900ee",
+        "text_words": null,
+        "display_words": null
+      },
+      {
+        "path": "Visitor panel.html",
+        "bytes": 3880,
+        "sha256": "bdeb08854be36191cfedaf8cb049591b3fa7a6383a2ef692c1bfa8ae4ea24590",
+        "text_words": 214,
+        "display_words": 176
+      }
+    ],
+    "writer_terminal_calls": 8,
+    "patch_events": 0,
+    "final_writer_response": "From 1891 to 1896, passenger journeys grew **37%** while service distance grew **17%**. In 1894, the year of the six-week bridge closure, the tramway recorded 9,000 fewer journeys and ran 2,000 fewer kilometres than in 1893. The annual ledger cannot establish how much of that decline the closure caused.\n\n- [Visitor panel](<<TEMP>/tmpafmnn26q/Visitor panel.html>) — a printable, offline exhibit with all six years charted.\n- [Curator workbook](<<TEMP>/tmpafmnn26q/Curator workbook.xlsx>) — the fictional source records, inspectable formulas, rounding conventions, and limits of interpretation.\n\nVerified all six exhibit rows and all 48 workbook calculations against the supplied ledger."
+  },
+  {
+    "brief": "tram-ledger",
+    "writer": "gpt-6.2-sol",
+    "files": [
+      {
+        "path": "index.html",
+        "bytes": 16334,
+        "sha256": "d6ccdec363e51118e3be46b474461f7a312b7fdac7af1ee5e2056d51378d3091",
+        "text_words": 1624,
+        "display_words": 558
+      },
+      {
+        "path": "tramway-ledger.csv",
+        "bytes": 170,
+        "sha256": "f7fedfb4357b0b59a399ea52b15ae014b45fee99d88a32f621878664fa6a56ed",
+        "text_words": 7,
+        "display_words": null
+      }
+    ],
+    "writer_terminal_calls": 12,
+    "patch_events": 1,
+    "final_writer_response": "Open [The tramway’s 1894 dip](<TEMP>/tmp1858_gle/index.html) in a browser. The offline exhibit includes visitor charts and a curator’s audit with the full ledger, year-by-year changes, and worked calculations. The [ledger CSV](<TEMP>/tmp1858_gle/tramway-ledger.csv) is included for independent checks.\n\nFrom 1893 to 1894, passenger journeys fell **9.3%** and service kilometres fell **8.0%**. Both rose above their 1893 levels in 1895. The six-week bridge closure occurred in 1894, but the annual records cannot establish how much of the decline it caused.\n\nI verified the transcription, calculations, chart values, and local links. Browser rendering could not be verified in this environment."
+  },
+  {
+    "brief": "orchard-accounts",
+    "writer": "gpt-6.2-astra",
+    "files": [
+      {
+        "path": "board-brief.html",
+        "bytes": 4866,
+        "sha256": "1ef54d0e364df8201c4109d4bca55fcc57ce051ee8185124d1784913f6093615",
+        "text_words": 385,
+        "display_words": 406
+      },
+      {
+        "path": "season-accounts.csv",
+        "bytes": 560,
+        "sha256": "9c750c3c41748fcb5011ed091b8d4bf3fc4e8486fcf7e2973eb4a064b8c74f9d",
+        "text_words": 7,
+        "display_words": null
+      }
+    ],
+    "writer_terminal_calls": 3,
+    "patch_events": 0,
+    "final_writer_response": "Operating margin fell from **16.7% in 1924 to 6.7% in 1927**, recovered to **15.6% in 1928**, then slipped to **10.8% in 1929**. In that last season, the cooperative sold 80 more crates, but operating costs rose by 750 crowns while revenue rose by only 306.\n\nThe rebound followed the sorter’s late-1927 arrival. The annual accounts cannot isolate its contribution, distinguish changes in variety mix, or establish equipment payback.\n\n- [Board brief](<TEMP>/tmpas6byfg5/board-brief.html) — an offline report explaining the six-season trend.\n- [Season ledger](<TEMP>/tmpas6byfg5/season-accounts.csv) — all six source rows and 30 verified calculations, with formulas defined in the brief."
+  },
+  {
+    "brief": "orchard-accounts",
+    "writer": "gpt-6.2-sol",
+    "files": [
+      {
+        "path": "build_report.py",
+        "bytes": 13640,
+        "sha256": "eb23c85b18656e148af4875c40b7792cb69ac0c1c2e0842265035605ed3a9969",
+        "text_words": 1466,
+        "display_words": null
+      },
+      {
+        "path": "orchard-accounts.csv",
+        "bytes": 175,
+        "sha256": "5099ff2de68fbf9037511fbb82c724d1d0e288def34fbf46f5be4f7aafaebac0",
+        "text_words": 7,
+        "display_words": null
+      },
+      {
+        "path": "orchard-board-brief.html",
+        "bytes": 10858,
+        "sha256": "ce1dabc2490085c5c0d11f520e797dc7b07621f7f8f4dc9ad97e6a650230eb7d",
+        "text_words": 1061,
+        "display_words": 711
+      }
+    ],
+    "writer_terminal_calls": 6,
+    "patch_events": 1,
+    "final_writer_response": "The [board brief](<TEMP>/tmppj640ky0/orchard-board-brief.html) shows that operating margin fell from 16.67% in 1924 to 6.72% in 1927, recovered to 15.62% in 1928, then slipped to 10.84% in 1929 despite record crate sales.\n\nLower recorded operating cost per crate was the largest contributor to the 1928 surplus recovery. The accounts establish that the recovery followed the sorter’s arrival, but they cannot isolate its effect or establish its payback.\n\nThe package includes the [source accounts](<TEMP>/tmppj640ky0/orchard-accounts.csv) and a [reproducible audit script](<TEMP>/tmppj640ky0/build_report.py). I independently checked all three report tables and confirmed offline that `python3 build_report.py --check` detects a modified report."
+  },
+  {
+    "brief": "rota",
+    "writer": "gpt-6.2-astra",
+    "files": [
+      {
+        "path": "README.md",
+        "bytes": 1807,
+        "sha256": "1003e412f58efbe707f082a32e8c69835be8f3af11d89eecfb6ecea67d13356e",
+        "text_words": 299,
+        "display_words": 305
+      },
+      {
+        "path": "rota.py",
+        "bytes": 3611,
+        "sha256": "e0a4058bce3a3d4ef66e4d90daf2edd9b25af0b357ae73cf2c1fc7cda672575d",
+        "text_words": 355,
+        "display_words": null
+      },
+      {
+        "path": "sample.csv",
+        "bytes": 253,
+        "sha256": "400a6e10488a9c525b83cb959cef503671162301b9d8c4c81d2690084613e684",
+        "text_words": 14,
+        "display_words": null
+      },
+      {
+        "path": "test_rota.py",
+        "bytes": 2581,
+        "sha256": "b3a0a791c7dc14091200eb42616392aa9548d3f55043ad36505427dbb2508c6d",
+        "text_words": 184,
+        "display_words": null
+      }
+    ],
+    "writer_terminal_calls": 7,
+    "patch_events": 0,
+    "final_writer_response": "Built an offline CSV rota checker for same-day volunteer shifts. It runs with Python 3.7 or newer and requires no packages or server.\n\nTry the sample from the project directory:\n\n```sh\npython3 rota.py sample.csv\n```\n\nThe checker reports a 15-minute overlap between shelving and story hour, accepts the back-to-back handoff at 10:30, and flags `10:75` on line 6 with the expected time format.\n\nAll three automated tests passed. Maintainers can rerun them with `python3 -B -m unittest -v`. The [README](<TEMP>/tmppv2ango_/README.md) covers CSV preparation, exit codes, and how to correct the sample for a clean run."
+  },
+  {
+    "brief": "rota",
+    "writer": "gpt-6.2-sol",
+    "files": [
+      {
+        "path": "README.md",
+        "bytes": 2000,
+        "sha256": "bf7e41a2c88cfb267cd687a9b11e337315d8b17dfa6532a27c2a1fc2b5562036",
+        "text_words": 327,
+        "display_words": 343
+      },
+      {
+        "path": "check_rota.py",
+        "bytes": 5030,
+        "sha256": "d25c0cb6fef4e807c65dd2736bdd50d0b76c4a1efb0ea37dffe93cc43116e3e7",
+        "text_words": 498,
+        "display_words": null
+      },
+      {
+        "path": "sample_rota.csv",
+        "bytes": 263,
+        "sha256": "67c4a5393f4d4331b89d2f75fe96a860edcb81abcdb5a881e95055301052b298",
+        "text_words": 15,
+        "display_words": null
+      },
+      {
+        "path": "test_check_rota.py",
+        "bytes": 4235,
+        "sha256": "a80a9425ef1ba5a0addc125f30712165e0fcb8456e17eba872557c4d1edd81d9",
+        "text_words": 319,
+        "display_words": null
+      }
+    ],
+    "writer_terminal_calls": 3,
+    "patch_events": 3,
+    "final_writer_response": "Built an offline rota checker that reports overlapping assignments by volunteer, accepts back-to-back shifts, and explains invalid times with CSV line numbers and the expected format.\n\nTry it from this folder:\n\n```sh\npython3 check_rota.py sample_rota.csv\n```\n\nThe sample reports one overlap and one invalid time. The [README](<TEMP>/tmp3jh6m9b4/README.md) explains how to export your own rota as CSV, enter overnight shifts, and interpret exit codes.\n\nAll five tests passed with `python3 -B -m unittest -v`. The checker uses only Python’s standard library and runs entirely offline."
+  },
+  {
+    "brief": "box-list",
+    "writer": "gpt-6.2-astra",
+    "files": [
+      {
+        "path": "README.md",
+        "bytes": 1791,
+        "sha256": "8eef883b3c667388eab4d066525a1494cfe088b959e176fe30c16274388635d9",
+        "text_words": 294,
+        "display_words": 289
+      },
+      {
+        "path": "app.js",
+        "bytes": 7268,
+        "sha256": "75eb2d9d9768b72feb4e161ac565091eac08d977102e074277e8521ac64c1873",
+        "text_words": 840,
+        "display_words": null
+      },
+      {
+        "path": "index.html",
+        "bytes": 1634,
+        "sha256": "8eee8157b238b64ed62ef7e66279627ee638b7fe10fc5954f1341ce20d67c801",
+        "text_words": 86,
+        "display_words": 32
+      },
+      {
+        "path": "style.css",
+        "bytes": 4348,
+        "sha256": "4323a06d7a129a87baadb4181c1222dcbec299cf73a007279dd3cfb2edda23e5",
+        "text_words": 80,
+        "display_words": null
+      }
+    ],
+    "writer_terminal_calls": 8,
+    "patch_events": 0,
+    "final_writer_response": "Open [Stagehand](./index.html) to start packing. It runs offline without installation. Staff can create boxes, record props and handling notes, see which props still need a box, and print the complete inventory grouped by box.\n\nChoose **Try a sample move** to practice without changing your inventory. Your working list saves in the same browser profile. The [quick guide](./README.md) includes a walkthrough with expected results.\n\nAutomated checks passed for assignment, reassignment, saved-data loading, sample isolation, and print grouping. The visual print preview remains manually unverified."
+  },
+  {
+    "brief": "box-list",
+    "writer": "gpt-6.2-sol",
+    "files": [
+      {
+        "path": "README.md",
+        "bytes": 2145,
+        "sha256": "5352887bc76378b3f66e899c929bf93e425409184ebffb2854feafd7076d3932",
+        "text_words": 347,
+        "display_words": 348
+      },
+      {
+        "path": "app.js",
+        "bytes": 11407,
+        "sha256": "c90c87246e4226f6a67957ab2d022d255c99485c6f6bb94963f7eeef6606e168",
+        "text_words": 1218,
+        "display_words": null
+      },
+      {
+        "path": "index.html",
+        "bytes": 3786,
+        "sha256": "54cb8757aca696d8101e9c2fa979ce0ee4597dbc2244202e60b2c8ef18c02b62",
+        "text_words": 243,
+        "display_words": 62
+      },
+      {
+        "path": "styles.css",
+        "bytes": 6439,
+        "sha256": "8a43144d93ae4dfcb5dd2b86236c6ae0e946009fd9ee0f1c68c845683bb8f37e",
+        "text_words": 820,
+        "display_words": null
+      }
+    ],
+    "writer_terminal_calls": 16,
+    "patch_events": 1,
+    "final_writer_response": "Open [Prop Load](<TEMP>/tmp87dyw7tc/index.html) in a browser. It runs offline with no installation and saves the packing list in that browser.\n\nAdd boxes and props, use **Unassigned** to find what still needs packing, and select **Print inventory** for a report grouped by box. Select **Load example** to try the workflow with sample data. The [README](<TEMP>/tmp87dyw7tc/README.md) includes a walkthrough and expected results.\n\nVerified offline in Chromium that assignments survive a reload, deleting a box returns its props to **Unassigned**, and the printable report includes empty boxes and unassigned props."
+  }
+]

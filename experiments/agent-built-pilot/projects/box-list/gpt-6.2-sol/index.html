@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prop Load · Theater packing list</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div id="workspace">
+    <header class="masthead">
+      <div class="wrap masthead-inner">
+        <div class="wordmark"><span class="mark" aria-hidden="true"></span>Prop Load</div>
+        <button id="print-button" class="print-button" type="button" disabled>Print inventory</button>
+      </div>
+    </header>
+    <main class="wrap">
+      <div class="intro">
+        <div>
+          <p class="eyebrow">Backstage logistics</p>
+          <h1>Packing list</h1>
+          <p>Add boxes, assign props, and print a list for moving day.</p>
+        </div>
+        <button type="button" id="load-example" class="secondary">Load example</button>
+      </div>
+      <p id="storage-error" class="storage-error" role="alert" hidden></p>
+      <div class="stats" aria-label="Packing summary">
+        <div><strong id="box-total">0</strong><span>Boxes</span></div>
+        <div><strong id="prop-total">0</strong><span>Prop entries</span></div>
+        <div class="attention"><strong id="unassigned-total">0</strong><span>Unassigned</span></div>
+      </div>
+      <div class="workspace-grid">
+        <section class="panel" aria-labelledby="props-heading">
+          <header class="panel-top">
+            <h2 id="props-heading" tabindex="-1">Props</h2>
+            <button type="button" class="primary" data-add="prop">+ Add prop</button>
+          </header>
+          <div class="filters" role="group" aria-label="Filter props">
+            <button type="button" data-filter="all" aria-pressed="true">All props</button>
+            <button type="button" data-filter="unassigned" aria-pressed="false">Unassigned</button>
+          </div>
+          <ul class="records" id="props"></ul>
+          <p class="empty" id="props-empty"></p>
+        </section>
+        <section class="panel" aria-labelledby="boxes-heading">
+          <header class="panel-top">
+            <h2 id="boxes-heading" tabindex="-1">Boxes</h2>
+            <button type="button" class="secondary" data-add="box">+ Add box</button>
+          </header>
+          <ul class="records" id="boxes"></ul>
+          <p class="empty" id="boxes-empty">Add a box with the label written on it.</p>
+        </section>
+      </div>
+      <footer>
+        <span id="storage-note">Stored in this browser.</span>
+        <button type="button" id="clear-example" hidden>Remove example data</button>
+      </footer>
+      <p id="status" class="sr-only" role="status"></p>
+    </main>
+    <dialog id="editor" aria-labelledby="editor-title">
+      <form id="editor-form">
+        <h2 id="editor-title"></h2>
+        <label for="record-name" id="name-label"></label>
+        <input id="record-name" maxlength="100" required autofocus>
+        <div id="box-fields">
+          <label for="box-note">Destination or notes (optional)</label>
+          <input id="box-note" maxlength="160">
+        </div>
+        <div id="prop-fields">
+          <label for="quantity">Quantity</label>
+          <input id="quantity" type="number" min="1" max="9999" step="1">
+          <label for="prop-box">Box</label>
+          <select id="prop-box"></select>
+        </div>
+        <div class="dialog-actions">
+          <button id="delete-record" class="danger" type="button">Delete</button>
+          <button id="cancel-editor" class="secondary" type="button">Cancel</button>
+          <button class="primary" type="submit">Save</button>
+        </div>
+      </form>
+    </dialog>
+  </div>
+  <section id="print-inventory" aria-label="Packing inventory"></section>
+</body>
+</html>

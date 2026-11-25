@@ -1,0 +1,181 @@
+# Reservable Study Room: Service Design Proposal for a 10-Week Pilot
+
+## Summary
+
+The archive should replace ad hoc walk-ins with bookable desk sessions, run from one paper diary at the front desk. The pilot rests on four rules:
+
+1. **The diary is the only record of bookings.** Telephone calls, web form submissions and in-person requests are all written into it by staff. The web form requests a booking; it never confirms one.
+2. **Confirmation happens in two steps.** The desk is confirmed first. Items are confirmed only after their condition has been checked.
+3. **A catalog reference is not required.** Researchers who cannot name an item get a short, structured conversation and a bounded search.
+4. **Nobody leaves without a next step.** Walk-ins are seated if a desk is free, or booked on the spot if not.
+
+The pilot needs no new software. It needs a diary, a one-page request slip, a tally sheet and a protected block of staff time for preparation.
+
+## Decisions needed from the director before week 1
+
+- **Opening pattern.** This proposal assumes three public days a week and one half-day closed for preparation. The session structure works with other patterns, but the preparation half-day is essential.
+- **Group size.** Set the maximum school group the room can safely hold.
+- **Photography.** Decide whether researchers may photograph items with their own phones, since there is no Wi-Fi and many will ask.
+- **Closure cover.** Agree what happens when the one staff member is absent (proposed below).
+
+## How the service works
+
+### Sessions and capacity
+
+Each public day has two sessions: 10:00–12:30 and 1:30–4:00. Each session offers two desks, so a three-day week provides 12 desk-sessions. One session a week is reserved for groups and uses both desks, leaving 10 individual desk-sessions and one group session.
+
+| Time | Staff activity |
+|---|---|
+| 9:00–10:00 | Telephone line staffed; items set out for the day |
+| 10:00–12:30 | Morning session; answerphone on |
+| 12:30–1:30 | Room closed; morning items returned |
+| 1:30–4:00 | Afternoon session; answerphone on |
+| 4:00–5:00 | Items returned; call-backs; web form requests entered in the diary |
+
+The preparation half-day is used for retrieval, condition checks, searches for requests without references, and confirmation calls.
+
+### Making a request
+
+Researchers can ask in three ways, and all three are treated equally:
+
+- **Telephone.** The line is staffed 9:00–10:00 on public days. At other times the answerphone promises a call back within two working days.
+- **Web form.** The existing form is unchanged except for one added sentence: "This is a request. We will telephone or email to confirm your desk."
+- **In person.** Front-desk staff complete the request slip with the researcher.
+
+Requests must arrive at least five working days before the visit, and each researcher may ask for up to five items per session. Both limits protect the preparation time and should be tested in the pilot.
+
+### The request slip
+
+There is one slip per visit, kept in the diary at the session page. It records:
+
+- name and preferred contact method, including the best time to telephone;
+- session booked and desk (A or B);
+- items requested, by reference or by description;
+- whether the magnifier is needed;
+- any access needs, such as seating, large-print finding aids or a companion;
+- the condition outcome for each item and the date the researcher was told.
+
+### Two-step confirmation
+
+**Step 1: desk confirmed.** At the first contact, staff offer a session and say: "Your desk is booked. We will check the condition of the items and telephone you by [date] to tell you what you will be able to see."
+
+**Step 2: items confirmed.** On the preparation half-day, each item is checked and given one of three outcomes.
+
+| Outcome | Meaning | What the researcher is told |
+|---|---|---|
+| Ready | Can be used at the desk | "It will be waiting for you." |
+| Restricted | Usable with conditions, such as staff turning the pages or a copy instead | The condition, and whether it changes what they can do |
+| Not available | Too fragile to produce | Why, and what else is offered: a copy, a related item or a later date |
+
+The researcher is told at least two working days before the visit. If every item is not available, they choose whether to come anyway, change the request or release the desk.
+
+### Requests without a catalog reference
+
+About one request in five will arrive as a description. Staff use five prompts:
+
+- Who or what is it about?
+- Where?
+- Roughly when?
+- What kind of record do you think it is?
+- Where did you hear of it?
+
+Staff then search for up to 20 minutes on the preparation half-day. There are three possible results:
+
+- **Found.** The items go onto the slip and into the condition check.
+- **Narrowed.** Staff call back with candidates and let the researcher choose.
+- **Not found.** The researcher is offered a finding session, which is a booked desk with the printed catalog, indexes and open-shelf reference works, plus ten minutes of staff help at the start.
+
+The 20-minute cap matters. Without it, description-only requests will absorb the preparation half-day.
+
+### Walk-ins
+
+Walk-ins continue to be welcome, but the offer changes. If a desk is free, the visitor may use it with finding aids and open-shelf material. Items from the store are not retrieved the same day, because they have not been checked. Staff complete a request slip and book a return visit before the visitor leaves.
+
+A booked desk is held for 30 minutes after the session starts, then released to walk-ins.
+
+### School groups
+
+Groups book by telephone at least three weeks ahead and take the whole room for the weekly group session. The teacher states the topic, and staff select robust items or copies that have already been checked, so no pupil handles anything fragile. The teacher receives a one-page sheet on handling rules, group size and the lack of Wi-Fi.
+
+### The magnifier
+
+The slip records who needs the magnifier. Where possible, staff avoid booking two magnifier users into the same session. Where they cannot, both researchers are told in advance that it will be shared in 30-minute turns.
+
+### What every researcher is told at confirmation
+
+- The session time, and that the desk is held for 30 minutes.
+- There is no public Wi-Fi, so any family trees, notes or references kept online should be brought on paper or downloaded beforehand.
+- The handling rules and the photography decision.
+- How to cancel, with the telephone number.
+
+### If the staff member is absent
+
+The room closes. Whoever opens the building telephones that day's researchers from the diary, and those researchers get first choice of the next available sessions. Each closure is recorded on the tally sheet, because the pilot needs to show how fragile a one-person service is.
+
+## A difficult journey
+
+This journey combines the hardest conditions: no internet use, no reference, a shared magnifier and an item that turns out to be unusable.
+
+**The researcher.** A family historian in their late seventies with reduced eyesight. They do not use a computer. Their grandfather worked at a local tannery in the 1920s, and they have heard the archive holds "the wage books and a photograph of the men."
+
+| Stage | What happens | Where it could fail | What the design does |
+|---|---|---|---|
+| First contact | They telephone at 11:00 on a Wednesday and reach the answerphone. | They give up, or leave no number. | The message states the staffed hour and promises a call back within two working days. |
+| Call back | Staff ring at 4:15 the same day and use the five prompts. | Staff ask for a reference the caller cannot give. | The slip accepts a description. A desk is booked for the following Thursday and the magnifier need is recorded. |
+| Search | On the preparation half-day, staff find a wage book for 1924–27 and a workforce photograph. | The search overruns. | The 20-minute cap applies; both items were found within it. |
+| Condition check | The photograph is ready. The wage book has a detached spine and active mould. | The researcher travels in and finds out at the desk. | Staff telephone two working days ahead with the outcome and the options. |
+| Options | Staff offer the photograph, a later volume in sound condition, and a staff-made transcript of the pages for the grandfather's surname. | Being told "not available" feels like a refusal. | The call starts with what can be seen, then explains what cannot. The researcher chooses to come. |
+| The visit | The other desk is booked by someone who also needs the magnifier. | Two people wait on one tool. | Both were told in advance and take 30-minute turns. Staff start the researcher on the transcript, which needs no magnification. |
+| Leaving | The researcher wants to return to the 1924 entries when the volume is repaired. | The interest is lost. | Staff note it on the slip and file it in a "contact when available" folder at the back of the diary. |
+
+The journey shows where the pilot is most exposed: the call back, the search cap and the timing of the condition call. Those are the three points to watch.
+
+## Running the pilot
+
+**Before week 1**
+
+- Rule up the diary with session pages for ten weeks.
+- Print request slips and tally sheets.
+- Record the answerphone message and add the sentence to the web form.
+- Put a notice at the door and counter explaining the change, with the telephone number in large type.
+- Walk the difficult journey through as a rehearsal with the front-desk team.
+
+**Weeks 1–10**
+
+Staff complete the tally sheet at the end of each public day; it should take five minutes. Front-desk staff also keep a notebook of anything that did not fit the rules, and what they did instead.
+
+**Week 5**
+
+The director and front-desk team hold a one-hour review. They change at most two rules, so the second half of the pilot can still be compared with the first.
+
+**Week 10**
+
+The team decides whether to continue, adjust or revert.
+
+## What the pilot should teach
+
+| Question | What to record | What it would mean |
+|---|---|---|
+| Is capacity right? | Desk-sessions booked, used, empty and refused for lack of space | Frequent refusals suggest more sessions; many empty desks suggest fewer or shorter ones |
+| Who is using which route? | Telephone, web form or in person, by type of researcher | A fall in telephone and in-person use would suggest the service has become harder for people who cannot use forms |
+| Does the staffed telephone hour work? | Answerphone messages, and the time taken to call back | Many missed calls mean the hour is at the wrong time or too short |
+| What do description-only requests cost? | Number, minutes spent, and whether found, narrowed or not found | Whether the 20-minute cap holds, and whether finding sessions are worth offering |
+| How often does condition change the visit? | Outcomes per item, and whether the researcher was told two days ahead | A high share of "not available" points to a need for copies of the most-requested fragile items |
+| Is five days' notice right? | Days between request and visit, and any confirmations made late | Whether the lead time can shorten or must lengthen |
+| What happens to walk-ins? | Number, whether seated, and whether they returned for the booked visit | Whether same-day visitors are being lost |
+| Is one magnifier enough? | Sessions with two magnifier users, and any complaints | Whether a second magnifier is justified |
+| Do group sessions work? | Groups booked, group size, preparation time and teacher comments | Whether one group session a week is too many or too few |
+| Can one person sustain it? | Preparation time used against time allowed, and closures | Whether the opening pattern is realistic |
+
+Two further questions need judgment as well as counts. First, staff should ask each researcher on leaving, "Did you see what you came to see?" and record yes, partly or no. Second, the team should discuss at week 5 and week 10 who has stopped coming, using the notebook and their own knowledge of regular visitors.
+
+## Deciding at week 10
+
+The service should continue if:
+
+- most researchers saw what they came to see;
+- nobody arrived to find an item unusable without warning;
+- telephone and in-person requests held up alongside the web form;
+- preparation fitted within the protected half-day.
+
+If one of these fails, the tally sheet will show which rule to change. If preparation regularly overruns, the first change should be to reduce desk-sessions, since the two-step confirmation is what keeps the promise to researchers honest.

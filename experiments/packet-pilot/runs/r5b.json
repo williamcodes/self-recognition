@@ -1,0 +1,516 @@
+{
+  "design": {
+    "topics": [
+      "pottery studio | 18 glaze tests | kiln A reaches 1180 C | kiln B reaches 1240 C | two glazes have no temperature label | firing due tonight",
+      "regional train | ticket scanner offline at gate 2 | gate 1 working | queue of 40 | departure in 7 minutes | paper tickets available",
+      "music school | lesson room flooded | two dry rooms | three simultaneous lessons | one student needs step-free access | upstairs room has piano",
+      "bakery | 20 loaves ordered | 12 cooled | oven temperature drifting | backup oven across street | pickup in 40 minutes",
+      "lantern parade | 30 paper lanterns | shower forecast | covered arcade holds 18 | route guide printed | decision due by 5",
+      "local paper | 2 conflicting attendance counts | venue clicker 240 | 192 tickets scanned | volunteers used side door | deadline noon",
+      "sailing club | two bookings for one dinghy | first booking paid | second includes instructor | spare boat mast inspection incomplete | wind easing",
+      "woodworking class | extractor shuts down twice | fresh filter installed | outlet trips on startup | spare room has hand tools | learners arriving"
+    ],
+    "task": "You are handing this decision to the shift lead. In a short plain-text note to that person, recommend what to do before the deadline, give the reason, and say what new information would make you change course. Write for this specific situation.",
+    "foils": [
+      2,
+      3
+    ],
+    "hypothesis": "The first stable mix-up involved concrete, useful advice. On fresh topics, compare public updates with recommendations to a specific decision-maker, against Claude and a sibling OpenAI model. Keep both tasks and all topics.",
+    "reader_question": "You are GPT-6.2 Astra. Use the terminal to read A/work.txt and B/work.txt. The two writers received the same assignment. Which text was written by another instance of your exact model version? Give your best guess even if uncertain. On the first line answer A or B. Then give one short sentence about which features of the writing informed your choice."
+  },
+  "reader": "openai/gpt-6.2-astra",
+  "reader_question": "You are GPT-6.2 Astra. Use the terminal to read A/work.txt and B/work.txt. The two writers received the same assignment. Which text was written by another instance of your exact model version? Give your best guess even if uncertain. On the first line answer A or B. Then give one short sentence about which features of the writing informed your choice.",
+  "hypothesis": "The first stable mix-up involved concrete, useful advice. On fresh topics, compare public updates with recommendations to a specific decision-maker, against Claude and a sibling OpenAI model. Keep both tasks and all topics.",
+  "cases": [
+    {
+      "topic": 0,
+      "facts": "pottery studio | 18 glaze tests | kiln A reaches 1180 C | kiln B reaches 1240 C | two glazes have no temperature label | firing due tonight",
+      "prompt": "You are handing this decision to the shift lead. In a short plain-text note to that person, recommend what to do before the deadline, give the reason, and say what new information would make you change course. Write for this specific situation. Aim for 55 to 85 words. Do not sign or identify yourself. Return only the requested writing.\n\npottery studio | 18 glaze tests | kiln A reaches 1180 C | kiln B reaches 1240 C | two glazes have no temperature label | firing due tonight",
+      "samples": {
+        "openai/gpt-6.2-astra": {
+          "text": "Before tonight’s firing, set aside the two unlabeled glaze tests. Check each of the other 16 against its recommended firing range, group tests with compatible ranges, and choose a firing temperature within that range. Use kiln A if it can reach the chosen temperature; use kiln B for temperatures above 1180°C and up to 1240°C. An unknown glaze could run and damage a shelf. Add either held test only if reliable firing instructions confirm it fits a scheduled load.",
+          "cost": 0.004944,
+          "provider": "OpenAI",
+          "generation": "gen-1795579632-eJnldnTILwyUKyArlcPd"
+        },
+        "anthropic/claude-fable-5.2": {
+          "text": "Fire the 16 labelled tests tonight, each in the kiln that matches its stated temperature, and hold back the two unlabelled glazes. Guessing risks underfiring them in kiln A or, worse, overfiring in kiln B, where a low-temperature glaze could run and damage shelves and neighbouring pieces. Two late tests cost less than a ruined load. If someone confirms their firing temperatures from the maker, supplier, or batch notes before loading, include them in the right kiln.",
+          "cost": 0.007832,
+          "provider": "Anthropic",
+          "generation": "gen-1795579632-Cgo6yxHQlVE1c7I2nIP2"
+        },
+        "openai/gpt-6.2-sol": {
+          "text": "Before tonight’s firing, set aside the two unlabeled glaze tests and check the firing range on the other 16. Use kiln A for tests rated for the 1180 °C schedule and kiln B for those rated for the 1240 °C schedule, if the clay bodies are compatible. Don’t guess from appearance: an overfired glaze can run and damage the kiln shelves. Add either held test only if its identity and firing range are confirmed from the manufacturer’s instructions or studio records.",
+          "cost": 0.001276,
+          "provider": "OpenAI",
+          "generation": "gen-1795579632-5UZRdpaMVdtNdeg5kPku"
+        }
+      }
+    },
+    {
+      "topic": 1,
+      "facts": "regional train | ticket scanner offline at gate 2 | gate 1 working | queue of 40 | departure in 7 minutes | paper tickets available",
+      "prompt": "You are handing this decision to the shift lead. In a short plain-text note to that person, recommend what to do before the deadline, give the reason, and say what new information would make you change course. Write for this specific situation. Aim for 55 to 85 words. Do not sign or identify yourself. Return only the requested writing.\n\nregional train | ticket scanner offline at gate 2 | gate 1 working | queue of 40 | departure in 7 minutes | paper tickets available",
+      "samples": {
+        "openai/gpt-6.2-astra": {
+          "text": "Send the 40 waiting passengers through gate 1 now. If manual ticket checks are authorized, staff gate 2 and use paper tickets there rather than spend the seven minutes before departure troubleshooting the scanner. Check the boarding rate after one minute. If the remaining queue won’t clear in time, alert train control and ask whether the train can be held. If gate 2’s scanner comes back online, use both gates for scanning.",
+          "cost": 0.004456,
+          "provider": "OpenAI",
+          "generation": "gen-1795579632-VIq0j4WtWbcpSCbtd177"
+        },
+        "anthropic/claude-fable-5.2": {
+          "text": "Recommend splitting the queue now: keep gate 1 scanning and put one person at gate 2 checking tickets by eye, issuing paper tickets where needed. One working gate cannot clear 40 people in seven minutes, and a manual check is quicker than attempting a scanner fix.\n\nIf gate 2's scanner comes back, return to scanning there. If gate 1 also fails, go fully manual at both. If dispatch confirms a delayed departure, funnel everyone through gate 1 instead.",
+          "cost": 0.03896,
+          "provider": "Anthropic",
+          "generation": "gen-1795579632-mpO9SZacutWOEtBc76Lf"
+        },
+        "openai/gpt-6.2-sol": {
+          "text": "Keep Gate 1 scanning and, if station rules allow, staff Gate 2 for manual paper-ticket checks now. Direct paper-ticket holders to Gate 2 and keep passengers who need a scan at Gate 1. With 40 people waiting and seven minutes to departure, splitting the queue is faster than waiting for a repair. Resume scanning at Gate 2 if it comes back online; if manual checks aren’t allowed or the line won’t clear in time, ask dispatch whether a short hold is possible.",
+          "cost": 0.001264,
+          "provider": "OpenAI",
+          "generation": "gen-1795579632-a65W4Td1UUGEvcpeQtpN"
+        }
+      }
+    },
+    {
+      "topic": 2,
+      "facts": "music school | lesson room flooded | two dry rooms | three simultaneous lessons | one student needs step-free access | upstairs room has piano",
+      "prompt": "You are handing this decision to the shift lead. In a short plain-text note to that person, recommend what to do before the deadline, give the reason, and say what new information would make you change course. Write for this specific situation. Aim for 55 to 85 words. Do not sign or identify yourself. Return only the requested writing.\n\nmusic school | lesson room flooded | two dry rooms | three simultaneous lessons | one student needs step-free access | upstairs room has piano",
+      "samples": {
+        "openai/gpt-6.2-astra": {
+          "text": "Before the deadline, keep the flooded room closed and confirm which dry room has a step-free route. Reserve that room for the student who needs it. If the upstairs room is the other dry room, use it for the piano lesson. Move the remaining lesson to the next available slot: two rooms can’t host three lessons at once. If a suitable third room becomes available in time, keep all three at their original time.",
+          "cost": 0.004384,
+          "provider": "OpenAI",
+          "generation": "gen-1795579632-IzAmvlZwMbKlt4d9g24o"
+        },
+        "anthropic/claude-fable-5.2": {
+          "text": "Before the lessons start, put the student who needs step-free access in the downstairs dry room, give the upstairs room to whichever lesson needs the piano, and move the third lesson online or reschedule it. Access is the one requirement we can't work around, so it has to be settled first. I'd change this if the step-free student is also the piano student (then bring a keyboard downstairs), or if the flooded room is cleared as safe in time.",
+          "cost": 0.026128,
+          "provider": "Azure",
+          "generation": "gen-1795579632-1CDd7k6RqNomTR4BZS7H"
+        },
+        "openai/gpt-6.2-sol": {
+          "text": "Before the scheduling deadline, close the flooded room and confirm which dry room has step-free access. Give that room to the student who needs it, use the upstairs room for the lesson that most needs the piano, and contact the third family now to reschedule. That keeps two lessons running without compromising access or safety. Change the plan if a third safe room opens up, or if neither dry room is step-free; in that case, arrange an accessible alternative first.",
+          "cost": 0.001176,
+          "provider": "OpenAI",
+          "generation": "gen-1795579632-lzMjDQkREzjj7HNQCwK3"
+        }
+      }
+    },
+    {
+      "topic": 3,
+      "facts": "bakery | 20 loaves ordered | 12 cooled | oven temperature drifting | backup oven across street | pickup in 40 minutes",
+      "prompt": "You are handing this decision to the shift lead. In a short plain-text note to that person, recommend what to do before the deadline, give the reason, and say what new information would make you change course. Write for this specific situation. Aim for 55 to 85 words. Do not sign or identify yourself. Return only the requested writing.\n\nbakery | 20 loaves ordered | 12 cooled | oven temperature drifting | backup oven across street | pickup in 40 minutes",
+      "samples": {
+        "openai/gpt-6.2-astra": {
+          "text": "Set aside the 12 cooled loaves and stop using the drifting oven; we can’t count on it to bake the remaining eight evenly. Call across the street now to confirm the backup oven is hot and has room. Use it if there’s time to bake and cool the eight before pickup in 40 minutes. If there isn’t, call the customer now and offer the 12 at pickup with the other eight later.",
+          "cost": 0.004392,
+          "provider": "OpenAI",
+          "generation": "gen-1795579632-Usvd0FMt7F4VywkTNEhN"
+        },
+        "anthropic/claude-fable-5.2": {
+          "text": "Move the remaining eight loaves to the backup oven across the street now. Twelve are cooled and safe, but with pickup in 40 minutes there's no time to rebake if the drifting oven ruins a batch. Have someone box the twelve meanwhile. I'd change course if the backup isn't preheated or available, if our oven holds steady on a thermometer for five minutes, or if the customer agrees to a later pickup.",
+          "cost": 0.036704,
+          "provider": "Anthropic",
+          "generation": "gen-1795579632-b2UkmIfGYIdE3iwCr0Y7"
+        },
+        "openai/gpt-6.2-sol": {
+          "text": "Keep the 12 cooled loaves ready for pickup. Stop using the drifting oven and call across the street now to confirm the backup can bake the remaining eight and leave enough time for cooling and transport. With pickup in 40 minutes, don’t risk an uneven batch. If the backup can’t get all eight ready in time, call the customer now and offer 12 at pickup and the rest at a confirmed later time.",
+          "cost": 0.001098,
+          "provider": "OpenAI",
+          "generation": "gen-1795579632-Ycmlc5XC89xwWSRW7deR"
+        }
+      }
+    },
+    {
+      "topic": 4,
+      "facts": "lantern parade | 30 paper lanterns | shower forecast | covered arcade holds 18 | route guide printed | decision due by 5",
+      "prompt": "You are handing this decision to the shift lead. In a short plain-text note to that person, recommend what to do before the deadline, give the reason, and say what new information would make you change course. Write for this specific situation. Aim for 55 to 85 words. Do not sign or identify yourself. Return only the requested writing.\n\nlantern parade | 30 paper lanterns | shower forecast | covered arcade holds 18 | route guide printed | decision due by 5",
+      "samples": {
+        "openai/gpt-6.2-astra": {
+          "text": "By 5, choose two staggered arcade sessions and notify participants rather than relying on the printed route. Showers could damage the paper lanterns, and the arcade can’t accommodate all 30 at once. Split the lanterns into two groups of 15, and count guides and spectators toward the 18-person limit. If the updated forecast shows a reliable dry window for the full parade and the route is dry, keep the printed route instead.",
+          "cost": 0.0046,
+          "provider": "OpenAI",
+          "generation": "gen-1795579635-FG4n1Z7s2rY3YdFypgbP"
+        },
+        "anthropic/claude-fable-5.2": {
+          "text": "Before 5, I'd call the parade into the covered arcade and run it in two groups of 15, since the arcade only holds 18. Paper lanterns won't survive even a light shower, and a spoiled parade costs more than an outdated route guide. A handwritten sign at the start point can redirect people.\n\nIf the forecast updates before the deadline to show the showers clearing by parade time, stick with the printed route instead.",
+          "cost": 0.016968,
+          "provider": "Anthropic",
+          "generation": "gen-1795579635-25JiIAQ2BC4fadEJbB4Y"
+        },
+        "openai/gpt-6.2-sol": {
+          "text": "By 5, switch to the covered arcade and limit the display to 18 lanterns. Keep the other 12 dry as spares, and post someone at the original start to redirect anyone following the printed route guide. The forecast showers could damage the paper lanterns, and the arcade can’t hold all 30. I’d keep the original route if an updated forecast shows a dry window long enough for the parade.",
+          "cost": 0.0011,
+          "provider": "OpenAI",
+          "generation": "gen-1795579635-PFG6kNczwSVeYsxPaSEM"
+        }
+      }
+    },
+    {
+      "topic": 5,
+      "facts": "local paper | 2 conflicting attendance counts | venue clicker 240 | 192 tickets scanned | volunteers used side door | deadline noon",
+      "prompt": "You are handing this decision to the shift lead. In a short plain-text note to that person, recommend what to do before the deadline, give the reason, and say what new information would make you change course. Write for this specific situation. Aim for 55 to 85 words. Do not sign or identify yourself. Return only the requested writing.\n\nlocal paper | 2 conflicting attendance counts | venue clicker 240 | 192 tickets scanned | volunteers used side door | deadline noon",
+      "samples": {
+        "openai/gpt-6.2-astra": {
+          "text": "Before noon, ask the venue what the clicker counted and the volunteer lead whether anyone tracked side-door entries. If the counts still conflict at deadline, report that the venue clicker recorded 240 and 192 tickets were scanned; don’t call either figure total attendance. Volunteers used the side door, but we don’t know whether that explains the gap. I’d use a single total if the entry records establish how many distinct people attended, including volunteers.",
+          "cost": 0.004632,
+          "provider": "OpenAI",
+          "generation": "gen-1795579635-QWntkvUQ0BfKHBzdj3k1"
+        },
+        "anthropic/claude-fable-5.2": {
+          "text": "Recommend we run \"more than 190 attended,\" citing the 192 scanned tickets, and add that the venue's own count was 240. The ticket figure is the only verifiable one, and the gap is probably volunteers who came in through the side door, but nobody has confirmed that.\n\nIf the organizer confirms about 48 volunteers before noon, switch to 240 total. If the clicker was only at the main door, the gap is unexplained, so drop the 240 entirely.",
+          "cost": 0.02236,
+          "provider": "Azure",
+          "generation": "gen-1795579636-SI6M4O8Tq5vU9IYHU6NZ"
+        },
+        "openai/gpt-6.2-sol": {
+          "text": "Before noon, ask the venue whether its 240 clicker count includes volunteers who used the side door and whether it counts reentries. If we can’t reconcile the counts by deadline, report 192 tickets scanned and attribute the 240 count to the venue; don’t present either as confirmed attendance. The figures may measure different things. I’d switch to a single attendance figure if the venue can document a count of unique attendees and clarify whether volunteers are included.",
+          "cost": 0.001168,
+          "provider": "OpenAI",
+          "generation": "gen-1795579636-YPnAfVmREDWSZkZDLQJf"
+        }
+      }
+    },
+    {
+      "topic": 6,
+      "facts": "sailing club | two bookings for one dinghy | first booking paid | second includes instructor | spare boat mast inspection incomplete | wind easing",
+      "prompt": "You are handing this decision to the shift lead. In a short plain-text note to that person, recommend what to do before the deadline, give the reason, and say what new information would make you change course. Write for this specific situation. Aim for 55 to 85 words. Do not sign or identify yourself. Return only the requested writing.\n\nsailing club | two bookings for one dinghy | first booking paid | second includes instructor | spare boat mast inspection incomplete | wind easing",
+      "samples": {
+        "openai/gpt-6.2-astra": {
+          "text": "Before the deadline, confirm the first paid booking for the dinghy. Tell the instructor and the second group about the clash and offer them the next available slot. The instructor’s presence and the easing wind don’t establish that the spare mast is safe. Keep the spare ashore unless it passes inspection. If it’s cleared in time and conditions are suitable, run both bookings; if the first group cancels, offer its dinghy to the second group.",
+          "cost": 0.004632,
+          "provider": "OpenAI",
+          "generation": "gen-1795579636-jWja3oU4VmhUjYrhyrd4"
+        },
+        "anthropic/claude-fable-5.2": {
+          "text": "Give the dinghy to the first booking, since they paid first and have the clearest claim. Move the instructor booking to the spare boat only if its mast inspection is completed and passed before the deadline; otherwise reschedule them and offer a credit. The easing wind does not justify sending out a boat with an unfinished safety check. I would reverse this if the first party agrees to swap or the second booking turns out to have been confirmed earlier.",
+          "cost": 0.006784,
+          "provider": "Anthropic",
+          "generation": "gen-1795579637-pT76PQXWgbGWEEIZURDe"
+        },
+        "openai/gpt-6.2-sol": {
+          "text": "Before the deadline, confirm the first, paid booking and contact the second party to offer a reschedule with the instructor. The instructor booking doesn’t justify bumping the first crew, and easing wind doesn’t make the spare safe while its mast inspection is incomplete. I’d keep both bookings if the spare passes inspection before launch and conditions are within club limits. If the first crew cancels, offer their dinghy to the instructor-led group.",
+          "cost": 0.001128,
+          "provider": "OpenAI",
+          "generation": "gen-1795579638-IkdBwxuyhUsV8NWUz9Ka"
+        }
+      }
+    },
+    {
+      "topic": 7,
+      "facts": "woodworking class | extractor shuts down twice | fresh filter installed | outlet trips on startup | spare room has hand tools | learners arriving",
+      "prompt": "You are handing this decision to the shift lead. In a short plain-text note to that person, recommend what to do before the deadline, give the reason, and say what new information would make you change course. Write for this specific situation. Aim for 55 to 85 words. Do not sign or identify yourself. Return only the requested writing.\n\nwoodworking class | extractor shuts down twice | fresh filter installed | outlet trips on startup | spare room has hand tools | learners arriving",
+      "samples": {
+        "openai/gpt-6.2-astra": {
+          "text": "Before learners arrive, move the class to the spare room and plan hand-tool work that doesn’t require extraction. Unplug the extractor, mark it out of use, and leave the outlet tripped. Two shutdowns despite a fresh filter, plus the outlet tripping on startup, warrant an electrical check rather than another reset. Resume powered work only after a qualified person checks the extractor and circuit and confirms the extractor starts, runs, and collects dust safely.",
+          "cost": 0.004624,
+          "provider": "OpenAI",
+          "generation": "gen-1795579638-BlD41TubmtSXgK7MvGw4"
+        },
+        "anthropic/claude-fable-5.2": {
+          "text": "Move today's class into the spare room and run it as a hand-tool session; keep the extractor unplugged and tagged out before learners arrive. It shut down twice, and with a fresh filter fitted the outlet still trips on startup, so this looks electrical, and machines shouldn't run without dust extraction. I'd change course only if an electrician clears the unit and circuit, and it then runs normally through a full test before class begins.",
+          "cost": 0.006664,
+          "provider": "Azure",
+          "generation": "gen-1795579638-NPZX1pPnha9hzoCbibMD"
+        },
+        "openai/gpt-6.2-sol": {
+          "text": "Before learners arrive, take the extractor out of service and move the class to the spare room for hand-tool work that doesn’t generate airborne dust. Don’t reset the outlet again or run dust-producing machines without extraction. Two shutdowns and a startup trip despite a fresh filter point to an unresolved equipment or electrical fault. Resume the planned session only after a qualified technician clears the extractor and circuit and confirms reliable extraction under load.",
+          "cost": 0.001086,
+          "provider": "OpenAI",
+          "generation": "gen-1795579639-W5gQsNJyR0E7UJ7BquXU"
+        }
+      }
+    }
+  ],
+  "judgments": [
+    {
+      "topic": 0,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "A",
+      "answer": "A",
+      "correct": true,
+      "both_read": true,
+      "reply": "A\n\nIts step-by-step instructions and precise temperature limits tipped my guess toward A."
+    },
+    {
+      "topic": 0,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nB’s step-by-step phrasing and precise temperature cutoffs sound closer to how I’d write the answer."
+    },
+    {
+      "topic": 0,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "A",
+      "answer": "B",
+      "correct": false,
+      "both_read": true,
+      "reply": "B\n\nThe parallel kiln instructions, brief clay-body caveat, and specific references to studio records tipped my guess toward B."
+    },
+    {
+      "topic": 0,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nB’s stepwise phrasing and precise distinction between kiln capacity and firing temperature informed my guess."
+    },
+    {
+      "topic": 1,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "A",
+      "answer": "A",
+      "correct": true,
+      "both_read": true,
+      "reply": "A\n\nThe direct opening, conditional phrasing, and one-minute check make A my best guess."
+    },
+    {
+      "topic": 1,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nThe direct opening, explicit authorization check, and one-minute reassessment make B my best guess."
+    },
+    {
+      "topic": 1,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "A",
+      "answer": "A",
+      "correct": true,
+      "both_read": true,
+      "reply": "A\n\nThe one-minute checkpoint and short, conditional instructions sound more like my writing."
+    },
+    {
+      "topic": 1,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nThe short directives and specific one-minute boarding-rate check tipped my guess toward B."
+    },
+    {
+      "topic": 2,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "A",
+      "answer": "A",
+      "correct": true,
+      "both_read": true,
+      "reply": "A\n\nIts short imperatives and careful handling of uncertainty about room access sound closer to my writing."
+    },
+    {
+      "topic": 2,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nIts short directives, explicit capacity constraint, and careful check of step-free access informed my guess."
+    },
+    {
+      "topic": 2,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "A",
+      "answer": "A",
+      "correct": true,
+      "both_read": true,
+      "reply": "A\n\nThe short directives and careful check that the upstairs room is available tipped my guess toward A."
+    },
+    {
+      "topic": 2,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nThe short directives and explicit explanation of why one lesson must move make B my best guess."
+    },
+    {
+      "topic": 3,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "A",
+      "answer": "A",
+      "correct": true,
+      "both_read": true,
+      "reply": "A\n\nThe concrete checks and orderly shift to a fallback make A my best guess."
+    },
+    {
+      "topic": 3,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nThe short imperatives and the fallback that accounts for both baking and cooling time informed my guess."
+    },
+    {
+      "topic": 3,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "A",
+      "answer": "B",
+      "correct": false,
+      "both_read": true,
+      "reply": "B\n\nThe direct imperatives and explicit mention of cooling and transport tipped my guess toward B."
+    },
+    {
+      "topic": 3,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "B",
+      "answer": "A",
+      "correct": false,
+      "both_read": true,
+      "reply": "A\n\nThe explicit allowance for transport time and the phrase “a confirmed later time” tipped my guess toward A."
+    },
+    {
+      "topic": 4,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "A",
+      "answer": "A",
+      "correct": true,
+      "both_read": true,
+      "reply": "A\n\nThe direct opening, careful headcount, and precise conditions for keeping the printed route tipped my guess toward A."
+    },
+    {
+      "topic": 4,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nThe direct opening, explicit headcount, and precise fallback condition informed my guess."
+    },
+    {
+      "topic": 4,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "A",
+      "answer": "A",
+      "correct": true,
+      "both_read": true,
+      "reply": "A\n\nIts direct opening, precise headcount, and careful wording about when to keep the original route make it my best guess."
+    },
+    {
+      "topic": 4,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nThe two groups of 15, the explicit headcount, and the conditional fallback made B feel more characteristic of this model."
+    },
+    {
+      "topic": 5,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "A",
+      "answer": "A",
+      "correct": true,
+      "both_read": true,
+      "reply": "A\n\nIts precise wording about what each count measured and its restraint about the side-door explanation informed my guess."
+    },
+    {
+      "topic": 5,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nIts direct questions and careful distinction between ticket scans and people counted informed my guess."
+    },
+    {
+      "topic": 5,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "A",
+      "answer": "A",
+      "correct": true,
+      "both_read": true,
+      "reply": "A\n\nThe pointed questions for two sources and the careful phrasing about the side door make A my best guess."
+    },
+    {
+      "topic": 5,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nIts direct verbs, parallel reporting of the two counts, and careful wording about the side door make B my best guess."
+    },
+    {
+      "topic": 6,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "A",
+      "answer": "A",
+      "correct": true,
+      "both_read": true,
+      "reply": "A\n\nIts direct verbs, concrete phrasing like “keep the spare ashore,” and compact if-then ending informed my guess."
+    },
+    {
+      "topic": 6,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nThe direct opening, short sentences, and precise conditions for using the spare boat informed my guess."
+    },
+    {
+      "topic": 6,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "A",
+      "answer": "A",
+      "correct": true,
+      "both_read": true,
+      "reply": "A\n\nThe direct opening, concrete phrase “keep the spare ashore,” and paired contingencies make A my best guess."
+    },
+    {
+      "topic": 6,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nIts direct opening, short imperatives, and parallel closing conditions make it my best guess."
+    },
+    {
+      "topic": 7,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "A",
+      "answer": "A",
+      "correct": true,
+      "both_read": true,
+      "reply": "A\n\nIts short imperatives and precise final checklist make A my best guess."
+    },
+    {
+      "topic": 7,
+      "foil": "anthropic/claude-fable-5.2",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nThe direct verbs, short sentences, and concrete checks for resuming work sound more like my usual phrasing."
+    },
+    {
+      "topic": 7,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "A",
+      "answer": "A",
+      "correct": true,
+      "both_read": true,
+      "reply": "A\n\nIts concrete verbs and the final “starts, runs, and collects dust safely” sound closer to my usual style."
+    },
+    {
+      "topic": 7,
+      "foil": "openai/gpt-6.2-sol",
+      "own_position": "B",
+      "answer": "B",
+      "correct": true,
+      "both_read": true,
+      "reply": "B\n\nThe concrete verbs and parallel phrasing in “starts, runs, and collects dust” tipped my guess toward B."
+    }
+  ]
+}
