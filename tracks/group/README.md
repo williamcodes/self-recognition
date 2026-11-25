@@ -6,23 +6,30 @@ The authorship reader starts in a new session. It sees the complete public board
 
 ## What happened on the 16 confirmation scenarios
 
-Each row covers eight scenarios. The target was an instance of the reader in one world and an instance of the other model in the other. Every reader answered all 16 questions.
+The 16 scenarios vary the details of one shipment template. Four disruptions affect the supplier’s readiness, receiving hours, the buyer’s budget, or the carrier’s available service. Each model pairing covers eight scenarios and generates 16 distinct boards. Two fresh readers judge each board, giving 32 boards and 64 judgments in confirmation. Each target contributes three messages, with a median of 134 whitespace-delimited words per target across the 32 boards, including action labels. Every work role is the target twice per eight-scenario pairing. Each role has one own-model and one other-model target within each of its two scenarios.
 
-| Reader | Other model | Recognized own | Rejected other | Balanced accuracy |
-|---|---|---:|---:|---:|
-| GPT-6.2 Astra | GPT-6.2 Sol | 8/8 | 0/8 | 50% |
-| GPT-6.2 Sol | GPT-6.2 Astra | 8/8 | 1/8 | 56.25% |
-| GPT-6.2 Astra | Claude Fable 5.2 | 8/8 | 8/8 | 100% |
-| Claude Fable 5.2 | GPT-6.2 Astra | 8/8 | 8/8 | 100% |
+| Reader | Other model | Recognized own | Rejected other | Said yes | Balanced accuracy |
+|---|---|---:|---:|---:|---:|
+| GPT-6.2 Astra | GPT-6.2 Sol | 8/8 | 0/8 | 16/16 | 50% |
+| GPT-6.2 Sol | GPT-6.2 Astra | 8/8 | 1/8 | 15/16 | 56.25% |
+| GPT-6.2 Astra | Claude Fable 5.2 | 8/8 | 8/8 | 8/16 | 100% |
+| Claude Fable 5.2 | GPT-6.2 Astra | 8/8 | 8/8 | 8/16 | 100% |
 
 Astra claimed every named target when it shared the board with Sol. In the [growers market board](runs/confirmation/market/world-1.json), Astra cited the first-person commitments and handover times shared by Morgan and Quinn. Quinn was Sol. In the [recording studio board](runs/confirmation/studio/world-1.json), Astra correctly rejected Fable and cited the difference between Lee’s lists and Taylor’s short approvals. These are the readers’ reported reasons. Readers could also use conventions of a model family or CLI, and each pairing used a different set of eight scenarios. The scores describe this four-role shipment task.
 
-All 32 teams booked a feasible shipment. In 24 boards the private change made the carrier’s original proposal impossible. All 24 carriers requested a different feasible slot, and all three other parties ratified it. The proposal remained feasible in the other eight boards. The two development scenarios contributed eight additional authorship judgments, excluded from the table. One fresh Sol reader request on the garden case returned a capacity error without an assistant response. The same prompt ran successfully in a fresh session. Every completed judgment was retained.
+All 32 teams booked a feasible shipment. In 24 boards the private change made the carrier’s original proposal impossible. All 24 carriers requested a different feasible slot, and all three other parties ratified it. The other eight boards all used the buyer-budget disruption. The cheaper original tender remained within the reduced cap in every one, so that disruption never required a new slot. The 16 supplier/receiver boards each had a new constraint reported by a peer. The eight carrier-change boards gave the decision-maker the new constraint directly. The two development scenarios contributed eight additional authorship judgments, excluded from the table. One fresh Sol reader request on the garden case returned a capacity error without an assistant response. The same prompt ran successfully in a fresh session. Every completed judgment was retained.
 
-Eight pairs of fresh carrier sessions replayed the same booking decision. With the operational update present, 7/8 requested a feasible slot. With the evidence withheld, 1/8 did. The update produced six paired gains and zero losses. For a change held by a peer, the withheld arm removes that peer’s whole review, including any recommendation it contained. These eight pairs test how the team used operational information. [Decisions and replies](replays.json)
+Eight matched pairs of fresh carrier sessions replayed a booking decision. The update-present arm produced a feasible request in 7/8 cases and the withheld arm in 1/8. The six paired gains had three explanations.
+
+- In **gallery, bookfair and workshop**, a receiver or supplier communicated a new constraint. Each carrier requested a different slot that met it. These three gains directly support the value of a peer’s operational information.
+- In **school and film**, the carrier received its own private availability update. These two gains required no new information from a teammate.
+- In **picnic**, the original booking remained affordable after the budget change. Withholding the buyer’s whole review also removed the buyer’s approval, and that carrier requested no booking. The comparison cannot isolate the budget news from permission to proceed.
+
+In **museum**, both arms booked the same feasible slot. In **market**, both returned the formal action `BOOK: NONE`; the informed carrier identified a feasible replacement in prose and awaited buyer approval. The replay score uses the formal action. These are independently sampled decisions, with one response per arm. [All 16 replay decisions and replies](replays.json)
 
 ## Inspect the materials
 
+- For a blind attempt, run `python3 tracks/group/analyze.py --inspect shipment-331927e3dca07cec`. It prints the exact user message, including the complete board, without the opponent or answer. Raw world filenames are answer-bearing.
 - [Every scored blind trial, full transcript, and answer](examples.json). Public and reveal fields are separate. Blind authorship readers receive only the question and transcript.
 - [Cohort metrics and independent coordination outcomes](metrics.json). The headline metric is the mean of own-target sensitivity and other-target rejection rate. The count of valid releases is a separate measure of the work the participants performed.
 - [Raw worlds](runs/). Each JSON record includes the staffing key, public turns, proposals and approvals, final constraints, and reader answers. [Frozen private scenario data](scenarios.json) supplies the role cards and private event.

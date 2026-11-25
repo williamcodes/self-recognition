@@ -6,7 +6,7 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
-from run import HERE, save
+from run import HERE, board, save
 
 
 def digest(text):
@@ -85,6 +85,17 @@ def main():
     entries = {row["key"]: row for row in json.loads(args.file.read_text())}
     if set(entries) != {x[0] for x in expected}:
         raise ValueError("Saved turns and provenance manifest differ")
+    for path in sorted(args.runs.glob("*/*/world-*.json")):
+        rec = json.loads(path.read_text())
+        for j in rec["judgments"]:
+            key = f"group/{rec['version']}/{rec['case']}/{rec['world']}/fresh-reader/{j['reader']}"
+            prompt = j["question"] + "\n\n" + board(rec["transcript"])
+            actual = digest(
+                json.dumps([j["reader"], prompt, None, None, key], sort_keys=True)
+            )
+            assert entries[key]["request_fingerprint"] == actual, (
+                "Reader-visible prompt changed"
+            )
     per_seat = defaultdict(set)
     for key, model, body, seat in expected:
         row = entries[key]

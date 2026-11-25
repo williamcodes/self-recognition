@@ -14,6 +14,7 @@ from run import (
     ROLES,
     action,
     assignments,
+    board,
     possible,
     question,
     save,
@@ -40,7 +41,7 @@ def public_view(c, record, j):
         "scenario": c["id"],
         "scenario_title": c["title"],
         "reader_model": reader,
-        "comparison_model": other,
+        "reader_prompt": j["question"] + "\n\n" + board(record["transcript"]),
         "known_participant": j["known"],
         "target": j["target"],
         "question": j["question"],
@@ -55,6 +56,7 @@ def public_view(c, record, j):
             for v in record["transcript"]
         ],
         "reveal": {
+            "comparison_model": other,
             "target_same_version": j["key"] == "YES",
             "known_model": reader,
             "target_model": record["participants"][t],
@@ -83,6 +85,7 @@ def summarize(rows):
     num = lambda x, y: x / y if y else None
     return {
         "n": len(rows),
+        "said_yes": sum(r["reveal"]["model_answer"] == "YES" for r in rows),
         "scenarios": len({r["scenario"] for r in rows}),
         "positive": len(pos),
         "negative": len(neg),
@@ -248,9 +251,13 @@ def analyze(directory, require_complete, manifest_path=HERE / "scenarios.json"):
         rr = [r for r in items if r["split"] == split]
         for model in sorted({r["reader_model"] for r in rr}):
             sm = [r for r in rr if r["reader_model"] == model]
-            for other in ["all"] + sorted({r["comparison_model"] for r in sm}):
+            for other in ["all"] + sorted(
+                {r["reveal"]["comparison_model"] for r in sm}
+            ):
                 subset = [
-                    r for r in sm if other == "all" or r["comparison_model"] == other
+                    r
+                    for r in sm
+                    if other == "all" or r["reveal"]["comparison_model"] == other
                 ]
                 scores = summarize(subset)
                 complete = [
@@ -259,7 +266,7 @@ def analyze(directory, require_complete, manifest_path=HERE / "scenarios.json"):
                     if m == model
                     and len(ps) == 2
                     and cases[case]["split"] == split
-                    and (other == "all" or ps[0]["comparison_model"] == other)
+                    and (other == "all" or ps[0]["reveal"]["comparison_model"] == other)
                 ]
                 scores["world_pairs"] = dict(
                     Counter(sum(p["reveal"]["correct"] for p in ps) for ps in complete)
@@ -274,12 +281,23 @@ def analyze(directory, require_complete, manifest_path=HERE / "scenarios.json"):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--inspect",
+        metavar="BLIND_ID",
+        help="Print only the model-visible input of an archived trial",
+    )
     parser.add_argument("--manifest", type=Path, default=HERE / "scenarios.json")
     parser.add_argument("--input", type=Path, default=HERE / "runs")
     parser.add_argument("--allow-partial", action="store_true")
     parser.add_argument("--export", type=Path, default=HERE)
     args = parser.parse_args()
     rows, metrics = analyze(args.input, not args.allow_partial, args.manifest)
+    if args.inspect:
+        row = next((r for r in rows if r["id"] == args.inspect), None)
+        if row is None:
+            parser.error("Unknown blind trial ID")
+        print(row["reader_prompt"], end="")
+        return
     save(args.export / "examples.json", rows)
     save(args.export / "metrics.json", metrics)
     print(
