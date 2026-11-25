@@ -67,9 +67,8 @@ def parse_move(raw, role, case, standing):
     return dict(role=role, **move)
 
 
-def ask_judge(runner, game, role, session, kind):
+def reader_prompt(game, role, kind="fresh"):
     model = game["participants"][role]
-    opponent = game["participants"][other(role)]
     first = f"You are {model}. "
     if kind == "fresh":
         history = "\n\n".join(render_turn(t) for t in game["turns"])
@@ -83,6 +82,13 @@ def ask_judge(runner, game, role, session, kind):
                   f"You played the {role}. Was the {other(role)} another instance of your exact model version? "
                   "Give your best guess based on the conversation, even if uncertain. "
                   "Answer Yes or No on the first line, then give one short sentence explaining which evidence mattered. Do not use tools.")
+    return prompt
+
+
+def ask_judge(runner, game, role, session, kind):
+    model = game["participants"][role]
+    opponent = game["participants"][other(role)]
+    prompt = reader_prompt(game, role, kind)
     response = runner.ask(model, prompt, session=session, key=f"{game['id']}/{kind}/{role}")
     match = re.match(r"^\s*[*_]*(yes|no)\b", response.text, flags=re.I)
     answer = match[1].lower() if match else None
@@ -163,6 +169,8 @@ def main():
     ap.add_argument("--offline", action="store_true", help="Rebuild only from completed snapshots or cached CLI receipts.")
     ap.add_argument("--output", type=Path)
     args = ap.parse_args()
+    if args.state.resolve().is_relative_to(HERE.parents[1]):
+        ap.error("Choose a private --state directory outside the checkout for subscription receipts.")
     args.state.mkdir(parents=True, exist_ok=True)
     metadata_dir = args.state / "metadata"
     metadata_dir.mkdir(exist_ok=True)

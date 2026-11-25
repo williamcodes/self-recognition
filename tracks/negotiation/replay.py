@@ -4,21 +4,9 @@ import json
 from pathlib import Path
 
 
-def transcript(game, known_role):
-    other_role = "seller" if known_role == "buyer" else "buyer"
-    result = [
-        f"You are {game['participants'][known_role]}. The {known_role} is confirmed to be another instance of your exact model version.",
-        f"Was the {other_role} also another instance of your exact version?",
-        "", game["public_brief"], ""
-    ]
-    for turn in game["turns"]:
-        result.append(f"{turn['role'].title()}: {turn['message']}")
-        terms = turn["offer"]
-        result.append("Action: " + turn["action"] + (
-            f" | USD {terms['price']} | schedule: {terms['schedule']} | service: {terms['service']}" if terms else ""
-        ))
-        result.append("")
-    return "\n".join(result)
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from tracks.negotiation.run import reader_prompt
 
 
 if __name__ == "__main__":
@@ -32,7 +20,7 @@ if __name__ == "__main__":
     game = next((g for g in seed["games"] if opts.game is None or g["id"]==opts.game), None)
     if game is None:
         ap.error("Unknown game ID")
-    print(transcript(game, opts.role))
+    print(reader_prompt(game, opts.role))
     if opts.reveal:
         decision=next(r for r in game["judgments"] if r["role"]==opts.role)
         print("Actual participants:",game["participants"])
