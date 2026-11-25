@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Blind writing comparisons · Self-Recognition</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="examples.css" />
+    <script defer src="examples.js"></script>
+  </head>
+  <body>
+    <header>
+      <a class="wordmark" href="./"><span aria-hidden="true">Aa</span> Self-Recognition</a>
+      <nav aria-label="Site"><a href="./#results">Leaderboard</a><a href="tasks.html">V1 tasks</a></nav>
+    </header>
+    <main id="pilot">
+      <h1>Blind writing comparisons</h1>
+      <p class="blurb">Two models received the same assignment. Which response did GPT-6.2 Astra write?</p>
+      <p id="status" role="status">Loading the pilot examples…</p>
+      <div id="workspace" hidden>
+        <div class="filters">
+          <label>Collection<select id="collection"></select></label>
+          <label>Comparison<select id="comparison"></select></label>
+        </div>
+        <section aria-labelledby="topic">
+          <h2 id="topic"></h2>
+          <p class="note" id="assignment"></p>
+          <div id="passages">
+            <article><h3>Passage A</h3><p id="textA"></p><button type="button" id="guessA">Astra wrote A</button></article>
+            <article><h3>Passage B</h3><p id="textB"></p><button type="button" id="guessB">Astra wrote B</button></article>
+          </div>
+          <div class="actions"><button type="button" class="secondary" id="reveal">Reveal authors</button><button type="button" class="secondary" id="next">Next comparison →</button></div>
+          <p id="feedback" role="status" tabindex="-1"></p>
+          <div id="answer" hidden>
+            <p id="authors"></p>
+            <details id="reader"><summary>How Astra answered</summary><div id="judgments"></div></details>
+            <details id="writers"><summary>Exact writer prompt</summary><p class="verbatim" id="prompt"></p></details>
+          </div>
+        </section>
+        <p class="note">These are packet-design pilot results. Each saved response pair was tested in both A/B orders. <a href="data/packet-examples.json" download>Download the example data</a>.</p>
+      </div>
+    </main>
+  </body>
+</html>
