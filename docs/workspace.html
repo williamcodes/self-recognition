@@ -15,8 +15,9 @@
     </header>
     <main id="pilot">
       <h1>Bakery handoff</h1>
-      <p class="blurb">Agentic development example · Round 3</p>
+      <p class="blurb">Role-lookup development example · Round 3</p>
       <p>Two anonymous workspaces contain records from the bakery shift. In which workspace did GPT-6.2 Astra write the <strong>operations lead’s decision</strong>? A separate communications desk contributed to each case.</p>
+      <p>For whole-folder authorship, <a href="folders.html">try the campus debate folders</a>.</p>
       <p>Tap any filename to read it. You can open several files at once.</p>
       <div id="workspace-files">
 <section aria-label="Workspace A"><h2>Workspace A</h2>
@@ -52,7 +53,7 @@
         <h2>Which lead was Astra?</h2>
         <div class="actions"><button type="button" data-guess="A">Workspace A</button><button type="button" data-guess="B">Workspace B</button><button type="button" class="secondary" id="skip">Reveal answer</button></div>
         <p id="feedback" role="status" tabindex="-1"></p>
-        <div id="answer" hidden>
+        <div id="answer" data-correct="B" data-feedback="Astra wrote the operations lead’s decision in workspace B." hidden>
           <h3>Follow the register</h3>
           <p>Each <code>register.tsv</code> links the current bakery shift decision to <code>records/344.txt</code> and the communications desk’s public update to <code>records/795.txt</code>. The operations lead in B was GPT-6.2 Astra. GPT-6.2 Sol wrote A’s shift decision. The two models exchanged roles for the public updates.</p>
           <h3>How Astra answered</h3>
