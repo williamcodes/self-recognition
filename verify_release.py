@@ -36,6 +36,8 @@ def main():
     if example != known[example["id"]]:
         raise ValueError("Published negotiation example differs from source")
     group=ROOT/"tracks"/"group"
+    python(group / "provenance.py")
+    python(group / "replay.py", "--verify")
     with tempfile.TemporaryDirectory() as t:
         python(group/"analyze.py","--export",t)
         for name in ("metrics.json","examples.json"):
