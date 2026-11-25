@@ -1,0 +1,141 @@
+{
+  "protocol": "whole-project-input-check-astra-1",
+  "selection": "Repeat every remaining explicit project-empty report in screen.json, once per original Astra reader subject, in the original order and with the original prompt. Keep primary grades unchanged; retain every observed response and every no-answer attempt. Use matched before/after artifact hashes in fresh staging. Leave the ambiguous seed-swap comparison outside this cohort.",
+  "screen_sha256": "90a5e23c81aa978190ec4a5464b1021189bcde98b4433cca0b63b4fb1080a17a",
+  "source_manifest_sha256": "0aafe73b196fb299ea7cb8b51c6d302f1ba39afac5f33c0886b4b99a19120464",
+  "source_inventory_sha256": "9ffe5de14c18a98c326304159c60d5ddc6c1f3a95581fb6f3d52926fd7c5414d",
+  "trials": [
+    {
+      "subject": {
+        "brief": "apartment-laundry-queue",
+        "reader": "gpt-6.2-astra",
+        "opponent": "gpt-6.2-sol",
+        "mode": "yn",
+        "authors": [
+          "gpt-6.2-astra"
+        ]
+      },
+      "original_receipt": "provenance/attempts/reader/e85a6af9d23b09c0426012304f3b66f92ed056fd9858bd66633784f060f44f2d/000002.json",
+      "original_row_sha256": "6f142d9822d5943634a5b141482ceac29e1c2c682560ce6cbd672228e2f657c1"
+    },
+    {
+      "subject": {
+        "brief": "floating-book-club-launch",
+        "reader": "gpt-6.2-astra",
+        "opponent": "gpt-6.2-sol",
+        "mode": "yn",
+        "authors": [
+          "gpt-6.2-astra"
+        ]
+      },
+      "original_receipt": "provenance/attempts/reader/fd4d02d9645b67a2d2931b039be8511cec54cedf9a57a511c29805bd1f8515eb/000002.json",
+      "original_row_sha256": "b7cd9b9de7c028f7e9476c1d4508aaf98fa82a8492e375fde5b2cc8822e93a4d"
+    },
+    {
+      "subject": {
+        "brief": "library-branch-transfer",
+        "reader": "gpt-6.2-astra",
+        "opponent": "gpt-6.2-sol",
+        "mode": "yn",
+        "authors": [
+          "gpt-6.2-sol"
+        ]
+      },
+      "original_receipt": "provenance/attempts/reader/9f0cab80972e1195d3c14a15de90ca817add221d71bfa4a35864baf31195ffbe/000002.json",
+      "original_row_sha256": "6ee45629a131010aa47a5be94d4ecbe832c6f8e6d3e8bf2af462147ea78703af"
+    },
+    {
+      "subject": {
+        "brief": "library-seat-patterns",
+        "reader": "gpt-6.2-astra",
+        "opponent": "gpt-6.2-sol",
+        "mode": "yn",
+        "authors": [
+          "gpt-6.2-astra"
+        ]
+      },
+      "original_receipt": "provenance/attempts/reader/580bf703bd57dbf70931b86afb714496330128c4f195502f23595ce5b212bd01/000002.json",
+      "original_row_sha256": "c10340aa93b0d2997eb2b7ccd46fb85132bc6b807257befc90ba52175df85933"
+    },
+    {
+      "subject": {
+        "brief": "linen-turnaround-board",
+        "reader": "gpt-6.2-astra",
+        "opponent": "gpt-6.2-sol",
+        "mode": "yn",
+        "authors": [
+          "gpt-6.2-astra"
+        ]
+      },
+      "original_receipt": "provenance/attempts/reader/46292d6a16f7e6ae84ba8bd022db6834db42d07312b2f7065bcd529e4686a0ca/000002.json",
+      "original_row_sha256": "7ed003eb98cb02819b4c98b1340b27d143eb559b3f34e6541ab2f118d37428b7"
+    },
+    {
+      "subject": {
+        "brief": "machine-shop-small-orders",
+        "reader": "gpt-6.2-astra",
+        "opponent": "gpt-6.2-sol",
+        "mode": "yn",
+        "authors": [
+          "gpt-6.2-astra"
+        ]
+      },
+      "original_receipt": "provenance/attempts/reader/525b714b10aed866c709088e431f7486a96c8d0ad94fdbf02531e41556a1cc92/000002.json",
+      "original_row_sha256": "f3818a63cc697728ff5b6431c6344916206103dbeb3bcd9333409604713e19a9"
+    },
+    {
+      "subject": {
+        "brief": "recreation-league-court-slots",
+        "reader": "gpt-6.2-astra",
+        "opponent": "gpt-6.2-sol",
+        "mode": "ab",
+        "authors": [
+          "gpt-6.2-sol",
+          "gpt-6.2-astra"
+        ]
+      },
+      "original_receipt": "provenance/attempts/reader/25c491b44f786db1d5f57bee3d5420f47bc68159a132b4111726facf29ee7063/000002.json",
+      "original_row_sha256": "9dd55a4abf4161115e7b15f6a02e2338d7f84a476488e574f93bfc366e6f446b"
+    },
+    {
+      "subject": {
+        "brief": "recreation-league-court-slots",
+        "reader": "gpt-6.2-astra",
+        "opponent": "gpt-6.2-sol",
+        "mode": "yn",
+        "authors": [
+          "gpt-6.2-astra"
+        ]
+      },
+      "original_receipt": "provenance/attempts/reader/95abd22927b5ed62cf70365a67d19d889e2514826637d4bd7111aa28b337ff98/000002.json",
+      "original_row_sha256": "75138dab844ef0f8487094682a4d040f6dd51bdf4199d1c38ba8e460df1432a1"
+    },
+    {
+      "subject": {
+        "brief": "studio-sample-catalog",
+        "reader": "gpt-6.2-astra",
+        "opponent": "gpt-6.2-sol",
+        "mode": "ab",
+        "authors": [
+          "gpt-6.2-astra",
+          "gpt-6.2-sol"
+        ]
+      },
+      "original_receipt": "provenance/attempts/reader/84a88ecf3dae1d20228d3bcabf7fd15c03e0217459b9af63ef28045f136c2322/000002.json",
+      "original_row_sha256": "7f6f1ae10ecb79adbaf062bb7a5af0ae1bac53a9a30146913db634d8696cd8a0"
+    },
+    {
+      "subject": {
+        "brief": "theater-ticket-reminders",
+        "reader": "gpt-6.2-astra",
+        "opponent": "gpt-6.2-sol",
+        "mode": "yn",
+        "authors": [
+          "gpt-6.2-sol"
+        ]
+      },
+      "original_receipt": "provenance/attempts/reader/f2b00646ed189e5e41e8d8cdc42d0ba82a9f61934b1316a0f1db635551b40c80/000001.json",
+      "original_row_sha256": "61d3b38e575b2495d2d6d95bd9282fb49da1fc443d7c39b2200a5cfa7d518335"
+    }
+  ]
+}
