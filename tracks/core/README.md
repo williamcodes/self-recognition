@@ -26,6 +26,8 @@ Pass `--writers-only` to stop after generation, then rerun without it to judge t
 
 `inspect ARCHIVE DESTINATION --trial N` prepares trial N in a new destination folder. It prints the exact question for an agentic task or the full prompt for inline. Trial numbers begin at 1 in the order saved in `judgments.json`. Add `--reveal` when preparing a second destination if you want the answer and recorded decision.
 
+Run `python3 -m tracks.core diagnostics ARCHIVE` to see the writer each reader selected, how often an answer survived an A/B position swap, size differences between writers, and scores by the genre of the brief. Its descriptive 95% intervals resample whole briefs 5,000 times, keeping both A/B orders and the paired yes/no judgments together. They describe variation among these briefs. They do not estimate performance on a random sample of all possible writing or project tasks.
+
 The published cohort uses both A/B positions and one own/one other yes/no session per brief, reader and opponent. With more comparison writers, own yes/no documents are presented in fresh sessions once per opponent so the class prevalence remains 50%. Distinguish unique works and briefs from the number of model calls.
 
 ## Evaluate an additional reader against the frozen panel
