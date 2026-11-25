@@ -12,5 +12,12 @@ jobs:
           python-version: '3.12'
       - run: python -m unittest tracks/core/test_*.py
       - run: python -m unittest discover -s tracks/group
+      - name: Verify participant negotiation panels and published page
+        working-directory: experiments/participant-negotiations
+        run: |
+          python matched.py
+          python cross_family.py
+          python publish.py
+          git diff --exit-code -- ../../docs/participant-negotiations.html
       - run: python verify_release.py
       - run: for script in docs/*.js; do node --check "$script"; done

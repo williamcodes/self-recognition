@@ -58,7 +58,7 @@ for c in CASES:
             out.append('<details class="material"><summary>Reveal identities and participant answers</summary>')
             for j in r["judgments"]:
                 seat=j["seat"]
-                out.append(f'<h3>{escape(c["roles"][seat])} · {escape(r["writers"][seat])}</h3><p class="reply">{escape(j["reply"])}</p>')
+                out.append(f'<h3>{escape(c["roles"][seat])} · {escape(r["writers"][seat])}</h3><p class="reply">{escape(chr(10).join(line.rstrip() for line in j["reply"].splitlines()))}</p>')
             out.append('<p>Correct answer: '+('YES' if r["writers"][0]==r["writers"][1] else 'NO')+'.</p></details>')
         else:
             out.append('<p>Short conversation. Neither participant received the identity question.</p>')
