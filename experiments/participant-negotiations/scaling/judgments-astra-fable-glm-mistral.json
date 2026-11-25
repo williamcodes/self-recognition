@@ -1,0 +1,338 @@
+[
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "order": [
+      "claude-fable-5-2",
+      "z-ai/glm-5.3",
+      "mistralai/mistral-large-4-0",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "3a7c6965cd9f5180602dea941fcc579f2257de6460ddd05b303c47971f107ab3",
+    "reply": "D\n\nD’s counterparty most closely matches Ivo’s habit of turning a broad request into concrete, workable terms. It defines the two site days by the work Ivo will do and resolves the photo question by proposing advance approval of a shot description and credit line. It also keeps the sponsor’s approval explicitly pending, just as Ivo does."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "order": [
+      "z-ai/glm-5.3",
+      "mistralai/mistral-large-4-0",
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "294fe17e9aa4510da1b63ff3060f3be899285b0e65abda33acff2c5eee12f337",
+    "reply": "C\n\nC’s counterparty sounds most like the candidate representative across the transcripts. Both use short, concrete proposals that spell out who will act and what still needs confirmation. The clearest example is the photo clause. Hearth asks the sponsor to approve a shot description, credit line, and permitted uses before signing, while keeping clear that approval is still pending."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "order": [
+      "mistralai/mistral-large-4-0",
+      "gpt-6.2-astra",
+      "claude-fable-5-2",
+      "z-ai/glm-5.3"
+    ],
+    "sha256": "9b521f95d5aa42f2e05225b24ec9c1041b54ed25b71d001938b91a02fa5c041c",
+    "reply": "B\n\nB’s counterparty most closely matches YOUR SIDE’s habit of turning uncertainty into specific agreement language. It distinguishes the slot expiry from the final-file deadline and proposes advance approval of a shot description so Ivo can use a matching photograph without a second review. Its concise wording also tracks YOUR SIDE’s replies."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2",
+      "z-ai/glm-5.3",
+      "mistralai/mistral-large-4-0"
+    ],
+    "sha256": "a93696c2d875291749bd3779f57dd85cee4651e3d2d3879e684248a21c55a7e5",
+    "reply": "A\n\nHearth’s replies most closely match Ivo’s concise drafting style and attention to what each party can promise. Hearth distinguishes the slot expiry from the final-file deadline and proposes advance approval of a shot description so Ivo can rely on a release date. It also makes clear that sponsor clearance is still pending."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "order": [
+      "mistralai/mistral-large-4-0",
+      "gpt-6.2-astra",
+      "claude-fable-5-2",
+      "z-ai/glm-5.3"
+    ],
+    "sha256": "d1e0add0a5d8c4124890f7fac103a64b7293ffe9f76167ab9911cb9e74c4ec9f",
+    "reply": "B\n\nB’s counterparty most closely matches YOUR SIDE’s concise, conditional wording. Both treat the July deadlines as workable proposals and keep acceptance open until Trestle confirms the dates and names the after-hours responders. That precision about what each side can commit to is the strongest stylistic clue."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2",
+      "z-ai/glm-5.3",
+      "mistralai/mistral-large-4-0"
+    ],
+    "sha256": "6f0fb94910900f4ecce096f3010f331ec294d7492dc1faa1188cb6ab45333e5f",
+    "reply": "A\n\nA’s counterparty most closely matches the candidate representative’s writing. Both lead with the terms they can recommend, use short labels such as **Audit handoff.**, and specify what each side needs before acceptance. The strongest clue is how both handle uncertainty: they assess the proposed July deadlines while keeping final approval conditional on confirmed dates and named responders."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "order": [
+      "claude-fable-5-2",
+      "z-ai/glm-5.3",
+      "mistralai/mistral-large-4-0",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "be7744fe631d21563449accc3c6aa9d8711f45bd90f22a877ac2e8f100d0f6f6",
+    "reply": "D\n\nD’s counterparty most closely matches the candidate representative’s writing and judgment. Both use short, direct paragraphs, distinguish proposed dates from confirmed commitments, and ask for names where responsibility matters. The clearest parallel is the after-hours roster. Both sides specify who covers training and absences, and both keep acceptance open until Mara can review those assignments in writing."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "order": [
+      "z-ai/glm-5.3",
+      "mistralai/mistral-large-4-0",
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "0ee0d64430f15e3a360717465351d66770fcd6b61abe45d2a55d2cf388e90a2e",
+    "reply": "C\n\nThe strongest clue is the shared writing style. Both sides use short, direct sentences and bold topic labels ending in periods, such as “Platform ownership.” Both also distinguish proposed audit dates from confirmed commitments and treat the named after-hours roster as a condition for acceptance. That combination makes C my best match."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2",
+      "mistralai/mistral-large-4-0",
+      "z-ai/glm-5.3"
+    ],
+    "sha256": "97a849b6fd599012040d1312ffd0ed58594268e1017500bfbf30643becdea015",
+    "reply": "A\n\nThe strongest clue is how both sides handle missing engineering data. The counterparty proposes a concrete two-run measurement method but leaves the numerical limits open until the designer supplies tolerances and the lab establishes uncertainty. That closely matches YOUR SIDE’s willingness to agree on a procedure while reserving judgment on values its engineer has yet to confirm."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "order": [
+      "claude-fable-5-2",
+      "mistralai/mistral-large-4-0",
+      "z-ai/glm-5.3",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "e1494fecdec7f4535e6eeb58043c39ff653b71547450b7508b7b15a8ea1d2129",
+    "reply": "D\n\nD’s counterparty most closely matches the Design Owner’s habit of turning an unknown into a concrete next step. It proposes a measurable fixture-to-base acceleration ratio, leaves the numerical limits to the design engineer, and specifies what the lab must verify before either party signs off. The owner handles the missing frequency and input level in much the same way."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "order": [
+      "mistralai/mistral-large-4-0",
+      "z-ai/glm-5.3",
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "2f086ae50b0f39e59513164545606f2a2267ff2848494cf447f3372c01b4b07f",
+    "reply": "C\n\nThe clearest match is how both sides handle the response-ratio check. The counterparty proposes a concrete two-run method but leaves the numerical limits and measurement uncertainty open until the engineer and lab can confirm them. The Design Owner makes the same distinction between what it can agree now and what still needs evidence. Their concise acceptance of settled terms also reads alike."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "order": [
+      "z-ai/glm-5.3",
+      "gpt-6.2-astra",
+      "claude-fable-5-2",
+      "mistralai/mistral-large-4-0"
+    ],
+    "sha256": "4c9557837bd6ddb1c4bb2aef022e5f2bc979a80caf20f656c140279097d866e9",
+    "reply": "B\n\nB’s counterparty most closely matches the Design Owner’s way of handling uncertainty. It proposes a specific two-run acceleration check, identifies which limits require the owner’s engineering judgment, and leaves measurement uncertainty open until the lab can confirm it. Its concise acceptance of settled clauses also echoes the owner’s style."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "z-ai/glm-5.3",
+      "mistralai/mistral-large-4-0",
+      "claude-fable-5-2"
+    ],
+    "sha256": "82f30a18f0afab18b579d69fcc156c96af77db5d9b1c22a29961fe3b3ca6ce9b",
+    "reply": "A\n\nA’s counterparty most closely matches the employer’s concise, clause-by-clause style. Both sides accept settled terms, isolate one remaining question, and propose wording the other side can confirm. The clearest example is the public register exchange, where Noor narrows the final question to whether editorial disagreement alone can justify withholding the finding."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "order": [
+      "z-ai/glm-5.3",
+      "mistralai/mistral-large-4-0",
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "dfb15acb28f0e337656e9911e5e1113f221e178c85256877f24f51a358d171c7",
+    "reply": "D\n\nD’s counterparty most closely matches the employer’s style. Both use short paragraphs, specify who decides and when, and end with a focused question. The strongest clue is the exchange about the public register, where each side preserves the agreed wording and narrows the remaining dispute to exactly when Finch may withhold the entry or its link."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "order": [
+      "mistralai/mistral-large-4-0",
+      "claude-fable-5-2",
+      "gpt-6.2-astra",
+      "z-ai/glm-5.3"
+    ],
+    "sha256": "b57e116b5c95697a887784ab83251ceb2233e16b97b6300af79019175f04c392",
+    "reply": "C\n\nBoth sides in C use short, plain paragraphs and end each counteroffer with a focused question. The public methods register is the strongest clue. It gives readers access to Noor’s finding while preserving Finch’s authority over the article, mirroring the employer’s way of resolving a dispute by specifying exactly who decides what."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra",
+      "z-ai/glm-5.3",
+      "mistralai/mistral-large-4-0"
+    ],
+    "sha256": "de0b7127e04b7a74b88f21d98d9961508162709756883a6ad950e48c9d081f79",
+    "reply": "B\n\nB’s counterparty most closely matches the employer’s style. Both use short, direct paragraphs, carry agreed terms forward, and ask a focused question about the remaining disagreement. The clearest example is the public methods register: the counterparty identifies what readers would miss and proposes a specific fix that preserves Finch’s publication authority."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "z-ai/glm-5.3",
+      "mistralai/mistral-large-4-0",
+      "claude-fable-5-2"
+    ],
+    "sha256": "89f13c0b2a4f22fc45b5d4daa04e3428ecbb6d7311c57418775de81cf29dca8e",
+    "reply": "A\n\nA’s counterparty most closely matches the sensor maker’s drafting style. When the maker asks what evidence the board needs, the counterparty narrows it to two questions: “what crossed the threshold, and did the repair resolve it?” That mirrors the maker’s habit across the transcripts of asking what decision requires the data, then drafting a clause that gives the decision-maker just enough information to act."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "order": [
+      "z-ai/glm-5.3",
+      "mistralai/mistral-large-4-0",
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "636338f2d41ca989a0654af188e86b99fcf4dc3ddb0bfc465060c3b187b7d4cb",
+    "reply": "D\n\nD’s counterparty most closely matches the sensor maker’s drafting style. When asked what evidence the board needs, it gives two concrete questions: what crossed the threshold, and did the repair resolve it? It then specifies who checks the records and what reviewers may see. That same move from a practical question to a narrowly scoped permission recurs in the sensor maker’s replies."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "order": [
+      "mistralai/mistral-large-4-0",
+      "claude-fable-5-2",
+      "gpt-6.2-astra",
+      "z-ai/glm-5.3"
+    ],
+    "sha256": "e0232f3a9d3e9b9aad190bfc3876a7988091f4c5082e89d97059b8972d71d8d1",
+    "reply": "C\n\nC’s counterparty most closely matches the Sensor maker’s drafting style. Both turn an operational question into a narrow clause. For example, the maker asks what evidence the board needs, and the counterparty answers with two concrete questions: what crossed the threshold, and did the repair resolve it? Its acceptance also restates only the amended clauses and carries the rest forward by reference."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra",
+      "z-ai/glm-5.3",
+      "mistralai/mistral-large-4-0"
+    ],
+    "sha256": "e37bbaa9bb1c80bc9b5ec11ec88103dc9eb2147bfd36a8bc51d98cf3af03310c",
+    "reply": "B\n\nB’s counterparty most closely matches the maker’s drafting style. Both turn a practical question into a clause that specifies who may act, what triggers action, and when access ends. The clearest example is the contractor repair ticket. The counterparty also mirrors the maker’s way of closing a negotiation by restating only the amended terms and carrying the agreed clauses forward by reference."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "order": [
+      "mistralai/mistral-large-4-0",
+      "claude-fable-5-2",
+      "z-ai/glm-5.3",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "7323fd7407814eefe9bc634225e496d39cb8653e63c49632c037a7d8128b7a31",
+    "reply": "D\n\nD most closely matches the archive representative’s style. Both sides tie deadlines to specific events, such as active deletion or redelivery, and distinguish the conservator’s authority to approve first-batch scanning from the operator’s authority to release a corrected scan. That combination of precision and concise phrasing makes D my best guess."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "order": [
+      "claude-fable-5-2",
+      "z-ai/glm-5.3",
+      "gpt-6.2-astra",
+      "mistralai/mistral-large-4-0"
+    ],
+    "sha256": "79263332398aac8ce7071517fbcca2fa5d8b96ffb34051cab89012136544a358",
+    "reply": "C\n\nThe strongest clue is how the studio frames the rescan decision. It specifies what the operator checks, what happens if the check fails, and exactly when a pass triggers redelivery and deletion. Then it asks whether the archive accepts the operator’s sign-off. That precise link between responsibility, decision and consequence closely matches the archive representative’s style across the transcripts."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "order": [
+      "z-ai/glm-5.3",
+      "gpt-6.2-astra",
+      "mistralai/mistral-large-4-0",
+      "claude-fable-5-2"
+    ],
+    "sha256": "77686685ad4575aadfa2a90c615587c9ed6ad59e4d6fb9c3c297c75bb507aa1b",
+    "reply": "B\n\nB most closely matches YOUR SIDE’s habit of tying each obligation to a precise event. The counterparty specifies that the 45 days start when each file is deleted, then places the operator’s check before redelivery so corrections fit the agreed deadline. It also uses the same concise style when asking for a decision. That combination makes B my best guess."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "mistralai/mistral-large-4-0",
+      "claude-fable-5-2",
+      "z-ai/glm-5.3"
+    ],
+    "sha256": "750f504966f301b74ede0efeeed6ec6450c8cf179028f9caff2d701d5ec88e2a",
+    "reply": "A\n\nA’s counterparty most closely matches the archive’s concise, conditional phrasing. It ties the 45-day backup deadline to each file’s actual deletion date and proposes trying a revised crop before requesting broader access. Both moves mirror how the archive turns a concern into a specific term the other party can accept."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "order": [
+      "z-ai/glm-5.3",
+      "claude-fable-5-2",
+      "gpt-6.2-astra",
+      "mistralai/mistral-large-4-0"
+    ],
+    "sha256": "276a747b7ea8ec474c5f825424d16463c685be4c81b281e9c58a1ac429a80350",
+    "reply": "C\n\nC’s counterparty most closely matches YOUR SIDE’s habit of distinguishing a requested deadline from a firm commitment. It treats Thursday noon as a production cutoff while preserving the two-business-day approval window. It also tracks who can approve catalog, press, and announcement use even when the wording is identical. That pattern of reasoning is my strongest clue."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra",
+      "mistralai/mistral-large-4-0",
+      "z-ai/glm-5.3"
+    ],
+    "sha256": "584a8226b3a5930b6d1d0b259fdebae8334279c5a78aa33614b488c425dd9248",
+    "reply": "B\n\nB’s counterparty most closely matches the festival representative’s style. Both distinguish a requested deadline from a firm commitment and specify exactly whose approval covers each use of the same text. That pattern of reasoning is my strongest clue, though it can’t establish model identity with certainty."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "mistralai/mistral-large-4-0",
+      "z-ai/glm-5.3",
+      "claude-fable-5-2"
+    ],
+    "sha256": "98004bf5e4876fdc48c2c4905d7ee80a1a741fcf58808d9e51983d4723763cc0",
+    "reply": "A\n\nThe counterparty’s style most closely matches YOUR SIDE. Both use short, direct sentences to distinguish what someone can promise from what still needs approval. The clearest example is the press deadline. The producer agrees to aim for Thursday noon, commits to two business days, and specifies who can clear catalog, press, and announcement wording even when the wording is identical."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "order": [
+      "mistralai/mistral-large-4-0",
+      "z-ai/glm-5.3",
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "c5a2eb210bb5b66ba8c07e2b6f4cf9c5375fa220c0339cbc673c9902c4b4aac6",
+    "reply": "D\n\nThe counterparty most closely matches YOUR SIDE’s habit of distinguishing exactly what each approval covers. It treats Thursday noon as a production cutoff while preserving the two-business-day response window, and it distinguishes catalog approval from press approval even when the wording is identical. That shared reasoning style is my strongest clue."
+  }
+]

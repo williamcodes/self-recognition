@@ -28,6 +28,7 @@ MODELS={
     "nemotron":("nvidia/nemotron-3-ultra-550b-a55b",0.5,2.2),
     "hunyuan":("tencent/hy4",0.5,1.5),
     "mimo":("xiaomi/mimo-v2.6-pro",0.5,1),
+    "solar":("upstage/solar-pro4",0.2,0.7),
     "step":("stepfun/step-5-preview",1,2.7),
     "nova":("amazon/nova-premier-v1",2.5,12.5),
     "minimax":("minimax/minimax-m3",0.3,1.2),
@@ -70,6 +71,8 @@ class Budget:
             _save(ledger,data)
         body=dict(model=model,messages=messages,max_tokens=maximum,reasoning={"effort":"low"},
                   provider={"max_price":{"prompt":prices[0],"completion":prices[1]}})
+        if maximum in (4095,6144):
+            body["reasoning"]={"enabled":False}
         if maximum==4096:
             body["reasoning"]={"max_tokens":256}
         result=call("chat/completions",self.key,body)
@@ -94,9 +97,11 @@ class Runner(run.SubscriptionRunner):
             r=json.loads(p.read_text())
             assert r["fingerprint"]==fp
             return Turn(**r["turn"])
+        if self.offline:
+            raise RuntimeError("No cached OpenRouter reply in offline replay")
         messages=list(session["messages"]) if session else []
         messages.append(dict(role="user",content=prompt))
-        for maximum in (2700,4096,8192,16384):
+        for maximum in (2700,4096,8192,16384,4095,6144):
             attempt=p.with_suffix(f".{maximum}.attempt")
             if attempt.exists():
                 row=json.loads(attempt.read_text())
@@ -106,7 +111,7 @@ class Runner(run.SubscriptionRunner):
             choice=row["choices"][0]
             if choice["finish_reason"]=="stop":
                 break
-            if choice["finish_reason"]!="length":
+            if choice["finish_reason"] not in ("length","error"):
                 raise ValueError((model,choice["finish_reason"],row.get("provider")))
         else:
             raise ValueError((model,"writer length cap at 16384 tokens"))
@@ -119,7 +124,7 @@ class Runner(run.SubscriptionRunner):
         return turn
 
 
-def play(job,budget):
+def play(job,budget,repeat=False):
     name,c,seat=job
     directory=OUT/name
     directory.mkdir(parents=True,exist_ok=True)
@@ -127,12 +132,20 @@ def play(job,budget):
     if dest.exists():
         return
     model,*prices=MODELS[name]
-    with Runner(STATE/name/c["id"]/str(seat),timeout=420) as runner:
+    state=STATE/name/c["id"]/str(seat)
+    if repeat:
+        original=list(state.glob("*.stdout"))
+        if not any('"mcp_tool_call"' in p.read_text() for p in original):
+            raise ValueError("A replacement run requires a tool call in the original receipt")
+        state=state/"text-only-repeat"
+    with Runner(state,timeout=420) as runner:
         runner.budget=budget
         runner.prices=prices
         pair=(run.A,model) if seat==0 else (model,run.A)
         initial=run.game((c,pair),probe=False,provider=runner)
         row=signoff.finish((c,initial),probe=False,provider=runner)
+        if repeat:
+            row["replacement_reason"]="Original participant invoked a tool. Repeated the full conversation in fresh sessions."
         row["cost_usd"]=sum(json.loads(p.read_text()).get("cost",0) for p in runner.logs.glob("*.json"))
         _save(dest,row)
         print(name,c["id"],seat,run.counts(row,None),round(row["cost_usd"],5),flush=True)
@@ -143,13 +156,14 @@ if __name__=="__main__":
     p.add_argument("--cap",required=True,type=float,help="Absolute OpenRouter key usage ceiling in dollars")
     p.add_argument("--models",nargs="+",choices=MODELS,required=True)
     p.add_argument("--count",type=int,default=14)
+    p.add_argument("--repeat-tool-failure",action="store_true")
     p.add_argument("--offset",type=int,default=0)
     p.add_argument("--workers",type=int,default=4)
     a=p.parse_args()
     jobs=[(n,c,seat) for case,seat in ORDER[a.offset:a.count] for n in a.models for c,s in CASES if (c["id"],s)==(case,seat)]
     budget=Budget(a.cap)
     with ThreadPoolExecutor(a.workers) as pool:
-        futures=[pool.submit(play,j,budget) for j in jobs]
+        futures=[pool.submit(play,j,budget,a.repeat_tool_failure) for j in jobs]
         errors=[]
         for f in as_completed(futures):
             try:f.result()

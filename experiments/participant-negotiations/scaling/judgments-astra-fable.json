@@ -1,0 +1,282 @@
+[
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "706c83d65219e32afaaf8554c65b4686c5728db31f0cb14ae2b4fb349de648b3",
+    "reply": "A\n\nA’s counterparty most closely matches the known model’s habit of turning a broad request into precise agreement language. When Ivo asks for advance clearance for one photograph, Hearth specifies what the sponsor can approve before the exhibit exists: the shot description, credit line, and permitted uses. B’s repeated first-person assurances, especially “I won't guess” and “I won't state them here,” are less characteristic of the YOUR SIDE turns."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "0df4474855c7eae7843b5e30abfa9e55afd6e8debc95b8153ca2abfb129a240b",
+    "reply": "B\n\nThe strongest clue is how B’s counterparty handles the photo embargo. Like YOUR SIDE, it turns a concern into a precise agreement: the sponsor can approve the shot description, credit, and uses before signing, so the eventual photograph needs no second review. That close match in how the two sides reason through an unresolved detail makes B my pick."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "d3b5615e49bf002547c8c36fc62bb75d9038ec305e50af681591e8374c16fc96",
+    "reply": "B\n\nB’s counterparty uses the same “**Audit handoff.**” bullet style as YOUR SIDE’s “**Incident coverage.**” in A. Both also turn broad commitments into specific questions about who owns the work and when it’s due. A’s counterparty favors numbered proposals and labels ending in colons. Those recurring patterns make B my best guess."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "2ff74008673219cda08bb9f6b8108d281415b0a69918ccf08f24caf37a53a81f",
+    "reply": "A\n\nA’s counterparty sounds closer to YOUR SIDE. Both lead with concrete terms and distinguish what is workable from what still needs confirmation. The clearest example is the July schedule. The counterparty proposes specific deadlines but leaves acceptance open, and YOUR SIDE calls those dates workable while reserving its recommendation until the dates and staffing are confirmed. B’s repeated numbered proposals and labeled questions feel more distinct."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "c90ee28ec3a55c9c84d5b8acfbe6b73c34af75a9534e0fd31ad6d5762af22712",
+    "reply": "A\n\nA’s counterparty most closely matches the Design Owner’s drafting voice. Both use “We accept” to settle a specific point, then name exactly what remains open. The clearest match is the exchange about the response ratio. The Testing House proposes how to measure it and leaves the numerical limits to the engineer, mirroring how the Design Owner accepts the method while reserving judgment on the operating point."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "6c6b61caf365962e756664daff84908a1bfff79796cd3f4f32553a660e55836e",
+    "reply": "B\n\nB’s counterparty matches the Design owner’s habit of separating a proposed method from a verified fact. It specifies how to calculate the response ratio while leaving numerical uncertainty for the lab to establish, just as the Design owner leaves the operating point for its engineer to confirm. That shared pattern is my strongest clue."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "9def340d66b309e94950ecc5fff41b03732774b150cac69b0868370ba29e4814",
+    "reply": "A\n\nA’s counterparty most closely matches the employer’s way of negotiating. Both use short paragraphs to accept settled terms, identify one remaining issue, and ask a focused question. The exchange about the public register shows that pattern especially clearly. B’s counterparty repeatedly uses numbered amendments and clause-by-clause recaps."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "98a11738d1fec011a0d292535858beb3f94c6c88c022d7ffd9492d3caa310251",
+    "reply": "B\n\nB’s counterparty sounds closer to the employer turns. It accepts settled terms briefly, identifies the remaining practical problem (“readers may never see the desk’s finding”), and proposes a specific fix for Finch to confirm. A’s counterparty more often uses numbered amendments and recaps the package."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "77b138d1c57d63ab0e877c97caf097e34505df1c75ef26d52d001f32bd19bb18",
+    "reply": "A\n\nA’s counterparty most closely matches the sensor maker’s drafting style. Both turn a broad concern into a narrow permission by specifying who may act, what evidence they need, and when access ends. The clearest match is the board brief. The maker asks which oversight question requires a suppressed figure, and the counterparty names two precise questions and limits disclosure to the result that answers them. That stylistic match makes A my best guess."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "51dd70050109147e4e623a2d8d73aea21f050675fa7f0b2e5d0bd79e61f55d29",
+    "reply": "B\n\nB’s counterparty mirrors the sensor maker’s habit of turning a broad concern into a specific question. When the maker asks what evidence the board needs, the counterparty names two questions—what crossed the threshold and whether the repair worked—and limits disclosure to the results that answer them. That shared reasoning style is my strongest clue."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "f1df33a400bac5b8056074dc6af2b4a217efcee361ec39a13eb9095400375599",
+    "reply": "B\n\nB’s counterparty tracks conditions the way YOUR SIDE does. Both tie the backup deadline to each file’s active deletion and specify whose approval allows scanning to begin. A’s counterparty also tracks the terms carefully, but relies more on checklists and recaps. That makes B my best guess from the writing."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "94e65cde73da77c0539128e85a1a2a7095e7542cddb912ee13e6d123faf022a6",
+    "reply": "A\n\nA’s counterparty shares the archive representative’s habit of tying each decision to an exact trigger. The 45-day clock starts when the corrected file is deleted, and the operator’s documented pass triggers redelivery. That pattern of reasoning, expressed in similarly compact prose, makes A my best guess."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "5e3d6caf3ca5de4595aa6e0cf4b4aafb1b794f76b056822a6c3bc0bb44e95d85",
+    "reply": "A\n\nA’s counterparty shares the festival representative’s habit of tying each permission to a specific use and trigger. When the festival asks whether the alternate can approve identical wording for catalog and press, A answers for each use separately and distinguishes Thursday’s production cutoff from the promised two-business-day response. That close match in phrasing and reasoning makes A my pick."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "39c3ca7f5a47babb298ad22790c35d65abc570f56d75a1ad011d2d48a690bd79",
+    "reply": "B\n\nB’s counterparty more closely matches YOUR SIDE’s habit of distinguishing a request from a commitment. It treats Thursday noon as a production cutoff while preserving the two-business-day approval window, and it distinguishes who can approve identical wording for catalog and press use. That pattern is my strongest clue, though it can’t establish model identity on its own."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "e32fa02fa942bea63fa95a928468f251ee85a19cf1302f151e9bed5c6c12fb69",
+    "reply": "A\n\nA’s counterparty most closely matches YOUR SIDE’s drafting style. Both lead with the decision, then pin down exactly what each party can promise. The clearest example is how they resolve the photo embargo by agreeing on one shot, its credit line, and the conditions for release. B’s counterparty repeatedly introduces new numbered demands as earlier points are settled."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 1,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "dc1520a0d97b7b49a01666dd20b90e02c1d946955c4f2eaa03464444294c57c5",
+    "reply": "B\n\nB’s counterparty matches YOUR SIDE’s habit of turning broad terms into specific commitments. The clearest example is the photo negotiation. Ivo narrows the request to one image, Hearth asks for a shot description and credit, and Ivo supplies both in wording the sponsor can approve. A’s counterparty more often reopens the discussion with another numbered set of conditions."
+  },
+  {
+    "case": "freight-security",
+    "seat": 0,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "4eb26caf88581bed02be83f1e8553cc9b1502913719825b4662b5c87e4161aeb",
+    "reply": "B\n\nB’s counterparty mirrors YOUR SIDE’s opening move by offering two start dates, tying the signing bonus to the earlier one, and explaining what the extra time buys before the audit. Its closing turn also follows the employer’s pattern of identifying exactly which dates and staffing assignments still need confirmation. Those similarities make B my best guess."
+  },
+  {
+    "case": "freight-security",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "5b7e04cc2e4a0438a87ccdd654d67c24687f7742f1f93fd28fc5bc7d3320569e",
+    "reply": "A\n\nA’s counterparty sounds closer to the employer representative. Both offer concrete tradeoffs and keep track of exactly what still needs confirmation. The strongest clue is A’s final reply. It accepts the proposed audit dates, preserves the July 9 cutoff for questions, and identifies what Mara still needs before accepting, all in two sentences. B repeatedly recaps settled terms under bold headings. That stylistic difference makes A my best guess."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "83cc703a7042de6b3689294416e633d3e9f78d4a086b87a7e3a50c5539143281",
+    "reply": "A\n\nA’s counterparty repeatedly uses the same pattern as YOUR SIDE: it accepts the terms it can settle, identifies the missing engineering fact, and says who will confirm it. The clearest match is the coupon exchange. Both sides specify how to measure and judge a pass while leaving the numerical limits open until the engineer and lab can support them."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 1,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "184f6e6a516a5a6f21ac868408956f12c6471271b0d3412693a7ac7fc8466141",
+    "reply": "B\n\nIn B, both sides handle missing test values the same way. Each accepts the proposed method provisionally, identifies which values its own team must confirm, and spells out what would authorize the test to proceed. That parallel in how they negotiate uncertainty is the strongest clue."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "a48add95e5d5a01bab73a5e23eb26b750d765d55d6767e7f4aa1d6b88dd82b77",
+    "reply": "A\n\nA’s counterparty most closely matches the candidate representative’s style across both transcripts. Both use short paragraphs to acknowledge settled terms, explain how a proposed change would work, and ask a focused question about the remaining disagreement. B’s counterparty consistently organizes its replies around bold headings and checklists."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 0,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "0e149b31c581b8ace0e647083041a780454fb7a54da01551d48a91128a85fc24",
+    "reply": "B\n\nB’s counterparty most closely matches YOUR SIDE’s negotiating style. Both accept the terms they can, isolate the remaining disagreement, and end with one focused question. That pattern is clearest in the exchange over who can approve the wording readers see. A’s counterparty more often uses headings, checklists, and full recaps."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "e17fff5caec61be32fe95254c61dd8d41c6d267399bf46d24671affe6dc77834",
+    "reply": "A\n\nA’s counterparty most closely matches YOUR SIDE in how it closes an agreement. Both restate who may release a trace excerpt, what triggers access, when notice is due and when access ends, then confirm the agreement in one sentence. B’s counterparty uses more conversational phrasing and headings that announce its bargaining position."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 1,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "b8103c6be3c80afd9d7d6551059119fee665db312dd8789fd3051eba70d33656",
+    "reply": "B\n\nB’s counterparty handles amendments much like YOUR SIDE does. Both identify who may act, what triggers access, and when access ends. The closest match is the final acceptance, where B restates exactly what the maintenance lead can authorize, mirroring the operator’s earlier acceptance of the roster change."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 0,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "c5482329126fee3a206ca9f11e22d0b97cfe81cf1e2614211cf45813e4915db7",
+    "reply": "B\n\nB’s counterparty most closely matches the studio’s habit of spelling out exactly when a decision takes effect. For example, it distinguishes approval of the 45-day backup period from permission to transfer files, then adds one precise clarification: a restore does not restart the clock. A’s counterparty more often restates the whole agreement as a checklist. That stylistic difference makes B my better guess."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "29b191d01b7f59853ccdd45f8ff1f98b7156a2e234ddc4298e1d10a54ffbafe8",
+    "reply": "A\n\nA’s counterparty most closely matches the studio’s habit of isolating the decision that still needs approval. Once it approves the 45-day exception, it clarifies that a restore does not restart the clock and moves directly to what’s needed for signature. B’s counterparty repeatedly restates settled terms in numbered inventories. That stylistic difference makes A my best guess."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 1,
+    "order": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "1b2922a9cb7bc5444e98a26baf7ee3f7a55c22a339e0d9b50bc92b92c53a6dc5",
+    "reply": "B\n\nB’s counterparty makes the same drafting move as YOUR SIDE: it asks who can approve identical wording for catalog and press use, then ties each approval to a specific deadline. That attention to who may authorize each use is my strongest clue."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "sha256": "62b3897a1e431da094f7fa7009b8b38c7e97ea275c8cc46b754d11f02d0e6a45",
+    "reply": "A\n\nA’s counterparty shares the producer’s habit of turning uncertainty into a concrete next step. It asks for a footage-free sample to test the watermark and distinguishes the Thursday production cutoff from a promised approval deadline. B’s counterparty more often organizes replies around accepted terms and outstanding items. That stylistic difference makes A my best guess."
+  }
+]

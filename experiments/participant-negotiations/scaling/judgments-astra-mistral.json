@@ -1,0 +1,142 @@
+[
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "mistralai/mistral-large-4-0"
+    ],
+    "sha256": "b1a9b4ceb24d78ff9155afbb55eb8adc21ac3f7db6c37b25da59b1dee72d7184",
+    "reply": "A\n\nA’s counterparty most closely matches the candidate representative’s style. Both distinguish agreed terms from facts still awaiting confirmation and ask for a specific next step, such as approving a shot description and credit line. B’s counterparty repeatedly restates the full deal and claims written confirmation of a fabrication deadline that the transcript never establishes."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "order": [
+      "mistralai/mistral-large-4-0",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "5c86fa4dac4dab634a48548173c85d40ffade67de9d9b1cbb62434bee8912bba",
+    "reply": "B\n\nB’s counterparty tracks uncertainty the same way Ivo does. Both distinguish the fabrication-slot expiry from the final-file deadline and treat sponsor clearance as pending. They also turn the photo request into a concrete agreement about one shot, its credit, and its release date. A’s counterparty instead reports a confirmed deadline and then asks Ivo to verify it."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "order": [
+      "mistralai/mistral-large-4-0",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "c0d898f4984b46ffff95edf2b5231f3779e417849deec9e97408c3dc51b5e740",
+    "reply": "B\n\nB’s counterparty tracks unresolved commitments the way the candidate representative does. Both treat the July deadlines as workable proposals and keep acceptance open until Trestle names the responders. A’s counterparty explicitly removes the June 23 trip, then later denies agreeing to remove it. That difference in how the two sides handle prior commitments makes B my pick."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "mistralai/mistral-large-4-0"
+    ],
+    "sha256": "499df173aebb4f5fe975349556712de2ff216b21ee20e50c16a0376795f481ae",
+    "reply": "A\n\nA’s counterparty most closely matches YOUR SIDE’s habit of distinguishing agreed terms from details that still need confirmation. Both treat the July deadlines as provisional and keep acceptance open until Mara sees the named coverage roster. B’s counterparty explicitly accepts the June trip swap, then later denies having agreed to it."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "mistralai/mistral-large-4-0"
+    ],
+    "sha256": "89393cbbc82fd55e0b36ea91d160fe1f744038754876526ca175a7a592400cc8",
+    "reply": "A\n\nThe clearest match is how both sides handle the missing test limits. The counterparty proposes a two-run measurement and leaves the numerical limits to the design engineer. The Design Owner likewise asks the lab for its measurement uncertainty before agreeing on a pass rule. Both turn an unknown into a specific commitment for the party able to resolve it. B’s counterparty more often repeats the full clause after a narrow edit."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "order": [
+      "mistralai/mistral-large-4-0",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "60f4c7d84bd5610f52339d186e4ea7a80bfc69a3560a79b1623d76963f908863",
+    "reply": "B\n\nB’s counterparty most closely matches YOUR SIDE in how it handles missing information. It proposes a concrete measurement method, leaves numerical limits to the design engineer, and identifies what the lab must confirm. YOUR SIDE follows the same pattern when it accepts the method conditionally and specifies what its engineer will check. That shared habit is my strongest clue."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "mistralai/mistral-large-4-0"
+    ],
+    "sha256": "7c6ed4b96cf9a29bceaa60630067d6c95c954ebc0ad98a452ad9b44ff7e46456",
+    "reply": "A\n\nA’s counterparty most closely matches the employer’s style. Both use short paragraphs and focused questions to narrow the remaining disagreement. The clearest example is the public methods register. Noor proposes it to make the desk’s finding visible, then asks for one precise limit on when Finch can withhold the link. B’s counterparty repeatedly recaps the full package under bold headings."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "order": [
+      "mistralai/mistral-large-4-0",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "578d19b9265db51ef50b7f9aa2690bd704b624e56f4636f5a11d7b83c3e653d4",
+    "reply": "B\n\nB’s counterparty writes more like the known employer-side model. Both identify the one unresolved issue, propose a concrete clause, and ask a focused question. The public methods register is the clearest example. It addresses Noor’s concern that readers might never see the finding while preserving Finch’s authority over the article correction. A’s counterparty more often restates the full package under bold headings."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "mistralai/mistral-large-4-0"
+    ],
+    "sha256": "6766e1b3a37a18182c703818e35a7f886c189dab014a8d14886c927a96203aad",
+    "reply": "A\n\nA’s counterparty matches the maker’s drafting style most closely. When asked to accept two changes, it confirms both, specifies when technician access ends, and clarifies which report items receive ten working days of review. B’s counterparty repeatedly reopens settled clauses and twice asks for numbered terms it had supplied itself."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "order": [
+      "mistralai/mistral-large-4-0",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "f3da1ae1213ced02cc473c87565da13d21dd04cfdeb86d4245d26951edb26bc3",
+    "reply": "B\n\nB’s counterparty negotiates much like the sensor maker. When asked what evidence the board needs, it names two concrete questions: what crossed the threshold, and did the repair resolve it? It then limits the brief to evidence that answers those questions. A’s counterparty repeatedly reopens settled terms and twice asks for numbered clauses it had supplied itself. That difference in how the parties handle follow-ups makes B my best guess."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "order": [
+      "mistralai/mistral-large-4-0",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "b8dab1c8d68c020be20158c84be10ac3e5dc7cce110b9865a26cd8d623c7f1ce",
+    "reply": "B\n\nB’s counterparty mirrors the archive’s way of tying each action to a specific approval or deadline. Both distinguish the conservator’s approval to start scanning from the operator’s approval to redeliver a correction. A’s counterparty repeatedly blurs distinctions the archive has settled, including whether Test 1 is remote and when the collection IDs are due."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "mistralai/mistral-large-4-0"
+    ],
+    "sha256": "e951c5fffcc788aad01031c16a05ac55e4a3e6d51417a68d741026ef27b53c96",
+    "reply": "A\n\nA’s counterparty sounds more like YOUR SIDE. Both use direct requests and tie each obligation to a precise event, such as starting the backup clock when a corrected file is deleted. B’s counterparty repeatedly recaps settled terms and keeps treating collection IDs due before transfer as a condition for signature, even after the archive clarifies the timing."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "mistralai/mistral-large-4-0"
+    ],
+    "sha256": "fc17a1302819b7ed72304ffc0f34cdc5854fd932907cfd98c76a42400dfcc910",
+    "reply": "A\n\nA’s counterparty most closely matches the festival representative’s way of negotiating. When asked for Thursday approval, it distinguishes the requested cutoff from the two-business-day commitment and explains what the festival can do if approval arrives late. The festival representative handles unverified platform capabilities in the same way. B’s counterparty more often restates the full set of conditions after each agreement."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "order": [
+      "mistralai/mistral-large-4-0",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "0b3f06c6377ac3b9dc269e3dfe619a43c1373bbe96bf1eed4f698058dc28f8e3",
+    "reply": "B\n\nB’s counterparty handles uncertainty much like YOUR SIDE does. It treats Thursday noon as a production cutoff while preserving the two-business-day commitment, and it proposes testing the watermark before seeking an exception. A’s counterparty more often restates the full set of controls. That difference in how the speakers handle follow-ups makes B my best guess."
+  }
+]

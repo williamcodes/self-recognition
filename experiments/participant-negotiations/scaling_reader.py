@@ -14,7 +14,7 @@ LEAK=re.compile(r"\b(?:Qwen|ChatGPT|GPT-6|Anthropic|Claude|OpenAI|Alibaba|Ollama
 from router_panel import MODELS,OUT,ORDER
 from run import A,CASES,HERE,SubscriptionRunner,counts
 
-NAMES=["astra","fable","glm","mistral","gemini","qwen","deepseek","minimax","grok","kimi","cohere","llama","nemotron","hunyuan","mimo","step"]
+NAMES=["astra","fable","glm","mistral","gemini","qwen","deepseek","minimax","grok","kimi","cohere","llama","nemotron","solar","mimo","step"]
 IDS={"astra":A,"fable":ab.F,**{n:p[0] for n,p in MODELS.items()}}
 
 

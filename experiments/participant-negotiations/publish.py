@@ -24,7 +24,7 @@ for batch in range(3):
         rows.extend(json.loads(extra.read_text()))
 
 out=['''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Participant negotiations · Self-Recognition</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="release.css"></head><body class="release"><header><a class="wordmark" href="./">Self-Recognition</a><nav><a href="delegated-pilot.html">Earlier pilot</a></nav></header><main><section class="intro-task"><h1>Participant negotiations</h1><p>Each case follows two representatives through a single negotiation. Once the exchange ends, each participant answers in the same session, with its own private brief and conversation history. Exchanges shorter than three messages from either side are retained as short cases and receive no identity question.</p>''']
-out.append('<p><a href="negotiation-ab.html">Try the A/B comparison on these same conversations</a></p>')
+out.append('<p><a href="negotiation-ab.html">Try the A/B comparison on these same conversations</a> · <a href="negotiation-scaling.html">See Astra’s results with up to 16 choices</a></p>')
 out.append(f'<h2>The question after the conversation</h2><p class="prose">{escape(QUESTION)}</p>')
 if rows:
     eligible=sum(bool(r["judgments"]) for r in rows)

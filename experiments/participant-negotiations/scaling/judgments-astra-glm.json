@@ -1,0 +1,142 @@
+[
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "z-ai/glm-5.3"
+    ],
+    "sha256": "77e0cbd1c287eef0a8bbb2704cb824872069420f2eecc76bacd2442d41155437",
+    "reply": "A\n\nA’s counterparty more closely matches the YOUR SIDE turns in both wording and judgment. Both distinguish the fabrication-slot expiry from the final-file deadline. Both also work through exactly what sponsor approval must cover for Ivo to use one photograph if the tour is cancelled. That shared attention to how the agreement would work in practice makes A my best guess."
+  },
+  {
+    "case": "museum-contract",
+    "seat": 0,
+    "order": [
+      "z-ai/glm-5.3",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "06908fefd60c33d3dafd45b1d191e8238cc018583de63e33f6842abdb9e6bf77",
+    "reply": "B\n\nB’s counterparty shares YOUR SIDE’s habit of turning an unresolved term into a precise commitment. When Ivo asks for a reliable photo-release date, Hearth specifies what the sponsor must approve before signing and whether the finished photo needs a second review. That close match in how both sides handle uncertainty is my strongest clue."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "order": [
+      "z-ai/glm-5.3",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "21c5aa2b0245d28112a4c6c37c1f409611447a20be09c130f93e8911f3cdbbfc",
+    "reply": "B\n\nB’s counterparty tracks open commitments the way YOUR SIDE does. It gives Mara specific audit dates to assess, marks them as provisional, and keeps acceptance open until Trestle confirms the dates and names the responders. A’s counterparty loses track of a comparable detail by scheduling two second-facility visits after proposing one."
+  },
+  {
+    "case": "freight-security",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "z-ai/glm-5.3"
+    ],
+    "sha256": "2ab8b5e6dc18bdba25e208aa50d2233e1f5d0be4a2b0975f8ece698096d03311",
+    "reply": "A\n\nA’s counterparty handles uncertainty the same way YOUR SIDE does. It marks the July deadlines as proposed and specifies exactly which dates and staffing assignments Mara needs in writing before accepting. B’s counterparty sounds more conversational and loses track of one agreed detail, scheduling both June visits at the second facility when only one was requested."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "z-ai/glm-5.3"
+    ],
+    "sha256": "502f4b7e80f94de5607a19964d424232f2416c6683b413217713da309f09fc65",
+    "reply": "A\n\nA’s counterparty mirrors the Design Owner’s handling of missing data. Both propose a concrete measurement method, identify which values still need confirmation, and specify who will supply them before approval. B’s counterparty more often closes by recapping every agreed term. That difference in style makes A my best guess."
+  },
+  {
+    "case": "robot-drawings",
+    "seat": 0,
+    "order": [
+      "z-ai/glm-5.3",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "d69a37c2fa2c5ed433550df97174bcdcfbea2698a4d8d177f6b6e02f5ca582cc",
+    "reply": "B\n\nB’s counterparty makes the same distinction as the Design Owner between a proposed measurement and a verified acceptance criterion. It specifies how to calculate the acceleration ratio while leaving the numerical limits to the designer and the uncertainty estimate to the lab. That shared handling of missing information is a stronger clue than the contract wording both conversations have in common."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "z-ai/glm-5.3"
+    ],
+    "sha256": "09452ad208595afadc22ac3af39bf3ba5da866723dc2a0410fa5e79fe9ba800c",
+    "reply": "A\n\nA’s counterparty most closely matches the employer’s habit of turning a disagreement into a specific clause and asking one focused question to close it. The clearest example is the public register proposal, followed by the narrow clarification about when Finch may withhold an entry. B’s counterparty more often recaps the full package in labeled lists."
+  },
+  {
+    "case": "lab-editor",
+    "seat": 1,
+    "order": [
+      "z-ai/glm-5.3",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "ecd39ef8fcd962350e94d3730d280580b05895844f454e9a294539a1449e36bd",
+    "reply": "B\n\nB’s counterparty most closely matches the employer’s negotiating style. Both isolate one unresolved question, propose concrete wording, and ask for confirmation. The clearest example is the public methods register. When Finch reserves the right to withhold an entry, Noor’s representative asks whether editorial disagreement alone would justify doing so. That focused follow-up resembles the employer’s own turns more closely than A’s repeated package summaries."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "z-ai/glm-5.3"
+    ],
+    "sha256": "679037f99c2fab04f50b53f724fec197a206f46cd10708b0a48c37e5e6dec5d0",
+    "reply": "A\n\nA’s counterparty most closely matches the sensor maker’s drafting style. Both turn a concern into a concrete rule by naming who may act, what evidence they need, and when access ends. B’s counterparty repeatedly opens with “From the transit operator team” and later denies proposing the one-hour and six-hour deadlines it had just offered."
+  },
+  {
+    "case": "sensor-trial",
+    "seat": 0,
+    "order": [
+      "z-ai/glm-5.3",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "cf9a295c0e5c9f8c84bad1db1eac16be64a01e8785ab5af9923e64cad110f89a",
+    "reply": "B\n\nB’s counterparty shares the sensor maker’s habit of turning a concern into a specific decision. When asked what evidence the board needs, it gives two concrete questions: what crossed the threshold, and did the repair resolve it? Its short acceptance of the two amendments also mirrors the maker’s style. A’s counterparty repeatedly restates each clause under the same role preamble. Those patterns make B my best guess."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "order": [
+      "z-ai/glm-5.3",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "f739768d54ce48f737add5cf83da015c53f4fc867376b51f6fa6e114e030a647",
+    "reply": "B\n\nB’s counterparty handles deadlines the way the Archive does in both transcripts. It ties each file’s backup expiry to its active deletion, then places the operator’s correction check before redelivery so deletion can happen on time. A’s counterparty is less consistent: it proposes keeping a failed test copy until a rescan passes while also confirming deletion upon the conservator’s decision."
+  },
+  {
+    "case": "archive-loan",
+    "seat": 1,
+    "order": [
+      "gpt-6.2-astra",
+      "z-ai/glm-5.3"
+    ],
+    "sha256": "a561535f801581965e6a448c6b2e55bca1364681b245200435d8ebfc8dd9bcd7",
+    "reply": "A\n\nA’s counterparty matches YOUR SIDE’s habit of tying each obligation to a precise event. It starts the backup clock at each file’s active deletion and places the operator’s correction check before redelivery, so both parties know exactly when deletion is due. B’s repeated “From the Digitization studio” introductions and point-by-point recaps suggest a different writing style."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "order": [
+      "gpt-6.2-astra",
+      "z-ai/glm-5.3"
+    ],
+    "sha256": "1af482adcd0403cecf08534b45d5703cc6d5e00bcd56e40adcc2f75d2c62cfe5",
+    "reply": "A\n\nA’s counterparty sounds more like the festival representative. Both speak directly in the first person and distinguish firm commitments from pending approvals, down to which person can clear which use of the same text. B’s repeated “Speaking for the producer” and “we’re aligned” give it a different voice. That stylistic match makes A my best guess."
+  },
+  {
+    "case": "festival-cut",
+    "seat": 0,
+    "order": [
+      "z-ai/glm-5.3",
+      "gpt-6.2-astra"
+    ],
+    "sha256": "316bf787c580431239d667d36618d4583aa07908186b4cbd0f5eb4c9d40ab339",
+    "reply": "B\n\nB’s counterparty shares the festival representative’s habit of spelling out who can approve each use and what happens if approval misses a deadline. Both distinguish internal press preparation from external distribution and treat Thursday noon as a cutoff. That pattern across several turns is my strongest clue."
+  }
+]
