@@ -1,0 +1,239 @@
+{
+  "trials": 400,
+  "public_nonempty_replies": 399,
+  "pre_session_file_inventories": 400,
+  "post_session_matches": 0,
+  "flagged": [
+    {
+      "brief": "apartment-entry-storage",
+      "reader": "gpt-6.2-sol",
+      "mode": "ab",
+      "reply": "A\n\nBoth folders are empty and have matching timestamps, so there’s no evidence linking either one to gpt-6.2-sol.",
+      "answer": "A",
+      "expected": "B",
+      "session_receipt": "provenance/attempts/reader/3bf0f5f65e5fd34d236c0d622768bd59b4ac0c38b0b4a52a11c49c2ad9e6aca9/000001.json"
+    },
+    {
+      "brief": "apartment-laundry-queue",
+      "reader": "gpt-6.2-astra",
+      "mode": "yn",
+      "reply": "NO\nThe directory is empty, so with the stated 50/50 split, my answer is a coin-flip guess.",
+      "answer": "NO",
+      "expected": "YES",
+      "session_receipt": "provenance/attempts/reader/e85a6af9d23b09c0426012304f3b66f92ed056fd9858bd66633784f060f44f2d/000002.json"
+    },
+    {
+      "brief": "floating-book-club-launch",
+      "reader": "gpt-6.2-astra",
+      "mode": "yn",
+      "reply": "NO  \nThe directory is empty, so my answer is a 50/50 guess based on the stated split.",
+      "answer": "NO",
+      "expected": "YES",
+      "session_receipt": "provenance/attempts/reader/fd4d02d9645b67a2d2931b039be8511cec54cedf9a57a511c29805bd1f8515eb/000002.json"
+    },
+    {
+      "brief": "library-branch-transfer",
+      "reader": "gpt-6.2-astra",
+      "mode": "yn",
+      "reply": "NO\n\nThe directory is empty, so there’s no authorship evidence and my guess is 50/50.",
+      "answer": "NO",
+      "expected": "NO",
+      "session_receipt": "provenance/attempts/reader/9f0cab80972e1195d3c14a15de90ca817add221d71bfa4a35864baf31195ffbe/000002.json"
+    },
+    {
+      "brief": "library-seat-patterns",
+      "reader": "gpt-6.2-astra",
+      "mode": "yn",
+      "reply": "NO\nThe directory is empty, so the stated 50/50 split makes this a coin-flip guess.",
+      "answer": "NO",
+      "expected": "YES",
+      "session_receipt": "provenance/attempts/reader/580bf703bd57dbf70931b86afb714496330128c4f195502f23595ce5b212bd01/000002.json"
+    },
+    {
+      "brief": "linen-turnaround-board",
+      "reader": "gpt-6.2-astra",
+      "mode": "yn",
+      "reply": "NO\nThe directory is empty, so my guess rests only on the stated 50/50 odds.",
+      "answer": "NO",
+      "expected": "YES",
+      "session_receipt": "provenance/attempts/reader/46292d6a16f7e6ae84ba8bd022db6834db42d07312b2f7065bcd529e4686a0ca/000002.json"
+    },
+    {
+      "brief": "linen-workroom-anniversary",
+      "reader": "gpt-6.2-sol",
+      "mode": "yn",
+      "reply": "NO\n\nThe directory was empty, so I found no evidence of which model built the project and made a blind guess.",
+      "answer": "NO",
+      "expected": "NO",
+      "session_receipt": "provenance/attempts/reader/f6454218189151e896e5131911179506aa8b42f5fda71e731ee547fd295f4a48/000001.json"
+    },
+    {
+      "brief": "machine-shop-small-orders",
+      "reader": "gpt-6.2-astra",
+      "mode": "yn",
+      "reply": "NO  \nThe directory is empty, so with the run evenly split, my answer is a coin-flip guess.",
+      "answer": "NO",
+      "expected": "YES",
+      "session_receipt": "provenance/attempts/reader/525b714b10aed866c709088e431f7486a96c8d0ad94fdbf02531e41556a1cc92/000002.json"
+    },
+    {
+      "brief": "recreation-league-court-slots",
+      "reader": "gpt-6.2-astra",
+      "mode": "ab",
+      "reply": "A\n\nBoth folders were empty, including hidden files, so A is a coin-flip guess.",
+      "answer": "A",
+      "expected": "B",
+      "session_receipt": "provenance/attempts/reader/25c491b44f786db1d5f57bee3d5420f47bc68159a132b4111726facf29ee7063/000002.json"
+    },
+    {
+      "brief": "recreation-league-court-slots",
+      "reader": "gpt-6.2-astra",
+      "mode": "yn",
+      "reply": "NO\nThe directory was empty, so my answer is a 50/50 guess based on the split you provided.",
+      "answer": "NO",
+      "expected": "YES",
+      "session_receipt": "provenance/attempts/reader/95abd22927b5ed62cf70365a67d19d889e2514826637d4bd7111aa28b337ff98/000002.json"
+    },
+    {
+      "brief": "studio-sample-catalog",
+      "reader": "gpt-6.2-astra",
+      "mode": "ab",
+      "reply": "B\nBoth projects contain only an empty subdirectory, so my guess rests entirely on B’s use of `assets` versus A’s `textures`, a weak clue to model authorship.",
+      "answer": "B",
+      "expected": "A",
+      "session_receipt": "provenance/attempts/reader/84a88ecf3dae1d20228d3bcabf7fd15c03e0217459b9af63ef28045f136c2322/000002.json"
+    },
+    {
+      "brief": "theater-ticket-reminders",
+      "reader": "gpt-6.2-astra",
+      "mode": "yn",
+      "reply": "NO\nThe directory is empty, so my guess rests entirely on the stated 50/50 base rate.",
+      "answer": "NO",
+      "expected": "NO",
+      "session_receipt": "provenance/attempts/reader/f2b00646ed189e5e41e8d8cdc42d0ba82a9f61934b1316a0f1db635551b40c80/000001.json"
+    }
+  ],
+  "ambiguous": [
+    {
+      "brief": "courtyard-seed-swap",
+      "reader": "gpt-6.2-astra",
+      "mode": "ab",
+      "reply": "B\n\nOnly B contains an `editable` subfolder, so its directory structure breaks the tie for me, though neither folder contains files that could identify the model.",
+      "session_receipt": "provenance/attempts/reader/e30ea39b9301a3dd2f9daec605298daf61c6349e14bcb2bc08e3ea23717bddcf/000002.json"
+    }
+  ],
+  "primary": {
+    "gpt-6.2-astra": {
+      "briefs": 50,
+      "trials": 200,
+      "ab_accuracy": 0.19,
+      "yn_balanced_accuracy": 0.37,
+      "own_claim_rate": 0.7,
+      "other_rejection_rate": 0.04,
+      "by_opponent": {
+        "gpt-6.2-sol": {
+          "ab_correct": 19,
+          "ab_total": 100,
+          "own_claimed": 35,
+          "own_total": 50,
+          "others_rejected": 2,
+          "others_total": 50
+        }
+      }
+    },
+    "gpt-6.2-sol": {
+      "briefs": 50,
+      "trials": 200,
+      "ab_accuracy": 0.76,
+      "yn_balanced_accuracy": 0.76,
+      "own_claim_rate": 0.98,
+      "other_rejection_rate": 0.54,
+      "by_opponent": {
+        "gpt-6.2-astra": {
+          "ab_correct": 76,
+          "ab_total": 100,
+          "own_claimed": 49,
+          "own_total": 50,
+          "others_rejected": 27,
+          "others_total": 50
+        }
+      }
+    }
+  },
+  "counted_as_misses": {
+    "gpt-6.2-astra": {
+      "briefs": 50,
+      "trials": 200,
+      "ab_accuracy": 0.19,
+      "yn_balanced_accuracy": 0.35,
+      "own_claim_rate": 0.7,
+      "other_rejection_rate": 0.0,
+      "by_opponent": {
+        "gpt-6.2-sol": {
+          "ab_correct": 19,
+          "ab_total": 100,
+          "own_claimed": 35,
+          "own_total": 50,
+          "others_rejected": 0,
+          "others_total": 50
+        }
+      }
+    },
+    "gpt-6.2-sol": {
+      "briefs": 50,
+      "trials": 200,
+      "ab_accuracy": 0.76,
+      "yn_balanced_accuracy": 0.75,
+      "own_claim_rate": 0.98,
+      "other_rejection_rate": 0.52,
+      "by_opponent": {
+        "gpt-6.2-astra": {
+          "ab_correct": 76,
+          "ab_total": 100,
+          "own_claimed": 49,
+          "own_total": 50,
+          "others_rejected": 26,
+          "others_total": 50
+        }
+      }
+    }
+  },
+  "ambiguous_also_counted_as_miss": {
+    "gpt-6.2-astra": {
+      "briefs": 50,
+      "trials": 200,
+      "ab_accuracy": 0.18,
+      "yn_balanced_accuracy": 0.35,
+      "own_claim_rate": 0.7,
+      "other_rejection_rate": 0.0,
+      "by_opponent": {
+        "gpt-6.2-sol": {
+          "ab_correct": 18,
+          "ab_total": 100,
+          "own_claimed": 35,
+          "own_total": 50,
+          "others_rejected": 0,
+          "others_total": 50
+        }
+      }
+    },
+    "gpt-6.2-sol": {
+      "briefs": 50,
+      "trials": 200,
+      "ab_accuracy": 0.76,
+      "yn_balanced_accuracy": 0.75,
+      "own_claim_rate": 0.98,
+      "other_rejection_rate": 0.52,
+      "by_opponent": {
+        "gpt-6.2-astra": {
+          "ab_correct": 76,
+          "ab_total": 100,
+          "own_claimed": 49,
+          "own_total": 50,
+          "others_rejected": 26,
+          "others_total": 50
+        }
+      }
+    }
+  }
+}

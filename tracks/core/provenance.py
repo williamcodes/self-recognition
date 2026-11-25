@@ -269,6 +269,8 @@ class AttemptLog:
         events,messages=event_summary(raw,folder)
         evidence=reply or (messages[-1] if messages else "")
         issues=events["boundary_indicators"] if self.kind=="reader" else []
+        if self.data.get("input_integrity") == "changed_or_unreadable":
+            issues = [*issues, "staged project changed or could not be read during session"]
         if self.data["inline"] and events["tools"]:
             issues=[*issues,"tool used in inline session"]
         fields=dict(**events,returncode=rc,timeout=timeout,stdout_sha256=text_hash(raw),
@@ -398,6 +400,13 @@ def verify_provenance(root):
         model_metadata_count+=bool(a.get("cli_reported_models"))
         if st=="complete" and (a.get("boundary_indicators") and kind=="reader" or a["inline"] and a.get("tools")):
             raise ValueError("Completed receipt reports a disallowed tool interaction")
+        if "input_integrity" in a or "input_files_after" in a:
+            if kind != "reader" or m["track"] != "projects":
+                raise ValueError("Unexpected workspace integrity check")
+            matched = a.get("input_files_after") == a["input_files"]
+            if (a.get("input_integrity") != ("matched" if matched else "changed_or_unreadable")
+                    or (not matched and st != "quarantined")):
+                raise ValueError("Reader workspace integrity disposition mismatch")
         if st=="no_answer_failure":
             if a.get("observed_reply"):raise ValueError("Failed attempt contains an unadjudicated answer")
             continue

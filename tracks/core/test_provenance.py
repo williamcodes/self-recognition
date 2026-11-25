@@ -49,6 +49,8 @@ class ReceiptTest(unittest.TestCase):
             raise subprocess.TimeoutExpired(cmd,2,output="\n".join(map(json.dumps,events)).encode())
         if failure == "inline tool" or (trial and input.find("using the terminal") >= 0):
             item("command_execution",command="pwd")
+        if failure == "input disappeared":
+            next(cwd.rglob("guide.txt")).unlink()
         if "workspace-write" in cmd:
             name = "auth.json" if failure == "invalid file" else "guide.txt"
             (cwd/name).write_text("A synthetic fixture.")
@@ -84,6 +86,15 @@ class ReceiptTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"prompt"):
             verify(self.root)
 
+    def test_project_changed_during_session_is_retained_as_invalid(self):
+        self.run_fixture("projects", writers_only=True)
+        self.failures = ["input disappeared"]
+        self.run_fixture("projects", quarantined_readers_as_misses=True)
+        failed, = [r for r in self.receipts() if r["status"] == "quarantined"]
+        self.assertEqual(failed["input_integrity"], "changed_or_unreadable")
+        self.assertNotEqual(failed["input_files"], failed["input_files_after"])
+        self.assertEqual(provenance.verify_provenance(self.root)["adjudicated_invalid_misses"], 1)
+
     def test_project_recovery_and_input_validation(self):
         self.run_fixture("projects")
         m=read(self.root/"manifest.json")
@@ -97,6 +108,8 @@ class ReceiptTest(unittest.TestCase):
         receipt=read(path)
         self.assertEqual(receipt["commands"],["pwd"])
         self.assertEqual(set(receipt["input_files"]),{"A/guide.txt","B/guide.txt"})
+        self.assertEqual(receipt["input_files_after"],receipt["input_files"])
+        self.assertEqual(receipt["input_integrity"],"matched")
         receipt["input_files"]={}
         save(path,receipt)
         with self.assertRaisesRegex(ValueError,"workspace"):

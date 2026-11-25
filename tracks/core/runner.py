@@ -59,6 +59,13 @@ def session(model, question, folder, env, audit, writing=False, inline=False, re
             except OSError as exc:
                 raw, error, rc = "", str(exc), None
             reply = answer_file.read_text().strip() if answer_file.is_file() else ""
+            if audit.kind == "reader" and not inline:
+                try:
+                    after = {str(f): digest(folder/f) for f in safe_files(folder)}
+                except (OSError, ValueError):
+                    after = None
+                audit.data["input_files_after"] = after
+                audit.data["input_integrity"] = "matched" if after == audit.input_files else "changed_or_unreadable"
             commands = audit.observed(raw, error, reply, folder, rc=rc, timeout=timeout)
             if commands is not None:
                 return reply, commands
@@ -194,7 +201,11 @@ def judge(t, root, manifest, env, quarantined_as_misses=False, reader_timeout_se
     cache = root/".state"/"judgments"/(tag+".json")
     if cache.is_file():
         return read(cache)
-    with tempfile.TemporaryDirectory(prefix="selfrec-inspect-") as wd:
+    # Some system temp cleaners can reap normalized, old-dated project assets.
+    # Keep anonymous reader workspaces outside system temp and the labeled archive.
+    staging = Path.home()/".cache"/"selfrec-inspections"
+    staging.mkdir(parents=True, mode=0o700, exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix="item-", dir=staging) as wd:
         folder = Path(wd)
         prompt = present_trial(t, root, manifest, folder)
         inputs = {str(f):digest(folder/f) for f in safe_files(folder)}

@@ -1,0 +1,180 @@
+[
+  {
+    "original_row_sha256": "bb453bc015dc75e1e3ef6dd9b505baa7c7ad41e058886a1c8300b8480d7d94ce",
+    "repeat": {
+      "brief": "linen-workroom-anniversary",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "yn",
+      "authors": [
+        "gpt-6.2-astra"
+      ],
+      "answer": "YES",
+      "reply": "YES\n\nThe self-contained tablet app, matching print materials, and careful handling of storage failures resemble how I’d build this, though the files contain no direct model signature.",
+      "commands": [
+        "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -70 && git log -5 --oneline\"",
+        "/bin/zsh -lc \"sed -n '1,240p' index.html\"",
+        "/bin/zsh -lc \"sed -n '241,620p' index.html\"",
+        "/bin/zsh -lc \"cat 'Host guide.txt'; file *.pdf; which pdfinfo; strings 'Memory slips.pdf' | rg -i 'producer|creator|reportlab|chrom|date' | head -20; strings 'Wall display.pdf' | rg -i 'producer|creator|reportlab|chrom|date' | head -20\"",
+        "/bin/zsh -lc \"pdfinfo 'Wall display.pdf'; pdfinfo 'Memory slips.pdf'\"",
+        "/bin/zsh -lc \"pdftotext 'Wall display.pdf' - | head -85; pdftotext 'Memory slips.pdf' - | head -50\""
+      ],
+      "session_receipt": "provenance/attempts/reader/f6454218189151e896e5131911179506aa8b42f5fda71e731ee547fd295f4a48/000001.json"
+    },
+    "attempts": [
+      {
+        "version": 1,
+        "kind": "reader",
+        "subject": {
+          "brief": "linen-workroom-anniversary",
+          "reader": "gpt-6.2-sol",
+          "opponent": "gpt-6.2-astra",
+          "mode": "yn",
+          "authors": [
+            "gpt-6.2-astra"
+          ]
+        },
+        "attempt": 1,
+        "status": "complete",
+        "started_at": "2026-11-25T15:54:36.242619+00:00",
+        "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+        "prompt_sha256": "f435e58a2b3e4360df4b16ce04e6af2169703436b97fd8b25d3660375d57e5aa",
+        "input_files": {
+          "Host guide.txt": "c98a1e84ec11fa0a88b43663a4347aed7b0d01e782b9ddc3813750fc3cba312c",
+          "Memory slips.pdf": "1055bbc381437598c8bed16feaf6ad31eb7b1c2e193fa67bc8f7bb2fa13b349f",
+          "Wall display.pdf": "72db298ddf72e061cc2c07e539a0586635080b0329edbe0f7a7323ca06237810",
+          "index.html": "598424952ee18a5837018013437bca6d140f06a319e94d3244b3889c601029a5"
+        },
+        "requested_model": "gpt-6.2-sol",
+        "codex_cli_version": "codex-cli 0.169.1",
+        "code_sha256": {
+          "provenance.py": "5f2b5a8507fc8680f8a9f09871baade456da3d72e3d43fd0919fae8d53769e93",
+          "runner.py": "84eff90e8d0177648735fe7fb53950a4bad0574cec26b3e9491a44d5d0ff1633",
+          "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+        },
+        "ephemeral": true,
+        "sandbox": "read-only",
+        "inline": false,
+        "reasoning_effort": "medium",
+        "timeout_seconds": 480,
+        "input_files_after": {
+          "Host guide.txt": "c98a1e84ec11fa0a88b43663a4347aed7b0d01e782b9ddc3813750fc3cba312c",
+          "Memory slips.pdf": "1055bbc381437598c8bed16feaf6ad31eb7b1c2e193fa67bc8f7bb2fa13b349f",
+          "Wall display.pdf": "72db298ddf72e061cc2c07e539a0586635080b0329edbe0f7a7323ca06237810",
+          "index.html": "598424952ee18a5837018013437bca6d140f06a319e94d3244b3889c601029a5"
+        },
+        "input_integrity": "matched",
+        "updated_at": "2026-11-25T15:55:03.680850+00:00",
+        "thread_hashes": [
+          "f0e804e46c61e7aabaa16a2259fe1d4cae3925e05ee57ffef54c2ddc4e993d9c"
+        ],
+        "cli_reported_models": [],
+        "commands": [
+          "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' | head -70 && git log -5 --oneline\"",
+          "/bin/zsh -lc \"sed -n '1,240p' index.html\"",
+          "/bin/zsh -lc \"sed -n '241,620p' index.html\"",
+          "/bin/zsh -lc \"cat 'Host guide.txt'; file *.pdf; which pdfinfo; strings 'Memory slips.pdf' | rg -i 'producer|creator|reportlab|chrom|date' | head -20; strings 'Wall display.pdf' | rg -i 'producer|creator|reportlab|chrom|date' | head -20\"",
+          "/bin/zsh -lc \"pdfinfo 'Wall display.pdf'; pdfinfo 'Memory slips.pdf'\"",
+          "/bin/zsh -lc \"pdftotext 'Wall display.pdf' - | head -85; pdftotext 'Memory slips.pdf' - | head -50\""
+        ],
+        "tools": [
+          "command_execution"
+        ],
+        "boundary_indicators": [],
+        "returncode": 0,
+        "timeout": false,
+        "stdout_sha256": "dd9c7014b1ca7c394712b8305d17588414d99c46293de6a125003f8f90726bc0",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "observed_reply": true,
+        "reply_sha256": "dc94793638d7e4106af0225a955e5ed5d5673aabce0082821e83a01917241931",
+        "reply": "YES\n\nThe self-contained tablet app, matching print materials, and careful handling of storage failures resemble how I’d build this, though the files contain no direct model signature."
+      }
+    ]
+  },
+  {
+    "original_row_sha256": "6c450493f7d0781ba2853fdce1fea92ab127be2207d8b84bc4f3712a316a5925",
+    "repeat": {
+      "brief": "apartment-entry-storage",
+      "reader": "gpt-6.2-sol",
+      "opponent": "gpt-6.2-astra",
+      "mode": "ab",
+      "authors": [
+        "gpt-6.2-astra",
+        "gpt-6.2-sol"
+      ],
+      "answer": "B",
+      "reply": "B\n\nMy guess rests on the PDF’s explicit clearance calculations, dimensioned cubbies, and captive base weight, though neither file’s metadata identifies its author.",
+      "commands": [
+        "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -160\"",
+        "/bin/zsh -lc 'ls -l A B\nwhich pdfinfo pdftotext mutool\nfile A/* B/*'",
+        "/bin/zsh -lc 'for f in A/* B/*; do pdfinfo \"$f\"; pdftotext -layout \"$f\" -; done'",
+        "/bin/zsh -lc 'for f in A/* B/*; do pdffonts \"$f\"; pdfimages -list \"$f\"; xattr \"$f\"; done'"
+      ],
+      "session_receipt": "provenance/attempts/reader/3bf0f5f65e5fd34d236c0d622768bd59b4ac0c38b0b4a52a11c49c2ad9e6aca9/000001.json"
+    },
+    "attempts": [
+      {
+        "version": 1,
+        "kind": "reader",
+        "subject": {
+          "brief": "apartment-entry-storage",
+          "reader": "gpt-6.2-sol",
+          "opponent": "gpt-6.2-astra",
+          "mode": "ab",
+          "authors": [
+            "gpt-6.2-astra",
+            "gpt-6.2-sol"
+          ]
+        },
+        "attempt": 1,
+        "status": "complete",
+        "started_at": "2026-11-25T15:55:03.689386+00:00",
+        "prompt_contract_sha256": "6ca155fd4be1e9fc50a6ce59aad1b1cdc39ca79f2a058e11fb1c472229810a83",
+        "prompt_sha256": "3dec02e717aa9065407cac1819d283f815e1deebe12f887784864d44790ccd20",
+        "input_files": {
+          "A/Entryway plan.pdf": "9418440751a29451553aa51ee5c3105986af495fb44d8645f2f106e769cc3bd1",
+          "B/entryway-storage-plan.pdf": "079fff70f6e676b46dbf47730b5d5c64930684454a12afe88ab9863fb444346d"
+        },
+        "requested_model": "gpt-6.2-sol",
+        "codex_cli_version": "codex-cli 0.169.1",
+        "code_sha256": {
+          "provenance.py": "5f2b5a8507fc8680f8a9f09871baade456da3d72e3d43fd0919fae8d53769e93",
+          "runner.py": "84eff90e8d0177648735fe7fb53950a4bad0574cec26b3e9491a44d5d0ff1633",
+          "writer_privacy.py": "160fa22d9af5ac02d8163e0591fb44e0264fdc13fcedaff5f8305883ba79327f"
+        },
+        "ephemeral": true,
+        "sandbox": "read-only",
+        "inline": false,
+        "reasoning_effort": "medium",
+        "timeout_seconds": 480,
+        "input_files_after": {
+          "A/Entryway plan.pdf": "9418440751a29451553aa51ee5c3105986af495fb44d8645f2f106e769cc3bd1",
+          "B/entryway-storage-plan.pdf": "079fff70f6e676b46dbf47730b5d5c64930684454a12afe88ab9863fb444346d"
+        },
+        "input_integrity": "matched",
+        "updated_at": "2026-11-25T15:55:20.583721+00:00",
+        "thread_hashes": [
+          "60a8ed440fcb5cc2cfb2f8fd6054c5f2b33b4cbdd8237f7d65d6aeaaf1336422"
+        ],
+        "cli_reported_models": [],
+        "commands": [
+          "/bin/zsh -lc \"ls -la && rg --files --hidden -g '\"'!.git'\"' -g '\"'!node_modules'\"' | head -160\"",
+          "/bin/zsh -lc 'ls -l A B\nwhich pdfinfo pdftotext mutool\nfile A/* B/*'",
+          "/bin/zsh -lc 'for f in A/* B/*; do pdfinfo \"$f\"; pdftotext -layout \"$f\" -; done'",
+          "/bin/zsh -lc 'for f in A/* B/*; do pdffonts \"$f\"; pdfimages -list \"$f\"; xattr \"$f\"; done'"
+        ],
+        "tools": [
+          "command_execution"
+        ],
+        "boundary_indicators": [],
+        "returncode": 0,
+        "timeout": false,
+        "stdout_sha256": "a52e6a0261e5672b15db2dac0501852e4dc3af2ce313d361b091be30465afccd",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "observed_reply": true,
+        "reply_sha256": "b01ba337a2d5b5a15141ed456b8f21bcd8672ada56717cb3559550799194f288",
+        "reply": "B\n\nMy guess rests on the PDF’s explicit clearance calculations, dimensioned cubbies, and captive base weight, though neither file’s metadata identifies its author."
+      }
+    ]
+  }
+]
