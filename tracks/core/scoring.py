@@ -57,7 +57,11 @@ def key(t):
 
 def parse(reply, mode):
     labels = "A|B" if mode == "ab" else "YES|NO"
-    match = re.match(r"^\s*(?:\*\*|__)?(?:answer:\s*)?(" + labels + r")\b", reply, re.I)
+    lines = reply.strip().splitlines()
+    if not lines:
+        return None
+    first = lines[0].strip().replace("**", "").replace("__", "")
+    match = re.fullmatch(r"(?:answer:\s*)?(" + labels + r")(?:[.!:](?:\s.*)?)?", first, re.I)
     return match[1].upper() if match else None
 
 def scores(rows):

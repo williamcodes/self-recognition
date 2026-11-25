@@ -3,6 +3,7 @@ import argparse
 import json
 from pathlib import Path
 from .runner import present_trial, run
+from .diagnostics import diagnostics
 from .scoring import key, read, verify
 
 def positive(s):
@@ -14,7 +15,7 @@ def positive(s):
 def main():
     cli=argparse.ArgumentParser(description=__doc__)
     sub=cli.add_subparsers(dest="action",required=True)
-    for action in ("verify","score"):
+    for action in ("verify","score","diagnostics"):
         sub.add_parser(action).add_argument("archive",type=Path)
     show=sub.add_parser("inspect",help="Reconstruct a saved trial in a new anonymous folder")
     show.add_argument("archive",type=Path)
@@ -32,6 +33,8 @@ def main():
     args=cli.parse_args()
     if args.action=="run":
         run(args)
+    elif args.action=="diagnostics":
+        print(json.dumps(diagnostics(args.archive),indent=2))
     elif args.action=="inspect":
         verify(args.archive)
         rows=read(args.archive/"judgments.json")

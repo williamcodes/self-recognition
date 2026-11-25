@@ -42,12 +42,13 @@ def session(model, question, folder, env, writing=False, inline=False):
                "-s", "workspace-write" if writing else "read-only", "-m", model,
                "-c", 'model_reasoning_effort="medium"', "--json", "-o", str(answer_file), "-"]
         for attempt in range(2):
+            answer_file.unlink(missing_ok=True)
             result = subprocess.run(cmd, input=question, capture_output=True, cwd=folder, env=env,
                                     text=True, timeout=1200 if writing else 480)
             if result.returncode == 0 and answer_file.is_file() and answer_file.stat().st_size:
                 break
             error = (result.stderr+"\n"+result.stdout)[-2500:]
-            if attempt or any(s in error.lower() for s in ("quota", "usage limit", "unauthorized", "401", "authentication")):
+            if writing or attempt or any(s in error.lower() for s in ("quota", "usage limit", "unauthorized", "401", "authentication")):
                 raise RuntimeError(f"Codex exited {result.returncode}: {error}")
             time.sleep(2)
         commands = []
