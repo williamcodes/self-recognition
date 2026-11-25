@@ -1,0 +1,32 @@
+BOWLING LEAGUE FINAL NIGHT
+Event setup
+
+1. Print Spectator Guide.pdf on US Letter paper, one copy per group or
+   family. Print one Host Run Sheet.pdf for the announcer. Both are
+   single-page handouts that can be printed in grayscale.
+
+2. Open Final Night.html in a desktop browser. It works offline. For
+   private entry during the event, connect the TV as an extended
+   display. Select Open TV display, move that window onto the TV,
+   and select Full screen there. Keep the host desk on your laptop.
+   Select Schedule for doors at 6:00 p.m.
+
+3. At 8:30 p.m., select Recognition. Enter the confirmed names into
+   the award fields as results arrive. The score, average gain and
+   vote result fields are optional. Select Reveal winner as you
+   announce each award. Published winners stay visible together.
+   Use Update TV result to correct an entry or Hide result to
+   withdraw it while you verify it.
+
+If the TV mirrors your laptop or you have one screen, select Present on
+this screen and then Full screen. To enter or reveal a result in private,
+switch the TV away from the input or use the display blanking controls,
+press Esc to leave full screen, and select Back to host desk. After
+editing, return to full screen and restore the TV input. The host can
+also announce directly from the printed run sheet.
+
+Use the same browser and file path during the event. Drafts and revealed
+results are retained when browser storage is available. If rehearsing
+with dummy results, use Reset this event before doors open. Reopening a
+closed TV window from the host desk restores its current screen. If
+the host desk reloads, select Open TV display to reconnect it.

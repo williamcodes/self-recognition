@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Spring tool purchase planner</title>
+<style>
+  :root {
+    --ink: #192d25;
+    --muted: #4c5d53;
+    --dark: #193e31;
+    --green: #27634e;
+    --paper: #f7f6ef;
+    --white: #fffefa;
+    --line: #d8dfd4;
+    --mint: #e8f1e8;
+    --lime: #dcecab;
+    --focus: #9c510a;
+    font: 100%/1.5 system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; }
+  .wrap { width: min(1120px, calc(100% - 64px)); margin-inline: auto; }
+  .mast { background: var(--dark); color: #fff; }
+  .mast .wrap { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .identity { display: flex; align-items: center; gap: 11px; font-size: .9rem; font-weight: 700; }
+  .mark { display: grid; place-items: center; width: 32px; height: 29px; border: 1px solid #aec4af; color: var(--lime); font: 700 1rem Georgia, serif; border-radius: 4px; }
+  .mast a { color: #fff; font-size: .9rem; padding-block: 12px; text-underline-offset: 4px; }
+  main { padding-block: 34px 52px; }
+  .intro { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 25px; }
+  h1, h2, p { margin: 0; }
+  h1, h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 500; line-height: 1.07; }
+  h1 { font-size: clamp(2.48rem, 5vw, 4.2rem); letter-spacing: -.048em; }
+  h2 { font-size: clamp(1.65rem, 3.4vw, 2.3rem); letter-spacing: -.035em; }
+  .intro p { color: var(--muted); margin-top: 10px; }
+  .budget { background: var(--lime); border: 1px solid #cddc9b; padding: 10px 16px; border-radius: 6px; min-width: 117px; }
+  .budget strong { display: block; font-size: 1.65rem; line-height: 1.12; }
+  .budget span, .eyebrow { font-size: .73rem; font-weight: 750; letter-spacing: .085em; text-transform: uppercase; }
+  .panel { background: var(--white); border: 1px solid var(--line); border-radius: 12px; min-width: 0; }
+  .scenarios { display: flex; justify-content: space-between; align-items: center; gap: 14px; border-top: 1px solid var(--line); padding-block: 14px; }
+  .scenarios p { font-weight: 700; }
+  .choices { display: flex; flex-wrap: wrap; gap: 8px; }
+  button, select, .action {
+    font: inherit; font-size: .875rem; font-weight: 650; min-height: 44px; padding: 9px 13px;
+    border: 1px solid #a4b6a8; border-radius: 6px; color: var(--ink); background: var(--white);
+  }
+  button, select, .action { cursor: pointer; }
+  .action { display: inline-flex; align-items: center; text-decoration: none; }
+  button:hover, select:hover, .action:hover { background: var(--mint); }
+  button[aria-pressed="true"] { color: #fff; background: var(--dark); border-color: var(--dark); }
+  button:active, .action:active { background: var(--lime); color: var(--ink); }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+  .mast :focus-visible { outline-color: var(--lime); }
+  .top { display: grid; grid-template-columns: 1.18fr 1fr; gap: 16px; }
+  .order, .impact { padding: clamp(16px, 3vw, 27px); }
+  .order { border-top: 4px solid var(--green); }
+  .impact { background: var(--mint); border-color: #ceddce; }
+  .eyebrow { color: var(--green); margin-bottom: 8px; }
+  .order-note { color: var(--muted); font-size: .9rem; margin-top: 8px; }
+  .order table { margin-top: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: .875rem; font-variant-numeric: tabular-nums; }
+  th, td { padding: 10px 8px; border-bottom: 1px solid var(--line); text-align: right; }
+  th:first-child, td:first-child { text-align: left; }
+  thead th { color: var(--muted); font-size: .76rem; font-weight: 730; vertical-align: bottom; }
+  .order th:first-child, .order td:first-child { padding-left: 0; }
+  .order th:last-child, .order td:last-child { padding-right: 0; }
+  .order tbody th { font-weight: 650; }
+  .order-total { margin-top: 15px; display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 3px 14px; }
+  .order-total strong { font-size: 1.28rem; }
+  .order-total span { color: var(--muted); font-size: .9rem; }
+  .impact-total { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-top: 7px; }
+  .impact-total strong { font: 500 clamp(2.5rem, 5vw, 3.5rem)/1 Georgia, serif; letter-spacing: -.05em; }
+  .impact-total span { color: var(--muted); font-size: .9rem; }
+  .bars { list-style: none; margin: 12px 0 9px; padding: 0; }
+  .bars li + li { margin-top: 11px; }
+  .bar-label { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; font-size: .87rem; font-weight: 650; }
+  .bar-label span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .bar { height: 8px; background: repeating-linear-gradient(135deg, #c6d4c6 0 3px, #dce7da 3px 6px); border-radius: 5px; overflow: hidden; margin-top: 4px; }
+  .bar-fill { height: 100%; background: var(--green); }
+  .impact-caption { color: var(--muted); font-size: .84rem; }
+  .sensitivity { margin-top: 16px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.25fr); gap: 15px; padding: 17px 20px; align-items: center; border-left: 4px solid #869949; }
+  .sensitivity h2 { font-size: 1.43rem; }
+  .sensitivity p { font-size: .92rem; }
+  .comparison { margin-top: 32px; }
+  .section-head { display: flex; gap: 14px 20px; align-items: end; justify-content: space-between; flex-wrap: wrap; margin-bottom: 13px; }
+  .section-head p { margin-top: 7px; color: var(--muted); font-size: .89rem; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .controls label { font-size: .82rem; font-weight: 650; }
+  select { max-width: 100%; }
+  .comparison table th:first-child, .comparison table td:first-child { padding-left: 16px; }
+  .comparison table th:last-child, .comparison table td:last-child { padding-right: 16px; }
+  .comparison thead { background: #f0f3eb; }
+  .comparison thead th:first-child { border-top-left-radius: 11px; }
+  .comparison thead th:last-child { border-top-right-radius: 11px; }
+  .comparison tbody th { font-weight: 650; }
+  .comparison tbody tr.winner { background: #edf4e5; }
+  .comparison tbody tr:hover { background: #f5f7ee; }
+  .comparison td.active { font-weight: 750; color: var(--dark); }
+  .best-label { color: #30533d; font-size: .72rem; font-weight: 720; display: inline-block; margin-left: 4px; }
+  .table-footer { display: flex; align-items: center; justify-content: space-between; padding: 10px 15px; gap: 8px; flex-wrap: wrap; }
+  .table-footer p { font-size: .85rem; color: var(--muted); }
+  .evidence { margin-top: 28px; padding: 0 19px; }
+  summary { min-height: 52px; padding: 14px 0; cursor: pointer; font-weight: 700; }
+  .evidence-content { display: grid; grid-template-columns: 1.3fr 1fr; gap: 19px; padding-bottom: 21px; }
+  .evidence h3 { margin: 0 0 7px; font-size: 1rem; }
+  .evidence p { font-size: .89rem; color: var(--muted); }
+  .evidence p + p, .formula + p { margin-top: 9px; }
+  .formula { display: block; background: var(--mint); border-radius: 5px; padding: 8px 10px; margin-top: 8px; font-weight: 650; font-size: .87rem; }
+  .history table { margin: 8px 0; }
+  .history th, .history td { padding: 6px 4px; }
+  .history tbody th { font-weight: 650; }
+  .print-only { display: none; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+  @media (max-width: 760px) {
+    .wrap { width: min(580px, calc(100% - 32px)); }
+    .top, .evidence-content { grid-template-columns: 1fr; }
+    .intro { align-items: start; }
+  }
+  @media (max-width: 510px) {
+    main { padding-top: 24px; }
+    .intro { flex-direction: column; gap: 13px; margin-bottom: 17px; }
+    .budget { display: flex; align-items: baseline; gap: 8px; padding: 7px 10px; }
+    .budget strong { font-size: 1.2rem; }
+    .scenarios { align-items: flex-start; flex-direction: column; gap: 7px; }
+    .sensitivity { grid-template-columns: 1fr; gap: 6px; padding: 14px; }
+    .comparison th, .comparison td { padding: 9px 4px; }
+    .comparison table th:first-child, .comparison table td:first-child { padding-left: 8px; }
+    .comparison table th:last-child, .comparison table td:last-child { padding-right: 8px; }
+    .best-label { display: block; margin: 0; }
+  }
+  @page { size: letter; margin: 0.5in; }
+  @media print {
+    :root { background: white; }
+    .mast, main { display: none; }
+    .print-only { display: block; }
+    .brief { color: #192d25; font-size: 10.5pt; line-height: 1.35; }
+    .brief-head { border-top: 7px solid #27634e; border-bottom: 1px solid #b6c4b8; padding: 14px 0 11px; }
+    .brief h1 { font-size: 31pt; }
+    .brief h2 { font-size: 17pt; margin: 0 0 6px; }
+    .brief section { margin-top: 16px; break-inside: avoid; }
+    .brief .eyebrow { font-size: 8.5pt; margin-bottom: 6px; }
+    .brief-head p:last-child { margin-top: 5px; }
+    .brief .print-buy { padding-left: 11px; border-left: 3px solid #27634e; }
+    .brief table { font-size: 10pt; margin: 6px 0; }
+    .brief thead th { font-size: 9pt; }
+    .brief td, .brief th { padding: 5px 7px; }
+    .brief tbody th { font-weight: 650; }
+    .brief .print-note { margin-top: 6px; }
+  }
+</style>
+</head>
+<body>
+<header class="mast">
+  <div class="wrap">
+    <div class="identity"><span class="mark" aria-hidden="true">TL</span> Tool Library</div>
+    <a href="buyer-brief.pdf">Buyer brief (PDF)</a>
+  </div>
+</header>
+<main class="wrap">
+  <div class="intro">
+    <div>
+      <h1>Spring tool purchase</h1>
+      <p>Choose which extra tools could fill the most reservations.</p>
+    </div>
+    <div class="budget"><strong>$180</strong><span>Budget</span></div>
+  </div>
+  <noscript><p>The interactive comparison requires JavaScript. Open the buyer brief linked above for the purchase decision and supporting data.</p></noscript>
+  <div id="planner" hidden>
+    <div class="scenarios">
+      <p id="scenario-label">Reservations each added unit can fill per month</p>
+      <div class="choices" role="group" aria-labelledby="scenario-label">
+        <button type="button" data-rate="2" aria-pressed="true">2 · Base case</button>
+        <button type="button" data-rate="3" aria-pressed="false">3 · Higher capacity</button>
+      </div>
+    </div>
+
+    <div class="top">
+      <section class="panel order" aria-labelledby="buy-title">
+        <p class="eyebrow">Recommended order</p>
+        <h2 id="buy-title"></h2>
+        <p class="order-note" id="order-note"></p>
+        <table aria-label="Recommended order and stock after purchase">
+          <thead><tr><th scope="col">Tool</th><th scope="col">Buy</th><th scope="col">Stock after</th><th scope="col">Cost</th></tr></thead>
+          <tbody id="order-lines"></tbody>
+        </table>
+        <p class="order-total"><strong id="order-cost"></strong><span id="order-balance"></span></p>
+      </section>
+
+      <section class="panel impact" aria-labelledby="impact-title">
+        <p class="eyebrow">Four-month estimate</p>
+        <h2 id="impact-title">Reservations recovered</h2>
+        <p class="impact-total"><strong id="impact-total"></strong><span id="impact-remaining"></span></p>
+        <ul class="bars" id="impact-bars" aria-label="Recovered reservations by tool"></ul>
+        <p class="impact-caption">Each bar shows the share of that tool’s observed unmet demand recovered.</p>
+      </section>
+    </div>
+    <p class="sr-only" aria-live="polite" id="scenario-status"></p>
+
+    <section class="panel sensitivity" aria-labelledby="sensitivity-title">
+      <h2 id="sensitivity-title">When capacity rises</h2>
+      <p id="sensitivity-copy"></p>
+    </section>
+
+    <section class="comparison" aria-labelledby="compare-title">
+      <div class="section-head">
+        <div>
+          <h2 id="compare-title">Compare feasible purchases</h2>
+          <p>Reservations recovered across all four months. Impact ties favor lower cost.</p>
+        </div>
+        <div class="controls">
+          <label for="ranking">Sort by</label>
+          <select id="ranking">
+            <option value="2">Base-case recovery</option>
+            <option value="3">Higher-capacity recovery</option>
+            <option value="cost">Lowest cost</option>
+          </select>
+          <button type="button" id="csv">Download CSV</button>
+        </div>
+      </div>
+      <div class="panel">
+        <table aria-labelledby="compare-title">
+          <thead>
+            <tr>
+              <th scope="col">Clamps</th>
+              <th scope="col" aria-label="Tile cutters">Cutters</th>
+              <th scope="col" aria-label="Socket sets">Socket sets</th>
+              <th scope="col" id="cost-head">Cost</th>
+              <th scope="col" id="base-head" aria-label="Recovered at two per added unit per month">2/unit</th>
+              <th scope="col" id="high-head" aria-label="Recovered at three per added unit per month">3/unit</th>
+            </tr>
+          </thead>
+          <tbody id="comparison-lines"></tbody>
+        </table>
+        <div class="table-footer">
+          <p id="row-count" aria-live="polite"></p>
+          <button type="button" id="expand" aria-controls="comparison-lines" aria-expanded="false"></button>
+        </div>
+      </div>
+    </section>
+
+    <details class="panel evidence">
+      <summary>Reservation history and calculation</summary>
+      <div class="evidence-content">
+        <section class="history" aria-labelledby="history-title">
+          <h3 id="history-title">Fictional reservation history</h3>
+          <p>Cells show fulfilled / unfilled reservations. Months are in the order supplied.</p>
+          <table aria-labelledby="history-title">
+            <thead><tr><th scope="col">Tool</th><th scope="col">M1</th><th scope="col">M2</th><th scope="col">M3</th><th scope="col">M4</th><th scope="col">Total</th></tr></thead>
+            <tbody id="history-lines"></tbody>
+          </table>
+          <p id="inputs"></p>
+        </section>
+        <section aria-labelledby="method-title">
+          <h3 id="method-title">How the estimate works</h3>
+          <p>For each tool and each month, take the smaller of observed unfilled reservations and the added units’ monthly capacity.</p>
+          <span class="formula">Recovered = min(unfilled, added units × monthly rate)</span>
+          <p>Sum those values across all tools and months. Each order uses whole units and costs $180 or less, including the option to buy nothing.</p>
+          <p>The estimate uses the four historical months as a demand proxy for spring. The budget covers the listed unit prices.</p>
+        </section>
+      </div>
+    </details>
+  </div>
+</main>
+
+<article class="print-only brief" aria-label="Spring tool purchase buyer brief">
+  <header class="brief-head">
+    <p class="eyebrow">Tool Library · Buyer brief</p>
+    <h1>Spring tool purchase</h1>
+    <p>$180 budget · Four months of fictional reservation history</p>
+  </header>
+  <section class="print-buy">
+    <h2 id="print-buy-title"></h2>
+    <p id="print-buy-copy"></p>
+    <p class="print-note" id="print-stock"></p>
+  </section>
+  <section>
+    <h2>Compare the leading orders</h2>
+    <table aria-label="Leading orders and reservations recovered">
+      <thead><tr><th scope="col">Order</th><th scope="col">Cost</th><th scope="col">At 2/unit</th><th scope="col">At 3/unit</th></tr></thead>
+      <tbody id="print-options"></tbody>
+    </table>
+    <p id="print-sensitivity"></p>
+  </section>
+  <section>
+    <h2>Reservation history</h2>
+    <p>Each cell shows fulfilled / unfilled reservations.</p>
+    <table aria-label="Fictional reservation history">
+      <thead><tr><th scope="col">Tool</th><th scope="col">Stock</th><th scope="col">Unit cost</th><th scope="col">M1</th><th scope="col">M2</th><th scope="col">M3</th><th scope="col">M4</th><th scope="col">Total</th></tr></thead>
+      <tbody id="print-history"></tbody>
+    </table>
+  </section>
+  <section>
+    <h2>How the estimate works</h2>
+    <p>For each tool and month, count the smaller of observed unmet demand and added units × monthly capacity. Sum across all tools and months. Compare every whole-unit order within $180 and favor the lower price when recovery is tied.</p>
+    <p class="print-note" id="print-method"></p>
+  </section>
+</article>
+
+<script>
+"use strict";
+
+const budget = 180;
+const tools = [
+  { name: "Clamps", unit: "clamp", stock: 8, cost: 22, history: [[22, 6], [24, 8], [19, 5], [25, 10]] },
+  { name: "Tile cutters", unit: "tile cutter", stock: 3, cost: 85, history: [[12, 3], [10, 4], [11, 2], [13, 5]] },
+  { name: "Socket sets", unit: "socket set", stock: 5, cost: 48, history: [[16, 2], [18, 3], [20, 4], [17, 3]] },
+];
+const rates = [2, 3];
+const sum = values => values.reduce((total, value) => total + value, 0);
+const unmet = tools.map(tool => sum(tool.history.map(([, unfilled]) => unfilled)));
+const totalUnmet = sum(unmet);
+const money = amount => `$${amount}`;
+const byId = id => document.getElementById(id);
+const describeOrder = quantities => {
+  const items = quantities.flatMap((quantity, i) => quantity
+    ? [`${quantity} ${quantity === 1 ? tools[i].unit : tools[i].name.toLowerCase()}`]
+    : []);
+  return items.join(" + ") || "Buy nothing";
+};
+const compareCost = (a, b) => a.cost - b.cost;
+const compareRecovery = rate => (a, b) => b.recovery[rate].total - a.recovery[rate].total || compareCost(a, b);
+
+function enumerateOrders(index = 0, remaining = budget, quantities = []) {
+  if (index === tools.length) {
+    const recovery = Object.fromEntries(rates.map(rate => {
+      const perTool = tools.map((tool, i) => sum(
+        tool.history.map(([, unfilled]) => Math.min(unfilled, quantities[i] * rate))
+      ));
+      return [rate, { total: sum(perTool), perTool }];
+    }));
+    return [{ quantities, cost: budget - remaining, recovery }];
+  }
+
+  const orders = [];
+  const unitCost = tools[index].cost;
+  for (let quantity = 0; quantity * unitCost <= remaining; quantity += 1) {
+    orders.push(...enumerateOrders(index + 1, remaining - quantity * unitCost, [...quantities, quantity]));
+  }
+  return orders;
+}
+
+const orders = enumerateOrders();
+const rankings = Object.fromEntries(rates.map(rate => [rate, [...orders].sort(compareRecovery(rate))]));
+rankings.cost = [...orders].sort(compareCost);
+const base = rankings[2][0];
+const higher = rankings[3][0];
+const baseTies = rankings[2].filter(order => order.recovery[2].total === base.recovery[2].total);
+const showCount = 8;
+let rate = 2;
+let sort = "2";
+let expanded = false;
+
+function renderScenario() {
+  const best = rankings[rate][0];
+  const impact = best.recovery[rate];
+  const name = describeOrder(best.quantities);
+  byId("buy-title").textContent = name;
+  byId("order-note").textContent = rate === 2
+    ? "A sixth clamp would use the last $22 and fill zero additional reservations."
+    : "Highest recovery if each added unit can fill three reservations per month.";
+  byId("order-lines").innerHTML = tools.map((tool, i) => {
+    const added = best.quantities[i];
+    return `<tr><th scope="row">${tool.name}</th><td>${added}</td><td>${tool.stock + added}</td><td>${money(added * tool.cost)}</td></tr>`;
+  }).join("");
+  byId("order-cost").textContent = `${money(best.cost)} total`;
+  byId("order-balance").textContent = `${money(budget - best.cost)} left in budget`;
+  byId("impact-total").textContent = `${impact.total} of ${totalUnmet}`;
+  byId("impact-remaining").textContent = `${totalUnmet - impact.total} still unfilled`;
+  byId("impact-bars").innerHTML = tools.map((tool, i) => `
+    <li>
+      <div class="bar-label"><span>${tool.name}</span><span>${impact.perTool[i]} / ${unmet[i]}</span></div>
+      <div class="bar" aria-hidden="true"><div class="bar-fill" style="width:${100 * impact.perTool[i] / unmet[i]}%"></div></div>
+    </li>`).join("");
+  byId("scenario-status").textContent = `${rate} per unit per month. ${name}. ${money(best.cost)}. ${impact.total} reservations recovered.`;
+
+  document.querySelectorAll("[data-rate]").forEach(button => {
+    button.setAttribute("aria-pressed", String(Number(button.dataset.rate) === rate));
+  });
+}
+
+function renderComparison() {
+  const ranked = rankings[sort];
+  const visible = expanded ? ranked : ranked.slice(0, showCount);
+  byId("comparison-lines").innerHTML = visible.map(order => {
+    const best = order === rankings[rate][0];
+    const label = best ? '<span class="best-label">Best</span>' : "";
+    const [clamps, cutters, sockets] = order.quantities;
+    return `<tr${best ? ' class="winner"' : ""}>
+      <td>${clamps}</td><td>${cutters}</td><td>${sockets}</td>
+      <td>${money(order.cost)}</td>
+      <td${rate === 2 ? ' class="active"' : ""}>${order.recovery[2].total}${rate === 2 ? label : ""}</td>
+      <td${rate === 3 ? ' class="active"' : ""}>${order.recovery[3].total}${rate === 3 ? label : ""}</td>
+    </tr>`;
+  }).join("");
+  for (const [value, id] of [["cost", "cost-head"], ["2", "base-head"], ["3", "high-head"]]) {
+    const head = byId(id);
+    if (value === sort) head.setAttribute("aria-sort", value === "cost" ? "ascending" : "descending");
+    else head.removeAttribute("aria-sort");
+  }
+  byId("ranking").value = sort;
+  byId("row-count").textContent = `Showing ${visible.length} of ${orders.length} orders`;
+  byId("expand").textContent = expanded ? "Show fewer" : `Show all ${orders.length} orders`;
+  byId("expand").setAttribute("aria-expanded", String(expanded));
+}
+
+function renderHistory() {
+  function historyRows(withStock) {
+    return tools.map((tool, i) => {
+      const totalFulfilled = sum(tool.history.map(([fulfilled]) => fulfilled));
+      const stock = withStock ? `<td>${tool.stock}</td><td>${money(tool.cost)}</td>` : "";
+      const months = tool.history.map(([fulfilled, unfilled]) => `<td>${fulfilled}/${unfilled}</td>`).join("");
+      return `<tr><th scope="row">${tool.name}</th>${stock}${months}<td>${totalFulfilled}/${unmet[i]}</td></tr>`;
+    }).join("");
+  }
+  byId("history-lines").innerHTML = historyRows(false);
+  byId("print-history").innerHTML = historyRows(true);
+  byId("inputs").textContent = "Current stock and unit cost: " + tools
+    .map(tool => `${tool.name.toLowerCase()} ${tool.stock} at ${money(tool.cost)} each`).join(" · ");
+}
+
+function renderBrief() {
+  const tied = baseTies[1];
+  const cheaper = rankings[2].find(order => order.recovery[2].total < base.recovery[2].total);
+  const noPurchase = rankings.cost[0];
+  const baseRecovered = base.recovery[2].total;
+  const higherRecovered = higher.recovery[3].total;
+  byId("sensitivity-copy").innerHTML = `At 3 per unit per month, <strong>${describeOrder(higher.quantities)}</strong> leads with <strong>${higherRecovered} recovered for ${money(higher.cost)}</strong>. The base-case order recovers ${base.recovery[3].total} at that rate. At 2 per unit, the higher-capacity order recovers ${higher.recovery[2].total}.`;
+  byId("print-buy-title").textContent = `Buy ${describeOrder(base.quantities)} for ${money(base.cost)}`;
+  byId("print-buy-copy").textContent = `At two reservations per added unit per month, this order recovers ${baseRecovered} of ${totalUnmet} across four months, leaving ${totalUnmet - baseRecovered} unfilled and ${money(budget - base.cost)} in the budget. An extra clamp would use the remaining ${money(budget - base.cost)} and recover zero more reservations.`;
+  byId("print-stock").textContent = "Stock after purchase: " + tools.map((tool, i) =>
+    `${tool.stock + base.quantities[i]} ${tool.name.toLowerCase()}`).join(" · ");
+  byId("print-options").innerHTML = [base, tied, cheaper, higher, noPurchase].map(order =>
+    `<tr><th scope="row">${describeOrder(order.quantities)}</th><td>${money(order.cost)}</td><td>${order.recovery[2].total}</td><td>${order.recovery[3].total}</td></tr>`
+  ).join("");
+  byId("print-sensitivity").textContent = `At three per unit per month, ${describeOrder(higher.quantities)} leads at ${higherRecovered} recovered, leaving ${totalUnmet - higherRecovered} unfilled. It costs ${money(higher.cost - base.cost)} more than the base-case order and recovers ${higherRecovered - base.recovery[3].total} more at this rate.`;
+  byId("print-method").textContent = `The ${orders.length} feasible orders include buying nothing. The four historical months serve as a demand proxy for spring. The companion planner lists every order and exports the comparison.`;
+}
+
+function downloadComparison() {
+  const header = [
+    "Clamps added", "Tile cutters added", "Socket sets added", "Cost ($)", "Budget left ($)",
+    "Recovered at 2 per unit per month", "Still unfilled at 2 per unit per month",
+    "Recovered at 3 per unit per month", "Still unfilled at 3 per unit per month",
+  ];
+  const rows = rankings[sort].map(order => [
+    ...order.quantities, order.cost, budget - order.cost,
+    ...rates.flatMap(capacity => [order.recovery[capacity].total, totalUnmet - order.recovery[capacity].total]),
+  ]);
+  const csv = [header, ...rows].map(row => row.join(",")).join("\r\n") + "\r\n";
+  const url = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "spring-purchase-options.csv";
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+document.querySelectorAll("[data-rate]").forEach(button => button.addEventListener("click", () => {
+  rate = Number(button.dataset.rate);
+  sort = String(rate);
+  renderScenario();
+  renderComparison();
+}));
+byId("ranking").addEventListener("change", event => {
+  sort = event.target.value;
+  renderComparison();
+});
+byId("expand").addEventListener("click", () => {
+  expanded = !expanded;
+  renderComparison();
+});
+byId("csv").addEventListener("click", downloadComparison);
+
+renderScenario();
+renderComparison();
+renderHistory();
+renderBrief();
+byId("planner").hidden = false;
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Shared Cupboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="ledger.js"></script>
+  <script defer src="art.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview">
+        <canvas data-icon="cupboard" width="24" height="24" aria-hidden="true"></canvas>
+        <span>Shared Cupboard<small>Building lending desk</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#overview"><canvas data-icon="grid" width="20" height="20" aria-hidden="true"></canvas>Overview</a>
+        <a href="#loans"><canvas data-icon="loan" width="20" height="20" aria-hidden="true"></canvas>Current loans</a>
+        <a href="#reservations"><canvas data-icon="calendar" width="20" height="20" aria-hidden="true"></canvas>Reservations</a>
+        <a href="#availability"><canvas data-icon="search" width="20" height="20" aria-hidden="true"></canvas>Availability</a>
+      </nav>
+      <div class="sidebar-foot"><span class="offline-dot"></span><div><strong>Offline workspace</strong><br>Records stay in this browser</div></div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <div class="topbar"><span id="section-name"></span><span class="today" id="today"></span></div>
+      <div id="storage-alert" class="error" role="alert" hidden></div>
+      <div id="view"></div>
+    </main>
+  </div>
+  <div id="toast" role="status"></div>
+  <dialog id="dialog" aria-labelledby="dialog-title">
+    <form id="record-form">
+      <div id="dialog-content"></div>
+    </form>
+  </dialog>
+  <section id="print-sheet" aria-label="Current loans print sheet"></section>
+</body>
+</html>

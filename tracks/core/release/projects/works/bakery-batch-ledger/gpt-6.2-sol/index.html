@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Bake Ledger</title>
+  <style>
+    :root {
+      --paper: #f7f3ea;
+      --card: #fffdf7;
+      --ink: #222c25;
+      --muted: #535e54;
+      --line: #e0dbce;
+      --green: #243e32;
+      --green-hover: #355743;
+      --bun: #a4492b;
+      --bun-tint: #f4e4d7;
+      --roll: #46674f;
+      --roll-tint: #e4ebe0;
+      --error: #a02c25;
+      font: 16px/1.5 system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; }
+    button, input { font: inherit; }
+    button { cursor: pointer; touch-action: manipulation; }
+    button:disabled { cursor: default; opacity: .55; }
+    button, input { border-radius: 8px; }
+    :focus-visible { outline: 3px solid #9b452a; outline-offset: 3px; }
+    h1, h2, p { margin: 0; }
+    h1, h2, .big-num { font-family: Georgia, serif; font-weight: 400; }
+    h2 { font-size: 1.7rem; line-height: 1.15; letter-spacing: -.035em; }
+    .wrap { width: min(1232px, calc(100% - 64px)); margin-inline: auto; }
+    .topbar { background: var(--card); border-bottom: 1px solid var(--line); }
+    .topbar .wrap {
+      min-height: 66px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding-block: 8px;
+    }
+    .brand { display: flex; gap: 10px; align-items: center; font-weight: 750; letter-spacing: -.025em; }
+    .brand-mark {
+      position: relative;
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: var(--green);
+      color: #f5deac;
+      flex: none;
+    }
+    .brand-mark::before {
+      content: "";
+      position: absolute;
+      inset: 10px 6px 9px;
+      border: 1.5px solid;
+      border-radius: 14px 14px 6px 6px;
+    }
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      top: 11px;
+      left: 13px;
+      width: 6px;
+      height: 6px;
+      border-right: 1.5px solid;
+      border-left: 1.5px solid;
+      transform: skewX(-25deg);
+    }
+    .header-actions, .dialog-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .button {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 9px 15px;
+      font-size: .875rem;
+      font-weight: 700;
+      color: var(--green);
+      border: 1px solid var(--line);
+      background: var(--card);
+      transition: background-color 150ms ease;
+    }
+    .button:not(:disabled):hover { background: #f0eadf; }
+    .button.primary { color: white; background: var(--green); border-color: var(--green); }
+    .button.primary:not(:disabled):hover { background: var(--green-hover); }
+    .short-label { display: none; }
+    main { padding-block: 26px 32px; }
+    .hero {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 30px 34px;
+      background: var(--green);
+      color: var(--card);
+      border-radius: 18px;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0 0 0 52%;
+      background: repeating-radial-gradient(ellipse at 80% 112%, transparent 0 16px, #f3d3a626 17px 18px, transparent 19px 32px);
+      mask-image: linear-gradient(90deg, transparent, black 70%);
+    }
+    h1 { font-size: clamp(2.45rem, 5vw, 4.1rem); line-height: .99; letter-spacing: -.055em; }
+    .hero p { color: #e9e3cf; margin-top: 11px; }
+    .hero-period {
+      text-align: right;
+      padding: 9px 14px;
+      background: #243e32;
+      border: 1px solid #8c9883;
+      border-radius: 9px;
+      flex: none;
+    }
+    .eyebrow { display: block; font-size: .72rem; font-weight: 750; letter-spacing: .105em; text-transform: uppercase; }
+    .hero-period .eyebrow { color: #e9e3cf; }
+    .period-value { display: block; margin-top: 2px; font-size: .95rem; font-weight: 650; }
+    .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-block: 16px 24px; }
+    .card, .panel { background: var(--card); border: 1px solid var(--line); border-radius: 15px; min-width: 0; }
+    .card { padding: 17px 20px 18px; }
+    .bun { --accent: var(--bun); --tint: var(--bun-tint); }
+    .roll { --accent: var(--roll); --tint: var(--roll-tint); }
+    .card-top { display: flex; align-items: center; justify-content: space-between; gap: 6px 14px; flex-wrap: wrap; }
+    .product-title { display: flex; align-items: center; gap: 9px; }
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); display: inline-block; flex: none; }
+    .capacity { color: var(--muted); background: var(--tint); padding: 3px 9px; border-radius: 20px; font-size: .78rem; font-weight: 650; }
+    .card dl { display: flex; flex-wrap: wrap; gap: 8px 0; margin: 15px 0 0; }
+    .card dl div { flex: 1 1 22%; min-width: 73px; padding: 0 10px; border-left: 1px solid var(--line); }
+    .card dl div:first-child { border: 0; padding-left: 0; }
+    .card dl div:last-child { padding-right: 0; }
+    dt { color: var(--muted); font-size: .78rem; }
+    dd { margin: 0; overflow-wrap: anywhere; }
+    .big-num { display: block; font-size: clamp(1.45rem, 2.6vw, 2.2rem); line-height: 1.13; letter-spacing: -.055em; }
+    .rate { color: var(--accent); }
+    .layout { display: grid; grid-template-columns: minmax(0, 1.85fr) minmax(305px, 1fr); gap: 16px; align-items: start; }
+    .panel-head { padding: 16px 18px 13px; display: flex; align-items: center; gap: 10px; justify-content: space-between; }
+    .panel-head p { margin-top: 4px; color: var(--muted); font-size: .84rem; }
+    .entry-button { flex: none; }
+    table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+    th { font-weight: 650; }
+    .ledger thead { background: #f1ede3; }
+    .ledger thead th { font-size: .78rem; padding: 5px 4px; }
+    .ledger thead tr:first-child th { border-top: 1px solid var(--line); }
+    .ledger thead .bun, .ledger thead .roll { color: var(--accent); background: var(--tint); font-size: .82rem; }
+    .ledger thead tr:last-child th { font-weight: 550; color: var(--muted); }
+    .ledger :is(th, td) { text-align: center; }
+    .ledger .date { text-align: left; padding-left: 18px; }
+    .ledger tbody tr { border-top: 1px solid var(--line); }
+    .ledger tbody :is(th, td) { padding: 5px 4px; font-size: .9rem; overflow-wrap: anywhere; }
+    .ledger tbody .date { padding-block: 8px; }
+    .ledger td:last-child { padding-right: 10px; }
+    .sub, .col-mobile { color: var(--muted); font-size: .75rem; font-weight: 500; display: block; }
+    .col-mobile { display: none; }
+    .sold, .weekday .percent { font-weight: 750; }
+    .edit {
+      min-width: 44px;
+      min-height: 44px;
+      color: var(--green);
+      font-weight: 700;
+      font-size: .8rem;
+      background: transparent;
+      border: 1px solid transparent;
+    }
+    .edit:hover { background: var(--roll-tint); }
+    .weekday thead { background: #f1ede3; border-block: 1px solid var(--line); font-size: .79rem; }
+    .weekday th, .weekday td { text-align: left; padding: 5px 7px; }
+    .weekday th:first-child { padding-left: 18px; }
+    .weekday td:last-child { padding-right: 16px; }
+    .weekday tbody tr + tr { border-top: 1px solid var(--line); }
+    .weekday tbody th { font-size: .825rem; }
+    .weekday td { width: 33%; }
+    .weekday .percent { color: var(--accent, var(--muted)); font-size: .82rem; }
+    .weekday tr:not(.has-data) :is(th, .percent) { color: var(--muted); }
+    .weekday .has-data th, .weekday .has-data td { padding-block: 7px; }
+    .bar { display: block; margin: 3px 0; height: 4px; border-radius: 4px; background: var(--tint); overflow: hidden; }
+    .bar i { display: block; height: 100%; background: var(--accent); }
+    .panel-note { padding: 10px 18px 12px; color: var(--muted); font-size: .75rem; border-top: 1px solid var(--line); }
+    footer { margin-top: 17px; display: flex; gap: 6px 24px; justify-content: space-between; flex-wrap: wrap; color: var(--muted); font-size: .79rem; }
+    .storage { display: inline-flex; align-items: center; gap: 7px; }
+    .storage::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--roll); flex: none; }
+    .notice { margin: 0 0 14px; border: 1px solid #bc8761; border-radius: 8px; padding: 9px 13px; background: #fcf0df; color: #743921; }
+    .message { margin: 0; font-size: .85rem; color: var(--green); }
+    .message:not(:empty) { margin-bottom: 12px; }
+    dialog {
+      width: min(516px, calc(100% - 28px));
+      max-height: calc(100% - 30px);
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      padding: 0;
+      background: var(--card);
+      color: var(--ink);
+      box-shadow: 0 18px 64px #14251f48;
+    }
+    dialog::backdrop { background: #19291f82; }
+    .dialog-inner { padding: 22px; }
+    .dialog-inner > p { margin: 7px 0 15px; color: var(--muted); font-size: .9rem; }
+    label { display: block; font-weight: 650; font-size: .85rem; }
+    input {
+      display: block;
+      width: 100%;
+      min-height: 44px;
+      margin-top: 4px;
+      padding: 7px 10px;
+      border: 1px solid #aaa798;
+      color: inherit;
+      background: #fff;
+    }
+    input[aria-invalid="true"] { border: 2px solid var(--error); }
+    fieldset { border: 1px solid var(--line); border-radius: 10px; padding: 6px 11px 8px; margin: 12px 0; min-width: 0; }
+    legend { font-weight: 750; color: var(--accent); padding: 0 4px; }
+    legend span { font-weight: 500; font-size: .78rem; color: var(--muted); }
+    .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .preview { color: var(--muted); font-size: .78rem; margin-top: 6px; }
+    .error { color: var(--error); font-size: .79rem; margin: 4px 0 0; }
+    .error:empty { margin: 0; }
+    .dialog-actions { justify-content: flex-end; margin-top: 14px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+    [hidden] { display: none !important; }
+    @media screen and (max-width: 960px) {
+      .layout { grid-template-columns: 1fr; }
+      .hero { padding: 24px; }
+    }
+    @media screen and (max-width: 610px) {
+      .wrap { width: calc(100% - 28px); }
+      .header-actions { gap: 4px; justify-content: flex-end; }
+      .header-actions .button { padding-inline: 9px; font-size: .78rem; }
+      main { padding-block: 14px 24px; }
+      .hero { flex-wrap: wrap; align-items: start; padding: 20px 16px; border-radius: 14px; }
+      .hero-period { text-align: left; padding: 6px 9px; }
+      .hero p { font-size: .9rem; }
+      .cards { grid-template-columns: 1fr; gap: 10px; margin-block: 10px 16px; }
+      .card { padding: 12px 14px; }
+      .card dl { margin-top: 10px; }
+      .card dl div { min-width: 58px; padding-inline: 8px; }
+      .card dl div:last-child { flex-basis: 27%; }
+      .layout { gap: 12px; }
+      .panel-head { padding-inline: 12px; }
+      .panel-head h2 { font-size: 1.5rem; }
+      .ledger .date { padding-left: 10px; }
+      .ledger td:last-child { padding-right: 2px; }
+      .ledger thead th, .ledger tbody :is(th, td) { padding-inline: 2px; }
+    }
+    @media screen and (max-width: 440px) {
+      .brand { white-space: nowrap; }
+      .full-label { display: none; }
+      .short-label { display: inline; }
+      .ledger, .ledger tbody { display: block; }
+      .ledger thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+      .ledger tbody tr { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); padding: 0 12px 9px; }
+      .ledger tbody .date { grid-column: 1 / 5; padding: 6px 0; align-self: center; }
+      .ledger tbody td:last-child { grid-column: 5 / 7; grid-row: 1; justify-self: end; padding: 0; }
+      .ledger tbody td { padding-inline: 1px; }
+      .ledger tbody td:nth-child(n+2):nth-child(-n+4) { background: var(--bun-tint); }
+      .ledger tbody td:nth-child(n+5):nth-child(-n+7) { background: var(--roll-tint); }
+      .col-mobile { display: block; line-height: 1.15; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition: none !important; }
+    }
+    @media print {
+      .topbar, .entry-button, .edit, .ledger thead th:last-child[rowspan], .ledger td:last-child, footer .storage { display: none; }
+      .wrap { width: 100%; }
+      .layout { display: block; }
+      .panel { margin-bottom: 12px; }
+      .ledger tr, .card { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span> Bake Ledger</div>
+      <div class="header-actions">
+        <button type="button" class="button" id="backup"><span class="full-label">Download backup</span><span class="short-label">Back up</span></button>
+        <button type="button" class="button" id="restore"><span class="full-label">Restore backup</span><span class="short-label">Restore</span></button>
+        <input type="file" id="backup-file" accept=".json,application/json" hidden>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <noscript><p class="notice">Enable JavaScript in your browser to use the ledger.</p></noscript>
+    <p class="notice" id="notice" role="alert" hidden></p>
+    <p class="message" id="status" role="status"></p>
+    <section class="hero" aria-labelledby="title">
+      <div>
+        <h1 id="title">Production &amp; leftovers</h1>
+        <p>Track what came out of the oven and what was left at closing.</p>
+      </div>
+      <div class="hero-period">
+        <span class="eyebrow">Recorded dates</span>
+        <span class="period-value" id="period"></span>
+      </div>
+    </section>
+
+    <section class="cards" id="cards" aria-label="Product totals"></section>
+
+    <div class="layout">
+      <section class="panel" aria-labelledby="ledger-title">
+        <div class="panel-head">
+          <div>
+            <h2 id="ledger-title">Daily ledger</h2>
+            <p id="ledger-count"></p>
+          </div>
+          <button type="button" class="button primary entry-button" id="add">+ Add day</button>
+        </div>
+        <table class="ledger" role="table" aria-labelledby="ledger-title">
+          <colgroup span="1"></colgroup>
+          <colgroup span="3"></colgroup>
+          <colgroup span="3"></colgroup>
+          <colgroup span="1"></colgroup>
+          <thead>
+            <tr>
+              <th class="date" id="date-col" scope="col" rowspan="2">Date</th>
+              <th class="bun" id="bun-cols" scope="colgroup" colspan="3">Buns</th>
+              <th class="roll" id="roll-cols" scope="colgroup" colspan="3">Rolls</th>
+              <th id="action-col" scope="col" rowspan="2"><span class="sr-only">Action</span></th>
+            </tr>
+            <tr>
+              <th scope="col" id="bun-trays">Trays</th><th scope="col" id="bun-left">Left</th><th scope="col" id="bun-sold">Est. sold</th>
+              <th scope="col" id="roll-trays">Trays</th><th scope="col" id="roll-left">Left</th><th scope="col" id="roll-sold">Est. sold</th>
+            </tr>
+          </thead>
+          <tbody id="days" role="rowgroup"></tbody>
+        </table>
+        <p class="panel-note">Estimated sold = items baked − items left at closing.</p>
+      </section>
+
+      <section class="panel" aria-labelledby="weekday-title">
+        <div class="panel-head">
+          <div>
+            <h2 id="weekday-title">By weekday</h2>
+            <p>Weighted leftover rate and estimated sales</p>
+          </div>
+        </div>
+        <table class="weekday" aria-labelledby="weekday-title">
+          <thead>
+            <tr><th scope="col">Day</th><th scope="col"><span class="dot bun" aria-hidden="true"></span> Buns</th><th scope="col"><span class="dot roll" aria-hidden="true"></span> Rolls</th></tr>
+          </thead>
+          <tbody id="weekdays"></tbody>
+        </table>
+        <p class="panel-note">Rate = total left ÷ total baked. A dash means no items were baked.</p>
+      </section>
+    </div>
+    <footer>
+      <span class="storage" id="storage-label">Offline · Saved in this browser</span>
+      <span>1 tray = 12 buns or 8 rolls</span>
+    </footer>
+  </main>
+
+  <dialog id="editor" aria-labelledby="editor-title">
+    <form class="dialog-inner" id="day-form" novalidate>
+      <h2 id="editor-title">Add day</h2>
+      <p>Enter whole counts. Use 0 when none were baked or left.</p>
+      <label for="day-date">Date</label>
+      <input id="day-date" name="date" type="date" min="0001-01-01" max="9999-12-31" required aria-describedby="date-error">
+      <p class="error" id="date-error"></p>
+      <fieldset class="bun">
+        <legend>Buns <span>· 12 per tray</span></legend>
+        <div class="fields">
+          <div>
+            <label for="buns-trays">Trays baked</label>
+            <input id="buns-trays" name="bunTrays" type="number" min="0" step="1" required aria-describedby="bunTrays-error">
+            <p class="error" id="bunTrays-error"></p>
+          </div>
+          <div>
+            <label for="buns-left">Items left</label>
+            <input id="buns-left" name="bunLeft" type="number" min="0" step="1" required aria-describedby="bunLeft-error">
+            <p class="error" id="bunLeft-error"></p>
+          </div>
+        </div>
+        <p class="preview" id="bun-preview"></p>
+      </fieldset>
+      <fieldset class="roll">
+        <legend>Rolls <span>· 8 per tray</span></legend>
+        <div class="fields">
+          <div>
+            <label for="rolls-trays">Trays baked</label>
+            <input id="rolls-trays" name="rollTrays" type="number" min="0" step="1" required aria-describedby="rollTrays-error">
+            <p class="error" id="rollTrays-error"></p>
+          </div>
+          <div>
+            <label for="rolls-left">Items left</label>
+            <input id="rolls-left" name="rollLeft" type="number" min="0" step="1" required aria-describedby="rollLeft-error">
+            <p class="error" id="rollLeft-error"></p>
+          </div>
+        </div>
+        <p class="preview" id="roll-preview"></p>
+      </fieldset>
+      <p class="error" id="form-error" role="alert"></p>
+      <div class="dialog-actions">
+        <button type="button" class="button" id="cancel">Cancel</button>
+        <button type="submit" class="button primary">Save day</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="restore-dialog" aria-labelledby="restore-title">
+    <div class="dialog-inner">
+      <h2 id="restore-title">Restore backup</h2>
+      <p id="restore-description"></p>
+      <p class="error" id="restore-error" role="alert"></p>
+      <div class="dialog-actions">
+        <button type="button" class="button" id="restore-cancel" autofocus>Cancel</button>
+        <button type="button" class="button primary" id="restore-confirm">Replace ledger</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    "use strict";
+
+    const products = [
+      { key: "bun", name: "Buns", singular: "Bun", capacity: 12, trays: "bunTrays", left: "bunLeft" },
+      { key: "roll", name: "Rolls", singular: "Roll", capacity: 8, trays: "rollTrays", left: "rollLeft" },
+    ];
+    const initialRows = [
+      { date: "2026-11-02", bunTrays: 4, bunLeft: 8, rollTrays: 3, rollLeft: 3 },
+      { date: "2026-11-03", bunTrays: 5, bunLeft: 14, rollTrays: 4, rollLeft: 10 },
+      { date: "2026-11-09", bunTrays: 4, bunLeft: 4, rollTrays: 3, rollLeft: 2 },
+      { date: "2026-11-10", bunTrays: 5, bunLeft: 18, rollTrays: 4, rollLeft: 12 },
+    ];
+    const weekdayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    const storageKey = "bake-ledger-v1";
+    const number = new Intl.NumberFormat("en-US");
+    const decimal = new Intl.NumberFormat("en-US", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+    const dateFormat = new Intl.DateTimeFormat("en-US", { dateStyle: "medium", timeZone: "UTC" });
+    const $ = id => document.getElementById(id);
+    const form = $("day-form");
+    const editor = $("editor");
+    const restoreDialog = $("restore-dialog");
+
+    let rows = initialRows;
+    let savedSnapshot = null;
+    let storageReady = false;
+    let savedDataInvalid = false;
+    let originalDate = null;
+    let attempted = false;
+    let pendingBackup = null;
+
+    const dateObject = date => new Date(date + "T00:00:00Z");
+    const weekday = date => (dateObject(date).getUTCDay() + 6) % 7;
+
+    function validDate(date) {
+      if (typeof date !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(date) || date.startsWith("0000")) return false;
+      const parsed = dateObject(date);
+      return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === date;
+    }
+
+    function validate(row) {
+      const errors = {};
+      if (!validDate(row.date)) errors.date = "Enter a valid date.";
+      for (const product of products) {
+        const trays = row[product.trays];
+        const left = row[product.left];
+        const baked = trays * product.capacity;
+        if (!Number.isSafeInteger(trays) || trays < 0 || !Number.isSafeInteger(baked)) {
+          errors[product.trays] = "Enter a whole tray count of 0 or more within the supported range.";
+        }
+        if (!Number.isSafeInteger(left) || left < 0) {
+          errors[product.left] = "Enter a whole item count of 0 or more within the supported range.";
+        } else if (!errors[product.trays] && left > baked) {
+          errors[product.left] = `Only ${number.format(baked)} baked. Reduce items left or correct the tray count.`;
+        }
+      }
+      return errors;
+    }
+
+    function decode(raw) {
+      const data = JSON.parse(raw);
+      if (data?.version !== 1 || !Array.isArray(data.rows)) throw new Error("Invalid ledger");
+      const dates = new Set();
+      return data.rows.map(row => {
+        if (!row || Object.keys(validate(row)).length || dates.has(row.date)) throw new Error("Invalid day");
+        dates.add(row.date);
+        const clean = { date: row.date };
+        for (const { trays, left } of products) {
+          clean[trays] = row[trays];
+          clean[left] = row[left];
+        }
+        return clean;
+      });
+    }
+
+    function encode(records, indent) {
+      return JSON.stringify({ version: 1, rows: records }, null, indent);
+    }
+
+    function setNotice(message) {
+      $("notice").textContent = message;
+      $("notice").hidden = !message;
+    }
+
+    function load() {
+      let raw;
+      try {
+        raw = localStorage.getItem(storageKey);
+      } catch {
+        storageReady = false;
+        setNotice("This browser blocks local saving. The ledger can be viewed and backed up. Open this file in a regular browser window with local storage enabled to record days.");
+        return;
+      }
+      savedSnapshot = raw;
+      storageReady = true;
+      savedDataInvalid = false;
+      try {
+        rows = raw === null ? initialRows : decode(raw);
+        setNotice("");
+      } catch {
+        savedDataInvalid = true;
+        rows = [];
+        setNotice("Saved data could not be read. Restore a valid backup to recover your ledger.");
+      }
+    }
+
+    function persist(next) {
+      const raw = encode(next);
+      if (localStorage.getItem(storageKey) !== savedSnapshot) {
+        throw new Error("The ledger changed in another window. Reload this page before saving.");
+      }
+      try {
+        localStorage.setItem(storageKey, raw);
+      } catch {
+        throw new Error("The browser could not save this change. Check that local storage is available and try again.");
+      }
+      savedSnapshot = raw;
+      rows = next;
+      savedDataInvalid = false;
+      setNotice("");
+    }
+
+    // Aggregate integer quantities before dividing, so larger bake days carry more weight.
+    function totals(records, product) {
+      let baked = 0n;
+      let left = 0n;
+      for (const row of records) {
+        baked += BigInt(row[product.trays]) * BigInt(product.capacity);
+        left += BigInt(row[product.left]);
+      }
+      const percent = baked ? Number((left * 1000n + baked / 2n) / baked) / 10 : null;
+      return { baked, left, sold: baked - left, percent };
+    }
+
+    function rateText(percent) {
+      return percent === null ? "—" : decimal.format(percent) + "%";
+    }
+
+    function render() {
+      const ordered = [...rows].sort((a, b) => b.date.localeCompare(a.date));
+      const newest = ordered[0]?.date;
+      const oldest = ordered.at(-1)?.date;
+      $("period").textContent = newest
+        ? dateFormat.formatRange(dateObject(oldest), dateObject(newest))
+        : "No days recorded";
+      $("ledger-count").textContent = `${number.format(rows.length)} ${rows.length === 1 ? "day" : "days"} recorded · newest first`;
+      $("storage-label").textContent = !storageReady ? "Offline · Local saving unavailable"
+        : savedDataInvalid ? "Offline · Backup needed" : "Offline · Saved in this browser";
+      $("add").disabled = !storageReady || savedDataInvalid;
+      $("restore").disabled = !storageReady;
+      $("backup").disabled = savedDataInvalid;
+
+      $("cards").innerHTML = products.map(product => {
+        const data = totals(rows, product);
+        return `<article class="card ${product.key}">
+          <div class="card-top"><div class="product-title"><span class="dot" aria-hidden="true"></span><h2>${product.name}</h2></div>
+          <span class="capacity">${product.capacity} per tray</span></div>
+          <dl>
+            <div><dt>Baked</dt><dd class="big-num">${number.format(data.baked)}</dd></div>
+            <div><dt>Left</dt><dd class="big-num">${number.format(data.left)}</dd></div>
+            <div><dt>Est. sold</dt><dd class="big-num">${number.format(data.sold)}</dd></div>
+            <div><dt>Leftover rate</dt><dd class="big-num rate">${rateText(data.percent)}</dd></div>
+          </dl></article>`;
+      }).join("");
+
+      $("days").innerHTML = ordered.length ? ordered.map(row => {
+        const date = dateFormat.format(dateObject(row.date));
+        const cells = products.map(product => {
+          const values = [
+            ["trays", "trays", row[product.trays]],
+            ["left", "left", row[product.left]],
+            ["sold", "est. sold", row[product.trays] * product.capacity - row[product.left]],
+          ];
+          return values.map(([key, label, value]) => `<td role="cell" headers="day-${row.date} ${product.key}-cols ${product.key}-${key}"
+            class="${key === "sold" ? "sold" : ""}"><span class="col-mobile" aria-hidden="true">${product.singular}<br>${label}</span>${number.format(value)}</td>`).join("");
+        }).join("");
+        return `<tr role="row"><th class="date" id="day-${row.date}" role="rowheader" scope="row"><time datetime="${row.date}">${date}</time>
+          <span class="sub">${weekdayNames[weekday(row.date)]}</span></th>${cells}
+          <td role="cell"><button type="button" class="edit" data-date="${row.date}" aria-label="Edit ${date}"${storageReady ? "" : " disabled"}>Edit</button></td></tr>`;
+      }).join("") : '<tr role="row"><td role="cell" colspan="8" style="grid-column: 1 / -1">No days recorded.</td></tr>';
+
+      const groups = weekdayNames.map(() => []);
+      for (const row of rows) groups[weekday(row.date)].push(row);
+      $("weekdays").innerHTML = weekdayNames.map((name, day) => {
+        const records = groups[day];
+        const cells = products.map(product => {
+          const { baked, sold, percent } = totals(records, product);
+          const detail = records.length ? `<span class="sub">${number.format(sold)} est. sold</span>` : "";
+          const bar = baked ? `<span class="bar" aria-hidden="true"><i style="width:${percent}%"></i></span>` : "";
+          return `<td class="${product.key}"><span class="percent">${rateText(percent)}</span>${bar}${detail}</td>`;
+        }).join("");
+        return `<tr${records.length ? ' class="has-data"' : ""}><th scope="row">${name}${records.length ? `<span class="sub">${records.length} ${records.length === 1 ? "day" : "days"}</span>` : ""}</th>${cells}</tr>`;
+      }).join("");
+    }
+
+    function fieldValues() {
+      const record = { date: form.elements.date.value };
+      for (const { trays, left } of products) {
+        record[trays] = form.elements[trays].valueAsNumber;
+        record[left] = form.elements[left].valueAsNumber;
+      }
+      return record;
+    }
+
+    function checkForm() {
+      const row = fieldValues();
+      const errors = validate(row);
+      if (!errors.date && row.date !== originalDate && rows.some(day => day.date === row.date)) {
+        errors.date = "This date already has an entry. Use Edit on that day to correct it.";
+      }
+      for (const field of ["date", ...products.flatMap(({ trays, left }) => [trays, left])]) {
+        const input = form.elements[field];
+        const show = attempted || input.value || input.validity.badInput;
+        const message = show ? errors[field] ?? "" : "";
+        $(field + "-error").textContent = message;
+        if (message) input.setAttribute("aria-invalid", "true");
+        else input.removeAttribute("aria-invalid");
+      }
+      for (const product of products) {
+        const baked = row[product.trays] * product.capacity;
+        const validTrays = !errors[product.trays];
+        const validLeft = !errors[product.left];
+        $(product.key + "-preview").textContent = validTrays
+          ? `${number.format(baked)} baked${validLeft ? ` · ${number.format(baked - row[product.left])} est. sold` : ""}`
+          : "Enter trays to calculate items baked.";
+      }
+      return { row, errors };
+    }
+
+    function openEditor(row) {
+      originalDate = row?.date ?? null;
+      attempted = false;
+      form.reset();
+      $("form-error").textContent = "";
+      $("editor-title").textContent = row ? "Edit day" : "Add day";
+      if (row) {
+        for (const [key, value] of Object.entries(row)) form.elements[key].value = value;
+      } else {
+        const today = new Date();
+        form.elements.date.value = [
+          String(today.getFullYear()).padStart(4, "0"),
+          String(today.getMonth() + 1).padStart(2, "0"),
+          String(today.getDate()).padStart(2, "0"),
+        ].join("-");
+      }
+      checkForm();
+      editor.showModal();
+      form.elements[row ? "bunTrays" : "date"].focus();
+    }
+
+    $("add").addEventListener("click", () => openEditor());
+    $("cancel").addEventListener("click", () => editor.close());
+    $("days").addEventListener("click", event => {
+      const button = event.target.closest("button[data-date]");
+      if (button) openEditor(rows.find(row => row.date === button.dataset.date));
+    });
+    form.addEventListener("input", () => {
+      $("form-error").textContent = "";
+      checkForm();
+    });
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+      attempted = true;
+      const { row, errors } = checkForm();
+      const firstInvalid = Array.from(form.elements).find(input => errors[input.name]);
+      if (firstInvalid) {
+        $("form-error").textContent = "Correct the highlighted fields to save this day.";
+        firstInvalid.focus();
+        return;
+      }
+      const editing = originalDate !== null;
+      const next = [...rows.filter(day => day.date !== originalDate), row];
+      try {
+        persist(next);
+      } catch (error) {
+        $("form-error").textContent = error.message;
+        return;
+      }
+      editor.close();
+      render();
+      $("status").textContent = `${dateFormat.format(dateObject(row.date))} ${editing ? "updated" : "added"}.`;
+      if (editing) $("days").querySelector(`button[data-date="${row.date}"]`).focus();
+      else $("add").focus();
+    });
+
+    $("backup").addEventListener("click", () => {
+      const url = URL.createObjectURL(new Blob([encode(rows, 2) + "\n"], { type: "application/json" }));
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "bake-ledger-backup.json";
+      document.body.append(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 60_000);
+      $("status").textContent = "Backup downloaded.";
+    });
+    $("restore").addEventListener("click", () => $("backup-file").click());
+    $("backup-file").addEventListener("change", async event => {
+      const file = event.target.files[0];
+      event.target.value = "";
+      if (!file) return;
+      try {
+        pendingBackup = decode(await file.text());
+      } catch {
+        $("status").textContent = "This file is not a valid Bake Ledger backup. No changes were made.";
+        return;
+      }
+      $("restore-error").textContent = "";
+      $("restore-description").textContent = `Replace the current ledger with the ${pendingBackup.length} ${pendingBackup.length === 1 ? "day" : "days"} in this backup? Download a copy of your current ledger first if you want to keep it.`;
+      restoreDialog.showModal();
+      $("restore-cancel").focus();
+    });
+    $("restore-cancel").addEventListener("click", () => restoreDialog.close());
+    $("restore-confirm").addEventListener("click", () => {
+      try {
+        persist(pendingBackup);
+      } catch (error) {
+        $("restore-error").textContent = error.message;
+        return;
+      }
+      restoreDialog.close();
+      render();
+      $("status").textContent = "Backup restored.";
+      $("restore").focus();
+    });
+    restoreDialog.addEventListener("close", () => { pendingBackup = null; });
+    window.addEventListener("storage", event => {
+      if (event.key !== storageKey && event.key !== null) return;
+      if (editor.open || restoreDialog.open) {
+        const message = "The ledger changed in another window. Reload this page before saving.";
+        $(editor.open ? "form-error" : "restore-error").textContent = message;
+        return;
+      }
+      load();
+      render();
+    });
+
+    load();
+    render();
+  </script>
+</body>
+</html>

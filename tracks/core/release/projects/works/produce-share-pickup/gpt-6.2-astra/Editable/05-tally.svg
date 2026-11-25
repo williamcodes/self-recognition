@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17in" height="11in" viewBox="0 0 1224 792">
+<rect x="0" y="0" width="1224" height="792" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<g transform="translate(35 26) scale(0.4)">
+<path d="M39 33 Q19 26 19 8 Q37 8 42 29 Q38 10 51 0 Q61 16 47 33 Q57 15 72 19 Q68 34 48 37" fill="#38653E" stroke="#193837" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43 35 C63 31 72 48 62 65 Q56 76 40 82 Q38 92 30 95 Q35 86 34 80 C12 65 17 41 32 37 Q37 34 43 35Z" fill="#CF6948" stroke="#193837" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26 52 Q27 44 34 43 M49 68 l8 -5" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="76" y="53" font-family="Arial" font-size="17" font-weight="bold" text-anchor="start" fill="#193837">NEIGHBORHOOD PRODUCE SHARE</text>
+<text x="1180" y="53" font-family="Arial" font-size="16" font-weight="bold" text-anchor="end" fill="#193837">VOLUNTEER RECORD   /   64 HOUSEHOLDS</text>
+<path d="M44 74 H1180" fill="none" stroke="#193837" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="44" y="139" font-family="Georgia" font-size="62" font-weight="bold" text-anchor="start" fill="#193837">Pickup tally</text>
+<text x="835" y="127" font-family="Arial" font-size="21" font-weight="normal" text-anchor="start" fill="#193837">Date ____________________</text>
+<text x="45" y="183" font-family="Arial" font-size="21" font-weight="bold" text-anchor="start" fill="#193837">Opening boxes</text>
+<text x="222" y="183" font-family="Arial" font-size="21" font-weight="normal" text-anchor="start" fill="#193837">Standard ______     Small ______</text>
+<text x="660" y="183" font-family="Arial" font-size="21" font-weight="normal" text-anchor="start" fill="#193837">Mark one cell as each box leaves the table.</text>
+<text x="45" y="226" font-family="Arial" font-size="23" font-weight="bold" text-anchor="start" fill="#193837">Circle the box size in the next empty cell.   ST = Standard     SM = Small</text>
+<rect x="44" y="250" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="52" y="276" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">01</text>
+<text x="86" y="278" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="186" y="250" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="194" y="276" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">02</text>
+<text x="228" y="278" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="328" y="250" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="336" y="276" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">03</text>
+<text x="370" y="278" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="470" y="250" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="478" y="276" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">04</text>
+<text x="512" y="278" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="612" y="250" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="620" y="276" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">05</text>
+<text x="654" y="278" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="754" y="250" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="762" y="276" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">06</text>
+<text x="796" y="278" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="896" y="250" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="904" y="276" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">07</text>
+<text x="938" y="278" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="1038" y="250" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="1046" y="276" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">08</text>
+<text x="1080" y="278" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="44" y="293" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="52" y="319" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">09</text>
+<text x="86" y="321" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="186" y="293" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="194" y="319" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">10</text>
+<text x="228" y="321" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="328" y="293" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="336" y="319" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">11</text>
+<text x="370" y="321" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="470" y="293" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="478" y="319" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">12</text>
+<text x="512" y="321" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="612" y="293" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="620" y="319" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">13</text>
+<text x="654" y="321" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="754" y="293" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="762" y="319" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">14</text>
+<text x="796" y="321" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="896" y="293" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="904" y="319" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">15</text>
+<text x="938" y="321" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="1038" y="293" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="1046" y="319" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">16</text>
+<text x="1080" y="321" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="44" y="336" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="52" y="362" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">17</text>
+<text x="86" y="364" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="186" y="336" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="194" y="362" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">18</text>
+<text x="228" y="364" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="328" y="336" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="336" y="362" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">19</text>
+<text x="370" y="364" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="470" y="336" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="478" y="362" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">20</text>
+<text x="512" y="364" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="612" y="336" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="620" y="362" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">21</text>
+<text x="654" y="364" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="754" y="336" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="762" y="362" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">22</text>
+<text x="796" y="364" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="896" y="336" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="904" y="362" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">23</text>
+<text x="938" y="364" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="1038" y="336" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="1046" y="362" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">24</text>
+<text x="1080" y="364" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="44" y="379" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="52" y="405" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">25</text>
+<text x="86" y="407" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="186" y="379" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="194" y="405" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">26</text>
+<text x="228" y="407" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="328" y="379" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="336" y="405" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">27</text>
+<text x="370" y="407" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="470" y="379" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="478" y="405" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">28</text>
+<text x="512" y="407" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="612" y="379" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="620" y="405" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">29</text>
+<text x="654" y="407" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="754" y="379" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="762" y="405" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">30</text>
+<text x="796" y="407" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="896" y="379" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="904" y="405" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">31</text>
+<text x="938" y="407" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="1038" y="379" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="1046" y="405" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">32</text>
+<text x="1080" y="407" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="44" y="422" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="52" y="448" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">33</text>
+<text x="86" y="450" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="186" y="422" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="194" y="448" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">34</text>
+<text x="228" y="450" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="328" y="422" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="336" y="448" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">35</text>
+<text x="370" y="450" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="470" y="422" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="478" y="448" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">36</text>
+<text x="512" y="450" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="612" y="422" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="620" y="448" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">37</text>
+<text x="654" y="450" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="754" y="422" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="762" y="448" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">38</text>
+<text x="796" y="450" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="896" y="422" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="904" y="448" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">39</text>
+<text x="938" y="450" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="1038" y="422" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="1046" y="448" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">40</text>
+<text x="1080" y="450" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="44" y="465" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="52" y="491" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">41</text>
+<text x="86" y="493" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="186" y="465" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="194" y="491" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">42</text>
+<text x="228" y="493" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="328" y="465" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="336" y="491" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">43</text>
+<text x="370" y="493" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="470" y="465" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="478" y="491" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">44</text>
+<text x="512" y="493" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="612" y="465" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="620" y="491" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">45</text>
+<text x="654" y="493" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="754" y="465" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="762" y="491" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">46</text>
+<text x="796" y="493" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="896" y="465" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="904" y="491" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">47</text>
+<text x="938" y="493" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="1038" y="465" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="1046" y="491" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">48</text>
+<text x="1080" y="493" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="44" y="508" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="52" y="534" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">49</text>
+<text x="86" y="536" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="186" y="508" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="194" y="534" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">50</text>
+<text x="228" y="536" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="328" y="508" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="336" y="534" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">51</text>
+<text x="370" y="536" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="470" y="508" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="478" y="534" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">52</text>
+<text x="512" y="536" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="612" y="508" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="620" y="534" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">53</text>
+<text x="654" y="536" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="754" y="508" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="762" y="534" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">54</text>
+<text x="796" y="536" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="896" y="508" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="904" y="534" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">55</text>
+<text x="938" y="536" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="1038" y="508" width="142" height="43" rx="0" fill="#E9F0E3" stroke="#859588" stroke-width="1"/>
+<text x="1046" y="534" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">56</text>
+<text x="1080" y="536" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="44" y="551" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="52" y="577" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">57</text>
+<text x="86" y="579" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="186" y="551" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="194" y="577" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">58</text>
+<text x="228" y="579" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="328" y="551" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="336" y="577" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">59</text>
+<text x="370" y="579" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="470" y="551" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="478" y="577" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">60</text>
+<text x="512" y="579" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="612" y="551" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="620" y="577" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">61</text>
+<text x="654" y="579" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="754" y="551" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="762" y="577" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">62</text>
+<text x="796" y="579" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="896" y="551" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="904" y="577" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">63</text>
+<text x="938" y="579" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<rect x="1038" y="551" width="142" height="43" rx="0" fill="#FFFFFF" stroke="#859588" stroke-width="1"/>
+<text x="1046" y="577" font-family="Arial" font-size="14" font-weight="normal" text-anchor="start" fill="#193837">64</text>
+<text x="1080" y="579" font-family="Arial" font-size="20" font-weight="bold" text-anchor="start" fill="#193837">ST    SM</text>
+<text x="44" y="632" font-family="Arial" font-size="24" font-weight="bold" text-anchor="start" fill="#193837">Shift handoff</text>
+<text x="212" y="632" font-family="Arial" font-size="21" font-weight="normal" text-anchor="start" fill="#193837">Next cell ______     Standard left ______     Small left ______</text>
+<text x="44" y="669" font-family="Arial" font-size="20" font-weight="normal" text-anchor="start" fill="#193837">Outgoing crew shows incoming crew the next cell, remaining stock, and any unresolved requests.</text>
+<path d="M44 694 H1180" fill="none" stroke="#193837" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="44" y="730" font-family="Arial" font-size="23" font-weight="bold" text-anchor="start" fill="#193837">Close</text>
+<text x="127" y="730" font-family="Arial" font-size="21" font-weight="normal" text-anchor="start" fill="#193837">Picked up:  ST ______   SM ______   Total ______ / 64</text>
+<text x="722" y="730" font-family="Arial" font-size="21" font-weight="normal" text-anchor="start" fill="#193837">Remaining:  ST ______   SM ______</text>
+<text x="44" y="762" font-family="Arial" font-size="18" font-weight="normal" text-anchor="start" fill="#193837">Count full boxes left. Check each size against its opening count and note any difference: _____________________</text>
+</svg>

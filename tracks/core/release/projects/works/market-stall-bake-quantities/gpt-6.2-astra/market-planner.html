@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saturday bake planner</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f2e8;color:#252c22;font:16px/1.5 "Avenir Next","Helvetica Neue",sans-serif}main{max-width:1000px;margin:auto;padding:36px 24px 64px}h1,h2,h3,p{margin:0}h1,h2,.qty{font-family:Georgia,serif;font-weight:normal}h1{font-size:clamp(38px,7vw,70px);letter-spacing:-.05em;line-height:1.1}header{border-top:5px solid #284d3d;padding:22px 0}header p,.sub{color:#565b50}section,details{margin-top:28px}h2{font-size:30px;line-height:1.25;margin-bottom:8px}.plan{background:#284d3d;color:#fff9e9;padding:24px 28px;border-radius:5px}.plan h2{font-family:inherit;font-size:18px;font-weight:600}.pair{display:flex;gap:clamp(30px,10vw,100px);margin:8px 0 18px}.qty{font-size:clamp(44px,8vw,72px);line-height:1.1}.plan p{border-top:1px solid #719383;padding-top:14px}.scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;margin-top:12px;font-variant-numeric:tabular-nums}th,td{text-align:right;padding:9px 10px;border-bottom:1px solid #d3cfc0}th{font-size:13px;vertical-align:bottom}th:first-child,td:first-child{text-align:left}tr.best{background:#dde9da}label{display:inline-block;margin:9px 14px 4px 0}select,button,textarea{font:inherit;color:inherit}select,button{background:#fffdf6;border:1px solid #8d9586;border-radius:4px;padding:6px 9px}button,summary,select{cursor:pointer}summary{font-weight:650}textarea{display:block;width:100%;max-width:460px;font-family:monospace;background:#fffdf6;padding:10px}details{border-top:1px solid #b8b9a9;padding-top:14px}.note{margin-top:12px}.small{font-size:14px}.controls{display:flex;flex-wrap:wrap;gap:3px 12px}.error{color:#912e23}button{margin-top:10px} @media(max-width:550px){main{padding:18px 14px 40px}th,td{padding:7px 5px}.scroll{font-size:14px}}@media print{body{background:white}main{padding:0}.plan{background:white;color:black;border:1px solid}.controls,details.editor{display:none}section,table,.plan{break-inside:avoid}}
+</style>
+<main><header><h1>Saturday bake planner</h1><p>Market capacity &nbsp;88 items &nbsp;·&nbsp; 8 items per batch</p></header>
+<section class="plan" aria-live="polite"><h2>Starting quantities</h2><div class="pair"><div><span class="qty" id="muffins"></span><br>Muffins</div><div><span class="qty" id="scones"></span><br>Scones</div></div><p id="result"></p></section>
+<section><h2>Compare the mixes</h2><p class="sub">Each mix faces every recorded Saturday once. Figures are averages per market. Contribution covers revenue less the cost of everything baked.</p>
+<div class="controls"><label>Capacity rule <select id="rule"><option value="cap">Up to 88 items</option><option value="full">Exactly 88 items</option></select></label>
+<label>Extra demand per sellout <select id="extra"><option value="0">0 items (observed sales)</option><option value="4">4 items</option><option value="8">8 items</option></select></label></div>
+<p id="scenario" class="note small"></p>
+<div class="scroll"><table><thead><tr><th>Muffins</th><th>Scones</th><th>Total baked</th><th>Avg. sold</th><th>Avg. waste</th><th>Avg. contribution</th></tr></thead><tbody id="mixes"></tbody></table></div>
+<button id="more"></button><p class="note" id="trade"></p></section>
+<section><h2>What the stall recorded</h2><p id="n" class="sub"></p><div class="scroll"><table><thead><tr><th>Product</th><th>Baked</th><th>Sold</th><th>Waste</th><th>Waste %</th><th>Contribution</th><th>Sellouts</th></tr></thead><tbody id="history"></tbody></table></div>
+<p class="note">Selling the last item gives a lower bound on demand. The till records everyone who bought one and misses customers who arrived after it ran out. The extra-demand setting tests that uncertainty by adding units only to a product that sold out on that Saturday.</p>
+<p class="note small sub">The replay treats the markets as equally likely, assumes customers keep their product choice, and gives leftovers zero revenue. Each muffin sells for $4.00 and costs $1.20 to bake. Each scone sells for $3.50 and costs $1.05. Contribution is before stall fees, labour and other overhead.</p></section>
+<details class="editor"><summary>View or update market records</summary><p class="note">Enter one Saturday per line, oldest first. Use four comma-separated whole numbers in the order shown. Apply changes to recalculate.</p>
+<label for="records">Muffins baked, muffins sold, scones baked, scones sold</label><textarea id="records" rows="8" spellcheck="false"></textarea><button id="apply">Apply records</button><p id="status" role="status"></p></details>
+<noscript>This planner needs JavaScript enabled in your browser.</noscript></main>
+<script>
+'use strict';
+const el=id=>document.getElementById(id);
+const initial='40,35,32,28\n40,40,32,30\n48,45,32,32\n48,48,40,35\n56,49,40,34\n56,52,40,38';
+const storageKey='saturday-bake-records-v1';
+const cash=cents=>'$'+(cents/100).toFixed(2);
+const avg=num=>Number(num.toFixed(2)).toString();
+const row=(cells,cls='')=>'<tr class="'+cls+'">'+cells.map(c=>'<td>'+c+'</td>').join('')+'</tr>';
+function parseRecords(raw){
+ const lines=raw.trim().split(/\r?\n/);
+ return lines.map((line,i)=>{
+  const fields=line.split(',').map(x=>x.trim());
+  const nums=fields.map(Number);
+  if(fields.length!==4 || fields.some(x=>!/^\d+$/.test(x)) || nums.some(x=>!Number.isSafeInteger(x)) || nums[1]>nums[0] || nums[3]>nums[2])
+   throw Error('Check line '+(i+1)+'. Enter four nonnegative whole numbers. Sold must be at most baked.');
+  return nums;
+ });
+}
+let raw=initial;
+try{const saved=localStorage.getItem(storageKey);if(saved){parseRecords(saved);raw=saved}}catch{}
+let records=parseRecords(raw),expanded=false;
+el('records').value=raw;
+function render(){
+ const days=records.length, extra=Number(el('extra').value);
+ const demand=records.map(([mb,ms,sb,ss])=>[ms+(mb>0&&ms===mb?extra:0),ss+(sb>0&&ss===sb?extra:0)]);
+ const mixes=[];
+ for(let m=0;m<=88;m+=8){
+  for(let s=0;s<=88-m;s+=8){
+   if(el('rule').value==='full'&&m+s!==88)continue;
+   let sold=0,net=0;
+   for(const [md,sd] of demand){
+    const a=Math.min(m,md),b=Math.min(s,sd);
+    sold+=a+b;net+=400*a+350*b-120*m-105*s;
+   }
+   mixes.push({m,s,total:m+s,sold:sold/days,waste:m+s-sold/days,net:net/days});
+  }
+ }
+ mixes.sort((a,b)=>b.net-a.net||a.waste-b.waste||a.m-b.m);
+ const best=mixes[0];
+ el('muffins').textContent=best.m;el('scones').textContent=best.s;
+ el('result').textContent=best.m/8+' muffin batches + '+best.s/8+' scone batches use '+best.total+' of 88 spaces. Average contribution is '+cash(best.net)+' with '+avg(best.waste)+' items left over.';
+ el('scenario').textContent=extra?'Sensitivity test assuming '+extra+' additional requests at each recorded product sellout.':'Baseline replay uses observed sales as demand. Sellout-day demand may be higher.';
+ el('mixes').innerHTML=(expanded?mixes:mixes.slice(0,5)).map(x=>row([x.m,x.s,x.total,avg(x.sold),avg(x.waste),cash(x.net)],x===best?'best':'')).join('');
+ el('more').textContent=expanded?'Show top 5 mixes':'Show all '+mixes.length+' mixes';
+ const alt=mixes.find(x=>x.total===88&&x!==best);
+ el('trade').textContent='Compared with '+alt.m+' muffins and '+alt.s+' scones, the starting mix earns '+cash(best.net-alt.net)+' more per market on average, with '+avg(best.waste)+' versus '+avg(alt.waste)+' unsold.';
+ el('history').innerHTML=['Muffins','Scones'].map((p,k)=>{
+  const idx=k*2, baked=records.reduce((v,r)=>v+r[idx],0),sold=records.reduce((v,r)=>v+r[idx+1],0);
+  const sellouts=records.flatMap((r,i)=>r[idx]>0&&r[idx]===r[idx+1]?[i+1]:[]);
+  return row([p,baked,sold,baked-sold,baked?avg(100*(baked-sold)/baked)+'%':'—',cash(sold*[400,350][k]-baked*[120,105][k]),sellouts.length?'Market '+sellouts.join(', '):'None']);
+ }).join('');
+ el('n').textContent='Totals across '+days+' recorded markets. Waste is the number baked minus the number sold.';
+}
+for(const name of ['rule','extra'])el(name).onchange=render;
+el('more').onclick=()=>{expanded=!expanded;render()};
+el('apply').onclick=()=>{
+ const status=el('status');
+ try{records=parseRecords(el('records').value)}catch(e){status.className='error';status.textContent=e.message;return}
+ status.className='';render();
+ try{localStorage.setItem(storageKey,el('records').value);status.textContent='Applied and saved in this browser.'}catch{status.textContent='Applied for this session. Copy your records to keep them.'}
+};
+render();
+</script></html>

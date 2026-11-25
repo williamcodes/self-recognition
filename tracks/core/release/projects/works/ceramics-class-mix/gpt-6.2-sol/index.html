@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ceramics Studio · Class Mix Planner</title>
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #f6f2e9;
+    --surface: #fffcf6;
+    --ink: #252b24;
+    --muted: #555e51;
+    --line: #d7d4c7;
+    --forest: #263d32;
+    --on-forest: #f9f5e8;
+    --forest-muted: #d7e1d6;
+    --clay: #863d28;
+    --clay-light: #f0d8ca;
+    --sage: #dce7da;
+    --sand: #eae2cb;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font: 100% / 1.55 var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  a { color: inherit; }
+  a, button, select { touch-action: manipulation; }
+  :focus-visible { outline: 3px solid var(--clay); outline-offset: 3px; }
+  .wrap { width: min(74rem, 100% - 4rem); margin-inline: auto; }
+  .skip { position: absolute; left: 1rem; top: 1rem; transform: translateY(-200%); padding: .6rem 1rem; background: var(--surface); z-index: 2; }
+  .skip:focus { transform: none; }
+  .masthead { border-bottom: 1px solid var(--line); }
+  .masthead .wrap { min-height: 4.5rem; display: flex; justify-content: space-between; align-items: center; gap: .75rem 1.5rem; flex-wrap: wrap; }
+  .brand { display: flex; align-items: center; gap: .65rem; font-weight: 700; }
+  .mark { width: 1.45rem; aspect-ratio: 1; border: 1.5px solid var(--clay); border-radius: 50%; box-shadow: inset 0 0 0 3px var(--paper), inset 0 0 0 4.5px var(--clay); }
+  nav { display: flex; align-items: center; gap: 1.4rem; }
+  nav a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; font-size: .875rem; color: var(--muted); }
+  nav a:hover { color: var(--clay); text-decoration: underline; text-underline-offset: .2em; }
+  button, select { min-height: 44px; font: inherit; color: var(--ink); border: 1px solid #a7a99d; border-radius: .4rem; background: var(--surface); }
+  button { cursor: pointer; font-size: .875rem; font-weight: 700; padding: .55rem 1rem; }
+  button:hover { background: var(--sage); }
+  button:active { background: #cddccd; }
+  select { padding: .5rem .65rem; max-width: 100%; }
+  h1, h2, h3, p { margin: 0; }
+  h1, h2, .mix-number, .big-money { font-family: var(--serif); font-weight: 400; }
+  h1 { font-size: clamp(3rem, 6.4vw, 5.75rem); line-height: .99; letter-spacing: -.06em; max-width: 10ch; }
+  h2 { font-size: clamp(2rem, 3.4vw, 3rem); line-height: 1.08; letter-spacing: -.045em; }
+  h3 { font-size: 1.125rem; line-height: 1.25; }
+  .eyebrow { font-size: .75rem; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; }
+  .hero { padding-block: clamp(2.5rem, 6vw, 5.25rem) 2rem; display: grid; grid-template-columns: 1fr 1.16fr; gap: 2rem clamp(2rem, 6vw, 5rem); align-items: center; }
+  .hero-copy .eyebrow { color: var(--clay); margin-bottom: .85rem; }
+  .intro { color: var(--muted); max-width: 36ch; margin-top: 1.35rem; font-size: 1.075rem; }
+  .recommend { padding: clamp(1.25rem, 3vw, 2rem); background: var(--forest); color: var(--on-forest); border-radius: .9rem; box-shadow: 0 8px 24px #263d3210; }
+  .recommend .eyebrow { color: var(--forest-muted); margin-bottom: .55rem; }
+  .recommend h2 { font-size: clamp(1.75rem, 3.5vw, 2.6rem); }
+  .slots { list-style: none; padding: 0; margin: 1.15rem 0 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: .35rem; }
+  .slots li { display: grid; border-radius: .3rem; min-height: 2.2rem; place-items: center; background: var(--clay-light); color: var(--clay); font-size: .76rem; font-weight: 750; }
+  .slots abbr { text-decoration: none; }
+  .rec-margins { margin: 1.3rem 0 0; padding-top: 1rem; border-top: 1px solid #ffffff45; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .rec-margins div { display: flex; flex-direction: column-reverse; gap: .25rem; }
+  .rec-margins dt { color: var(--forest-muted); font-size: .8rem; }
+  .big-money { margin: 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1; letter-spacing: -.035em; font-variant-numeric: lining-nums tabular-nums; }
+  .alternative { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .45rem 1.5rem; padding: 1rem 1.25rem; border-left: 3px solid var(--clay); border-radius: 0 .45rem .45rem 0; background: #eee4d5; }
+  .alternative h2 { font: 750 1rem / 1.4 var(--sans); }
+  .alternative p { color: var(--muted); font-size: .9rem; }
+  .alt-money { font-variant-numeric: tabular-nums; }
+  .section { padding-top: 3.5rem; scroll-margin-top: 1rem; }
+  .section-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: .75rem 1.5rem; margin-bottom: 1.15rem; }
+  .section-head p { margin-top: .45rem; color: var(--muted); }
+  .legend { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; font-size: .825rem; color: var(--muted); }
+  .legend span { display: inline-flex; align-items: center; gap: .4rem; }
+  .legend i { width: .75rem; height: .75rem; border-radius: .15rem; background: var(--forest); }
+  .legend .stress { background: var(--clay); }
+  .formats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .format { background: var(--surface); border: 1px solid var(--line); border-radius: .65rem; padding: 1.15rem; }
+  .format-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: .4rem .65rem; }
+  .tag { font-size: .75rem; color: #2d4837; background: var(--sage); border-radius: .25rem; padding: .1rem .4rem; font-weight: 700; }
+  .history { font-size: .825rem; color: var(--muted); margin-top: .4rem; }
+  .plot { display: grid; gap: .55rem; margin-top: 1.05rem; }
+  .plot-row { display: grid; grid-template-columns: minmax(0, 1fr) 3.25rem; gap: .6rem; align-items: center; font-size: .875rem; }
+  .track { height: .6rem; border-radius: .2rem; background: #edeae1; overflow: hidden; }
+  .bar { display: block; height: 100%; border-radius: inherit; background: var(--forest); }
+  .bar.stress { background: var(--clay); }
+  .plot-row strong { text-align: right; font-variant-numeric: tabular-nums; }
+  .facts { margin: 1rem 0 0; border-top: 1px solid var(--line); padding-top: .8rem; font-size: .825rem; }
+  .facts div { display: flex; align-items: baseline; justify-content: space-between; gap: .4rem; }
+  .facts div + div { margin-top: .23rem; }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; font-weight: 650; text-align: right; font-variant-numeric: tabular-nums; }
+  .panel { border: 1px solid var(--line); background: var(--surface); border-radius: .65rem; overflow: hidden; }
+  .filters { display: flex; flex-wrap: wrap; align-items: end; gap: .7rem 1rem; padding: 1rem 1.15rem; }
+  .filters label { display: grid; gap: .25rem; font-size: .825rem; font-weight: 700; }
+  .filters label.checkbox { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; cursor: pointer; }
+  input[type="checkbox"] { width: 1.15rem; height: 1.15rem; accent-color: var(--forest); margin: 0; }
+  .results-count { align-self: center; margin-left: auto; color: var(--muted); font-size: .825rem; }
+  .table-scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: .9rem; font-variant-numeric: tabular-nums; text-align: right; }
+  th, td { padding: .65rem 1rem; border-top: 1px solid var(--line); }
+  thead th { background: #ede9dc; color: #434c40; font-size: .8rem; vertical-align: bottom; }
+  tbody th { font-weight: 550; }
+  tbody td:nth-last-child(2) { font-weight: 750; }
+  tbody td:last-child { color: var(--muted); }
+  tbody tr[data-highlight] { background: #e7eee3; }
+  tbody tr[data-highlight] th { font-weight: 800; }
+  .table-foot { border-top: 1px solid var(--line); padding: .65rem 1.15rem; color: var(--muted); font-size: .825rem; }
+  .notes { margin-block: 3rem 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+  .notes h2 { font-size: 1.65rem; }
+  .notes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 2rem; margin-top: .7rem; color: var(--muted); font-size: .885rem; }
+  .notes strong { color: var(--ink); }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+  .print-only, .short { display: none; }
+  @media (max-width: 53rem) {
+    .wrap { width: calc(100% - 2.5rem); }
+    .hero { gap: 1.75rem; }
+    .formats { gap: .6rem; }
+    .format { padding: .85rem; }
+    th, td { padding-inline: .7rem; }
+  }
+  @media screen and (max-width: 40rem) {
+    .wrap { width: calc(100% - 2rem); }
+    .masthead .wrap { gap: 0 .75rem; padding-block: .5rem; }
+    nav { gap: .85rem; flex-wrap: wrap; }
+    .hero, .formats, .notes-grid { grid-template-columns: 1fr; }
+    .section { padding-top: 2.5rem; }
+    .filters { padding: .75rem; column-gap: .65rem; }
+    .results-count { margin-left: 0; }
+    th, td { padding: .6rem .22rem; font-size: .8125rem; text-align: center; }
+    thead th { font-size: .75rem; line-height: 1.25; }
+    .long { display: none; }
+    .short { display: inline; }
+    .table-foot { padding-inline: .75rem; }
+  }
+  @media print {
+    @page { margin: .35in; }
+    :root { background: white; font-size: 9.5pt; line-height: 1.35; print-color-adjust: exact; }
+    .wrap { width: 100%; }
+    .masthead .wrap { min-height: 2rem; }
+    nav, .skip, .filters, #export, #screen-rows, .hero-copy .eyebrow, .slots, .tag { display: none; }
+    .print-only { display: revert; }
+    .hero { padding-block: .65rem; grid-template-columns: 1fr 1.15fr; gap: 1rem; }
+    h1 { font-size: 27pt; max-width: none; }
+    h2 { font-size: 19pt; }
+    .intro { margin-top: .5rem; max-width: none; font-size: 9.5pt; }
+    .recommend { box-shadow: none; padding: .85rem; }
+    .recommend h2 { font-size: 17pt; }
+    .rec-margins { padding-top: .6rem; margin-top: .65rem; }
+    .big-money { font-size: 20pt; }
+    .alternative { padding-block: .5rem; }
+    .formats { gap: .6rem; }
+    .format { padding: .65rem; break-inside: avoid; }
+    .plot { margin-top: .6rem; gap: .25rem; }
+    .facts { margin-top: .55rem; padding-top: .5rem; }
+    .section { padding-top: .85rem; }
+    .section-head { margin-bottom: .45rem; break-after: avoid; }
+    th, td { padding: .10rem .5rem; }
+    .panel, .table-scroll { overflow: visible; }
+    tr { break-inside: avoid; }
+    .notes { margin-block: .8rem 0; padding-top: .55rem; break-inside: avoid; }
+    .notes-grid { margin-top: .35rem; }
+    .alternative, .hero { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to planner</a>
+<header class="masthead">
+  <div class="wrap">
+    <div class="brand"><span class="mark" aria-hidden="true"></span> Ceramics Studio</div>
+    <nav aria-label="Planner sections">
+      <a href="#formats">Class formats</a>
+      <a href="#mixes">Schedule mixes</a>
+      <button id="print" type="button">Print plan</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="main">
+  <section aria-labelledby="title">
+    <div class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Term planning</p>
+        <h1 id="title">Next term’s class mix</h1>
+        <p class="intro">Six sessions total, including at least two beginner wheel sessions. Compare what each mix leaves after direct costs.</p>
+      </div>
+      <article class="recommend" aria-labelledby="best-title">
+        <p class="eyebrow">Highest projected margin</p>
+        <h2 id="best-title"></h2>
+        <ol class="slots" id="best-slots" aria-label="Recommended schedule"></ol>
+        <dl class="rec-margins">
+          <div><dt>Baseline term margin</dt><dd class="big-money" id="best-base"></dd></div>
+          <div><dt>With one fewer attendee per class</dt><dd class="big-money" id="best-stress"></dd></div>
+        </dl>
+      </article>
+    </div>
+    <aside class="alternative" aria-labelledby="alternative-title">
+      <div>
+        <h2 id="alternative-title">If you want all three formats</h2>
+        <p id="alternative-mix"></p>
+      </div>
+      <p class="alt-money" id="alternative-money"></p>
+    </aside>
+    <noscript><p>Enable JavaScript in your browser to calculate and display the comparisons.</p></noscript>
+  </section>
+
+  <section class="section" id="formats" aria-labelledby="formats-title">
+    <div class="section-head">
+      <div>
+        <h2 id="formats-title">Margin by class format</h2>
+        <p>Projected dollars per session. The bars share a common scale.</p>
+      </div>
+      <div class="legend" aria-hidden="true">
+        <span><i></i> Baseline</span>
+        <span><i class="stress"></i> One fewer attendee</span>
+      </div>
+    </div>
+    <div class="formats" id="format-cards"></div>
+  </section>
+
+  <section class="section" id="mixes" aria-labelledby="mixes-title">
+    <div class="section-head">
+      <div>
+        <h2 id="mixes-title">Compare six-session mixes</h2>
+        <p id="coverage"></p>
+      </div>
+      <button id="export" type="button">Download all mixes as CSV</button>
+    </div>
+    <div class="panel">
+      <div class="filters">
+        <label>Wheel sessions
+          <select id="wheel-filter">
+            <option value="">Any (2–6)</option>
+            <option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+          </select>
+        </label>
+        <label>Sort by
+          <select id="sort">
+            <option value="base">Baseline margin</option>
+            <option value="stress">Stress margin</option>
+            <option value="drop">Smallest margin drop</option>
+          </select>
+        </label>
+        <label class="checkbox"><input type="checkbox" id="diverse-filter"> Include all three formats</label>
+        <p class="results-count" id="results-count" role="status"></p>
+      </div>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Schedule mix results">
+        <table aria-describedby="table-foot">
+          <caption class="sr-only">Projected term margins by class schedule</caption>
+          <thead>
+            <tr>
+              <th scope="col">Wheel</th>
+              <th scope="col"><span class="long">Handbuilding</span><span class="short">Hand<span class="sr-only">building</span></span></th>
+              <th scope="col">Glazing</th>
+              <th scope="col">Baseline<span class="sr-only"> margin</span></th>
+              <th scope="col">Stress<span class="sr-only"> margin</span></th>
+              <th scope="col">Drop</th>
+            </tr>
+          </thead>
+          <tbody id="screen-rows"></tbody>
+          <tbody class="print-only" id="print-rows"></tbody>
+        </table>
+      </div>
+      <p class="table-foot" id="table-foot">Stress margin assumes one fewer attendee in each of the six sessions. Drop is the difference from baseline.</p>
+    </div>
+  </section>
+
+  <footer class="notes" aria-labelledby="method-title">
+    <h2 id="method-title">How the projections work</h2>
+    <div class="notes-grid">
+      <p><strong>Enrollment.</strong> Baseline uses the exact mean of four fictional historical sessions per format. The stress case subtracts one from each mean. Fractional averages are kept for projections.</p>
+      <p><strong>Direct costs.</strong> Session margin is attendance × (price − materials per attendee) − instructor cost. Term margin sums the six session margins. Break-even is the minimum whole-person attendance that covers those costs. Overhead is outside this calculation.</p>
+    </div>
+  </footer>
+</main>
+<script>
+  const sessionCount = 6;
+  const beginnerMinimum = 2;
+  const formats = [
+    { name: "Beginner wheel", slot: "Wheel", history: [7, 8, 6, 8], price: 45, materials: 9, instructor: 120, beginner: true },
+    { name: "Handbuilding", slot: "Hand", history: [5, 6, 4, 6], price: 38, materials: 6, instructor: 95 },
+    { name: "Glazing workshop", slot: "Glaze", history: [4, 5, 5, 6], price: 32, materials: 8, instructor: 80 },
+  ].map(format => {
+    const attendance = format.history.reduce((sum, count) => sum + count, 0) / format.history.length;
+    const perAttendee = format.price - format.materials;
+    return {
+      ...format,
+      attendance,
+      stressAttendance: attendance - 1,
+      base: attendance * perAttendee - format.instructor,
+      stress: (attendance - 1) * perAttendee - format.instructor,
+      breakEven: Math.ceil(format.instructor / perAttendee),
+    };
+  });
+
+  const mixes = [];
+  for (let wheel = beginnerMinimum; wheel <= sessionCount; wheel++) {
+    for (let handbuilding = 0; handbuilding <= sessionCount - wheel; handbuilding++) {
+      const glazing = sessionCount - wheel - handbuilding;
+      const counts = [wheel, handbuilding, glazing];
+      const base = formats.reduce((sum, format, index) => sum + format.base * counts[index], 0);
+      const stress = formats.reduce((sum, format, index) => sum + format.stress * counts[index], 0);
+      mixes.push({ wheel, handbuilding, glazing, counts, base, stress, drop: base - stress });
+    }
+  }
+  mixes.sort((a, b) => b.base - a.base || b.stress - a.stress);
+  const best = mixes[0];
+  const diverse = mix => mix.counts.every(count => count > 0);
+  const bestDiverse = mixes.find(diverse);
+
+  const byId = id => document.getElementById(id);
+  const currency = new Intl.NumberFormat("en-US", {
+    style: "currency", currency: "USD", minimumFractionDigits: 0, maximumFractionDigits: 2,
+  });
+  const dollars = amount => currency.format(amount);
+
+  function describeMix(mix) {
+    return formats.flatMap((format, index) => {
+      const count = mix.counts[index];
+      return count ? [`${count} ${format.name.toLowerCase()}`] : [];
+    }).join(" · ");
+  }
+
+  byId("best-title").textContent = best.wheel === sessionCount
+    ? `${best.wheel} beginner wheel sessions`
+    : describeMix(best);
+  byId("best-slots").innerHTML = formats.flatMap((format, index) =>
+    Array.from({ length: best.counts[index] }, () => `<li><abbr title="${format.name}">${format.slot}</abbr></li>`)
+  ).join("");
+  byId("best-base").textContent = dollars(best.base);
+  byId("best-stress").textContent = dollars(best.stress);
+  byId("alternative-mix").textContent = describeMix(bestDiverse);
+  byId("alternative-money").innerHTML = `<strong>${dollars(bestDiverse.base)}</strong> baseline · <strong>${dollars(bestDiverse.stress)}</strong> with one fewer per class`;
+
+  const barLimit = Math.ceil(Math.max(...formats.map(format => format.base)) / 10) * 10;
+  byId("format-cards").innerHTML = formats.map(format => `
+    <article class="format">
+      <div class="format-head"><h3>${format.name}</h3>${format.beginner ? '<span class="tag">Counts toward minimum</span>' : ''}</div>
+      <p class="history">Past enrollments · ${format.history.join(", ")}</p>
+      <div class="plot">
+        <div class="plot-row">
+          <span class="track" aria-hidden="true"><span class="bar" style="width:${format.base / barLimit * 100}%"></span></span>
+          <strong><span class="sr-only">Baseline margin </span>${dollars(format.base)}</strong>
+        </div>
+        <div class="plot-row">
+          <span class="track" aria-hidden="true"><span class="bar stress" style="width:${format.stress / barLimit * 100}%"></span></span>
+          <strong><span class="sr-only">Stress margin </span>${dollars(format.stress)}</strong>
+        </div>
+      </div>
+      <dl class="facts">
+        <div><dt>Baseline attendance</dt><dd>${format.attendance}</dd></div>
+        <div><dt>Stress attendance</dt><dd>${format.stressAttendance}</dd></div>
+        <div><dt>Break-even attendance</dt><dd>${format.breakEven}</dd></div>
+        <div><dt>Price / materials per person</dt><dd>${dollars(format.price)} / ${dollars(format.materials)}</dd></div>
+        <div><dt>Instructor per session</dt><dd>${dollars(format.instructor)}</dd></div>
+      </dl>
+    </article>
+  `).join("");
+
+  const stressMinimum = Math.min(...mixes.map(mix => mix.stress));
+  const covered = mixes.filter(mix => mix.stress >= 0).length;
+  byId("coverage").textContent = `${covered} of ${mixes.length} eligible mixes cover direct costs under stress. The lowest stress margin is ${dollars(stressMinimum)}.`;
+
+  function renderRows(rows) {
+    if (!rows.length) {
+      return '<tr><td colspan="6">No mixes match these filters.</td></tr>';
+    }
+    return rows.map(mix => `
+      <tr ${mix === best ? "data-highlight" : ""}>
+        <th scope="row">${mix.wheel}${mix === best ? '<span class="sr-only"> (highest projected margin)</span>' : ''}</th>
+        <td>${mix.handbuilding}</td><td>${mix.glazing}</td>
+        <td>${dollars(mix.base)}</td><td>${dollars(mix.stress)}</td><td>${dollars(mix.drop)}</td>
+      </tr>
+    `).join("");
+  }
+
+  const wheelFilter = byId("wheel-filter");
+  const diverseFilter = byId("diverse-filter");
+  const sort = byId("sort");
+  function updateMixes() {
+    const filtered = mixes.filter(mix =>
+      (!wheelFilter.value || mix.wheel === Number(wheelFilter.value)) &&
+      (!diverseFilter.checked || diverse(mix))
+    );
+    const metric = sort.value;
+    filtered.sort((a, b) => metric === "drop" ? a.drop - b.drop : b[metric] - a[metric]);
+    byId("screen-rows").innerHTML = renderRows(filtered);
+    byId("results-count").textContent = `Showing ${filtered.length} of ${mixes.length} mixes`;
+  }
+  [wheelFilter, diverseFilter, sort].forEach(control => control.addEventListener("change", updateMixes));
+  byId("print-rows").innerHTML = renderRows(mixes);
+  updateMixes();
+
+  byId("print").addEventListener("click", () => window.print());
+  byId("export").addEventListener("click", () => {
+    const header = ["Beginner wheel sessions", "Handbuilding sessions", "Glazing workshop sessions",
+      "Baseline direct margin USD", "Stress direct margin USD (one fewer attendee per session)", "Margin drop USD"];
+    const rows = mixes.map(mix => [...mix.counts, mix.base, mix.stress, mix.drop]);
+    const csv = [header, ...rows].map(row => row.join(",")).join("\r\n") + "\r\n";
+    const url = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "ceramics-schedule-mixes.csv";
+    document.body.append(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+</script>
+</body>
+</html>

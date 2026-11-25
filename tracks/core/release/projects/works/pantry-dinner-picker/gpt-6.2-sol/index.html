@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Pantry Table · Dinner picker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="pantry.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to dinner picker</a>
+  <header class="masthead">
+    <div class="shell masthead-inner">
+      <div class="brand"><span class="brand-icon" data-icon="bowl"></span> Pantry Table</div>
+      <span class="offline"><span></span> Works offline</span>
+    </div>
+  </header>
+
+  <main id="main" class="shell">
+    <section class="intro" aria-labelledby="main-title">
+      <div>
+        <h1 id="main-title">What’s for <em>dinner?</em></h1>
+        <p>Find a meal with what’s already in your pantry.</p>
+      </div>
+      <div class="serving-control">
+        <label for="servings">Servings</label>
+        <div class="stepper">
+          <button id="fewer" type="button" aria-label="Fewer servings" data-icon="minus"></button>
+          <input id="servings" type="text" inputmode="numeric" maxlength="3" value="2" autocomplete="off">
+          <button id="more" type="button" aria-label="More servings" data-icon="plus"></button>
+        </div>
+      </div>
+    </section>
+
+    <p id="storage-notice" class="notice" role="status" hidden></p>
+    <div class="dashboard">
+      <section class="pantry panel" aria-labelledby="pantry-title">
+        <div class="pantry-heading">
+          <span class="section-icon" data-icon="pantry"></span>
+          <div><h2 id="pantry-title">Your pantry</h2><p id="pantry-count"></p></div>
+        </div>
+        <ul id="pantry-list" class="pantry-list"></ul>
+        <button id="add-pantry" class="button outline pantry-add" type="button"><span data-icon="plus"></span> Add ingredient</button>
+      </section>
+
+      <section class="recipes" aria-labelledby="recipes-title">
+        <div class="recipes-heading">
+          <div><h2 id="recipes-title">Recipes</h2><p id="recipe-summary" aria-live="polite"></p></div>
+          <button id="add-recipe" class="button outline" type="button"><span data-icon="plus"></span> Add recipe</button>
+        </div>
+        <div id="recipe-list" class="recipe-list"></div>
+      </section>
+    </div>
+    <footer class="footer"><span data-icon="info"></span> Your pantry updates when you confirm a meal.</footer>
+  </main>
+
+  <div id="message" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <dialog id="pantry-dialog" aria-labelledby="pantry-dialog-title">
+    <form id="pantry-form">
+      <div class="dialog-heading"><h2 id="pantry-dialog-title"></h2><button class="icon-button close" type="button" data-close aria-label="Close" data-icon="close"></button></div>
+      <p id="pantry-hint" class="dialog-hint"></p>
+      <label class="field">Ingredient<input name="ingredient" list="ingredient-names" required maxlength="80" placeholder="e.g. Tomatoes" autofocus></label>
+      <div class="form-grid">
+        <label class="field">Amount<input name="amount" inputmode="decimal" required maxlength="48" placeholder="e.g. 250"></label>
+        <label class="field">Unit<select name="unit"><option value="item">Whole items</option><option value="g">Grams (g)</option></select></label>
+      </div>
+      <p class="form-error" role="alert" hidden></p>
+      <div class="dialog-actions"><button class="button outline" type="button" data-close>Cancel</button><button class="button primary" type="submit"></button></div>
+    </form>
+  </dialog>
+
+  <dialog id="recipe-dialog" aria-labelledby="recipe-dialog-title">
+    <form id="recipe-form">
+      <div class="dialog-heading"><h2 id="recipe-dialog-title">Add a recipe</h2><button class="icon-button close" type="button" data-close aria-label="Close" data-icon="close"></button></div>
+      <div class="form-grid recipe-fields">
+        <label class="field">Recipe name<input name="title" required maxlength="80" placeholder="e.g. Onion rice" autofocus></label>
+        <label class="field">Base servings<input name="base" type="number" min="1" max="999" step="1" value="2" required></label>
+      </div>
+      <fieldset><legend>Ingredients for the base servings</legend><div id="recipe-ingredients"></div></fieldset>
+      <button id="add-line" class="button outline" type="button"><span data-icon="plus"></span> Add ingredient row</button>
+      <p class="form-error" role="alert" hidden></p>
+      <div class="dialog-actions"><button class="button outline" type="button" data-close>Cancel</button><button class="button primary" type="submit">Save recipe</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="meal-dialog" aria-labelledby="meal-title">
+    <form id="meal-form">
+      <div class="dialog-heading"><h2 id="meal-title"></h2><button class="icon-button close" type="button" data-close aria-label="Close" data-icon="close"></button></div>
+      <p id="meal-description" class="dialog-hint"></p>
+      <ul id="meal-ingredients" class="meal-ingredients"></ul>
+      <p class="form-error" role="alert" hidden></p>
+      <div class="dialog-actions"><button class="button outline" type="button" data-close autofocus>Cancel</button><button class="button primary" type="submit">Confirm meal</button></div>
+    </form>
+  </dialog>
+
+  <datalist id="ingredient-names"></datalist>
+  <noscript><p class="no-js">Enable JavaScript in your browser to use the dinner picker.</p></noscript>
+</body>
+</html>

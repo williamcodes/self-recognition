@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stem Ledger · Sales review</title>
+<style>
+:root{color-scheme:light;--ink:#233d32;--muted:#56675e;--line:#d6dbd1;--paper:#faf9f4;--serif:Georgia,'Times New Roman',serif}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.45 'Helvetica Neue',Arial,sans-serif}header{background:#213e32;color:#fffdf2}.wrap{max-width:1160px;margin:auto;padding:0 5%}header .wrap,.row,.title,.cardhead,.ledgerhead{display:flex;align-items:center;justify-content:space-between;gap:16px}header .wrap{min-height:65px}.brand{display:flex;align-items:center;gap:12px;font:24px var(--serif)}.brand svg{width:34px;height:34px;color:#e5dfac}.offline{font-size:13px}.offline::before{content:'';display:inline-block;width:7px;height:7px;background:#b9cf9a;border-radius:50%;margin-right:9px}main{padding-bottom:48px!important}.title{padding:34px 0 25px}.over,.stat small,th,.metric label{font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase}.over{color:var(--muted)}h1,h2,h3,p{margin:0}h1,h2,h3,.number,.stat b{font-family:var(--serif);font-weight:400}h1{font-size:clamp(40px,5vw,62px);line-height:1.13;letter-spacing:-.055em}h2{font-size:30px;letter-spacing:-.04em}h3{font-size:26px;letter-spacing:-.035em}button,select,input{font:inherit;color:inherit}button{cursor:pointer;background:transparent;border:1px solid var(--line);border-radius:6px;padding:10px 16px;min-height:44px}button:hover{background:#e8ede4}.primary{background:#284a39;color:white;border-color:#284a39}.primary:hover{background:#173726}.primary span{margin-right:8px}.stats{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid #aab6a9;padding:18px 0}.stat{padding-left:24px;border-left:1px solid var(--line)}.stat:first-child{padding-left:0;border:0}.stat small{display:block;color:var(--muted)}.stat b{font-size:33px;line-height:1.25;letter-spacing:-.04em}.sectionhead{margin:26px 0 13px}.hint,.counts,.daycount{color:var(--muted);font-size:13px}.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{border:1px solid #daca9e;border-radius:10px;background:#f6efd9;padding:17px 21px 19px}.card.rain{background:#e6efec;border-color:#c5d4cd}.cardhead{border-bottom:1px solid #cfc7ac;padding-bottom:12px}.rain .cardhead{border-color:#c2d0ca}.weathername{display:flex;align-items:center;gap:10px}.icon{width:28px;height:28px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.dry .icon{color:#8b641e}.rain .icon{color:#426d64}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:15px}.metric label{display:block;font-size:10px}.number{font-size:clamp(30px,3.6vw,46px);letter-spacing:-.055em;line-height:1.3}.counts{font-size:12px}.ledgerhead{margin:25px 0 10px}.ledgerhead select{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:8px;min-height:40px}.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;white-space:nowrap;font-variant-numeric:tabular-nums}td,th{text-align:right;padding:7px 10px;border-bottom:1px solid var(--line)}th{text-transform:uppercase;font-size:10px;color:var(--muted);padding-block:10px;background:#edf0e8}td:first-child,th:first-child,td:nth-child(2),th:nth-child(2){text-align:left}td:first-child{font-weight:600}.chip{font-size:12px;display:inline-flex;align-items:center;gap:5px;border-radius:5px;padding:3px 8px;background:#efe5c7}.chip.rain{background:#deebe5}.chip svg{width:15px;height:15px}.edit{padding:0 8px;border:0;font-size:13px;text-decoration:underline;text-underline-offset:3px}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}dialog{width:min(460px,94vw);padding:24px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink)}dialog::backdrop{background:#12251aba}form .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}form label{font-size:13px;font-weight:600}input,form select{display:block;width:100%;min-width:0;border:1px solid #9da99f;border-radius:4px;background:white;padding:10px;margin-top:5px}.actions{display:flex;justify-content:flex-end;gap:8px}.error{color:#8e2823;margin:8px 0}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #84701d;outline-offset:2px}
+@media(max-width:720px){.cards{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr;row-gap:16px}.stat:nth-child(3){padding-left:0;border:0}.title{padding:24px 0 20px}.number{font-size:36px}.stat b{font-size:28px}.wrap{padding-inline:18px}.primary{padding-inline:12px}.stat small{font-size:10px}td,th{padding-inline:7px}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="flower" viewBox="0 0 40 40"><g stroke="currentColor" fill="none" stroke-width="1.8"><path d="M20 37V20M20 32Q8 31 6 22Q17 21 20 32ZM20 28Q22 19 34 20Q31 28 20 28Z"/><path d="M17 10C9 0 22 -3 22 7C29 -1 36 9 26 12C37 16 29 25 23 17C23 29 11 24 16 16C4 20 5 7 17 10Z"/><circle cx="20" cy="12" r="3"/></g></symbol>
+<symbol id="dry" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></symbol><symbol id="rain" viewBox="0 0 24 24"><path d="M6 15a4.5 4.5 0 0 1-1-9 6.5 6.5 0 0 1 12.4.1A4.5 4.5 0 1 1 18 15ZM7 18l-1.5 3m6.5-3-1.5 3m6.5-3-1.5 3"/></symbol></defs></svg>
+<header><div class="wrap"><div class="brand"><svg aria-hidden="true"><use href="#flower"/></svg>Stem Ledger</div><span class="offline">Offline workspace</span></div></header>
+<main class="wrap"><div class="title"><div><div class="over">Weekend flower stall</div><h1>Sales review</h1></div><button class="primary" id="add"><span aria-hidden="true">+</span>New entry</button></div>
+<p id="warning" class="error" role="alert"></p><div id="stats" class="stats"></div>
+<section><div class="sectionhead"><h2>Weather comparison</h2><p class="hint">Rates use pooled totals across all stall days for each weather type.</p></div><div class="cards" id="cards"></div></section>
+<section><div class="ledgerhead"><h2>Stall journal</h2><select aria-label="Filter journal by weather" id="filter"><option value="">All weather</option><option value="dry">Dry</option><option value="rain">Rain</option></select></div><div class="tablewrap" tabindex="0" role="region" aria-label="Stall journal entries"><table><thead><tr><th>Date</th><th>Weather</th><th>Hours open</th><th>Brought</th><th>Sold</th><th>Revenue</th><th><span class="sr">Actions</span></th></tr></thead><tbody id="journal"></tbody></table></div></section><p class="sr" id="status" role="status"></p></main>
+<dialog id="editor" aria-labelledby="formTitle"><form id="form"><h2 id="formTitle">New entry</h2><div class="grid"><label>Date<input type="date" name="date" required min="0001-01-01" max="9999-12-31"></label><label>Weather<select name="weather"><option value="dry">Dry</option><option value="rain">Rain</option></select></label><label>Hours open<input name="hours" type="number" required step="any" min="0" max="24"></label><label>Revenue ($)<input name="revenue" type="number" required min="0" step="1"></label><label>Bouquets brought<input name="brought" type="number" required min="0" step="1"></label><label>Bouquets sold<input name="sold" type="number" required min="0" step="1"></label></div><p id="error" role="alert" class="error"></p><div class="actions"><button id="cancel" type="button">Cancel</button><button class="primary">Save entry</button></div></form></dialog>
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+const key = 'stem-ledger-v1';
+const seed = [
+ ['02','dry',4,36,31,310],['03','rain',3,30,14,140],['09','dry',5,45,42,420],
+ ['10','rain',4,32,19,190],['16','dry',4,40,35,350],['17','rain',2,25,9,90]
+].map(([day,weather,hours,brought,sold,revenue])=>({date:'2026-05-'+day,weather,hours,brought,sold,revenue}));
+const money = new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0});
+const hourMoney = new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'});
+const dateFormat = new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'});
+const cap = s=>s[0].toUpperCase()+s.slice(1);
+const icon = w=>'<svg class="icon" aria-hidden="true"><use href="#'+w+'"/></svg>';
+function valid(r){
+ if(!r || !/^\d{4}-\d{2}-\d{2}$/.test(r.date)) return false;
+ const day=new Date(r.date+'T00:00:00Z');
+ return Number.isFinite(+day) && day.toISOString().slice(0,10)===r.date &&
+ ['dry','rain'].includes(r.weather) && Number.isFinite(r.hours) && r.hours>0 && r.hours<=24 &&
+ [r.brought,r.sold,r.revenue].every(n=>Number.isSafeInteger(n)&&n>=0) && r.sold<=r.brought;
+}
+function readDays(){
+ const saved=localStorage.getItem(key);
+ if(saved===null) return seed;
+ const list=JSON.parse(saved);
+ if(!Array.isArray(list)||!list.every(valid)||new Set(list.map(r=>r.date)).size!==list.length) throw Error();
+ return list;
+}
+let days=[], editing=null;
+function reload(){
+ try{days=readDays();$('warning').textContent='';$('add').disabled=false}
+ catch{$('warning').textContent='Saved entries could not be loaded. Check browser storage access and reopen this file.';$('add').disabled=true}
+ render();
+}
+function totals(rows){
+ return rows.reduce((t,r)=>{for(const k of Object.keys(t)) t[k]+=r[k];return t},{hours:0,brought:0,sold:0,revenue:0});
+}
+function render(){
+ const all=totals(days);
+ $('stats').innerHTML=[['Stall days',days.length],['Hours open',+all.hours.toFixed(8)],['Bouquets sold',all.sold],['Total revenue',money.format(all.revenue)]].map(([label,n])=>'<div class="stat"><small>'+label+'</small><b>'+n+'</b></div>').join('');
+ $('cards').innerHTML=['dry','rain'].map(w=>{
+ const rows=days.filter(r=>r.weather===w),t=totals(rows);
+ const metric=(label,value,basis)=>'<div class="metric"><label>'+label+'</label><div class="number">'+value+'</div><div class="counts">'+basis+'</div></div>';
+ return '<article class="card '+w+'"><div class="cardhead"><h3 class="weathername">'+icon(w)+cap(w)+'</h3><span class="daycount">'+rows.length+' stall '+(rows.length===1?'day':'days')+'</span></div><div class="metrics">'+
+ metric('Sell-through',t.brought?(100*t.sold/t.brought).toFixed(1)+'%':'—',t.sold+' sold / '+t.brought+' brought')+
+ metric('Revenue per hour',t.hours?hourMoney.format(t.revenue/t.hours):'—',money.format(t.revenue)+' / '+Number(t.hours.toFixed(8))+' open hours')+'</div></article>';
+ }).join('');
+ const visible=days.filter(r=>!$('filter').value||r.weather===$('filter').value).sort((a,b)=>b.date.localeCompare(a.date));
+ $('journal').innerHTML=visible.map(r=>{
+ const date=dateFormat.format(new Date(r.date+'T00:00:00Z'));
+ return '<tr><td>'+date+'</td><td><span class="chip '+r.weather+'">'+icon(r.weather)+cap(r.weather)+'</span></td><td>'+r.hours+'</td><td>'+r.brought+'</td><td>'+r.sold+'</td><td>'+money.format(r.revenue)+'</td><td><button class="edit" data-date="'+r.date+'" aria-label="Edit '+date+'">Edit</button></td></tr>';
+ }).join('')||'<tr><td colspan="7">No entries for this weather.</td></tr>';
+}
+function openForm(row){
+ editing=row||null;
+ $('form').reset();$('error').textContent='';
+ $('formTitle').textContent=row?'Edit entry':'New entry';
+ if(row) for(const [name,value] of Object.entries(row)) $('form').elements[name].value=value;
+ $('editor').showModal();
+}
+$('add').onclick=()=>openForm();
+$('journal').onclick=e=>{const btn=e.target.closest('[data-date]');if(btn) openForm(days.find(r=>r.date===btn.dataset.date))};
+$('cancel').onclick=()=>$('editor').close();
+$('filter').onchange=render;
+$('form').onsubmit=e=>{
+ e.preventDefault();
+ const r=Object.fromEntries(new FormData(e.target));
+ for(const k of ['hours','brought','sold','revenue']) r[k]=Number(r[k]);
+ const fail=msg=>{$('error').textContent=msg};
+ if(r.hours<=0) return fail('Enter more than zero hours open.');
+ if(r.sold>r.brought) return fail('Bouquets sold cannot exceed bouquets brought.');
+ if(!valid(r)) return fail('Check the date, hours, whole bouquet counts and whole-dollar revenue.');
+ try{
+ const latest=readDays();
+ if(editing && JSON.stringify(latest.find(x=>x.date===editing.date))!==JSON.stringify(editing)) return fail('This entry changed in another window. Cancel and reopen it.');
+ if(latest.some(x=>x.date===r.date && x.date!==editing?.date)) return fail('An entry already exists for this date. Edit that journal entry to correct it.');
+ const updated=latest.filter(x=>x.date!==editing?.date).concat(r);
+ localStorage.setItem(key,JSON.stringify(updated));days=updated;
+ }catch{return fail('Could not save. Check browser storage access and try again.')}
+ if($('filter').value!==r.weather) $('filter').value='';
+ $('editor').close();render();$('status').textContent='Entry saved for '+r.date;
+ const savedButton=document.querySelector('[data-date="'+r.date+'"]');savedButton?.focus();
+};
+window.addEventListener('storage',e=>{if(e.key===key||e.key===null) reload()});
+reload();
+</script></body></html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bakebook · Production ledger</title>
+<style>
+:root{--ink:#263c32;--muted:#5f695e;--paper:#faf9f4;--line:#d7d9cd;--green:#234936;--cream:#f7edcf;--sage:#e5ecdd}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.45 "Inter","Helvetica Neue",Arial,sans-serif}header{background:var(--green);color:white}.wrap{width:min(1080px,calc(100% - 64px));margin:auto}.bar,.heading,.sectionhead,.product,.stats,.actions{display:flex;align-items:center;justify-content:space-between;gap:16px}.bar{height:66px}.brand{display:flex;align-items:center;gap:10px;font:bold 25px Georgia,serif}.brand svg{width:35px;height:35px;color:#efe4b8}.offline{font-size:13px;color:#e5eddf}.offline:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#b7d99d;margin-right:8px}.heading{margin:42px 0 24px}h1,h2,h3{font-family:Georgia,serif;letter-spacing:-.035em;margin:0}h1{font-size:clamp(37px,5vw,58px);font-weight:normal;line-height:1.12}h2{font-size:29px;font-weight:normal}h3{font-size:27px}p{margin:5px 0;color:var(--muted)}button{cursor:pointer;font:inherit;color:inherit;border:1px solid var(--line);background:white;border-radius:6px;padding:10px 15px;font-weight:600}button:hover{filter:brightness(.95)}button:focus-visible,input:focus-visible,.scroll:focus-visible{outline:3px solid #9a660b;outline-offset:2px}.primary{background:var(--green);border-color:var(--green);color:white;white-space:nowrap}.plus{font-size:21px;line-height:0;vertical-align:-1px;margin-right:6px}.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{padding:18px 24px 21px;border-radius:10px;background:var(--cream);border:1px solid #e2d6b4}.card:nth-child(2){background:var(--sage);border-color:#ccd7c4}.product{padding-bottom:13px;border-bottom:1px solid #36472b33}.product p{font-size:13px;margin:0}.bread{width:95px;height:59px;color:#71522a}.card:nth-child(2) .bread{color:#4c6046}.stats{align-items:start;gap:10px;margin-top:15px}.stats strong{font:normal clamp(25px,3vw,37px) Georgia,serif;display:block;line-height:1.2}.stats small{font-size:12px;color:#505a4d}.sectionhead{margin:29px 0 12px}.count{color:var(--muted);font-size:13px}.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:#fffefa}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;text-align:right}th,td{padding:10px 15px;border-bottom:1px solid var(--line)}thead th{background:#f0f1e9;color:#455345;font-size:12px;font-weight:600}thead tr:first-child th[colspan]{text-align:center;font-size:14px}thead tr:last-child th{font-weight:500}tbody tr:last-child>*{border-bottom:none}th:first-child{text-align:left}.edge{border-left:1px solid var(--line)}tbody th{font-weight:600}tbody th small{display:block;font-size:12px;font-weight:400;color:var(--muted)}.edit{font-size:13px;padding:8px 13px;background:transparent}.week{margin-bottom:7px}.week thead th{padding-block:13px}.note{font-size:13px;margin:10px 0 38px}.error{color:#8d2e21}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}dialog{color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:26px;width:min(460px,94vw);max-height:92vh}dialog::backdrop{background:#172d2299}label{display:block;font-size:14px;font-weight:600}input{display:block;width:100%;padding:10px;margin-top:4px;font:inherit;border:1px solid #97a18f;border-radius:5px;background:#fffefa;color:inherit}form>label{margin:16px 0}fieldset{border:1px solid var(--line);border-radius:6px;margin:12px 0;padding:12px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}legend{font-weight:650}legend small{font-weight:400;color:var(--muted)}.actions{justify-content:flex-end;margin-top:18px}[aria-invalid=true]{border-color:#a33}#notice:empty{display:none}#notice{margin:12px 0}.symbols{display:none}
+@media(max-width:700px){.wrap{width:calc(100% - 32px)}.cards{gap:10px}.card{padding:15px}.stats{flex-wrap:wrap}.bread{width:60px}.heading{margin-top:28px}th,td{padding:9px 11px}.scroll table{min-width:650px}.week table{min-width:510px}}
+@media(max-width:500px){.cards{grid-template-columns:1fr}.heading{align-items:flex-start;flex-wrap:wrap}.stats{justify-content:space-between}.card{padding:12px 18px}.product{padding-bottom:7px}.bread{height:44px;width:80px}.stats{margin-top:8px}.sectionhead{margin-top:22px}.bar{height:56px}}
+</style></head><body>
+<svg class="symbols" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="bun" viewBox="0 0 110 66"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M9 42C9 26 29 12 53 11c26-1 47 12 48 30 1 12-17 19-46 19C28 60 9 54 9 42Z"/><path d="M10 43c12 11 62 18 90-1M26 30c3-6 9-10 16-12m-1 12c3-6 9-10 15-13m0 14c4-6 9-9 15-11M18 40l2-2m4 5 2-1m61-6 2 2m-5 3 1 1"/></g></symbol>
+<symbol id="roll" viewBox="0 0 110 66"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-16 55 33)"><path d="M7 36C7 19 31 13 55 13s47 7 48 24c1 12-18 18-48 18S7 49 7 36Z"/><path d="M8 39c15 11 67 17 94 0M24 24c6 0 11 5 12 10-6-1-10-5-12-10Zm18-5c7 0 13 6 14 13-7-2-11-6-14-13Zm21 0c7 1 13 7 14 13-7-1-12-7-14-13ZM16 33l1-1m66 6 2 1m5-4 1 1"/></g></symbol>
+</defs></svg>
+<header><div class="wrap bar"><span class="brand"><svg aria-hidden="true" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M15 28V8m0 13C7 20 6 15 6 13c6 0 9 4 9 8Zm0-7C9 13 8 8 8 6c5 1 7 4 7 8Zm1 10c7-2 9-6 9-10-6 1-9 5-9 10Zm0-9c6-1 8-6 8-9-5 1-8 5-8 9Zm-1-5c-3-3-2-6 0-9 4 3 4 6 0 9Z"/></svg>Bakebook</span><span class="offline">Offline ledger</span></div></header>
+<main class="wrap"><div class="heading"><div><h1>Production ledger</h1><p id="period"></p></div><button class="primary" id="add"><span class="plus" aria-hidden="true">+</span>Add day</button></div>
+<div id="notice" role="status"></div><div id="cards" class="cards"></div>
+<div class="sectionhead"><h2>Daily entries</h2><span id="days" class="count"></span></div>
+<div class="scroll" tabindex="0" aria-label="Daily entries"><table aria-label="Daily entries"><thead><tr><th rowspan="2">Bake date</th><th colspan="3" class="edge" scope="colgroup">Buns</th><th colspan="3" class="edge" scope="colgroup">Rolls</th><th rowspan="2"><span class="sr">Actions</span></th></tr><tr><th class="edge">Trays</th><th>Left</th><th>Est. sold</th><th class="edge">Trays</th><th>Left</th><th>Est. sold</th></tr></thead><tbody id="entries"></tbody></table></div>
+<div class="sectionhead"><h2>Weekday breakdown</h2></div><div class="scroll week" tabindex="0" aria-label="Weekday breakdown"><table aria-label="Weekday breakdown"><thead><tr><th>Weekday</th><th>Buns est. sold</th><th>Buns left %</th><th>Rolls est. sold</th><th>Rolls left %</th></tr></thead><tbody id="weekdays"></tbody></table></div>
+<p class="note">Estimated sold = items baked − items left. Weighted leftover rate = total items left ÷ total items baked. A dash means zero items baked.</p></main>
+<dialog id="editor" aria-labelledby="title"><form id="form"><h2 id="title">Add day</h2><label>Bake date<input id="date" type="date" required></label><div id="inputs"></div><p id="error" role="alert" class="error"></p><div class="actions"><button id="cancel" type="button">Cancel</button><button class="primary">Save day</button></div></form></dialog>
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+const key = 'bakebook.production.v1';
+const products = [{name:'Buns',icon:'bun',size:12},{name:'Rolls',icon:'roll',size:8}];
+const weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const seed = [['2026-11-02',4,8,3,3],['2026-11-03',5,14,4,10],['2026-11-09',4,4,3,2],['2026-11-10',5,18,4,12]];
+const dateOf = s => new Date(s+'T12:00:00Z');
+const pretty = s => dateOf(s).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'});
+const weekday = s => dateOf(s).getUTCDay();
+const rate = (left,baked) => baked ? (100*left/baked).toFixed(1)+'%' : '—';
+let rows = [], original = null;
+function validDate(s){
+ return typeof s==='string' && /^\d{4}-\d{2}-\d{2}$/.test(s) && s.slice(0,4)!=='0000' && Number.isFinite(+dateOf(s)) && dateOf(s).toISOString().startsWith(s+'T');
+}
+function validRow(row){
+ return Array.isArray(row) && row.length===5 && validDate(row[0]) && products.every(({size},i)=>{
+  const trays=row[1+2*i],left=row[2+2*i];
+  return Number.isSafeInteger(trays) && trays>=0 && Number.isSafeInteger(trays*size) && Number.isSafeInteger(left) && left>=0 && left<=trays*size;
+ });
+}
+function read(){
+ const raw=localStorage.getItem(key);
+ const data=raw===null ? seed : JSON.parse(raw);
+ if(!Array.isArray(data)||!data.every(validRow)||new Set(data.map(r=>r[0])).size!==data.length) throw Error('Invalid ledger');
+ return data.slice().sort((a,b)=>b[0].localeCompare(a[0]));
+}
+function totals(group,i){
+ let baked=0,left=0;
+ for(const r of group){baked+=r[1+2*i]*products[i].size;left+=r[2+2*i]}
+ return {baked,left,sold:baked-left,pct:rate(left,baked)};
+}
+function render(){
+ $('period').textContent=rows.length ? pretty(rows.at(-1)[0])+' – '+pretty(rows[0][0]) : 'No days recorded';
+ $('days').textContent=rows.length+' '+(rows.length===1?'day':'days')+' recorded';
+ $('cards').innerHTML=products.map(({name,size,icon},i)=>{
+  const t=totals(rows,i);
+  const stats=[[t.sold,'Est. sold'],[t.left,'Items left'],[t.pct,'Leftover rate']];
+  return '<section class="card"><div class="product"><div><h3>'+name+'</h3><p>'+size+' per tray</p></div><svg class="bread" aria-hidden="true"><use href="#'+icon+'"/></svg></div><div class="stats">'+stats.map(([v,k])=>'<div><strong>'+v+'</strong><small>'+k+'</small></div>').join('')+'</div></section>';
+ }).join('');
+ $('entries').innerHTML=rows.map(r=>'<tr><th scope="row">'+pretty(r[0])+'<small>'+weekdays[weekday(r[0])]+'</small></th>'+products.map((p,i)=>'<td class="edge">'+r[1+2*i]+'</td><td>'+r[2+2*i]+'</td><td>'+totals([r],i).sold+'</td>').join('')+'<td><button class="edit" data-date="'+r[0]+'" aria-label="Edit '+pretty(r[0])+'">Edit</button></td></tr>').join('');
+ $('weekdays').innerHTML=[1,2,3,4,5,6,0].map(d=>{
+  const group=rows.filter(r=>weekday(r[0])===d);
+  return group.length ? '<tr><th scope="row">'+weekdays[d]+'</th>'+products.map((p,i)=>{const t=totals(group,i);return '<td>'+t.sold+'</td><td>'+t.pct+'</td>'}).join('')+'</tr>' : '';
+ }).join('');
+}
+$('inputs').innerHTML=products.map(({name,size,icon})=>'<fieldset><legend>'+name+' <small>· '+size+' per tray</small></legend><div class="fields">'+[['Trays baked','Trays'],['Items left','Left']].map(([label,k])=>'<label>'+label+'<input id="'+icon+k+'" type="number" required min="0" step="1" inputmode="numeric"></label>').join('')+'</div></fieldset>').join('');
+const fields=['bunTrays','bunLeft','rollTrays','rollLeft'].map($);
+function openDay(row){
+ original=row;
+ $('form').reset();$('error').textContent='';
+ for(const el of $('form').querySelectorAll('input'))el.removeAttribute('aria-invalid');
+ $('title').textContent=row?'Edit day':'Add day';
+ const now=new Date();now.setMinutes(now.getMinutes()-now.getTimezoneOffset());
+ $('date').value=row?row[0]:now.toISOString().slice(0,10);
+ fields.forEach((el,i)=>el.value=row?row[i+1]:'');
+ $('editor').showModal();
+}
+$('add').onclick=()=>openDay(null);
+$('cancel').onclick=()=>$('editor').close();
+$('entries').onclick=e=>{const date=e.target.closest('button')?.dataset.date;if(date)openDay(rows.find(r=>r[0]===date))};
+function problem(el,message){el.setAttribute('aria-invalid','true');$('error').textContent=message;el.focus()}
+$('form').oninput=e=>{e.target.removeAttribute('aria-invalid');$('error').textContent=''};
+$('form').onsubmit=e=>{
+ e.preventDefault();
+ const row=[$('date').value,...fields.map(el=>Number(el.value))];
+ if(!validDate(row[0]))return problem($('date'),'Enter a valid bake date.');
+ for(const [i,p] of products.entries()){
+  const baked=row[1+2*i]*p.size;
+  if(!Number.isSafeInteger(baked))return problem(fields[i*2],'Enter a smaller tray count.');
+  if(row[2+2*i]>baked)return problem(fields[i*2+1],p.name+' left cannot exceed the '+baked+' baked.');
+ }
+ try{
+  const current=read(), existing=current.find(r=>r[0]===row[0]);
+  if(existing && existing[0]!==original?.[0])return problem($('date'),'This date already has an entry. Choose another date or edit its entry.');
+  if(original && JSON.stringify(original)!==JSON.stringify(current.find(r=>r[0]===original[0]))){rows=current;render();$('error').textContent='This entry changed in another window. Cancel and reopen it to edit.';return}
+  const next=current.filter(r=>r[0]!==original?.[0]).concat([row]);
+  if(products.some((p,i)=>!Number.isSafeInteger(totals(next,i).baked)))return problem(fields[0],'The total baked exceeds the supported count.');
+  localStorage.setItem(key,JSON.stringify(next));
+  rows=read();render();$('editor').close();$('notice').textContent='Saved '+pretty(row[0])+'.';
+ }catch{$('error').textContent='Unable to save. Check available browser storage and try again.'}
+};
+function refresh(){
+ try{rows=read();render();$('add').disabled=false}
+ catch{$('add').disabled=true;$('entries').innerHTML='';$('notice').textContent='Unable to read this ledger. Open it in a browser with local storage enabled.'}
+}
+window.addEventListener('storage',e=>{if(!e.key||e.key===key)refresh()});refresh();
+</script></body></html>

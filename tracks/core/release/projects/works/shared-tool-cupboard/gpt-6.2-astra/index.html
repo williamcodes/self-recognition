@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cupboard Ledger</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f6f5ef;color:#203831;font:15px/1.5 "Avenir Next",Avenir,Arial,sans-serif}header{background:#fffef9;border-bottom:1px solid #dcded3}.top,main{max-width:1220px;margin:auto;padding:0 5%}.top{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:750;letter-spacing:-.8px}.mark{display:grid;place-items:center;background:#204e43;color:#f7e8b7;border-radius:8px;width:34px;height:34px;font-size:29px;line-height:1}.offline,.pill{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:650}.offline i,.pill i{width:7px;height:7px;border-radius:100%;background:#498363}.hero{position:relative;display:flex;align-items:center;justify-content:space-between;background:#193f38;color:#fff8e5;border-radius:15px;margin:28px 0 16px;overflow:hidden;min-height:180px;padding:30px 36px}.hero>div:first-child{z-index:1}.dateline,.type{font:600 11px/1.4 Menlo,monospace;letter-spacing:1.3px;text-transform:uppercase}.dateline{color:#c0d5ac}.hero h1{font:normal clamp(38px,5vw,61px)/1.05 Georgia,serif;letter-spacing:-2px;margin:12px 0 8px}.hero p{margin:0;color:#e2e8dc}.heroart{width:32%;max-width:285px;align-self:stretch;display:grid;place-items:center}.heroart svg{width:100%;max-height:150px}nav{display:flex;gap:8px;border-bottom:1px solid #cfd5ca;overflow-x:auto}button,input,select{font:inherit}button{cursor:pointer}nav button{color:#566760;border:0;border-bottom:3px solid transparent;background:none;padding:14px 17px;font-weight:600;display:flex;align-items:center;gap:8px}nav button[aria-current]{color:#245b49;border-color:#245b49}svg.icon{width:18px;height:18px;vertical-align:middle;flex:none}.heading,.actions,.row,.panelhead{display:flex;align-items:center;justify-content:space-between;gap:12px}.heading{margin:28px 0 17px}.heading h2,.panel h2,dialog h2{font:normal 30px/1.2 Georgia,serif;letter-spacing:-1px;margin:0}.sub{color:#5d6961;margin:4px 0 0;font-size:14px}.btn,dialog button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid #bdc9bb;background:#fffef9;color:#274e41;padding:10px 15px;border-radius:7px;font-weight:650;font-size:14px;min-height:42px}.primary{color:white;background:#285e4c;border-color:#285e4c}.btn:hover,dialog button:hover{filter:brightness(.94)}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #ce872e;outline-offset:2px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card,.panel,.entry,.range{border:1px solid #d5d8cd;background:#fffef9;border-radius:12px;overflow:hidden}.art{height:137px;display:grid;place-items:center;position:relative;border-bottom:1px solid #0001}.art svg{width:80%;height:95%}.type{font-size:10px;color:#53665b}.details{padding:17px}.details h3{font:normal 23px/1.2 Georgia,serif;margin:5px 0 14px}.pill{border-radius:22px;padding:3px 10px;background:#e9f1df;color:#355d3e}.warn{background:#fae6d6;color:#853b22}.warn i{background:#a55732}.panel{margin-top:25px;padding:18px 22px}.panel h2{font-size:23px}.empty{text-align:center;border-top:1px solid #dee1d6;padding:24px 10px 6px;margin-top:13px;color:#5b685f}.empty strong{display:block;color:#314b40}.empty p{margin:3px}.entry,.range{padding:17px 20px;margin:10px 0}.entry{display:flex;justify-content:space-between;align-items:center;gap:12px}.entry strong{font-size:17px}.range,.fields{display:flex;gap:16px;flex-wrap:wrap}label{display:grid;gap:5px;font-size:13px;font-weight:650}input,select{border:1px solid #aebcb1;background:#fffefb;padding:9px;border-radius:6px;max-width:100%;min-width:0;color:#183e33}.range label,.fields label{flex:1;min-width:125px}footer{border-top:1px solid #d5d9cf;margin:32px 0;padding:18px 0;display:flex;align-items:center;gap:8px;color:#617166;font-size:12px}footer span:last-child{margin-left:auto}.footmark{font-size:20px}dialog{border:1px solid #bcc9bf;border-radius:14px;width:min(450px,94vw);padding:25px;color:#203831;background:#fffef9}dialog::backdrop{background:#112e26a6}dialog form{display:grid;gap:16px}dialog .actions{justify-content:flex-end}.error{color:#843b21;background:#fbecdf;border-radius:6px;padding:9px}.error:empty,#notice:empty{display:none}#notice{padding:10px 15px;background:#e7efde;margin-top:15px;border-radius:8px}.meta{color:#58695f;font-size:14px}.range+div{margin-top:14px}.button-small{min-height:36px;font-size:13px}#printout{display:none}@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}.heading{align-items:flex-start;flex-wrap:wrap}}@media(max-width:600px){.hero{padding:24px;min-height:158px}.heroart{display:none}.top{height:57px}.brand{font-size:17px}.offline{font-size:11px}.art{height:110px}.cards{gap:10px}.details{padding:12px}.details h3{font-size:21px}.actions{flex-wrap:wrap;gap:8px}nav{gap:0}nav button{font-size:13px;padding:12px 9px}nav svg.icon{display:none}.entry{align-items:flex-start;flex-wrap:wrap}.panel{padding:14px}.panelhead{flex-wrap:wrap}.heading h2{font-size:27px}footer{flex-wrap:wrap}}
+@media print{body{background:white;color:black;font:11pt Georgia,serif}header,main,dialog{display:none!important}#printout{display:block}#printout table{width:100%;border-collapse:collapse}th,td{text-align:left;border-bottom:1px solid #aaa;padding:8px 5px}tr{break-inside:avoid}@page{margin:15mm}}
+[hidden]{display:none!important}
+</style></head>
+<body><header><div class="top"><div class="brand"><span class="mark" aria-hidden="true">▤</span> Cupboard Ledger</div><span class="offline"><i></i> Offline workspace</span></div></header>
+<main><section class="hero"><div><div class="dateline" id="today"></div><h1>Shared cupboard</h1><p>Manage the building’s equipment, loans and reservations.</p></div><div class="heroart" aria-hidden="true" id="shelf"></div></section>
+<nav aria-label="Workspace views"><button data-tab="Inventory">Inventory</button><button data-tab="Loans">Loans</button><button data-tab="Reservations">Reservations</button><button data-tab="Availability">Availability</button></nav>
+<div id="notice" role="status"></div><section id="view"></section><footer><span class="footmark">▤</span> Cupboard Ledger <span>Stored in this browser on this device</span></footer></main><section id="printout"></section><dialog id="dialog"><form id="form"></form></dialog><script>
+const paths={
+ Inventory:'M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z',
+ Loans:'M5 4h11v5 M5 4v16h11v-4 M10 12h11m-4-4 4 4-4 4',
+ Reservations:'M3 6h18v15H3z M7 3v6m10-6v6M3 11h18',
+ Availability:'M3 6h18v15H3z M7 3v6m10-6v6M7 15l3 3 7-7',
+ print:'M6 8V3h12v5 M6 17H3V9h18v8h-3 M6 14h12v7H6z',plus:'M12 4v16M4 12h16'};
+function icon(k){return '<svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="'+paths[k]+'"/></svg>'}
+const tableArt='<g stroke="#395448" stroke-width="3" stroke-linejoin="round"><path fill="none" d="m57 61-6 43 7 3 11-41m68-20 5 32 5 2-2-35m-42 30-3 38 7 2 8-40m-54 5 45 19m-42-29 40 30"/><path fill="#b4b697" d="m36 54 91-28 53 26v7l-91 31-53-29z"/><path fill="#e3d9aa" d="m36 54 91-28 53 26-91 30z"/><path fill="none" stroke-width="1" d="m80 41 54 26"/></g>';
+const projectorArt='<g stroke="#384e48" stroke-width="2.8" stroke-linejoin="round"><path fill="#778f86" d="m38 55 88-24 48 23v31l-88 25-48-25z"/><path fill="#e2dfc8" d="m38 55 88-24 48 23-88 27z"/><path fill="#b4c2ae" d="m86 81 88-27v31l-88 25z"/><ellipse cx="147" cy="75" rx="14" ry="17" fill="#40594e" transform="rotate(15 147 75)"/><ellipse cx="148" cy="75" rx="8" ry="11" fill="#8fbdbd"/><path d="m45 65 30 15m-30-8 30 15m20-1 28-9m-28 16 28-9m-28 16 28-9" fill="none"/><path d="m81 53 24-7m-17 11 24-7" fill="none" stroke-width="2"/></g>';
+const cordArt='<g transform="rotate(-12 110 65)" fill="none" stroke-linecap="round" stroke-linejoin="round"><g stroke="#73503c" stroke-width="8"><ellipse cx="99" cy="63" rx="44" ry="24"/><ellipse cx="97" cy="70" rx="44" ry="24"/><ellipse cx="95" cy="77" rx="44" ry="24"/><path d="M52 77q-14 6-20-8m107 4q27 15 28-12l-1-13"/></g><g stroke="#e7ac6b" stroke-width="4"><ellipse cx="99" cy="63" rx="44" ry="24"/><ellipse cx="97" cy="70" rx="44" ry="24"/><ellipse cx="95" cy="77" rx="44" ry="24"/><path d="M52 77q-14 6-20-8m107 4q27 15 28-12l-1-13"/></g><g stroke="#444f43" stroke-width="3" fill="#758477"><rect x="157" y="34" width="16" height="18" rx="3"/><path d="M161 34v-9m8 9v-9"/><rect x="22" y="54" width="18" height="19" rx="4"/><path d="m85 37 7-1-2 14-7 1z" fill="#495b4d"/></g></g>';
+function art(kind){return '<svg aria-hidden="true" viewBox="0 0 210 135">'+(kind==='table'?tableArt:kind==='projector'?projectorArt:cordArt)+'</svg>'}
+document.querySelector('#shelf').innerHTML='<svg viewBox="0 0 250 138" fill="none" stroke="#afc6a4" stroke-width="1.8" stroke-linejoin="round"><g transform="translate(20 5)"><path d="m10 26 120-20 69 21L78 50z M10 26v76l68 28 121-26V27 M78 50v80 M10 66l68 26 121-24 M18 38v22l49 18V54z M86 55l45-8v29l-45 10z M141 46l48-10v27l-48 11z"/><path d="m149 51 28-6m-25 11 26-6 M93 59l27-5m-27 11 27-5 M19 78v19l45 18V94z M89 98l30-7v23l-30 7z M128 90l59-13v21l-59 13z"/><path d="m134 94 18-4m-18 9 18-4 M26 47l30 11" stroke="#d8b87f"/></g></svg>';
+</script>
+<script>
+'use strict';
+const items=[
+ {id:'T-01',name:'Folding table',kind:'table',cap:1,bg:'#e4e9d5'},
+ {id:'T-02',name:'Folding table',kind:'table',cap:1,bg:'#eae4d3'},
+ {id:'P-01',name:'Projector',kind:'projector',cap:1,bg:'#dfe9e7'},
+ {id:'Cords',name:'Extension cords',kind:'cord',cap:3,bg:'#f3e4d7'}
+];
+const $=s=>document.querySelector(s),item=id=>items.find(x=>x.id===id);
+const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function date(d=new Date()){return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')}
+function offset(n){const d=new Date();d.setDate(d.getDate()+n);return date(d)}
+function fmt(s){return new Date(s+'T12:00:00').toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric'})}
+const left=r=>r.qty-r.returns.reduce((s,x)=>s+x.qty,0);
+function occupied(r,d){
+ if(d<r.start)return 0;
+ if(r.kind==='reservation')return d<=r.end?r.qty:0;
+ const returned=r.returns.filter(x=>x.day<=d).reduce((s,x)=>s+x.qty,0);
+ if(d<=date()||d<=r.end||r.end<date())return r.qty-returned;
+ return 0;
+}
+// Usage can rise only on a record's start date.
+function availability(all,it,start,end,skip){
+ const relevant=all.filter(r=>r.item===it.id&&r.id!==skip);
+ let used=0,blockers=[],peakDay=start;
+ for(const d of new Set([start,...relevant.map(r=>r.start).filter(d=>d>=start&&d<=end)])){
+  const active=relevant.filter(r=>occupied(r,d)>0);
+  const sum=active.reduce((n,r)=>n+occupied(r,d),0);
+  if(sum>used){used=sum;blockers=active;peakDay=d}
+ }
+ return {free:Math.max(0,it.cap-used),blockers,peakDay};
+}
+function why(a){return 'On '+fmt(a.peakDay)+', '+a.blockers.map(r=>r.house+' has '+occupied(r,a.peakDay)+' on '+(r.kind==='loan'?'loan':'reservation')+' ('+fmt(r.start)+' – '+fmt(r.end)+(r.kind==='loan'&&left(r)&&r.end<date()?', overdue':'')+')').join(' and ')+'.'}
+let db,records=[],tab='Inventory',mode,target,rangeStart=date(),rangeEnd=date(),refreshID=0;
+const channel=typeof BroadcastChannel==='function'?new BroadcastChannel('cupboard-ledger'):null;
+function notice(msg){$('#notice').textContent=msg}
+async function refresh(){
+ if(!db)return;
+ const id=++refreshID,req=db.transaction('ledger').objectStore('ledger').getAll();
+ req.onsuccess=()=>{if(id===refreshID){records=req.result;render()}};
+ req.onerror=()=>notice('Could not read the ledger. Reopen this page to retry.');
+}
+function commit(change){
+ return new Promise((resolve,reject)=>{
+ const tx=db.transaction('ledger','readwrite'),store=tx.objectStore('ledger'),read=store.getAll();let fault;
+ read.onsuccess=()=>{try{change(read.result,store)}catch(e){fault=e;tx.abort()}};
+ tx.oncomplete=()=>{channel?.postMessage('changed');refresh();resolve()};
+ tx.onabort=()=>reject(fault||new Error('Saving failed. Check browser storage and retry.'));
+ });
+}
+const pill=(label,warn=false)=>'<span class="pill '+(warn?'warn':'')+'"><i></i>'+label+'</span>';
+const action=(label,op,primary=false,ico='',id='')=>'<button type="button" class="btn '+(primary?'primary':'')+'" data-op="'+op+'" data-id="'+id+'">'+(ico?icon(ico):'')+label+'</button>';
+function head(title,sub,buttons=''){return '<div class="heading"><div><h2>'+title+'</h2><p class="sub">'+sub+'</p></div><div class="actions">'+buttons+'</div></div>'}
+function entries(rows,isLoan){
+ if(!rows.length)return '<div class="empty"><strong>No '+(isLoan?'current loans':'reservations')+'</strong><p>'+(isLoan?'Checked-out equipment will appear here.':'Reserved equipment will appear here.')+'</p></div>';
+ return [...rows].sort((a,b)=>(isLoan?a.end:a.start).localeCompare(isLoan?b.end:b.start)).map(r=>{
+ const it=item(r.item),late=r.end<date();
+ return '<article class="entry"><div><strong>'+esc(r.house)+'</strong> · '+it.name+' <span class="meta">'+(it.cap===1?r.item:'× '+left(r))+'</span><div class="meta">'+(isLoan?'Out ':'From ')+fmt(r.start)+' · '+(isLoan?'Due ':'Through ')+fmt(r.end)+'</div></div><div class="actions">'+(late?pill(isLoan?'Overdue':'Expired',true):'')+(isLoan?action('Record return','return',false,'',r.id):((r.start<=date()&&!late?action('Check out','pickup',true,'',r.id):'')+action('Cancel','cancel',false,'',r.id)))+'</div></article>'}).join('');
+}
+function render(){
+ const loans=records.filter(r=>r.kind==='loan'&&left(r)>0),res=records.filter(r=>r.kind==='reservation');
+ $('#today').textContent=new Date().toLocaleDateString(undefined,{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+ document.querySelectorAll('nav button').forEach(b=>{if(b.dataset.tab===tab)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');b.innerHTML=icon(b.dataset.tab)+b.dataset.tab});
+ const checkout=action('Check out','loan',true,'plus'),reserve=action('Reserve','reservation',false,'Reservations'),print=action('Print sheet','print',false,'print');
+ let html='';
+ if(tab==='Inventory'){
+ html=head('Cupboard inventory','4 inventory entries · 6 items in total',reserve+checkout)+'<div class="cards">'+items.map(it=>{
+ const free=availability(records,it,date(),date()).free;
+ return '<article class="card"><div class="art" style="background:'+it.bg+'">'+art(it.kind)+'</div><div class="details"><div class="type">'+(it.cap===1?'Tagged · '+it.id:'Pooled · Qty 3')+'</div><h3>'+it.name+'</h3>'+pill(it.cap===1?(free?'Available':'Unavailable'):free+' of 3 available',!free)+'</div></article>'}).join('')+'</div><section class="panel"><div class="panelhead"><h2>Current loans</h2>'+print+'</div>'+entries(loans,true)+'</section>';
+ }else if(tab==='Loans')html=head('Current loans',loans.length+' open · '+loans.filter(r=>r.end<date()).length+' overdue',print+checkout)+entries(loans,true);
+ else if(tab==='Reservations')html=head('Reservations','Check out a reservation during its reserved dates.',reserve)+entries(res,false);
+ else{
+ html=head('Date-range availability','Check the quantity available throughout both dates.',reserve)+'<div class="range"><label>Start date<input type="date" id="rangeStart" value="'+rangeStart+'"></label><label>End date<input type="date" id="rangeEnd" value="'+rangeEnd+'"></label></div>';
+ if(!rangeStart||!rangeEnd||rangeEnd<rangeStart)html+='<p class="error">Choose an end date on or after the start date.</p>';
+ else html+=items.map(it=>{const a=availability(records,it,rangeStart,rangeEnd);return '<article class="entry"><div><strong>'+it.name+'</strong> '+(it.cap===1?it.id:'(pool of 3)')+(a.blockers.length?'<div class="meta">'+esc(why(a))+'</div>':'')+'</div>'+pill(a.free+' available',!a.free)+'</article>'}).join('');
+ }
+ $('#view').innerHTML=html;
+ $('#printout').innerHTML='<h1>Shared cupboard · Current loans</h1><p>As of '+fmt(date())+'</p>'+(loans.length?'<table><thead><tr>'+['Household','Item','Tag','Still out','Checkout','Expected return','Status'].map(x=>'<th>'+x+'</th>').join('')+'</tr></thead><tbody>'+loans.map(r=>'<tr>'+[r.house,item(r.item).name,item(r.item).cap===1?r.item:'—',left(r),fmt(r.start),fmt(r.end),r.end<date()?'Overdue':'Open'].map(x=>'<td>'+esc(x)+'</td>').join('')+'</tr>').join('')+'</tbody></table>':'<p>No current loans.</p>');
+}
+function openForm(op,id){
+ mode=op;target=id;const r=records.find(r=>r.id===id),reserve=op==='reservation',create=reserve||op==='loan';
+ const title={loan:'Check out equipment',reservation:'Reserve equipment',return:'Record return',pickup:'Check out reservation',cancel:'Cancel reservation'}[op];
+ let fields='';
+ if(create){
+ const start=reserve?(tab==='Availability'&&rangeStart>date()?rangeStart:offset(1)):date();
+ const end=reserve?(tab==='Availability'&&rangeEnd>=start?rangeEnd:start):offset(7);
+ fields='<label>Household label<input name="house" maxlength="32" placeholder="e.g. Apt 4B" required autofocus></label><label>Equipment<select name="item">'+items.map(i=>'<option value="'+i.id+'">'+i.name+' · '+(i.cap===1?i.id:'pool of 3')+'</option>').join('')+'</select></label><label id="qtyLabel" hidden>Quantity<input type="number" name="qty" value="1" min="1" max="3" required></label><div class="fields"><label>'+(reserve?'Start date':'Checkout date')+'<input type="date" name="start" value="'+start+'" '+(reserve?'min="'+offset(1)+'"':'max="'+date()+'"')+' required></label><label>'+(reserve?'End date':'Expected return')+'<input type="date" name="end" value="'+end+'" min="'+start+'" required></label></div>';
+ }else{
+ if(!r)return;
+ fields='<p>'+esc(r.house)+' · '+item(r.item).name+' · '+(item(r.item).cap===1?r.item:left(r)+' cords')+'</p>';
+ if(op==='return')fields+='<label>Quantity returned<input name="qty" type="number" value="'+left(r)+'" min="1" max="'+left(r)+'" required></label>';
+ if(op==='pickup')fields+='<p>Check out today with an expected return of '+fmt(r.end)+'.</p>';
+ }
+ $('#form').innerHTML='<h2 id="dialogTitle">'+title+'</h2>'+fields+'<div class="error" role="alert" id="error"></div><div class="actions"><button type="button" data-op="close">Back</button><button class="primary">'+({loan:'Save loan',reservation:'Save reservation',return:'Save return',pickup:'Check out',cancel:'Cancel reservation'}[op])+'</button></div>';
+ $('#dialog').setAttribute('aria-labelledby','dialogTitle');$('#dialog').showModal();
+}
+$('#form').oninput=e=>{const f=e.currentTarget.elements;$('#error').textContent='';
+ if(e.target.name==='item'){$('#qtyLabel').hidden=item(f.namedItem('item').value).cap===1;f.qty.value=1}
+ if(e.target.name==='start')f.end.min=f.start.value;
+};
+$('#form').onsubmit=async e=>{
+ e.preventDefault();const f=new FormData(e.currentTarget),op=mode,id=target,submit=e.submitter;if(submit)submit.disabled=true;
+ try{await commit((all,store)=>{
+ const r=all.find(x=>x.id===id),today=date();
+ if(op==='return'){
+ const qty=Number(f.get('qty'));if(!r||r.kind!=='loan'||!Number.isInteger(qty)||qty<1||qty>left(r))throw Error('The remaining quantity has changed. Reopen this loan.');
+ r.returns.push({qty,day:today});store.put(r);return;
+ }
+ if(op==='cancel'){if(!r||r.kind!=='reservation')throw Error('This reservation has changed.');store.delete(id);return}
+ const pickup=op==='pickup';
+ if(pickup&&(!r||r.kind!=='reservation'||today<r.start||today>r.end))throw Error('This reservation is unavailable for pickup.');
+ const data=pickup?{...r,start:today,kind:'loan'}:{id:crypto.randomUUID(),house:f.get('house').trim(),kind:op,item:f.get('item'),qty:Number(f.get('qty')),start:f.get('start'),end:f.get('end'),returns:[]};
+ const it=item(data.item);
+ if(!data.house||!it||!Number.isInteger(data.qty)||data.qty<1||data.qty>it.cap||!data.start||!data.end||data.end<data.start)throw Error('Enter a household label, valid quantity and ordered dates.');
+ if(op==='reservation'&&data.start<=today)throw Error('Choose a future reservation start date.');
+ if(op==='loan'&&data.start>today)throw Error('Choose today or an earlier checkout date.');
+ const a=availability(all,it,data.start,data.end<today?'9999-12-31':data.end,pickup?id:null);
+ if(data.qty>a.free)throw Error('Only '+a.free+' available. '+why(a));
+ store.put(data);
+ });$('#dialog').close();notice(({loan:'Loan saved.',reservation:'Reservation saved.',return:'Return recorded.',pickup:'Reservation checked out.',cancel:'Reservation canceled.'})[op]);
+ }catch(err){$('#error').textContent=err.message}finally{if(submit)submit.disabled=false}
+};
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+ if(b.dataset.tab){tab=b.dataset.tab;notice('');render();return}
+ const op=b.dataset.op;if(!op)return;if(op==='close')$('#dialog').close();else if(op==='print'){render();window.print()}else if(db)openForm(op,b.dataset.id);
+});
+$('#view').onchange=e=>{if(e.target.id==='rangeStart'||e.target.id==='rangeEnd'){rangeStart=$('#rangeStart').value;rangeEnd=$('#rangeEnd').value;render();$('#'+e.target.id).focus()}};
+if(channel)channel.onmessage=refresh;
+window.addEventListener('focus',refresh);
+window.addEventListener('beforeprint',render);
+let lastDay=date();setInterval(()=>{if(date()!==lastDay){lastDay=date();refresh()}},30000);
+try{const req=indexedDB.open('shared-cupboard-ledger',1);
+ req.onupgradeneeded=()=>req.result.createObjectStore('ledger',{keyPath:'id'});
+ req.onsuccess=()=>{db=req.result;refresh()};
+ req.onerror=()=>notice('Browser storage is unavailable. Open this file in a regular browser window and allow local storage.');
+}catch{notice('Browser storage is unavailable. Open this file in a regular browser window.')}
+</script>
+</body></html>

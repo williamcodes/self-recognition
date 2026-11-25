@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>Swatch Catalog | Selvedge Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="samples.js" defer></script>
+  <script src="catalog.js" defer></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-weave" viewBox="0 0 24 24"><path d="M3 6h5m4 0h9M3 12h9m4 0h5M3 18h5m4 0h9M8 3v9m0 4v5m8-18v5m0 4v9"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></symbol>
+    <symbol id="i-stack" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5m-18 4 9 5 9-5"/></symbol>
+    <symbol id="i-drawer" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M4 12h16m-10-3h4m-4 6h4"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2m-11 5a22 22 0 0 0 16 0m-8 0v3"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4.5 4.5"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m10 7 5 5-5 5"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m14 7-5 5 5 5"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="m5 15-1 5 5-1L20 8l-4-4L5 15Zm9-9 4 4"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="i-keyboard" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h.01m3.32 0h.01m3.32 0h.01m3.32 0h.01M8 14h8"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#search">Skip to search</a>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <div class="brand">
+        <span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#i-weave"/></svg></span>
+        <span>Selvedge <span class="brand-studio">Studio</span></span>
+      </div>
+      <div class="header-actions">
+        <span class="local-label"><span class="dot"></span><span id="storage-label">Offline catalog</span></span>
+        <button class="button secondary" id="open-data" type="button"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Export data</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Upholstery sample library</p>
+        <h1 id="page-title">Swatch catalog</h1>
+        <p class="hero-description">Find a fabric, locate its drawer, and see what’s<br class="hero-break"> out with clients.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="fabric fabric-flax"><div></div></div>
+        <div class="fabric fabric-moss"><div></div></div>
+        <div class="fabric fabric-clay"><div></div></div>
+        <div class="fabric fabric-slate"><div></div></div>
+      </div>
+    </section>
+
+    <div id="storage-notice" class="notice" role="status" hidden></div>
+    <noscript><p class="notice">Enable JavaScript in your browser to open the catalog.</p></noscript>
+
+    <div class="summary" aria-label="Catalog totals">
+      <button class="summary-card" type="button" data-status="" aria-pressed="true">
+        <span class="metric-icon"><svg class="icon" aria-hidden="true"><use href="#i-stack"/></svg></span>
+        <span class="metric-copy"><span class="metric-label">Total swatches</span><strong id="total-count">0</strong></span>
+      </button>
+      <button class="summary-card" type="button" data-status="available" aria-pressed="false">
+        <span class="metric-icon metric-green"><svg class="icon" aria-hidden="true"><use href="#i-drawer"/></svg></span>
+        <span class="metric-copy"><span class="metric-label">In cabinet</span><strong id="available-count">0</strong></span>
+      </button>
+      <button class="summary-card" type="button" data-status="out" aria-pressed="false">
+        <span class="metric-icon metric-clay"><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg></span>
+        <span class="metric-copy"><span class="metric-label">Checked out</span><strong id="out-count">0</strong></span>
+      </button>
+    </div>
+
+    <section class="inventory" aria-labelledby="inventory-title">
+      <div class="section-heading">
+        <h2 id="inventory-title">Sample inventory</h2>
+        <button class="button primary" id="add" type="button" aria-keyshortcuts="N"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg> Add swatch</button>
+      </div>
+      <div class="catalog-panel">
+        <div class="filters">
+          <div class="filter-row">
+            <div class="search-control">
+              <label for="search">Search</label>
+              <div class="search-box">
+                <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+                <input id="search" type="search" placeholder="Code, fabric, color, or reference" autocomplete="off" aria-keyshortcuts="/" aria-describedby="search-help">
+                <kbd aria-hidden="true">/</kbd>
+              </div>
+              <span id="search-help" class="sr-only">Press Enter to open an exact code or the only matching result.</span>
+            </div>
+            <label class="select-control">Color family
+              <span class="select-wrap"><select id="color-filter"><option value="">All colors</option></select><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></span>
+            </label>
+            <label class="select-control">Fabric type
+              <span class="select-wrap"><select id="fabric-filter"><option value="">All fabrics</option></select><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></span>
+            </label>
+            <label class="select-control">Status
+              <span class="select-wrap"><select id="status-filter"><option value="">All statuses</option><option value="available">In cabinet</option><option value="out">Checked out</option></select><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></span>
+            </label>
+          </div>
+          <div class="drawer-row">
+            <fieldset id="drawer-filter" class="drawers">
+              <legend>Drawer</legend>
+              <label><input type="radio" name="drawer-filter" value="" checked><span>All</span></label>
+              <label><input type="radio" name="drawer-filter" value="A"><span>A</span></label>
+              <label><input type="radio" name="drawer-filter" value="B"><span>B</span></label>
+              <label><input type="radio" name="drawer-filter" value="C"><span>C</span></label>
+              <label><input type="radio" name="drawer-filter" value="D"><span>D</span></label>
+              <label><input type="radio" name="drawer-filter" value="E"><span>E</span></label>
+              <label><input type="radio" name="drawer-filter" value="F"><span>F</span></label>
+            </fieldset>
+            <button id="clear" class="text-button" type="button" hidden>Clear filters</button>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table aria-labelledby="inventory-title">
+            <thead>
+              <tr><th scope="col" aria-sort="ascending"><button id="sort" class="sort-button" type="button">Sample code <span aria-hidden="true">↑</span></button></th><th scope="col">Color family</th><th scope="col">Fabric type</th><th scope="col">Drawer</th><th scope="col">Status</th><th scope="col"><span class="sr-only">Actions</span></th></tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+
+        <div class="empty-state" id="empty" hidden>
+          <strong id="empty-title">No matching swatches</strong>
+          <p id="empty-text">Try a different search or clear the filters.</p>
+          <button class="button secondary" id="empty-action" type="button">Clear filters</button>
+        </div>
+        <div class="table-footer">
+          <p id="results" role="status" aria-live="polite"></p>
+          <div class="pagination" id="pagination" aria-label="Result pages">
+            <button class="button icon-button" id="previous" type="button" aria-label="Previous page"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></button>
+            <span id="page-label"></span>
+            <button class="button icon-button" id="next" type="button" aria-label="Next page"><svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div><svg class="icon" aria-hidden="true"><use href="#i-keyboard"/></svg><span><kbd>/</kbd> Search</span><span><kbd>N</kbd> Add swatch</span></div>
+      <span>Saved in this browser on the shared laptop</span>
+    </footer>
+  </main>
+
+  <dialog id="record-dialog" aria-labelledby="record-title">
+    <form id="record-form">
+      <div class="dialog-header">
+        <h2 id="record-title">Add swatch</h2>
+        <button class="button icon-button" type="button" data-close aria-label="Close"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+      </div>
+      <div class="dialog-body form-grid">
+        <label>Sample code <input id="code" placeholder="C-014" required maxlength="24" autocomplete="off" spellcheck="false" autofocus></label>
+        <label>Drawer
+          <select id="drawer" required><option value="">Choose a drawer</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option></select>
+        </label>
+        <label>Color family <input id="color" list="colors" placeholder="e.g. Blue" required maxlength="50" autocomplete="off"><datalist id="colors"></datalist></label>
+        <label>Fabric type <input id="fabric" list="fabrics" placeholder="e.g. Linen" required maxlength="50" autocomplete="off"><datalist id="fabrics"></datalist></label>
+        <label class="full">Checkout status
+          <select id="status"><option value="available">In cabinet</option><option value="out">Checked out</option></select>
+        </label>
+        <label class="full" id="reference-field" hidden>Client or project reference <small>Optional</small>
+          <input id="reference" maxlength="90" autocomplete="off" placeholder="e.g. Reading room">
+        </label>
+        <p class="form-error full" id="record-error" role="alert" hidden></p>
+      </div>
+      <div class="dialog-actions">
+        <button class="button secondary" type="button" data-close>Cancel</button>
+        <button class="button primary" id="save-record" type="submit">Save swatch</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="data-dialog" aria-labelledby="data-title">
+    <div class="dialog-header">
+      <h2 id="data-title">Export data</h2>
+      <button class="button icon-button" type="button" data-close aria-label="Close"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="dialog-body data-options">
+      <p>Both formats include every swatch in the catalog.</p>
+      <button class="data-option" id="export-csv" type="button" autofocus><span><strong>Spreadsheet (.csv)</strong><small>Open or share a copy in a spreadsheet.</small></span><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></button>
+      <button class="data-option" id="export-json" type="button"><span><strong>Catalog backup (.json)</strong><small>Restore the catalog later or move it to another laptop.</small></span><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></button>
+      <div class="restore">
+        <div class="data-links">
+          <button class="text-button" id="import" type="button">Restore from a backup</button>
+          <button class="text-button" id="start-blank" type="button">Start a blank catalog</button>
+        </div>
+        <input id="backup-file" type="file" accept=".json,application/json" hidden tabindex="-1">
+        <div id="restore-confirm" hidden>
+          <p id="restore-summary"></p>
+          <div class="restore-actions"><button class="button secondary" id="cancel-restore" type="button">Cancel restore</button><button class="button primary" id="confirm-restore" type="button">Replace catalog</button></div>
+        </div>
+      </div>
+      <p id="data-feedback" class="data-feedback" role="status" hidden></p>
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

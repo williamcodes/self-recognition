@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Batch &amp; Grain · Saturday counter kit</title>
+<style>
+*{box-sizing:border-box}body{background:#ebe8de;color:#242e27;margin:0;font:16px/1.45 system-ui,Arial,sans-serif}main{max-width:1150px;margin:34px auto;padding:0 20px;display:grid;grid-template-columns:280px minmax(0,680px);justify-content:center;gap:32px}.controls{align-self:start;position:sticky;top:24px}h1{font: bold 40px/1 Georgia,serif;letter-spacing:-1.8px;margin:8px 0 24px}fieldset{border:0;border-top:1px solid #adafa2;padding:12px 0;margin:0}legend,.brand{font:bold 12px Arial,sans-serif;letter-spacing:1.6px;text-transform:uppercase}legend{padding:0 8px 0 0}label.row{display:flex;align-items:center;justify-content:space-between;margin:8px 0}input,select,button{font:inherit;padding:6px;border:1px solid #898e82;border-radius:3px;background:#fff}input[type=number]{width:83px}select,button{width:100%}button{background:#244c3e;color:white;font-weight:bold;cursor:pointer;padding:11px}.note{font-size:14px}article{background:white;margin:0 0 22px;box-shadow:0 2px 12px #0002}article svg{display:block;width:100%;height:auto}.hidden{display:none}
+@media(max-width:740px){main{display:block}.controls{position:static;margin-bottom:24px}}
+@page{size:letter portrait;margin:0}@media print{html,body,main,#pages{display:block;width:8.5in;margin:0;padding:0;background:white}.controls{display:none}article{margin:0;box-shadow:none;width:8.5in;height:11in;page-break-inside:avoid}article+article{page-break-before:always}article svg{width:8.5in;height:11in}article.hidden{display:none}}
+</style></head><body><main><form class="controls" id="controls"><span class="brand">Batch &amp; Grain</span><h1>Counter kit</h1>
+<fieldset><legend>Menu prices</legend><label class="row">Seeded loaf ($)<input type="number" min="0" max="999.99" step="0.01" required value="7"></label><label class="row">Plain loaf ($)<input type="number" min="0" max="999.99" step="0.01" required value="5"></label><label class="row">Four-bun box ($)<input type="number" min="0" max="999.99" step="0.01" required value="12"></label><label><input type="checkbox" id="blank"> Leave prices blank for handwriting</label></fieldset>
+<fieldset><legend>Print selection</legend><select aria-label="Pages to print" id="selection"><option value="both">Sign and order sheet</option><option value="sign">Counter sign</option><option value="sheet">Order sheet</option></select></fieldset>
+<button type="submit">Print / save PDF</button><p class="note">Use US Letter, portrait, at 100%. Turn off browser headers and footers. Save a PDF to keep your edited prices.</p></form><section id="pages" aria-label="Print preview"><article id="sign"></article><article id="sheet"></article></section></main>
+<script>
+const ink='#233b31', rust='#a44129', cream='#fbf7eb', wheat='#e9bd70';
+function txt(x,y,s,size,opts=''){return '<text x="'+x+'" y="'+y+'" font-size="'+size+'" '+opts+'>'+s+'</text>'}
+function label(x,y,s,size=15,opts=''){return txt(x,y,s,size,'font-family="Arial, sans-serif" font-weight="bold" letter-spacing="1.7" '+opts)}
+function rule(x,y,X,Y,color=ink,w=1){return '<path d="M'+x+' '+y+' L'+X+' '+Y+'" stroke="'+color+'" stroke-width="'+w+'"/>'}
+function rect(x,y,w,h,fill,extra=''){return '<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="'+fill+'" '+extra+'/>'}
+function page(title,body){return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 816 1056" role="img" aria-label="'+title+'" font-family="Georgia,serif" fill="'+ink+'"><title>'+title+'</title>'+body+'</svg>'}
+// Linocut-style oval loaf, with its scoring and crust marks clipped to the silhouette.
+function loaf(){
+let crust='',seed='';
+for(let i=0;i<57;i++){let x=i*6-60;crust+='<path d="M'+x+' 83 q17 13 21 40" />'}
+for(let i=0;i<63;i++){let x=20+(i*79)%217,y=16+(i*43)%73;seed+='<path d="M'+x+' '+y+' q2 -5 8 -6 q-1 6 -8 6Z"/>'}
+const d='M5 79 C5 44 48 12 104 6 C166 -2 216 12 243 43 C269 72 251 97 211 108 C145 129 42 124 13 100 Q4 93 5 79Z';
+return '<g transform="translate(468 225) rotate(-13) scale(1.07)"><defs><clipPath id="crust"><path d="'+d+'"/></clipPath></defs><path d="'+d+'" fill="'+wheat+'" stroke="'+ink+'" stroke-width="4"/><g clip-path="url(#crust)"><g fill="'+ink+'">'+seed+'</g><path d="M-3 78 Q60 124 173 101 Q233 94 264 63 L268 135 H-5Z" fill="'+ink+'"/><g fill="none" stroke="'+wheat+'" stroke-width="2">'+crust+'</g><g fill="'+cream+'" stroke="'+ink+'" stroke-width="2.7"><path d="M46 75Q47 36 89 15Q65 41 59 73Z"/><path d="M99 81Q103 39 143 13Q120 47 114 80Z"/><path d="M153 82Q159 44 192 25Q172 53 167 80Z"/></g></g></g>'
+}
+function header(tag){return label(48,66,'BATCH &amp; GRAIN',20)+label(768,66,tag,14,'text-anchor="end"')+rule(48,85,768,85,ink,2)}
+const names=['Seeded loaf','Plain loaf','Box of four buns'];
+const inputs=Array.from(document.querySelectorAll('input[type=number]'));
+function prices(){return inputs.map(el=>{let n=Number(el.value);return document.getElementById('blank').checked||!el.value||!el.validity.valid?'':('$'+(Number.isInteger(n)?n:n.toFixed(2)))})}
+function sign(p){
+let b=rect(0,0,816,1056,cream)+header('COUNTER PREORDERS');
+b+=txt(44,202,'Saturday',109,'font-weight="bold" letter-spacing="-6"')+txt(44,304,'bread.',109,'font-weight="bold" letter-spacing="-6"')+loaf();
+b+=txt(49,367,'Place your order here at the counter.',32)+rule(48,398,768,398,ink,3);
+b+=label(49,432,'THE BAKE')+label(768,432,'PRICE',15,'text-anchor="end"');
+names.forEach((name,i)=>{let y=497+i*85;b+=txt(48,y,name,44)+rect(618,y-44,150,55,'white','stroke="#a6a695" stroke-dasharray="4 3"')+txt(693,y-3,p[i],p[i].length>5?31:39,'font-weight="bold" text-anchor="middle"')+rule(48,y+29,768,y+29)});
+b+=rect(48,745,720,108,ink)+label(70,783,'ORDER BY',16,'fill="white"')+txt(70,832,'Friday at noon',49,'fill="white" font-weight="bold"');
+b+=label(49,907,'CHOOSE A SATURDAY PICKUP WINDOW')+txt(48,971,'8–10 a.m.',43)+rule(361,932,361,977,rust,2)+txt(403,971,'10 a.m.–noon',43)+rule(48,1008,768,1008,ink,2);return page('Saturday bread preorder sign',b)}
+function sheet(p){
+let b=header('STAFF ORDER SHEET')+txt(45,155,'Saturday pickups',65,'font-weight="bold" letter-spacing="-3"')+label(49,207,'SATURDAY DATE')+rule(235,209,500,209)+label(551,207,'SHEET')+rule(630,209,768,209);
+b+=txt(48,258,'Cutoff: Friday at noon. Write quantities and tick one pickup window.',22);
+b+=rect(48,283,720,60,cream);
+['Seeded loaf','Plain loaf','4-bun box'].forEach((s,i)=>{let x=60+i*241;b+=txt(x,321,s,22)+ (p[i]?txt(x+posts(i),321,p[i],20,'font-weight="bold"'):rule(x+posts(i),324,x+posts(i)+62,324))});
+let xs=[48,285,352,417,484,592,695,768];b+=rect(48,365,720,59,ink);
+let heads=[['Pickup','name'],['Seeded','loaves'],['Plain','loaves'],['Bun','boxes'],['8–10','a.m.'],['10 a.m.','–noon'],['Picked','up']];
+heads.forEach((h,i)=>{let x=(xs[i]+xs[i+1])/2;h.forEach((s,j)=>b+=txt(x,390+j*20,s,16,'font-family="Arial,sans-serif" fill="white" text-anchor="middle" font-weight="bold"'))});
+for(let i=0;i<12;i++){let y=424+i*42;if(i%2===1)b+=rect(48,y,720,42,'#f5f4ee');for(let j=4;j<7;j++)b+=rect((xs[j]+xs[j+1])/2-8,y+13,16,16,'white','stroke="#69776b"')}
+for(let row=1;row<=12;row++)b+=rule(48,424+42*row,768,424+42*row,'#9ca59c');
+xs.forEach(x=>b+=rule(x,424,x,928,'#9ca59c'));b+=label(48,968,'SHEET TOTALS',14)+txt(48,1007,'Seeded loaves _______       Plain loaves _______       Bun boxes _______',21);return page('Weekly Saturday pickup order sheet',b)}
+function posts(i){return [125,104,116][i]}
+function refresh(){let p=prices();for(let id of ['sign','sheet']){let el=document.getElementById(id);el.innerHTML=id==='sign'?sign(p):sheet(p);el.className=selection.value==='both'||selection.value===id?'':'hidden'}}
+const selection=document.getElementById('selection');document.getElementById('controls').oninput=()=>{inputs.forEach(el=>el.disabled=document.getElementById('blank').checked);refresh()};document.getElementById('controls').onsubmit=e=>{e.preventDefault();window.print()};refresh();
+</script></body></html>

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Class enrollment | Community Ceramics Studio</title>
+<style>
+  :root { color-scheme: light; }
+  * { -webkit-box-sizing: border-box; box-sizing: border-box; }
+  main, header, section, footer { display: block; }
+  body { margin: 0; background: #eae5dc; color: #252c26; font: 15px/1.42 Arial, sans-serif; }
+  .report {
+    width: 100%; max-width: 816px; min-height: 1056px; margin: 24px auto;
+    background: #faf7f0; padding: 36px 46px 27px; border-top: 8px solid #a34a33;
+  }
+  .masthead { position: relative; border-bottom: 1px solid #bdb5a7; padding-bottom: 12px; }
+  .kicker, .period, .eyebrow, .session-label, thead {
+    text-transform: uppercase; letter-spacing: .095em; font-size: 11px; font-weight: bold;
+  }
+  .kicker { color: #8e3d29; }
+  .period { position: absolute; right: 0; top: 3px; white-space: nowrap; color: #535a51; }
+  h1, h2 { font-family: Georgia, serif; font-weight: normal; margin: 0; }
+  h1 { font-size: 57px; line-height: 1.05; letter-spacing: -.035em; margin-top: 19px; }
+  .intro { font-size: 16px; margin: 9px 0 25px; color: #484f45; }
+  h2 { font-size: 28px; line-height: 1.15; letter-spacing: -.02em; }
+  .eyebrow { font-family: Arial, sans-serif; color: #535a51; margin: 0 0 7px; }
+  .comparison { display: table; table-layout: fixed; width: 100%; background: #e9ede3; border: 1px solid #c5cfc1; }
+  .session { display: table-cell; width: 50%; padding: 16px 17px 18px; }
+  .session + .session { border-left: 1px solid #c5cfc1; }
+  .session-label { margin: 0 0 6px; color: #324c3f; }
+  .metrics { display: table; width: 100%; table-layout: fixed; }
+  .metric { display: table-cell; margin: 0; vertical-align: top; line-height: 1.25; }
+  .metric + .metric { padding-left: 7px; }
+  .value { display: block; font: 32px/1.1 Georgia, serif; }
+  .wait { color: #8e3d29; }
+  .metric small { display: block; font-size: 12px; margin-top: 3px; }
+  .runs { margin-top: 29px; }
+  .runs h2 { margin-bottom: 7px; }
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; font-variant-numeric: tabular-nums; }
+  .month-col { width: 15%; }
+  .session-col { width: 25%; }
+  .occupancy-col { width: 35%; }
+  .requests-col { width: 25%; }
+  th, td { text-align: left; padding: 9px 9px; vertical-align: middle; }
+  th:first-child, td:first-child { padding-left: 0; }
+  thead th { border-bottom: 1px solid #9f998d; color: #535a51; vertical-align: bottom; }
+  thead small { display: block; font-size: 11px; font-weight: normal; letter-spacing: 0; text-transform: none; }
+  tbody tr + tr { border-top: 1px solid #e4ded3; }
+  tbody + tbody { border-top: 1px solid #bdb5a7; }
+  tbody:last-child { border-bottom: 1px solid #bdb5a7; }
+  tbody th[scope="rowgroup"] { vertical-align: top; font-size: 14px; }
+  tbody th[scope="row"] { font-size: 14px; font-weight: normal; }
+  tbody tr:nth-child(2) th[scope="row"] { padding-left: 9px; }
+  .bar {
+    display: inline-block; height: 8px; background: #e2e5db; vertical-align: middle;
+    border-radius: 1px; overflow: hidden;
+  }
+  .bar b { display: block; height: 100%; background: #3d6555; }
+  .fill-bar { width: 49%; }
+  .occupied { display: inline-block; vertical-align: middle; padding-left: 8px; white-space: nowrap; font-size: 13px; font-weight: bold; }
+  .seats { font-size: 11px; font-weight: normal; color: #535a51; padding-left: 3px; }
+  .request-bar { width: 64%; background: #eee0d5; }
+  .request-bar b { background: #ad573e; }
+  .count { display: inline-block; vertical-align: middle; padding-left: 9px; font-size: 13px; font-weight: bold; }
+  .decision {
+    margin-top: 27px; background: #294b3e; color: #fffaf1; padding: 17px 19px 18px;
+  }
+  .decision .eyebrow { color: #d5e3d7; margin-bottom: 5px; }
+  .decision h2 { font-size: 23px; margin-bottom: 6px; }
+  .decision p:last-child { font-size: 14px; margin: 0; }
+  footer { color: #484f45; margin-top: 18px; font-size: 12px; line-height: 1.45; }
+  footer p { margin: 0 0 4px; }
+  @media screen and (max-width: 680px) {
+    .report { padding: 24px 24px 22px; margin: 0; min-height: auto; }
+    h1 { font-size: 43px; }
+    .fill-bar { display: block; width: 100%; margin-bottom: 2px; }
+    .occupied { padding-left: 0; }
+  }
+  @media screen and (max-width: 430px) {
+    .report { padding-right: 16px; padding-left: 16px; }
+    .period { display: block; position: static; margin-top: 3px; }
+    .session { padding: 10px 9px; }
+    .value { font-size: 26px; }
+    .metric small { font-size: 11px; }
+    .month-col { width: 19%; }
+    .session-col { width: 25%; }
+    .occupancy-col { width: 29%; }
+    .requests-col { width: 27%; }
+    th, td { padding-right: 3px; padding-left: 4px; }
+    tbody tr:nth-child(2) th[scope="row"] { padding-left: 4px; }
+    tbody th[scope="row"], tbody th[scope="rowgroup"] { font-size: 12px; }
+    .occupied { font-size: 12px; }
+    .seats { font-size: 10px; }
+    .count { padding-left: 4px; }
+  }
+  @page { size: letter; margin: 0; }
+  @media print {
+    html, body { margin: 0; background: #faf7f0; }
+    .report { margin: 0; max-width: none; min-height: 1055px; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .decision, table { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<main class="report">
+  <header>
+    <div class="masthead">
+      <span class="kicker">Community Ceramics Studio</span>
+      <span class="period">January–March · Fictional data</span>
+    </div>
+    <h1>Class enrollment</h1>
+    <p class="intro">Six class runs filled 67 of 70 seats (95.7%) and drew 20 waitlist requests.</p>
+  </header>
+
+  <section aria-labelledby="comparison-title">
+    <h2 class="eyebrow" id="comparison-title">Quarter at a glance</h2>
+    <div class="comparison">
+      <section class="session" aria-labelledby="tuesday-title">
+        <h3 class="session-label" id="tuesday-title">Tuesday evening</h3>
+        <div class="metrics">
+          <p class="metric"><span class="value">97.4%</span><small>37 of 38 seats filled</small></p>
+          <p class="metric"><span class="value wait">9</span><small>waitlist requests</small></p>
+        </div>
+      </section>
+      <section class="session" aria-labelledby="saturday-title">
+        <h3 class="session-label" id="saturday-title">Saturday morning</h3>
+        <div class="metrics">
+          <p class="metric"><span class="value">93.8%</span><small>30 of 32 seats filled</small></p>
+          <p class="metric"><span class="value wait">11</span><small>waitlist requests</small></p>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="runs" aria-labelledby="runs-title">
+    <h2 id="runs-title">Class runs by month</h2>
+    <table aria-labelledby="runs-title">
+      <colgroup>
+        <col class="month-col"><col class="session-col"><col class="occupancy-col"><col class="requests-col">
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">Month</th>
+          <th scope="col">Session</th>
+          <th scope="col">Occupancy<small>0–100% of seats offered</small></th>
+          <th scope="col">Waitlist<small>0–7 requests per run</small></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="rowgroup" rowspan="2">January</th><th scope="row">Tuesday evening</th>
+          <td><span class="bar fill-bar" aria-hidden="true"><b style="width:100%"></b></span><span class="occupied">100% <span class="seats">12/12</span></span></td>
+          <td><span class="bar request-bar" aria-hidden="true"><b style="width:85.7143%"></b></span><span class="count">6</span></td>
+        </tr>
+        <tr>
+          <th scope="row">Saturday morning</th>
+          <td><span class="bar fill-bar" aria-hidden="true"><b style="width:80%"></b></span><span class="occupied">80% <span class="seats">8/10</span></span></td>
+          <td><span class="bar request-bar" aria-hidden="true"><b style="width:0%"></b></span><span class="count">0</span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="rowgroup" rowspan="2">February</th><th scope="row">Tuesday evening</th>
+          <td><span class="bar fill-bar" aria-hidden="true"><b style="width:91.6667%"></b></span><span class="occupied">91.7% <span class="seats">11/12</span></span></td>
+          <td><span class="bar request-bar" aria-hidden="true"><b style="width:0%"></b></span><span class="count">0</span></td>
+        </tr>
+        <tr>
+          <th scope="row">Saturday morning</th>
+          <td><span class="bar fill-bar" aria-hidden="true"><b style="width:100%"></b></span><span class="occupied">100% <span class="seats">10/10</span></span></td>
+          <td><span class="bar request-bar" aria-hidden="true"><b style="width:57.1429%"></b></span><span class="count">4</span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="rowgroup" rowspan="2">March</th><th scope="row">Tuesday evening</th>
+          <td><span class="bar fill-bar" aria-hidden="true"><b style="width:100%"></b></span><span class="occupied">100% <span class="seats">14/14</span></span></td>
+          <td><span class="bar request-bar" aria-hidden="true"><b style="width:42.8571%"></b></span><span class="count">3</span></td>
+        </tr>
+        <tr>
+          <th scope="row">Saturday morning</th>
+          <td><span class="bar fill-bar" aria-hidden="true"><b style="width:100%"></b></span><span class="occupied">100% <span class="seats">12/12</span></span></td>
+          <td><span class="bar request-bar" aria-hidden="true"><b style="width:100%"></b></span><span class="count">7</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="decision" aria-labelledby="decision-title">
+    <p class="eyebrow">Next-quarter discussion</p>
+    <h2 id="decision-title">Consider a small Saturday capacity trial</h2>
+    <p>Saturday filled in February and March, with requests rising from 4 to 7. January had 2 open seats, so test added capacity on one run. Keep Tuesday capacity as a baseline. It drew 6 requests in January but had an open seat in February.</p>
+  </section>
+
+  <footer>
+    <p><strong>Occupancy</strong> is enrollments divided by seats offered. Quarter figures use summed enrollments and seats for each session.</p>
+    <p><strong>Waitlist requests</strong> are counted per run. A person may appear on both session waitlists, so combined counts can include the same person more than once.</p>
+  </footer>
+</main>
+</body>
+</html>

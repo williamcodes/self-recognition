@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Late openings | Gallery board brief</title>
+<style>
+  :root { color-scheme: light; --paper: #faf8f2; --ink: #202c26; --muted: #4b5a51;
+    --line: #cbd2c7; --green: #234d39; --tint: #e9eee5; --over: #8a3328; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.5 system-ui, sans-serif; }
+  main { max-width: 1020px; margin: auto; padding: 34px 34px 40px; }
+  header { border-top: 5px solid var(--green); padding-top: 17px; margin-bottom: 23px; }
+  .eyebrow { color: var(--green); font-size: .76em; font-weight: 750; letter-spacing: .13em;
+    text-transform: uppercase; margin: 0 0 4px; }
+  h1, h2 { font-family: Georgia, serif; font-weight: normal; line-height: 1.1; }
+  h1 { font-size: clamp(2.5rem, 7vw, 4.1rem); letter-spacing: -.04em; margin: 0 0 8px; }
+  h2 { font-size: 1.65em; margin: 0 0 9px; }
+  p { margin: 0; }
+  .subtitle, .note { color: var(--muted); }
+  .decision { background: var(--green); color: white; padding: 20px 24px; margin-bottom: 25px; }
+  .decision p { max-width: 79ch; }
+  section { margin-top: 24px; }
+  .controls { display: flex; flex-wrap: wrap; align-items: end; gap: 8px 12px; margin-bottom: 12px; }
+  label { display: grid; gap: 3px; font-size: .9em; font-weight: 650; }
+  input, button { font: inherit; min-height: 44px; padding: 6px 12px; border: 1px solid var(--green);
+    border-radius: 4px; }
+  input { width: 8em; background: white; color: var(--ink); }
+  button { background: var(--tint); color: var(--green); cursor: pointer; font-size: .9em; }
+  button:hover { background: #d8e1d5; }
+  :focus-visible { outline: 3px solid #98531c; outline-offset: 3px; }
+  .note { margin-top: 7px; font-size: .87em; }
+  .error, .over { color: var(--over); }
+  .error { font-size: .9em; margin-bottom: 8px; }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; font-size: .93em; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: right; }
+  thead th { background: var(--tint); color: var(--green); vertical-align: bottom; }
+  th:first-child { text-align: left; }
+  .scenario-table { min-width: 615px; }
+  .source-table { min-width: 490px; }
+  .group { text-align: center; }
+  .divider { border-left: 1px solid var(--line); }
+  .margin { display: block; color: var(--muted); font-size: .9em; }
+  .margin.over { color: var(--over); font-weight: 650; }
+  .print-only { display: none; }
+  @media (max-width: 580px) {
+    main { padding: 20px 16px 28px; }
+    .decision { padding: 16px; }
+    th, td { padding: 7px; }
+  }
+  @page { size: letter; margin: .48in .55in; }
+  @media print {
+    :root { --paper: white; }
+    body { font-size: 11px; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    main { padding: 0; max-width: none; }
+    header { padding-top: 10px; margin-bottom: 13px; }
+    h1 { font-size: 39px; }
+    h2 { font-size: 19px; margin-bottom: 5px; }
+    section { margin-top: 14px; break-inside: avoid; }
+    .decision { padding: 12px 15px; margin-bottom: 14px; }
+    .decision p { max-width: none; }
+    th, td { padding: 4px 8px; }
+    .table-wrap { overflow: visible; }
+    .scenario-table, .source-table { min-width: 0; }
+    .controls, .error { display: none; }
+    .print-only { display: block; margin-bottom: 6px; }
+    .note { font-size: 10px; margin-top: 5px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Gallery board brief</p>
+    <h1>Late openings</h1>
+    <p class="subtitle">Two evenings per month · Thursday or Friday · 15 volunteer hours available</p>
+  </header>
+
+  <aside class="decision" aria-labelledby="decision-title">
+    <h2 id="decision-title">Start with one Thursday and one Friday</h2>
+    <p>At the 15-hour allowance, this mix projects about 56 visitors and $271.50 in shop receipts, the highest totals among the mixes that fit both staffing scenarios. It leaves 1 hour in the high-hours case. Two Thursdays leave 3 hours in that case if the board wants more staffing flexibility.</p>
+  </aside>
+
+  <section aria-labelledby="mix-title">
+    <h2 id="mix-title">Monthly schedule comparison</h2>
+    <div class="controls">
+      <label for="allowance">Test an allowance (hours)
+        <input type="number" id="allowance" min="0" step="any" value="15" required aria-describedby="allowance-error">
+      </label>
+      <button type="button" id="reset">Reset to 15 hours</button>
+      <button type="button" id="print">Print brief</button>
+    </div>
+    <p class="error" id="allowance-error" role="status" hidden>Enter a nonnegative number of hours.</p>
+    <p class="print-only">Allowance used for this comparison: <strong id="printed-allowance"></strong></p>
+    <div class="table-wrap" role="region" aria-labelledby="mix-title" tabindex="0">
+      <table class="scenario-table">
+        <thead><tr>
+          <th scope="col">Two-opening mix</th><th scope="col">Expected<br>visitors</th>
+          <th scope="col">Expected shop<br>receipts</th><th scope="col">Average<br>staffing</th>
+          <th scope="col">High-hours<br>staffing</th>
+        </tr></thead>
+        <tbody id="mixes"></tbody>
+      </table>
+    </div>
+    <p class="note">Projections add the historical per-opening averages. High-hours staffing uses the highest observed hours per opening for each weekday (6 on Thursday, 8 on Friday), with the same visitor and receipt projections.</p>
+    <noscript><p>The interactive model requires JavaScript. The companion PDF contains the complete 15-hour comparison.</p></noscript>
+  </section>
+
+  <section aria-labelledby="efficiency-title">
+    <h2 id="efficiency-title">What each volunteer hour returns</h2>
+    <div class="table-wrap" role="region" aria-labelledby="efficiency-title" tabindex="0">
+      <table>
+        <thead><tr><th scope="col">Weekday</th><th scope="col">Visitors per hour</th><th scope="col">Shop receipts per hour</th></tr></thead>
+        <tbody id="efficiency"></tbody>
+      </table>
+    </div>
+    <p class="note">Friday drew more visitors per hour. Thursday took in more per hour. Each rate divides the weekday’s total visitors or receipts by its total volunteer hours.</p>
+  </section>
+
+  <section aria-labelledby="history-title">
+    <h2 id="history-title">Historical observations</h2>
+    <div class="table-wrap" role="region" aria-labelledby="history-title" tabindex="0">
+      <table class="source-table">
+        <thead>
+          <tr><th></th><th scope="colgroup" colspan="3" class="group divider">Thursday</th><th scope="colgroup" colspan="3" class="group divider">Friday</th></tr>
+          <tr><th scope="col">Opening</th><th scope="col" class="divider">Visitors</th><th scope="col">Receipts</th><th scope="col">Hours</th><th scope="col" class="divider">Visitors</th><th scope="col">Receipts</th><th scope="col">Hours</th></tr>
+        </thead>
+        <tbody id="history"></tbody>
+      </table>
+    </div>
+    <p class="note">The projections use four fictional observations per weekday. Actual attendance, receipts and staffing may vary.</p>
+  </section>
+</main>
+<script>
+  'use strict';
+  // Observations are ordered as visitors, shop receipts, and volunteer hours.
+  const observations = {
+    Thursday: [[18, 92, 6], [27, 145, 6], [21, 110, 5], [24, 128, 6]],
+    Friday: [[31, 125, 8], [38, 184, 8], [29, 142, 7], [35, 160, 8]]
+  };
+  const schedules = [
+    ['Two Thursdays', 'Thursday', 'Thursday'],
+    ['Thursday + Friday', 'Thursday', 'Friday'],
+    ['Two Fridays', 'Friday', 'Friday']
+  ];
+  const defaultAllowance = 15;
+  const number = new Intl.NumberFormat('en', { maximumFractionDigits: 2 });
+  const currency = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+  const summaries = Object.fromEntries(Object.entries(observations).map(([day, rows]) => {
+    const totals = rows[0].map((_, column) => rows.reduce((sum, row) => sum + row[column], 0));
+    return [day, {
+      totals,
+      averages: totals.map(total => total / rows.length),
+      highHours: Math.max(...rows.map(row => row[2]))
+    }];
+  }));
+  const allowance = document.querySelector('#allowance');
+  const error = document.querySelector('#allowance-error');
+  const mixRows = document.querySelector('#mixes');
+
+  function staffingCell(hours, limit) {
+    const remaining = limit - hours;
+    let status = 'At limit';
+    if (remaining > 0) status = number.format(remaining) + ' h left';
+    if (remaining < 0) status = number.format(-remaining) + ' h over';
+    if (remaining !== 0 && Math.abs(remaining) < 0.01) {
+      status = remaining > 0 ? '&lt;0.01 h left' : '&lt;0.01 h over';
+    }
+    return '<td>' + number.format(hours) + ' h<span class="margin' +
+      (remaining < 0 ? ' over' : '') + '">' + status + '</span></td>';
+  }
+
+  function renderSchedules() {
+    const valid = allowance.validity.valid && Number.isFinite(allowance.valueAsNumber);
+    const limit = valid ? allowance.valueAsNumber : defaultAllowance;
+    error.hidden = valid;
+    if (!valid) error.textContent = 'Enter a nonnegative number of hours. The table is showing the 15-hour allowance.';
+    allowance.setAttribute('aria-invalid', String(!valid));
+    document.querySelector('#printed-allowance').textContent = limit + ' h';
+    mixRows.innerHTML = schedules.map(([label, first, second]) => {
+      const a = summaries[first];
+      const b = summaries[second];
+      const [visitors, receipts, hours] = a.averages.map((value, index) => value + b.averages[index]);
+      return '<tr><th scope="row">' + label + '</th><td>' + number.format(visitors) +
+        '</td><td>' + currency.format(receipts) + '</td>' + staffingCell(hours, limit) +
+        staffingCell(a.highHours + b.highHours, limit) + '</tr>';
+    }).join('');
+  }
+
+  function historyCells([visitors, receipts, hours]) {
+    return '<td class="divider">' + number.format(visitors) + '</td><td>' +
+      currency.format(receipts) + '</td><td>' + number.format(hours) + '</td>';
+  }
+
+  document.querySelector('#history').innerHTML = observations.Thursday.map((row, index) =>
+    '<tr><th scope="row">' + (index + 1) + '</th>' + historyCells(row) +
+    historyCells(observations.Friday[index]) + '</tr>'
+  ).join('') + '<tr><th scope="row">Average</th>' + historyCells(summaries.Thursday.averages) +
+    historyCells(summaries.Friday.averages) + '</tr>';
+
+  document.querySelector('#efficiency').innerHTML = Object.entries(summaries).map(([day, { totals }]) => {
+    const [visitors, receipts, hours] = totals;
+    return '<tr><th scope="row">' + day + '</th><td>' + (visitors / hours).toFixed(2) +
+      '</td><td>' + currency.format(receipts / hours) + '</td></tr>';
+  }).join('');
+
+  allowance.addEventListener('input', renderSchedules);
+  document.querySelector('#reset').addEventListener('click', () => {
+    allowance.value = defaultAllowance;
+    renderSchedules();
+  });
+  document.querySelector('#print').addEventListener('click', () => window.print());
+  renderSchedules();
+</script>
+</body>
+</html>

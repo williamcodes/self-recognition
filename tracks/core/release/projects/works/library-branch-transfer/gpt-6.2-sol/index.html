@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Library copy transfers</title>
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #f7f5ef;
+    --surface: #fffefa;
+    --ink: #22243b;
+    --muted: #555469;
+    --line: #dcd8e3;
+    --accent: #59469b;
+    --soft: #f0ebfa;
+    --hero: #252140;
+    --light: #e8e0ff;
+    --recommendation: #e8f4ec;
+    --green: #285d40;
+    font-family: system-ui, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  a { color: var(--accent); text-underline-offset: .18em; }
+  :focus-visible { outline: 3px solid #8163cc; outline-offset: 3px; }
+  main, .top { width: min(100% - 2rem, 76rem); margin-inline: auto; }
+  header { border-bottom: 1px solid var(--line); }
+  .top { min-height: 4rem; display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; justify-content: space-between; align-items: center; }
+  .top p { font-weight: 700; margin: 0; }
+  .top a { display: inline-flex; min-height: 44px; align-items: center; font-size: .9rem; font-weight: 650; }
+  main { padding-block: clamp(1.25rem, 3vw, 3rem) 4rem; }
+  .hero { background: var(--hero); color: white; border-radius: 1rem; padding: clamp(1.25rem, 4vw, 3.5rem); display: grid; gap: 2rem 4rem; }
+  h1, h2 { font-family: Georgia, serif; font-weight: 500; line-height: 1.12; margin: 0; }
+  h1 { font-size: clamp(2.35rem, 5vw, 4.65rem); letter-spacing: -.045em; max-width: 13ch; }
+  h2 { font-size: clamp(1.65rem, 3vw, 2.15rem); letter-spacing: -.025em; }
+  .eyebrow { margin: 0 0 .65rem; font-size: .75rem; font-weight: 750; letter-spacing: .11em; text-transform: uppercase; }
+  .hero .eyebrow, .hero .secondary { color: var(--light); }
+  .lede { margin: 1rem 0 .5rem; font-size: 1.15rem; }
+  .secondary { font-size: .92rem; color: var(--muted); }
+  .hero p:last-child { margin-bottom: 0; }
+  figure { margin: 0; align-self: center; }
+  figcaption { margin-bottom: .65rem; font-weight: 650; }
+  .bar-label { display: flex; justify-content: space-between; gap: .5rem; align-items: baseline; margin-top: .8rem; font-size: .9rem; color: var(--light); }
+  .bar-label strong { font-size: 1.45rem; color: white; }
+  .track { background: #4b4369; height: .65rem; border-radius: .25rem; }
+  .bar { height: 100%; border-radius: inherit; background: #c6b5fa; }
+  .bar.after { background: #b6ecd0; }
+  .reduction { color: #b6ecd0; margin: .8rem 0 0; font-size: .9rem; font-weight: 700; }
+  .workspace { display: grid; gap: 1.25rem; margin-top: 1.25rem; align-items: start; }
+  .panel { min-width: 0; border: 1px solid var(--line); background: var(--surface); padding: clamp(.875rem, 2.4vw, 1.75rem); border-radius: .85rem; }
+  .panel p { max-width: 68ch; }
+  .panel .eyebrow { color: var(--accent); }
+  .history, .method { margin-top: 1.25rem; }
+  .note { margin-bottom: 0; }
+  .controls { display: grid; gap: .35rem; margin-block: 1.15rem .85rem; }
+  label { font-size: .9rem; font-weight: 700; }
+  select { width: 100%; min-height: 44px; padding: .45rem; font: inherit; color: var(--ink); background: var(--soft); border: 1px solid #9b8bb9; border-radius: .4rem; cursor: pointer; }
+  table { width: 100%; border-collapse: collapse; font-size: .88rem; font-variant-numeric: tabular-nums; line-height: 1.35; }
+  th, td { text-align: right; padding: .65rem .3rem; border-bottom: 1px solid var(--line); }
+  th:first-child, td:first-child, .left { text-align: left; }
+  thead th { vertical-align: bottom; color: var(--muted); font-size: .78rem; }
+  tbody tr:last-child > * { border-bottom: 0; }
+  .scenario-table th[scope=row] { padding-block: .22rem; }
+  .scenario-table button { width: 100%; text-align: left; font: inherit; font-weight: 650; color: var(--accent); background: transparent; border: 0; min-height: 44px; padding: .25rem .3rem; cursor: pointer; border-radius: .25rem; text-decoration: underline; text-underline-offset: .18em; }
+  .scenario-table button:hover { background: var(--soft); }
+  .scenario-table tr.is-selected { background: var(--soft); }
+  .scenario-table tr.recommended td:last-child { color: var(--green); font-weight: 750; }
+  .scenario-table tr.is-selected button { text-decoration-thickness: 2px; }
+  .tag { display: block; color: var(--green); font-size: .7rem; font-weight: 750; }
+  .numbers { white-space: nowrap; }
+  .direction { display: block; color: var(--muted); font-size: .75rem; margin-top: .15rem; }
+  .detail-table td { vertical-align: top; }
+  .detail-table th[scope=row] { vertical-align: top; }
+  .scroll { overflow-x: auto; margin-top: .45rem; }
+  .history table { min-width: 33rem; }
+  .history tbody tr:nth-child(even) { background: var(--soft); }
+  .history th, .history td { padding-inline: .55rem; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+  .skip-link { position: absolute; top: .5rem; left: 1rem; transform: translateY(-160%); background: white; padding: .6rem; }
+  .skip-link:focus { transform: translateY(0); }
+  @media (min-width: 54rem) {
+    .hero { grid-template-columns: 1.35fr 1fr; }
+    .workspace { grid-template-columns: 1.1fr 1fr; }
+  }
+  @media print {
+    :root, .panel, .hero, .scenario-table tr.is-selected { background: white; color: black; }
+    .hero { border: 1px solid #555; }
+    .hero .eyebrow, .hero .secondary, .bar-label, .bar-label strong, .reduction { color: black; }
+    .track, .bar { print-color-adjust: exact; }
+    main, .top { width: 100%; }
+    .top a, .controls, .skip-link { display: none; }
+    .hero, .scenario-table tr, .detail, .history tr { break-inside: avoid; }
+    thead { display: table-header-group; }
+    .scroll { overflow: visible; }
+    .scenario-table button { color: black; text-decoration: none; min-height: auto; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to analysis</a>
+<header>
+  <div class="top">
+    <p>Library circulation planning</p>
+    <a href="transfer-scenarios.csv" download>Download scenarios (CSV)</a>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="title">
+    <div>
+      <p class="eyebrow">May–August · East and West</p>
+      <h1 id="title">Library copy transfers</h1>
+      <p class="lede"><strong>Move 2 copies of A and 1 of B from West to East.</strong></p>
+      <p class="secondary">Keep C in place. This plan gives the closest balance in loans per copy if each branch’s loan volume holds at its May–August average.</p>
+    </div>
+    <figure>
+      <figcaption>Combined gap across titles</figcaption>
+      <div class="bar-label"><span>Current allocation</span><strong>4.92</strong></div>
+      <div class="track" aria-hidden="true"><div class="bar" style="width:100%"></div></div>
+      <div class="bar-label"><span>Recommended allocation</span><strong>0.84</strong></div>
+      <div class="track" aria-hidden="true"><div class="bar after" style="width:17.12%"></div></div>
+      <p class="reduction">83% smaller gap</p>
+      <p class="secondary">Sum of absolute gaps in monthly loans per copy. Lower is better.</p>
+    </figure>
+  </section>
+
+  <noscript><p>Enable JavaScript to compare scenarios here, or open the CSV in a spreadsheet.</p></noscript>
+  <div class="workspace">
+    <section class="panel detail" aria-labelledby="detail-title">
+      <p class="eyebrow">Current → projected</p>
+      <h2 id="detail-title">Loans per copy by title</h2>
+      <div class="controls">
+        <label for="scenario">Transfer from West to East</label>
+        <select id="scenario"></select>
+      </div>
+      <p class="secondary" id="selection-summary" aria-live="polite" aria-atomic="true"></p>
+      <table class="detail-table">
+        <caption class="sr-only">Monthly loans per copy and absolute branch gaps</caption>
+        <thead><tr><th scope="col">Title</th><th scope="col">East rate</th><th scope="col">West rate</th><th scope="col">Abs. gap</th></tr></thead>
+        <tbody id="rate-rows"></tbody>
+      </table>
+      <p class="secondary note">Each cell shows the current value followed by the projected value. The branch beside each gap has the higher projected rate.</p>
+      <table class="detail-table" style="margin-top:.85rem">
+        <caption class="sr-only">Copy counts before and after transfer</caption>
+        <thead><tr><th scope="col">Title</th><th scope="col">East copies</th><th scope="col">West copies</th></tr></thead>
+        <tbody id="copy-rows"></tbody>
+      </table>
+    </section>
+
+    <section class="panel" aria-labelledby="rank-title">
+      <h2 id="rank-title">Ranked options</h2>
+      <p class="secondary">All 15 feasible allocations, ordered by combined gap. Select an option to compare it with the current allocation. For a two-copy limit, move both copies of A.</p>
+      <table class="scenario-table">
+        <caption class="sr-only">Transfer scenarios ranked by combined gap</caption>
+        <thead><tr><th scope="col">West to East</th><th scope="col">Copies<br>moved</th><th scope="col">Combined<br>gap</th><th scope="col">Change vs.<br>current</th></tr></thead>
+        <tbody id="scenario-rows"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <section class="panel history" aria-labelledby="history-title">
+    <h2 id="history-title">May–August loan history</h2>
+    <p class="secondary">Fictional monthly loans and the copy counts held throughout the four months.</p>
+    <div class="scroll" tabindex="0" role="region" aria-label="Historical loan table">
+      <table>
+        <caption class="sr-only">Monthly loan counts, four-month totals and current monthly rate per copy</caption>
+        <thead><tr><th scope="col">Title</th><th scope="col" class="left">Branch</th><th scope="col">May</th><th scope="col">Jun</th><th scope="col">Jul</th><th scope="col">Aug</th><th scope="col">Total</th><th scope="col">Copies</th><th scope="col">Monthly rate<br>per copy</th></tr></thead>
+        <tbody id="history-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel method" aria-labelledby="method-title">
+    <h2 id="method-title">How the comparison works</h2>
+    <p>Monthly loans per copy equal the four-month loan total divided by four and then divided by the branch’s copy count. Each scenario holds both branches’ loan averages fixed and updates their copy counts for the proposed moves.</p>
+    <p>The combined gap adds the absolute difference between East and West for each title, weighting A, B and C equally. Change equals the scenario’s combined gap minus the current gap. Negative values show improvement. Ranking uses unrounded values, then favors fewer moves in a tie.</p>
+    <p class="note">Only West-to-East moves are allowed, with a maximum of three copies moved and a minimum of two copies per title at each branch. The projections depend on loan demand staying at the historical averages.</p>
+  </section>
+</main>
+<script>
+  const titles = [
+    { name: 'A', east: { copies: 3, loans: [15, 17, 16, 18] }, west: { copies: 6, loans: [12, 13, 11, 12] } },
+    { name: 'B', east: { copies: 3, loans: [9, 11, 10, 12] }, west: { copies: 4, loans: [10, 8, 9, 9] } },
+    { name: 'C', east: { copies: 2, loans: [5, 4, 6, 5] }, west: { copies: 3, loans: [7, 6, 8, 7] } }
+  ];
+  const minimumCopies = 2;
+  const moveLimit = 3;
+  // Rates use integer units of 1/240. Four months times 60 accommodates every feasible copy count (2–6).
+  const scale = 240;
+  const sum = values => values.reduce((total, value) => total + value, 0);
+  const rate = (loans, copies) => sum(loans) * (scale / (loans.length * copies));
+  const format = value => (value / scale).toFixed(2);
+  const formatChange = value => value === 0 ? format(value) : (value < 0 ? '−' : '+') + format(Math.abs(value));
+
+  function evaluate(moves) {
+    const results = titles.map((title, index) => {
+      const eastCopies = title.east.copies + moves[index];
+      const westCopies = title.west.copies - moves[index];
+      const east = rate(title.east.loans, eastCopies);
+      const west = rate(title.west.loans, westCopies);
+      return { eastCopies, westCopies, east, west, gap: east - west };
+    });
+    const labels = titles.flatMap((title, index) => moves[index] ? [title.name + ' × ' + moves[index]] : []);
+    return {
+      id: moves.join('-'),
+      moved: sum(moves),
+      label: labels.join(', ') || 'No transfer',
+      score: sum(results.map(result => Math.abs(result.gap))),
+      results
+    };
+  }
+
+  function allScenarios(moves = [], remaining = moveLimit) {
+    if (moves.length === titles.length) return [evaluate(moves)];
+    const title = titles[moves.length];
+    const max = Math.min(remaining, title.west.copies - minimumCopies);
+    return Array.from({ length: max + 1 }, (_, moved) => allScenarios([...moves, moved], remaining - moved)).flat();
+  }
+
+  const scenarios = allScenarios().sort((a, b) => a.score - b.score || a.moved - b.moved);
+  const recommended = scenarios[0];
+  const current = scenarios.find(scenario => scenario.moved === 0);
+  const selector = document.querySelector('#scenario');
+  const rankRows = document.querySelector('#scenario-rows');
+
+  selector.innerHTML = scenarios.map(scenario =>
+    `<option value="${scenario.id}">${scenario.label}${scenario === recommended ? ' (recommended)' : ''}</option>`
+  ).join('');
+
+  rankRows.innerHTML = scenarios.map(scenario => `
+    <tr class="${scenario === recommended ? 'recommended' : ''}">
+      <th scope="row"><button type="button" data-scenario="${scenario.id}" aria-pressed="false">${scenario.label}</button></th>
+      <td>${scenario.moved}</td>
+      <td>${format(scenario.score)}</td>
+      <td>${formatChange(scenario.score - current.score)}${scenario === recommended ? '<span class="tag">Best option</span>' : ''}</td>
+    </tr>`
+  ).join('');
+
+  document.querySelector('#history-rows').innerHTML = titles.flatMap(title =>
+    ['east', 'west'].map(branch => {
+      const { loans, copies } = title[branch];
+      const branchName = branch === 'east' ? 'East' : 'West';
+      return `<tr><th scope="row">${title.name}</th><td class="left">${branchName}</td>
+        ${loans.map(loan => `<td>${loan}</td>`).join('')}<td>${sum(loans)}</td><td>${copies}</td>
+        <td>${format(rate(loans, copies))}</td></tr>`;
+    })
+  ).join('');
+
+  function selectScenario(id, fromRanking = false) {
+    const scenario = scenarios.find(option => option.id === id);
+    selector.value = id;
+    const change = formatChange(scenario.score - current.score);
+    document.querySelector('#selection-summary').textContent =
+      `${scenario.label} · Combined gap ${format(scenario.score)} (${change} vs. current)`;
+    document.querySelector('#rate-rows').innerHTML = scenario.results.map((result, index) => {
+      const before = current.results[index];
+      const direction = result.gap > 0 ? 'East higher' : result.gap < 0 ? 'West higher' : 'Equal';
+      return `<tr><th scope="row">${titles[index].name}</th>
+        <td><span class="numbers">${format(before.east)} → ${format(result.east)}</span></td>
+        <td><span class="numbers">${format(before.west)} → ${format(result.west)}</span></td>
+        <td><span class="numbers">${format(Math.abs(before.gap))} → ${format(Math.abs(result.gap))}</span><span class="direction">${direction}</span></td></tr>`;
+    }).join('');
+    document.querySelector('#copy-rows').innerHTML = scenario.results.map((result, index) =>
+      `<tr><th scope="row">${titles[index].name}</th>
+        <td>${current.results[index].eastCopies} → ${result.eastCopies}</td>
+        <td>${current.results[index].westCopies} → ${result.westCopies}</td></tr>`
+    ).join('');
+    rankRows.querySelectorAll('button').forEach(button => {
+      const selected = button.dataset.scenario === id;
+      button.setAttribute('aria-pressed', String(selected));
+      button.closest('tr').classList.toggle('is-selected', selected);
+    });
+    if (fromRanking) selector.focus();
+  }
+
+  selector.addEventListener('change', () => selectScenario(selector.value));
+  rankRows.addEventListener('click', event => {
+    const button = event.target.closest('button');
+    if (button) selectScenario(button.dataset.scenario, true);
+  });
+  selectScenario(recommended.id);
+</script>
+</body>
+</html>

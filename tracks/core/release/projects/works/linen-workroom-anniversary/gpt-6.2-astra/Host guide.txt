@@ -1,0 +1,31 @@
+LIFE IN THE FOLDS
+A 25th anniversary lunch-break exhibit • 2001–2026
+
+Before lunch
+Print Wall display.pdf single-sided on four US Letter sheets. On A4 paper,
+choose Fit. Hang the panels left to right at a comfortable reading height,
+or in two rows with 2001 and 2009 above 2017 and Today.
+
+Copy index.html to the tablet. Open the file in a full browser that runs
+local HTML and allows local storage. Use the same file, browser and normal
+browsing profile for every shift. Everything is included in that one file.
+
+Place the tablet beside the last panel. Add a pen and a few copies of
+Memory slips.pdf, cut across the two dashed lines. Keep a spot beside the
+tablet for finished slips.
+
+During lunch
+Invite people to start at any year. A child can choose a panel and ask an
+adult its question. On the tablet, tap a milestone or choose Leave a memory.
+Guests can pick any time in the workroom. One sentence is enough.
+Each saved entry goes into Memory book for the next shift to read.
+Tap Back to the milestones after saving. For an unfinished entry, Close
+discards the draft. If the tablet's file viewer cannot run the feature or
+its browser declines storage, collect paper slips for the remaining shifts.
+
+After the last shift
+Enter returned slips in the book using their original wording. Open Memory
+book and choose Save a text copy. Open the downloaded file and check that
+the last entry is present before moving the HTML file or clearing browser
+data. Keep the paper slips with the text copy. If downloads are unavailable,
+copy the entries from the memory book into a local text document.

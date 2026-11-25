@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stop Ledger · Boarding counts</title>
+<style>
+:root{--ink:#182e37;--muted:#526269;--paper:#f6f5ef;--line:#ccd0c7;--maple:#b45226;--library:#26756d;--card:#fffef8;color:var(--ink);background:var(--paper);font:16px/1.45 "Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box}body{margin:0}header{background:var(--ink);color:white}main,.bar{width:min(1140px,calc(100% - 64px));margin:auto}.bar{height:66px;display:flex;align-items:center;gap:12px}.brand{font-weight:750;font-size:21px;letter-spacing:-.7px}.logo{background:#f2c860;border-radius:5px;width:35px;height:35px;display:grid;place-items:center;color:var(--ink)}.offline{margin-left:auto;font:12px monospace;display:flex;align-items:center;gap:9px}.offline:before{content:"";background:#a9ceb2;width:8px;height:8px;border-radius:100%}main{padding:34px 0}.title,.sectionhead,.cardhead,.recordhead{display:flex;align-items:center;justify-content:space-between;gap:16px}h1,h2,h3,p{margin:0}h1{font-size:clamp(36px,5vw,64px);letter-spacing:-.06em;line-height:1.02}h2{font-size:26px;letter-spacing:-1.1px}h3{font-size:24px;letter-spacing:-1px}.sub{color:var(--muted);margin-top:8px}.action,button,input,select{font:inherit}button,select{cursor:pointer}button{min-height:44px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:5px;padding:8px 15px;font-weight:600}button:hover{filter:brightness(.94)}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #387da1;outline-offset:2px}.action{background:var(--ink);color:white;border-color:var(--ink);font-weight:650}.action span{font-size:20px;vertical-align:-1px;margin-right:6px}.filters{display:flex;flex-wrap:wrap;align-items:end;gap:16px;border-block:1px solid var(--line);margin:28px 0 24px;padding:16px 0}.filters strong{align-self:center;margin-right:6px}label{display:grid;gap:4px;font-size:13px;font-weight:600}input,select{background:var(--card);border:1px solid #aeb7b1;color:var(--ink);min-height:44px;border-radius:4px;padding:7px 10px;min-width:0}.clear{border:0;background:none;text-decoration:underline;font-size:13px}.sectionhead{margin-bottom:12px}.scope{font:12px monospace;color:var(--muted)}.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{--accent:var(--maple);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:6px;background:var(--card);padding:18px 22px 14px}.card.library{--accent:var(--library)}.cardhead{justify-content:start;gap:10px}.marker{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--accent);color:white;font:bold 15px monospace}.stats{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:16px 0}.stat+.stat{border-left:1px solid var(--line);padding-left:18px}.stat b{font:500 clamp(35px,4vw,53px)/1.1 Georgia,serif;letter-spacing:-2px;display:block}.stat small{font-size:14px;color:var(--muted)}.totals{border-top:1px dashed var(--line);padding-top:12px;font:13px/1.6 monospace;color:var(--muted)}details{margin:12px 0 22px;color:var(--muted);font-size:14px}summary{cursor:pointer;width:fit-content;padding:6px 0}details p{max-width:80ch;margin:5px 0}.recordhead{margin-bottom:10px}.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:6px;background:var(--card)}table{border-collapse:collapse;width:100%;white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}th,td{padding:10px 16px;border-bottom:1px solid var(--line)}th{font:600 12px/1.4 monospace;color:var(--muted);background:#eaede5}td{font-size:14px}td:nth-child(-n+2),th:nth-child(-n+2){text-align:left}tr:last-child td{border-bottom:0}.stop{font-weight:600}.dot{width:9px;height:9px;border-radius:50%;display:inline-block;background:var(--maple);margin-right:8px}.dot.library{background:var(--library)}.foot,.message{font-size:13px;color:var(--muted);margin-top:10px}.message:empty{display:none}dialog{background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:26px;width:min(420px,94vw)}dialog::backdrop{background:#12252cc2}dialog label{margin-top:14px}.actions{display:flex;justify-content:end;gap:10px;margin-top:20px}.empty{text-align:center!important;padding:24px}.error{color:#993c24}.storage{color:#993c24}footer{margin-top:26px;border-top:1px solid var(--line);padding-top:12px;color:var(--muted);font-size:12px}
+@media(max-width:700px){main,.bar{width:calc(100% - 32px)}main{padding-top:24px}.title{align-items:flex-start;flex-wrap:wrap}.cards{grid-template-columns:1fr}.filters{gap:10px}.filters strong{width:100%}.filters label{flex:1 1 130px}.sectionhead{flex-wrap:wrap;gap:5px}.card{padding:16px}.stat b{font-size:40px}.stats{margin:12px 0}th,td{padding:10px}.offline{font-size:11px}}
+</style>
+</head>
+<body>
+<header><div class="bar"><span class="logo" aria-hidden="true"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="16" rx="3"/><path d="M4 12h16M12 4v8M7 19v3m10-3v3M7 16h2m6 0h2"/></svg></span><span class="brand">Stop Ledger</span><span class="offline">Offline workspace</span></div></header>
+<main>
+<div class="title"><div><h1>Boarding counts</h1><p class="sub">Manual observations at Maple Corner and Library Square.</p></div><button class="action" id="add"><span aria-hidden="true">+</span>Add session</button></div>
+<div class="filters" role="group" aria-label="Inclusive date range"><strong>Date range</strong><label>From<input id="from" type="date"></label><label>Through<input id="through" type="date"></label><button class="clear" id="clear">Clear dates</button></div>
+<p id="warning" class="error" role="alert"></p>
+<section><div class="sectionhead"><h2>Stop comparison</h2><span id="scope" class="scope" aria-live="polite"></span></div><div id="cards" class="cards"></div>
+<details><summary>How the rates are calculated</summary><p>For each stop, add up the boardings, minutes and buses in the selected dates. Divide total boardings by total observed hours for the hourly rate, or by total buses for the per-bus rate. Every observed minute counts, including time spent waiting when no buses arrive. A dash means the rate has no denominator.</p></details></section>
+<section><div class="recordhead"><h2>Session log</h2></div><div class="tablewrap" tabindex="0" role="region" aria-label="Observation sessions"><table><thead><tr><th>Date</th><th>Stop</th><th>Minutes observed</th><th>Boardings</th><th>Buses</th><th>Boardings / bus</th></tr></thead><tbody id="log"></tbody></table></div><p class="foot">— &nbsp;No buses observed. The per-bus rate is undefined.</p></section>
+<p id="status" class="message" role="status"></p><p id="storage" class="storage" role="alert"></p>
+<footer>The six starting sessions are fictional. Added sessions are stored in this browser.</footer>
+</main>
+<dialog id="entry" aria-labelledby="entrytitle"><form id="form"><h2 id="entrytitle">Add session</h2><label>Date<input name="date" type="date" required min="0001-01-01" max="9999-12-31"></label><label>Stop<select name="stop"><option>Maple Corner</option><option>Library Square</option></select></label><label>Minutes observed<input name="minutes" type="number" min="1" step="1" required></label><label>Boardings<input name="boardings" type="number" min="0" step="1" required></label><label>Buses<input name="buses" type="number" min="0" step="1" required></label><div class="actions"><button id="cancel" type="button">Cancel</button><button class="action">Save session</button></div></form></dialog>
+<script>
+'use strict';
+const stops = ['Maple Corner','Library Square'];
+const seed = [
+  ['2026-06-01',0,30,18,3], ['2026-06-01',1,45,36,4],
+  ['2026-06-03',0,45,24,4], ['2026-06-03',1,30,20,3],
+  ['2026-06-08',0,60,33,6], ['2026-06-08',1,30,0,0]
+].map(([date,stop,minutes,boardings,buses]) => ({date,stop:stops[stop],minutes,boardings,buses}));
+const byId = id => document.getElementById(id);
+const prefix = 'stop-ledger.session.v1.';
+const additions = new Map();
+function valid(s) {
+  if (!s || !/^\d{4}-\d{2}-\d{2}$/.test(s.date) || !stops.includes(s.stop)) return false;
+  const day = new Date(s.date+'T00:00:00Z');
+  return Number.isFinite(+day) && day.toISOString().slice(0,10) === s.date &&
+    [s.minutes,s.boardings,s.buses].every(n => Number.isSafeInteger(n) && n >= 0) &&
+    s.minutes > 0 && (s.buses > 0 || s.boardings === 0);
+}
+function readSaved() {
+  try {
+    for (const key of Object.keys(localStorage).filter(k => k.startsWith(prefix))) {
+      try {
+        const s = JSON.parse(localStorage.getItem(key));
+        if (!valid(s)) throw Error();
+        additions.set(key,s);
+      } catch { byId('storage').textContent = 'A saved session could not be read.'; }
+    }
+  } catch { byId('storage').textContent = 'Browser storage is unavailable. Entries last only while this page is open.'; }
+}
+const rate = (n,d) => d ? (n/d).toFixed(1) : '—';
+const dateFormat = new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'});
+function render() {
+  const from = byId('from').value, end = byId('through').value;
+  const reversed = from && end && from > end;
+  byId('warning').textContent = reversed ? 'Choose an end date on or after the start date.' : '';
+  const rows = [...seed,...additions.values()].filter(s => (!from || s.date >= from) && (!end || s.date <= end))
+    .sort((a,b) => b.date.localeCompare(a.date) || stops.indexOf(a.stop)-stops.indexOf(b.stop));
+  byId('scope').textContent = (from || end ? 'Filtered dates' : 'All dates')+' · '+rows.length+' session'+(rows.length === 1 ? '' : 's');
+  byId('cards').innerHTML = stops.map((stop,i) => {
+    const group = rows.filter(s => s.stop === stop);
+    const sum = key => group.reduce((a,s) => a+s[key],0);
+    const m=sum('minutes'), b=sum('boardings'), v=sum('buses');
+    return '<article class="card '+(i?'library':'')+'"><div class="cardhead"><span class="marker" aria-hidden="true">'+stop[0]+'</span><h3>'+stop+'</h3></div><div class="stats"><div class="stat"><b>'+rate(b*60,m)+'</b><small>Boardings / observed hour</small></div><div class="stat"><b>'+rate(b,v)+'</b><small>Boardings / bus</small></div></div><div class="totals">'+(group.length ? b+' boardings · '+m+' min · '+v+' buses' : 'No sessions in range')+'</div></article>';
+  }).join('');
+  byId('log').innerHTML = rows.map(s => '<tr><td>'+dateFormat.format(new Date(s.date+'T00:00:00Z'))+'</td><td class="stop"><span class="dot '+(s.stop===stops[1]?'library':'')+'"></span>'+s.stop+'</td><td>'+s.minutes+'</td><td>'+s.boardings+'</td><td>'+s.buses+'</td><td>'+rate(s.boardings,s.buses)+'</td></tr>').join('') || '<tr><td class="empty" colspan="6">No sessions in this date range.</td></tr>';
+}
+function refreshFilters(){byId('status').textContent=''; render();}
+for(const id of ['from','through']) byId(id).oninput = refreshFilters;
+byId('clear').onclick = () => {byId('from').value=byId('through').value=''; refreshFilters();};
+const form = byId('form'), fields = form.elements, entry = byId('entry');
+byId('add').onclick = () => {
+  form.reset();
+  const now = new Date();
+  fields.date.value = new Date(+now-now.getTimezoneOffset()*60000).toISOString().slice(0,10);
+  fields.buses.setCustomValidity('');
+  entry.showModal();
+};
+byId('cancel').onclick = () => entry.close();
+form.oninput = () => fields.buses.setCustomValidity('');
+form.onsubmit = event => {
+  event.preventDefault();
+  const s = {date:fields.date.value, stop:fields.stop.value};
+  for(const key of ['minutes','boardings','buses']) {
+    s[key]=Number(fields[key].value);
+    if(!Number.isSafeInteger(s[key])) {
+      fields[key].setCustomValidity('Enter a whole number within the supported range.');
+      fields[key].reportValidity();
+      fields[key].setCustomValidity('');
+      return;
+    }
+  }
+  if(!valid(s)){
+    fields.buses.setCustomValidity('Enter at least one bus when boardings are recorded.');
+    fields.buses.reportValidity(); return;
+  }
+  const key = prefix+Date.now()+'-'+Math.random().toString(36).slice(2);
+  additions.set(key,s);
+  let message = 'Session saved.';
+  try {localStorage.setItem(key,JSON.stringify(s));}
+  catch {message = 'Session added for this visit only. Browser storage is unavailable.';}
+  if ((byId('from').value && s.date < byId('from').value) || (byId('through').value && s.date > byId('through').value))
+    message += ' Clear the date range to see this session.';
+  entry.close(); render(); byId('status').textContent=message;
+};
+window.addEventListener('storage',() => {readSaved(); render();});
+readSaved(); render();
+</script>
+</body>
+</html>

@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saturday Linen Board</title>
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #f5f4ed;
+    --card: #fffef9;
+    --ink: #222d26;
+    --muted: #536157;
+    --line: #dfdfd4;
+    --forest: #213c30;
+    --moss: #deeadb;
+    --amber: #f7e9d1;
+    --rust: #793f25;
+    --radius: 16px;
+    font: 16px/1.5 system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-width: 0; background: var(--paper); color: var(--ink); }
+  h1, h2, p { margin: 0; }
+  h1, h2, .stat-value, .room-number, .readiness-count {
+    font-family: Georgia, serif;
+    font-weight: 400;
+  }
+  h1 { font-size: clamp(2.7rem, 6vw, 4.3rem); line-height: 1; letter-spacing: -.065em; }
+  h2 { font-size: 1.66rem; line-height: 1.14; letter-spacing: -.035em; }
+  button, input { font: inherit; }
+  button, input[type="time"], input[type="number"] { min-height: 44px; }
+  button {
+    color: var(--forest);
+    font-weight: 650;
+    border: 1px solid #b5bfb1;
+    border-radius: 8px;
+    padding: 8px 14px;
+    background: var(--card);
+    cursor: pointer;
+    transition: background-color 150ms, border-color 150ms;
+  }
+  button:hover:enabled { background: var(--moss); border-color: #899c8a; }
+  button:active:enabled { background: #ccddca; }
+  button:disabled { color: var(--muted); background: var(--paper); border-color: var(--line); cursor: default; }
+  button.primary { background: var(--forest); color: white; border-color: var(--forest); }
+  button.primary:hover:enabled { background: #315743; border-color: #315743; }
+  :focus-visible { outline: 3px solid #a0562d; outline-offset: 3px; }
+  .hero :focus-visible { outline-color: #ffd199; }
+  .wrap { max-width: 1184px; width: calc(100% - 64px); margin-inline: auto; }
+  .top { border-bottom: 1px solid var(--line); }
+  .top-inner {
+    min-height: 67px; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+  .brand-mark {
+    display: grid; place-items: center; width: 32px; height: 32px;
+    border-radius: 8px; background: var(--forest);
+  }
+  .brand-mark::before {
+    content: ""; width: 16px; height: 14px;
+    background: repeating-linear-gradient(to bottom, #e1ebda 0 2px, transparent 2px 6px);
+    transform: skewY(-13deg);
+  }
+  .save-state { color: var(--muted); font-size: .8125rem; text-align: right; }
+  .save-state::before {
+    content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+    background: #54775c; margin-right: 7px; vertical-align: .08em;
+  }
+  .save-state[data-error="true"] { color: var(--rust); }
+  .save-state[data-error="true"]::before { background: var(--rust); }
+  main { padding-top: 32px; padding-bottom: 38px; }
+  .intro p { margin-top: 10px; color: var(--muted); }
+
+  .hero {
+    position: relative; isolation: isolate; overflow: hidden;
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(190px, 252px);
+    align-items: center; gap: 24px;
+    background: var(--forest); color: #fcfaf1; margin-top: 24px;
+    padding: 23px 29px; border-radius: var(--radius);
+  }
+  .hero::after {
+    content: ""; position: absolute; z-index: -1; pointer-events: none;
+    right: 22%; top: -196px; width: 285px; height: 530px;
+    background: repeating-linear-gradient(90deg, transparent 0 20px, #dae8d02b 20px 21px);
+    transform: rotate(35deg); mask-image: linear-gradient(90deg, transparent, black 40%, transparent);
+  }
+  .hero h2, .time-control label, .small-heading {
+    font: 700 .75rem/1.3 system-ui, sans-serif;
+    letter-spacing: .10em; text-transform: uppercase;
+  }
+  .hero h2 { color: #dbe8d8; }
+  .readiness-count { font-size: clamp(2.1rem, 4vw, 3.4rem); letter-spacing: -.055em; line-height: 1.06; margin-block: 5px 7px; }
+  .hero-note { font-size: .875rem; color: #e3ece0; }
+  .time-control { background: #f6f5eb; color: var(--forest); border-radius: 11px; padding: 13px 15px; }
+  .time-control label { display: block; margin-bottom: 5px; }
+  input {
+    width: 100%; min-width: 0; background: var(--card); color: var(--ink);
+    border: 1px solid #a7b3a5; border-radius: 7px; padding: 7px 9px;
+    font-variant-numeric: tabular-nums;
+  }
+  .time-control input { padding-inline: 10px; font-weight: 700; }
+  .stock { margin-top: 25px; }
+  .section-title { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 5px 12px; margin-bottom: 11px; }
+  .section-title button { font-size: .8125rem; }
+  .section-title p, .subtle { color: var(--muted); font-size: .875rem; }
+  .inventory { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 13px; }
+  .stat { padding: 12px 16px 13px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+  .stat h3 { margin: 0; font-size: .875rem; font-weight: 700; }
+  .stat-main { display: flex; align-items: baseline; gap: 8px; margin-block: 3px 4px; }
+  .stat-value { font-size: 2.05rem; line-height: 1.1; }
+  .stat-meta { border-top: 1px solid var(--line); padding-top: 7px; }
+  .work { display: grid; grid-template-columns: minmax(0, 1.85fr) minmax(300px, 1fr); align-items: start; gap: 17px; margin-top: 24px; }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); min-width: 0; }
+  .panel-head { padding: 17px 17px 13px; }
+  .panel-head p { margin-top: 5px; }
+  .rooms { width: 100%; border-collapse: collapse; text-align: left; }
+  .rooms th, .rooms td { padding: 8px 8px; }
+  .rooms th:first-child, .rooms td:first-child { padding-left: 17px; }
+  .rooms th:last-child, .rooms td:last-child { padding-right: 17px; }
+  .rooms thead th { background: #eeefe6; color: #4a594f; }
+  .rooms tbody td, .rooms tbody th { border-bottom: 1px solid #e7e6dc; }
+  .rooms tbody tr:last-child > * { border-bottom: 0; }
+  .room-number { font-size: 1.33rem; white-space: nowrap; line-height: 1.15; }
+  .room-type, .need { display: block; color: var(--muted); font-size: .8125rem; font-weight: 400; }
+  .need { color: var(--ink); }
+  .badge {
+    display: inline-block; padding: 4px 8px; border-radius: 5px; background: #eeefe7;
+    color: #49574d; font-size: .75rem; font-weight: 700; line-height: 1.4;
+  }
+  .badge[data-status="ready"], .badge[data-status="received"] { background: var(--moss); color: #234834; }
+  .badge[data-status="expected"], .badge[data-status="pending"] { background: var(--amber); color: #67450d; }
+  .badge[data-status="short"] { background: #f4e1d8; color: var(--rust); }
+  .room-detail { display: block; margin-top: 3px; color: var(--muted); font-size: .75rem; }
+  .room-detail[hidden] { display: none; }
+  .room-action { text-align: right; }
+  .room-action button { min-width: 82px; font-size: .8125rem; padding-inline: 9px; }
+  .room-action button[data-reserved="true"] { border-color: #688771; background: #e5eee1; }
+  .room-action button[data-reserved="true"]:hover { background: #d6e5d2; }
+  .panel-foot { padding: 11px 17px 13px; border-top: 1px solid var(--line); }
+  .laundry .panel-head { display: flex; flex-wrap: wrap; align-items: start; justify-content: space-between; gap: 9px; }
+  .laundry-table { width: calc(100% - 34px); margin: 0 17px; border-collapse: collapse; }
+  .laundry-table th, .laundry-table td { border-bottom: 1px solid #e7e6dc; padding: 8px 3px; text-align: right; }
+  .laundry-table th:first-child { text-align: left; }
+  .laundry-table thead { color: var(--muted); }
+  .laundry-table tbody th { font-weight: 600; font-size: .875rem; }
+  .laundry-table td { font-variant-numeric: tabular-nums; }
+  .laundry-bottom { padding: 12px 17px 16px; }
+  .laundry-bottom p { min-height: 2.6em; margin-bottom: 10px; }
+  .laundry-bottom button { width: 100%; }
+  .feedback { margin: 13px 0 0; font-size: .875rem; color: var(--forest); }
+  .feedback:empty { margin: 0; }
+  .feedback[data-error="true"], .error { color: var(--rust); }
+  dialog {
+    background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 22px; width: min(448px, calc(100% - 28px)); max-height: calc(100% - 28px);
+  }
+  dialog::backdrop { background: #17291fcc; }
+  dialog p { margin-block: 7px 13px; }
+  .receipt-fields { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 11px; }
+  form label { display: block; font-size: .875rem; font-weight: 650; }
+  form label input { display: block; margin-top: 5px; }
+  .dialog-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; justify-content: flex-end; }
+  .error { font-size: .875rem; }
+  .error:empty { display: none; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0;
+  }
+  @media (max-width: 885px) {
+    .wrap { width: calc(100% - 36px); }
+    .work { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 540px) {
+    .wrap { width: calc(100% - 24px); }
+    main { padding-top: 23px; }
+    .hero { grid-template-columns: minmax(0, 1fr); gap: 13px; padding: 16px; }
+    .time-control { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .time-control label { margin: 0; }
+    .time-control input { width: min(58%, 160px); }
+    .inventory { gap: 6px; }
+    .stat { padding: 9px; }
+    .stat-main { display: block; }
+    .stat-main span { display: block; }
+    .stat-meta { font-size: .75rem; }
+    .rooms th, .rooms td { padding-inline: 4px; }
+    .rooms th:first-child, .rooms td:first-child { padding-left: 9px; }
+    .rooms th:last-child, .rooms td:last-child { padding-right: 9px; }
+    .room-number { font-size: 1.12rem; white-space: normal; }
+    .room-action button { min-width: 0; padding-inline: 6px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span>Linen board</div>
+    <div class="save-state" id="save-state">Saved on this device</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="intro">
+    <h1>Saturday turnover</h1>
+    <p>Three same-day arrivals across five guest rooms.</p>
+  </div>
+
+  <section class="hero" aria-labelledby="readiness-title">
+    <div aria-live="polite" aria-atomic="true">
+      <h2 id="readiness-title">Linen readiness</h2>
+      <p class="readiness-count" id="readiness-count"></p>
+      <p class="hero-note" id="readiness-note"></p>
+    </div>
+    <div class="time-control">
+      <label for="cutoff">Prepare by</label>
+      <input id="cutoff" type="time" value="12:00" required>
+    </div>
+  </section>
+
+  <section class="stock" aria-labelledby="stock-title">
+    <div class="section-title">
+      <div><h2 id="stock-title">Clean stock</h2><p>Physical stock available to reserve</p></div>
+      <button type="button" id="stock-open">Edit opening count</button>
+    </div>
+    <div class="inventory" id="inventory"></div>
+  </section>
+
+  <div class="work">
+    <section class="panel" aria-labelledby="rooms-title">
+      <div class="panel-head">
+        <h2 id="rooms-title">Room plan</h2>
+        <p class="subtle">Rooms 1, 2 and 4 depart and arrive on Saturday.</p>
+      </div>
+      <table class="rooms" aria-labelledby="rooms-title">
+        <thead>
+          <tr class="small-heading"><th scope="col">Room</th><th scope="col">Linen needed</th><th scope="col" id="room-cutoff">By 12:00</th><th scope="col"><span class="sr-only">Reservation</span></th></tr>
+        </thead>
+        <tbody id="room-rows"></tbody>
+      </table>
+      <p class="panel-foot subtle">Reserved rooms get first claim. Remaining clean kits go to arrivals in room order.</p>
+    </section>
+
+    <section class="panel laundry" aria-labelledby="laundry-title">
+      <div class="panel-head">
+        <div><h2 id="laundry-title">Laundry return</h2><p class="subtle">Expected Saturday at <strong>13:00</strong></p></div>
+        <span class="badge" id="receipt-status"></span>
+      </div>
+      <table class="laundry-table" aria-labelledby="laundry-title">
+        <thead><tr class="small-heading"><th scope="col">Linen</th><th scope="col">Expected</th><th scope="col">Received</th></tr></thead>
+        <tbody id="laundry-rows"></tbody>
+      </table>
+      <div class="laundry-bottom">
+        <p class="subtle" id="receipt-note"></p>
+        <button type="button" class="primary" id="receipt-open">Record return</button>
+      </div>
+    </section>
+  </div>
+  <p class="feedback" id="feedback" role="status"></p>
+</main>
+
+<dialog id="receipt-dialog" aria-labelledby="receipt-title">
+  <form id="receipt-form">
+    <h2 id="receipt-title">Record laundry return</h2>
+    <p class="subtle" id="receipt-help">Enter the actual time and clean quantities received. This updates the recorded total for the 13:00 batch.</p>
+    <label for="received-time">Received at
+      <input id="received-time" name="time" type="time" value="13:00" required aria-describedby="receipt-help" autofocus>
+    </label>
+    <div class="receipt-fields">
+      <label for="received-queen">Queen sets<input id="received-queen" name="queen" type="number" inputmode="numeric" min="0" max="9999" step="1" required></label>
+      <label for="received-twin">Twin sets<input id="received-twin" name="twin" type="number" inputmode="numeric" min="0" max="9999" step="1" required></label>
+      <label for="received-towels">Towels<input id="received-towels" name="towels" type="number" inputmode="numeric" min="0" max="9999" step="1" required></label>
+    </div>
+    <p class="error" id="receipt-error" role="alert"></p>
+    <div class="dialog-actions">
+      <button type="button" id="receipt-cancel">Cancel</button>
+      <button type="submit" class="primary">Save return</button>
+    </div>
+  </form>
+</dialog>
+<dialog id="stock-dialog" aria-labelledby="opening-title">
+  <form id="stock-form">
+    <h2 id="opening-title">Edit opening count</h2>
+    <p class="subtle">Enter Saturday’s starting clean stock, before the laundry return and room reservations.</p>
+    <div class="receipt-fields">
+      <label for="opening-queen">Queen sets<input id="opening-queen" name="queen" type="number" inputmode="numeric" min="0" max="9999" step="1" required autofocus></label>
+      <label for="opening-twin">Twin sets<input id="opening-twin" name="twin" type="number" inputmode="numeric" min="0" max="9999" step="1" required></label>
+      <label for="opening-towels">Towels<input id="opening-towels" name="towels" type="number" inputmode="numeric" min="0" max="9999" step="1" required></label>
+    </div>
+    <p class="error" id="stock-error" role="alert"></p>
+    <div class="dialog-actions">
+      <button type="button" id="stock-cancel">Cancel</button>
+      <button type="submit" class="primary">Save count</button>
+    </div>
+  </form>
+</dialog>
+<noscript><p class="wrap">Enable JavaScript in your browser to use the board offline.</p></noscript>
+
+<script>
+"use strict";
+
+const supplies = [
+  { key: "queen", label: "Queen sets", singular: "queen set", expected: 2 },
+  { key: "twin", label: "Twin sets", singular: "twin set", expected: 2 },
+  { key: "towels", label: "Towels", singular: "towel", expected: 6 }
+];
+const expectedTime = "13:00";
+const empty = { queen: 0, twin: 0, towels: 0 };
+const queenKit = { ...empty, queen: 1, towels: 2 };
+const twinKit = { ...empty, twin: 2, towels: 2 };
+const rooms = [
+  { id: 1, type: "Queen", arrival: true, kit: queenKit },
+  { id: 2, type: "Queen", arrival: true, kit: queenKit },
+  { id: 3, type: "Queen", arrival: false, kit: queenKit },
+  { id: 4, type: "Twin", arrival: true, kit: twinKit },
+  { id: 5, type: "Twin", arrival: false, kit: twinKit }
+];
+const arrivals = rooms.filter(room => room.arrival);
+const initial = {
+  opening: { queen: 2, twin: 3, towels: 8 },
+  receipt: null,
+  reserved: [],
+  cutoff: "12:00"
+};
+const storageKey = "guesthouse-linen-saturday-v1";
+const byId = id => document.getElementById(id);
+const quantities = calculate => Object.fromEntries(supplies.map(({ key }) => [key, calculate(key)]));
+const isTime = value => typeof value === "string" && /^(?:[01]\d|2[0-3]):[0-5]\d$/.test(value);
+const isCount = value => Number.isInteger(value) && value >= 0 && value <= 9999;
+const validQuantities = value => value && supplies.every(({ key }) => isCount(value[key]));
+const covers = (stock, kit) => supplies.every(({ key }) => stock[key] >= kit[key]);
+const add = (left, right) => quantities(key => left[key] + right[key]);
+const physical = plan => add(plan.opening, plan.receipt?.counts ?? empty);
+
+function heldStock(plan) {
+  return arrivals.filter(room => plan.reserved.includes(room.id))
+    .reduce((total, room) => add(total, room.kit), empty);
+}
+
+function validPlan(plan) {
+  return plan && validQuantities(plan.opening) && isTime(plan.cutoff)
+    && (plan.receipt === null || (plan.receipt && isTime(plan.receipt.time) && validQuantities(plan.receipt.counts)))
+    && Array.isArray(plan.reserved) && new Set(plan.reserved).size === plan.reserved.length
+    && plan.reserved.every(id => arrivals.some(room => room.id === id))
+    && covers(physical(plan), heldStock(plan));
+}
+
+function preview(plan) {
+  const receiptByCutoff = plan.receipt && plan.receipt.time <= plan.cutoff;
+  let available = add(plan.opening, receiptByCutoff ? plan.receipt.counts : empty);
+  const reserved = plan.reserved.map(id => arrivals.find(room => room.id === id));
+  const unreserved = arrivals.filter(room => !plan.reserved.includes(room.id));
+  const result = new Map();
+
+  for (const room of [...reserved, ...unreserved]) {
+    const missing = shortages(available, room.kit);
+    if (covers(available, room.kit)) {
+      result.set(room.id, { status: "ready", detail: "" });
+    } else {
+      result.set(room.id, { status: "short", detail: "Needs " + pieces(missing) });
+    }
+    if (result.get(room.id).status === "ready" || plan.reserved.includes(room.id)) {
+      available = remaining(available, room.kit);
+    }
+  }
+
+  if (!plan.receipt && expectedTime <= plan.cutoff) {
+    available = add(available, Object.fromEntries(supplies.map(({ key, expected }) => [key, expected])));
+    for (const room of unreserved.filter(room => result.get(room.id).status === "short")) {
+      if (covers(available, room.kit)) {
+        result.set(room.id, { status: "expected", detail: "Laundry due at " + expectedTime });
+        available = remaining(available, room.kit);
+      } else {
+        result.set(room.id, { status: "short", detail: "Needs " + pieces(shortages(available, room.kit)) });
+      }
+    }
+  }
+  return result;
+}
+
+function shortages(stock, kit) {
+  return quantities(key => Math.max(0, kit[key] - stock[key]));
+}
+
+function remaining(stock, kit) {
+  return quantities(key => Math.max(0, stock[key] - kit[key]));
+}
+
+function pieces(counts) {
+  return supplies.filter(({ key }) => counts[key] > 0)
+    .map(({ key, singular }) => counts[key] + " " + singular + (counts[key] === 1 ? "" : "s")).join(", ");
+}
+
+function setStorageStatus(message, error = false) {
+  const label = byId("save-state");
+  label.textContent = message;
+  label.dataset.error = error;
+}
+
+function load() {
+  let saved;
+  try {
+    saved = localStorage.getItem(storageKey);
+  } catch {
+    setStorageStatus("Changes last for this session", true);
+    return initial;
+  }
+  if (saved === null) return initial;
+  try {
+    const plan = JSON.parse(saved);
+    if (validPlan(plan)) return plan;
+  } catch {
+    // Opening counts remain usable if a stored plan cannot be read.
+  }
+  setStorageStatus("Saved plan unreadable · showing opening counts", true);
+  return initial;
+}
+
+let state = load();
+
+function feedback(message, error = false) {
+  const label = byId("feedback");
+  label.dataset.error = error;
+  label.textContent = message;
+}
+
+function commit(next, message = "") {
+  state = next;
+  try {
+    localStorage.setItem(storageKey, JSON.stringify(state));
+    setStorageStatus("Saved on this device");
+  } catch {
+    setStorageStatus("Changes last for this session", true);
+  }
+  render();
+  feedback(message);
+}
+
+function buildBoard() {
+  byId("inventory").innerHTML = supplies.map(({ key, label }) => `
+    <article class="stat">
+      <h3>${label}</h3>
+      <div class="stat-main"><strong class="stat-value" id="free-${key}"></strong><span class="subtle">available</span></div>
+      <p class="stat-meta subtle" id="meta-${key}"></p>
+    </article>`).join("");
+
+  byId("laundry-rows").innerHTML = supplies.map(({ key, label, expected }) => `
+    <tr><th scope="row">${label}</th><td>${expected}</td><td id="actual-${key}"></td></tr>`).join("");
+
+  byId("room-rows").innerHTML = rooms.map(({ id, type, kit, arrival }) => `
+    <tr>
+      <th scope="row"><span class="room-number">Room ${id}</span><span class="room-type">${type}</span></th>
+      <td>${supplies.filter(({ key }) => kit[key]).map(({ key, singular }) =>
+        `<span class="need">${kit[key]} ${singular}${kit[key] === 1 ? "" : "s"}</span>`).join("")}</td>
+      <td><span class="badge" id="status-${id}">No turnover</span><span class="room-detail" id="detail-${id}" hidden></span></td>
+      <td class="room-action">${arrival ? `<button type="button" id="reserve-${id}">Reserve</button>` : ""}</td>
+    </tr>`).join("");
+
+  for (const room of arrivals) {
+    byId("reserve-" + room.id).addEventListener("click", () => toggleReservation(room));
+  }
+}
+
+function render() {
+  const outcomes = preview(state);
+  const held = heldStock(state);
+  const onHand = physical(state);
+  const free = quantities(key => onHand[key] - held[key]);
+  const ready = [...outcomes.values()].filter(({ status }) => status === "ready").length;
+  const expected = [...outcomes.values()].filter(({ status }) => status === "expected").length;
+  const short = arrivals.length - ready - expected;
+  const summary = [ready + " from clean stock"];
+  if (expected) summary.push(expected + " relying on expected laundry");
+  if (short) summary.push(short + " short of linen");
+  byId("readiness-count").textContent = (ready + expected) + " of " + arrivals.length + " rooms by " + state.cutoff;
+  byId("readiness-note").textContent = summary.join(" · ");
+  byId("room-cutoff").textContent = "By " + state.cutoff;
+
+  for (const { key } of supplies) {
+    byId("free-" + key).textContent = free[key];
+    byId("meta-" + key).textContent = onHand[key] + " clean · " + held[key] + " reserved";
+    const actualCell = byId("actual-" + key);
+    actualCell.textContent = state.receipt?.counts[key] ?? "—";
+    if (state.receipt) actualCell.removeAttribute("aria-label");
+    else actualCell.setAttribute("aria-label", "Awaiting receipt");
+  }
+
+  for (const room of arrivals) {
+    const outcome = outcomes.get(room.id);
+    const reserved = state.reserved.includes(room.id);
+    const badge = byId("status-" + room.id);
+    badge.dataset.status = outcome.status;
+    badge.textContent = { ready: "Linen ready", expected: "Expected", short: "Short" }[outcome.status];
+    const detail = byId("detail-" + room.id);
+    detail.textContent = [reserved ? "Reserved" : "", outcome.detail].filter(Boolean).join(" · ");
+    detail.hidden = !detail.textContent;
+    const button = byId("reserve-" + room.id);
+    button.dataset.reserved = reserved;
+    button.textContent = reserved ? "Release" : "Reserve";
+    button.setAttribute("aria-label", (reserved ? "Release linen for room " : "Reserve linen for room ") + room.id);
+    button.disabled = !reserved && !covers(free, room.kit);
+  }
+
+  const receiptBadge = byId("receipt-status");
+  receiptBadge.textContent = state.receipt ? "Received" : "Pending";
+  receiptBadge.dataset.status = state.receipt ? "received" : "pending";
+  byId("receipt-note").textContent = state.receipt
+    ? "Recorded at " + state.receipt.time + ". Actual counts are used for planning."
+    : "Included in the forecast from 13:00. Record the return to make it available to reserve.";
+  byId("receipt-open").textContent = state.receipt ? "Edit return" : "Record return";
+}
+
+function toggleReservation(room) {
+  const reserved = state.reserved.includes(room.id);
+  const next = {
+    ...state,
+    reserved: reserved ? state.reserved.filter(id => id !== room.id) : [...state.reserved, room.id]
+  };
+  if (!covers(physical(next), heldStock(next))) {
+    feedback("A full clean kit is unavailable for room " + room.id + ".", true);
+    return;
+  }
+  commit(next, "Linen " + (reserved ? "released for" : "reserved for") + " room " + room.id + ".");
+}
+
+function readCounts(form) {
+  return quantities(key => {
+    const value = form.elements.namedItem(key).value;
+    return value === "" ? NaN : Number(value);
+  });
+}
+
+function writeCounts(form, counts) {
+  for (const { key } of supplies) form.elements.namedItem(key).value = counts?.[key] ?? "";
+}
+
+function connectEditor(name, fill, update, message) {
+  const dialog = byId(name + "-dialog");
+  const form = byId(name + "-form");
+  const error = byId(name + "-error");
+  byId(name + "-open").addEventListener("click", () => {
+    fill(form);
+    error.textContent = "";
+    dialog.showModal();
+  });
+  byId(name + "-cancel").addEventListener("click", () => dialog.close());
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    const next = update(form);
+    if (!validQuantities(next.opening) || (next.receipt && !validQuantities(next.receipt.counts))) {
+      error.textContent = "Enter a whole number from 0 to 9999 for each linen type.";
+      return;
+    }
+    if (next.receipt && !isTime(next.receipt.time)) {
+      error.textContent = "Enter the Saturday time when the laundry was received.";
+      return;
+    }
+    if (!covers(physical(next), heldStock(next))) {
+      error.textContent = "These counts cannot cover the current reservations. Release the affected rooms before reducing stock.";
+      return;
+    }
+    commit(next, message);
+    dialog.close();
+  });
+}
+
+buildBoard();
+byId("cutoff").value = state.cutoff;
+byId("cutoff").addEventListener("input", event => {
+  if (isTime(event.target.value)) commit({ ...state, cutoff: event.target.value });
+});
+byId("cutoff").addEventListener("change", event => {
+  if (!isTime(event.target.value)) event.target.value = state.cutoff;
+});
+byId("cutoff").addEventListener("blur", event => {
+  if (!isTime(event.target.value)) event.target.value = state.cutoff;
+});
+
+connectEditor("receipt", form => {
+  byId("receipt-title").textContent = state.receipt ? "Edit laundry return" : "Record laundry return";
+  form.elements.namedItem("time").value = state.receipt?.time ?? expectedTime;
+  writeCounts(form, state.receipt?.counts);
+}, form => ({
+  ...state,
+  receipt: { time: form.elements.namedItem("time").value, counts: readCounts(form) }
+}), "Laundry return saved.");
+
+connectEditor("stock", form => writeCounts(form, state.opening), form => ({
+  ...state,
+  opening: readCounts(form)
+}), "Opening stock saved.");
+
+window.addEventListener("storage", event => {
+  if (event.key !== storageKey && event.key !== null) return;
+  state = load();
+  byId("cutoff").value = state.cutoff;
+  render();
+});
+render();
+</script>
+</body>
+</html>

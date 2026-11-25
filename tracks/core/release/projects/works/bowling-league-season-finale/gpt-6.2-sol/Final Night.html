@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bowling League Final Night</title>
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #faf1df;
+    --ink: #182725;
+    --green: #16483f;
+    --orange: #a33319;
+    --line: #b9b6a4;
+    font-family: "Avenir Next", "Segoe UI", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body { margin: 0; background: var(--paper); color: var(--ink); }
+  button, input { font: inherit; }
+  button {
+    cursor: pointer; border: 1px solid var(--green); border-radius: .35rem;
+    padding: .58rem .85rem; background: #fffaf0; color: var(--green); font-weight: 700;
+  }
+  button:hover { background: #e9e4d4; }
+  button:focus-visible, input:focus-visible { outline: 3px solid #be471e; outline-offset: 3px; }
+  button.primary, button[aria-pressed="true"] { background: var(--green); color: white; }
+  button.primary:hover, button[aria-pressed="true"]:hover { background: #246655; }
+  .host { max-width: 76rem; margin: auto; padding: clamp(1rem, 4vw, 3rem); }
+  .host-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 1rem; }
+  .host h1 { margin: .25rem 0 0; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1; letter-spacing: -.055em; }
+  .eyebrow { font-weight: 800; text-transform: uppercase; letter-spacing: .15em; }
+  .host-head .eyebrow { color: var(--orange); font-size: .78rem; margin: 0; }
+  .actions { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+  .host-grid { display: grid; grid-template-columns: 1.65fr 1fr; gap: 1.5rem; margin-top: 1.4rem; align-items: start; }
+  .section-title { font-size: 1.2rem; margin: 0 0 .65rem; }
+  .helper { font-size: .91rem; margin: .5rem 0 .9rem; }
+  .award-editor { margin: 0 0 .65rem; border: 1px solid var(--line); border-radius: .4rem; padding: .8rem; background: #fffaf0; }
+  .award-editor h3 { font-size: 1rem; margin: 0 0 .65rem; }
+  .fields { display: grid; grid-template-columns: 1.2fr 1fr; gap: .6rem; }
+  label { font-size: .81rem; font-weight: 700; display: block; }
+  input {
+    width: 100%; border: 1px solid #777d70; background: white; color: var(--ink);
+    border-radius: .25rem; padding: .4rem .5rem; display: block; margin-top: .2rem;
+  }
+  .editor-foot { display: flex; align-items: center; gap: .45rem; flex-wrap: wrap; margin-top: .55rem; }
+  .editor-foot button { padding: .35rem .55rem; font-size: .85rem; }
+  .row-state { font-size: .78rem; margin-left: auto; color: #3f514a; }
+  .status { min-height: 1.4em; margin: .6rem 0 0; font-size: .9rem; font-weight: 650; }
+  .reset { margin-top: .6rem; }
+  .preview-frame { margin-top: .65rem; border: 1px solid var(--green); }
+  .stage {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; container-type: inline-size;
+    background: var(--paper); overflow: hidden; color: var(--ink);
+  }
+  .slide { position: absolute; inset: 0; display: flex; flex-direction: column; padding: 3.25cqw 4.8cqw 3.05cqw; }
+  .slide-head { display: flex; align-items: center; justify-content: space-between; border-bottom: .13cqw solid currentColor; padding-bottom: .85cqw; font-size: 1.35cqw; }
+  .league-mark { display: flex; align-items: center; gap: .8cqw; }
+  .mark { display: grid; grid-template-columns: repeat(3, .33cqw); gap: .19cqw; transform: skew(-17deg); }
+  .mark i { height: 1.15cqw; background: currentColor; }
+  .schedule-main { display: grid; grid-template-columns: 1fr .53fr; align-items: center; flex: 1; min-height: 0; }
+  .schedule .title {
+    font-size: 13cqw; font-weight: 900; letter-spacing: -.06em; line-height: .79;
+    margin: 0 0 .6cqw -.64cqw; text-transform: uppercase;
+  }
+  .schedule .title span { display: block; color: var(--green); }
+  .scene {
+    position: relative; width: 29cqw; height: 28cqw; justify-self: end;
+    background: var(--green); border-radius: 48% 48% 3% 3%; overflow: hidden;
+  }
+  .lane { position: absolute; inset: auto 0 0; height: 8cqw; background: #246452; clip-path: polygon(35% 0, 65% 0, 100% 100%, 0 100%); }
+  .lane::before, .lane::after { content: ""; position: absolute; top: 0; left: 50%; width: .1cqw; height: 11cqw; background: #82aa88; transform-origin: top; transform: rotate(27deg) translateX(-2.3cqw); }
+  .lane::after { transform: rotate(-27deg) translateX(2.3cqw); }
+  .pin {
+    position: absolute; width: 5.8cqw; height: 14.8cqw; background: var(--paper);
+    clip-path: polygon(39% 1%, 49% 0, 62% 2%, 71% 7%, 73% 15%, 67% 25%, 66% 34%, 71% 43%, 85% 55%, 97% 69%, 100% 80%, 96% 89%, 83% 98%, 17% 98%, 4% 89%, 0 80%, 3% 69%, 15% 55%, 29% 43%, 34% 34%, 33% 25%, 27% 15%, 29% 7%);
+    background-image: linear-gradient(to bottom, transparent 23%, #c94d2b 23% 28%, transparent 28% 31%, #c94d2b 31% 36%, transparent 36%);
+  }
+  .pin-left { top: 6.6cqw; left: 5.1cqw; transform: rotate(-22deg) scale(.87); }
+  .pin-right { top: 6.5cqw; right: 5cqw; transform: rotate(22deg) scale(.87); }
+  .pin-center { top: 4.05cqw; left: 11.6cqw; transform: rotate(-5deg); }
+  .ball { position: absolute; width: 8.7cqw; height: 8.7cqw; bottom: 2.25cqw; left: 10.3cqw; border-radius: 50%; background: #ed7951; box-shadow: inset -.6cqw -.7cqw #c84d2b; transform: rotate(-12deg); }
+  .ball i { display: block; width: .69cqw; height: .69cqw; border-radius: 50%; background: var(--ink); position: absolute; left: 3.15cqw; top: 1.9cqw; }
+  .ball i:nth-child(2) { left: 4.53cqw; top: 1.9cqw; }
+  .ball i:nth-child(3) { left: 3.82cqw; top: 3.29cqw; }
+  .times { padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); list-style: none; margin: 0; border-block: .13cqw solid var(--ink); }
+  .times li { padding: .88cqw 1.3cqw 1.02cqw; border-left: .08cqw solid var(--line); }
+  .times li:first-child { padding-left: 0; border-left: 0; }
+  .times li:last-child { color: var(--orange); }
+  .times b { display: block; font-size: 4.1cqw; line-height: 1.12; letter-spacing: -.04em; font-variant-numeric: tabular-nums; }
+  .times small { font-size: 1.35cqw; line-height: 1; letter-spacing: 0; }
+  .times span { display: block; font-size: 1.57cqw; font-weight: 700; }
+  .schedule-footer { margin: 1.05cqw 0 0; font-size: 1.45cqw; font-weight: 600; }
+  .recognition { background: var(--green); color: var(--paper); }
+  .recognition .slide-head { color: #efb99e; }
+  .recognition h2 { margin: 1.7cqw 0 1.6cqw -.35cqw; font-size: 7.85cqw; letter-spacing: -.052em; line-height: 1; }
+  .results { display: grid; flex: 1; grid-template-rows: repeat(3, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; }
+  .result {
+    display: grid; grid-template-columns: 30% 1fr; gap: 1.45cqw; align-items: center;
+    border-top: .1cqw solid #91a99a; min-width: 0; padding: .7cqw 0;
+  }
+  .result:last-child { border-bottom: .1cqw solid #91a99a; }
+  .category { font-size: 2.05cqw; line-height: 1.08; font-weight: 750; }
+  .result-name { font-size: 4.15cqw; line-height: 1.03; font-weight: 850; display: block; letter-spacing: -.024em; overflow-wrap: anywhere; }
+  .result-name.long { font-size: 3.05cqw; }
+  .result-name.extra-long { font-size: 2.55cqw; }
+  .result-name.pending { font-size: 2.1cqw; color: #c6d8c9; letter-spacing: 0; font-weight: 550; }
+  .result-detail { color: #ffd1b7; font-size: 1.65cqw; line-height: 1.1; font-weight: 700; overflow-wrap: anywhere; }
+  .recognition-footer { margin: 1cqw 0 0; font-size: 1.55cqw; font-weight: 600; }
+  .tv-view { height: 100vh; background: #111a18; display: grid; grid-template-rows: 1fr auto; }
+  .tv-frame { display: grid; place-items: center; min-height: 0; }
+  .tv-frame .stage { width: min(100vw, calc((100vh - 3.25rem) * 16 / 9)); }
+  .dock { display: flex; align-items: center; justify-content: center; gap: .6rem; height: 3.25rem; }
+  .dock button { padding: .38rem .7rem; }
+  :fullscreen .tv-view, :-webkit-full-screen .tv-view { grid-template-rows: 1fr; }
+  :fullscreen .dock, :-webkit-full-screen .dock { display: none; }
+  :fullscreen .tv-frame .stage, :-webkit-full-screen .tv-frame .stage { width: min(100vw, calc(100vh * 16 / 9)); }
+  @media (max-width: 53rem) { .host-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 28rem) { .fields { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main class="host" id="host" hidden>
+  <header class="host-head">
+    <div>
+      <p class="eyebrow">Bowling league · Final night</p>
+      <h1>Host desk</h1>
+    </div>
+    <div class="actions">
+      <button class="primary" id="open-tv" type="button">Open TV display</button>
+      <button id="present-here" type="button">Present on this screen</button>
+    </div>
+  </header>
+  <p class="status" id="status" role="status"></p>
+  <div class="host-grid">
+    <section aria-labelledby="edit-title">
+      <h2 class="section-title" id="edit-title">Award results</h2>
+      <p class="helper">Enter confirmed results as they arrive. When you’re ready to announce a winner, select <strong>Reveal winner</strong> to put that result on the TV. To enter joint winners, put both names in the same field.</p>
+      <div id="editors"></div>
+      <button class="reset" id="reset" type="button">Reset this event</button>
+    </section>
+    <section aria-labelledby="preview-title">
+      <h2 class="section-title" id="preview-title">TV preview</h2>
+      <div class="actions" aria-label="TV screen">
+        <button type="button" data-screen="schedule" aria-pressed="true">Schedule</button>
+        <button type="button" data-screen="recognition" aria-pressed="false">Recognition</button>
+      </div>
+      <p class="helper">Select Recognition at 8:30 p.m. as the awards begin. The preview shows what the TV gets.</p>
+      <div class="preview-frame" id="preview"></div>
+    </section>
+  </div>
+</main>
+
+<main class="tv-view" id="tv-view" hidden aria-label="Bowling league final night TV display">
+  <div class="tv-frame" id="tv-frame"></div>
+  <div class="dock">
+    <button type="button" id="fullscreen">Full screen</button>
+    <button type="button" id="back">Back to host desk</button>
+  </div>
+</main>
+
+<template id="stage-template">
+  <div class="stage">
+    <section class="slide schedule" data-slide="schedule" aria-label="Final night schedule">
+      <header class="slide-head eyebrow">
+        <span class="league-mark"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span> Bowling league</span>
+        <span>Six teams</span>
+      </header>
+      <div class="schedule-main">
+        <h2 class="title">Final<span>Night</span></h2>
+        <div class="scene" aria-hidden="true">
+          <div class="lane"></div>
+          <div class="pin pin-left"></div><div class="pin pin-right"></div><div class="pin pin-center"></div>
+          <div class="ball"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <ol class="times">
+        <li><b>6:00 <small>PM</small></b><span>Doors open</span></li>
+        <li><b>6:20 <small>PM</small></b><span>Warmups</span></li>
+        <li><b>6:40 <small>PM</small></b><span>Two games begin</span></li>
+        <li><b>8:30 <small>PM</small></b><span>Recognition</span></li>
+      </ol>
+      <p class="schedule-footer">Here to cheer? Watch from the seating behind the lanes and keep the approaches clear.</p>
+    </section>
+    <section class="slide recognition" data-slide="recognition" aria-label="Final night recognition" hidden>
+      <header class="slide-head eyebrow">
+        <span class="league-mark"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span> Bowling league · Final night</span>
+        <span>8:30 PM</span>
+      </header>
+      <h2>Recognition</h2>
+      <ul class="results"></ul>
+      <p class="recognition-footer">Thank you to all six teams and everyone who came to cheer.</p>
+    </section>
+  </div>
+</template>
+
+<template id="editor-template">
+  <form class="award-editor">
+    <h3></h3>
+    <div class="fields">
+      <label><span class="winner-label"></span><input name="winner" maxlength="64" required autocomplete="off"></label>
+      <label><span class="detail-label"></span><input name="detail" maxlength="35" autocomplete="off"></label>
+    </div>
+    <div class="editor-foot">
+      <button class="reveal" type="button">Reveal winner</button>
+      <button class="hide-result" type="button" hidden>Hide result</button>
+      <span class="row-state"></span>
+    </div>
+  </form>
+</template>
+
+<script>
+  'use strict';
+
+  const awards = [
+    { title: 'Highest single game', winnerLabel: 'Player name', detailLabel: 'Game score (optional)' },
+    { title: 'Most improved average', winnerLabel: 'Player name', detailLabel: 'Average gain (optional)' },
+    { title: 'Team spirit vote', winnerLabel: 'Team name', detailLabel: 'Vote result (optional)' }
+  ];
+  const storageKey = 'bowling-league-final-night-v1';
+  const messageKey = 'bowling-final-night';
+  const hasTvHash = location.hash === '#tv';
+  const find = (selector, root = document) => root.querySelector(selector);
+
+  function startState() {
+    return {
+      screen: 'schedule',
+      entries: awards.map(() => ({ draft: { winner: '', detail: '' }, published: null }))
+    };
+  }
+
+  function readResult(value) {
+    if (typeof value?.winner !== 'string' || typeof value?.detail !== 'string') return null;
+    return { winner: value.winner.slice(0, 64), detail: value.detail.slice(0, 35) };
+  }
+
+  let storageAvailable = true;
+  function restoreState() {
+    const fallback = startState();
+    try {
+      const saved = JSON.parse(localStorage.getItem(storageKey));
+      if (!Array.isArray(saved?.entries)) return fallback;
+      return {
+        screen: saved.screen === 'recognition' ? 'recognition' : 'schedule',
+        entries: fallback.entries.map((empty, i) => ({
+          draft: readResult(saved.entries[i]?.draft) ?? empty.draft,
+          published: readResult(saved.entries[i]?.published)
+        }))
+      };
+    } catch {
+      storageAvailable = false;
+      return fallback;
+    }
+  }
+
+  let state = hasTvHash ? startState() : restoreState();
+  let tvWindow = null;
+  const status = find('#status');
+
+  function announce(message = '') {
+    status.textContent = [message, storageAvailable ? '' : 'Browser storage is unavailable. Keep this host window open.'].filter(Boolean).join(' ');
+  }
+
+  function save() {
+    try {
+      localStorage.setItem(storageKey, JSON.stringify(state));
+      storageAvailable = true;
+    } catch {
+      storageAvailable = false;
+    }
+  }
+
+  function mountStage(parent) {
+    const stage = find('#stage-template').content.firstElementChild.cloneNode(true);
+    const resultList = find('.results', stage);
+    const rows = awards.map(({ title }) => {
+      const row = document.createElement('li');
+      row.className = 'result';
+      const category = document.createElement('span');
+      category.className = 'category';
+      category.textContent = title;
+      const copy = document.createElement('div');
+      const name = document.createElement('span');
+      const detail = document.createElement('span');
+      detail.className = 'result-detail';
+      copy.append(name, detail);
+      row.append(category, copy);
+      resultList.append(row);
+      return { name, detail };
+    });
+    parent.append(stage);
+    return { stage, rows };
+  }
+
+  function draw(display, data) {
+    const { stage, rows } = display;
+    for (const slide of stage.querySelectorAll('[data-slide]')) {
+      slide.hidden = slide.dataset.slide !== data.screen;
+    }
+    rows.forEach(({ name, detail }, i) => {
+      const result = data.results[i];
+      const winner = result?.winner || '';
+      name.className = 'result-name';
+      name.classList.toggle('pending', !winner);
+      name.classList.toggle('long', winner.length > 29);
+      name.classList.toggle('extra-long', winner.length > 49);
+      name.textContent = winner || 'To be announced';
+      detail.textContent = result?.detail || '';
+      detail.hidden = !detail.textContent;
+    });
+  }
+
+  const tv = mountStage(find('#tv-frame'));
+  const dock = find('#tv-view');
+  let preview = null;
+  const editors = [];
+
+  function publicState() {
+    return { screen: state.screen, results: state.entries.map(entry => entry.published) };
+  }
+
+  function sendToTv() {
+    if (tvWindow && !tvWindow.closed) {
+      tvWindow.postMessage({ key: messageKey, type: 'display', data: publicState() }, '*');
+    }
+  }
+
+  function refresh() {
+    const data = publicState();
+    draw(preview, data);
+    draw(tv, data);
+    for (const button of document.querySelectorAll('[data-screen]')) {
+      button.setAttribute('aria-pressed', String(button.dataset.screen === state.screen));
+    }
+    state.entries.forEach(({ draft, published }, i) => {
+      const { form, reveal, hide, indicator } = editors[i];
+      if (form.elements.winner.value !== draft.winner) form.elements.winner.value = draft.winner;
+      if (form.elements.detail.value !== draft.detail) form.elements.detail.value = draft.detail;
+      reveal.textContent = published ? 'Update TV result' : 'Reveal winner';
+      hide.hidden = !published;
+      const hasChanges = published && (published.winner !== draft.winner.trim() || published.detail !== draft.detail.trim());
+      indicator.textContent = hasChanges ? 'On recognition screen · draft changes' : published ? 'On recognition screen' : draft.winner || draft.detail ? 'Draft' : 'Awaiting result';
+    });
+    sendToTv();
+  }
+
+  function showTv() {
+    find('#host').hidden = true;
+    dock.hidden = false;
+  }
+
+  function showHost() {
+    dock.hidden = true;
+    find('#host').hidden = false;
+  }
+
+  async function enterFullscreen() {
+    const page = document.documentElement;
+    const request = page.requestFullscreen || page.webkitRequestFullscreen;
+    if (request) {
+      try {
+        await request.call(page);
+        return;
+      } catch {
+        // Browser full-screen controls remain available.
+      }
+    }
+    find('#fullscreen').textContent = 'Use browser full screen';
+  }
+
+  find('#fullscreen').addEventListener('click', enterFullscreen);
+
+  if (hasTvHash) {
+    find('#back').hidden = true;
+    draw(tv, publicState());
+    showTv();
+    if (window.opener) {
+      window.addEventListener('message', event => {
+        const message = event.data;
+        if (event.source !== window.opener || message?.key !== messageKey || message.type !== 'display') return;
+        const data = message.data;
+        draw(tv, {
+          screen: data.screen === 'recognition' ? 'recognition' : 'schedule',
+          results: awards.map((award, i) => readResult(data.results[i]))
+        });
+      });
+      window.opener.postMessage({ key: messageKey, type: 'ready' }, '*');
+    }
+  } else {
+    showHost();
+    preview = mountStage(find('#preview'));
+
+    awards.forEach((award, i) => {
+      const form = find('#editor-template').content.firstElementChild.cloneNode(true);
+      const heading = find('h3', form);
+      heading.textContent = award.title;
+      heading.id = 'award-' + i;
+      form.setAttribute('aria-labelledby', heading.id);
+      find('.winner-label', form).textContent = award.winnerLabel;
+      find('.detail-label', form).textContent = award.detailLabel;
+      const reveal = find('.reveal', form);
+      const hide = find('.hide-result', form);
+      const indicator = find('.row-state', form);
+      const { winner, detail } = form.elements;
+
+      form.addEventListener('input', () => {
+        winner.setCustomValidity('');
+        state.entries[i].draft = { winner: winner.value, detail: detail.value };
+        save();
+        refresh();
+        if (!storageAvailable) announce();
+      });
+
+      form.addEventListener('submit', event => event.preventDefault());
+
+      reveal.addEventListener('click', () => {
+        const result = { winner: winner.value.trim(), detail: detail.value.trim() };
+        if (!result.winner) {
+          winner.setCustomValidity('Enter a winner before revealing this award.');
+          winner.reportValidity();
+          return;
+        }
+        state.entries[i] = { draft: { ...result }, published: result };
+        state.screen = 'recognition';
+        save();
+        refresh();
+        announce(award.title + ' is on the recognition screen.');
+      });
+
+      hide.addEventListener('click', () => {
+        state.entries[i].published = null;
+        save();
+        refresh();
+        reveal.focus();
+        announce(award.title + ' is hidden. The draft is still available.');
+      });
+
+      find('#editors').append(form);
+      editors.push({ form, reveal, hide, indicator });
+    });
+
+    for (const button of document.querySelectorAll('[data-screen]')) {
+      button.addEventListener('click', () => {
+        state.screen = button.dataset.screen;
+        save();
+        refresh();
+        announce(button.textContent + ' is selected for the TV.');
+      });
+    }
+
+    find('#open-tv').addEventListener('click', () => {
+      if (tvWindow && !tvWindow.closed) {
+        tvWindow.focus();
+        return;
+      }
+      const url = new URL(location.href);
+      url.hash = 'tv';
+      tvWindow = window.open(url.href, 'finalNightTV', 'popup,width=1120,height=680');
+      sendToTv();
+      announce(tvWindow ? 'TV window opened. Move it to the TV, then select Full screen there.' : 'The browser blocked the TV window. Allow pop-ups or select Present on this screen.');
+    });
+
+    window.addEventListener('message', event => {
+      if (tvWindow && event.source === tvWindow && event.data?.key === messageKey && event.data.type === 'ready') {
+        sendToTv();
+        announce('TV display connected. Move it to the TV and select Full screen there.');
+      }
+    });
+
+    find('#present-here').addEventListener('click', () => {
+      showTv();
+      find('#fullscreen').focus();
+    });
+    find('#back').addEventListener('click', () => {
+      showHost();
+      find('#present-here').focus();
+    });
+    find('#reset').addEventListener('click', () => {
+      if (!window.confirm('Clear all award drafts and displayed results, and return to the schedule?')) return;
+      state = startState();
+      for (const { form } of editors) form.elements.winner.setCustomValidity('');
+      save();
+      refresh();
+      announce('Event reset. The TV is back on the schedule.');
+    });
+
+    refresh();
+    announce();
+  }
+</script>
+</body>
+</html>

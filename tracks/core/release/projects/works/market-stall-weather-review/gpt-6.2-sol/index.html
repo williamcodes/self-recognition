@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flower Stall · Weekend Sales Review</title>
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #f6f5ef;
+    --surface: #fffefa;
+    --ink: #1e3028;
+    --muted: #536359;
+    --line: #e0e4d9;
+    --pine: #204637;
+    --pine-dark: #16392c;
+    --dry: #b6752e;
+    --dry-bg: #f7ead4;
+    --rain: #4b7981;
+    --rain-bg: #e4eff0;
+    --radius: 16px;
+    font: 16px/1.5 system-ui, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; color: var(--ink); background: var(--paper); }
+  h1, h2, p { margin: 0; }
+  h1, h2 { font-family: Georgia, serif; font-weight: normal; line-height: 1.08; }
+  h2 { font-size: clamp(1.7rem, 3vw, 2.13rem); letter-spacing: -.035em; }
+  h3 { margin: 0; font-size: 1.06rem; line-height: 1.35; }
+  button, input, select { font: inherit; }
+  button { cursor: pointer; touch-action: manipulation; }
+  :focus-visible { outline: 3px solid #8d570f; outline-offset: 3px; }
+  .shell { width: min(1120px, calc(100% - 64px)); margin-inline: auto; }
+  .top { background: var(--surface); border-bottom: 1px solid var(--line); }
+  .top .shell, .brand, .top-actions, .section-head, .hero-date, .weather, .chart-head {
+    display: flex; align-items: center;
+  }
+  .top .shell { justify-content: space-between; min-height: 76px; gap: 12px; }
+  .brand { gap: 11px; font: 1.23rem Georgia, serif; letter-spacing: -.025em; }
+  .mark { display: grid; place-items: center; width: 37px; height: 37px; border-radius: 11px; background: var(--pine); }
+  .top-actions { gap: 21px; }
+  .local { font-size: .82rem; color: var(--muted); display: flex; align-items: center; gap: 7px; }
+  .local::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #568361; }
+  .button {
+    min-height: 44px; padding: 0 16px; display: inline-flex; gap: 8px; align-items: center;
+    justify-content: center; border: 1px solid transparent; border-radius: 9px; font-weight: 650; font-size: .87rem;
+  }
+  .primary { background: var(--pine); color: white; }
+  .primary:hover { background: var(--pine-dark); }
+  .secondary { background: var(--surface); border-color: #bdc9bd; color: var(--pine); }
+  .secondary:hover, .edit:hover { background: #ecf1e9; }
+  .plus { font-size: 1.23rem; line-height: 1; font-weight: 400; }
+  main { padding-block: 32px 36px; }
+  .hero {
+    display: grid; position: relative; isolation: isolate; overflow: hidden;
+    align-items: center; min-height: 232px; padding: 30px 38px; border-radius: var(--radius);
+    color: #fffdf1; background: var(--pine-dark);
+    background-image: radial-gradient(ellipse at 90% 0%, #2e5642, transparent 64%);
+  }
+  .hero canvas { position: absolute; z-index: -1; right: 0; top: 0; width: 465px; height: 100%; }
+  .hero-copy { width: fit-content; }
+  .hero-date { gap: 9px; color: #e4d5a9; font-weight: 650; font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; }
+  .hero-date::before { content: ""; width: 17px; height: 1px; background: currentColor; }
+  h1 { margin-top: 12px; font-size: clamp(2.4rem, 5.6vw, 4.1rem); letter-spacing: -.055em; text-wrap: balance; }
+  .hero p { color: #dce8dc; margin-top: 13px; font-size: .98rem; }
+  section { margin-top: 32px; }
+  .section-head { justify-content: space-between; gap: 8px 20px; flex-wrap: wrap; margin-bottom: 15px; }
+  .section-head p, footer { font-size: .85rem; color: var(--muted); }
+  .comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .chart, .ledger { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+  .chart { padding: 18px 21px 19px; min-width: 0; }
+  .chart-head { justify-content: space-between; align-items: baseline; gap: 5px 12px; flex-wrap: wrap; }
+  .chart-head p { color: var(--muted); font-size: .75rem; }
+  .chart-rows { display: grid; gap: 13px; margin-top: 15px; }
+  .chart-row { display: grid; gap: 5px; }
+  .chart-values { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+  .weather { display: inline-flex; gap: 6px; width: fit-content; padding: 3px 10px; border-radius: 20px; font-size: .78rem; font-weight: 650; white-space: nowrap; }
+  .weather.dry { color: #654312; background: var(--dry-bg); }
+  .weather.rain { color: #2c555e; background: var(--rain-bg); }
+  .weather canvas { width: 14px; height: 14px; }
+  .metric { font: 1.58rem/1 Georgia, serif; letter-spacing: -.035em; text-align: right; overflow-wrap: anywhere; }
+  .track { height: 7px; border-radius: 10px; overflow: hidden; background: #eceee7; }
+  .bar { width: 0; height: 100%; border-radius: inherit; }
+  .bar.dry { background: var(--dry); }
+  .bar.rain { background: var(--rain); }
+  .basis { color: var(--muted); font-size: .8rem; }
+  .metric, .basis, .number { font-variant-numeric: tabular-nums; }
+  .ledger { overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 5px 16px; text-align: left; }
+  thead th {
+    padding-block: 12px; background: #eef1e8; color: #44554b; font-size: .72rem;
+    font-weight: 700; letter-spacing: .045em; text-transform: uppercase;
+  }
+  tbody th, tbody td { font-size: .9rem; border-top: 1px solid var(--line); }
+  tbody th { font-weight: 630; }
+  tbody tr:hover { background: #f9faf4; }
+  .number { text-align: right; }
+  .action { text-align: right; }
+  .edit { min-width: 53px; min-height: 44px; padding: 4px 10px; border: 1px solid transparent; border-radius: 8px; color: var(--pine); background: transparent; font-weight: 650; font-size: .81rem; }
+  .mobile-label { display: none; }
+  footer { padding-top: 18px; }
+  .status { margin-top: 13px; font-size: .88rem; color: var(--pine); }
+  .status:empty { margin: 0; }
+  .error { color: #8a3027; }
+  dialog {
+    width: min(500px, calc(100% - 32px)); max-height: calc(100% - 32px); padding: 24px;
+    border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--ink);
+  }
+  dialog::backdrop { background: #14291fb0; }
+  .form-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-block: 19px; }
+  label { display: grid; gap: 5px; font-size: .87rem; font-weight: 650; }
+  input, select { width: 100%; min-width: 0; min-height: 44px; padding: 7px 9px; border: 1px solid #aab7ab; border-radius: 7px; background: #fff; color: var(--ink); font-size: 1rem; }
+  .form-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+  .form-error { margin-bottom: 12px; font-size: .87rem; }
+  .form-error:empty { margin: 0; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  @media (max-width: 950px) {
+    .hero canvas { right: -64px; opacity: .65; }
+    .hero-copy { background: #16392ce0; border-radius: 12px; box-shadow: 0 0 32px 14px #16392ce0; }
+  }
+  @media (max-width: 680px) {
+    .shell { width: calc(100% - 32px); }
+    .top .shell { min-height: 66px; }
+    .local { display: none; }
+    main { padding-top: 20px; }
+    .hero { min-height: 194px; padding: 23px; }
+    .hero canvas { right: -224px; opacity: .48; }
+    .hero p { font-size: .88rem; }
+    section { margin-top: 26px; }
+    .comparison { grid-template-columns: 1fr; gap: 12px; }
+    .chart { padding: 17px; }
+    thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+    table, tbody { display: block; }
+    tbody tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 12px 14px; border-top: 1px solid var(--line); gap: 7px 12px; }
+    tbody tr:first-child { border-top: 0; }
+    tbody th, tbody td { border: 0; padding: 0; overflow-wrap: anywhere; }
+    tbody .number { text-align: left; }
+    tbody td:nth-child(2) { text-align: right; }
+    .mobile-label { display: block; color: var(--muted); font-size: .75rem; }
+    .action { grid-column: 1 / -1; }
+  }
+  @media (max-width: 340px) {
+    .brand { font-size: 1rem; gap: 7px; }
+    .button { padding-inline: 11px; }
+    .form-fields { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="shell">
+    <div class="brand"><span class="mark"><canvas id="brand-mark" width="52" height="52" style="width:26px;height:26px" aria-hidden="true"></canvas></span>Flower Stall</div>
+    <div class="top-actions">
+      <span class="local">Offline ledger</span>
+      <button class="button primary" id="add" type="button"><span class="plus" aria-hidden="true">+</span> Add entry</button>
+    </div>
+  </div>
+</header>
+<main class="shell">
+  <div class="hero">
+    <canvas id="botanical" width="930" height="464" aria-hidden="true"></canvas>
+    <div class="hero-copy">
+      <div id="date-range" class="hero-date"></div>
+      <h1>Weekend sales review</h1>
+      <p>See how weather relates to bouquet sales at the stall.</p>
+    </div>
+  </div>
+  <p class="status" id="status" role="status"></p>
+  <noscript><p>Enable JavaScript in your browser to open the sales ledger.</p></noscript>
+  <section aria-labelledby="comparison-heading">
+    <div class="section-head">
+      <h2 id="comparison-heading">Sales by weather</h2>
+      <p>Each rate uses pooled totals for that weather.</p>
+    </div>
+    <div class="comparison">
+      <article class="chart" aria-labelledby="sell-title">
+        <div class="chart-head"><h3 id="sell-title">Sell-through</h3><p>Bouquets sold ÷ brought</p></div>
+        <div class="chart-rows" id="sell-chart"></div>
+      </article>
+      <article class="chart" aria-labelledby="revenue-title">
+        <div class="chart-head"><h3 id="revenue-title">Revenue per open hour</h3><p>Revenue ÷ hours open</p></div>
+        <div class="chart-rows" id="revenue-chart"></div>
+      </article>
+    </div>
+  </section>
+  <section aria-labelledby="log-heading">
+    <div class="section-head">
+      <h2 id="log-heading">Sales log</h2>
+      <p id="entry-count"></p>
+    </div>
+    <div class="ledger">
+      <table role="table" aria-labelledby="log-heading">
+        <thead role="rowgroup"><tr role="row">
+          <th scope="col" role="columnheader">Date</th><th scope="col" role="columnheader">Weather</th>
+          <th scope="col" role="columnheader" class="number">Hours open</th>
+          <th scope="col" role="columnheader" class="number">Bouquets brought</th>
+          <th scope="col" role="columnheader" class="number">Bouquets sold</th>
+          <th scope="col" role="columnheader" class="number">Revenue</th>
+          <th scope="col" role="columnheader"><span class="sr-only">Actions</span></th>
+        </tr></thead>
+        <tbody role="rowgroup" id="entries"></tbody>
+      </table>
+    </div>
+  </section>
+  <footer>Entries are saved in this browser. Reopen this file in the same browser to keep working.</footer>
+</main>
+<dialog id="editor" aria-labelledby="editor-title">
+  <form id="entry-form">
+    <h2 id="editor-title">Add entry</h2>
+    <div class="form-fields">
+      <label>Date<input name="date" type="date" required autofocus></label>
+      <label>Weather<select name="weather" required><option value="">Choose weather</option><option value="dry">Dry</option><option value="rain">Rain</option></select></label>
+      <label>Hours open<input name="hours" type="number" min="0" step="any" required inputmode="decimal"></label>
+      <label>Revenue (whole dollars)<input name="revenue" type="number" min="0" max="9007199254740991" step="1" required inputmode="numeric"></label>
+      <label>Bouquets brought<input name="brought" type="number" min="0" max="9007199254740991" step="1" required inputmode="numeric"></label>
+      <label>Bouquets sold<input name="sold" type="number" min="0" max="9007199254740991" step="1" required inputmode="numeric" aria-describedby="form-error"></label>
+    </div>
+    <p id="form-error" class="form-error error" role="alert"></p>
+    <div class="form-actions">
+      <button class="button secondary" id="cancel" type="button">Cancel</button>
+      <button class="button primary" type="submit">Save entry</button>
+    </div>
+  </form>
+</dialog>
+<template id="weather-template"><span class="weather"><canvas width="28" height="28" aria-hidden="true"></canvas><span></span></span></template>
+<script>
+  'use strict';
+
+  const seed = [
+    ['2026-05-02', 'dry', 4, 36, 31, 310],
+    ['2026-05-03', 'rain', 3, 30, 14, 140],
+    ['2026-05-09', 'dry', 5, 45, 42, 420],
+    ['2026-05-10', 'rain', 4, 32, 19, 190],
+    ['2026-05-16', 'dry', 4, 40, 35, 350],
+    ['2026-05-17', 'rain', 2, 25, 9, 90],
+  ].map(([date, weather, hours, brought, sold, revenue], id) => ({ id: 'seed-' + id, date, weather, hours, brought, sold, revenue }));
+
+  const storageKey = 'flower-stall-ledger-v1';
+  const labels = { dry: 'Dry', rain: 'Rain' };
+  const weatherTypes = Object.keys(labels);
+  const count = new Intl.NumberFormat('en-US');
+  const hoursFormat = new Intl.NumberFormat('en-US', { maximumSignificantDigits: 15 });
+  const dollars = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+  const hourly = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+  const percent = new Intl.NumberFormat('en-US', { style: 'percent', maximumFractionDigits: 1, minimumFractionDigits: 1 });
+  const fullDate = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+  const monthDay = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+  const dayOnly = new Intl.DateTimeFormat('en-US', { day: 'numeric', timeZone: 'UTC' });
+  const byId = id => document.getElementById(id);
+  const editor = byId('editor');
+  const form = byId('entry-form');
+  const fields = form.elements;
+  const formError = byId('form-error');
+  let entries = seed;
+  let editing = null;
+  let returnFocus = null;
+
+  function report(message, error = false) {
+    const status = byId('status');
+    status.textContent = message;
+    status.classList.toggle('error', error);
+  }
+
+  function readEntries() {
+    const raw = localStorage.getItem(storageKey);
+    if (raw === null) return seed;
+    const list = JSON.parse(raw);
+    if (!Array.isArray(list) || list.some(entry => !entry || typeof entry.id !== 'string' || validationError(entry)) ||
+        new Set(list.map(entry => entry.id)).size !== list.length) {
+      throw new Error('Invalid ledger');
+    }
+    return list;
+  }
+
+  function validationError(entry) {
+    const date = new Date(entry.date + 'T00:00:00Z');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(entry.date) || !Number.isFinite(+date) ||
+        date.toISOString().slice(0, 10) !== entry.date || entry.date.startsWith('0000')) {
+      return 'Enter a valid date between years 1 and 9999.';
+    }
+    if (!weatherTypes.includes(entry.weather)) return 'Choose dry or rain.';
+    if (!Number.isFinite(entry.hours) || entry.hours < 0) return 'Enter zero or more hours open.';
+    if (!['brought', 'sold', 'revenue'].every(key => Number.isSafeInteger(entry[key]) && entry[key] >= 0)) {
+      return 'Use nonnegative whole numbers for bouquet counts and revenue.';
+    }
+    if (entry.sold > entry.brought) return 'Bouquets sold cannot exceed bouquets brought.';
+    return '';
+  }
+
+  function summarize(list) {
+    const totals = Object.fromEntries(weatherTypes.map(weather => [weather, { sessions: 0, hours: 0, brought: 0, sold: 0, revenue: 0 }]));
+    for (const entry of list) {
+      const total = totals[entry.weather];
+      total.sessions++;
+      for (const key of ['hours', 'brought', 'sold', 'revenue']) total[key] += entry[key];
+    }
+    for (const total of Object.values(totals)) {
+      total.sellThrough = total.brought ? total.sold / total.brought : null;
+      total.perHour = total.hours ? total.revenue / total.hours : null;
+    }
+    return totals;
+  }
+
+  function dateRange(sorted) {
+    if (!sorted.length) return 'No recorded dates';
+    const first = new Date(sorted.at(-1).date + 'T00:00:00Z');
+    const last = new Date(sorted[0].date + 'T00:00:00Z');
+    if (+first === +last) return fullDate.format(last);
+    if (first.getUTCFullYear() !== last.getUTCFullYear()) return fullDate.format(first) + ' – ' + fullDate.format(last);
+    if (first.getUTCMonth() === last.getUTCMonth()) return monthDay.format(first) + '–' + dayOnly.format(last) + ', ' + last.getUTCFullYear();
+    return monthDay.format(first) + ' – ' + fullDate.format(last);
+  }
+
+  function element(tag, className, value) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (value !== undefined) node.textContent = value;
+    return node;
+  }
+
+  function weatherBadge(weather) {
+    const badge = byId('weather-template').content.firstElementChild.cloneNode(true);
+    badge.classList.add(weather);
+    badge.querySelector('span').textContent = labels[weather];
+    const ctx = badge.querySelector('canvas').getContext('2d');
+    ctx.scale(2, 2);
+    ctx.lineWidth = 1.1;
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = weather === 'dry' ? '#835417' : '#38616b';
+    ctx.beginPath();
+    if (weather === 'dry') {
+      ctx.arc(7, 7, 2.6, 0, Math.PI * 2);
+      for (let ray = 0; ray < 8; ray++) {
+        const angle = ray * Math.PI / 4;
+        ctx.moveTo(7 + Math.cos(angle) * 4.3, 7 + Math.sin(angle) * 4.3);
+        ctx.lineTo(7 + Math.cos(angle) * 5.6, 7 + Math.sin(angle) * 5.6);
+      }
+    } else {
+      ctx.moveTo(3, 8.5);
+      ctx.bezierCurveTo(0, 8.5, 1.2, 3.9, 4.2, 4.6);
+      ctx.bezierCurveTo(5, 1.1, 9.7, 1.5, 10.3, 4.9);
+      ctx.bezierCurveTo(13.9, 4.3, 14, 8.5, 11.6, 8.5);
+      ctx.lineTo(3, 8.5);
+      for (const x of [5, 9]) {
+        ctx.moveTo(x, 10.3);
+        ctx.lineTo(x - 1, 12.2);
+      }
+    }
+    ctx.stroke();
+    return badge;
+  }
+
+  function renderChart(target, totals, metric, format, basis, scale) {
+    target.replaceChildren(...weatherTypes.map(weather => {
+      const total = totals[weather];
+      const value = total[metric];
+      const row = element('div', 'chart-row');
+      const values = element('div', 'chart-values');
+      const rate = element('strong', 'metric', value === null ? '—' : format.format(value));
+      if (value === null) rate.setAttribute('aria-label', 'Rate unavailable');
+      values.append(weatherBadge(weather), rate);
+      const track = element('div', 'track');
+      track.setAttribute('aria-hidden', 'true');
+      const bar = element('div', 'bar ' + weather);
+      bar.style.width = (value === null ? 0 : value / scale * 100) + '%';
+      track.append(bar);
+      const sessions = count.format(total.sessions) + (total.sessions === 1 ? ' session' : ' sessions');
+      row.append(values, track, element('p', 'basis', basis(total) + ' · ' + sessions));
+      return row;
+    }));
+  }
+
+  function numberCell(label, value) {
+    const cell = element('td', 'number');
+    cell.setAttribute('role', 'cell');
+    const mobileLabel = element('span', 'mobile-label', label);
+    mobileLabel.setAttribute('aria-hidden', 'true');
+    cell.append(mobileLabel, document.createTextNode(value));
+    return cell;
+  }
+
+  function render() {
+    const totals = summarize(entries);
+    renderChart(byId('sell-chart'), totals, 'sellThrough', percent,
+      t => count.format(t.sold) + ' sold / ' + count.format(t.brought) + ' brought', 1);
+    const maxHourly = Math.max(1, ...weatherTypes.map(weather => totals[weather].perHour ?? 0));
+    renderChart(byId('revenue-chart'), totals, 'perHour', hourly,
+      t => dollars.format(t.revenue) + ' revenue / ' + hoursFormat.format(t.hours) + ' ' + (t.hours === 1 ? 'hour' : 'hours'), maxHourly);
+    const sorted = [...entries].sort((a, b) => b.date.localeCompare(a.date));
+    byId('date-range').textContent = dateRange(sorted);
+    byId('entry-count').textContent = count.format(entries.length) + (entries.length === 1 ? ' recorded session' : ' recorded sessions');
+    byId('entries').replaceChildren(...sorted.map(entry => {
+      const row = element('tr');
+      row.setAttribute('role', 'row');
+      const dateLabel = fullDate.format(new Date(entry.date + 'T00:00:00Z'));
+      const date = element('th', '', dateLabel);
+      date.scope = 'row';
+      date.setAttribute('role', 'rowheader');
+      const weather = element('td');
+      weather.setAttribute('role', 'cell');
+      weather.append(weatherBadge(entry.weather));
+      const action = element('td', 'action');
+      action.setAttribute('role', 'cell');
+      const edit = element('button', 'edit', 'Edit');
+      edit.type = 'button';
+      edit.dataset.id = entry.id;
+      edit.setAttribute('aria-label', 'Edit entry for ' + dateLabel + ', ' + labels[entry.weather]);
+      edit.addEventListener('click', () => openEditor(entry, edit));
+      action.append(edit);
+      row.append(date, weather, numberCell('Hours open', hoursFormat.format(entry.hours)),
+        numberCell('Bouquets brought', count.format(entry.brought)), numberCell('Bouquets sold', count.format(entry.sold)),
+        numberCell('Revenue', dollars.format(entry.revenue)), action);
+      return row;
+    }));
+  }
+
+  function openEditor(entry, trigger) {
+    editing = entry;
+    returnFocus = trigger;
+    form.reset();
+    formError.textContent = '';
+    byId('editor-title').textContent = entry ? 'Edit entry' : 'Add entry';
+    if (entry) {
+      for (const key of ['date', 'weather', 'hours', 'brought', 'sold', 'revenue']) fields[key].value = entry[key];
+    }
+    editor.showModal();
+  }
+
+  byId('add').addEventListener('click', event => openEditor(null, event.currentTarget));
+  byId('cancel').addEventListener('click', () => editor.close());
+  editor.addEventListener('close', () => (returnFocus?.isConnected ? returnFocus : byId('add')).focus());
+  form.addEventListener('input', () => { formError.textContent = ''; });
+
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const entry = {
+      id: editing?.id ?? crypto.getRandomValues(new Uint32Array(4)).join('-'),
+      date: fields.date.value,
+      weather: fields.weather.value,
+      hours: fields.hours.valueAsNumber,
+      brought: fields.brought.valueAsNumber,
+      sold: fields.sold.valueAsNumber,
+      revenue: fields.revenue.valueAsNumber,
+    };
+    const error = validationError(entry);
+    if (error) {
+      formError.textContent = error;
+      if (entry.sold > entry.brought) fields.sold.focus();
+      return;
+    }
+    try {
+      const latest = readEntries();
+      if (editing && JSON.stringify(latest.find(item => item.id === editing.id)) !== JSON.stringify(editing)) {
+        formError.textContent = 'This entry changed in another tab. Cancel and open the updated entry before correcting it.';
+        return;
+      }
+      const updated = editing ? latest.map(item => item.id === editing.id ? entry : item) : [...latest, entry];
+      const totals = summarize(updated);
+      if (Object.values(totals).some(total => !Number.isFinite(total.hours) ||
+          (total.perHour !== null && !Number.isFinite(total.perHour)) ||
+          !['brought', 'sold', 'revenue'].every(key => Number.isSafeInteger(total[key])))) {
+        formError.textContent = 'The pooled values are too large. Check the numbers and try again.';
+        return;
+      }
+      localStorage.setItem(storageKey, JSON.stringify(updated));
+      entries = updated;
+    } catch {
+      formError.textContent = 'The browser could not save this entry. Check that local storage is available, then try again.';
+      return;
+    }
+    render();
+    if (editing) {
+      returnFocus = [...byId('entries').querySelectorAll('button')].find(button => button.dataset.id === entry.id);
+    }
+    editor.close();
+    report(editing ? 'Entry corrected.' : 'Entry added.');
+  });
+
+  function refresh() {
+    try {
+      entries = readEntries();
+      report('');
+    } catch {
+      report('The saved ledger could not be read. The page is showing the last available entries.', true);
+    }
+    render();
+  }
+
+  window.addEventListener('storage', event => {
+    if (event.key === storageKey || event.key === null) refresh();
+  });
+
+  function drawBotanical() {
+    const canvas = byId('botanical');
+    const ctx = canvas.getContext('2d');
+    ctx.scale(2, 2);
+    ctx.lineCap = 'round';
+
+    function stem(x, y, bend, base, color) {
+      ctx.beginPath();
+      ctx.moveTo(base, 254);
+      ctx.quadraticCurveTo(bend, y + 69, x, y);
+      ctx.lineWidth = 1.5;
+      ctx.strokeStyle = color;
+      ctx.stroke();
+    }
+
+    function leaf(x, y, angle, length, width, color) {
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.rotate(angle);
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.quadraticCurveTo(length * .45, -width, length, 0);
+      ctx.quadraticCurveTo(length * .48, width * .87, 0, 0);
+      ctx.fillStyle = color;
+      ctx.fill();
+      ctx.strokeStyle = '#b4ba835e';
+      ctx.lineWidth = .6;
+      ctx.beginPath();
+      ctx.moveTo(1, 0);
+      ctx.quadraticCurveTo(length * .55, -1, length * .85, 0);
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function flower(context, x, y, radius, petals, color, center, angle) {
+      context.save();
+      context.translate(x, y);
+      context.rotate(angle);
+      const step = 2 * Math.PI / petals;
+      for (let i = 0; i < petals; i++) {
+        const reach = radius * (i % 3 === 0 ? .92 : 1);
+        context.beginPath();
+        context.moveTo(0, 0);
+        context.bezierCurveTo(-radius * .32, -reach * .5, -radius * .26, -reach * .96, 0, -reach);
+        context.bezierCurveTo(radius * .29, -reach * 1.02, radius * .28, -reach * .49, 0, 0);
+        context.fillStyle = color;
+        context.fill();
+        context.strokeStyle = '#16392c70';
+        context.lineWidth = .65;
+        context.stroke();
+        context.rotate(step);
+      }
+      context.beginPath();
+      context.arc(0, 0, radius * .235, 0, Math.PI * 2);
+      context.fillStyle = center;
+      context.fill();
+      context.restore();
+    }
+
+    // Fine ruled border and cut-flower stems.
+    ctx.strokeStyle = '#e7e0b52b';
+    ctx.lineWidth = 1;
+    ctx.strokeRect(70.5, 19.5, 374, 193);
+    ctx.beginPath();
+    ctx.ellipse(304, 146, 108, 96, -.35, 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.fillStyle = '#e7e0b563';
+    for (const [x, y, r] of [[125,54,1.2],[152,77,1],[179,30,1.4],[214,69,1],[236,32,1.5],[341,33,1],[411,58,1.2],[431,102,1.4],[399,160,1],[169,168,1.3],[113,117,1],[418,188,1.4]]) {
+      ctx.beginPath();
+      ctx.arc(x, y, r, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    stem(175, 115, 234, 282, '#8a9f70');
+    stem(232, 77, 278, 306, '#86a172');
+    stem(301, 50, 320, 293, '#a3ac75');
+    stem(371, 88, 342, 311, '#86a172');
+    stem(405, 128, 353, 302, '#8a9f70');
+    for (const args of [
+      [239,193,-2.8,63,18,'#547d60'], [248,205,-1.43,52,13,'#779069'],
+      [265,151,-2.11,43,10,'#628665'], [275,172,-.97,49,15,'#416b53'],
+      [309,127,-2.44,49,13,'#71936b'], [310,159,-.84,62,16,'#648961'],
+      [333,183,-.29,66,15,'#527f63'], [345,148,-1.37,48,13,'#82a275'],
+      [357,191,-.53,68,13,'#6e8d62'], [368,175,-1.55,35,10,'#64845d'],
+      [281,223,-2.85,51,12,'#64845d'], [307,218,-.94,39,10,'#78956c'],
+    ]) leaf(...args);
+    flower(ctx, 175, 115, 24, 8, '#dca08f', '#efd39b', .28);
+    flower(ctx, 232, 77, 31, 10, '#f0d395', '#916a3b', .15);
+    flower(ctx, 301, 50, 35, 11, '#f6e6c2', '#c49049', .12);
+    flower(ctx, 371, 88, 39, 10, '#d99688', '#f0d28c', .43);
+    flower(ctx, 405, 128, 19, 7, '#edc080', '#926735', .56);
+
+    const mark = byId('brand-mark').getContext('2d');
+    mark.scale(2, 2);
+    flower(mark, 13, 13, 10, 6, '#f5dfaf', '#d39e5e', 0);
+  }
+
+  refresh();
+  drawBotanical();
+</script>
+</body>
+</html>

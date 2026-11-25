@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Kiln Ledger · Pottery Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="ledger.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark" data-icon="vase" aria-hidden="true"></span>
+        <div><div class="brand-name">Kiln Ledger</div><div class="brand-subtitle">Pottery studio</div></div>
+      </div>
+      <nav class="navigation" aria-label="Studio">
+        <button type="button" data-action="workshops" aria-current="page"><span data-icon="calendar" aria-hidden="true"></span>Workshops</button>
+        <button type="button" data-action="students"><span data-icon="people" aria-hidden="true"></span>Students</button>
+      </nav>
+      <div class="sidebar-footer">
+        <button type="button" data-action="data"><span data-icon="archive" aria-hidden="true"></span>Backups</button>
+        <div class="storage-label" id="storage-label"><span></span>Opening local storage</div>
+      </div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <div id="content" aria-busy="true"><p>Opening the studio ledger…</p></div>
+    </main>
+  </div>
+  <dialog aria-labelledby="dialog-title" id="dialog"></dialog>
+  <div id="notice" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Gallery Label Workbench</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #21272f;
+  --muted: #565c65;
+  --paper: #fffefa;
+  --canvas: #f5f3ee;
+  --line: #deded6;
+  --navy: #182746;
+  --blue: #274b98;
+  --pale-blue: #eaf0fb;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font: 16px/1.5 var(--sans);
+  color: var(--ink);
+  background: var(--canvas);
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }
+[hidden] { display: none !important; }
+h1, h2, p { margin: 0; }
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+button:disabled { opacity: .38; cursor: default; }
+:focus-visible { outline: 3px solid #3862c3; outline-offset: 3px; }
+.symbol-library { position: absolute; width: 0; height: 0; overflow: hidden; }
+.icon { display: inline-block; width: 18px; height: 18px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.65; stroke-linecap: round; stroke-linejoin: round; }
+.skip { position: absolute; top: 8px; left: 8px; z-index: 5; padding: 10px 14px; color: var(--navy); background: white; transform: translateY(-160%); }
+.skip:focus { transform: none; }
+.wrap { width: min(100% - 96px, 1520px); margin-inline: auto; }
+.masthead { background: var(--navy); color: #fff; }
+.masthead-inner { display: flex; justify-content: space-between; align-items: center; min-height: 88px; gap: 20px; padding-block: 14px; }
+.brand, .print-actions { display: flex; align-items: center; gap: 12px; }
+.brand-mark { width: 42px; height: 42px; border: 1px solid #8292b6; display: grid; place-items: center; color: #e6edff; }
+.brand-mark .icon { width: 24px; height: 24px; stroke-width: 1.3; }
+.brand-kicker { color: #c5d0e9; font: 600 .67rem/1.2 var(--mono); text-transform: uppercase; letter-spacing: .12em; margin-bottom: 3px; }
+.brand-name { font: 1.27rem/1.16 var(--serif); }
+.button { min-height: 44px; padding: 8px 13px; display: inline-flex; justify-content: center; align-items: center; gap: 8px; border: 1px solid transparent; border-radius: 4px; font-weight: 650; font-size: .85rem; }
+.secondary { background: transparent; color: #f2f5fd; border-color: #7284a7; }
+.secondary:hover:not(:disabled) { background: #293b61; }
+.primary { background: #f4f6ff; color: var(--navy); border-color: #f4f6ff; }
+.primary:hover:not(:disabled) { background: #dce6ff; border-color: #dce6ff; }
+.masthead :focus-visible { outline-color: #d4e0ff; }
+.intro { display: flex; align-items: end; justify-content: space-between; gap: 16px; padding-block: 39px 29px; }
+h1 { font: 400 clamp(2.5rem, 4.1vw, 4rem)/1.03 var(--serif); letter-spacing: -.055em; color: var(--navy); }
+.intro p { margin-top: 9px; color: var(--muted); }
+.save-state { display: flex; align-items: center; gap: 8px; font-size: .81rem; color: #45524e; padding-block: 4px; }
+.save-dot { width: 7px; height: 7px; border-radius: 100%; background: #43745c; flex: none; }
+.save-state.unsaved { color: #853926; }
+.unsaved .save-dot { background: #a9482e; }
+.workbench { display: grid; grid-template-columns: minmax(205px, .76fr) minmax(325px, 1.2fr) minmax(360px, 1.45fr); gap: 16px; align-items: stretch; }
+.panel { border: 1px solid var(--line); border-radius: 5px; min-width: 0; background: var(--paper); display: flex; flex-direction: column; }
+.panel-heading { display: flex; justify-content: space-between; align-items: start; gap: 8px; padding: 19px 20px 16px; border-bottom: 1px solid var(--line); }
+h2 { font: 400 1.5rem/1.17 var(--serif); color: var(--navy); letter-spacing: -.025em; }
+.panel-heading p { color: var(--muted); font-size: .81rem; margin-top: 4px; }
+.counter, .format-tag { color: var(--blue); font: 600 .73rem/1.3 var(--mono); background: var(--pale-blue); border-radius: 3px; padding: 5px 7px; white-space: nowrap; }
+.work-list { list-style: none; padding: 0; margin: 0; }
+.work-list li { border-bottom: 1px solid var(--line); }
+.work-button { width: 100%; min-height: 67px; border: 0; border-left: 3px solid transparent; padding: 12px 12px 12px 15px; background: transparent; text-align: left; color: var(--ink); display: grid; grid-template-columns: 2ch minmax(0, 1fr) auto; gap: 11px; align-items: start; }
+.work-button:hover { background: #f3f5fa; }
+.work-button[aria-current="true"] { background: var(--pale-blue); border-left-color: var(--blue); }
+.work-button:focus-visible { outline-offset: -4px; }
+.work-number { color: var(--blue); font: 600 .72rem/1.6 var(--mono); margin-top: 2px; }
+.work-name { display: block; font-size: .87rem; line-height: 1.35; font-weight: 700; overflow-wrap: anywhere; }
+.work-artist { display: block; font-size: .77rem; color: var(--muted); margin-top: 3px; overflow-wrap: anywhere; }
+.work-name, .work-artist { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.work-flag { width: 15px; height: 15px; color: #88470f; margin-top: 2px; }
+.add-area { padding: 14px 16px; }
+.add-button { width: 100%; border: 1px dashed #a3aec6; color: var(--blue); background: transparent; }
+.add-button:hover { background: var(--pale-blue); }
+.order-controls { margin-top: auto; min-height: 68px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px; padding: 10px 15px; border-top: 1px solid var(--line); color: var(--muted); font-size: .77rem; }
+.arrow-group { display: flex; gap: 6px; }
+.icon-button { width: 44px; height: 44px; display: inline-grid; place-items: center; background: var(--paper); border: 1px solid var(--line); border-radius: 4px; color: var(--navy); padding: 0; }
+.icon-button:hover:not(:disabled) { background: var(--pale-blue); border-color: #b2c1e1; }
+#artwork-form { display: grid; gap: 13px; padding: 16px 20px 10px; }
+.field { display: grid; align-content: start; gap: 4px; min-width: 0; }
+.field-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(72px, .35fr); gap: 10px; }
+label { font-size: .81rem; font-weight: 650; }
+label span { color: var(--muted); font-weight: 400; margin-left: 4px; }
+input, textarea { width: 100%; min-height: 44px; padding: 8px 10px; border: 1px solid #c8cad0; border-radius: 4px; background: #fff; color: var(--ink); font-size: 1rem; }
+input::placeholder, textarea::placeholder { color: #686e77; }
+textarea { resize: vertical; min-height: 63px; }
+small { color: var(--muted); font-size: .75rem; }
+.edit-footer { border-top: 1px solid var(--line); }
+.remove-button { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; border: 0; background: none; color: #863624; padding: 4px 4px 4px 0; font-size: .8rem; }
+.remove-button:hover { text-decoration: underline; }
+.remove-button .icon { width: 15px; height: 15px; }
+.empty-list, .empty-editor { color: var(--muted); padding: 18px; font-size: .875rem; }
+.proof-stage { flex: 1; min-height: 294px; padding: 33px 39px 40px 21px; display: grid; place-items: center; background-color: #eceeea; background-image: radial-gradient(#aeb8b7 0.7px, transparent 0.7px); background-size: 12px 12px; }
+.proof-figure { position: relative; visibility: hidden; }
+.proof-size { position: relative; box-shadow: 0 3px 14px #24324a26; }
+.proof-size .label-card { position: absolute; inset: 0 auto auto 0; transform-origin: top left; }
+.proof-width, .proof-height { color: #485762; position: absolute; display: grid; place-items: center; font: 600 .69rem/1 var(--mono); white-space: nowrap; }
+.proof-width { inset: auto 0 100%; height: 23px; margin-bottom: 1px; }
+.proof-height { inset: 0 auto 0 100%; width: 22px; margin-left: 4px; }
+.proof-width::before, .proof-height::before { content: ""; position: absolute; border: solid #758690; }
+.proof-width::before { inset: 9px 0 7px; border-width: 0 1px 1px; }
+.proof-height::before { inset: 0 10px 0 5px; border-width: 1px 1px 1px 0; }
+.proof-width span, .proof-height span { position: relative; background: #eceeea; padding: 3px 5px; }
+.proof-height span { writing-mode: vertical-rl; padding: 5px 3px; }
+#empty-proof { text-align: center; background: var(--paper); padding: 8px 12px; font-size: .85rem; }
+.preview-report { min-height: 64px; display: flex; gap: 9px; align-items: flex-start; padding: 12px 16px; border-top: 1px solid var(--line); color: #335744; background: #f1f6f0; font-size: .82rem; }
+.preview-report .icon { margin-top: 2px; }
+.preview-report p { color: var(--muted); font-size: .75rem; }
+.preview-report.warning { color: #763a14; background: #fff0dc; }
+.preview-report.warning p { color: #663e24; }
+.proof-nav { display: flex; align-items: center; justify-content: center; gap: 13px; padding: 10px; border-top: 1px solid var(--line); color: var(--muted); font: 600 .74rem/1.3 var(--mono); }
+.workspace-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 18px; margin-top: 17px; padding-block: 10px 22px; border-top: 1px solid #c9cbd1; color: var(--muted); font-size: .76rem; }
+.workspace-footer span:first-child { font-family: var(--mono); color: var(--navy); }
+.divider { padding-inline: 3px; }
+
+dialog { color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 20px; width: min(490px, calc(100% - 32px)); max-height: calc(100% - 32px); box-shadow: 0 15px 50px #14203944; }
+dialog::backdrop { background: #142039aa; }
+.dialog-heading { display: flex; gap: 12px; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+#dialog-content { overflow-wrap: anywhere; }
+#dialog-content p + p { margin-top: 10px; }
+.dialog-actions { display: flex; gap: 8px; justify-content: end; margin-top: 20px; }
+.neutral { border-color: var(--line); background: var(--paper); color: var(--navy); }
+.neutral:hover { background: var(--pale-blue); }
+.solid { color: white; background: var(--blue); }
+.solid:hover { background: var(--navy); }
+.solid.danger { background: #863624; }
+.issue-link { text-decoration: underline; color: var(--blue); border: 0; text-align: start; background: transparent; padding: 5px 0; min-height: 44px; overflow-wrap: anywhere; max-width: 100%; }
+
+.label-card {
+  width: 90mm;
+  height: 55mm;
+  padding: 6mm;
+  color: #16171b;
+  background: white;
+  overflow: hidden;
+  font: 10pt/1.25 Arial, sans-serif;
+}
+.label-content { height: 100%; overflow-wrap: anywhere; }
+.label-field { white-space: pre-wrap; }
+.label-title { font: 700 18pt/1.12 var(--serif); margin-bottom: 2.6mm; }
+.label-artist { font-weight: 700; }
+.label-meta { margin-top: 2.6mm; }
+.label-credit { font-size: 8pt; color: #3f4248; margin-top: 2.6mm; }
+.label-card.overflows .label-content { outline: 1px dashed #a55020; outline-offset: 2px; }
+#measure-label { position: fixed; top: 0; left: -120mm; visibility: hidden; pointer-events: none; }
+#print-output { display: none; }
+@media screen and (max-width: 1120px) {
+  .wrap { width: calc(100% - 48px); }
+  .workbench { grid-template-columns: minmax(182px, .7fr) minmax(268px, 1fr) minmax(290px, 1.2fr); gap: 12px; }
+  .panel-heading { padding-inline: 14px; }
+  #artwork-form { padding-inline: 14px; }
+  .proof-stage { padding-inline: 14px 31px; }
+}
+@media screen and (max-width: 820px) {
+  .workbench { grid-template-columns: minmax(0, .75fr) minmax(0, 1fr); }
+  .proof-panel { grid-column: 1 / -1; }
+  .proof-stage { min-height: 305px; }
+}
+@media screen and (max-width: 560px) {
+  .wrap { width: calc(100% - 28px); }
+  .masthead-inner { align-items: start; flex-direction: column; gap: 13px; }
+  .print-actions { flex-wrap: wrap; }
+  .intro { align-items: start; flex-direction: column; gap: 8px; padding-block: 27px 17px; }
+  .intro p { font-size: .94rem; }
+  .workbench { grid-template-columns: minmax(0, 1fr); }
+  .proof-stage { min-height: 250px; }
+}
+
+@page { size: A4 portrait; margin: 10mm; }
+@media print {
+  :root, body { background: white; color: black; }
+  #workspace { display: none !important; }
+  #print-output { display: block; }
+  .label-sheet {
+    display: grid;
+    grid-template-columns: repeat(2, 90mm);
+    grid-auto-rows: 55mm;
+    gap: 9mm 6mm;
+    justify-content: center;
+    padding-top: 7mm;
+    break-inside: avoid;
+  }
+  .label-sheet + .label-sheet { break-before: page; }
+  .print-slot { position: relative; }
+  .trim-mark { position: absolute; width: 2mm; height: 2mm; border: solid #303030; border-width: 0; }
+  .trim-tl { top: -2mm; left: -2mm; border-right-width: .15mm; border-bottom-width: .15mm; }
+  .trim-tr { top: -2mm; right: -2mm; border-left-width: .15mm; border-bottom-width: .15mm; }
+  .trim-bl { bottom: -2mm; left: -2mm; border-right-width: .15mm; border-top-width: .15mm; }
+  .trim-br { bottom: -2mm; right: -2mm; border-left-width: .15mm; border-top-width: .15mm; }
+  .checklist { padding: 3mm 4mm; font: 10pt/1.35 Arial, sans-serif; }
+  .checklist h1, .print-notice h1 { color: black; font-size: 25pt; }
+  .checklist header { padding-bottom: 4mm; border-bottom: .5mm solid black; break-after: avoid; }
+  .checklist header p { margin-top: 2mm; }
+  .checklist ol { margin: 0; padding: 0; list-style: none; }
+  .checklist li { padding: 3.5mm 0; border-bottom: .2mm solid #777; overflow-wrap: anywhere; }
+  .checklist li p { margin-left: 11mm; white-space: pre-wrap; orphans: 2; widows: 2; }
+  .checklist h2 { position: relative; padding-left: 11mm; color: black; font: 700 11pt/1.3 Arial, sans-serif; break-after: avoid; }
+  .checklist h2 span:last-child { white-space: pre-wrap; }
+  .check-box { position: absolute; left: 0; top: .35mm; width: 3.5mm; height: 3.5mm; border: .25mm solid black; }
+  .check-number { position: absolute; left: 5mm; top: .4mm; font: 8pt var(--mono); }
+  .check-credit { font-style: italic; }
+  .print-notice { padding: 4mm; overflow-wrap: anywhere; }
+  .print-notice p { margin-top: 3mm; }
+}
+
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<svg class="symbol-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-frame" viewBox="0 0 24 24"><path d="M3 8V3h5m8 0h5v5m0 8v5h-5m-8 0H3v-5M8 8h8v8H8z"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 17H3V9h18v8h-3M6 14h12v7H6zm11-2h1"/></symbol>
+  <symbol id="i-checklist" viewBox="0 0 24 24"><path d="m3 6 2 2 4-4m-6 9 2 2 4-4m-6 9 2 2 4-4M13 6h8m-8 7h8m-8 7h8"/></symbol>
+  <symbol id="i-add" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 20V4m-6 6 6-6 6 6"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="i-warning" viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3zm0 6v4m0 3v1"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 6h16M9 6V3h6v3m3 0-1 15H7L6 6m4 4v7m4-7v7"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12m0-12L6 18"/></symbol>
+</svg>
+
+<div id="workspace">
+  <a class="skip" href="#main">Skip to workspace</a>
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <div class="brand">
+        <span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#i-frame"></use></svg></span>
+        <div><div class="brand-kicker">Exhibition tools</div><div class="brand-name">Gallery Workbench</div></div>
+      </div>
+      <div class="print-actions">
+        <button type="button" class="button secondary" id="print-checklist"><svg class="icon" aria-hidden="true"><use href="#i-checklist"></use></svg>Print checklist</button>
+        <button type="button" class="button primary" id="print-labels"><svg class="icon" aria-hidden="true"><use href="#i-print"></use></svg>Print labels</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" id="main" tabindex="-1">
+    <noscript><p>Enable JavaScript to edit and print labels.</p></noscript>
+    <div class="intro">
+      <div><h1>Exhibition labels</h1><p>Edit your artwork details, set the hanging order, and prepare labels for print.</p></div>
+      <div class="save-state" role="status"><span class="save-dot"></span><span id="save-status">Offline workspace</span></div>
+    </div>
+
+    <div class="workbench">
+      <section class="panel order-panel" aria-labelledby="order-title">
+        <header class="panel-heading">
+          <div><h2 id="order-title">Works</h2><p>Hanging order</p></div>
+          <span class="counter" id="work-count"></span>
+        </header>
+        <ol class="work-list" id="work-list" aria-label="Works in hanging order"></ol>
+        <p class="empty-list" id="empty-list" hidden>Your hanging order is empty.</p>
+        <div class="add-area"><button type="button" class="button add-button" id="add-work"><svg class="icon" aria-hidden="true"><use href="#i-add"></use></svg>Add artwork</button></div>
+        <div class="order-controls" id="order-controls">
+          <span>Move selected</span>
+          <div class="arrow-group">
+            <button type="button" class="icon-button" id="move-up" aria-label="Move selected work up" title="Move up"><svg class="icon" aria-hidden="true"><use href="#i-up"></use></svg></button>
+            <button type="button" class="icon-button" id="move-down" aria-label="Move selected work down" title="Move down"><svg class="icon" aria-hidden="true"><use href="#i-down"></use></svg></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel edit-panel" aria-labelledby="edit-title">
+        <header class="panel-heading">
+          <div><h2 id="edit-title">Artwork details</h2><p id="edit-position">Select a work</p></div>
+        </header>
+        <form id="artwork-form" autocomplete="off">
+          <div class="field"><label for="title">Title</label><input id="title" name="title" required placeholder="Artwork title"></div>
+          <div class="field-pair">
+            <div class="field"><label for="artist">Artist display name</label><input id="artist" name="artist" required placeholder="Name on the label"></div>
+            <div class="field"><label for="year">Year</label><input id="year" name="year" required placeholder="2025"></div>
+          </div>
+          <div class="field"><label for="medium">Medium</label><input id="medium" name="medium" required placeholder="e.g. Oil on panel"></div>
+          <div class="field"><label for="dimensions">Dimensions</label><input id="dimensions" name="dimensions" required placeholder="e.g. 40 × 50 cm" aria-describedby="dimensions-hint"><small id="dimensions-hint">Height × width × depth, as applicable.</small></div>
+          <div class="field"><label for="credit">Credit line <span>Optional</span></label><textarea id="credit" name="credit" rows="2" placeholder="e.g. Courtesy of the artist"></textarea></div>
+          <div class="edit-footer"><button type="button" class="remove-button" id="remove-work"><svg class="icon" aria-hidden="true"><use href="#i-trash"></use></svg>Remove artwork</button></div>
+        </form>
+        <p class="empty-editor" id="empty-editor" hidden>Add an artwork to enter its label details.</p>
+      </section>
+
+      <section class="panel proof-panel" aria-labelledby="proof-title">
+        <header class="panel-heading">
+          <div><h2 id="proof-title">Label preview</h2><p>Updates as you type</p></div>
+          <span class="format-tag">90 × 55 mm</span>
+        </header>
+        <div class="proof-stage" id="proof-stage">
+          <div class="proof-figure" id="proof-figure">
+            <div class="proof-width" aria-hidden="true"><span>90 mm</span></div>
+            <div class="proof-size" id="proof-size"></div>
+            <div class="proof-height" aria-hidden="true"><span>55 mm</span></div>
+          </div>
+          <p id="empty-proof" hidden>Your label preview will appear here.</p>
+        </div>
+        <div class="preview-report" id="preview-report" role="status"></div>
+        <div class="proof-nav">
+          <button class="icon-button" type="button" id="previous-work" aria-label="Previous label" title="Previous label"><svg class="icon" aria-hidden="true"><use href="#i-left"></use></svg></button>
+          <span id="proof-position"></span>
+          <button class="icon-button" type="button" id="next-work" aria-label="Next label" title="Next label"><svg class="icon" aria-hidden="true"><use href="#i-right"></use></svg></button>
+        </div>
+      </section>
+    </div>
+    <footer class="workspace-footer"><span>A4 portrait <span class="divider">/</span> 90 × 55 mm trim</span><span>Print at 100% scale with headers and footers off.</span></footer>
+  </main>
+
+  <dialog id="action-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-heading"><h2 id="dialog-title"></h2><button type="button" class="icon-button" id="close-dialog" aria-label="Close"><svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg></button></div>
+    <div id="dialog-content"></div>
+    <form method="dialog" class="dialog-actions"><button type="submit" value="cancel" class="button neutral" id="cancel-dialog">Cancel</button><button type="submit" value="confirm" class="button solid" id="confirm-dialog"></button></form>
+  </dialog>
+  <div id="measure-label" aria-hidden="true"></div>
+</div>
+<div id="print-output"></div>
+<script>
+"use strict";
+
+const storageKey = "gallery-label-workbench.v1";
+const fields = ["title", "artist", "year", "medium", "dimensions", "credit"];
+const samples = [
+  { id: "tide", title: "Tide Marks", artist: "Mara Fenwick", year: "2024", medium: "graphite on paper", dimensions: "21 × 30 cm", credit: "" },
+  { id: "window", title: "Window Light After Rain", artist: "Ines Vale", year: "2025", medium: "oil on panel", dimensions: "40 × 50 cm", credit: "" },
+  { id: "fold", title: "Fold Study IV", artist: "Rowan Bellmere", year: "2023", medium: "folded linen", dimensions: "18 × 18 × 6 cm", credit: "" },
+];
+
+const byId = (id) => document.getElementById(id);
+
+function node(tag, className, value) {
+  const element = document.createElement(tag);
+  if (className) element.className = className;
+  if (value !== undefined) element.textContent = value;
+  return element;
+}
+
+function icon(name) {
+  const namespace = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(namespace, "svg");
+  const use = document.createElementNS(namespace, "use");
+  svg.setAttribute("class", "icon");
+  svg.setAttribute("aria-hidden", "true");
+  use.setAttribute("href", "#i-" + name);
+  svg.append(use);
+  return svg;
+}
+
+function loadWorkspace() {
+  try {
+    const raw = localStorage.getItem(storageKey);
+    if (raw === null) return { works: samples, selectedId: samples[0].id };
+    const saved = JSON.parse(raw);
+    const ids = new Set();
+    if (!Array.isArray(saved.works)) throw new Error("Invalid work list");
+    for (const work of saved.works) {
+      if (typeof work.id !== "string" || ids.has(work.id) ||
+          fields.some((field) => typeof work[field] !== "string")) {
+        throw new Error("Invalid artwork");
+      }
+      ids.add(work.id);
+    }
+    return { works: saved.works, selectedId: saved.selectedId };
+  } catch {
+    return { works: samples, selectedId: samples[0].id, loadError: true };
+  }
+}
+
+let { works, selectedId, loadError } = loadWorkspace();
+if (!works.some((work) => work.id === selectedId)) selectedId = works[0]?.id;
+const artworkForm = byId("artwork-form");
+const inputs = Object.fromEntries(fields.map((field) => [field, byId(field)]));
+const workList = byId("work-list");
+const proofSize = byId("proof-size");
+const proofStage = byId("proof-stage");
+const proofFigure = byId("proof-figure");
+const report = byId("preview-report");
+const measure = byId("measure-label");
+const printOutput = byId("print-output");
+const dialog = byId("action-dialog");
+const issueMap = new Map();
+let dialogAction;
+let printMode;
+let nextId = Date.now();
+let previousReport;
+
+function saveWorkspace() {
+  const status = byId("save-status");
+  try {
+    localStorage.setItem(storageKey, JSON.stringify({ works, selectedId }));
+    status.textContent = "Saved on this device";
+    status.parentElement.classList.remove("unsaved");
+  } catch {
+    status.textContent = "Local saving unavailable. Keep this tab open.";
+    status.parentElement.classList.add("unsaved");
+  }
+}
+
+function titleOf(work) {
+  return work.title.trim() ? work.title : "Untitled artwork";
+}
+
+function positionOf(id = selectedId) {
+  return works.findIndex((work) => work.id === id);
+}
+
+function metadata(work) {
+  return [work.year, work.medium].filter((value) => value.trim()).join(" · ");
+}
+
+function labelFor(work) {
+  const card = node("div", "label-card");
+  const content = node("div", "label-content");
+  content.append(node("div", "label-field label-title", titleOf(work)));
+  if (work.artist.trim()) content.append(node("div", "label-field label-artist", work.artist));
+
+  const meta = node("div", "label-meta");
+  const description = metadata(work);
+  if (description) meta.append(node("div", "label-field", description));
+  if (work.dimensions.trim()) meta.append(node("div", "label-field", work.dimensions));
+  if (meta.childElementCount) content.append(meta);
+  if (work.credit.trim()) content.append(node("div", "label-field label-credit", work.credit));
+  card.append(content);
+  return card;
+}
+
+function checkLabel(work, card) {
+  measure.replaceChildren(card);
+  const content = card.firstElementChild;
+  const contentBox = content.getBoundingClientRect();
+  const lastField = content.lastElementChild.getBoundingClientRect();
+  const overflow = lastField.bottom > contentBox.bottom + 0.01 ||
+    content.scrollWidth > content.clientWidth;
+  measure.replaceChildren();
+  const missing = fields.slice(0, -1).some((field) => !work[field].trim());
+  const result = { overflow, missing };
+  issueMap.set(work.id, result);
+  return result;
+}
+
+function layoutProof() {
+  const card = proofSize.firstElementChild;
+  if (!card) return;
+  const style = getComputedStyle(proofStage);
+  const available = proofStage.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+  if (available <= 0) return;
+  const size = getComputedStyle(card);
+  const width = parseFloat(size.width);
+  const height = parseFloat(size.height);
+  const scale = Math.min(1, available / width);
+  proofSize.style.width = width * scale + "px";
+  proofSize.style.height = height * scale + "px";
+  card.style.transform = "scale(" + scale + ")";
+  proofFigure.style.visibility = "visible";
+}
+
+function updatePreview(work) {
+  proofFigure.hidden = !work;
+  byId("empty-proof").hidden = Boolean(work);
+  report.hidden = !work;
+  if (!work) {
+    proofSize.replaceChildren();
+    return;
+  }
+  const card = labelFor(work);
+  const { overflow, missing } = checkLabel(work, card);
+  card.classList.toggle("overflows", overflow);
+  proofSize.replaceChildren(card);
+  layoutProof();
+  const state = overflow ? "overflow" : missing ? "missing" : "ready";
+  if (state === previousReport) return;
+  previousReport = state;
+  const messages = {
+    overflow: ["Text exceeds the label area", "Shorten the text to fit. The editing fields keep your full text."],
+    missing: ["Details missing", "Fill in the five required fields to print this label."],
+    ready: ["Fits at trim size", "Text stays within the 6 mm inset."],
+  };
+  const [heading, detail] = messages[state];
+  const body = node("div");
+  body.append(node("strong", "", heading), node("p", "", detail));
+  report.classList.toggle("warning", state !== "ready");
+  report.replaceChildren(icon(state === "ready" ? "check" : "warning"), body);
+}
+
+function updateListEntry(button, work) {
+  const { overflow, missing } = issueMap.get(work.id);
+  button.querySelector(".work-name").textContent = titleOf(work);
+  button.querySelector(".work-artist").textContent = work.artist.trim() ? work.artist : "Artist pending";
+  const flag = button.querySelector(".work-flag");
+  flag.toggleAttribute("hidden", !overflow && !missing);
+  const status = overflow ? "Text overflow" : missing ? "Details missing" : "";
+  button.querySelector(".work-status").textContent = status;
+}
+
+function renderList() {
+  const rows = works.map((work, index) => {
+    const row = node("li");
+    const button = node("button", "work-button");
+    button.type = "button";
+    button.dataset.id = work.id;
+    button.setAttribute("aria-current", String(work.id === selectedId));
+    const lines = node("span");
+    lines.append(node("span", "work-name"), node("span", "work-artist"), node("span", "visually-hidden work-status"));
+    const flag = icon("warning");
+    flag.classList.add("work-flag");
+    button.append(node("span", "work-number", String(index + 1).padStart(2, "0")), lines, flag);
+    updateListEntry(button, work);
+    row.append(button);
+    return row;
+  });
+  workList.replaceChildren(...rows);
+}
+
+function renderWorkspace() {
+  const index = positionOf();
+  const work = works[index];
+  artworkForm.hidden = !work;
+  byId("empty-list").hidden = Boolean(work);
+  byId("empty-editor").hidden = Boolean(work);
+  byId("order-controls").hidden = !work;
+  byId("work-count").textContent = String(works.length);
+  byId("edit-position").textContent = work ? "Work " + (index + 1) + " of " + works.length : "Select a work";
+  byId("proof-position").textContent = work ? (index + 1) + " / " + works.length : "No labels";
+  byId("print-labels").disabled = !work;
+  byId("print-checklist").disabled = !work;
+  byId("move-up").disabled = byId("previous-work").disabled = index <= 0;
+  byId("move-down").disabled = byId("next-work").disabled = !work || index >= works.length - 1;
+  if (work) {
+    for (const field of fields) inputs[field].value = work[field];
+  }
+  updatePreview(work);
+  renderList();
+}
+
+function selectWork(id) {
+  if (!works.some((work) => work.id === id)) return;
+  selectedId = id;
+  saveWorkspace();
+  renderWorkspace();
+}
+
+function moveWork(offset) {
+  const index = positionOf();
+  const target = index + offset;
+  if (index < 0 || target < 0 || target >= works.length) return;
+  [works[index], works[target]] = [works[target], works[index]];
+  saveWorkspace();
+  renderWorkspace();
+  const control = byId(offset < 0 ? "move-up" : "move-down");
+  if (control.disabled) byId(offset < 0 ? "move-down" : "move-up").focus();
+}
+
+function addWork() {
+  let id;
+  do {
+    id = "work-" + nextId++;
+  } while (works.some((work) => work.id === id));
+  const work = { id };
+  for (const field of fields) work[field] = "";
+  works.push(work);
+  selectWork(work.id);
+  inputs.title.focus();
+}
+
+function openDialog(title, body, confirmText, action, destructive = false) {
+  byId("dialog-title").textContent = title;
+  byId("dialog-content").replaceChildren(...body);
+  byId("confirm-dialog").textContent = confirmText || "";
+  byId("confirm-dialog").hidden = !confirmText;
+  byId("confirm-dialog").classList.toggle("danger", destructive);
+  byId("cancel-dialog").textContent = confirmText ? "Cancel" : "Close";
+  dialogAction = action;
+  dialog.returnValue = "";
+  dialog.showModal();
+  byId(destructive || !confirmText ? "cancel-dialog" : "confirm-dialog").focus();
+}
+
+function removeWork() {
+  const work = works[positionOf()];
+  if (!work) return;
+  openDialog("Remove artwork?", [node("p", "", "“" + titleOf(work) + "” will be removed from the hanging order.")], "Remove artwork", () => {
+    const index = positionOf(work.id);
+    works.splice(index, 1);
+    issueMap.delete(work.id);
+    selectedId = works[Math.min(index, works.length - 1)]?.id;
+    saveWorkspace();
+    renderWorkspace();
+    byId(selectedId ? "remove-work" : "add-work").focus();
+  }, true);
+}
+
+function labelIssues() {
+  return works.filter((work) => {
+    const { overflow, missing } = issueMap.get(work.id);
+    return overflow || missing;
+  });
+}
+
+function confirmPrint(mode) {
+  if (mode === "labels") {
+    const issues = labelIssues();
+    if (issues.length) {
+      const list = node("ul");
+      for (const work of issues) {
+        const item = node("li");
+        const { overflow, missing } = issueMap.get(work.id);
+        const reason = overflow && missing ? "Text overflow and details missing" :
+          overflow ? "Text overflow" : "Details missing";
+        const button = node("button", "issue-link", (positionOf(work.id) + 1) + ". " + titleOf(work) + " — " + reason);
+        button.type = "button";
+        button.addEventListener("click", () => {
+          dialog.close();
+          selectWork(work.id);
+          inputs.title.focus();
+        });
+        item.append(button);
+        list.append(item);
+      }
+      openDialog("Review labels before printing", [
+        node("p", "", "Select an artwork below to resolve its label warning."),
+        list,
+      ]);
+      return;
+    }
+  }
+  const summary = mode === "labels"
+    ? works.length + (works.length === 1 ? " label on " : " labels on ") + Math.ceil(works.length / 8) +
+      (works.length <= 8 ? " sheet. Cut along the corner marks." : " sheets. Cut along the corner marks.")
+    : "The checklist follows your hanging order, with a checkbox beside each work.";
+  openDialog(mode === "labels" ? "Print labels" : "Print checklist", [
+    node("p", "", summary),
+    node("p", "", "Choose A4 portrait and Actual size or 100% scale. Turn off browser headers and footers."),
+  ], "Open print dialog", () => {
+    printMode = mode;
+    renderPrint(mode);
+    window.print();
+  });
+}
+
+function renderLabels() {
+  const sheets = [];
+  for (let start = 0; start < works.length; start += 8) {
+    const sheet = node("section", "label-sheet");
+    for (const work of works.slice(start, start + 8)) {
+      const slot = node("div", "print-slot");
+      slot.append(labelFor(work));
+      for (const corner of ["tl", "tr", "bl", "br"]) {
+        slot.append(node("span", "trim-mark trim-" + corner));
+      }
+      sheet.append(slot);
+    }
+    sheets.push(sheet);
+  }
+  return sheets;
+}
+
+function renderChecklist() {
+  const checklist = node("section", "checklist");
+  const header = node("header");
+  header.append(node("h1", "", "Installation checklist"), node("p", "", "Hanging order · " + works.length + (works.length === 1 ? " work" : " works")));
+  const list = node("ol");
+  works.forEach((work, index) => {
+    const item = node("li");
+    const title = node("h2");
+    const box = node("span", "check-box");
+    box.setAttribute("aria-hidden", "true");
+    const number = node("span", "check-number", String(index + 1).padStart(2, "0"));
+    number.setAttribute("aria-hidden", "true");
+    title.append(box, number, node("span", "", titleOf(work)));
+    item.append(title);
+    for (const line of [work.artist, metadata(work), work.dimensions]) {
+      if (line.trim()) item.append(node("p", "", line));
+    }
+    if (work.credit.trim()) item.append(node("p", "check-credit", work.credit));
+    list.append(item);
+  });
+  checklist.append(header, list);
+  return checklist;
+}
+
+function renderPrint(mode) {
+  if (mode === "checklist" && works.length) {
+    printOutput.replaceChildren(renderChecklist());
+    return;
+  }
+  if (works.length && labelIssues().length === 0) {
+    printOutput.replaceChildren(...renderLabels());
+    return;
+  }
+  const notice = node("section", "print-notice");
+  notice.append(node("h1", "", "Labels need review"), node("p", "", works.length
+    ? "Return to the workbench and choose Print labels to review text overflow and missing details."
+    : "Add an artwork in the workbench to prepare labels."));
+  printOutput.replaceChildren(notice);
+}
+
+artworkForm.addEventListener("submit", (event) => event.preventDefault());
+artworkForm.addEventListener("input", (event) => {
+  const work = works[positionOf()];
+  const field = event.target.name;
+  if (!work || !fields.includes(field)) return;
+  work[field] = event.target.value;
+  saveWorkspace();
+  updatePreview(work);
+  updateListEntry(workList.children[positionOf()].firstElementChild, work);
+});
+workList.addEventListener("click", (event) => {
+  const button = event.target.closest(".work-button");
+  if (!button) return;
+  selectWork(button.dataset.id);
+  workList.children[positionOf()].firstElementChild.focus();
+});
+byId("move-up").addEventListener("click", () => moveWork(-1));
+byId("move-down").addEventListener("click", () => moveWork(1));
+function stepPreview(offset) {
+  const id = works[positionOf() + offset]?.id;
+  selectWork(id);
+  const direction = byId(offset < 0 ? "previous-work" : "next-work");
+  if (direction.disabled) byId(offset < 0 ? "next-work" : "previous-work").focus();
+}
+byId("previous-work").addEventListener("click", () => stepPreview(-1));
+byId("next-work").addEventListener("click", () => stepPreview(1));
+byId("add-work").addEventListener("click", addWork);
+byId("remove-work").addEventListener("click", removeWork);
+byId("print-labels").addEventListener("click", () => confirmPrint("labels"));
+byId("print-checklist").addEventListener("click", () => confirmPrint("checklist"));
+byId("close-dialog").addEventListener("click", () => dialog.close());
+dialog.addEventListener("close", () => {
+  const action = dialogAction;
+  dialogAction = undefined;
+  if (dialog.returnValue === "confirm") action?.();
+});
+window.addEventListener("beforeprint", () => renderPrint(printMode || "labels"));
+window.addEventListener("afterprint", () => {
+  printMode = undefined;
+  printOutput.replaceChildren();
+});
+new ResizeObserver(layoutProof).observe(proofStage);
+
+for (const work of works) checkLabel(work, labelFor(work));
+renderWorkspace();
+if (loadError) {
+  const status = byId("save-status");
+  status.textContent = "Saved workspace unavailable. Showing sample works.";
+  status.parentElement.classList.add("unsaved");
+}
+</script>
+</body>
+</html>

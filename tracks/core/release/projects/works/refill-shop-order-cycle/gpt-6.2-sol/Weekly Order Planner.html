@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Weekly Order Planner</title>
+<style>
+:root {
+  --paper: #f5f3ea;
+  --surface: #fffef9;
+  --ink: #222e24;
+  --muted: #515f52;
+  --line: #d8ddcf;
+  --forest: #203c31;
+  --lime: #e2efb6;
+  --pale: #eef3e2;
+  --rust: #8c381e;
+  --serif: Georgia, "Times New Roman", serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.5 system-ui, sans-serif; }
+a { color: inherit; }
+button, select { font: inherit; color: inherit; }
+button, select, summary { cursor: pointer; }
+button, select { min-height: 44px; }
+:focus-visible { outline: 3px solid #9d5529; outline-offset: 3px; }
+.wrap { width: min(1100px, calc(100% - 64px)); margin-inline: auto; }
+.top { border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 62px; }
+.brand { font-weight: 750; display: inline-flex; align-items: center; gap: 10px; }
+.mark { display: inline-grid; grid-template-columns: repeat(2, 5px); gap: 3px; padding: 8px; border-radius: 50%; background: var(--forest); }
+.mark i { width: 5px; height: 5px; border-radius: 50% 50% 50% 0; background: var(--lime); }
+.top button, .outline, select {
+  border: 1px solid #919d8e; border-radius: 7px; padding: 7px 13px;
+  background: var(--surface); font-weight: 650; font-size: .86rem;
+}
+button:hover, select:hover { background: var(--pale); }
+button:active { filter: brightness(.93); }
+.intro { margin-block: 34px 23px; }
+h1, h2, .hero-number { font-family: var(--serif); font-weight: 400; }
+h1 { font-size: clamp(2.55rem, 6.8vw, 4.75rem); line-height: 1; letter-spacing: -.06em; margin: 0 0 12px; }
+h2 { font-size: clamp(1.85rem, 4vw, 2.65rem); letter-spacing: -.045em; line-height: 1.09; margin: 0; }
+h3 { font-size: 1rem; margin: 0; }
+p { margin: 0; }
+.subtle { color: var(--muted); }
+.small { font-size: .87rem; }
+.kicker { font-size: .73rem; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; }
+.hero {
+  background: var(--forest); color: var(--surface); border-radius: 18px; padding: clamp(20px, 3.2vw, 38px);
+  display: grid; grid-template-columns: 1fr 1.08fr; align-items: center; gap: 28px;
+}
+.hero .kicker { color: var(--lime); }
+.hero h2 { margin-block: 9px 10px; max-width: 16ch; }
+.hero p { color: #e0e9db; max-width: 43ch; }
+.hero .shelf { background: #29493c; border: 1px solid #547362; border-radius: 12px; padding: 16px 19px; }
+.shelf-top, .shelf-bottom { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; }
+.hero-number { font-size: 2.4rem; line-height: 1.05; margin-block: 4px 11px; }
+.hero-number small { font: 500 .92rem system-ui, sans-serif; color: #e0e9db; }
+.shelf-bottom { margin-top: 8px; color: #e0e9db; font-size: .8rem; }
+.shelf-track { height: 12px; width: 100%; border-radius: 20px; background: #163226; overflow: hidden; display: flex; }
+.shelf-track > span { height: 100%; }
+.track-stock { background: #8baa92; }
+.track-delivery { background: var(--lime); }
+.swatch { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; }
+.section { margin-block: 29px; }
+.section-head { margin-bottom: 13px; }
+.section-head p { margin-top: 6px; max-width: 80ch; }
+.goods { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.good { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 13px 15px; }
+.good h3 { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 3px 10px; margin-bottom: 4px; }
+.good strong { font-weight: 750; color: var(--forest); }
+.table-frame { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { padding: 9px 11px; border-bottom: 1px solid var(--line); text-align: right; vertical-align: middle; }
+thead th { background: #edf0e5; color: #364538; font-size: .8rem; }
+th:first-child, td:first-child { text-align: left; }
+tbody tr:last-child > *, tfoot tr:last-child > * { border-bottom: 0; }
+table:has(tfoot) tbody tr:last-child > * { border-bottom: 1px solid var(--line); }
+tfoot { background: var(--pale); font-weight: 750; }
+.short { color: var(--rust); font-weight: 750; }
+#compare td { white-space: nowrap; }
+#compare tbody th { min-width: 155px; }
+.pick {
+  background: transparent; border: 1px solid transparent; border-radius: 7px; padding: 5px 8px;
+  text-align: left; display: inline-block; font-size: .86rem; line-height: 1.3; width: 100%;
+}
+.pick span { display: block; font-weight: 750; }
+.pick small { color: var(--muted); font-size: .75rem; }
+.pick[aria-pressed="true"] { border-color: #829574; background: #e4edd5; }
+.selected-row { background: #f3f7e9; }
+.note { margin-top: 9px; }
+.detail {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 15px;
+  padding: clamp(14px, 2.6vw, 26px);
+}
+.detail-top { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 10px 20px; margin-bottom: 13px; }
+.detail-top p { margin-top: 5px; }
+.week-label { display: grid; gap: 3px; font-weight: 700; font-size: .8rem; }
+.week-label select { width: 100%; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; margin-block: 12px; }
+summary { min-height: 44px; padding: 11px 15px; font-weight: 750; }
+summary:hover { background: var(--pale); border-radius: 11px; }
+.drawer { padding: 0 14px 14px; }
+.toolbar { display: flex; align-items: end; flex-wrap: wrap; gap: 10px; margin: 8px 0 12px; }
+.toolbar label { display: grid; gap: 3px; font-size: .82rem; font-weight: 700; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.catalog td, .catalog th { padding: 5px 9px; }
+.catalog .pick { min-width: 68px; }
+footer { border-top: 1px solid var(--line); margin-top: 34px; padding: 15px 0 23px; }
+@media (max-width: 730px) {
+  .wrap { width: calc(100% - 32px); }
+  .hero { grid-template-columns: 1fr; gap: 16px; }
+  .hero h2 { max-width: none; }
+  #compare, #compare tbody, #compare tr, #compare th, #compare td { display: block; }
+  #compare thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  #compare tr { padding: 8px 12px; border-bottom: 1px solid var(--line); }
+  #compare tr:last-child { border: 0; }
+  #compare th, #compare td { padding: 4px 0; border: 0; }
+  #compare td { display: flex; justify-content: space-between; gap: 12px; }
+  #compare td::before { content: attr(data-label); color: var(--muted); white-space: normal; text-align: left; }
+  #compare .pick { padding-left: 8px; }
+}
+@media (max-width: 465px) {
+  .goods { grid-template-columns: 1fr; gap: 6px; }
+  .good { padding: 8px 11px; }
+  .detail th, .detail td, .history th, .history td { padding: 7px 3px; font-size: .77rem; overflow-wrap: anywhere; }
+  .catalog th, .catalog td { padding: 4px; font-size: .72rem; overflow-wrap: anywhere; }
+  .catalog .pick { font-size: .76rem; min-width: 0; padding-inline: 3px; }
+  .drawer { padding-inline: 8px; }
+}
+@media print {
+  @page { margin: 12mm; }
+  body { background: white; font-size: 10pt; }
+  .wrap { width: 100%; }
+  .top, .interactive, footer, noscript { display: none; }
+  .intro { margin-block: 0 12px; }
+  h1 { font-size: 30pt; }
+  h2 { font-size: 19pt; }
+  .hero { display: grid; grid-template-columns: 1fr 1fr; }
+  .hero, .hero .shelf { color: var(--ink); background: white; border: 1px solid var(--line); padding: 10px; }
+  .hero p, .hero .kicker, .hero-number small, .shelf-bottom { color: var(--ink); }
+  .shelf-track { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .section { margin-block: 14px; break-inside: avoid; }
+  .goods { grid-template-columns: repeat(3, 1fr); }
+  th, td { padding: 4px 5px; }
+  .pick { min-height: 0; }
+  .detail { padding: 9px; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <span class="brand"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Refill shop</span>
+    <button type="button" id="print">Print plan</button>
+  </div>
+</header>
+<main class="wrap">
+  <div class="intro">
+    <h1>Weekly order planner</h1>
+    <p class="subtle">Compare whole-sack orders against six weeks of demand and a 90 kg shelf limit.</p>
+  </div>
+  <noscript><p>Enable JavaScript in your browser to calculate and inspect orders. This file works offline.</p></noscript>
+  <section aria-labelledby="recommendation" class="hero">
+    <div>
+      <div class="kicker">Recommended order</div>
+      <h2 id="recommendation">2 oats · 2 rice · 3 lentils</h2>
+      <p id="recommendation-note">Order whole sacks. This mix has the lowest total historical shortage and the least leftover among orders with that shortage.</p>
+    </div>
+    <div class="shelf" aria-label="Recommended order shelf capacity">
+      <div class="shelf-top">
+        <span class="kicker">Stock after delivery</span>
+        <span id="headroom" class="small"></span>
+      </div>
+      <div class="hero-number"><span id="shelf-used"></span> <small>/ 90 kg</small></div>
+      <div class="shelf-track" aria-hidden="true"><span id="track-stock" class="track-stock"></span><span id="track-delivery" class="track-delivery"></span></div>
+      <div class="shelf-bottom">
+        <span><i class="swatch track-stock" aria-hidden="true"></i><span id="start-stock"></span> on hand</span>
+        <span><i class="swatch track-delivery" aria-hidden="true"></i><span id="delivery"></span> incoming</span>
+      </div>
+    </div>
+  </section>
+  <div class="goods section" id="goods" aria-label="Recommended order by product"></div>
+
+  <section class="section" aria-labelledby="compare-heading">
+    <div class="section-head">
+      <h2 id="compare-heading">Compare orders</h2>
+      <p class="subtle small" id="scenario-note"></p>
+    </div>
+    <div class="table-frame">
+      <table id="compare" role="table" aria-describedby="scenario-note pair-note">
+        <caption class="sr-only">Three order options with shortage and leftover in kilograms</caption>
+        <thead role="rowgroup"><tr id="compare-head" role="row"></tr></thead>
+        <tbody id="compare-body" role="rowgroup"></tbody>
+      </table>
+    </div>
+    <p class="note small subtle" id="pair-note">Each pair shows <strong>shortage / leftover</strong> in kg.<span class="interactive"> Select an order to see which products run short.</span></p>
+  </section>
+
+  <section class="section detail" id="inspection" aria-labelledby="detail-heading">
+    <div class="detail-top">
+      <div>
+        <h2 id="detail-heading" tabindex="-1">Inspect an order</h2>
+        <p id="detail-order" class="subtle small"></p>
+        <p id="print-week" class="subtle small"></p>
+      </div>
+      <label class="week-label interactive" for="week">Historical week
+        <select id="week"></select>
+      </label>
+    </div>
+    <div class="table-frame">
+      <table>
+        <caption class="sr-only" id="detail-caption"></caption>
+        <thead><tr><th scope="col">Product</th><th scope="col">Stock</th><th scope="col">Demand</th><th scope="col">Shortage</th><th scope="col">Leftover</th></tr></thead>
+        <tbody id="product-results"></tbody>
+        <tfoot id="product-total"></tfoot>
+      </table>
+    </div>
+    <p class="sr-only" id="detail-status" role="status"></p>
+  </section>
+
+  <details class="interactive">
+    <summary>All <span id="order-count"></span> feasible orders</summary>
+    <div class="drawer">
+      <p class="small subtle">Sack counts are shown as oats / rice / lentils. The last two columns total the six independent weeks.</p>
+      <div class="toolbar">
+        <label for="sort">Sort by
+          <select id="sort">
+            <option value="shortage">Least total shortage</option>
+            <option value="leftover">Least total leftover</option>
+            <option value="stock">Least shelf stock</option>
+          </select>
+        </label>
+        <button type="button" class="outline" id="download">Download all orders (CSV)</button>
+      </div>
+      <div class="table-frame">
+        <table class="catalog">
+          <caption class="sr-only">All feasible orders and their results in kilograms</caption>
+          <thead><tr><th scope="col">Sacks</th><th scope="col">Shelf kg</th><th scope="col">Shortage kg</th><th scope="col">Leftover kg</th></tr></thead>
+          <tbody id="catalog-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </details>
+  <details class="interactive">
+    <summary>Six-week results and historical demand</summary>
+    <div class="drawer">
+      <p class="small subtle note" id="history-order"></p>
+      <div class="table-frame note">
+        <table class="history">
+          <caption class="sr-only">Historical demand and selected order outcomes by week in kilograms</caption>
+          <thead><tr><th scope="col">Week</th><th scope="col">Oats</th><th scope="col">Rice</th><th scope="col">Lentils</th><th scope="col">Demand</th><th scope="col">Shortage</th><th scope="col">Leftover</th></tr></thead>
+          <tbody id="history-body"></tbody>
+          <tfoot id="history-total"></tfoot>
+        </table>
+      </div>
+    </div>
+  </details>
+  <footer class="small subtle">Each fictional week had enough stock to meet demand, so sales represent demand. Each comparison starts from the same post-delivery stock. Shortages and leftovers are calculated separately for each product.</footer>
+</main>
+<script>
+"use strict";
+
+const capacity = 90;
+const products = [
+  { name: "Oats", stock: 6, sack: 10, sales: [19, 24, 22, 26, 21, 28] },
+  { name: "Rice", stock: 9, sack: 15, sales: [32, 29, 38, 34, 41, 36] },
+  { name: "Lentils", stock: 4, sack: 5, sales: [11, 15, 13, 17, 12, 19] }
+];
+
+const byId = id => document.getElementById(id);
+const sum = values => values.reduce((total, value) => total + value, 0);
+const kg = amount => amount + " kg";
+const currentStock = sum(products.map(product => product.stock));
+const weeks = products[0].sales.map((_, index) => {
+  const demand = products.map(product => product.sales[index]);
+  return { number: index + 1, demand, total: sum(demand) };
+});
+const rankedWeeks = [...weeks].sort((a, b) => a.total - b.total);
+const scenarios = [rankedWeeks[2], rankedWeeks[3], rankedWeeks.at(-1)];
+const scenarioLabels = ["Typical", "Typical", "High demand"];
+
+function evaluate(sacks) {
+  const stock = products.map((product, index) => product.stock + product.sack * sacks[index]);
+  const results = weeks.map(week => {
+    const lines = week.demand.map((demand, index) => ({
+      shortage: Math.max(0, demand - stock[index]),
+      leftover: Math.max(0, stock[index] - demand)
+    }));
+    return {
+      lines,
+      shortage: sum(lines.map(line => line.shortage)),
+      leftover: sum(lines.map(line => line.leftover))
+    };
+  });
+  return {
+    id: sacks.join("-"),
+    sacks,
+    stock,
+    shelf: sum(stock),
+    results,
+    shortage: sum(results.map(result => result.shortage)),
+    leftover: sum(results.map(result => result.leftover))
+  };
+}
+
+function feasibleOrders() {
+  const available = capacity - currentStock;
+  const orders = [];
+  const [oats, rice, lentils] = products.map(product => product.sack);
+  for (let oatSacks = 0; oatSacks * oats <= available; oatSacks++) {
+    const afterOats = available - oatSacks * oats;
+    for (let riceSacks = 0; riceSacks * rice <= afterOats; riceSacks++) {
+      const afterRice = afterOats - riceSacks * rice;
+      for (let lentilSacks = 0; lentilSacks * lentils <= afterRice; lentilSacks++) {
+        orders.push(evaluate([oatSacks, riceSacks, lentilSacks]));
+      }
+    }
+  }
+  return orders.sort((a, b) => a.shortage - b.shortage || a.leftover - b.leftover);
+}
+
+const orders = feasibleOrders();
+const orderIndex = new Map(orders.map(order => [order.id, order]));
+const recommended = orders[0];
+const lean = orderIndex.get([recommended.sacks[0], recommended.sacks[1], recommended.sacks[2] - 1].join("-"));
+const extra = orderIndex.get([recommended.sacks[0], recommended.sacks[1], recommended.sacks[2] + 1].join("-"));
+const shortlist = [
+  { label: "Recommended", order: recommended },
+  { label: "One lentil sack less", order: lean },
+  { label: "One lentil sack more", order: extra }
+];
+let selectedOrder = recommended;
+let selectedWeek = scenarios.at(-1);
+
+function weekLabel(week) {
+  const index = scenarios.indexOf(week);
+  return index === -1 ? "Week " + week.number : "Week " + week.number + " · " + scenarioLabels[index];
+}
+
+function sackLabel(order) {
+  return order.sacks.map((count, index) => count + " " + products[index].name.toLowerCase()).join(" · ");
+}
+
+function shortValue(amount) {
+  return amount > 0 ? '<span class="short">' + amount + '</span>' : String(amount);
+}
+
+function renderRecommendation() {
+  const delivery = recommended.shelf - currentStock;
+  byId("recommendation").textContent = sackLabel(recommended);
+  byId("recommendation-note").textContent =
+    "This order minimizes shortage across the six weeks (" + kg(recommended.shortage) +
+    " total). Among orders tied on shortage, it leaves the least stock.";
+  byId("headroom").textContent = kg(capacity - recommended.shelf) + " free";
+  byId("shelf-used").textContent = recommended.shelf;
+  byId("start-stock").textContent = kg(currentStock);
+  byId("delivery").textContent = kg(delivery);
+  byId("track-stock").style.width = 100 * currentStock / capacity + "%";
+  byId("track-delivery").style.width = 100 * delivery / capacity + "%";
+  byId("goods").innerHTML = products.map((product, index) =>
+    '<article class="good"><h3>' + product.name + '<strong>' + recommended.sacks[index] +
+    ' sacks</strong></h3><p class="small subtle">' + kg(product.stock) + ' on hand + ' +
+    kg(recommended.sacks[index] * product.sack) + ' ordered = <b>' + kg(recommended.stock[index]) +
+    '</b><br>' + kg(product.sack) + ' per sack</p></article>'
+  ).join("");
+}
+
+function renderComparison() {
+  byId("scenario-note").textContent =
+    "Weeks 3 and 5 are the two middle weeks by total demand (73 and 74 kg). Week 6 is the highest at 83 kg. Week 5 also has the highest rice demand (41 kg).";
+  const columns = ["Order", "Shelf stock", ...scenarios.map(weekLabel), "Six-week total"];
+  byId("compare-head").innerHTML = columns.map(label => '<th role="columnheader" scope="col">' + label + '</th>').join("");
+  byId("compare-body").innerHTML = shortlist.map(({ label, order }) => {
+    const results = [...scenarios.map(week => order.results[week.number - 1]), order];
+    const cells = results.map((result, index) =>
+      '<td role="cell" data-label="' + columns[index + 2] + '"><span>' + shortValue(result.shortage) +
+      ' / ' + result.leftover + '</span></td>'
+    ).join("");
+    return '<tr role="row"><th role="rowheader" scope="row"><button type="button" class="pick" data-order="' + order.id +
+      '"><span>' + label + '</span><small>' + sackLabel(order) +
+      '</small></button></th><td role="cell" data-label="Shelf stock">' + kg(order.shelf) + '</td>' + cells + '</tr>';
+  }).join("");
+}
+
+function renderCatalog() {
+  const field = byId("sort").value;
+  const sorted = [...orders].sort((a, b) => a[field] - b[field]);
+  byId("catalog-body").innerHTML = sorted.map(order =>
+    '<tr><th scope="row"><button type="button" class="pick" data-order="' + order.id +
+    '" aria-label="Inspect ' + sackLabel(order) + '">' + order.sacks.join(" / ") +
+    '</button></th><td>' + order.shelf + '</td><td>' + shortValue(order.shortage) +
+    '</td><td>' + order.leftover + '</td></tr>'
+  ).join("");
+  highlightOrder();
+}
+
+function highlightOrder() {
+  document.querySelectorAll("[data-order]").forEach(button => {
+    const active = button.dataset.order === selectedOrder.id;
+    button.setAttribute("aria-pressed", String(active));
+    button.closest("tr").classList.toggle("selected-row", active);
+  });
+}
+
+function renderInspection() {
+  const order = selectedOrder;
+  const week = selectedWeek;
+  const result = order.results[week.number - 1];
+  byId("detail-order").textContent = "Sacks ordered · " + sackLabel(order) + " · " + kg(order.shelf) + " on shelf after delivery";
+  byId("print-week").textContent = weekLabel(week) + " · " + kg(week.total) + " demand";
+  byId("detail-caption").textContent = "Order results for week " + week.number + " in kilograms";
+  byId("product-results").innerHTML = products.map((product, index) => {
+    const line = result.lines[index];
+    return '<tr><th scope="row">' + product.name + '</th><td>' + kg(order.stock[index]) +
+      '</td><td>' + kg(week.demand[index]) + '</td><td>' + shortValue(line.shortage) +
+      ' kg</td><td>' + kg(line.leftover) + '</td></tr>';
+  }).join("");
+  byId("product-total").innerHTML = '<tr><th scope="row">Total</th><td>' + kg(order.shelf) +
+    '</td><td>' + kg(week.total) + '</td><td>' + shortValue(result.shortage) +
+    ' kg</td><td>' + kg(result.leftover) + '</td></tr>';
+  byId("detail-status").textContent = "Week " + week.number + ". Shortage " + kg(result.shortage) +
+    ". Leftover " + kg(result.leftover) + ".";
+}
+
+function renderHistory() {
+  const order = selectedOrder;
+  byId("history-order").textContent = "Sacks ordered · " + sackLabel(order) + ". Table values are in kg.";
+  byId("history-body").innerHTML = weeks.map((week, index) => {
+    const result = order.results[index];
+    return '<tr><th scope="row">' + week.number + '</th>' +
+      week.demand.map(value => '<td>' + value + '</td>').join("") +
+      '<td>' + week.total + '</td><td>' + shortValue(result.shortage) +
+      '</td><td>' + result.leftover + '</td></tr>';
+  }).join("");
+  byId("history-total").innerHTML = '<tr><th scope="row">Total</th>' +
+    products.map(product => '<td>' + sum(product.sales) + '</td>').join("") +
+    '<td>' + sum(weeks.map(week => week.total)) + '</td><td>' + shortValue(order.shortage) +
+    '</td><td>' + order.leftover + '</td></tr>';
+}
+
+function downloadOrders() {
+  const header = [
+    "Oats sacks", "Rice sacks", "Lentils sacks",
+    "Oats stock kg", "Rice stock kg", "Lentils stock kg",
+    "Shelf stock kg", "Capacity free kg", "Total shortage kg", "Total leftover kg",
+    ...weeks.flatMap(week => ["Week " + week.number + " shortage kg", "Week " + week.number + " leftover kg"])
+  ];
+  const rows = orders.map(order => [
+    ...order.sacks, ...order.stock, order.shelf, capacity - order.shelf,
+    order.shortage, order.leftover, ...order.results.flatMap(result => [result.shortage, result.leftover])
+  ]);
+  const csv = [header, ...rows].map(row => row.join(",")).join("\r\n") + "\r\n";
+  const url = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "Feasible refill orders.csv";
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+renderRecommendation();
+renderComparison();
+byId("order-count").textContent = orders.length;
+byId("week").innerHTML = weeks.map(week =>
+  '<option value="' + week.number + '">' + weekLabel(week) + '</option>'
+).join("");
+byId("week").value = selectedWeek.number;
+renderCatalog();
+renderInspection();
+renderHistory();
+document.addEventListener("click", event => {
+  const button = event.target.closest("button[data-order]");
+  if (!button) return;
+  selectedOrder = orderIndex.get(button.dataset.order);
+  highlightOrder();
+  renderInspection();
+  renderHistory();
+  if (button.closest(".catalog")) byId("detail-heading").focus();
+});
+byId("week").addEventListener("change", event => {
+  selectedWeek = weeks[Number(event.target.value) - 1];
+  renderInspection();
+});
+byId("sort").addEventListener("change", renderCatalog);
+byId("download").addEventListener("click", downloadOrders);
+byId("print").addEventListener("click", () => window.print());
+</script>
+</body>
+</html>

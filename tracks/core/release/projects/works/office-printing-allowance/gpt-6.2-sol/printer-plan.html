@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Shared printer plan comparison</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #172b24;
+  --muted: #4c6158;
+  --pine: #173c31;
+  --lime: #ddf3ad;
+  --paper: #f3f4ed;
+  --line: #d2dcd2;
+  --white: #fff;
+  --highlight: #e9f3da;
+  --warning: #872b20;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.5 system-ui, sans-serif; }
+main { width: min(100% - 2rem, 70rem); margin: 2.5rem auto 3rem; }
+h1, h2, h3, p { margin: 0; }
+h1, h2 { font-family: Georgia, serif; font-weight: 500; letter-spacing: -.035em; line-height: 1.08; }
+h1 { font-size: clamp(2.9rem, 7vw, 5.4rem); max-width: 11ch; }
+h2 { font-size: clamp(2rem, 4vw, 2.75rem); }
+h3 { font-size: 1rem; }
+p + p { margin-top: .65rem; }
+.hero { background: var(--pine); color: var(--white); border-radius: 1.25rem; padding: clamp(1.4rem, 5vw, 3.5rem); display: grid; grid-template-columns: 1.5fr 1fr; align-items: end; gap: 2rem; }
+.hero p { max-width: 43ch; color: #e2ebe4; }
+.hero h1 { margin-bottom: 1rem; }
+.hero .eyebrow { color: var(--lime); margin-bottom: .8rem; }
+.eyebrow { font-size: .75rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+.recommendation { border-left: 1px solid #709488; padding-left: 1.5rem; }
+.recommendation strong { display: block; color: var(--lime); font: 2.3rem/1.13 Georgia, serif; margin-bottom: .5rem; }
+.panel { background: var(--white); border: 1px solid var(--line); border-radius: 1rem; margin-top: 1.25rem; padding: clamp(1rem, 3vw, 2rem); }
+.section-heading { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.15rem; }
+.subtle, .section-heading p { color: var(--muted); }
+.section-heading p { margin-top: .45rem; max-width: 66ch; }
+.plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; margin-top: 1.25rem; }
+.plan { background: var(--white); border: 1px solid var(--line); border-radius: 1rem; padding: 1rem 1.25rem; }
+.plan:last-child { background: var(--highlight); }
+.plan strong { display: block; font: 1.85rem/1.2 Georgia, serif; margin: .25rem 0; }
+.plan p { color: var(--muted); font-size: .9rem; }
+.actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+button { font: inherit; font-weight: 650; border: 1px solid var(--line); border-radius: .55rem; padding: .5rem .85rem; min-height: 44px; color: var(--pine); background: var(--white); cursor: pointer; }
+button:hover { background: var(--highlight); }
+button[aria-pressed="true"] { color: var(--white); background: var(--pine); border-color: var(--pine); }
+button:disabled { cursor: default; opacity: .55; }
+:focus-visible { outline: 3px solid #24765c; outline-offset: 3px; }
+.table-wrap { overflow-x: auto; }
+.table-wrap:focus-visible { outline-offset: -3px; }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th, td { padding: .66rem .55rem; text-align: right; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th:first-child { text-align: left; }
+thead th { background: var(--paper); font-size: .84rem; color: var(--muted); }
+tbody th { font-weight: 600; }
+tfoot { font-weight: 750; background: var(--paper); }
+.winner { color: #24512f; font-weight: 750; }
+.scenario-buttons { margin-bottom: .8rem; }
+input { min-height: 44px; width: 6.5rem; max-width: 100%; padding: .35rem .45rem; border-radius: .45rem; border: 1px solid #a6b6aa; background: var(--white); color: var(--ink); text-align: right; font: inherit; font-variant-numeric: tabular-nums; }
+input[aria-invalid="true"] { border: 2px solid var(--warning); }
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button { appearance: none; margin: 0; }
+input[type="number"] { appearance: textfield; }
+.error { color: var(--warning); margin: .45rem 0; }
+.method { font-size: .9rem; color: var(--muted); }
+.method h2 { color: var(--ink); margin-bottom: .65rem; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip { position: absolute; top: .5rem; left: .5rem; transform: translateY(-150%); background: var(--white); border: 1px solid var(--ink); color: var(--ink); padding: .5rem; }
+.skip:focus { transform: none; }
+[hidden] { display: none !important; }
+.print-only { display: none; }
+@media (max-width: 40rem) {
+  main { margin-top: 1rem; }
+  .panel { padding-inline: .75rem; }
+  .hero { grid-template-columns: 1fr; gap: 1.4rem; }
+  .recommendation { padding: .9rem 0 0; border: 0; border-top: 1px solid #709488; }
+  .plans { grid-template-columns: repeat(2, 1fr); }
+  .plan:last-child { grid-column: 1 / -1; }
+  .plan { padding: .8rem; }
+  th, td { padding: .6rem .25rem; font-size: .82rem; }
+  thead th { font-size: .77rem; white-space: normal; }
+  #annual th:first-child { white-space: normal; }
+  #forecast-table input { width: 4rem; }
+}
+@page { size: letter; margin: .46in; }
+@media print {
+  body, .hero, .panel, .plan { background: white !important; color: #172b24; }
+  main { width: auto; margin: 0; }
+  .skip, .actions, #forecast, noscript { display: none !important; }
+  .print-only { display: block; }
+  .hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 1rem; border-radius: 0; padding: 0 0 .55rem; border-bottom: 2px solid #173c31; }
+  .hero h1 { font-size: 29pt; margin-bottom: .35rem; }
+  .hero p, .hero .eyebrow, .recommendation strong { color: #173c31; }
+  .recommendation strong { font-size: 21pt; }
+  .hero .eyebrow { margin-bottom: .25rem; }
+  .plans { grid-template-columns: repeat(3, 1fr); gap: .45rem; }
+  .plans, .panel { margin-top: .49rem; }
+  .plan, .panel { border-radius: .35rem; padding: .43rem .65rem; break-inside: avoid; }
+  .plan:last-child { grid-column: auto; }
+  .plan strong { font-size: 16pt; }
+  h2 { font-size: 17pt; }
+  body, .plan p, .method { font-size: 9.5pt; line-height: 1.35; }
+  .section-heading { margin-bottom: .35rem; }
+  .section-heading p { max-width: none; }
+  th, td { padding: .15rem .45rem; font-size: 9pt; }
+  thead th { font-size: 8.5pt; }
+  .table-wrap { overflow: visible; }
+  .method h2 { margin-bottom: .35rem; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#annual">Skip to annual comparison</a>
+<main>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Coworking operations</p>
+      <h1>Shared printer plans</h1>
+      <p>Compare 12-month costs for one shared monochrome printer. Choose one plan for the full year.</p>
+    </div>
+    <div class="recommendation" aria-live="polite" aria-atomic="true">
+      <strong id="recommendation">Plan A at current usage</strong>
+      <p id="recommendation-detail">Plan A saves $69.30 at the baseline and $175.10 with 15% fewer pages. Plan B saves $62.88 with 20% more pages.</p>
+    </div>
+  </header>
+
+  <section class="plans" aria-label="Monthly plan terms and break-even">
+    <div class="plan">
+      <h3>Plan A</h3>
+      <strong>$29 <small>/ month</small></strong>
+      <p>800 included pages<br>$0.065 per extra page</p>
+    </div>
+    <div class="plan">
+      <h3>Plan B</h3>
+      <strong>$53 <small>/ month</small></strong>
+      <p>1,400 included pages<br>$0.045 per extra page</p>
+    </div>
+    <div class="plan">
+      <h3>Monthly break-even</h3>
+      <strong>1,169.23 pages</strong>
+      <p>Plan A costs less through 1,169 pages. Plan B costs less from 1,170 pages.</p>
+    </div>
+  </section>
+
+  <section class="panel" id="annual" aria-labelledby="annual-title">
+    <div class="section-heading">
+      <div>
+        <h2 id="annual-title">Annual cost by scenario</h2>
+        <p id="projection-note">The baseline uses the eight historical months, then repeats months 1–4 to make a full year.</p>
+        <p class="print-only" id="print-pages" hidden></p>
+      </div>
+      <div class="actions" id="annual-actions" hidden>
+        <button type="button" id="print">Print brief</button>
+        <button type="button" id="export">Download CSV</button>
+      </div>
+    </div>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Annual cost table">
+      <table>
+        <thead><tr><th scope="col">Usage</th><th scope="col">Plan A</th><th scope="col">Plan B</th><th scope="col">Lower cost</th><th scope="col">Savings</th></tr></thead>
+        <tbody id="annual-rows">
+          <tr><th scope="row">Same usage</th><td>$570.30</td><td>$639.60</td><td class="winner">Plan A</td><td>$69.30</td></tr>
+          <tr><th scope="row">15% fewer</th><td>$460.91</td><td>$636.00</td><td class="winner">Plan A</td><td>$175.10</td></tr>
+          <tr><th scope="row">20% more</th><td>$739.56</td><td>$676.68</td><td class="winner">Plan B</td><td>$62.88</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <noscript><p class="subtle">The figures above show the default forecast. Enable JavaScript for the editable forecast and CSV export.</p></noscript>
+  </section>
+
+  <section class="panel" id="forecast" aria-labelledby="forecast-title" hidden>
+    <div class="section-heading">
+      <div>
+        <h2 id="forecast-title">Monthly forecast</h2>
+        <p id="input-hint">Edit baseline pages for any month. Choose a usage scenario to see its monthly costs.</p>
+      </div>
+      <div class="actions"><button type="button" id="reset">Reset forecast</button></div>
+    </div>
+    <div class="scenario-buttons actions" role="group" aria-label="Monthly forecast scenario" id="scenario-buttons"></div>
+    <p class="error" id="input-error" role="status" hidden></p>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Editable monthly forecast table">
+      <table id="forecast-table" aria-describedby="input-hint">
+        <caption class="sr-only" id="forecast-caption">Monthly forecast for same usage</caption>
+        <thead><tr><th scope="col">Month</th><th scope="col">Baseline<br>pages</th><th scope="col">Scenario<br>pages</th><th scope="col">Plan A</th><th scope="col">Plan B</th></tr></thead>
+        <tbody id="forecast-rows"></tbody>
+        <tfoot><tr><th scope="row">Total</th><td id="baseline-total"></td><td id="scenario-pages"></td><td id="scenario-a"></td><td id="scenario-b"></td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="history-title">
+    <div class="section-heading">
+      <div>
+        <h2 id="history-title">Eight months of history</h2>
+        <p>Plan A would have saved <strong>$40.25</strong> over the eight recorded months.</p>
+      </div>
+    </div>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Historical cost table">
+      <table id="history-table">
+        <thead><tr><th scope="col">Month</th><th scope="col">Pages</th><th scope="col">Plan A</th><th scope="col">Plan B</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">1</th><td>820</td><td>$30.30</td><td>$53.00</td></tr>
+          <tr><th scope="row">2</th><td>940</td><td>$38.10</td><td>$53.00</td></tr>
+          <tr><th scope="row">3</th><td>1,110</td><td>$49.15</td><td>$53.00</td></tr>
+          <tr><th scope="row">4</th><td>1,360</td><td>$65.40</td><td>$53.00</td></tr>
+          <tr><th scope="row">5</th><td>990</td><td>$41.35</td><td>$53.00</td></tr>
+          <tr><th scope="row">6</th><td>1,480</td><td>$73.20</td><td>$56.60</td></tr>
+          <tr><th scope="row">7</th><td>1,220</td><td>$56.30</td><td>$53.00</td></tr>
+          <tr><th scope="row">8</th><td>870</td><td>$33.55</td><td>$53.00</td></tr>
+        </tbody>
+        <tfoot><tr><th scope="row">Total</th><td>8,790</td><td>$387.35</td><td>$427.60</td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel method" aria-labelledby="method-title">
+    <h2 id="method-title">How costs are calculated</h2>
+    <p>Each month starts with a fresh page allowance. Monthly cost equals the base fee plus the overage rate multiplied by pages above the allowance. Between 800 and 1,400 pages, break-even solves $29 + $0.065 × (pages − 800) = $53. Beyond 1,400 pages, Plan A’s overage rate is higher, so Plan B stays cheaper.</p>
+    <p>Usage changes apply to each month before pricing, with half-pages rounded up. Costs use the full per-page rates. Totals and savings are each rounded to cents after calculation, so subtracting the displayed totals can differ by one cent.</p>
+  </section>
+</main>
+<script>
+'use strict';
+
+const history = [820, 940, 1110, 1360, 990, 1480, 1220, 870];
+const defaultPages = [...history, ...history.slice(0, 4)];
+const scenarios = [
+  { label: 'Same usage', percent: 100 },
+  { label: '15% fewer', percent: 85 },
+  { label: '20% more', percent: 120 },
+];
+const maxPages = 99999999;
+const number = new Intl.NumberFormat('en-US');
+const currency = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+const preciseCurrency = new Intl.NumberFormat('en-US', {
+  style: 'currency', currency: 'USD', maximumFractionDigits: 3,
+});
+
+const byId = (id) => document.getElementById(id);
+const sum = (values) => values.reduce((total, value) => total + value, 0);
+const money = (mills) => currency.format(Math.floor((mills + 5) / 10) / 100);
+const exactMoney = (mills) => preciseCurrency.format(mills / 1000);
+
+function priceMonth(pages) {
+  return {
+    pages,
+    a: 29000 + 65 * Math.max(0, pages - 800),
+    b: 53000 + 45 * Math.max(0, pages - 1400),
+  };
+}
+
+function compare(pages, percent) {
+  const months = pages.map((value) => priceScenarioMonth(value, percent));
+  const a = sum(months.map((month) => month.a));
+  const b = sum(months.map((month) => month.b));
+  return {
+    months,
+    a,
+    b,
+    lower: a === b ? 'Tie' : a < b ? 'Plan A' : 'Plan B',
+    savings: Math.abs(a - b),
+  };
+}
+
+function priceScenarioMonth(pages, percent) {
+  return priceMonth(Math.floor((pages * percent + 50) / 100));
+}
+
+let selectedScenario = 0;
+const fields = defaultPages.map((pages, index) => {
+  const month = index + 1;
+  const row = byId('forecast-rows').insertRow();
+  row.innerHTML = `<th scope="row">${month}</th>
+    <td><input type="number" min="0" max="${maxPages}" step="1" required
+      id="month-${month}" aria-label="Month ${month} baseline pages" inputmode="numeric" value="${pages}"></td>
+    <td></td><td></td><td></td>`;
+  return { row, input: row.querySelector('input') };
+});
+
+const scenarioButtons = scenarios.map((scenario, index) => {
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.textContent = scenario.label;
+  button.addEventListener('click', () => {
+    selectedScenario = index;
+    render();
+  });
+  byId('scenario-buttons').append(button);
+  return button;
+});
+
+function render() {
+  const invalid = fields.filter(({ input }) => {
+    const valid = input.validity.valid && Number.isInteger(input.valueAsNumber);
+    input.setAttribute('aria-invalid', String(!valid));
+    if (valid) input.removeAttribute('aria-describedby');
+    else input.setAttribute('aria-describedby', 'input-error');
+    return !valid;
+  });
+  const pages = fields.map(({ input }) => input.valueAsNumber);
+  const valid = invalid.length === 0;
+  const edited = pages.some((value, index) => value !== defaultPages[index]);
+  scenarioButtons.forEach((button, index) => button.setAttribute('aria-pressed', String(index === selectedScenario)));
+  const error = byId('input-error');
+  error.hidden = valid;
+  error.textContent = valid ? '' : `Enter a whole number from 0 to ${number.format(maxPages)} in each marked month.`;
+  byId('export').disabled = !valid;
+  byId('print').disabled = !valid;
+  byId('reset').disabled = !edited;
+  byId('projection-note').textContent = edited
+    ? 'This forecast uses your edited monthly page counts.'
+    : 'The baseline uses the eight historical months, then repeats months 1–4 to make a full year.';
+  byId('print-pages').hidden = !edited || !valid;
+  byId('print-pages').textContent = edited && valid ? `Baseline pages by month · ${pages.map((value) => number.format(value)).join(' / ')}` : '';
+
+  const results = valid ? scenarios.map(({ percent }) => compare(pages, percent)) : [];
+  const selected = results[selectedScenario];
+  byId('forecast-caption').textContent = `Monthly forecast · ${scenarios[selectedScenario].label}`;
+  byId('annual-rows').innerHTML = scenarios.map(({ label }, index) => {
+    const result = results[index];
+    return `<tr><th scope="row">${label}</th><td>${result ? money(result.a) : '—'}</td>
+      <td>${result ? money(result.b) : '—'}</td><td class="winner">${result?.lower ?? '—'}</td>
+      <td>${result ? money(result.savings) : '—'}</td></tr>`;
+  }).join('');
+
+  for (const [index, { row, input }] of fields.entries()) {
+    const month = selected?.months[index] ?? (input.getAttribute('aria-invalid') === 'false'
+      ? priceScenarioMonth(pages[index], scenarios[selectedScenario].percent)
+      : null);
+    row.cells[2].textContent = month ? number.format(month.pages) : '—';
+    row.cells[3].textContent = month ? exactMoney(month.a) : '—';
+    row.cells[4].textContent = month ? exactMoney(month.b) : '—';
+  }
+
+  byId('baseline-total').textContent = valid ? number.format(sum(pages)) : '—';
+  byId('scenario-pages').textContent = selected ? number.format(sum(selected.months.map(({ pages }) => pages))) : '—';
+  byId('scenario-a').textContent = selected ? money(selected.a) : '—';
+  byId('scenario-b').textContent = selected ? money(selected.b) : '—';
+
+  if (!valid) {
+    byId('recommendation').textContent = 'Forecast needs a page count';
+    byId('recommendation-detail').textContent = 'Correct the marked months to compare annual costs.';
+    return;
+  }
+  const [baseline, fewer, more] = results;
+  byId('recommendation').textContent = baseline.lower === 'Tie'
+    ? 'The plans tie at baseline'
+    : `${baseline.lower} at ${edited ? 'your baseline' : 'current usage'}`;
+  const describe = (result, usage) => result.lower === 'Tie'
+    ? `Both plans cost ${money(result.a)} ${usage}.`
+    : `${result.lower} saves ${money(result.savings)} ${usage}.`;
+  byId('recommendation-detail').textContent = [
+    describe(baseline, 'at baseline'), describe(fewer, 'with 15% fewer pages'), describe(more, 'with 20% more pages'),
+  ].join(' ');
+}
+
+function exportCsv() {
+  const rows = [['Period', 'Scenario', 'Month', 'Baseline pages', 'Billed pages', 'Plan A (USD)', 'Plan B (USD)', 'Lower cost', 'Savings (USD)']];
+  const decimal = (mills) => (mills / 1000).toFixed(3);
+  const rounded = (mills) => (Math.floor((mills + 5) / 10) / 100).toFixed(2);
+  const groups = [
+    { period: 'History', label: 'Recorded usage', pages: history, percent: 100 },
+    ...scenarios.map((scenario) => ({ period: 'Forecast', pages: fields.map(({ input }) => input.valueAsNumber), ...scenario })),
+  ];
+  for (const { period, label, pages, percent } of groups) {
+    const result = compare(pages, percent);
+    result.months.forEach((month, index) => rows.push([
+      period, label, index + 1, pages[index], month.pages, decimal(month.a), decimal(month.b), '', '',
+    ]));
+    rows.push([
+      period, label, 'Total', sum(pages), sum(result.months.map((month) => month.pages)),
+      rounded(result.a), rounded(result.b), result.lower, rounded(result.savings),
+    ]);
+  }
+  const blob = new Blob([rows.map((row) => row.join(',')).join('\r\n') + '\r\n'], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'printer-plan-costs.csv';
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+for (const { input } of fields) input.addEventListener('input', render);
+byId('reset').addEventListener('click', () => {
+  fields.forEach(({ input }, index) => { input.value = defaultPages[index]; });
+  render();
+  fields[0].input.focus();
+});
+byId('print').addEventListener('click', () => window.print());
+byId('export').addEventListener('click', exportCsv);
+byId('forecast').hidden = false;
+byId('annual-actions').hidden = false;
+render();
+</script>
+</body>
+</html>

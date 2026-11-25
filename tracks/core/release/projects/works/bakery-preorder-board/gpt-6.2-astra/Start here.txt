@@ -1,0 +1,31 @@
+SATURDAY BREAD  /  COUNTER KIT
+
+Set up the counter
+Open Ready to print/priced.pdf. Print single-sided on US Letter at
+actual size (100%). Slide page 1 into the upright holder. Keep page 2
+behind the counter on a clipboard. Print extra copies of page 2 as needed.
+Write the full Saturday pickup date and sheet number before taking orders.
+
+Take a preorder
+Ask for the pickup name, items and quantities, and one pickup window.
+Use one row per order. Use a surname or initial to distinguish similar
+names. Leave unused quantity cells empty. Tick exactly one window.
+Read the order and Saturday pickup time back to the customer.
+
+Example: Lee orders one seeded loaf and a box of four buns for 8–10 a.m.
+Write Lee, enter 1 under Seeded loaves and 1 under Bun boxes, then tick
+8–10 a.m. The box counts as one unit. At the listed prices the total is $19.
+
+At Friday noon, close that Saturday's sheet and total the three quantity
+columns. Start a newly dated sheet for the following Saturday's orders.
+On pickup, find the name and tick Picked up when handing over the order.
+
+Change prices
+By hand: print Ready to print/write-in.pdf. Fill all three white price
+panels on the sign and the three price lines on the matching order sheet,
+including dollar signs. Keep a clean master for future copies.
+
+On a laptop: open Counter kit.html in a browser. Enter the three prices,
+select the pages you need, then use Print / save PDF. A saved PDF keeps
+the new prices for reprints. The editor opens with the original menu
+each time. All files work offline.

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8fc">
+  <title>Copy Desk · Job Board</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <div class="brand"><span class="brand-icon" data-icon="layers" aria-hidden="true"></span>Copy Desk</div>
+      <span class="local-status" id="local-status"><i></i> Offline workspace</span>
+    </div>
+  </header>
+
+  <main class="shell" id="workspace">
+    <section class="intro" aria-labelledby="page-title">
+      <div>
+        <p class="date-line" id="today"></p>
+        <h1 id="page-title">Job board</h1>
+        <p class="intro-copy">Track orders from intake to the pickup counter.</p>
+      </div>
+      <div class="header-actions">
+        <button class="button secondary" id="print-button"><span data-icon="printer"></span> Print queue</button>
+        <button class="button primary" id="new-job"><span data-icon="plus"></span> New job</button>
+      </div>
+    </section>
+
+    <section class="overview" aria-label="Open order totals">
+      <div class="metric"><span class="metric-icon ink" data-icon="layers"></span><div><span>Open jobs</span><strong id="open-total">0</strong></div></div>
+      <div class="metric"><span class="metric-icon green" data-icon="bag"></span><div><span>Ready for pickup</span><strong id="pickup-total">0</strong></div></div>
+      <div class="metric"><span class="metric-icon red" data-icon="alert"></span><div><span>Overdue jobs</span><strong id="overdue-total">0</strong></div></div>
+      <div class="metric"><span class="metric-icon blue" data-icon="copy"></span><div><span>Copies outstanding</span><strong id="copy-total">0</strong></div></div>
+    </section>
+
+    <div class="toolbar">
+      <nav class="view-switch" aria-label="Workspace views">
+        <button class="view-button" id="board-tab" aria-pressed="true"><span data-icon="board"></span> Board</button>
+        <button class="view-button" id="queue-tab" aria-pressed="false"><span data-icon="list"></span> Daily queue</button>
+      </nav>
+      <div class="filters" id="filters">
+        <label class="search"><span data-icon="search"></span><input type="search" id="search" aria-label="Search jobs" placeholder="Search jobs…"></label>
+        <select class="filter-select" id="filter" aria-label="Filter jobs">
+          <option value="open">All open jobs</option>
+          <option value="today">Due today</option>
+          <option value="overdue">Overdue</option>
+          <option value="complete">Completed</option>
+        </select>
+      </div>
+    </div>
+
+    <section id="board" aria-label="Orders by production stage"></section>
+    <section id="queue" aria-labelledby="queue-title"></section>
+    <footer class="footer"><span><span data-icon="device"></span> Orders are saved in this browser.</span></footer>
+    <p id="notice" class="notice" role="status" hidden></p>
+    <noscript>Enable JavaScript in your browser to use the job board.</noscript>
+  </main>
+
+  <dialog id="job-dialog" aria-labelledby="job-dialog-title">
+    <form id="job-form">
+      <div class="dialog-heading"><h2 id="job-dialog-title">New job</h2><button class="icon-button" type="button" data-close aria-label="Close"><span data-icon="close"></span></button></div>
+      <label>Job name<input name="title" required maxlength="120" placeholder="e.g. Recital program" autofocus></label>
+      <div class="form-row">
+        <label>Copies ordered<input name="quantity" type="number" min="1" max="9999999" step="1" required></label>
+        <label>Stage<select name="stage" required></select></label>
+      </div>
+      <div class="form-row">
+        <label>Due date<input name="date" type="date" min="0001-01-01" max="9999-12-31" required></label>
+        <label>Due time<input name="time" type="time" required></label>
+      </div>
+      <label>Job notes <small>(optional)</small><textarea name="notes" maxlength="600" rows="3" placeholder="Paper, finishing or handover instructions"></textarea></label>
+      <div id="pickup-history" hidden></div>
+      <p class="form-error" id="job-error" role="alert" hidden></p>
+      <div class="dialog-actions"><button type="button" class="button secondary" data-close>Cancel</button><button type="submit" class="button primary" id="save-job">Add job</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="pickup-dialog" aria-labelledby="pickup-dialog-title">
+    <form id="pickup-form">
+      <div class="dialog-heading"><h2 id="pickup-dialog-title">Record pickup</h2><button class="icon-button" type="button" data-close aria-label="Close"><span data-icon="close"></span></button></div>
+      <p id="pickup-context"></p>
+      <label>Copies handed over<input name="copies" type="number" min="1" step="1" required autofocus></label>
+      <p class="form-error" id="pickup-error" role="alert" hidden></p>
+      <div class="dialog-actions"><button type="button" class="button secondary" data-close>Cancel</button><button type="submit" class="button primary">Save pickup</button></div>
+    </form>
+  </dialog>
+</body>
+</html>

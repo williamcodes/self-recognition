@@ -1,0 +1,13 @@
+Block,Sampled week,Arrivals,Waits longer than 10 minutes
+Monday evening,1,9,3
+Monday evening,2,10,4
+Monday evening,3,8,2
+Monday evening,4,11,5
+Wednesday evening,1,6,1
+Wednesday evening,2,7,1
+Wednesday evening,3,8,2
+Wednesday evening,4,7,1
+Sunday morning,1,11,4
+Sunday morning,2,12,6
+Sunday morning,3,10,4
+Sunday morning,4,13,7

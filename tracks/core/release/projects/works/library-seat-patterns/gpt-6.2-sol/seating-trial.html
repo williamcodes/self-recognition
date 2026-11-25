@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where should four seats go?</title>
+<style>
+  :root {
+    color-scheme: light;
+    font: 16px/1.4 Arial, sans-serif;
+    color: #181818;
+    background: #e9e9e9;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  main {
+    max-width: 8.5in;
+    margin: 24px auto;
+    padding: 0.48in 0.52in;
+    background: white;
+  }
+  header { border-top: 5px solid; padding-top: 16px; }
+  .eyebrow {
+    margin: 0 0 5px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  h1, h2, p { margin: 0; }
+  h1, .recommendation h2 { font-family: Georgia, serif; }
+  h1 { font-size: 2.65rem; line-height: 1.08; letter-spacing: -0.035em; }
+  .subtitle { margin-top: 7px; font-size: 0.91rem; }
+  section { margin-top: 24px; break-inside: avoid; }
+  .recommendation { border: 1px solid #262626; border-left-width: 5px; padding: 12px 16px 13px; }
+  .recommendation h2 { font-size: 1.53rem; line-height: 1.15; }
+  .recommendation p:last-child { margin-top: 6px; font-size: 0.92rem; }
+  h2 { font-size: 1.12rem; line-height: 1.25; }
+  .section-note { font-size: 0.83rem; margin-top: 4px; }
+  .comparison { width: 100%; border-collapse: collapse; table-layout: fixed; margin-top: 8px; }
+  .comparison .area-column { width: 112px; }
+  .comparison .occupancy-column { width: 120px; }
+  .comparison .full-column { width: 90px; }
+  .comparison th, .comparison td { padding: 0 0 0 12px; }
+  .comparison th:first-child { padding-left: 0; text-align: left; }
+  .comparison thead th { font-size: 0.72rem; }
+  .comparison tbody th, .comparison tbody td {
+    height: 38px;
+    border-bottom: 1px solid #d2d2d2;
+    font-size: 0.82rem;
+  }
+  .zone small { font-weight: 400; font-size: inherit; }
+  .number { text-align: right; font-variant-numeric: tabular-nums; }
+  .track { display: block; height: 12px; border: 1px solid #666; }
+  .fill { display: block; height: 100%; background: #646464; }
+  .window .fill { background: #181818; }
+  .axis { font-size: 0.7rem; font-weight: 400; text-align: left; }
+  .axis span:last-child { float: right; }
+  .method { margin-top: 7px; font-size: 0.78rem; }
+  .table-scroll { margin-top: 8px; overflow-x: auto; }
+  .observations { width: 100%; min-width: 410px; border-collapse: collapse; table-layout: fixed; font-size: 0.83rem; }
+  .observations th, .observations td { text-align: center; padding: 6px 2px; }
+  .observations thead tr:first-child th { border-top: 1px solid #242424; border-bottom: 1px solid #c6c6c6; }
+  .observations thead tr:last-child th, .observations thead th[rowspan] { border-bottom: 1px solid #242424; }
+  .observations thead tr:last-child th { font-size: 0.72rem; font-weight: 400; }
+  .observations tbody tr { border-bottom: 1px solid #c6c6c6; }
+  .observations tbody th, .observations thead th[rowspan] { text-align: left; padding-left: 6px; }
+  .pair-start { border-left: 1px solid #c6c6c6; }
+  .full { background: #232323; color: #fff; font-weight: 700; background-clip: padding-box; }
+  .key { margin-top: 7px; font-size: 0.78rem; }
+  .swatch { display: inline-block; background: #232323; width: 10px; height: 10px; margin-right: 4px; }
+  .trial { border-top: 2px solid; padding-top: 10px; }
+  .trial p { font-size: 0.84rem; margin-top: 4px; }
+  @media screen and (max-width: 600px) {
+    main { margin: 0; padding: 24px 16px; }
+    h1 { font-size: 2rem; }
+    .comparison .area-column { width: 76px; }
+    .comparison .occupancy-column { width: 77px; }
+    .comparison .full-column { width: 56px; }
+    .comparison th, .comparison td { padding-left: 6px; }
+    .comparison tbody th, .comparison tbody td { font-size: 0.74rem; }
+    .zone small { display: block; }
+    .comparison .number span { display: block; }
+  }
+  @page { size: letter portrait; margin: 0.48in 0.52in; }
+  @media print {
+    :root { background: white; }
+    * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    main { padding: 0; margin: 0; max-width: none; }
+    .table-scroll { overflow: visible; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Branch library seating</p>
+    <h1>Where should four seats go?</h1>
+    <p class="subtitle">Eight-week trial &middot; Fictional counts from four consecutive Saturdays</p>
+  </header>
+
+  <section class="recommendation" aria-labelledby="recommendation">
+    <p class="eyebrow">Recommendation</p>
+    <h2 id="recommendation">Add all four seats by the windows</h2>
+    <p>Raise window capacity from <strong>6 to 10 seats</strong>. Window seating had the highest occupancy rate (95.8%) and was full in 6 of 8 observations, the most of any area.</p>
+  </section>
+
+  <section aria-labelledby="comparison">
+    <h2 id="comparison">How much of each area was used?</h2>
+    <p class="section-note">Quiet had the most occupied seats at every check. Window had the highest occupancy as a share of capacity.</p>
+    <table class="comparison" aria-label="Occupancy and full observations by seating area">
+      <colgroup>
+        <col class="area-column"><col><col class="occupancy-column"><col class="full-column">
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">Area / capacity</th>
+          <th class="axis" scope="col" aria-label="Occupancy scale from 0 to 100 percent"><span>0%</span><span>100%</span></th>
+          <th class="number" scope="col">Occupancy</th>
+          <th class="number" scope="col">Times full</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="window">
+          <th class="zone" scope="row">Window <small>6 seats</small></th>
+          <td><span class="track" aria-hidden="true"><span class="fill" style="width: 95.833333%"></span></span></td>
+          <td class="number"><span>46/48</span> <strong>95.8%</strong></td>
+          <td class="number"><strong>6/8</strong></td>
+        </tr>
+        <tr>
+          <th class="zone" scope="row">Group <small>8 seats</small></th>
+          <td><span class="track" aria-hidden="true"><span class="fill" style="width: 89.0625%"></span></span></td>
+          <td class="number"><span>57/64</span> <strong>89.1%</strong></td>
+          <td class="number"><strong>4/8</strong></td>
+        </tr>
+        <tr>
+          <th class="zone" scope="row">Quiet <small>12 seats</small></th>
+          <td><span class="track" aria-hidden="true"><span class="fill" style="width: 88.541667%"></span></span></td>
+          <td class="number"><span>85/96</span> <strong>88.5%</strong></td>
+          <td class="number"><strong>3/8</strong></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="method">Occupancy = total occupied seats across the eight observations ÷ (area capacity × 8).</p>
+  </section>
+
+  <section aria-labelledby="observations">
+    <h2 id="observations">The eight observations behind the comparison</h2>
+    <p class="section-note" id="count-note">Each cell shows the number of seats occupied at that time.</p>
+    <div class="table-scroll" role="region" aria-label="Saturday occupancy counts" tabindex="0">
+      <table class="observations" aria-labelledby="observations" aria-describedby="count-note full-key">
+        <colgroup><col style="width:94px"></colgroup>
+        <colgroup span="2"></colgroup><colgroup span="2"></colgroup>
+        <colgroup span="2"></colgroup><colgroup span="2"></colgroup>
+        <thead>
+          <tr>
+            <th scope="col" rowspan="2">Area</th>
+            <th scope="colgroup" class="pair-start" colspan="2">Saturday 1</th>
+            <th scope="colgroup" class="pair-start" colspan="2">Saturday 2</th>
+            <th scope="colgroup" class="pair-start" colspan="2">Saturday 3</th>
+            <th scope="colgroup" class="pair-start" colspan="2">Saturday 4</th>
+          </tr>
+          <tr>
+            <th scope="col" class="pair-start">11 a.m.</th><th scope="col">2 p.m.</th>
+            <th scope="col" class="pair-start">11 a.m.</th><th scope="col">2 p.m.</th>
+            <th scope="col" class="pair-start">11 a.m.</th><th scope="col">2 p.m.</th>
+            <th scope="col" class="pair-start">11 a.m.</th><th scope="col">2 p.m.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Window</th>
+            <td class="pair-start full" aria-label="6, full">6</td><td>5</td>
+            <td class="pair-start full" aria-label="6, full">6</td><td class="full" aria-label="6, full">6</td>
+            <td class="pair-start">5</td><td class="full" aria-label="6, full">6</td>
+            <td class="pair-start full" aria-label="6, full">6</td><td class="full" aria-label="6, full">6</td>
+          </tr>
+          <tr>
+            <th scope="row">Group</th>
+            <td class="pair-start">5</td><td>7</td>
+            <td class="pair-start">7</td><td class="full" aria-label="8, full">8</td>
+            <td class="pair-start">6</td><td class="full" aria-label="8, full">8</td>
+            <td class="pair-start full" aria-label="8, full">8</td><td class="full" aria-label="8, full">8</td>
+          </tr>
+          <tr>
+            <th scope="row">Quiet</th>
+            <td class="pair-start">9</td><td class="full" aria-label="12, full">12</td>
+            <td class="pair-start">10</td><td class="full" aria-label="12, full">12</td>
+            <td class="pair-start">8</td><td>11</td>
+            <td class="pair-start">11</td><td class="full" aria-label="12, full">12</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="key" id="full-key"><span class="swatch" aria-hidden="true"></span> Dark cells mark observations where all seats in the area were occupied.</p>
+  </section>
+
+  <section class="trial" aria-labelledby="trial">
+    <h2 id="trial">What to track during the trial</h2>
+    <p>Count occupied seats in each area at 11 a.m. and 2 p.m. each Saturday. Track how often more than six window seats are used. Separately tally patrons observed looking for a window seat when all ten are occupied. The historical counts did not measure unmet demand.</p>
+  </section>
+</main>
+</body>
+</html>

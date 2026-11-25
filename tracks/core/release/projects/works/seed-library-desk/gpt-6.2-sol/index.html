@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#18362d">
+  <title>Seed Library · Desk</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="inventory.js" defer></script>
+  <script src="botanical.js" defer></script>
+  <script src="desk.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-icon" data-icon="sprout"></span><div><strong>Seed Library</strong><span>VOLUNTEER DESK</span></div></div>
+    <nav aria-label="Workspace">
+      <button type="button" data-page="catalog" aria-current="page"><span data-icon="catalog"></span>Catalog</button>
+      <button type="button" data-page="activity"><span data-icon="history"></span>Activity</button>
+      <button type="button" data-page="shelf"><span data-icon="printer"></span>Shelf list</button>
+    </nav>
+    <div class="offline"><span class="offline-dot"></span><div><strong>Offline workspace</strong><span id="storage-caption">Saved on this device</span></div></div>
+  </aside>
+
+  <div class="workspace">
+    <header class="topbar">
+      <div class="breadcrumb"><span data-icon="sprout"></span><span>Workspace</span><span class="slash">/</span><strong id="crumb">Catalog</strong></div>
+      <div class="top-actions">
+        <button class="button secondary" type="button" id="print"><span data-icon="printer"></span>Print shelf list</button>
+        <button class="button primary" type="button" id="donate"><span data-icon="plus"></span>Record donation</button>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <p class="notice" id="storage-error" role="alert" hidden></p>
+      <section id="catalog-page" aria-labelledby="catalog-title">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow"><span></span> INVENTORY DESK</div>
+            <h1 id="catalog-title">Seed catalog</h1>
+            <p>Track packet counts, checkouts, and donations by lot.</p>
+          </div>
+          <canvas id="botanical" width="1060" height="420" aria-hidden="true"></canvas>
+        </div>
+        <div class="summary" aria-label="Inventory totals">
+          <div class="stat"><span class="stat-icon" data-icon="packet"></span><div><strong id="packet-total">30</strong><span>Packets available</span></div></div>
+          <div class="stat"><span class="stat-icon" data-icon="layers"></span><div><strong id="lot-total">3</strong><span>Lots in catalog</span></div></div>
+          <div class="stat"><span class="stat-icon amber" data-icon="alert"></span><div><strong id="low-total">0</strong><span>Low-stock lots</span></div></div>
+        </div>
+        <div class="desk-grid">
+          <section class="panel catalog-panel" aria-labelledby="inventory-heading">
+            <header class="catalog-header">
+              <div class="panel-title"><h2 id="inventory-heading">Inventory</h2><p>Select a lot to view activity or update stock.</p></div>
+              <div class="catalog-tools">
+                <label class="search"><span data-icon="search"></span><span class="sr">Search by variety or lot</span><input type="search" id="search" placeholder="Search variety or lot…" autocomplete="off"><kbd aria-hidden="true">/</kbd></label>
+                <button class="button secondary filter" type="button" id="low-filter" aria-pressed="false"><span data-icon="filter"></span>Low stock</button>
+              </div>
+            </header>
+            <table class="inventory-table">
+              <thead><tr><th scope="col">Variety</th><th scope="col">Lot</th><th scope="col" class="number">Packets</th><th scope="col">Status</th><th scope="col"><span class="sr">View lot</span></th></tr></thead>
+              <tbody id="inventory-rows"></tbody>
+            </table>
+            <div class="catalog-foot"><span id="results-count" role="status"></span><span class="stock-key"><i></i> Low stock at 3 packets or fewer</span></div>
+          </section>
+          <section id="lot-panel" class="panel lot-panel" aria-labelledby="lot-heading"></section>
+        </div>
+      </section>
+      <section id="activity-page" aria-labelledby="activity-title" hidden>
+        <header class="page-heading"><h1 id="activity-title">Activity</h1><p>Review stock changes and reverse accidental entries.</p></header>
+        <section class="panel">
+          <header class="log-toolbar"><label for="activity-lot">Filter by lot</label><select id="activity-lot"></select></header>
+          <div id="activity-list"></div>
+        </section>
+      </section>
+      <section id="shelf-page" aria-labelledby="shelf-title" hidden>
+        <header class="page-heading"><h1 id="shelf-title">Shelf list</h1><p>Use the printed list to check packet counts at the shelves.</p></header>
+        <section class="panel shelf-panel" aria-label="Shelf inventory"></section>
+      </section>
+    </main>
+  </div>
+
+  <section id="print-sheet" aria-label="Printable shelf list"></section>
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <dialog id="entry-dialog" aria-labelledby="entry-title">
+    <form id="entry-form" novalidate>
+      <header class="dialog-heading"><div><h2 id="entry-title"></h2><p id="entry-context"></p></div><button type="button" class="icon-button" data-close aria-label="Close"><span data-icon="close"></span></button></header>
+      <div id="entry-fields"></div>
+      <p class="form-error" id="entry-error" role="alert" hidden></p>
+      <footer class="dialog-actions"><button type="button" class="button secondary" data-close>Cancel</button><button type="submit" class="button primary" id="entry-submit"></button></footer>
+    </form>
+  </dialog>
+
+  <noscript><p class="noscript">Enable JavaScript in your browser to use the Seed Library desk.</p></noscript>
+</body>
+</html>

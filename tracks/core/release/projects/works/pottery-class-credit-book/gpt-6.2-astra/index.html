@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#354635"><title>Kilnbook · Studio register</title><link rel="stylesheet" href="style.css"><script defer src="ledger.js"></script><script defer src="art.js"></script><script defer src="app.js"></script></head><body>
+<header><div class="bar"><a href="./index.html" class="brand"><span class="mark" aria-hidden="true">≋</span>Kilnbook</a><span class="brand-detail">Pottery studio</span><span class="local"><i></i> Offline workspace</span></div></header>
+<main><section class="hero"><div class="hero-copy"><div class="eyebrow">Studio register</div><h1>Studio overview</h1><p>Workshop attendance and prepaid visit credits.</p><div id="summary"></div></div><canvas id="pottery" width="800" height="410" aria-hidden="true"></canvas></section>
+<div class="layout"><section><div class="section-head"><h2>Workshops</h2><button class="primary" data-action="new">＋ Add workshop</button></div><div id="workshops"></div></section>
+<aside><div class="section-head"><h2>Student credits</h2><button class="iconbtn" data-action="student" aria-label="Add student" title="Add student">＋</button></div><div class="panel"><div class="ledgerhead"><span>Student</span><span>Balance</span></div><div id="students"></div><div class="footnote">Select a student to view balance history.</div></div></aside></div>
+<div id="notice" role="status" aria-live="polite"></div></main>
+<dialog id="dialog"><div class="dialog-head"><h2 id="dialog-title"></h2><button class="iconbtn" data-action="close" aria-label="Close dialog">×</button></div><div id="dialog-content"></div></dialog></body></html>

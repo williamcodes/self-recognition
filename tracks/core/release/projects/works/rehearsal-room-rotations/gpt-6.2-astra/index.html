@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stagebook · Weekly rehearsals</title><link rel="stylesheet" href="style.css"><script defer src="app.js"></script></head>
+<body><header><div class="wrap bar"><div class="brand"><span class="logo" aria-hidden="true"><i></i><b></b></span>Stagebook</div><span class="division">Rehearsal planner</span><span class="offline"><i></i> Offline workspace</span></div></header>
+<main class="wrap"><section class="hero"><div><h1>Weekly rehearsals</h1><p>Community theater <span> / </span> Recurring weekly plan</p></div><div class="stage" aria-hidden="true"><div class="beam"></div><div class="floor"></div><i></i><b></b><div class="valance"></div></div></section>
+<div class="toolbar"><div class="title"><h2>Schedule board</h2><span id="count"></span></div><div class="actions"><button id="print"><span aria-hidden="true">▤</span> Print schedule</button><button class="primary" id="add"><span aria-hidden="true">＋</span> Place booking</button></div></div>
+<div id="board" class="board" aria-label="Weekly rehearsal timetable"></div>
+<div class="foot"><span>Main Room · 24 seats · Piano &nbsp; / &nbsp; Studio · 10 seats · No piano</span><span id="saveStatus" role="status"></span></div>
+<section class="roster"><h2>Rehearsal groups</h2><div id="groups"></div></section>
+<section id="paper"></section></main>
+<dialog id="editor" aria-labelledby="editTitle"><form id="form"><div class="dialoghead"><h2 id="editTitle">Place booking</h2><button type="button" aria-label="Close editor" id="close">×</button></div><label>Group<select id="group"></select></label><p id="needs"></p><label>Weekday<select id="day"></select></label><label>Room<select id="room"></select></label><label>Start time<input type="time" id="start" required></label><div id="feedback" aria-live="polite"></div><div class="editorActions"><button type="button" id="remove">Unplace</button><button type="button" id="cancel">Cancel</button><button class="primary" id="commit">Save booking</button></div></form></dialog>
+</body></html>

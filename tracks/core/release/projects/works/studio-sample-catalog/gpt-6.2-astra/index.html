@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Fabric catalog · Selvedge</title><link rel="stylesheet" href="studio.css"><script defer src="catalog.js"></script></head>
+<body><header><div class="brand"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Selvedge</div><span class="studio">Upholstery studio</span><span class="offline"><b></b> Offline workspace</span></header>
+<main><section class="heading"><div><p class="eyebrow"><span></span> STUDIO INVENTORY</p><h1>Fabric catalog</h1><p class="intro">Find a swatch, locate its drawer, and manage client loans.</p></div><div class="actions"><button id="export"><span data-icon="download"></span>Export CSV</button><button id="add" class="primary"><span data-icon="plus"></span>Add sample</button></div></section>
+<div class="tabs" aria-label="Availability"><button data-view="all" aria-pressed="true"><span data-icon="layers"></span>All samples <small></small></button><button data-view="out" aria-pressed="false"><span data-icon="out"></span>With clients <small></small></button></div>
+<section class="toolbar" aria-label="Search and filters"><label class="search"><span data-icon="search"></span><input id="search" type="search" aria-label="Search samples" placeholder="Search by name, code, or client…"><kbd>/</kbd></label><select id="drawer" aria-label="Drawer"></select><select id="color" aria-label="Color family"></select><select id="type" aria-label="Fabric type"></select></section>
+<div class="results"><span id="count" role="status"></span><button id="reset" hidden>Clear filters</button><div class="switch"><button id="grid" title="Grid view" aria-label="Grid view" aria-pressed="true"><span data-icon="grid"></span></button><button id="list" title="List view" aria-label="List view" aria-pressed="false"><span data-icon="list"></span></button></div></div>
+<div id="cards"></div><p id="empty" hidden>No samples match. Clear the filters or try another search.</p></main>
+<dialog id="dialog"><div class="dialog-head"><span class="eyebrow">SAMPLE RECORD</span><button id="close" type="button" aria-label="Close"><span data-icon="close"></span></button></div><div id="body"></div></dialog>
+<p id="notice" role="status" hidden></p>
+</body></html>

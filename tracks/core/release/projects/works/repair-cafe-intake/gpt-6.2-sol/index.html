@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Mend Desk · Repair café intake</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#board-heading">Skip to repair board</a>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">✚</span> Mend Desk</div>
+      <div class="storage" id="storage" role="status"><span></span><span id="storage-text">Opening local storage…</span></div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <div class="intro">
+      <div>
+        <p class="eyebrow">Clothing repair café</p>
+        <h1>Repair intake</h1>
+        <p>Give each garment a tag and track it through to pickup.</p>
+      </div>
+      <div class="date-stamp">
+        <span class="eyebrow">Café day</span>
+        <time id="today"></time>
+      </div>
+    </div>
+
+    <p class="error storage-error" id="storage-error" role="alert" hidden></p>
+    <div class="workspace">
+      <section class="panel intake" aria-labelledby="intake-heading">
+        <div class="panel-heading">
+          <div class="heading-mark" aria-hidden="true">+</div>
+          <div>
+            <h2 id="intake-heading">New ticket</h2>
+            <p>One ticket per visitor, up to 3 items.</p>
+          </div>
+        </div>
+        <form id="intake-form" autocomplete="off">
+          <div id="item-fields"></div>
+          <button type="button" class="button add-item" id="add-item">＋ Add another item</button>
+          <p class="error" id="form-error" role="alert" hidden></p>
+          <div class="intake-footer">
+            <button type="submit" class="button primary" id="save-ticket" disabled>Save ticket <span aria-hidden="true">→</span></button>
+          </div>
+        </form>
+        <div class="receipt" id="receipt" hidden>
+          <p id="receipt-text"></p>
+          <button class="button small-button" id="receipt-tags" type="button">View tags</button>
+        </div>
+      </section>
+
+      <section class="panel board" aria-labelledby="board-heading">
+        <div class="panel-heading board-heading">
+          <div class="heading-mark board-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div>
+            <h2 id="board-heading" tabindex="-1">Repair board</h2>
+            <p>Find an item and update its status.</p>
+          </div>
+        </div>
+        <div class="board-controls">
+          <div class="lookup">
+            <div class="search-field">
+              <label for="search">Find an item</label>
+              <div class="search-box"><span class="magnifier" aria-hidden="true"></span><input id="search" type="search" autocomplete="off" placeholder="Tag, garment or repair"></div>
+            </div>
+            <div>
+              <label for="date-scope">Show</label>
+              <select id="date-scope"><option value="today">Today</option><option value="all">All dates</option></select>
+            </div>
+          </div>
+          <div class="filters" id="filters" role="group" aria-label="Filter by status">
+            <button type="button" data-filter="all" aria-pressed="true">All items <span>0</span></button>
+            <button type="button" data-filter="waiting" aria-pressed="false"><i class="dot waiting" aria-hidden="true"></i> Waiting <span>0</span></button>
+            <button type="button" data-filter="progress" aria-pressed="false"><i class="dot progress" aria-hidden="true"></i> In progress <span>0</span></button>
+            <button type="button" data-filter="ready" aria-pressed="false"><i class="dot ready" aria-hidden="true"></i> Ready <span>0</span></button>
+          </div>
+        </div>
+        <div class="board-feedback" id="board-feedback" hidden>
+          <p id="board-message" role="status"></p>
+          <button class="button small-button" id="undo" type="button" hidden>Undo</button>
+        </div>
+        <div class="table" id="table" hidden>
+          <table>
+            <thead><tr><th scope="col">Tag</th><th scope="col">Garment / repair</th><th scope="col">Status</th></tr></thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+        <div class="empty" id="empty">
+          <div class="tag-art" aria-hidden="true"><span></span><span></span></div>
+          <h3 id="empty-title">Opening repair board…</h3>
+          <p id="empty-copy"></p>
+          <button class="button small-button" id="clear-filters" type="button" hidden>Clear search and status filter</button>
+        </div>
+        <div class="board-footer">
+          <span id="result-count" role="status">Opening board…</span>
+          <span>Click a tag to view or reprint it.</span>
+        </div>
+      </section>
+    </div>
+
+    <footer class="desk-footer">
+      <span>Use the tag number at pickup.</span>
+      <span>Garment and repair details only.</span>
+    </footer>
+  </main>
+
+  <template id="item-template">
+    <fieldset class="item">
+      <legend></legend>
+      <button type="button" class="remove-item">Remove</button>
+      <div class="field">
+        <label data-label="garment">Garment</label>
+        <input data-field="garment" type="text" required maxlength="60" placeholder="e.g. Blue jeans">
+      </div>
+      <div class="field">
+        <label data-label="repair">Repair request</label>
+        <select data-field="repair" required>
+          <option value="">Choose a repair</option>
+          <option>Hemming</option>
+          <option>Patching</option>
+          <option>Replace a button</option>
+          <option>Fix a seam</option>
+          <option>Fix a zip</option>
+          <option>Darning</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label data-label="detail">Repair detail <span class="optional">(optional)</span></label>
+        <input data-field="detail" type="text" maxlength="100" placeholder="e.g. Left knee">
+      </div>
+    </fieldset>
+  </template>
+
+  <dialog id="tags-dialog" aria-labelledby="tags-heading">
+    <div class="dialog-header">
+      <div>
+        <p class="eyebrow">Item tags &amp; pickup slips</p>
+        <h2 id="tags-heading"></h2>
+      </div>
+      <form method="dialog"><button class="button small-button" autofocus>Close</button></form>
+    </div>
+    <p class="dialog-hint">Attach each garment tag and hand its matching slip to the visitor. You can also copy the codes onto paper tags.</p>
+    <div id="tag-pairs"></div>
+    <div class="dialog-actions">
+      <button id="print-tags" type="button" class="button primary">Print tags &amp; slips</button>
+    </div>
+  </dialog>
+</body>
+</html>

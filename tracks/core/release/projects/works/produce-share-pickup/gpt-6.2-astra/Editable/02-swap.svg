@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17in" height="11in" viewBox="0 0 1224 792">
+<rect x="0" y="0" width="1224" height="792" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<g transform="translate(35 26) scale(0.4)">
+<path d="M39 33 Q19 26 19 8 Q37 8 42 29 Q38 10 51 0 Q61 16 47 33 Q57 15 72 19 Q68 34 48 37" fill="#38653E" stroke="#193837" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43 35 C63 31 72 48 62 65 Q56 76 40 82 Q38 92 30 95 Q35 86 34 80 C12 65 17 41 32 37 Q37 34 43 35Z" fill="#CF6948" stroke="#193837" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26 52 Q27 44 34 43 M49 68 l8 -5" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="76" y="53" font-family="Arial" font-size="17" font-weight="bold" text-anchor="start" fill="#193837">NEIGHBORHOOD PRODUCE SHARE</text>
+<text x="1180" y="53" font-family="Arial" font-size="16" font-weight="bold" text-anchor="end" fill="#193837">SWAP TABLE   /   MESA DE INTERCAMBIO</text>
+<path d="M44 74 H1180" fill="none" stroke="#193837" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="42" y="175" font-family="Georgia" font-size="90" font-weight="bold" text-anchor="start" fill="#193837">One-item swap</text>
+<text x="45" y="236" font-family="Arial" font-size="43" font-weight="bold" text-anchor="start" fill="#A63B21">Intercambio de un producto</text>
+<rect x="44" y="277" width="530" height="390" rx="16" fill="#F8E8DE" stroke="none" stroke-width="1"/>
+<circle cx="86" cy="318" r="20" fill="#193837" stroke="none" stroke-width="1"/>
+<text x="86" y="326" font-family="Arial" font-size="23" font-weight="bold" text-anchor="middle" fill="#FFFFFF">1</text>
+<g transform="translate(187 323) scale(1.78)">
+<g transform="translate(32 -5) scale(0.98)">
+<path d="M39 33 Q19 26 19 8 Q37 8 42 29 Q38 10 51 0 Q61 16 47 33 Q57 15 72 19 Q68 34 48 37" fill="#38653E" stroke="#193837" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43 35 C63 31 72 48 62 65 Q56 76 40 82 Q38 92 30 95 Q35 86 34 80 C12 65 17 41 32 37 Q37 34 43 35Z" fill="#CF6948" stroke="#193837" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26 52 Q27 44 34 43 M49 68 l8 -5" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M8 86 Q40 94 126 85 L114 106 Q68 115 20 105Z" fill="#E2BD84" stroke="#193837" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="309" y="580" font-family="Arial" font-size="60" font-weight="bold" text-anchor="middle" fill="#193837">Leave one</text>
+<text x="309" y="630" font-family="Arial" font-size="34" font-weight="bold" text-anchor="middle" fill="#A63B21">Deja uno</text>
+<rect x="650" y="277" width="530" height="390" rx="16" fill="#E9F0E3" stroke="none" stroke-width="1"/>
+<circle cx="692" cy="318" r="20" fill="#193837" stroke="none" stroke-width="1"/>
+<text x="692" y="326" font-family="Arial" font-size="23" font-weight="bold" text-anchor="middle" fill="#FFFFFF">2</text>
+<g transform="translate(793 323) scale(1.78)">
+<g transform="translate(37 -3) scale(0.94)">
+<path d="M49 31 Q35 9 41 3 L52 23 Q52 6 61 2 L60 24 Q71 9 79 13 L63 36" fill="#38653E" stroke="#193837" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M51 29 Q71 27 66 47 Q46 76 19 97 Q25 60 40 37Z" fill="#E8A651" stroke="#193837" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M39 44 l9 6 M52 56 l8 3 M28 72 l6 4" fill="none" stroke="#193837" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M8 86 Q40 94 126 85 L114 106 Q68 115 20 105Z" fill="#E2BD84" stroke="#193837" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="915" y="580" font-family="Arial" font-size="60" font-weight="bold" text-anchor="middle" fill="#193837">Take one</text>
+<text x="915" y="630" font-family="Arial" font-size="34" font-weight="bold" text-anchor="middle" fill="#A63B21">Toma uno</text>
+<g transform="translate(587 450) scale(0.88)">
+<path d="M0 8 H38 V0 L56 15 L38 30 V22 H0Z" fill="#193837" stroke="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="44" y="721" font-family="Arial" font-size="30" font-weight="bold" text-anchor="start" fill="#193837">One exchange per household, if you like.</text>
+<text x="44" y="758" font-family="Arial" font-size="25" font-weight="bold" text-anchor="start" fill="#A63B21">Un intercambio por hogar, si quieres.</text>
+</svg>

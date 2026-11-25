@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thursday Fixtures</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="board.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <span class="league"><span class="league-mark" aria-hidden="true"></span> Thursday Table Tennis</span>
+      <span class="masthead-hours">Two tables <span aria-hidden="true">·</span> 6:30–7:45 p.m.</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">Fixture board</h1>
+        <p>Select a table to add or edit a pairing.</p>
+      </div>
+      <div class="court" aria-hidden="true"><span></span></div>
+    </section>
+
+    <div class="workspace">
+      <section class="schedule" aria-labelledby="evening">
+        <div class="schedule-tools">
+          <div>
+            <span class="eyebrow">Evening schedule</span>
+            <h2 id="evening"></h2>
+          </div>
+          <div class="controls">
+            <button id="previous" class="arrow" aria-label="Previous Thursday">←</button>
+            <input id="date" type="date" step="7" min="1970-01-01" max="9999-12-30" aria-label="Meeting date, Thursdays only" aria-describedby="date-error">
+            <button id="next" class="arrow" aria-label="Next Thursday">→</button>
+          </div>
+        </div>
+        <p id="date-error" class="error" role="status" hidden></p>
+        <div class="schedule-matrix" id="board"></div>
+      </section>
+
+      <aside class="side" aria-label="Evening overview">
+        <section class="panel checks" aria-labelledby="checks-heading">
+          <div class="panel-heading"><h2 id="checks-heading">Schedule check</h2><span id="count"></span></div>
+          <div class="meter" aria-hidden="true"><span id="meter-fill"></span></div>
+          <div id="checks" aria-live="polite"></div>
+        </section>
+
+        <section class="panel" aria-labelledby="teams-heading">
+          <div class="panel-heading"><h2 id="teams-heading">Teams</h2><span>6 total</span></div>
+          <ul class="roster" id="roster"></ul>
+        </section>
+
+        <button class="primary print-button" id="print">
+          <span class="printer" aria-hidden="true"></span> Print evening sheet
+        </button>
+        <p class="save-status" id="save-status" role="status"></p>
+      </aside>
+    </div>
+  </main>
+
+  <dialog id="editor" aria-labelledby="editor-title">
+    <form id="pairing-form">
+      <div class="editor-heading">
+        <div>
+          <p class="eyebrow" id="editor-context"></p>
+          <h2 id="editor-title">Add pairing</h2>
+        </div>
+        <button type="button" id="cancel" class="arrow close" aria-label="Cancel editing">×</button>
+      </div>
+      <div class="fields">
+        <label for="team-a">First team<select id="team-a" autofocus required></select></label>
+        <label for="team-b">Second team<select id="team-b" aria-describedby="pairing-message" required></select></label>
+      </div>
+      <p id="pairing-message" class="editor-message" aria-live="polite" hidden></p>
+      <div class="editor-actions">
+        <button type="button" id="clear" class="clear">Clear pairing</button>
+        <button type="submit" class="primary">Save pairing</button>
+      </div>
+    </form>
+  </dialog>
+
+  <section class="print-sheet" id="print-sheet" aria-label="Printable evening schedule"></section>
+  <noscript>Enable JavaScript in your browser to use the fixture board.</noscript>
+</body>
+</html>

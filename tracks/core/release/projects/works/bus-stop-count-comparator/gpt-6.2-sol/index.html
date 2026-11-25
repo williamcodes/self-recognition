@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Bus Stop Counts</title>
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #f5f4ee;
+    --surface: #fffefa;
+    --ink: #182923;
+    --muted: #505d55;
+    --line: #dcded4;
+    --green: #205849;
+    --library: #a84d27;
+    --maple-tint: #e3efe7;
+    --library-tint: #f7e9df;
+    --error: #912b24;
+    font-family: system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body { margin: 0; background: var(--paper); color: var(--ink); line-height: 1.5; }
+  h1, h2, h3, p { margin: 0; }
+  button, input, select { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+  button:disabled { cursor: default; opacity: .55; }
+  :focus-visible { outline: 3px solid #715717; outline-offset: 3px; }
+  .wrap { width: min(1180px, calc(100% - 64px)); margin-inline: auto; }
+  header { background: #163e34; color: #fffefa; overflow: hidden; }
+  .masthead { position: relative; isolation: isolate; padding-block: 34px 36px; }
+  h1 { font-family: Georgia, serif; font-size: clamp(2.8rem, 6vw, 4.9rem); font-weight: 400; line-height: 1.02; letter-spacing: -.065em; margin-block: 10px 13px; }
+  .masthead p { color: #e3ece4; }
+  .route {
+    position: absolute; z-index: -1; right: 2%; top: 0; bottom: 0; width: 31%;
+    background: repeating-linear-gradient(90deg, transparent 0 24px, #a5c5b11c 24px 25px),
+                repeating-linear-gradient(0deg, transparent 0 24px, #a5c5b11c 24px 25px);
+    mask-image: linear-gradient(90deg, transparent, black 25%, black 90%, transparent);
+  }
+  .route::before, .route::after {
+    content: ""; position: absolute; left: 12%; right: 12%; top: 52%; height: 4px; background: #d6e88a;
+  }
+  .route::after { transform: rotate(-26deg); background: #eca279; }
+  .route span { position: absolute; z-index: 1; top: calc(52% - 8px); width: 20px; height: 20px; border: 4px solid #d6e88a; border-radius: 50%; background: #163e34; }
+  .route span:first-child { left: 12%; }
+  .route span:last-child { right: 12%; }
+  main { padding-block: 24px 36px; }
+  .panel, .filters { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+  h2 { font-size: 1.33rem; line-height: 1.2; letter-spacing: -.035em; }
+  h3 { font-size: 1rem; line-height: 1.3; }
+  .muted { color: var(--muted); font-size: .875rem; }
+  .filters { padding: 14px 20px; display: flex; gap: 12px 18px; align-items: end; flex-wrap: wrap; }
+  .filter-title { margin-right: auto; align-self: center; }
+  .filter-title h2 { font-size: 1.05rem; letter-spacing: -.02em; margin-bottom: 3px; }
+  .date-controls, .filter-options { display: flex; gap: 8px 12px; align-items: end; flex-wrap: wrap; }
+  label { display: grid; gap: 5px; font-weight: 650; font-size: .83rem; }
+  input:not([type=checkbox]), select, .button {
+    min-height: 44px; border: 1px solid #aeb8ad; border-radius: 7px; padding: 7px 11px; background: var(--surface);
+  }
+  input:not([type=checkbox]), select { width: 100%; min-width: 0; background: #fff; font-size: 1rem; }
+  .date-controls input { min-inline-size: 9.5rem; }
+  .check { display: flex; align-items: center; gap: 7px; min-height: 44px; cursor: pointer; white-space: nowrap; }
+  .check input { width: 17px; height: 17px; margin: 0; accent-color: var(--green); }
+  .button { font-size: .86rem; font-weight: 700; white-space: nowrap; }
+  .button:hover:not(:disabled) { background: #ebefe7; }
+  .button.primary { background: var(--green); color: white; border-color: var(--green); }
+  .button.primary:hover { background: #163e34; }
+  .dashboard { display: grid; grid-template-columns: minmax(0, 2.1fr) minmax(292px, 1fr); gap: 20px; align-items: start; margin-block: 20px; }
+  .comparison, .entry { padding: 22px; }
+  .section-intro { margin-top: 7px; }
+  .metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-block: 17px; }
+  .metric { border: 1px solid var(--line); border-radius: 10px; padding: 15px; }
+  .metric .muted { font-size: .79rem; margin-top: 3px; }
+  .metric-row { margin-top: 12px; }
+  .metric-label { display: flex; align-items: baseline; justify-content: space-between; gap: 5px; font-size: .8rem; font-weight: 650; }
+  .rate { font-size: 1.48rem; font-weight: 740; letter-spacing: -.055em; line-height: 1.2; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+  .rate.unavailable { font-size: .77rem; letter-spacing: 0; color: var(--muted); text-align: right; }
+  .track { background: #eeeee7; height: 7px; border-radius: 12px; overflow: hidden; margin-top: 6px; }
+  .bar { height: 100%; border-radius: inherit; background: var(--stop-color); }
+  .maple { --stop-color: var(--green); --stop-tint: var(--maple-tint); }
+  .library { --stop-color: var(--library); --stop-tint: var(--library-tint); }
+  .totals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .total { background: var(--stop-tint); border-radius: 8px; padding: 9px 12px; }
+  .total h3 { font-size: .83rem; }
+  .total p { color: var(--muted); font-size: .79rem; margin-top: 3px; }
+  .dot::before { content: ""; width: .62em; height: .62em; border-radius: 50%; display: inline-block; background: var(--stop-color); margin-inline-end: .42em; vertical-align: .06em; }
+  .entry form { display: grid; gap: 11px; margin-top: 17px; }
+  .entry-fields, .entry-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .entry-actions { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
+  .entry .section-intro { min-height: 2.65em; }
+  .error { color: var(--error); font-size: .85rem; font-weight: 650; }
+  .log-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 17px 22px; }
+  .log-header .muted { margin-top: 5px; }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; font-size: .88rem; }
+  thead { background: #eeefe7; text-align: left; }
+  th { font-weight: 700; }
+  td, th { padding: 9px 12px; border-top: 1px solid var(--line); }
+  td:first-child, th:first-child { padding-left: 22px; }
+  td:last-child, th:last-child { padding-right: 22px; }
+  td:nth-child(n+3), th:nth-child(n+3) { text-align: right; }
+  tbody tr:last-child td:first-child { border-radius: 0 0 0 14px; }
+  tbody tr:last-child td:last-child { border-radius: 0 0 14px 0; }
+  .sample { display: inline-block; border-radius: 4px; background: #eeefe7; color: var(--muted); padding: 1px 6px; font-size: .75rem; margin-inline-start: 5px; }
+  .na { color: var(--muted); font-size: .82rem; white-space: nowrap; }
+  .edit { padding: 0 6px; min-height: 44px; min-width: 44px; font-size: .84rem; text-decoration: underline; color: var(--green); background: none; border: 0; }
+  .edit:hover { background: #ebefe7; }
+  .empty { padding: 18px 22px; border-top: 1px solid var(--line); }
+  .notes { margin-top: 15px; }
+  .status { margin-top: 12px; }
+  .status:empty { display: none; }
+  @media (max-width: 940px) {
+    .route { opacity: .55; }
+    .dashboard { grid-template-columns: minmax(0, 1.55fr) minmax(280px, 1fr); }
+    .comparison, .entry { padding: 17px; }
+    .metrics { grid-template-columns: 1fr; }
+    .metric { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; }
+    .metric h3, .metric > p { grid-column: 1 / -1; }
+  }
+  @media (701px <= width <= 940px) {
+    .entry-fields:first-child { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 700px) {
+    .wrap { width: calc(100% - 32px); }
+    .dashboard { grid-template-columns: 1fr; }
+    .route { display: none; }
+    .filters { align-items: start; flex-direction: column; padding: 14px; }
+    .filter-title { align-self: start; }
+    .date-controls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
+    .date-controls input { min-inline-size: 0; }
+    table { font-size: .83rem; }
+    td, th { padding: 8px 5px; overflow-wrap: anywhere; }
+    td:first-child, th:first-child { padding-left: 9px; }
+    td:last-child, th:last-child { padding-right: 9px; }
+    .sample { margin-inline-start: 0; }
+    .na { white-space: normal; }
+  }
+  @media (max-width: 365px) {
+    .metric, .totals, .entry-fields { grid-template-columns: 1fr; }
+    .metric h3, .metric > p { grid-column: auto; }
+  }
+  @media print {
+    body { background: white; }
+    .wrap { width: 100%; }
+    header { background: white; color: black; }
+    .masthead { padding-block: 0 12px; }
+    .masthead p { color: black; }
+    .route, .entry, .date-controls, .filter-options, .button, .edit-column, .status { display: none !important; }
+    .dashboard { display: block; }
+    main { padding: 0; }
+    .comparison { break-inside: avoid; }
+    tr { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap masthead">
+      <h1>Bus Stop Counts</h1>
+    <p>Compare manual boarding counts at Maple Corner and Library Square.</p>
+    <div class="route" aria-hidden="true"><span></span><span></span></div>
+  </div>
+</header>
+<main class="wrap">
+  <noscript><p class="error">Enable JavaScript in your browser to use this offline tool.</p></noscript>
+  <section class="filters" aria-labelledby="filter-title">
+    <div class="filter-title">
+      <h2 id="filter-title">Observation dates</h2>
+      <p class="muted" id="range-summary" aria-live="polite"></p>
+    </div>
+    <div class="date-controls">
+      <label for="from">From <input type="date" id="from" aria-describedby="range-error"></label>
+      <label for="through">Through <input type="date" id="through" aria-describedby="range-error"></label>
+    </div>
+    <div class="filter-options">
+      <label class="check"><input id="include-samples" type="checkbox" checked> Include fictional samples</label>
+      <button type="button" class="button" id="clear-dates">Clear dates</button>
+    </div>
+    <p class="error" id="range-error" role="alert" hidden></p>
+  </section>
+
+  <div class="dashboard">
+    <section class="panel comparison" aria-labelledby="comparison-title">
+      <h2 id="comparison-title">Stop comparison</h2>
+      <p class="muted section-intro">Rates use the combined totals for each stop in the current view.</p>
+      <div class="metrics" id="metrics"></div>
+      <div class="totals" id="totals" aria-label="Pooled totals by stop"></div>
+    </section>
+
+    <section class="panel entry" aria-labelledby="entry-title">
+      <h2 id="entry-title">Add a session</h2>
+      <p class="muted section-intro" id="entry-help">Enter one observation period at one stop. All fields are required.</p>
+      <form id="session-form" aria-describedby="entry-help">
+        <div class="entry-fields">
+          <label for="date">Date <input type="date" id="date" required></label>
+          <label for="stop">Stop
+            <select id="stop" required>
+              <option value="maple">Maple Corner</option>
+              <option value="library">Library Square</option>
+            </select>
+          </label>
+        </div>
+        <label for="minutes">Minutes observed <input type="number" id="minutes" min="0.01" step="0.01" required inputmode="decimal"></label>
+        <div class="entry-fields">
+          <label for="boardings">Boardings <input type="number" id="boardings" min="0" step="1" required inputmode="numeric" aria-describedby="entry-error"></label>
+          <label for="buses">Buses <input type="number" id="buses" min="0" step="1" required inputmode="numeric" aria-describedby="entry-error"></label>
+        </div>
+        <p class="error" id="entry-error" role="alert" hidden></p>
+        <div class="entry-actions">
+          <button class="button primary" type="submit" id="save-session">Save session</button>
+          <button class="button" type="button" id="cancel-edit" hidden>Cancel edit</button>
+        </div>
+      </form>
+      <p class="status muted" id="status" role="status"></p>
+    </section>
+  </div>
+
+  <section class="panel" aria-labelledby="log-title">
+    <div class="log-header">
+      <div>
+        <h2 id="log-title">Observation log</h2>
+        <p class="muted" id="log-summary"></p>
+      </div>
+      <button type="button" class="button" id="export">Export visible CSV</button>
+    </div>
+    <table id="log" aria-labelledby="log-title">
+      <thead><tr>
+        <th scope="col">Date</th><th scope="col">Stop</th><th scope="col">Minutes</th>
+        <th scope="col">Boardings</th><th scope="col">Buses</th><th scope="col">Per bus</th>
+        <th scope="col" class="edit-column" id="edit-column" hidden>Edit</th>
+      </tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <p class="empty muted" id="empty" hidden></p>
+  </section>
+  <p class="muted notes" id="storage-note">Entries are saved in this browser. Export the visible sessions to keep a copy.</p>
+</main>
+<script>
+"use strict";
+
+const stops = [
+  { id: "maple", name: "Maple Corner" },
+  { id: "library", name: "Library Square" }
+];
+const stopNames = Object.fromEntries(stops.map(({ id, name }) => [id, name]));
+const samples = [
+  ["2026-06-01", "maple", 30, 18, 3],
+  ["2026-06-01", "library", 45, 36, 4],
+  ["2026-06-03", "maple", 45, 24, 4],
+  ["2026-06-03", "library", 30, 20, 3],
+  ["2026-06-08", "maple", 60, 33, 6],
+  ["2026-06-08", "library", 30, 0, 0]
+].map(([date, stop, minutes, boardings, buses]) => ({ date, stop, minutes, boardings, buses, sample: true }));
+
+const prefix = "bus-stop-counts.session.v1.";
+const entries = new Map();
+const unsaved = new Set();
+const number = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
+const rate = new Intl.NumberFormat("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const dateFormat = new Intl.DateTimeFormat("en-US", { dateStyle: "medium", timeZone: "UTC" });
+const $ = (id) => document.getElementById(id);
+const fields = ["date", "stop", "minutes", "boardings", "buses"];
+let displayed = [];
+let editing = null;
+
+function formatDate(date) {
+  return dateFormat.format(new Date(date + "T00:00:00Z"));
+}
+
+function validDate(date) {
+  if (typeof date !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(date) || date.startsWith("0000")) return false;
+  const parsed = new Date(date + "T00:00:00Z");
+  return Number.isFinite(+parsed) && parsed.toISOString().slice(0, 10) === date;
+}
+
+function validSession(session) {
+  return session && validDate(session.date) && Object.hasOwn(stopNames, session.stop)
+    && Number.isFinite(session.minutes) && session.minutes >= 0.01 && session.minutes <= Number.MAX_SAFE_INTEGER
+    && Number.isSafeInteger(session.boardings) && session.boardings >= 0
+    && Number.isSafeInteger(session.buses) && session.buses >= 0
+    && (session.buses > 0 || session.boardings === 0);
+}
+
+function storageWarning() {
+  $("storage-note").textContent = "Browser storage is unavailable for some entries. Export the visible sessions before closing the page.";
+}
+
+function loadEntries() {
+  try {
+    const stored = new Map();
+    for (let index = 0; index < localStorage.length; index += 1) {
+      const key = localStorage.key(index);
+      if (!key?.startsWith(prefix) || unsaved.has(key)) continue;
+      try {
+        const session = JSON.parse(localStorage.getItem(key));
+        if (!validSession(session)) continue;
+        const { date, stop, minutes, boardings, buses } = session;
+        stored.set(key, { date, stop, minutes, boardings, buses, key });
+      } catch (error) {
+        if (!(error instanceof SyntaxError)) throw error;
+      }
+    }
+    for (const key of entries.keys()) {
+      if (!stored.has(key) && !unsaved.has(key)) entries.delete(key);
+    }
+    for (const [key, session] of stored) entries.set(key, session);
+  } catch {
+    storageWarning();
+  }
+}
+
+function pool(sessions, stop) {
+  const total = { sessions: 0, minutes: 0, boardings: 0, buses: 0 };
+  for (const session of sessions) {
+    if (session.stop !== stop) continue;
+    total.sessions += 1;
+    total.minutes += session.minutes;
+    total.boardings += session.boardings;
+    total.buses += session.buses;
+  }
+  return total;
+}
+
+function renderComparison(totals) {
+  const measures = [
+    { label: "Boardings per observed hour", formula: "Boardings ÷ (minutes observed ÷ 60)", divisor: "minutes", multiplier: 60 },
+    { label: "Boardings per bus", formula: "Boardings ÷ buses observed", divisor: "buses", multiplier: 1 }
+  ];
+  $("metrics").innerHTML = measures.map(({ label, formula, divisor, multiplier }) => {
+    const values = totals.map((total) => total[divisor] ? total.boardings / total[divisor] * multiplier : null);
+    const max = Math.max(...values, 0);
+    const rows = stops.map(({ id, name }, index) => {
+      const value = values[index];
+      const reason = totals[index].sessions ? "No buses" : "No sessions";
+      const formatted = value === null ? reason : rate.format(value);
+      const width = max && value !== null ? value / max * 100 : 0;
+      return `<div class="metric-row ${id}">
+        <div class="metric-label"><span class="dot">${name}</span>
+        <span class="rate ${value === null ? "unavailable" : ""}">${formatted}</span></div>
+        <div class="track" aria-hidden="true"${value === null ? " hidden" : ""}><div class="bar" style="width:${width}%"></div></div>
+      </div>`;
+    }).join("");
+    return `<article class="metric"><h3>${label}</h3><p class="muted">${formula}</p>${rows}</article>`;
+  }).join("");
+
+  $("totals").innerHTML = stops.map(({ id, name }, index) => {
+    const { sessions, minutes, boardings, buses } = totals[index];
+    const label = sessions === 1 ? "session" : "sessions";
+    return `<article class="total ${id}"><h3 class="dot">${name} totals</h3>
+      <p>${number.format(sessions)} ${label} · ${number.format(minutes)} min · ${number.format(boardings)} boardings · ${number.format(buses)} ${buses === 1 ? "bus" : "buses"}</p></article>`;
+  }).join("");
+}
+
+function renderLog(invalidRange) {
+  const hasEdits = displayed.some((session) => !session.sample);
+  $("edit-column").hidden = !hasEdits;
+  $("export").disabled = displayed.length === 0;
+  $("log").hidden = displayed.length === 0;
+  $("empty").hidden = displayed.length > 0;
+  $("empty").textContent = invalidRange ? "Correct the date range to view sessions." : "No sessions match this view. Clear the dates, include the samples, or add an observation.";
+  const sampleCount = displayed.filter((session) => session.sample).length;
+  $("log-summary").textContent = `${number.format(displayed.length)} ${displayed.length === 1 ? "session" : "sessions"} shown · ${number.format(sampleCount)} fictional`;
+
+  $("rows").replaceChildren(...displayed.map((session) => {
+    const row = document.createElement("tr");
+    const { date, stop, minutes, boardings, buses, sample, key } = session;
+    for (const text of [formatDate(date), stopNames[stop], number.format(minutes), number.format(boardings), number.format(buses), buses ? rate.format(boardings / buses) : "— No buses"]) {
+      row.insertCell().textContent = text;
+    }
+    row.cells[1].className = `dot ${stop}`;
+    if (!buses) row.cells[5].className = "na";
+    if (sample) {
+      const badge = document.createElement("span");
+      badge.className = "sample";
+      badge.textContent = "Sample";
+      row.cells[1].append(" ", badge);
+    }
+    if (hasEdits) {
+      const cell = row.insertCell();
+      cell.className = "edit-column";
+      if (!sample) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "edit";
+        button.textContent = "Edit";
+        button.setAttribute("aria-label", `Edit ${stopNames[stop]} session on ${formatDate(date)}`);
+        button.dataset.key = key;
+        cell.append(button);
+      }
+    }
+    return row;
+  }));
+}
+
+function render() {
+  const from = $("from").value;
+  const through = $("through").value;
+  const invalidDate = ["from", "through"].some((id) => {
+    const input = $(id);
+    return input.validity.badInput || (input.value && !validDate(input.value));
+  });
+  const reversed = Boolean(from && through && from > through);
+  const invalidRange = invalidDate || reversed;
+  $("range-error").hidden = !invalidRange;
+  $("range-error").textContent = invalidDate ? "Enter complete dates with a four-digit year."
+    : reversed ? "The through date must be on or after the from date." : "";
+  $("clear-dates").disabled = !(from || through || invalidDate);
+  $("range-summary").textContent = invalidRange ? "Date range needs correction"
+    : from && through ? `${formatDate(from)} – ${formatDate(through)}`
+      : from ? `From ${formatDate(from)} onward`
+        : through ? `Through ${formatDate(through)}` : "All dates";
+
+  const dataset = $("include-samples").checked ? [...samples, ...entries.values()] : [...entries.values()];
+  displayed = invalidRange ? [] : dataset.filter(({ date }) => (!from || date >= from) && (!through || date <= through))
+    .sort((a, b) => a.date.localeCompare(b.date));
+  renderComparison(stops.map(({ id }) => pool(displayed, id)));
+  renderLog(invalidRange);
+}
+
+function entryError(message) {
+  $("entry-error").textContent = message;
+  $("entry-error").hidden = !message;
+}
+
+function finishEditing() {
+  editing = null;
+  $("entry-title").textContent = "Add a session";
+  $("save-session").textContent = "Save session";
+  $("cancel-edit").hidden = true;
+  $("session-form").reset();
+  entryError("");
+}
+
+function focusEditButton(key) {
+  const button = [...$("rows").querySelectorAll("button[data-key]")].find((item) => item.dataset.key === key);
+  (button || $("date")).focus();
+}
+
+$("session-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  entryError("");
+  $("status").textContent = "";
+  const session = { date: $("date").value, stop: $("stop").value, minutes: $("minutes").valueAsNumber,
+    boardings: $("boardings").valueAsNumber, buses: $("buses").valueAsNumber };
+
+  if (!validSession(session)) {
+    const impossible = session.buses === 0 && session.boardings > 0;
+    entryError(impossible ? "Enter zero boardings when zero buses were observed."
+      : "Enter a four-digit year, positive minutes, and nonnegative whole counts.");
+    if (impossible) $("boardings").focus();
+    return;
+  }
+
+  const wasEditing = editing !== null;
+  const key = editing || prefix + (globalThis.crypto?.randomUUID?.() || Date.now() + "-" + Math.random().toString(36).slice(2));
+  let saved = true;
+  try {
+    localStorage.setItem(key, JSON.stringify(session));
+    unsaved.delete(key);
+  } catch {
+    unsaved.add(key);
+    storageWarning();
+    saved = false;
+  }
+  entries.set(key, { ...session, key });
+  finishEditing();
+  if (!wasEditing) {
+    $("date").value = session.date;
+    $("stop").value = session.stop;
+  }
+  render();
+  const message = saved ? (wasEditing ? "Session updated." : "Session saved.") : "Session kept for this visit only.";
+  $("status").textContent = displayed.some((row) => row.key === key)
+    ? message : message + " Clear or adjust the dates to see it.";
+  if (wasEditing) focusEditButton(key);
+  else $("minutes").focus();
+});
+
+$("rows").addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-key]");
+  if (!button) return;
+  const session = entries.get(button.dataset.key);
+  if (!session) return;
+  editing = session.key;
+  for (const id of fields) $(id).value = session[id];
+  $("entry-title").textContent = "Edit session";
+  $("save-session").textContent = "Save changes";
+  $("cancel-edit").hidden = false;
+  $("status").textContent = "";
+  entryError("");
+  $("date").focus();
+});
+
+$("cancel-edit").addEventListener("click", () => {
+  const key = editing;
+  finishEditing();
+  focusEditButton(key);
+});
+
+for (const id of ["from", "through", "include-samples"]) $(id).addEventListener("change", render);
+$("clear-dates").addEventListener("click", () => {
+  $("from").value = "";
+  $("through").value = "";
+  render();
+  $("from").focus();
+});
+
+$("export").addEventListener("click", () => {
+  const header = "date,stop,minutes observed,boardings,buses,source";
+  const lines = displayed.map(({ date, stop, minutes, boardings, buses, sample }) => {
+    return [date, stopNames[stop], minutes, boardings, buses, sample ? "fictional sample" : "manual entry"].join(",");
+  });
+  const url = URL.createObjectURL(new Blob([[header, ...lines].join("\r\n") + "\r\n"], { type: "text/csv;charset=utf-8" }));
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "bus-stop-counts.csv";
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+});
+
+window.addEventListener("storage", (event) => {
+  if (event.key === null || event.key.startsWith(prefix)) {
+    loadEntries();
+    render();
+  }
+});
+
+loadEntries();
+render();
+</script>
+</body>
+</html>

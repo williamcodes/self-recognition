@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#19352d">
+  <title>Arrival Planner · Museum Education Desk</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="planner.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip">Skip to planner</a>
+  <header class="topbar">
+    <div class="top-inner">
+      <div class="identity">
+        <span class="brand-mark" data-icon="museum"></span>
+        <div><strong>Museum Education</strong><span>Front desk</span></div>
+      </div>
+      <span class="save-status" id="save-status" role="status"></span>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="page-heading">
+      <div class="architecture" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="hero-content">
+        <h1 id="page-heading">Arrival planner</h1>
+        <p>Plan group visits and prepare the front-desk schedule.</p>
+      </div>
+      <button id="print-button" class="button primary"><span data-icon="printer"></span>Print schedule</button>
+    </section>
+    <div id="overview" class="overview" aria-label="Plan overview"></div>
+    <div class="workspace">
+      <section class="panel arrivals" aria-labelledby="arrivals-heading">
+        <div class="panel-head">
+          <div><h2 id="arrivals-heading">Arrivals</h2><p>Bookings and subgroups</p></div>
+          <button id="add-group" class="button secondary"><span data-icon="plus"></span>Add group</button>
+        </div>
+        <div id="arrivals-list" class="arrivals-list"></div>
+      </section>
+      <section class="panel schedule" aria-labelledby="schedule-heading">
+        <div class="panel-head">
+          <div><h2 id="schedule-heading">Space schedule</h2><p>Choose a slot to assign or move a subgroup.</p></div>
+          <button id="add-slot" class="button secondary"><span data-icon="plus"></span>Assign slot</button>
+        </div>
+        <div id="board"></div>
+        <div id="checks" aria-live="polite"></div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="editor" aria-labelledby="editor-title">
+    <form id="editor-form">
+      <div class="modal-head">
+        <h2 id="editor-title"></h2>
+        <button type="button" class="icon-button" data-action="close" aria-label="Close dialog"><span data-icon="close"></span></button>
+      </div>
+      <div id="editor-fields"></div>
+      <div class="modal-actions">
+        <div id="editor-extra"></div>
+        <button type="button" class="button secondary" data-action="close">Cancel</button>
+        <button type="submit" class="button primary" id="editor-submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+  <section id="print-sheet" aria-label="Front-desk print schedule"></section>
+</body>
+</html>

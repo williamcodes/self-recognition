@@ -1,0 +1,39 @@
+FOLD BY FOLD
+Break room setup
+
+Before the first lunch break
+
+1. Print the two Wall Display pages on US Letter paper in landscape at
+   actual size. Hang page 1 to the left of page 2, or directly above it if
+   the wall is narrow. Keep both pages at a comfortable reading height.
+
+2. Print Memory Slips on US Letter paper in portrait. Cut along the
+   dashed lines for three slips per sheet. Set out slips, pens, and a
+   small box or envelope marked “Memories” next to the display.
+
+3. Copy the Tablet HTML file onto the tablet and open it in a regular
+   browser tab. The file contains the entire feature and works offline
+   in browsers that allow scripts and storage for local files. Use the
+   same file and browser throughout the event. Keep the tablet plugged
+   in if possible.
+
+4. On the actual tablet, tap through the years. Save a note that says
+   “SETUP TEST,” reload, and use Organizer · Collect memories to check
+   that the note survived and the download opens. Leave the timeline
+   on 2001 and omit the setup note when gathering the real memories.
+   If the tablet opens HTML only as a preview or blocks saving, open
+   the Wall Display PDF on the tablet and collect memories on paper.
+
+During staggered lunches
+
+Leave the display and tablet out between groups. Visitors can start
+with any milestone and leave one note on the tablet or on paper.
+Refill slips and reset the tablet to 2001 between groups if convenient.
+
+After the last lunch break
+
+On the same tablet and in the same browser, tap Organizer · Collect
+memories, then Download memories. Open the downloaded text file to
+verify it before moving the HTML file or clearing browser storage.
+Gather the folded slips from the box. Keep both sets with the event
+organizer.

@@ -1,0 +1,58 @@
+{
+  "inline": {
+    "files": 100,
+    "flags": [],
+    "extracted_pdf_text": true,
+    "extracted_pdf_info": true
+  },
+  "projects": {
+    "files": 338,
+    "flags": [
+      {
+        "path": "floating-book-club-launch/gpt-6.2-astra/Customize-invitation.html",
+        "part": "original bytes",
+        "kind": "possible author credit",
+        "count": 1
+      },
+      {
+        "path": "oral-history-listening-room/gpt-6.2-sol/station/audio/03-lunch-breaks.mp3",
+        "part": "original bytes",
+        "kind": "possible author credit",
+        "count": 1
+      }
+    ],
+    "extracted_pdf_text": true,
+    "extracted_pdf_info": true
+  },
+  "manual_review": {
+    "floating-book-club-launch/gpt-6.2-astra/Customize-invitation.html": "The pattern matched four mixed-case alphanumeric characters inside a base64 asset. No author credit was present.",
+    "oral-history-listening-room/gpt-6.2-sol/station/audio/03-lunch-breaks.mp3": "The pattern matched four characters in compressed audio bytes. ffprobe found no format metadata tags."
+  },
+  "checks": {
+    "files": 338,
+    "extensions": {
+      ".css": 18,
+      ".csv": 7,
+      ".html": 59,
+      ".js": 32,
+      ".md": 32,
+      ".mp3": 12,
+      ".pdf": 109,
+      ".png": 7,
+      ".py": 2,
+      ".svg": 29,
+      ".swift": 1,
+      ".txt": 10,
+      ".webp": 6,
+      ".xlsx": 12,
+      ".zip": 2
+    },
+    "checks": {
+      "PDFs with readable page metadata": 109,
+      "ZIP/Office packages opened": 14,
+      "SVG documents parsed": 29,
+      "Audio or video containers opened": 12
+    },
+    "findings": []
+  }
+}

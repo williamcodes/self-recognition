@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lawn Bowls League · Scorebook</title>
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #f4f1e8;
+    --surface: #fffcf6;
+    --ink: #182d24;
+    --muted: #526158;
+    --line: #dedfd4;
+    --green: #194b36;
+    --green-dark: #15382b;
+    --green-soft: #e9efe5;
+    --gold: #ead399;
+    --pending: #77521b;
+    --pending-bg: #f8ecd1;
+    --error: #922c21;
+    --serif: Georgia, 'Times New Roman', serif;
+    font-family: system-ui, -apple-system, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.5;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; }
+  h1, h2, p { margin: 0; }
+  button, input { font: inherit; }
+  button {
+    cursor: pointer;
+    touch-action: manipulation;
+    transition: background-color 160ms ease, border-color 160ms ease;
+  }
+  :focus-visible { outline: 3px solid #9a5a10; outline-offset: 3px; }
+  [hidden] { display: none !important; }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .skip-link {
+    position: absolute;
+    z-index: 2;
+    top: .5rem;
+    left: .5rem;
+    padding: .65rem 1rem;
+    background: var(--surface);
+    color: var(--ink);
+    transform: translateY(-150%);
+  }
+  .skip-link:focus { transform: none; }
+
+  .wrap { width: min(100% - 5rem, 77.5rem); margin-inline: auto; }
+  .masthead { border-bottom: 1px solid var(--line); }
+  .masthead .wrap {
+    min-height: 4.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .identity {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    font-size: .8rem;
+    font-weight: 750;
+    letter-spacing: .095em;
+    text-transform: uppercase;
+  }
+  .mark {
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    background: var(--green);
+    color: var(--gold);
+  }
+  .mark::before {
+    content: '';
+    width: 1.06rem;
+    height: 1.06rem;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 3px var(--green), inset 0 0 0 4px currentColor;
+  }
+  .offline { color: var(--muted); font-size: .83rem; white-space: nowrap; }
+  .offline::before {
+    content: '';
+    display: inline-block;
+    width: .45rem;
+    height: .45rem;
+    margin-right: .48rem;
+    border-radius: 50%;
+    vertical-align: .09em;
+    background: #427651;
+  }
+
+  main { padding-block: 2rem 2.5rem; }
+  .hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: grid;
+    align-content: center;
+    min-height: 12.25rem;
+    padding: 2rem 2.5rem;
+    border-radius: 1.05rem;
+    background: var(--green-dark);
+    color: #fcf7e9;
+  }
+  .hero h1 {
+    font: 400 clamp(2.65rem, 6.2vw, 4.8rem)/1 var(--serif);
+    letter-spacing: -.055em;
+    max-width: 12ch;
+  }
+  .hero p { margin-top: .85rem; color: #dce8d9; font-size: 1rem; }
+  .green-art {
+    position: absolute;
+    z-index: -1;
+    inset: 0 0 0 50%;
+    background:
+      repeating-linear-gradient(146deg, transparent 0 47px, #bdd4a312 48px 49px),
+      linear-gradient(98deg, var(--green-dark), #28593f);
+    mask-image: linear-gradient(to right, transparent, #000 34%);
+    pointer-events: none;
+  }
+  .rink {
+    position: absolute;
+    top: 50%;
+    right: 13%;
+    width: 18rem;
+    aspect-ratio: 1;
+    transform: translateY(-50%);
+    border: 1px solid #e8d6a44a;
+    border-radius: 50%;
+    background: repeating-radial-gradient(circle, transparent 0 1.48rem, #e8d6a44a 1.49rem 1.53rem, transparent 1.55rem 2.12rem);
+  }
+  .bowl, .jack {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: .3rem .4rem .7rem #10271f70;
+  }
+  .bowl {
+    width: 2.55rem;
+    aspect-ratio: 1;
+    background: #1c392f;
+    border: 1px solid #a5b897;
+    display: grid;
+    place-items: center;
+  }
+  .bowl::before {
+    content: '';
+    width: 43%;
+    aspect-ratio: 1;
+    border: 1px solid #c5d2ac;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #1c392f, 0 0 0 4px #c5d2ac88;
+  }
+  .bowl.one { top: 27%; left: 26%; }
+  .bowl.two { top: 49%; right: 20%; background: #b48a51; }
+  .bowl.two::before { box-shadow: 0 0 0 3px #b48a51, 0 0 0 4px #efe0be88; border-color: #f2e2ba; }
+  .bowl.three { bottom: 20%; left: 36%; }
+  .jack { width: .86rem; aspect-ratio: 1; left: 48%; top: 48%; background: #f4e5bd; }
+
+  .dashboard {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 1.4rem;
+    margin-top: 1.5rem;
+  }
+  .panel {
+    min-width: 0;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: .95rem;
+    box-shadow: 0 2px 5px #172c2310;
+  }
+  .panel-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: .65rem 1rem;
+    padding: 1.35rem 1.45rem 1.15rem;
+  }
+  h2 { font: 400 2.02rem/1.1 var(--serif); letter-spacing: -.035em; }
+  .panel-head p { margin-top: .3rem; color: var(--muted); font-size: .86rem; }
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    min-height: 2.75rem;
+    padding: .52rem .85rem;
+    border: 1px solid var(--line);
+    border-radius: .48rem;
+    background: var(--surface);
+    color: var(--green);
+    font-size: .85rem;
+    font-weight: 700;
+  }
+  .button:hover { background: var(--green-soft); border-color: #aab9aa; }
+  .button:active { background: #dbe6d8; }
+  .primary { background: var(--green); border-color: var(--green); color: #fff; }
+  .primary:hover, .primary:active { background: var(--green-dark); border-color: var(--green-dark); }
+  .printer {
+    position: relative;
+    display: inline-block;
+    width: .9rem;
+    height: .6rem;
+    border: 1px solid currentColor;
+    border-radius: 2px;
+  }
+  .printer::before, .printer::after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    height: .35rem;
+    border: 1px solid currentColor;
+    background: var(--surface);
+  }
+  .printer::before { bottom: calc(100% + 1px); border-bottom: 0; }
+  .printer::after { bottom: -.22rem; }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+  .table .rank { width: 9%; }
+  .table .team { width: 22%; }
+  .table .number { width: 8.625%; }
+  .table tbody th, .table thead th:nth-child(2) { text-align: left; padding-left: .4rem; }
+  .table thead { background: #eef0e8; color: #42554a; }
+  .table thead th {
+    padding: .65rem .12rem;
+    font-size: .73rem;
+    letter-spacing: .025em;
+  }
+  .table abbr { text-decoration: none; }
+  .table td, .table tbody th {
+    height: 3.25rem;
+    padding: .55rem .12rem;
+    border-bottom: 1px solid var(--line);
+    overflow-wrap: anywhere;
+    font-size: .92rem;
+  }
+  .table tbody th { font-weight: 680; }
+  .table tbody td:first-child { color: var(--muted); font-size: .84rem; }
+  .table tbody tr:hover { background: #f6f7ef; }
+  .table td:last-child { color: var(--green); font-weight: 750; background: #edf2e980; }
+  .positive { color: var(--green); }
+  .table-notes {
+    padding: .95rem 1.45rem 1.1rem;
+    color: var(--muted);
+    font-size: .8rem;
+  }
+  .table-notes p + p { margin-top: .4rem; }
+
+  .fixtures .panel-head { padding-bottom: .95rem; }
+  .round { padding-inline: 1.35rem; }
+  .round + .round { margin-top: .15rem; }
+  .round h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+    margin: 0;
+    padding: .43rem .65rem;
+    border-radius: .35rem;
+    background: #eef0e8;
+    color: #354e41;
+    font-size: .72rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  .round-count { font-weight: 550; letter-spacing: 0; text-transform: none; font-size: .75rem; }
+  .match-list { margin: 0; padding: 0; list-style: none; }
+  .match { border-bottom: 1px solid var(--line); }
+  .match:last-child { border: 0; }
+  .match-button {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(4.8rem, auto) minmax(0, 1fr) 1rem;
+    align-items: center;
+    gap: .45rem;
+    width: 100%;
+    min-height: 2.85rem;
+    padding: .3rem .35rem .3rem .65rem;
+    border: 0;
+    border-radius: .34rem;
+    background: transparent;
+    color: var(--ink);
+    font-size: .87rem;
+    font-weight: 620;
+    text-align: left;
+  }
+  .match-button:hover { background: var(--green-soft); }
+  .match-button:active { background: #dbe6d8; }
+  .match-button .away { text-align: right; padding-right: .22rem; }
+  .score {
+    justify-self: center;
+    max-width: 8rem;
+    padding: .15rem .42rem;
+    border-radius: .31rem;
+    background: var(--green-soft);
+    color: var(--green);
+    font-size: .84rem;
+    font-variant-numeric: tabular-nums;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+  .pending { background: var(--pending-bg); color: var(--pending); font-size: .73rem; }
+  .chevron {
+    width: .4rem;
+    height: .4rem;
+    justify-self: center;
+    border-top: 1.5px solid var(--muted);
+    border-right: 1.5px solid var(--muted);
+    transform: rotate(45deg);
+  }
+  .fixture-foot {
+    min-height: 3.3rem;
+    margin: .35rem 1.35rem 0;
+    padding: .78rem .15rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .8rem;
+  }
+  .storage-warning {
+    margin-top: 1rem;
+    padding: .65rem .9rem;
+    border-radius: .45rem;
+    background: var(--pending-bg);
+    color: var(--pending);
+    font-size: .9rem;
+  }
+
+  dialog {
+    width: min(100% - 2rem, 30rem);
+    max-height: calc(100% - 2rem);
+    padding: 1.55rem;
+    border: 1px solid var(--line);
+    border-radius: .9rem;
+    background: var(--surface);
+    color: var(--ink);
+    box-shadow: 0 1rem 3rem #13271d35;
+  }
+  dialog::backdrop { background: #152d2380; }
+  .editor-round {
+    margin-bottom: .45rem;
+    color: var(--muted);
+    font-size: .76rem;
+    font-weight: 750;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+  .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.25rem; }
+  .fields label { display: grid; gap: .4rem; font-size: .9rem; font-weight: 660; }
+  .fields input {
+    width: 100%;
+    min-height: 2.8rem;
+    padding: .5rem .65rem;
+    border: 1px solid #aab6a8;
+    border-radius: .45rem;
+    background: #fff;
+    color: var(--ink);
+    font-size: 1rem;
+  }
+  .fields input[aria-invalid="true"] { border-color: var(--error); }
+  .hint, .error { margin-top: .85rem; font-size: .85rem; }
+  .hint { color: var(--muted); }
+  .error { color: var(--error); }
+  .dialog-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .55rem; margin-top: 1.3rem; }
+  .print-only { display: none; }
+
+  @media (max-width: 58rem) {
+    .wrap { width: calc(100% - 3rem); }
+    .dashboard { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 34rem) {
+    .wrap { width: calc(100% - 1.5rem); }
+    .masthead .wrap { min-height: 3.55rem; gap: .5rem; }
+    .identity { font-size: .67rem; letter-spacing: .065em; gap: .5rem; }
+    .offline { font-size: .74rem; }
+    main { padding-block: 1rem 1.4rem; }
+    .hero { padding: 1.35rem 1.05rem; min-height: 10rem; }
+    .hero p { font-size: .88rem; }
+    .green-art { opacity: .38; inset-inline-start: 40%; }
+    .rink { width: 13rem; right: -4.5rem; }
+    .dashboard { margin-top: .9rem; gap: .9rem; }
+    .panel-head { padding: .9rem .85rem .8rem; }
+    h2 { font-size: 1.75rem; }
+    .table thead th, .table tbody td:first-child { font-size: .72rem; }
+    .table td, .table tbody th { font-size: .79rem; height: 2.75rem; }
+    .table-notes { padding: .8rem .85rem; }
+    .round { padding-inline: .8rem; }
+    .fixture-foot { margin-inline: .8rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; }
+  }
+  @page { margin: 16mm; }
+  @media print {
+    :root, body { background: white; color: black; }
+    .masthead, .hero, .fixtures, .skip-link, .storage-warning, .print-button, dialog { display: none !important; }
+    .print-only { display: block; }
+    .wrap { width: 100%; }
+    main { padding: 0; }
+    .dashboard { display: block; margin-top: 1.1rem; }
+    .print-only h1 { font: 400 28pt/1.2 var(--serif); }
+    .panel { border: 0; border-radius: 0; background: white; box-shadow: none; }
+    .panel-head { padding: 0 0 .7rem; }
+    .panel-head p, .table td, .table tbody td:first-child, .table-notes { color: black; }
+    .table thead, .table td:last-child { color: black; background: none; }
+    .table thead th { border-top: 2px solid #222; border-bottom: 1px solid #222; }
+    .table td, .table tbody th { height: auto; padding-block: .6rem; border-color: #aaa; }
+    .table tr { break-inside: avoid; }
+    .table-notes { padding-inline: 0; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to scorebook</a>
+<header class="masthead">
+  <div class="wrap">
+    <div class="identity"><span class="mark" aria-hidden="true"></span>Lawn Bowls League</div>
+    <span class="offline">Offline scorebook</span>
+  </div>
+</header>
+<main id="main" class="wrap">
+  <div class="hero">
+    <h1>League scorebook</h1>
+    <p>6 teams <span aria-hidden="true">·</span> 2 rounds</p>
+    <div class="green-art" aria-hidden="true">
+      <div class="rink"><i class="bowl one"></i><i class="bowl two"></i><i class="bowl three"></i><i class="jack"></i></div>
+    </div>
+  </div>
+  <div class="print-only"><h1>Lawn Bowls League</h1></div>
+  <noscript><p class="storage-warning">Enable JavaScript in your browser to use the scorebook.</p></noscript>
+  <p id="storage-warning" class="storage-warning" role="alert" hidden></p>
+  <div class="dashboard">
+    <section class="panel standings" aria-labelledby="standings-title">
+      <header class="panel-head">
+        <div>
+          <h2 id="standings-title">League table</h2>
+          <p id="table-summary"></p>
+        </div>
+        <button type="button" id="print" class="button print-button"><span class="printer" aria-hidden="true"></span>Print table</button>
+      </header>
+      <table class="table" aria-labelledby="standings-title" aria-describedby="table-notes">
+        <colgroup><col class="rank"><col class="team"><col span="8" class="number"></colgroup>
+        <thead>
+          <tr>
+            <th scope="col"><span aria-hidden="true">#</span><span class="sr-only">Rank</span></th>
+            <th scope="col">Team</th>
+            <th scope="col"><abbr title="Played">P</abbr></th>
+            <th scope="col"><abbr title="Won">W</abbr></th>
+            <th scope="col"><abbr title="Drawn">D</abbr></th>
+            <th scope="col"><abbr title="Lost">L</abbr></th>
+            <th scope="col"><abbr title="Scores for">SF</abbr></th>
+            <th scope="col"><abbr title="Scores against">SA</abbr></th>
+            <th scope="col"><abbr title="Score difference">SD</abbr></th>
+            <th scope="col"><abbr title="Standings points">Pts</abbr></th>
+          </tr>
+        </thead>
+        <tbody id="league-rows"></tbody>
+      </table>
+      <div id="table-notes" class="table-notes">
+        <p>Win 2 points · Draw 1 point per team · Unplayed 0 points</p>
+        <p>Ranked by points, score difference, then scores for. Teams equal on all three share a rank.</p>
+        <p>P played · W won · D drawn · L lost · SF scores for · SA scores against · SD score difference</p>
+      </div>
+    </section>
+    <section class="panel fixtures" aria-labelledby="fixtures-title">
+      <header class="panel-head">
+        <div>
+          <h2 id="fixtures-title">Match results</h2>
+          <p>Select a match to enter or correct its score.</p>
+        </div>
+      </header>
+      <div id="rounds"></div>
+      <p class="fixture-foot" id="save-status" role="status">Scores are saved in this browser.</p>
+    </section>
+  </div>
+</main>
+
+<dialog id="editor" aria-labelledby="editor-title">
+  <form id="score-form" novalidate>
+    <p class="editor-round" id="editor-round"></p>
+    <h2 id="editor-title">Edit score</h2>
+    <div class="fields">
+      <label><span id="home-name"></span><input id="home-score" inputmode="numeric" autocomplete="off" aria-describedby="score-hint score-error" autofocus></label>
+      <label><span id="away-name"></span><input id="away-score" inputmode="numeric" autocomplete="off" aria-describedby="score-hint score-error"></label>
+    </div>
+    <p class="hint" id="score-hint">Enter two whole scores of zero or more. Leave both blank to mark the match unplayed.</p>
+    <p class="error" id="score-error" role="alert" hidden></p>
+    <div class="dialog-actions">
+      <button type="button" id="cancel" class="button">Cancel</button>
+      <button type="submit" class="button primary">Save result</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+  "use strict";
+
+  const teams = ["Cedar", "Fern", "Lark", "Moss", "Reed", "Wren"];
+  const fixtures = [
+    { id: "r1-cedar-fern", round: 1, home: "Cedar", away: "Fern", seed: [14, 9] },
+    { id: "r1-lark-moss", round: 1, home: "Lark", away: "Moss", seed: [11, 11] },
+    { id: "r1-reed-wren", round: 1, home: "Reed", away: "Wren", seed: [8, 13] },
+    { id: "r2-cedar-lark", round: 2, home: "Cedar", away: "Lark", seed: [10, 12] },
+    { id: "r2-fern-reed", round: 2, home: "Fern", away: "Reed", seed: [15, 10] },
+    { id: "r2-moss-wren", round: 2, home: "Moss", away: "Wren", seed: null }
+  ];
+  const storagePrefix = "lawn-bowls-league-scorebook-v1:";
+  const maxScore = Math.floor(Number.MAX_SAFE_INTEGER / fixtures.length);
+  const seeds = Object.fromEntries(fixtures.map(({ id, seed }) => [id, seed]));
+  const byId = id => document.getElementById(id);
+  const warning = byId("storage-warning");
+  const status = byId("save-status");
+  const leagueRows = byId("league-rows");
+  const rounds = byId("rounds");
+  const editor = byId("editor");
+  const scoreForm = byId("score-form");
+  const fields = [byId("home-score"), byId("away-score")];
+  const scoreError = byId("score-error");
+
+  let storageIssue = "";
+  let canWrite = true;
+  let results = readResults();
+  let activeFixture = null;
+
+  function validScore(score) {
+    return Number.isSafeInteger(score) && score >= 0 && score <= maxScore;
+  }
+
+  function readResults() {
+    const scores = { ...seeds };
+    try {
+      for (const { id } of fixtures) {
+        const raw = localStorage.getItem(storagePrefix + id);
+        if (raw === null) continue;
+        try {
+          const pair = JSON.parse(raw);
+          if (pair !== null && !(Array.isArray(pair) && pair.length === 2 && pair.every(validScore))) {
+            throw new Error("Invalid scores");
+          }
+          scores[id] = pair;
+        } catch {
+          storageIssue = "Some saved scores could not be read. Their starting scores are shown. Changes will last for this session only.";
+          canWrite = false;
+        }
+      }
+    } catch {
+      storageIssue = "Browser storage is unavailable. Scores entered here will last until you close or reload this page.";
+      canWrite = false;
+    }
+    return scores;
+  }
+
+  function sportingOrder(a, b) {
+    return b.points - a.points || b.difference - a.difference || b.for - a.for;
+  }
+
+  function calculateStandings(scores) {
+    const stats = Object.fromEntries(teams.map(team => [
+      team, { team, played: 0, won: 0, drawn: 0, lost: 0, for: 0, against: 0, difference: 0, points: 0 }
+    ]));
+
+    for (const { id, home, away } of fixtures) {
+      const pair = scores[id];
+      if (pair === null) continue;
+      const [homeScore, awayScore] = pair;
+      record(stats[home], homeScore, awayScore);
+      record(stats[away], awayScore, homeScore);
+    }
+
+    const ordered = Object.values(stats).sort((a, b) => sportingOrder(a, b) || a.team.localeCompare(b.team));
+    ordered.forEach((row, index) => {
+      const previous = ordered[index - 1];
+      row.rank = previous && sportingOrder(previous, row) === 0 ? previous.rank : index + 1;
+    });
+    return ordered;
+  }
+
+  function record(team, score, opponentScore) {
+    team.played += 1;
+    team.for += score;
+    team.against += opponentScore;
+    team.difference = team.for - team.against;
+    if (score > opponentScore) {
+      team.won += 1;
+      team.points += 2;
+    } else if (score === opponentScore) {
+      team.drawn += 1;
+      team.points += 1;
+    } else {
+      team.lost += 1;
+    }
+  }
+
+  function renderStandings() {
+    const standings = calculateStandings(results);
+    leagueRows.innerHTML = standings.map(row => {
+      const diff = row.difference > 0 ? "+" + row.difference : String(row.difference).replace("-", "−");
+      return `<tr>
+        <td>${row.rank}</td><th scope="row">${row.team}</th><td>${row.played}</td>
+        <td>${row.won}</td><td>${row.drawn}</td><td>${row.lost}</td><td>${row.for}</td>
+        <td>${row.against}</td><td class="${row.difference > 0 ? 'positive' : ''}">${diff}</td><td>${row.points}</td>
+      </tr>`;
+    }).join("");
+    const played = fixtures.filter(({ id }) => results[id] !== null).length;
+    byId("table-summary").textContent = `${played} of ${fixtures.length} matches played`;
+  }
+
+  function renderFixtures() {
+    const roundNumbers = [...new Set(fixtures.map(fixture => fixture.round))];
+    rounds.innerHTML = roundNumbers.map(round => {
+      const matches = fixtures.filter(fixture => fixture.round === round);
+      const played = matches.filter(({ id }) => results[id] !== null).length;
+      const items = matches.map(({ id, home, away }) => {
+        const score = results[id];
+        const displayScore = score ? score.join(" – ") : "Unplayed";
+        const description = score
+          ? `Edit score, round ${round}, ${home} ${score[0]}, ${away} ${score[1]}`
+          : `Enter score, round ${round}, ${home} versus ${away}, unplayed`;
+        return `<li class="match"><button class="match-button" type="button" data-id="${id}" aria-label="${description}">
+          <span>${home}</span><span class="score ${score ? '' : 'pending'}">${displayScore}</span>
+          <span class="away">${away}</span><span class="chevron" aria-hidden="true"></span>
+        </button></li>`;
+      }).join("");
+
+      return `<section class="round" aria-labelledby="round-${round}"><h3 id="round-${round}">
+        Round ${round}<span class="round-count">${played} / ${matches.length} played</span></h3>
+        <ul class="match-list">${items}</ul></section>`;
+    }).join("");
+  }
+
+  function showStorageIssue() {
+    warning.hidden = !storageIssue;
+    warning.textContent = storageIssue;
+  }
+
+  function clearError() {
+    scoreError.hidden = true;
+    scoreError.textContent = "";
+    fields.forEach(field => field.removeAttribute("aria-invalid"));
+  }
+
+  function fieldError(message, invalidFields) {
+    scoreError.textContent = message;
+    scoreError.hidden = false;
+    invalidFields.forEach(field => field.setAttribute("aria-invalid", "true"));
+    invalidFields[0].focus();
+  }
+
+  rounds.addEventListener("click", event => {
+    const button = event.target.closest("button[data-id]");
+    if (!button) return;
+    activeFixture = fixtures.find(fixture => fixture.id === button.dataset.id);
+    const { id, home, away, round } = activeFixture;
+    const score = results[id];
+    byId("editor-round").textContent = `Round ${round}`;
+    byId("editor-title").textContent = score ? "Edit score" : "Enter score";
+    byId("home-name").textContent = home;
+    byId("away-name").textContent = away;
+    fields.forEach((field, index) => { field.value = score ? score[index] : ""; });
+    clearError();
+    editor.showModal();
+    fields[0].select();
+  });
+
+  scoreForm.addEventListener("submit", event => {
+    event.preventDefault();
+    clearError();
+    const entries = fields.map(field => field.value.trim());
+    const blanks = entries.map(entry => entry === "");
+    let score = null;
+    if (blanks.some(Boolean) && !blanks.every(Boolean)) {
+      fieldError("Enter both scores, or leave both blank.", fields.filter((_, index) => blanks[index]));
+      return;
+    }
+    if (!blanks.every(Boolean)) {
+      score = entries.map(Number);
+      const invalid = fields.filter((_, index) => !/^\d+$/.test(entries[index]) || !validScore(score[index]));
+      if (invalid.length) {
+        fieldError(`Enter whole numbers from 0 to ${maxScore.toLocaleString()}.`, invalid);
+        return;
+      }
+    }
+
+    const { id, home, away } = activeFixture;
+    // Each fixture has its own key so simultaneous edits to different fixtures are retained.
+    if (canWrite) results = readResults();
+    results[id] = score;
+    let saved = false;
+    if (canWrite) {
+      try {
+        localStorage.setItem(storagePrefix + id, JSON.stringify(score));
+        storageIssue = "";
+        saved = true;
+      } catch {
+        storageIssue = "The browser could not save this change. It is visible while this page remains open.";
+        canWrite = false;
+      }
+    }
+    renderStandings();
+    renderFixtures();
+    showStorageIssue();
+    editor.close();
+    const fixtureName = `${home} vs ${away}`;
+    const change = score ? `${fixtureName} score updated` : `${fixtureName} marked unplayed`;
+    status.textContent = saved ? `${change}. Saved in this browser.` : `${change} for this session.`;
+  });
+
+  byId("cancel").addEventListener("click", () => editor.close());
+  editor.addEventListener("close", () => {
+    if (editor.open || !activeFixture) return;
+    rounds.querySelector(`[data-id="${activeFixture.id}"]`).focus();
+    activeFixture = null;
+  });
+  byId("print").addEventListener("click", () => window.print());
+
+  window.addEventListener("storage", event => {
+    if (!canWrite || (event.key !== null && !event.key.startsWith(storagePrefix))) return;
+    const latest = readResults();
+    showStorageIssue();
+    if (!canWrite) return;
+    const focusedId = document.activeElement.dataset.id;
+    results = latest;
+    renderStandings();
+    renderFixtures();
+    if (focusedId) rounds.querySelector(`[data-id="${focusedId}"]`)?.focus();
+    status.textContent = "Scores refreshed from this browser.";
+  });
+
+  renderStandings();
+  renderFixtures();
+  showStorageIssue();
+  if (!canWrite) status.textContent = "Scores are available for this session.";
+</script>
+</body>
+</html>

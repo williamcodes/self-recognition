@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saturday Market Planner</title>
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #f8f3e9;
+    --surface: #fffdf8;
+    --ink: #2e211d;
+    --muted: #67534b;
+    --line: #ddcfc1;
+    --berry: #7e343f;
+    --blush: #f4e2df;
+    --sage: #e5eadb;
+    --green: #33482e;
+    --serif: Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 1rem/1.55 system-ui, sans-serif;
+  }
+  h1, h2, h3, p { margin: 0; }
+  h1, h2 { font-family: var(--serif); font-weight: 400; line-height: 1.05; }
+  h1 { font-size: clamp(2.65rem, 6vw, 4.65rem); letter-spacing: -.055em; }
+  h2 { font-size: clamp(1.85rem, 3vw, 2.6rem); letter-spacing: -.035em; }
+  h3 { font-size: 1rem; }
+  .wrap { width: min(1080px, calc(100% - 48px)); margin-inline: auto; }
+  header { border-top: 7px solid var(--berry); border-bottom: 1px solid var(--line); }
+  .masthead { padding-block: 40px 32px; display: flex; gap: 20px; align-items: end; justify-content: space-between; }
+  .masthead p { margin-top: 10px; color: var(--muted); }
+  main { padding-block: 34px 52px; }
+  .section-block, #plan-results:not([hidden]) + section, main > section + section { margin-top: 44px; }
+  .section-intro { margin-block: 8px 16px; color: var(--muted); max-width: 75ch; }
+  .grid, .summary-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .card, .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+  .card { padding: clamp(15px, 2.5vw, 25px); }
+  .panel { padding: clamp(14px, 2.5vw, 24px); }
+  .starting { color: #fffaf3; background: var(--berry); border-color: var(--berry); }
+  .alternate { background: var(--sage); border-color: #c8d2bc; color: var(--green); }
+  .eyebrow {
+    font-size: .76rem;
+    font-weight: 750;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+  }
+  .mix { display: grid; grid-template-columns: 1fr 1fr; margin-block: 8px 12px; gap: 12px; }
+  .mix strong { display: block; font: 400 clamp(2.55rem, 5vw, 4.35rem)/1 var(--serif); }
+  .mix small { display: block; font-size: .83rem; }
+  .capacity { font-size: .87rem; }
+  .metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    margin: 12px 0 0;
+    padding-top: 10px;
+    border-top: 1px solid currentColor;
+    font-variant-numeric: tabular-nums;
+  }
+  dt { font-size: .8rem; }
+  dd { margin: 0; font-weight: 730; }
+  .callout {
+    margin-top: 14px;
+    padding: 12px 16px;
+    border-left: 3px solid var(--berry);
+    background: var(--blush);
+  }
+  .toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; }
+  .table-toolbar { justify-content: space-between; margin-bottom: 14px; }
+  .table-toolbar > div { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  button, select, input { font: inherit; color: var(--ink); }
+  button, select {
+    background: var(--surface);
+    border: 1px solid #a3887e;
+    border-radius: 7px;
+    min-height: 44px;
+    padding: 7px 12px;
+  }
+  button { flex-shrink: 0; cursor: pointer; }
+  button:hover, select:hover { background: var(--blush); }
+  button:disabled { opacity: .55; cursor: default; }
+  :focus-visible { outline: 3px solid #225b85; outline-offset: 2px; }
+  input[type="number"] {
+    background: var(--surface);
+    border: 1px solid #a3887e;
+    border-radius: 6px;
+    min-height: 44px;
+    padding: 5px 8px;
+    width: 100%;
+    font-variant-numeric: tabular-nums;
+  }
+  [aria-invalid="true"] { outline: 2px solid var(--berry); outline-offset: -1px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .91rem;
+    font-variant-numeric: tabular-nums;
+  }
+  caption { text-align: left; color: var(--muted); font-size: .85rem; margin-bottom: 6px; }
+  th, td { text-align: right; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  thead th { font-size: .8rem; line-height: 1.2; }
+  .col-group { text-align: center; background: var(--blush); }
+  .col-group + .col-group { background: var(--sage); }
+  .ranked td:first-child { font-weight: 750; }
+  tbody tr.leader { background: var(--blush); }
+  tbody tr:hover { background: #f6eee3; }
+  .history-name { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; }
+  .big-stat { font: 400 2.15rem/1.1 var(--serif); margin-top: 8px; }
+  .big-stat span { font: .86rem system-ui, sans-serif; color: var(--muted); }
+  .details-line { color: var(--muted); font-size: .87rem; margin-top: 8px; }
+  .history-table { table-layout: fixed; }
+  .history-table col:first-child { width: 13%; }
+  .history-table col:last-child { width: 15%; }
+  .history-table td { vertical-align: top; }
+  .history-table input { max-width: 106px; font-size: 1rem; appearance: textfield; }
+  .history-table input::-webkit-inner-spin-button { appearance: none; }
+  .history-table button { max-width: 100%; min-width: 44px; padding-inline: 8px; }
+  .flag { display: block; color: var(--berry); font-size: .73rem; font-weight: 730; }
+  .settings { border: 0; padding: 0; margin: 0 0 20px; min-width: 0; }
+  .settings legend { padding: 0; font-weight: 730; margin-bottom: 8px; }
+  .fields { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px 16px; }
+  .fields label { display: grid; align-content: end; gap: 4px; font-size: .88rem; }
+  .settings-help, .panel-note { color: var(--muted); font-size: .87rem; margin: 8px 0 0; }
+  .input-actions { margin-top: 10px; }
+  .total { margin-top: 10px; font-weight: 650; }
+  .notice { margin-bottom: 10px; }
+  .error { color: var(--berry); font-weight: 730; }
+  .status { margin-top: 8px; min-height: 1.5em; }
+  .method { padding-top: 16px; border-top: 1px solid var(--line); }
+  .method p { margin-top: 8px; max-width: 85ch; }
+  [hidden] { display: none !important; }
+  @media (max-width: 650px) {
+    .wrap { width: calc(100% - 26px); }
+    .masthead { display: block; padding-block: 24px 19px; }
+    .masthead button { margin-top: 10px; }
+    main { padding-block: 24px 36px; }
+    .section-block, #plan-results:not([hidden]) + section, main > section + section { margin-top: 34px; }
+    .grid, .summary-grid { gap: 8px; }
+    .fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    th, td { padding: 7px 4px; }
+    .history-table col:last-child { width: 52px; }
+    .history-table .remove-text { font-size: 0; }
+    .history-table .remove-text::after { content: "×"; font-size: 1.1rem; }
+    .history-table td input { padding-inline: 4px; }
+    .table-toolbar { align-items: start; }
+  }
+  @media (max-width: 385px) {
+    .ranked { font-size: .77rem; }
+    .ranked thead th { font-size: .72rem; }
+    .mix { gap: 6px; }
+    .card { padding: 12px; }
+  }
+  @media print {
+    body { background: white; color: black; font-size: .85rem; }
+    .wrap { width: 100%; }
+    .masthead, main { padding-block: 12px; }
+    .section-block, #plan-results:not([hidden]) + section, main > section + section { margin-top: 22px; }
+    .no-print, .history-table thead tr:first-child th:last-child, .history-table td:last-child { display: none !important; }
+    .history-table col:last-child { width: 0; }
+    .card, .callout { break-inside: avoid; }
+    .starting { color: black; background: white; border-color: var(--berry); }
+    .panel { padding: 9px; }
+    input[type="number"] { min-height: 0; border: 0; appearance: textfield; }
+    input::-webkit-inner-spin-button { appearance: none; }
+    th, td { padding: 4px; }
+    tr { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap masthead">
+    <div>
+      <h1>Saturday Market Planner</h1>
+      <p>Batch planning for muffins and scones</p>
+    </div>
+    <button id="print" class="no-print" type="button">Print plan</button>
+  </div>
+</header>
+<main class="wrap">
+  <noscript><p class="notice error">Enable JavaScript in your browser to calculate batch mixes.</p></noscript>
+  <p id="calculation-error" class="notice error" role="alert" hidden></p>
+  <div id="plan-results">
+    <section aria-labelledby="plan-title">
+      <h2 id="plan-title">What to bake</h2>
+      <p class="section-intro" id="plan-context"></p>
+      <div class="grid">
+        <article id="baseline-card" class="card starting"></article>
+        <article id="uplift-card" class="card alternate"></article>
+      </div>
+      <p id="tradeoff" class="callout"></p>
+    </section>
+
+    <section class="section-block" aria-labelledby="compare-title">
+      <h2 id="compare-title">Compare batch mixes</h2>
+      <p class="section-intro">Contribution is sales revenue minus the cost of every item baked. Waste counts the units left over.</p>
+      <div class="panel">
+        <div class="toolbar table-toolbar no-print">
+          <div>
+            <label for="show-mixes">Show</label>
+            <select id="show-mixes">
+              <option value="top">Top 8 mixes</option>
+              <option value="full">Fullest loads</option>
+              <option value="all">All feasible mixes</option>
+            </select>
+          </div>
+          <div>
+            <label for="rank-mixes">Rank by</label>
+            <select id="rank-mixes">
+              <option value="baseline">Observed sales</option>
+              <option value="uplift">Sellout uplift</option>
+            </select>
+          </div>
+        </div>
+        <table class="ranked">
+          <caption id="mix-caption"></caption>
+          <colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup>
+          <thead>
+            <tr>
+              <th scope="col" rowspan="2">Muffins</th>
+              <th scope="col" rowspan="2">Scones</th>
+              <th scope="colgroup" colspan="2" class="col-group">Observed sales</th>
+              <th scope="colgroup" colspan="2" class="col-group">Sellout uplift</th>
+            </tr>
+            <tr>
+              <th scope="col" id="baseline-sort">Contrib.</th><th scope="col">Waste</th>
+              <th scope="col" id="uplift-sort">Contrib.</th><th scope="col">Waste</th>
+            </tr>
+          </thead>
+          <tbody id="mixes"></tbody>
+        </table>
+        <p class="panel-note">Ranks use unrounded averages. Ties favor fewer leftovers, then fewer total items, then fewer muffins.</p>
+      </div>
+    </section>
+  </div>
+
+  <section aria-labelledby="history-title">
+    <h2 id="history-title">Market history</h2>
+    <p class="section-intro">The planner starts with six fictional Saturdays. A sellout tells you demand reached at least the number baked. Keep a tally of requests after a sellout to inform future batches.</p>
+    <div id="history-results">
+      <div id="history-cards" class="summary-grid"></div>
+      <p class="total" id="history-total"></p>
+      <p class="panel-note">Historical contribution uses the unit prices and costs entered below for every market.</p>
+    </div>
+    <div class="panel" style="margin-top: 14px">
+      <table class="history-table">
+        <caption>Enter the number baked and sold at each market, oldest to newest.</caption>
+        <col><colgroup span="2"></colgroup><colgroup span="2"></colgroup><col>
+        <thead>
+          <tr>
+            <th rowspan="2" scope="col">Market</th>
+            <th colspan="2" scope="colgroup" class="col-group">Muffins</th>
+            <th colspan="2" scope="colgroup" class="col-group">Scones</th>
+            <th rowspan="2" scope="col"><span class="remove-text">Remove</span></th>
+          </tr>
+          <tr>
+            <th scope="col">Baked</th><th scope="col">Sold</th>
+            <th scope="col">Baked</th><th scope="col">Sold</th>
+          </tr>
+        </thead>
+        <tbody id="history"></tbody>
+      </table>
+      <p id="history-error" class="panel-note error" role="alert" hidden></p>
+      <div class="toolbar input-actions no-print">
+        <button id="add-market" type="button">Add market</button>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="settings-title">
+    <h2 id="settings-title">Planning inputs</h2>
+    <p class="section-intro">Each product is baked in batches of eight. Unsold items earn zero revenue.</p>
+    <div class="panel">
+      <fieldset class="settings">
+        <legend>Capacity and unit economics</legend>
+        <div class="fields">
+          <label>Capacity (items)<input id="capacity" type="number" min="0" max="400" step="1" required></label>
+          <label>Muffin price ($)<input id="muffin-price" type="number" min="0" max="9999.99" step="0.01" required></label>
+          <label>Muffin cost ($)<input id="muffin-cost" type="number" min="0" max="9999.99" step="0.01" required></label>
+          <label>Scone price ($)<input id="scone-price" type="number" min="0" max="9999.99" step="0.01" required></label>
+          <label>Scone cost ($)<input id="scone-cost" type="number" min="0" max="9999.99" step="0.01" required></label>
+        </div>
+      </fieldset>
+      <fieldset class="settings">
+        <legend>Sellout uplift</legend>
+        <div class="fields">
+          <label>Extra muffins per sellout<input id="muffin-uplift" type="number" min="0" max="9999" step="1" required aria-describedby="uplift-help"></label>
+          <label>Extra scones per sellout<input id="scone-uplift" type="number" min="0" max="9999" step="1" required aria-describedby="uplift-help"></label>
+        </div>
+        <p class="settings-help" id="uplift-help">The starting assumption adds one batch of demand for the specific product on each day it sold out. Change the values to see when the preferred mix shifts.</p>
+      </fieldset>
+      <p id="settings-error" class="panel-note error" role="alert" hidden></p>
+      <div class="toolbar no-print">
+        <button id="save-plan" type="button">Save data file</button>
+        <button id="open-plan" type="button">Open data file</button>
+        <input type="file" id="plan-file" accept=".json,application/json" hidden>
+      </div>
+      <p id="save-status" class="panel-note status no-print" role="status">Save a data file to carry your inputs to another browser or device.</p>
+    </div>
+  </section>
+
+  <section class="method" aria-labelledby="method-title">
+    <h2 id="method-title">How the planner scores a mix</h2>
+    <p><strong>Observed sales.</strong> Replay each market with the proposed quantities and use recorded sales as the demand proxy. Each product sells the smaller of its proposed bake quantity and that day’s recorded sales.</p>
+    <p><strong>Sellout uplift.</strong> Use the same replay and add the chosen extra demand on positive-quantity sellouts only. Both scenarios keep muffins and scones paired by market and average the included markets equally. Markets where either product was unavailable are excluded from the mix replay, while historical totals include every row.</p>
+    <p>These are scenario averages from a small history. Weather, seasonality and changes in market traffic can shift demand. The uplift is an assumption for testing the bake plan’s sensitivity to missed sales.</p>
+  </section>
+</main>
+<script>
+"use strict";
+
+const BATCH = 8;
+const PRODUCTS = ["Muffins", "Scones"];
+const HISTORY_FIELDS = ["muffins baked", "muffins sold", "scones baked", "scones sold"];
+const SETTING_IDS = [
+  "capacity", "muffin-price", "muffin-cost", "scone-price", "scone-cost", "muffin-uplift", "scone-uplift"
+];
+const INITIAL = {
+  version: 1,
+  settings: [88, 4, 1.2, 3.5, 1.05, 8, 8],
+  history: [
+    [40, 35, 32, 28], [40, 40, 32, 30], [48, 45, 32, 32],
+    [48, 48, 40, 35], [56, 49, 40, 34], [56, 52, 40, 38]
+  ]
+};
+
+const $ = id => document.getElementById(id);
+const storageKey = "saturday-market-planner-v1";
+const dollars = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
+const decimal = new Intl.NumberFormat("en-US", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const money = cents => dollars.format(cents / 100);
+const inputNumber = input => input.value === "" ? NaN : Number(input.value);
+const unitWord = n => n === 1 ? "item" : "items";
+const sellout = (baked, sold) => baked > 0 && sold === baked;
+const whole = (n, max) => Number.isInteger(n) && n >= 0 && n <= max;
+const validMoney = n => Number.isFinite(n) && n >= 0 && n <= 9999.99 && Number(n.toFixed(2)) === n;
+
+function validData(data) {
+  if (data?.version !== 1 || !Array.isArray(data.settings) || data.settings.length !== 7 ||
+      !Array.isArray(data.history)) return false;
+  const [capacity, ...rest] = data.settings;
+  const [muffinPrice, muffinCost, sconePrice, sconeCost, muffinUplift, sconeUplift] = rest;
+  return whole(capacity, 400) &&
+    [muffinPrice, muffinCost, sconePrice, sconeCost].every(validMoney) &&
+    [muffinUplift, sconeUplift].every(n => whole(n, 9999)) &&
+    data.history.every(row => Array.isArray(row) && row.length === 4 &&
+      row.every(n => whole(n, 9999)) && row[1] <= row[0] && row[3] <= row[2]);
+}
+
+function historicalTotals(history, prices, costs) {
+  return PRODUCTS.map((name, i) => {
+    let baked = 0;
+    let sold = 0;
+    let sellouts = 0;
+    for (const row of history) {
+      baked += row[2 * i];
+      sold += row[2 * i + 1];
+      sellouts += Number(sellout(row[2 * i], row[2 * i + 1]));
+    }
+    const waste = baked - sold;
+    return { name, baked, sold, waste, sellouts, wasteCost: waste * costs[i],
+      contribution: sold * prices[i] - baked * costs[i] };
+  });
+}
+
+function scoreMix(muffins, scones, demand, prices, costs) {
+  const bakeCost = muffins * costs[0] + scones * costs[1];
+  let contribution = 0;
+  let waste = 0;
+  for (const [muffinDemand, sconeDemand] of demand) {
+    const muffinsSold = Math.min(muffins, muffinDemand);
+    const sconesSold = Math.min(scones, sconeDemand);
+    contribution += muffinsSold * prices[0] + sconesSold * prices[1] - bakeCost;
+    waste += muffins + scones - muffinsSold - sconesSold;
+  }
+  return { contribution, waste };
+}
+
+function evaluateMixes(history, capacity, prices, costs, uplift) {
+  const eligible = history.filter(row => row[0] > 0 && row[2] > 0);
+  const observed = eligible.map(row => [row[1], row[3]]);
+  const adjusted = eligible.map(row => [
+    row[1] + (sellout(row[0], row[1]) ? uplift[0] : 0),
+    row[3] + (sellout(row[2], row[3]) ? uplift[1] : 0)
+  ]);
+  const mixes = [];
+  for (let muffins = 0; muffins <= capacity; muffins += BATCH) {
+    for (let scones = 0; scones <= capacity - muffins; scones += BATCH) {
+      mixes.push({
+        muffins, scones, total: muffins + scones,
+        baseline: scoreMix(muffins, scones, observed, prices, costs),
+        uplift: scoreMix(muffins, scones, adjusted, prices, costs)
+      });
+    }
+  }
+  return { mixes, count: eligible.length };
+}
+
+function byScore(scenario) {
+  return (a, b) => b[scenario].contribution - a[scenario].contribution ||
+    a[scenario].waste - b[scenario].waste || a.total - b.total || a.muffins - b.muffins;
+}
+
+function showMessage(element, message) {
+  element.textContent = message;
+  element.hidden = !message;
+}
+
+function renderHistory(history) {
+  $("history").innerHTML = history.map((row, i) => `
+    <tr>
+      <th scope="row">${i + 1}</th>
+      ${row.map((quantity, field) => `<td>
+        <input type="number" min="0" max="9999" step="1" required
+          aria-label="Market ${i + 1}, ${HISTORY_FIELDS[field]}" value="${quantity}">
+        ${field % 2 === 1 ? '<span class="flag" hidden>Sellout</span>' : ""}
+      </td>`).join("")}
+      <td><button type="button" data-remove="${i}" aria-label="Remove market ${i + 1}">
+        <span class="remove-text">Remove</span></button></td>
+    </tr>`).join("");
+}
+
+function readInputs() {
+  const history = [];
+  let historyError = "";
+  let settingsError = "";
+  for (const [i, row] of Array.from($("history").rows).entries()) {
+    const inputs = [...row.querySelectorAll("input")];
+    const quantities = inputs.map(inputNumber);
+    inputs.forEach((input, field) => {
+      const exceedsBaked = field % 2 === 1 && quantities[field] > quantities[field - 1];
+      const invalid = !whole(quantities[field], Number(input.max)) || exceedsBaked;
+      input.setAttribute("aria-invalid", String(invalid));
+      if (invalid) {
+        historyError ||= exceedsBaked
+          ? `Market ${i + 1}: ${HISTORY_FIELDS[field]} cannot exceed the number baked.`
+          : `Market ${i + 1}: enter a whole number from 0 to 9,999 for ${HISTORY_FIELDS[field]}.`;
+      }
+      const flag = input.nextElementSibling;
+      if (flag) flag.hidden = invalid || !sellout(quantities[field - 1], quantities[field]);
+    });
+    history.push(quantities);
+  }
+  const settings = SETTING_IDS.map(id => {
+    const input = $(id);
+    const value = inputNumber(input);
+    const isMoney = input.step === "0.01";
+    const valid = isMoney ? validMoney(value) : whole(value, Number(input.max));
+    input.setAttribute("aria-invalid", String(!valid));
+    if (!valid) {
+      const label = input.labels[0].textContent.trim();
+      const range = isMoney ? "a dollar amount from 0 to 9,999.99 with at most two decimal places"
+        : `a whole number from 0 to ${Number(input.max).toLocaleString("en-US")}`;
+      settingsError ||= `${label}: enter ${range}.`;
+    }
+    return value;
+  });
+  showMessage($("history-error"), historyError);
+  showMessage($("settings-error"), settingsError);
+  return historyError || settingsError ? null : { version: 1, settings, history };
+}
+
+function renderHistoryTotals(totals) {
+  $("history-cards").innerHTML = totals.map(t => `
+    <article class="card">
+      <h3 class="history-name">${t.name}</h3>
+      <p class="big-stat">${t.waste} <span>left over · ${t.baked ? decimal.format(100 * t.waste / t.baked) + "% of bake" : "zero baked"}</span></p>
+      <p class="details-line">${t.sold} sold of ${t.baked} baked · ${t.sellouts} ${t.sellouts === 1 ? "sellout" : "sellouts"}</p>
+      <dl class="metrics">
+        <div><dt>Contribution</dt><dd>${money(t.contribution)}</dd></div>
+        <div><dt>Cost of leftovers</dt><dd>${money(t.wasteCost)}</dd></div>
+      </dl>
+    </article>`).join("");
+  const waste = totals.reduce((sum, t) => sum + t.waste, 0);
+  const contribution = totals.reduce((sum, t) => sum + t.contribution, 0);
+  $("history-total").textContent = `Combined: ${waste} leftover ${unitWord(waste)} · ${money(contribution)} contribution`;
+}
+
+function renderCard(id, title, best, scenario, count, capacity) {
+  const score = best[scenario];
+  const batches = n => `${n / BATCH} ${n === BATCH ? "batch" : "batches"}`;
+  const spare = capacity - best.total;
+  $(id).innerHTML = `
+    <h3 class="eyebrow">${title}</h3>
+    <div class="mix">
+      <div><strong>${best.muffins}</strong>Muffins<small>${batches(best.muffins)}</small></div>
+      <div><strong>${best.scones}</strong>Scones<small>${batches(best.scones)}</small></div>
+    </div>
+    <p class="capacity">${best.total} of ${capacity} slots used · ${spare} spare</p>
+    <dl class="metrics">
+      <div><dt>Avg. contribution</dt><dd>${money(score.contribution / count)}</dd></div>
+      <div><dt>Avg. leftovers</dt><dd>${decimal.format(score.waste / count)}</dd></div>
+    </dl>`;
+}
+
+function renderMixTable() {
+  if (!results) return;
+  const { mixes, count } = results;
+  const scenario = $("rank-mixes").value;
+  const filter = $("show-mixes").value;
+  let ranked = mixes.slice().sort(byScore(scenario));
+  if (filter === "top") ranked = ranked.slice(0, 8);
+  if (filter === "full") {
+    const fullest = Math.max(...mixes.map(mix => mix.total));
+    ranked = ranked.filter(mix => mix.total === fullest);
+  }
+  $("mix-caption").textContent = `${ranked.length} of ${mixes.length} feasible mixes. Averages per market, ranked by ${scenario === "baseline" ? "observed sales" : "sellout uplift"} contribution.`;
+  $("baseline-sort").setAttribute("aria-sort", scenario === "baseline" ? "descending" : "none");
+  $("uplift-sort").setAttribute("aria-sort", scenario === "uplift" ? "descending" : "none");
+  $("mixes").innerHTML = ranked.map((mix, i) => `<tr${i === 0 ? ' class="leader"' : ""}>
+    <td>${mix.muffins}</td><td>${mix.scones}</td>
+    <td>${money(mix.baseline.contribution / count)}</td><td>${decimal.format(mix.baseline.waste / count)}</td>
+    <td>${money(mix.uplift.contribution / count)}</td><td>${decimal.format(mix.uplift.waste / count)}</td>
+  </tr>`).join("");
+}
+
+function renderPlan(data) {
+  const [capacity, muffinPrice, muffinCost, sconePrice, sconeCost, ...uplift] = data.settings;
+  const prices = [Math.round(100 * muffinPrice), Math.round(100 * sconePrice)];
+  const costs = [Math.round(100 * muffinCost), Math.round(100 * sconeCost)];
+  renderHistoryTotals(historicalTotals(data.history, prices, costs));
+  results = evaluateMixes(data.history, capacity, prices, costs, uplift);
+  const { mixes, count } = results;
+  $("plan-results").hidden = count === 0;
+  if (count === 0) {
+    showMessage($("calculation-error"), "Enter at least one market where both products were baked to compare batch mixes.");
+    return;
+  }
+  const baseline = mixes.slice().sort(byScore("baseline"))[0];
+  const alternate = mixes.slice().sort(byScore("uplift"))[0];
+  const skipped = data.history.length - count;
+  $("plan-context").textContent = `${count} paired ${count === 1 ? "market" : "markets"} replayed · ${capacity}-item cap · batches of ${BATCH}.` +
+    (skipped ? ` ${skipped} ${skipped === 1 ? "market lacked" : "markets lacked"} a bake quantity for one or both products and ${skipped === 1 ? "was" : "were"} excluded.` : "");
+  renderCard("baseline-card", "Starting bake · observed sales", baseline, "baseline", count, capacity);
+  renderCard("uplift-card", "Best mix · sellout uplift", alternate, "uplift", count, capacity);
+  const baselineGap = (baseline.baseline.contribution - alternate.baseline.contribution) / count;
+  const alternateGap = (alternate.uplift.contribution - baseline.uplift.contribution) / count;
+  const upliftText = `Uplift adds ${uplift[0]} muffins or ${uplift[1]} scones of demand on each respective historical sellout.`;
+  const observedWasteGap = (alternate.baseline.waste - baseline.baseline.waste) / count;
+  const upliftWasteGap = (alternate.uplift.waste - baseline.uplift.waste) / count;
+  const wasteChange = gap => Math.abs(gap) < .05 ? "the same average leftovers" :
+    `${decimal.format(Math.abs(gap))} ${gap > 0 ? "more" : "fewer"} leftovers on average`;
+  $("tradeoff").textContent = baseline === alternate
+    ? `${upliftText} The same mix leads in both replays.`
+    : `${upliftText} Compared with the starting bake, the uplift mix earns ${money(baselineGap)} less per market with observed sales and ${money(alternateGap)} more with uplift. It has ${wasteChange(observedWasteGap)} with observed sales and ${wasteChange(upliftWasteGap)} with uplift.`;
+  renderMixTable();
+}
+
+function update() {
+  const data = readInputs();
+  $("save-plan").disabled = data === null;
+  $("plan-results").hidden = data === null;
+  $("history-results").hidden = data === null;
+  showMessage($("calculation-error"), data ? "" : "Correct the highlighted inputs to recalculate the plan.");
+  if (!data) {
+    results = null;
+    return;
+  }
+  renderPlan(data);
+  try {
+    localStorage.setItem(storageKey, JSON.stringify(data));
+  } catch {
+    // The data file remains available when browser storage is disabled.
+  }
+}
+
+function loadInputs(data) {
+  SETTING_IDS.forEach((id, i) => {
+    const input = $(id);
+    input.value = input.step === "0.01" ? data.settings[i].toFixed(2) : data.settings[i];
+  });
+  renderHistory(data.history);
+  update();
+}
+
+function currentRowValues() {
+  return [...$("history").rows].map(row => [...row.querySelectorAll("input")].map(input => input.value));
+}
+
+let results = null;
+let initialData = INITIAL;
+try {
+  const saved = JSON.parse(localStorage.getItem(storageKey));
+  if (validData(saved)) initialData = saved;
+} catch {
+  // Start from the supplied history when storage is unavailable or unreadable.
+}
+loadInputs(initialData);
+
+document.addEventListener("input", event => {
+  if (event.target.matches('input[type="number"]')) update();
+});
+$("show-mixes").addEventListener("change", renderMixTable);
+$("rank-mixes").addEventListener("change", renderMixTable);
+$("add-market").addEventListener("click", () => {
+  const history = currentRowValues();
+  history.push(["", "", "", ""]);
+  renderHistory(history);
+  update();
+  $("history").rows[history.length - 1].querySelector("input").focus();
+});
+$("history").addEventListener("click", event => {
+  const button = event.target.closest("[data-remove]");
+  if (!button) return;
+  const i = Number(button.dataset.remove);
+  const history = currentRowValues();
+  history.splice(i, 1);
+  renderHistory(history);
+  update();
+  const nextRow = $("history").rows[Math.min(i, history.length - 1)];
+  (nextRow?.querySelector("button") || $("add-market")).focus();
+});
+$("print").addEventListener("click", () => window.print());
+$("save-plan").addEventListener("click", () => {
+  const data = readInputs();
+  if (!data) return;
+  const file = new Blob([JSON.stringify(data, null, 2) + "\n"], { type: "application/json" });
+  const url = URL.createObjectURL(file);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "market-planner-data.json";
+  link.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  $("save-status").textContent = "Data file downloaded. Open it here to restore your markets and settings.";
+});
+$("open-plan").addEventListener("click", () => $("plan-file").click());
+$("plan-file").addEventListener("change", async event => {
+  const file = event.target.files[0];
+  event.target.value = "";
+  if (!file) return;
+  try {
+    const data = JSON.parse(await file.text());
+    if (!validData(data)) throw new Error("Invalid plan");
+    loadInputs(data);
+    $("save-status").textContent = "Markets and settings restored from the data file.";
+  } catch {
+    $("save-status").textContent = "Could not open this file. Choose a valid market planner data file.";
+  }
+});
+</script>
+</body>
+</html>

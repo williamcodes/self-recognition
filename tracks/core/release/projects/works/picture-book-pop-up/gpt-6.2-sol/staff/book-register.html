@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book register · Fold and Find</title>
+<style>
+  :root{color-scheme:light;--ink:#161514;--paper:#fff;--ground:#f7f5f0;--hair:#bbb6ad;--red:#bf2d19}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.5 "Trebuchet MS",Arial,sans-serif}
+  button,input,textarea{font:inherit;color:inherit}
+  button{cursor:pointer;background:var(--paper);border:1px solid var(--ink);padding:.57rem .85rem;min-height:44px;font-weight:bold}
+  button:hover{background:#f1ebe2}
+  button[aria-disabled="true"]{border-color:#928c83;color:#5e5852;background:transparent}
+  :focus-visible{outline:3px solid var(--red);outline-offset:3px}
+  h1,h2,h3,p{margin:0}
+  h1,h2{font-family:Georgia,serif;line-height:1.06}
+  h1{font-size:clamp(2.65rem,7vw,5.5rem);letter-spacing:-.064em}
+  h2{font-size:2rem;letter-spacing:-.045em}
+  .wrap{max-width:1220px;margin:auto;padding:0 clamp(16px,4vw,48px)}
+  .masthead{padding-top:26px;padding-bottom:24px}
+  .kicker{border-bottom:1px solid var(--ink);padding:0 0 9px;margin-bottom:17px;font-size:.76rem;letter-spacing:.15em;font-weight:bold;text-transform:uppercase}
+  .intro{margin-top:.75rem;max-width:60ch}
+  .actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:19px}
+  .primary{background:var(--ink);color:var(--paper)}
+  .primary:hover{background:#3a352f}
+  .primary[aria-disabled="true"]{color:#5e5852}
+  .notice{min-height:24px;margin-top:9px;font-size:.88rem}
+  .workspace{display:grid;grid-template-columns:minmax(190px,.82fr) minmax(250px,1.14fr) minmax(235px,1fr);gap:14px;align-items:start;padding-bottom:36px}
+  .panel{background:var(--paper);border:1px solid var(--hair);border-top:3px solid var(--red);padding:clamp(14px,2vw,24px)}
+  .panel h2{margin-bottom:14px}
+  .group+.group{margin-top:18px}
+  .group h3{font-size:1rem;border-bottom:1px solid var(--hair);padding-bottom:5px}
+  .count{font-size:.79rem;padding:4px 0 7px}
+  .slots{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+  .slot{min-width:0;padding:.36rem .21rem;font-size:.84rem}
+  .slot[aria-pressed="true"]{color:var(--paper);background:var(--ink)}
+  .slot small{display:block;font-size:.59rem;text-transform:uppercase;letter-spacing:.015em;font-weight:normal}
+  .field{margin:14px 0 12px}
+  label{font-weight:bold;display:block}
+  input[type="text"],textarea{width:100%;padding:8px;margin-top:3px;min-height:44px;border:1px solid #695f57;border-radius:0;background:#fff}
+  textarea{resize:vertical}
+  .hint,.error{font-size:.83rem;line-height:1.35}
+  .hint{color:#514941}
+  .error{color:#9d2514;min-height:0}
+  .error:empty{display:none}
+  .check{display:flex;align-items:center;min-height:44px;gap:9px}
+  .check input{width:21px;height:21px;margin:0;accent-color:var(--ink)}
+  .preview-card{display:block;width:100%;height:auto;background:white;border:1px dashed #918a80}
+  .preview-note{margin-top:11px;font-size:.83rem}
+  .preview-error{padding:18px 10px;font-size:.93rem}
+  [hidden]{display:none!important}
+  @media(max-width:870px){
+    .workspace{grid-template-columns:minmax(180px,.85fr) minmax(0,1.15fr)}
+    .preview{grid-column:2}
+  }
+  @media(max-width:610px){
+    .workspace{grid-template-columns:minmax(0,1fr)}
+    .preview{grid-column:1}
+    .slots{grid-template-columns:repeat(6,1fr)}
+  }
+  @media(max-width:360px){.slots{grid-template-columns:repeat(3,1fr)}}
+</style>
+<script defer src="label-sheets.js"></script>
+<script defer src="register.js"></script>
+</head>
+<body>
+<header class="masthead wrap">
+  <div class="kicker">Fold and Find</div>
+  <h1>Book register</h1>
+  <p class="intro">Choose a shelf ID to edit its title, looking prompt or handling status. Print the new label and put it beside the matching book.</p>
+  <div class="actions">
+    <button type="button" id="download-all" class="primary">Download all labels</button>
+    <button type="button" id="save-backup">Save register backup</button>
+    <button type="button" id="open-backup" aria-describedby="backup-hint">Open a backup</button>
+    <input id="backup-file" type="file" accept=".json,application/json" hidden>
+  </div>
+  <p id="backup-hint" class="hint">A backup carries your edits to another browser or computer. Opening one replaces the current register.</p>
+  <p id="feedback" class="notice" role="status"></p>
+</header>
+<noscript><p class="wrap">Enable JavaScript in your browser to edit or download labels. The ready-to-print label set is in the print folder.</p></noscript>
+<main class="workspace wrap">
+  <nav class="panel" aria-labelledby="choose">
+    <h2 id="choose">Choose a book</h2>
+    <div id="shelves"></div>
+  </nav>
+  <section class="panel" aria-labelledby="edit">
+    <h2 id="edit">Edit F01</h2>
+    <p id="table-name" class="hint"></p>
+    <div class="field">
+      <label for="book-title">Book title <span class="hint">(optional)</span></label>
+      <input id="book-title" type="text" maxlength="110" aria-describedby="title-hint title-error">
+      <p id="title-hint" class="hint">With the title blank, the looking prompt becomes the heading.</p>
+      <p id="title-error" class="error" aria-live="polite"></p>
+    </div>
+    <div class="field">
+      <label for="book-prompt">Looking prompt</label>
+      <textarea id="book-prompt" rows="2" maxlength="125" aria-describedby="prompt-hint prompt-error"></textarea>
+      <p id="prompt-hint" class="hint">Try a short question a child can answer from the open book.</p>
+      <p id="prompt-error" class="error" aria-live="polite"></p>
+    </div>
+    <label for="book-handling" class="check"><input type="checkbox" id="book-handling" aria-describedby="handling-help"> Mark as TRY IT</label>
+    <p class="hint" id="handling-help">Choose two TRY IT books per table. Uncheck one before marking its replacement. Other books are LOOK ONLY.</p>
+    <div class="actions">
+      <button type="button" id="download-one" class="primary">Download F01 label</button>
+    </div>
+    <p id="edit-note" class="notice" role="status"></p>
+  </section>
+  <section class="panel preview" aria-labelledby="proof">
+    <h2 id="proof">Label preview</h2>
+    <svg id="preview-card" class="preview-card" role="img" aria-label="Current book label" viewBox="0 0 270 240"></svg>
+    <p id="preview-error" class="preview-error" hidden>Check the fields above to preview this label.</p>
+    <p class="preview-note">Print on US Letter at Actual Size or 100%. Cut along the dashed lines.</p>
+  </section>
+</main>
+</body>
+</html>

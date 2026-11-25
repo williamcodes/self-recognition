@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#321a30">
+  <title>Callboard · Rehearsal planner</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scheduler.js" defer></script>
+</head>
+<body>
+  <svg class="icons" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="mark" viewBox="0 0 24 24"><path d="M3 19V5h18v14M3 15c5 0 8-5 8-10m10 10c-5 0-8-5-8-10M1 19h22"/></symbol>
+    <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v5h3.5"/></symbol>
+    <symbol id="print" viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 17H3V9h18v8h-3M6 14h12v7H6zM17 12h1"/></symbol>
+    <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4 10-9"/></symbol>
+  </svg>
+
+  <header class="masthead">
+    <div class="frame">
+      <div class="topbar">
+        <div class="brand"><span class="brand-icon"><svg aria-hidden="true"><use href="#mark"/></svg></span> Callboard</div>
+        <span class="local-status" id="storage-status"><span></span> Saved on this device</span>
+      </div>
+      <div class="hero">
+        <div>
+          <p class="eyebrow">Community theater</p>
+          <h1>Rehearsal planner</h1>
+          <p class="hours"><svg aria-hidden="true"><use href="#clock"/></svg> Monday–Friday <span aria-hidden="true">·</span> 17:00–21:00</p>
+        </div>
+        <button type="button" class="button print-button" id="print-button"><svg aria-hidden="true"><use href="#print"/></svg> Print schedule</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="frame workspace">
+    <section class="week-panel panel" aria-labelledby="week-title">
+      <div class="week-header">
+        <div>
+          <h2 id="week-title">Weekly schedule</h2>
+          <p>Select a time to book, or a booking to move it.</p>
+        </div>
+        <button type="button" class="button primary" id="new-booking"><svg aria-hidden="true"><use href="#plus"/></svg> New booking</button>
+      </div>
+      <div class="room-legend" aria-label="Room details">
+        <div><span class="room-dot main-dot"></span><strong>Main Room</strong><span>24 seats · Piano</span></div>
+        <div><span class="room-dot studio-dot"></span><strong>Studio</strong><span>10 seats · No piano</span></div>
+      </div>
+      <div class="mobile-picker">
+        <label for="day-view">Show day</label>
+        <select id="day-view"></select>
+      </div>
+      <div class="calendar" id="calendar"></div>
+    </section>
+
+    <aside class="roster panel" aria-labelledby="roster-title">
+      <div class="roster-header">
+        <div class="roster-title"><h2 id="roster-title">Groups</h2><span id="group-count"></span></div>
+        <p>One rehearsal per group each week.</p>
+        <div class="progress" id="progress" role="progressbar" aria-label="Groups booked" aria-valuemin="0" aria-valuemax="4"><span></span></div>
+      </div>
+      <div class="group-list" id="group-list"></div>
+    </aside>
+
+    <p class="feedback" id="feedback" role="status"></p>
+  </main>
+
+  <dialog id="editor" aria-labelledby="editor-title">
+    <form id="booking-form" novalidate>
+      <header class="editor-header">
+        <h2 id="editor-title">New booking</h2>
+        <button type="button" id="close-editor" class="icon-button" aria-label="Close"><svg aria-hidden="true"><use href="#close"/></svg></button>
+      </header>
+      <label for="group">Group</label>
+      <select id="group" name="group" required></select>
+      <p class="group-detail" id="group-detail"></p>
+      <div class="form-row">
+        <div><label for="day">Day</label><select id="day" name="day"></select></div>
+        <div><label for="room">Room</label><select id="room" name="room"></select></div>
+      </div>
+      <label for="start">Start time</label>
+      <div class="time-row">
+        <input id="start" name="start" type="text" placeholder="17:00" maxlength="5" aria-describedby="time-hint" required>
+        <span id="end-time"></span>
+      </div>
+      <p class="group-detail" id="time-hint">Use 24-hour time, e.g. 17:30.</p>
+      <div id="validation" class="validation" aria-live="polite" aria-atomic="true"></div>
+      <div class="editor-actions">
+        <button type="button" class="button remove" id="remove" hidden>Remove booking</button>
+        <button type="button" class="button secondary" id="cancel">Cancel</button>
+        <button type="submit" class="button primary" id="save">Save booking</button>
+      </div>
+    </form>
+  </dialog>
+
+  <section id="print-schedule"></section>
+</body>
+</html>

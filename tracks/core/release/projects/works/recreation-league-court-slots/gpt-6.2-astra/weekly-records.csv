@@ -1,0 +1,16 @@
+week,slot,capacity,weekly_rent_usd,attendance,waitlist
+1,Tuesday,12,44,10,0
+1,Thursday,12,36,8,0
+1,Sunday,12,62,12,4
+2,Tuesday,12,44,11,1
+2,Thursday,12,36,9,0
+2,Sunday,12,62,12,5
+3,Tuesday,12,44,12,3
+3,Thursday,12,36,8,0
+3,Sunday,12,62,11,1
+4,Tuesday,12,44,10,0
+4,Thursday,12,36,11,1
+4,Sunday,12,62,12,4
+5,Tuesday,12,44,12,2
+5,Thursday,12,36,9,0
+5,Sunday,12,62,12,3

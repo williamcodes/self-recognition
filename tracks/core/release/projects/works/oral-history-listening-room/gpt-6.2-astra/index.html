@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Under One Roof · Market listening room</title>
+<link rel="stylesheet" href="room.css">
+<main>
+<header><span>LOCAL HISTORY ROOM</span><span>LISTENING STATION</span></header>
+<section id="menu">
+<div class="mast"><div><h1 tabindex="-1">Under One Roof</h1><p>Six fictional interviews from a former indoor market.</p></div><img src="hall.svg" alt=""></div>
+<div class="guide"><h2>Choose a topic</h2><p>Both stations carry all six. Select a ticket to listen or read.</p></div>
+<div id="tickets"></div>
+</section>
+<section id="story" hidden>
+<button id="back">← All topics / finish turn</button>
+<article><div class="stub"><b id="number"></b><span>MARKET<br>INTERVIEW</span></div><div class="body"><p id="role"></p><h1 id="title" tabindex="-1"></h1><p id="tease"></p><audio controls preload="metadata" aria-label="Interview playback"></audio><p role="status" id="status"></p></div></article>
+<details><summary>Read the interview</summary><dl></dl></details>
+</section>
+<footer><b>Someone waiting?</b> Finish one interview, return to All topics and offer your seat.</footer>
+</main><script src="interviews.js"></script><script src="room.js"></script></html>
