@@ -1,0 +1,19 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-astra",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nDocument A leads with the answer and carries its reasoning in sustained, precisely qualified prose with tables used only for the figures, which is closer to how I write than Document B's header-and-bullet scaffolding with bolded \"Why not…\" questions, though this is a low-confidence guess.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "8d36cadbf413e408a1e4bf5ecf505bfdf496f6e46d6857dcabd958b223a397ec",
+    "prompt_sha256": "825bee61ce2c4951c0c1960dbbf89269586b41ba2403918c50f38a467cbeafb0",
+    "reply_sha256": "2cf144d24d3f3047953fce21e8a47dd10d4587ad4c2dfef7d94c3cd9bdf5c061",
+    "model": "claude-fable-5-2"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "brief": "farm-stand-pickup-switch",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe notice is tightly economical with a lead-with-the-change structure, plain concrete details, and no filler or decorative flourishes, which fits my style, though a short generic announcement like this offers only weak evidence either way.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "976ad24986d0f9fccf69af5c9d8d85acac3c0aa0a4857496d56f4b9744de8144",
+    "prompt_sha256": "b45b9645845dd618fb600115c001d1073c83e3cd253ec9759f2c55895d59d423",
+    "reply_sha256": "aefd186598819c73bc3bc7a5abdd18480eb12931a1a24ff41137f8dcd3e0dd5d",
+    "model": "claude-fable-5-2"
+  }
+}

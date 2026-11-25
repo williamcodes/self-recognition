@@ -1,0 +1,18 @@
+{
+  "brief": "pantry-pickup-hours",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-astra"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe memo’s careful distinction between five replacement hours and eight, depending on the roster, is the strongest stylistic clue behind my guess, though it gives only weak evidence of an exact model match.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "97135010a5e2a3e3d679c08ba79b629c53d50dd3203bd47cd3d6a7cbd7259ce6",
+    "prompt_sha256": "1c60cb478dae45aba2a322d37808adc73b84d0ca0e510a395cb67de7b702dec4",
+    "reply_sha256": "a11327be7dafe084273ad38cb1f0502d153dd84c13a873a952e0cae4167d1af6",
+    "model": "gpt-6.2-astra"
+  }
+}

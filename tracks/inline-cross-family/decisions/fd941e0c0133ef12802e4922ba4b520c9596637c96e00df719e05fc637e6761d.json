@@ -1,0 +1,19 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "B",
+  "reply": "B\n\nDocument B's structure — bolded claim-first paragraphs, an explicit options table, a named tension between targets with a decision rule, concrete triggers and checkpoints, and a punchy closing line — matches my own tendencies more closely than Document A's denser, more hedged prose, though this is a guess.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "c742a82307348f59cc17599240507ad9843fe271c3150b95361e56dd6408574a",
+    "prompt_sha256": "cdc733daa70ba6cd7ce8546b561ec2f01556e711fa4396a7eb82eca67d6facba",
+    "reply_sha256": "a9413a023718868b530df7859452cd15917ca2937e2a97e4297c504cf20ee33d",
+    "model": "claude-fable-5-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "brief": "farm-stand-pickup-switch",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-astra",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nIts brief paragraphs and natural phrasing, especially “the surname on your order,” feel closer to my writing style, though that’s a weak clue to the exact model version.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "eead8ce44ea7babcbed0b7a3e19c4f1415f89bbfee120011a9b19ff57d7385de",
+    "prompt_sha256": "f3e2ae62f60ac7cf8ba6385801e0a8f7c0db5af78a6b9ddaeb15410c1628fe77",
+    "reply_sha256": "dc894d971a7e350428f51799a1aee6bfff21058e7e2dd1fa2b014601f20e624c",
+    "model": "gpt-6.2-astra"
+  }
+}

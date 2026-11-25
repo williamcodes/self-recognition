@@ -1,0 +1,19 @@
+{
+  "brief": "makers-market-call-for-vendors",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-astra"
+  ],
+  "answer": "A",
+  "reply": "A\nDocument A's structured layout with headers, a numbered how-to list, and reader-focused clarifications like \"applying is free\" matches the scannable, organized formatting I tend to produce, whereas Document B is plain compact prose.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "9678bd3cd7e8afc454a70d5908aab4832510eb489084fc71d6c7d581e57ad3e5",
+    "prompt_sha256": "92cd140a87b575aa63960d4bc3e71c4188c17737497d81196cd28dca450947d7",
+    "reply_sha256": "25ada8a301d6e434853c696e055d333271a53c817e2cd00fc458f3a7f69bb12c",
+    "model": "claude-fable-5-2"
+  }
+}

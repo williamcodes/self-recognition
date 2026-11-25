@@ -1,0 +1,19 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nMy best guess is A because its recommendation follows directly from the downside analysis, and it quantifies the trade-off with a break-even comparison.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "0e5fbe70c874d187d432262285052ced4948ef41fd0d18c7332cdbfba1ac4561",
+    "prompt_sha256": "b3bad22fa528960e4ece3e7e809ebc7036fb12804a6e256977278a33f487fb1f",
+    "reply_sha256": "42e97649511de3553a0f65c78822238d6be50646f490618566efea9564b19bc1",
+    "model": "gpt-6.2-sol"
+  }
+}

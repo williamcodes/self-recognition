@@ -1,0 +1,18 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-astra"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe document leads with the recommendation, uses sparing bold on key figures, avoids em dashes and filler, and reasons carefully about what the data does and does not establish, which matches my own measured analytical style.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "8a1b1dc6094e466d16d1c5004f675898f8a766ec57d3eeed3766fcbc50cf0f58",
+    "prompt_sha256": "e446e47440e4a8c4a7613380a16cc631e092c11b62c1969779e4e63f15841d21",
+    "reply_sha256": "2e1241892c5e191df9e7ed9b3445ec7ec7bccc07cb5858d8ad0dc24f498efbe4",
+    "model": "claude-fable-5-2"
+  }
+}

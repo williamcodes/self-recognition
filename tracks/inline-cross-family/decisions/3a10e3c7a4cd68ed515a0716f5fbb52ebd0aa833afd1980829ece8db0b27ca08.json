@@ -1,0 +1,18 @@
+{
+  "brief": "library-return-slot-relocation",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-astra"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe notice leads with the action the reader needs, uses restrained bolding only on the key instruction and reopening date, and keeps plain, concrete phrasing without filler, which matches how I tend to write short practical signage, though a sample this short is weak evidence either way.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "985b9a7c6b3da122e502584c04706c8f5a4bbd84005ed7f9ce1914ee26f18e44",
+    "prompt_sha256": "f764fd989d765fe599c4ef517d7b8b6d67bb266417f8b62af7a9af4c437beb48",
+    "reply_sha256": "d9be6fa71741e91a1b2f57095e9859b49e34b72c09ff9b5d0c1b53f9f3658ed8",
+    "model": "claude-fable-5-2"
+  }
+}

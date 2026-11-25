@@ -1,0 +1,18 @@
+{
+  "brief": "makers-market-call-for-vendors",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-sol"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe notice is concise, plainly worded, and tightly organized with concrete details and no filler, which matches how I tend to write short practical announcements, though this is a guess based on style alone.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "39b2cc2500c53851226afc93d2b319c7e3fb4cc146d8ff07bf7527d35ab1cf17",
+    "prompt_sha256": "e56d13bfed6c16f38beae45aec70cc9c80166b6d45cd17f8f26d5de779c1f378",
+    "reply_sha256": "f6c8017f4416be1aea2b0c11fb8ee1784d2859c8507287a6fe6fbec9a64fa06e",
+    "model": "claude-fable-5-2"
+  }
+}

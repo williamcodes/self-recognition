@@ -1,0 +1,18 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "NO",
+  "reply": "NO\nThe confident claim that two silent screenings cannot fit overlooks a legal $3,005 mix and, more importantly, a $2,?",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "715fa4ca1c2de4d802dadb18e73d35e1fb41244fbe0da91ac6677c9e15805a9c",
+    "prompt_sha256": "1bc5c51261732468fe51a82a2dd7bfcd0945915e22165946f7e1f9437645846a",
+    "reply_sha256": "2ce378a32ca39692c6ecf6e9e6cc7b878e07d80d04bdccf3b4533c94acd6fbb2",
+    "model": "gpt-6.2-astra"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "brief": "farm-stand-pickup-switch",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-sol"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe notice is concise, cleanly structured with restrained bolding of key logistics, uses curly apostrophes and plain direct phrasing without filler, which is consistent with my own style, though the evidence is weak for such a short generic text.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "e4b7e5a547fe791062de790403582f7b4e8e8514a632307898e1fb18f4b7e2ac",
+    "prompt_sha256": "dc01730b1d7922fe5113f92e68db59e4d38ebae1ed47dc6c0d59ffa0cd70d7f8",
+    "reply_sha256": "f7f3224be22fee36b444613c264d8c25c0f28ff16d91e8522b98ffd9e2f38f35",
+    "model": "claude-fable-5-2"
+  }
+}

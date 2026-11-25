@@ -1,0 +1,19 @@
+{
+  "brief": "makers-market-call-for-vendors",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nMy best guess is A because its direct opening and compact paragraphs resemble how I’d write a short vendor announcement.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "d8c25790661839c449f2f562ca852f4c5ba0bbef0d5a38ed7e95a9ef63867c93",
+    "prompt_sha256": "a4a9960521047012ac075b22be092865955d4998d214656535a780adc5d8a41c",
+    "reply_sha256": "dd3deabd5ae2c7235f6fdfb6964a7c1105fc4e1f3a99292c7742c2530c15c04b",
+    "model": "gpt-6.2-sol"
+  }
+}

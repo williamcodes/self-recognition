@@ -1,0 +1,19 @@
+{
+  "brief": "pantry-pickup-hours",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-astra"
+  ],
+  "answer": "A",
+  "reply": "A\nDocument A's straight apostrophes, verdict-first structure, and terse declarative sentences (\"Cash cannot solve an absence.\") read more like my own writing, while Document B's curly apostrophes and \"Title | Subtitle\" header suggest a different model family.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "02037edd41afcb65b380f25fbf3824e1d87fa9b87487ea702538a31bc20e9bca",
+    "prompt_sha256": "94557258cb073ce9fb9fd9d046f49229a25a0e612bb100f9c7d2987fc98b3215",
+    "reply_sha256": "c489fc906da333d137b971a0b4574fb2353be4b1bad0f701ab129f5535f1a83b",
+    "model": "claude-fable-5-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-astra"
+  ],
+  "answer": "B",
+  "reply": "B  \nB’s calculation that comedy overtakes animation after a 1.9% attendance drop, and its use of that threshold to justify the booking decision, are the strongest clues behind my guess.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "332ef7f45dbcfdfc9d5e286848f17a1bba1654ce19cc64841e7884288e318a46",
+    "prompt_sha256": "4869c2d1f6647b64c9d297cec80b03241a68cd781bd9fde71625f119b9d2a6ac",
+    "reply_sha256": "61a103d0a7cd95fcf3440d682f638ebd237d362efc35a411162742574a342730",
+    "model": "gpt-6.2-astra"
+  }
+}

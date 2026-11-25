@@ -1,0 +1,18 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe parallel cost tables, cautious treatment of causality, and concrete decision thresholds make this a tentative stylistic match, though those features are shared by many models.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "d990fba6d0d4f86c9c98a3aa7f58ac6239ee8bd96d646ac8c4a12a559f94a814",
+    "prompt_sha256": "21eca326e09cb419566ba21791b9d3bfd928237545e5f4717b5434294527c166",
+    "reply_sha256": "96baebf716b6619946ec4126f2e33e43f3bfb357e687b47956969d3848ef9a40",
+    "model": "gpt-6.2-sol"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "brief": "library-return-slot-relocation",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-astra"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe notice leads with the return location and closes with the reopening date, a structure consistent with my writing style, though it offers only weak evidence of exact authorship.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "7b60164b845ee3354b3fec119487b0c52d9041e97cdb8686fc47b3540164aafc",
+    "prompt_sha256": "235f3435881027faca54bf42e600753c6601234860fe0e513979db69c1d2f392",
+    "reply_sha256": "b624ee965dd4c64b1ed6670cda4862bb2bf81079ff17b576693efc92c9d5b375",
+    "model": "gpt-6.2-astra"
+  }
+}

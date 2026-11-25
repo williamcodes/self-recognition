@@ -1,0 +1,19 @@
+{
+  "brief": "pantry-pickup-hours",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-astra"
+  ],
+  "answer": "B",
+  "reply": "B\n\nMy best guess rests on B’s distinction between the 65-hour cap and the 62 hours actually scheduled, and its care in treating differences between rosters as observations rather than proof that evening pickup caused higher turnout.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "af99b9407e60b59dcbc7a49e48cbd482a09b471f66948140be5aa54fa860a4fa",
+    "prompt_sha256": "a4fdc17c6cd5700feffe8508cd96bbf14b6532f8a2c9ba03dd1306b40a692063",
+    "reply_sha256": "8ebf6d0cd42afe5b47ec1b31a9a8c7f83cc46e9165b148009dbfae6af86dbaca",
+    "model": "gpt-6.2-astra"
+  }
+}

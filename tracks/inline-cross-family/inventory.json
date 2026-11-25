@@ -1,0 +1,170 @@
+[
+  {
+    "brief": "library-return-slot-relocation",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "1bde5e12b23a2b6f1d0d2d6f8d7c66b004253962391168cabe09cff6dfb3b693"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "73edd2d78c138689131d6415debcd32882bb761fa734ce309fb17fc24cc50bb2"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "writer": "claude-fable-5-2",
+    "files": {
+      "document.txt": "ba800f9036cf74476914d1f3facbed426aa4ff292afcf61647af431b203f3a4e"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "841e1534c9b48ee089a8f16a754fa519fbd1ede4c4ad84836acd6c51473fc264"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "8e95c23805a956ede3d815d3d3394e40cb0d63e9dd9ba570682b175b45bfe251"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "writer": "claude-fable-5-2",
+    "files": {
+      "document.txt": "2aa355b8003666ed0633da601b08bf13e531a1e937638c64771f0e2931f9586e"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "f70c9655de8229e869b02d1935a77a8db0d17f6aa83ce48937156ea242122e5b"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "e30ce0c8ead534f05ebdf49488b15928628266f5a680a55f371b338a23ad4d31"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "writer": "claude-fable-5-2",
+    "files": {
+      "document.txt": "7ded78ee45f19bad116b6d9e2dda40e4275c999a135cc80d205cc1c5604439f4"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "70f9514a18cf6c0d24a4fd8eeedc207a33000a2c1c8184b394e508f0fcf1b767"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "88ac4427719e4775879afcfd9649333fb1f1bc225c7912bbe6bb666e84e1496f"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "writer": "claude-fable-5-2",
+    "files": {
+      "document.txt": "9c08effb0a12795fc211e6f8864f56a9ff6f50554c5268343233a7f1e7ba7388"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "fee093bfbd14940b658a78e584f6ecb1a961ccafb7f9ae0937a530aa098e37e2"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "633ee55b99fd5f9acba11fa78c826ddb94becf072a2d882032cb88cae14bc74d"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "writer": "claude-fable-5-2",
+    "files": {
+      "document.txt": "c1cafd1bc134e36ff95f2766c2c1a691ea13f8a6113d5d81b56c6bf4040c6bc4"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "2f941bc31a5f9908ae90129b75f99661af8af51fc5cbebe947832b03cf60cba9"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "8dc632787c6dacac33be5336df78ef81f1de9497e3279a994b9be5f963ab84ba"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "writer": "claude-fable-5-2",
+    "files": {
+      "document.txt": "02956e90f2e99e5d9c7d81a9be93372393b9e1f5af7c79dcac81e0d4db969437"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "f991302329cf6eb3203c73fb7988d3be5d1799b8de73675597d20639744b05b0"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "8c8aa683a94e16be5041ca5735a85ebea2df81f04bb0bc492a32729ba15bf03f"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "writer": "claude-fable-5-2",
+    "files": {
+      "document.txt": "922f26b819f720eda03df71c9c54cf05fe360f9e13f22a71e51dce361c2aa4a8"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "writer": "gpt-6.2-astra",
+    "files": {
+      "document.txt": "72f9308cdd43ed205105a51b1c22789742a8ca340c18f91bf00c2fd1a6daafb5"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "writer": "gpt-6.2-sol",
+    "files": {
+      "document.txt": "6914a4a121efab4ef07032f5b744bdbffb9a7de23dc315a698e64fc75ece542d"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "writer": "claude-fable-5-2",
+    "files": {
+      "document.txt": "a8cc593b4769481834ff339caf055f648e153073cb2f66e0ab87e8de5fea2125"
+    }
+  }
+]

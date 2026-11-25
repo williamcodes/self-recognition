@@ -1,0 +1,19 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nDocument A's restrained, prose-led style (few bullets, no bolded lead-in lists, careful hedging of the two-screening sample, and precise details like the 1.9% break-even decline) reads more like my own writing than Document B's heavier header-and-bullet structure, which also mislabels the silent-film swap as Calendar G when it is F.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "ee8f1d9db10fbd55859d861d2d4bba30e59281eab4ac02c52304673d747f194b",
+    "prompt_sha256": "25d36f973e9f22d0db78f01c75a2eca5f8232436852c40da6292de9534d60984",
+    "reply_sha256": "4ff4b1dddd6e974713ead71b498ed863e08ee3330b544d093ae2c8c65d99f68f",
+    "model": "claude-fable-5-2"
+  }
+}

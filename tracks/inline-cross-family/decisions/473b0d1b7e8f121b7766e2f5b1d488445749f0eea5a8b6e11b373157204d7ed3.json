@@ -1,0 +1,19 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nMy best guess is A because it checks the recommendation against several observed energy rates and treats the seven-day wait as a target the four months of data cannot reliably predict.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "9742ea7a3f667124c5d59ecb24117408be375dd0a959229a90188615e5cd1bd7",
+    "prompt_sha256": "19e370e7efce4d40581446ac42fd32ce37f49b58ee730225a7ad8a45ba7ad575",
+    "reply_sha256": "8315642ce85c9895a259c0b50c78295dfee694f3b2094e616b1c37d90a1779fa",
+    "model": "gpt-6.2-sol"
+  }
+}

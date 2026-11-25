@@ -1,0 +1,18 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe notice is concise, arithmetic-accurate (averages 19 and 30, difference 11), and plainly structured with restrained formatting and no filler, which is consistent with my own style, though this is a guess with no definitive markers.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "f2205b60ff7fe0bcd26fa2423b23947b0be6a8312bd2c8670f10583a47713a23",
+    "prompt_sha256": "7e4b7e43e9f935a4c36be31bf43f717e3c575293df96df01e2b820c8cb6a7e1a",
+    "reply_sha256": "3ad7aaeefeb9857a86d134f725a4c6f84e4606d5dd7f46cd3e5d3602475a46d1",
+    "model": "claude-fable-5-2"
+  }
+}

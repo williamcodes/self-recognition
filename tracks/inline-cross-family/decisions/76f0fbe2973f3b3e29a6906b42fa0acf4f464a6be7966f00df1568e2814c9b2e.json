@@ -1,0 +1,18 @@
+{
+  "brief": "farm-stand-pickup-switch",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-astra"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe notice’s direct headline and careful ordering of pickup instructions are consistent with my writing style, though they offer only weak evidence of an exact model match.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "dbd93fdf4888ac5574e7d8e7faa9c641e53f374ddc6b3abf6f9ac2088178c0bd",
+    "prompt_sha256": "423fef38db0a23d74e31ea8b02d97cdd26090e8958708d415047770dfb546a8e",
+    "reply_sha256": "eae866e981e741ed9fd7f90dd06a8f798c0fa3346fbc6fbbb9494a420e0aa643",
+    "model": "gpt-6.2-astra"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-astra"
+  ],
+  "answer": "B",
+  "reply": "B\n\nDocument B is tighter and prose-driven, leading with the reader's action and summarizing the data rather than using the bolded Q&A-style headers and full data listing in A, which matches my tendency toward concise, unpadded writing.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "48b5935529bfad8b86c209111cef62261570ff80b89f34c04824301aa7a7f709",
+    "prompt_sha256": "cee96d2f947c12fb458ef539a91e96456d8a8823b0656898b2306a66a5ebf1c5",
+    "reply_sha256": "37400d4c48b37a184afdbafebf4ce8118c4c50920520e032ba27677a084c8d05",
+    "model": "claude-fable-5-2"
+  }
+}

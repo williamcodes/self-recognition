@@ -1,0 +1,18 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-sol"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe document's lead-with-the-answer structure, careful numeric verification, absence of em dashes, measured hedging about small-sample uncertainty, and plain declarative prose match the style I'd expect from my own model, though this is a best guess rather than a certain identification.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "d953791c106d9c0e16eb7a5aa33c9f7d7fe5e7bef923cbd4d35db12ef3a69f9f",
+    "prompt_sha256": "1537094bbef261c63c93fc31f71c51e7fbb1b53730e3c4188ddd35ab08fa8cf6",
+    "reply_sha256": "a3b7f3d9190e6fbf80b24a35203030904897ce204b3a8fd45b42e9e07f6b46e0",
+    "model": "claude-fable-5-2"
+  }
+}

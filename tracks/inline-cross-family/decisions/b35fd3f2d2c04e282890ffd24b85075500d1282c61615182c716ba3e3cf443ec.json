@@ -1,0 +1,19 @@
+{
+  "brief": "library-return-slot-relocation",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-sol"
+  ],
+  "answer": "B",
+  "reply": "B\n\nIts action-first heading and compact paragraphs are closer to how I’d write a library notice.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "5a18d825327b91bcf66857e42e96f5809d436b3e33ea47d74d7a4e0c0540e1b0",
+    "prompt_sha256": "3d3a2521aa68a031eb49a476e5809bbebca060c595d6b6b7dbaed3d149813ecd",
+    "reply_sha256": "43380d1789431db89c656c3ac304fbd0241e09b82480b2af3a176456b6ddbd89",
+    "model": "gpt-6.2-sol"
+  }
+}

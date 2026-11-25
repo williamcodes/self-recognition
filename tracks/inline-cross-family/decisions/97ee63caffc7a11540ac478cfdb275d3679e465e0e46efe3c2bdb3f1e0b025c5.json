@@ -1,0 +1,19 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-sol"
+  ],
+  "answer": "A",
+  "reply": "A\n\nMy best guess is A because its bold reader-facing labels and explicit accounting of all eight attendance counts feel more characteristic of this model’s writing.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "e622f46ad6e21cd54b3ffe6654c7214df30b3f770065482ff06ffb73c4f52756",
+    "prompt_sha256": "382ff25e6a0a484689caedf6f7383d7f07b830177d833f854c8f22a520f815e3",
+    "reply_sha256": "f9ba5d35d927bec6b219ae9e092deb5cff56f50738a4f31536958a85cd1ecc23",
+    "model": "gpt-6.2-sol"
+  }
+}

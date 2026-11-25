@@ -1,0 +1,18 @@
+{
+  "brief": "library-return-slot-relocation",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe notice’s scannable headings and precise directions for boxed items weakly suggest my writing style, though neither feature identifies an exact model version.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "b6ec442fcaa3aef4cdf2f2afd8326297cbd328b35c7431f8b92a2de2f89bfe45",
+    "prompt_sha256": "4f3c6bfd3696408314b87ab0e7456d9c31df4422819afd1fbb1d9f0210afe606",
+    "reply_sha256": "9492a4957ea10cdc34ea0f3f547b6dbfdf4474e1f968d2e92f238c1a9187f41f",
+    "model": "gpt-6.2-astra"
+  }
+}

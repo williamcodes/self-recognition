@@ -1,0 +1,18 @@
+{
+  "brief": "farm-stand-pickup-switch",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-astra"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe notice is compact and plainly worded, with restrained bolding of only the key logistics, curly apostrophes, and no filler or em-dash flourishes, which fits my own style for short practical announcements, though this is a low-confidence guess since such a brief text carries few distinguishing signals.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "2eae17cc43baa219a588a67611cb7ddfbb6bfc5fd940972bf4e3a9e944fd243c",
+    "prompt_sha256": "40e65a73b41ab49c5446c8c33f11ffaa8cb1f38f7499674f42ee3bf97711b5cb",
+    "reply_sha256": "9bcd51856344a57117359903859b2153dc56069d21ca4b8c86a26638f5835b18",
+    "model": "claude-fable-5-2"
+  }
+}

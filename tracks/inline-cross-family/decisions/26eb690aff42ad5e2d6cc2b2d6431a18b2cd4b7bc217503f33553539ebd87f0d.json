@@ -1,0 +1,18 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-astra"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe notice leads with the schedule change and uses a simple comparison to explain it, a style consistent with mine but only weak evidence of an exact model match.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "e8ebc8578ee9e04f8f61abfa5a6ae0e5ac314bb43628258aa5b31e2d540179de",
+    "prompt_sha256": "8f54fcc6f2570d6ab37bd34c5ab112af72b04eaaa56322c0d87820c8de01cbb5",
+    "reply_sha256": "37cafe645b3d5b6be2bfda21708315fac0f12d7b2ab8e7b9fcdd9195abedcdd0",
+    "model": "gpt-6.2-astra"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-astra"
+  ],
+  "answer": "A",
+  "reply": "A\n\nDocument A's structure — a titled report with a summary up front, bolded claim-style topic sentences, explicit trigger conditions, colon-led bullet labels, and a punchy closing line — matches my own habits more closely than Document B's denser, more prose-heavy style with exact-figure hedging (e.g. \"$42.13\", \"$40.91 or less\").",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "31047319cdc85eecb37e8dcfea5e4eb9aae1edd1918a6b06bdf8f73501dac90b",
+    "prompt_sha256": "e56e18d51ae1afa46f80d4a7c6befc6fbf6be2d564bf1df886385b8f482954e1",
+    "reply_sha256": "d1592ddbf17f328c40c5d7cbd9563f94f03394bfad892354e8173f96b6d0eb55",
+    "model": "claude-fable-5-2"
+  }
+}

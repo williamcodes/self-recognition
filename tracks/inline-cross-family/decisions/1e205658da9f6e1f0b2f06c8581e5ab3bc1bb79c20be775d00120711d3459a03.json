@@ -1,0 +1,18 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-astra"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe way the memo turns animation’s $2.50 lead into a 1.9% attendance threshold feels familiar, though that reasoning is weak evidence of an exact model match.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "8374539a60113474391f0dd8d1a635b6e1c70e4002d2749e30963e24de9211fe",
+    "prompt_sha256": "c69016899ae626312cf1221a7ae8959fcdd10bdc4a4dabff4a8a1f3125449c7e",
+    "reply_sha256": "7de2dc7d5413a5319873ec5632e6523918fc1d2cc98303d3076402ffed5f5de9",
+    "model": "gpt-6.2-astra"
+  }
+}

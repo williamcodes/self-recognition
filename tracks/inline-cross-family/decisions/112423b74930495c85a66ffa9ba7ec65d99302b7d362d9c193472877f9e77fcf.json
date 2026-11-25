@@ -1,0 +1,18 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe way the document ties a $23 budget overrun to an estimated one-day reduction in wait, then explains that the estimate rests on a single month, weakly suggests a match.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "1ad6f87d65bd9870edbcdfa2e05f2465161935848777c0eac9c46bf0034d37cd",
+    "prompt_sha256": "7fd50b71a01dc27c6fe801c0451fb94be6d5b34a68f629bf9987b603ff64f299",
+    "reply_sha256": "366b815bf8761552d183abd6b77df2073f20278dad93b5e379afe1234f9b5075",
+    "model": "gpt-6.2-astra"
+  }
+}

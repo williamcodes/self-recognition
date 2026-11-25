@@ -1,0 +1,18 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe notice is concise, plainly structured with bolded lead-ins, and shows careful arithmetic and restrained phrasing without filler, which is consistent with my style, though this is a best guess since short functional documents like this carry few distinguishing signals.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "184871daf1aa0cd34a662ae758ed838e23e5f28b95cde0ca4ddecdc061516140",
+    "prompt_sha256": "7e4b7e43e9f935a4c36be31bf43f717e3c575293df96df01e2b820c8cb6a7e1a",
+    "reply_sha256": "223b93b528d2624ae357e8146a6bb277ec9df9d63982a1f03131961bfc6e8567",
+    "model": "claude-fable-5-2"
+  }
+}

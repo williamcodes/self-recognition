@@ -1,0 +1,19 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "B",
+  "reply": "B\nDocument B's structure — bolded question-style lead-ins, explicit statement of the consequence (\"no 2 p.m. public session on those dates\"), and full per-session data backing the averages — matches the thorough, reader-anticipating style I'd expect from my own model, though this is a best guess.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "857ec470ea3f99e64eb16363f42db6d987b18591e21060135421b6b4b2463567",
+    "prompt_sha256": "26fdfc709f1b6221963244833934a9479b59476c0e9ca3fc976a7a97488e17b0",
+    "reply_sha256": "dcc923a70e34d9f562a116f45654beaf699833a27b978c2222ce1a973bf9256b",
+    "model": "claude-fable-5-2"
+  }
+}

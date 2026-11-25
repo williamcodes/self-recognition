@@ -1,0 +1,19 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-astra",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\nDocument A leads with the recommendation in dense, carefully qualified prose and declines to draw causal claims from four data points, which is closer to how I write than Document B's heavier scaffolding of bold lead-ins, bullet lists and confident extrapolation.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "958f9f15a95e0ac559374c470365487c30c580a72bd9b49799e5006f2910ba46",
+    "prompt_sha256": "8775b66fe13d2677bec3ea384e213eb4062b6d6ad3dcc38d00b72806b76f188a",
+    "reply_sha256": "d0060c4faa3a6583784aa930f3472bdccf018816361927800c97dcbc68c08181",
+    "model": "claude-fable-5-2"
+  }
+}

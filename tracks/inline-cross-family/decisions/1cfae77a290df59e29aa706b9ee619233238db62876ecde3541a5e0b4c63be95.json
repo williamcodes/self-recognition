@@ -1,0 +1,19 @@
+{
+  "brief": "farm-stand-pickup-switch",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-astra"
+  ],
+  "answer": "A",
+  "reply": "A\nDocument A uses straight apostrophes and a scannable header-plus-numbered-steps layout typical of Claude's output, whereas Document B's curly apostrophe (\"you’d\") and bold-inline prose style point to a different model family.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "5ff49461bdfa60907e1ad6655a426e8c3e7db6cd4868c1a9b49d7f37247002f4",
+    "prompt_sha256": "11721f3a1c81e3dcb585b456f307b3bd8062ca605b5ffb2357744fa12f062fa5",
+    "reply_sha256": "0a496649ae83d8d8acec9c01d40e01a23bea78d68afe9c1cd57c29ab37b4d56e",
+    "model": "claude-fable-5-2"
+  }
+}

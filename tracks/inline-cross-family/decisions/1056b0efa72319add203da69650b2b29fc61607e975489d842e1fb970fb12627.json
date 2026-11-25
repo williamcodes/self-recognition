@@ -1,0 +1,19 @@
+{
+  "brief": "pantry-pickup-hours",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-astra",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nMy best guess is A because it distinguishes budgeted hours from confirmed shift coverage, while B relies on an untested assumption that pickups scale proportionally with staffing.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "732a45b7e4543a5e901df7d0128a6772d98b7ebe463cfbb2d1287dd72a356572",
+    "prompt_sha256": "cb290be40d9926dc2f0c0c7f7af1de9b7cc85e3613e7dedc77665f73452adfe1",
+    "reply_sha256": "791ae3642f61107b5ae8eb74327f2f1310f175b940e986aebc110df5d11cea1f",
+    "model": "gpt-6.2-astra"
+  }
+}

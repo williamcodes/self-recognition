@@ -1,0 +1,19 @@
+{
+  "brief": "farm-stand-pickup-switch",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nIts compact structure, selective bolding, and focus on pickup logistics are closer to how I would write the notice.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "d50b112eb4db1ad7cec863a90dde17ff55899fbe8e31ab31132ad6aa183a0d90",
+    "prompt_sha256": "1e36c5c47335d7048c6f3e8df112770b3c8b9781996c26b2722b648d8f3e2337",
+    "reply_sha256": "883ec01f3f39bc445cb2334bfb6c0a2afcd3b649c4fb5e690d4ea0ef6f85a43a",
+    "model": "gpt-6.2-sol"
+  }
+}

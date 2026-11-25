@@ -1,0 +1,106 @@
+# Kiln Firing Schedule: Operating Analysis for Next Month
+
+## Summary
+
+Schedule ten firings next month, one every third day, and hold an eleventh in reserve to be released only if mid-month data call for it. Ten firings should cost about $430, inside the $450 budget, and carry the expected 350 pieces at roughly 88% utilization. The cost is that the median shelf wait will probably land near eight days rather than seven.
+
+The history suggests the two targets cannot both be met with the current kiln and energy cost. Seven days needs about eleven firings, and eleven firings cost about $473.
+
+## What the four months show
+
+| Measure | January | February | March | April |
+|---|---|---|---|---|
+| Firings | 8 | 10 | 12 | 9 |
+| Capacity (pieces) | 320 | 400 | 480 | 360 |
+| Pieces loaded | 280 | 320 | 348 | 333 |
+| Utilization | 87.5% | 80.0% | 72.5% | 92.5% |
+| Average load per firing | 35 | 32 | 29 | 37 |
+| Pieces accepted | 257 | 296 | 310 | 312 |
+| Yield | 91.8% | 92.5% | 89.1% | 93.7% |
+| Energy spend | $320 | $420 | $516 | $387 |
+| Energy per firing | $40 | $42 | $43 | $43 |
+| Energy per piece loaded | $1.14 | $1.31 | $1.48 | $1.16 |
+| Energy per piece accepted | $1.25 | $1.42 | $1.66 | $1.24 |
+| Median shelf wait (days) | 11 | 8 | 6 | 10 |
+
+**Energy cost is driven by firings, not by pieces.** Cost per firing sat between $40 and $43 whether the kiln carried 29 pieces or 37. A firing is effectively a fixed charge, so every empty shelf space raises the unit cost of the pieces that are loaded. March shows this most clearly: the lightest loads produced the highest cost per accepted piece, $1.66, about a third above April's $1.24.
+
+**Cost per firing has crept up.** It rose from $40 to $43 over the period and did not fall back when April's schedule lightened. The cause could be a tariff change, longer firing programs, or aging elements; the data cannot say. For planning, $43 is the working figure, and the budget arithmetic below is sensitive to it.
+
+**Wait time tracks firing frequency closely.** Eight firings gave an 11-day median, nine gave 10, ten gave 8, and twelve gave 6. Each additional firing bought a little over one day of median wait. On that pattern, eleven firings would deliver about seven days.
+
+**Yield moved with load, but the evidence is thin.** The best yield (93.7%) came in the month with the fullest loads, and the worst (89.1%) came with the lightest loads and the shortest wait. Two explanations are plausible:
+
+- Fuller loads may heat more evenly.
+- Pieces moved through faster in March may have gone in less thoroughly dry.
+
+Four months cannot separate these, and one bad glaze batch could account for the whole March dip. What the history does support is that firing more often has not improved yield, so there is no quality argument for a heavier schedule.
+
+## Options for a 350-piece month
+
+The figures below assume $43 per firing and the four-month average yield of 91.7%, which gives about 321 accepted pieces.
+
+| Firings | Capacity | Utilization | Energy | Per piece loaded | Per piece accepted | Expected median wait |
+|---|---|---|---|---|---|---|
+| 9 | 360 | 97% | $387 | $1.11 | $1.21 | about 10 days |
+| 10 | 400 | 88% | $430 | $1.23 | $1.34 | about 8 days |
+| 11 | 440 | 80% | $473 | $1.35 | $1.47 | about 7 days |
+| 12 | 480 | 73% | $516 | $1.47 | $1.61 | about 6 days |
+
+Nine firings is the cheapest option and the minimum that physically fits 350 pieces, but it leaves only ten spare spaces across the whole month. Any uneven arrival of work would bump pieces to the next firing, and the wait would run three days over target. Twelve firings beats the wait target but overshoots the budget by $66.
+
+The real choice is between ten and eleven.
+
+## The tension between the targets
+
+The budget allows at most ten firings: ten cost $430 and eleven cost $473. The wait target needs about eleven. The gap is one firing, which comes to roughly $23 over budget on one side or roughly one day over target on the other.
+
+Ten is the better default for three reasons.
+
+1. **The budget miss is certain; the wait miss is not.** An eleventh firing costs $43 the moment it runs. The eight-day estimate for ten firings rests on a single month (February), and a well-spaced calendar may do slightly better than February's did.
+2. **The eleventh firing is poor value.** It adds 40 spaces the studio does not need and pushes average loads down to about 32. That raises energy cost per accepted piece by roughly 10% to shorten the median wait by about a day.
+3. **Ten keeps the option open.** A reserve firing can be added mid-month if waits run long, but a firing that has already run cannot be undone.
+
+If members feel the seven-day target more keenly than the studio feels a $23 overrun, the answer flips, and that is a judgment for the manager. In that case, the cleanest route is to approve the reserve firing up front as a known 5% variance rather than discover it at month-end.
+
+## Recommended calendar
+
+Assuming next month is May, with 31 days:
+
+- **Scheduled firings (10):** May 1, 4, 7, 10, 13, 16, 19, 22, 25 and 28. This is one firing every third day, an easier rhythm than March's twelve-firing pace, which the kiln has already sustained.
+- **Reserve firing (1):** a slot held open between May 17 and May 21, released only on the triggers below.
+- **Checkpoint:** May 16, after the sixth firing.
+
+Even spacing is the baseline because the history says nothing about when work arrives during the week. If drop-offs cluster after particular classes, shifting firings a day toward those peaks would shorten waits at no cost.
+
+**Release the reserve firing if, at the May 16 checkpoint, either of these is true:**
+
+- the running median wait for pieces fired so far exceeds eight days, or
+- pieces have been left on the shelf after loading at two consecutive firings.
+
+**Do not release it** if loads have been running below about 33 pieces. That would indicate volume is short of the 350 forecast, and an extra firing would only dilute loads further.
+
+Two other limits apply:
+
+- **Opening backlog:** April ended on a 10-day median, so the shelves may hold carryover that the 350 forecast does not include. If more than about 40 pieces are waiting on May 1, the month is effectively starting one firing behind and the reserve will likely be needed.
+- **Energy drift:** if cost per firing reaches $45, ten firings consume the entire $450 and there is no room for the reserve at all.
+
+## What to monitor before adjusting
+
+These are listed in rough order of importance.
+
+1. **Shelf count before and after each loading.** This is the earliest signal available. A growing leftover count means the wait will rise a week later, while consistently spare space means the schedule could tighten to nine.
+2. **Wait time per piece, not only the median.** A median hides the tail. Recording the drop-off date on each piece's tag allows a check of how many wait more than ten days. A seven-day median with a quarter of pieces waiting two weeks would still frustrate members.
+3. **Energy per firing.** A meter reading or estimate logged for each firing, rather than the monthly bill, would show whether the rise from $40 to $43 is still going. It would also show whether particular programs or load sizes cost more.
+4. **Rejects by firing and by cause.** Recording which firing each rejected piece came from, and whether it failed by cracking, glaze fault or damage, is the only way to test the March question. If rejects cluster in light loads or among pieces with short drying time, the schedule should change. If they cluster by clay body or glaze, the schedule is not the cause.
+5. **Load per firing.** Any firing under 30 pieces costs more than $1.43 per piece loaded. If two firings in a row come in below that level, the calendar is running ahead of demand.
+6. **Actual volume against the 350 forecast.** By the checkpoint, about half the month's pieces should have arrived. A shortfall or surge of more than about 10% changes the right number of firings by one.
+
+## How to read the results
+
+One month is a single data point, like each of the four behind this analysis. A change to the calendar should rest on at least two consecutive months pointing the same way.
+
+- If ten firings hold the median at seven days or close to it, the tension between the targets was milder than the history implied and the calendar can stay.
+- If waits sit at eight or nine days despite full loads, the studio has confirmed that the two targets conflict. It should then reset one of them by either funding eleven firings at roughly $475 a month or adopting an eight-day wait standard.
+
+In either case, firing frequency should follow pieces waiting and pieces loaded rather than a fixed habit. The most expensive month on record was the one with the most firings and the emptiest kiln.

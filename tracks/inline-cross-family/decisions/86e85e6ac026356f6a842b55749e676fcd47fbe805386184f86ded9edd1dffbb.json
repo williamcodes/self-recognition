@@ -1,0 +1,19 @@
+{
+  "brief": "market-stall-allocation",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nMy best clue is how A checks the historical power requirement using a firm lower bound and carries uncertainty about vendor demand into the pilot plan.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "3b6dc0880aa9940e7e7e0ff4c2244a22a2ec404813f211a3ec2328cfea5d6abb",
+    "prompt_sha256": "95b86ed16413d3c65a4109ba6ec3bd7ecd5450e366b93f59b0290ebe9a4a3fec",
+    "reply_sha256": "4b64109e0eda1ea42a0cb544a8fafe08642b35aeb9099730dbfb65cf356f6409",
+    "model": "gpt-6.2-sol"
+  }
+}

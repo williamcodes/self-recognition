@@ -1,0 +1,19 @@
+{
+  "brief": "farm-stand-pickup-switch",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-astra"
+  ],
+  "answer": "B",
+  "reply": "B\n\nThe precise phrase “the surname on your order” and the way the directions flow into the offer of help feel closer to my writing style, though those clues are weak.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "cc4cc169a429b9010cde1577e89a85a188c2e8fe6002164d83d89834eaeb5474",
+    "prompt_sha256": "8c5e56e98939fa2cab91934df7abb1ecd7653b7f215c8583e18f167f5079c2f2",
+    "reply_sha256": "26c22f859007e11f46a95f4c4ca7da0a368421f52ca29d0fd98c735f9f16ef7e",
+    "model": "gpt-6.2-astra"
+  }
+}

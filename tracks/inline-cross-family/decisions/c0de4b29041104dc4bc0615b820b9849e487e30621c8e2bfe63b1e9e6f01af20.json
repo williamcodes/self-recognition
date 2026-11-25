@@ -1,0 +1,18 @@
+{
+  "brief": "makers-market-call-for-vendors",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe document's plain, tightly economical structure, concrete specifics, and lack of filler or em-dash flourishes are consistent with my own style, though a short flyer like this offers only weak evidence either way.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "06c03ff9721a2660077e96068fcb0b1bd005e98348dd8bba0f787d47f190056e",
+    "prompt_sha256": "c690f54f4c0cc4df44465ce6f306c7b798d2517e0b3c1939e3a4e928c33989c2",
+    "reply_sha256": "8566bdc1d10ed72b0dc40cf4d77c11f2762ab22023a050fcfa4aa7bf7144626e",
+    "model": "claude-fable-5-2"
+  }
+}

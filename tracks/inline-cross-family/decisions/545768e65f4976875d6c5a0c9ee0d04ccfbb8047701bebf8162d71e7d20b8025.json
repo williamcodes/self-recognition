@@ -1,0 +1,19 @@
+{
+  "brief": "library-return-slot-relocation",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nIts action-first heading, concise wording, and emphasis on the reopening date feel more like how I’d write the notice.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "86d7e12161c5ab2ed19014f9532cdbb13c66862d0cb4a009c4988b40b9273fc8",
+    "prompt_sha256": "7215ae042490570a62ccab8f26518dc8e4a11eaedbced28ee59f11b00b599ae0",
+    "reply_sha256": "286292fc82fafbe9e776d0a4584804fae80518def65b555bdb582767018134fd",
+    "model": "gpt-6.2-sol"
+  }
+}

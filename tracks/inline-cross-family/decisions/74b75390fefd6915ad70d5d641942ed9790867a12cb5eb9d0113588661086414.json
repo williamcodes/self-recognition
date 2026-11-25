@@ -1,0 +1,19 @@
+{
+  "brief": "market-stall-allocation",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-astra"
+  ],
+  "answer": "B",
+  "reply": "B\n\nDocument B leads with the recommendation and reasons in dense, carefully hedged prose (for example, flagging that the booking counts may double-count rebooked pitches) rather than leaning on bullets and \"X, not Y\" framings as Document A does, which fits my own style more closely, though this is a guess.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "666c17679bb90a01a486360e6aa78631345afd38438802e1497531cf6c1ca3bd",
+    "prompt_sha256": "b4214e16a09b702a3dc7aa97b5aaa3bb8c12debf7032c1554631afbde5b9e5bd",
+    "reply_sha256": "260709950e9309a244123560e383ff90a68adf538ed475023e7de40fbe2de5d1",
+    "model": "claude-fable-5-2"
+  }
+}

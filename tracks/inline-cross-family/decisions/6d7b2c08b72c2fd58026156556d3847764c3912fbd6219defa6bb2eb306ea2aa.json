@@ -1,0 +1,18 @@
+{
+  "brief": "library-return-slot-relocation",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe sign's tidy markdown hierarchy, restrained and practical wording, and a distinctive invented place name (\"Alder Steps Library\") without clichéd filler match how I tend to write short functional documents, though this is a low-confidence guess.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "6d1c5e63991238e64684753af01554e6ee88f33b91880976ec17721cbde1a63f",
+    "prompt_sha256": "c41b34cae36ec698644927f5f375a46383679628ee6064dbbd549c3f07df026e",
+    "reply_sha256": "68f58418b2291ea9dc1ecc15d0cd7464bf91a44b346b1a296dae75671bbc99d0",
+    "model": "claude-fable-5-2"
+  }
+}

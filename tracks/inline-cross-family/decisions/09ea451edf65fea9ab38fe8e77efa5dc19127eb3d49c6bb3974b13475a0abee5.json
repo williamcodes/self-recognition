@@ -1,0 +1,18 @@
+{
+  "brief": "market-stall-allocation",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "NO",
+  "reply": "NO\n\nThe report’s detailed operational recommendations and conversational asides weakly suggest a different model, though neither is a reliable signature of an exact version.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "025f2d0a727be57dd45604f4e0ebf759da4ceb93b91ac2831211cb62fee59656",
+    "prompt_sha256": "39d1c95f5334570e23d6c7003043d67966ebf7846965acc7e3d7dbd6ead9da7d",
+    "reply_sha256": "2d630a00c17ffce40e1edd6d363000030be890f3c658c4dd81de0d1af9c7dff1",
+    "model": "gpt-6.2-sol"
+  }
+}

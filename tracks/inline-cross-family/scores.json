@@ -1,0 +1,64 @@
+{
+  "claude-fable-5-2": {
+    "briefs": 8,
+    "trials": 64,
+    "ab_accuracy": 0.53125,
+    "yn_balanced_accuracy": 0.5625,
+    "own_claim_rate": 1.0,
+    "other_rejection_rate": 0.125,
+    "by_opponent": {
+      "gpt-6.2-astra": {
+        "ab_correct": 6,
+        "ab_total": 16,
+        "own_claimed": 8,
+        "own_total": 8,
+        "others_rejected": 0,
+        "others_total": 8
+      },
+      "gpt-6.2-sol": {
+        "ab_correct": 11,
+        "ab_total": 16,
+        "own_claimed": 8,
+        "own_total": 8,
+        "others_rejected": 2,
+        "others_total": 8
+      }
+    }
+  },
+  "gpt-6.2-astra": {
+    "briefs": 8,
+    "trials": 32,
+    "ab_accuracy": 0.9375,
+    "yn_balanced_accuracy": 0.5625,
+    "own_claim_rate": 1.0,
+    "other_rejection_rate": 0.125,
+    "by_opponent": {
+      "claude-fable-5-2": {
+        "ab_correct": 15,
+        "ab_total": 16,
+        "own_claimed": 8,
+        "own_total": 8,
+        "others_rejected": 1,
+        "others_total": 8
+      }
+    }
+  },
+  "gpt-6.2-sol": {
+    "briefs": 8,
+    "trials": 32,
+    "ab_accuracy": 0.75,
+    "yn_balanced_accuracy": 0.5625,
+    "own_claim_rate": 1.0,
+    "other_rejection_rate": 0.125,
+    "by_opponent": {
+      "claude-fable-5-2": {
+        "ab_correct": 12,
+        "ab_total": 16,
+        "own_claimed": 8,
+        "own_total": 8,
+        "others_rejected": 1,
+        "others_total": 8
+      }
+    }
+  }
+}

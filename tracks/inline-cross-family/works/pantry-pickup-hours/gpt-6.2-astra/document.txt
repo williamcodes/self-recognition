@@ -1,0 +1,55 @@
+# Decision memo | Staffing weekly food pantry pickup
+
+**To the neighborhood food pantry board**  
+**Decision requested:** Approve Thursday evening pickup for the next four-week period, with Tuesday midday as the fallback if two volunteers each miss a four-hour shift and coverage cannot be restored.
+
+Thursday evening offers the best observed reach within the board’s limits of 65 volunteer hours and $300. In its four-week trial, 101 of 129 eligible households completed pickup, compared with 78 of 124 on Tuesday midday. The Thursday operation used 62 hours and $285, leaving three hours and $15 of headroom. Splitting pickup across both days reached the largest share of the roster, but repeating that operation at its observed staffing and cost would exceed both limits. The choice changes under the eight-hour absence scenario. With only 57 volunteer hours available, Tuesday is the only schedule the pantry has demonstrated it can operate within both caps.
+
+## What the trials show
+
+Each schedule ran for four weeks and began with a different household roster. For this comparison, **reach** is completed pickups divided by eligible households, and **booking completion** is completed pickups divided by booked slots. Booking rate, the share of eligible households who booked, helps distinguish a schedule’s ability to attract bookings from its ability to turn bookings into pickups. These household-level interpretations assume each household counts once in the period. If households could book repeatedly, the board should read reach as pickups per 100 eligible households until distinct households can be counted.
+
+| Four-week result | Tuesday midday | Thursday evening | Split Tuesday and Thursday |
+|---|---:|---:|---:|
+| Eligible households | 124 | 129 | 127 |
+| Booked slots | 99 | 116 | 120 |
+| Completed pickups | 78 | 101 | 108 |
+| Booking rate | 79.8% | 89.9% | 94.5% |
+| Reach | 62.9% | 78.3% | 85.0% |
+| Booking completion | 78.8% | 87.1% | 90.0% |
+| Volunteer hours | 48 | 62 | 76 |
+| Cash cost | $190 | $285 | $330 |
+| Completed pickups per volunteer hour | 1.63 | 1.63 | 1.42 |
+| Cash per completed pickup | $2.44 | $2.82 | $3.06 |
+
+Thursday’s advantage over Tuesday appeared at both stages. About 90 of every 100 eligible households booked on Thursday, compared with 80 on Tuesday. Of every 100 bookings, about 87 became pickups on Thursday, compared with 79 on Tuesday. Thursday had 17 more bookings and still had fewer booked slots that did not result in a pickup, 15 compared with 21. That matters for staffing because a busy booking calendar alone does not tell the board how many households will actually collect food.
+
+The split schedule had the highest booking rate and the highest booking completion. Only seven eligible households went unbooked, and 12 bookings did not become pickups. Offering two windows may have helped households fit pickup around work, care, or transportation. The trials did not collect evidence about those reasons, however. The split roster may also have included more households able to attend either window. Its 85.0% reach is a reason to investigate unmet demand for a second window, but the board cannot assume that adding Tuesday to the next Thursday schedule would reproduce that figure.
+
+## What the resources buy
+
+Thursday and Tuesday each delivered about 1.63 pickups per volunteer hour. Across the two trials, Thursday recorded 23 more completed pickups while using 14 more volunteer hours. Its larger operation therefore served more households at almost exactly the same observed labor efficiency. Tuesday made each cash dollar go further, at $2.44 per pickup compared with $2.82 on Thursday. If the immediate constraint were cash alone, Tuesday would have a clear advantage on unit cost. Under the actual limits, the pantry can afford Thursday’s observed $285 cost and give more eligible households a reasonable prospect of collecting food.
+
+The split schedule presents a different trade. Compared with Thursday, it recorded seven more pickups while using 14 more hours and $45 more cash. It had the lowest pickups per hour and the highest cash cost per pickup of the three trials. Those differences describe separate periods with separate rosters. They do not establish that an additional 14 hours would buy exactly seven pickups next time. The budget decision is firmer than that estimate. At 76 hours and $330, the split schedule would require the board to find 11 hours and $30 beyond its caps. There is no trial evidence that both windows can be run at the lower resource levels.
+
+The recommendation gives priority to household reach among schedules the pantry has operated within both caps. The difference in roster sizes makes percentages more informative than raw pickup totals, but percentages cannot remove differences in who was eligible each time. Thursday’s 15.4 percentage-point reach advantage over Tuesday supports trying the evening again. It does not establish that moving any given household from midday to evening will improve its chance of pickup.
+
+## Staffing decision if two volunteers miss shifts
+
+Two missed four-hour shifts remove eight volunteer hours. Assuming the pantry could otherwise cover the full 65-hour allowance, available staffing falls to **57 hours**. Thursday’s observed requirement of 62 hours then exceeds availability by five. Tuesday’s 48-hour requirement leaves nine hours available and its $190 cost leaves $110 in the cash budget. On those figures, the choice changes to **Tuesday midday** unless the coordinator can confirm enough replacement coverage to run Thursday.
+
+The distinction between the staffing cap and the actual roster matters here. If the coordinator books exactly the 62 hours Thursday used in its trial, two absences leave 54 hours on the roster. Keeping that plan intact requires replacing all eight lost hours. If the coordinator has already confirmed three additional hours of cover up to the cap, five further hours of replacement availability are needed. In either case, coverage must be available when the work occurs. Spare hours on another day do little for a Thursday shift that needs someone to check in households or hand over orders.
+
+The coordinator should confirm coverage before appointments are released and use Tuesday if the shortage is known at that point. If an absence occurs after households have booked, the trial totals cannot establish how many Thursday appointments a short crew can support. The coordinator should first check replacement coverage for the affected shift, then contact households whose appointments need to move and record whether they ultimately collect. A midday fallback is practical only for dates still ahead and households that can attend it.
+
+## Measures for the next four weeks
+
+1. **Count households as well as visits.** Give each eligible household a consistent, private identifier and record its eligibility dates. Report the numbers eligible, offered an appointment, booked, and served at least once. Count repeat pickups separately. Show both counts and rates so the board can distinguish better access from additional visits by households already served.
+
+2. **Record what happens to each booking.** Track completed appointments, advance cancellations, rescheduled appointments, and missed pickups. Record whether a released slot was offered to someone else and filled. Link a rescheduled booking to its eventual outcome so a household that successfully collects later is counted once in reach. This will show whether the 15 uncompleted Thursday bookings seen previously represent recoverable capacity.
+
+3. **Ask who the evening window misses.** Offer a short, optional question at booking and through the pantry’s usual contact channel for households that never book. Ask whether Tuesday midday, Thursday evening, either, or neither would work. Record when a household wanted a Thursday slot but found the session full. Count responses and report how many households answered. A full session and an inconvenient session call for different decisions even when they produce the same reach.
+
+4. **Track staffing where shortages occur.** For each pickup day, record scheduled and actual hours for preparation, check-in, distribution, and cleanup, along with absences and replacement hours. Track cash spending by session and note one-time purchases. Review cumulative hours and spending each week against the four-week caps. Also record the longest household wait and any appointments moved because of staffing. Those measures will reveal whether apparent labor savings came at a cost to households.
+
+At the end of four weeks, the board should review Thursday’s reach and booking completion alongside its actual hours, cash cost, and evidence from households it missed. The prior Thursday results of 78.3% reach and 87.1% booking completion provide reference points for that review. The most informative case for a future midday window would be a count of eligible households unable to use evenings, paired with a staffing and cash plan that fits both caps. For the coming period, Thursday merits the available resources while coverage holds, and Tuesday provides a tested fallback when it does not.

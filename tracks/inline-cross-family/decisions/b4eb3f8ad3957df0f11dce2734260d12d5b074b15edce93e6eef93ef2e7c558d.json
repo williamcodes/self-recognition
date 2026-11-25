@@ -1,0 +1,19 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "B",
+  "reply": "B\n\nThe explicit note that the 2 p.m. session is canceled and the inclusion of all eight pilot counts make B my best guess.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "f5e8c857e0ede7489406abdedef927c7ff8082ac2afee49a1bf85c95a67a9b9d",
+    "prompt_sha256": "2f615300d6141649a9c7e8112e4ff231456c4532cfe2de53feae6c66a9dcd8b5",
+    "reply_sha256": "a03559b5c761a469c23ceaaa2d19a077a53eb98e3ff8c362adc5d52e0b74acb9",
+    "model": "gpt-6.2-sol"
+  }
+}

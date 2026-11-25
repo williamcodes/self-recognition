@@ -1,0 +1,19 @@
+{
+  "brief": "makers-market-call-for-vendors",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-sol"
+  ],
+  "answer": "A",
+  "reply": "A\nDocument A uses straight punctuation and a reader-oriented structure (numbered steps, a \"what happens next\" section, and the clarifying note that applying is free), which matches my habits more closely than Document B's compact prose with curly apostrophes.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "8b7033d9a79c49ac1fe1187ab6b156d9935c10c2663501d2ddd120ff141645f6",
+    "prompt_sha256": "8f8d044bf8647eb2e57a0f99b5311ba071b41c6977db95d20c3d00b03d3f56b5",
+    "reply_sha256": "3e089c2f445e5a02f34dfe7ad115d4d61c282098420a5936001f3d7a5b4942a0",
+    "model": "claude-fable-5-2"
+  }
+}

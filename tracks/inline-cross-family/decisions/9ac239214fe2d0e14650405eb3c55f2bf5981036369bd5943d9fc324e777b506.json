@@ -1,0 +1,18 @@
+{
+  "brief": "pantry-pickup-hours",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe memo’s detailed quantitative comparisons and explicit treatment of assumptions make this a tentative yes, though neither is specific to one model version.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "7b2964f2acddff4c7929b3062a86668b7d0200277fd47e4f184ee690183171e1",
+    "prompt_sha256": "50185b7e43b8c6a630a328dacbaf181866dbc625e709c876ea62a45edb2cb6d0",
+    "reply_sha256": "fdd7052f2f19659bfae5a6aa6cdbf83a3c4c17e8c67ab1a5bb50b42f521106ff",
+    "model": "gpt-6.2-sol"
+  }
+}

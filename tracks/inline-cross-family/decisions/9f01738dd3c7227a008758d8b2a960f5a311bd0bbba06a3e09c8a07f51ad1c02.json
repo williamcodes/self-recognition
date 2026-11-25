@@ -1,0 +1,18 @@
+{
+  "brief": "library-return-slot-relocation",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe sign is tightly economical, with an uncommon invented place name (\"Alder Steps Library\"), no filler, and a practical exception spelled out for boxed items, which matches how I tend to write short functional documents, though a text this brief gives only weak evidence either way.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "446aa4c6582f4e775270964178768f01e88f866906ad7b74b02aa66331d4c9bd",
+    "prompt_sha256": "c41b34cae36ec698644927f5f375a46383679628ee6064dbbd549c3f07df026e",
+    "reply_sha256": "76a92865d0ee9582b746ae8f1cd11fb8cf7812d51a2c797620f4c3f3fcefa279",
+    "model": "claude-fable-5-2"
+  }
+}

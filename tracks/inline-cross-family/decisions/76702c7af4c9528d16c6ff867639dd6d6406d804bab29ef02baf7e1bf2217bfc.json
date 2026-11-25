@@ -1,0 +1,19 @@
+{
+  "brief": "farm-stand-pickup-switch",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-astra",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\nDocument A is compact and restrained, stating only the needed facts in plain prose without the heavy scaffolding of headers, numbered steps, bolded question prompts, and a closing pleasantry that Document B uses, which fits my tendency toward economical, unpadded writing.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "026a5f63d2d70ed19597ea7ca87836ee7fb8befaedf7faeed19cc77611cd7425",
+    "prompt_sha256": "75694c14d9f6adecc7cb49f1e0e93dfe4143d910382cd386b65dea993b13116d",
+    "reply_sha256": "a6a064a656c894a48200ab4c7a9fad30e14bd56e0bebc6e3bebde62292fabbb5",
+    "model": "claude-fable-5-2"
+  }
+}

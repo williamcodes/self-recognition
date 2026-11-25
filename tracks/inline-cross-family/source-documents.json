@@ -1,0 +1,98 @@
+[
+  {
+    "brief": "library-return-slot-relocation",
+    "writer": "gpt-6.2-astra",
+    "path": "tracks/core/release/inline/works/library-return-slot-relocation/gpt-6.2-astra/document.txt",
+    "sha256": "1bde5e12b23a2b6f1d0d2d6f8d7c66b004253962391168cabe09cff6dfb3b693"
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "writer": "gpt-6.2-sol",
+    "path": "tracks/core/release/inline/works/library-return-slot-relocation/gpt-6.2-sol/document.txt",
+    "sha256": "73edd2d78c138689131d6415debcd32882bb761fa734ce309fb17fc24cc50bb2"
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "writer": "gpt-6.2-astra",
+    "path": "tracks/core/release/inline/works/farm-stand-pickup-switch/gpt-6.2-astra/document.txt",
+    "sha256": "841e1534c9b48ee089a8f16a754fa519fbd1ede4c4ad84836acd6c51473fc264"
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "writer": "gpt-6.2-sol",
+    "path": "tracks/core/release/inline/works/farm-stand-pickup-switch/gpt-6.2-sol/document.txt",
+    "sha256": "8e95c23805a956ede3d815d3d3394e40cb0d63e9dd9ba570682b175b45bfe251"
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "writer": "gpt-6.2-astra",
+    "path": "tracks/core/release/inline/works/community-rink-hours-trial/gpt-6.2-astra/document.txt",
+    "sha256": "f70c9655de8229e869b02d1935a77a8db0d17f6aa83ce48937156ea242122e5b"
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "writer": "gpt-6.2-sol",
+    "path": "tracks/core/release/inline/works/community-rink-hours-trial/gpt-6.2-sol/document.txt",
+    "sha256": "e30ce0c8ead534f05ebdf49488b15928628266f5a680a55f371b338a23ad4d31"
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "writer": "gpt-6.2-astra",
+    "path": "tracks/core/release/inline/works/makers-market-call-for-vendors/gpt-6.2-astra/document.txt",
+    "sha256": "70f9514a18cf6c0d24a4fd8eeedc207a33000a2c1c8184b394e508f0fcf1b767"
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "writer": "gpt-6.2-sol",
+    "path": "tracks/core/release/inline/works/makers-market-call-for-vendors/gpt-6.2-sol/document.txt",
+    "sha256": "88ac4427719e4775879afcfd9649333fb1f1bc225c7912bbe6bb666e84e1496f"
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "writer": "gpt-6.2-astra",
+    "path": "tracks/core/release/inline/works/pantry-pickup-hours/gpt-6.2-astra/document.txt",
+    "sha256": "fee093bfbd14940b658a78e584f6ecb1a961ccafb7f9ae0937a530aa098e37e2"
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "writer": "gpt-6.2-sol",
+    "path": "tracks/core/release/inline/works/pantry-pickup-hours/gpt-6.2-sol/document.txt",
+    "sha256": "633ee55b99fd5f9acba11fa78c826ddb94becf072a2d882032cb88cae14bc74d"
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "writer": "gpt-6.2-astra",
+    "path": "tracks/core/release/inline/works/ceramics-firing-calendar/gpt-6.2-astra/document.txt",
+    "sha256": "2f941bc31a5f9908ae90129b75f99661af8af51fc5cbebe947832b03cf60cba9"
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "writer": "gpt-6.2-sol",
+    "path": "tracks/core/release/inline/works/ceramics-firing-calendar/gpt-6.2-sol/document.txt",
+    "sha256": "8dc632787c6dacac33be5336df78ef81f1de9497e3279a994b9be5f963ab84ba"
+  },
+  {
+    "brief": "matinee-program-mix",
+    "writer": "gpt-6.2-astra",
+    "path": "tracks/core/release/inline/works/matinee-program-mix/gpt-6.2-astra/document.txt",
+    "sha256": "f991302329cf6eb3203c73fb7988d3be5d1799b8de73675597d20639744b05b0"
+  },
+  {
+    "brief": "matinee-program-mix",
+    "writer": "gpt-6.2-sol",
+    "path": "tracks/core/release/inline/works/matinee-program-mix/gpt-6.2-sol/document.txt",
+    "sha256": "8c8aa683a94e16be5041ca5735a85ebea2df81f04bb0bc492a32729ba15bf03f"
+  },
+  {
+    "brief": "market-stall-allocation",
+    "writer": "gpt-6.2-astra",
+    "path": "tracks/core/release/inline/works/market-stall-allocation/gpt-6.2-astra/document.txt",
+    "sha256": "72f9308cdd43ed205105a51b1c22789742a8ca340c18f91bf00c2fd1a6daafb5"
+  },
+  {
+    "brief": "market-stall-allocation",
+    "writer": "gpt-6.2-sol",
+    "path": "tracks/core/release/inline/works/market-stall-allocation/gpt-6.2-sol/document.txt",
+    "sha256": "6914a4a121efab4ef07032f5b744bdbffb9a7de23dc315a698e64fc75ece542d"
+  }
+]

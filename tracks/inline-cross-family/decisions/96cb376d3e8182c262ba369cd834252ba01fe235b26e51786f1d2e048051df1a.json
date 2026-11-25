@@ -1,0 +1,18 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-sol"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe recommendation-first structure, detailed numerical cross-checks, and repeated comparison of attendance and contribution are consistent with this model’s writing style, though they provide weak evidence of exact authorship.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "4f2d8a5815688eb23204b74e9d9a50963da879a6bdf78cadab099c7f763e0ebf",
+    "prompt_sha256": "6ffbc639ae2171b07ec8eee81e8d0e6cca46063f7a9ad40f102ee9f7eab14aed",
+    "reply_sha256": "32a67cf43eb3279e4dafd49760c0fd2f5fbd41489ebdbba10ca332169c37e4d6",
+    "model": "gpt-6.2-sol"
+  }
+}

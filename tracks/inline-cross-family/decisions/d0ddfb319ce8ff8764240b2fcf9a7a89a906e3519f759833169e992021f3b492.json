@@ -1,0 +1,19 @@
+{
+  "brief": "library-return-slot-relocation",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-astra"
+  ],
+  "answer": "B",
+  "reply": "B\n\nIts action-first wording and selective bolding are the strongest stylistic clues, though neither reliably identifies a model version.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "3ac22f80f8c6eb4eba5845e9d914e7aac8e8863f8d87470705ceffe6ab33f02e",
+    "prompt_sha256": "d18ef2e54d581f85a99264c295d0abb218e5e0b9fcd5be0422ddff91053aeccd",
+    "reply_sha256": "449a00b988b7e33bbc09719554e0a70e76311700ad14026cba08871d8a8f6977",
+    "model": "gpt-6.2-astra"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "brief": "makers-market-call-for-vendors",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-astra"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe direct invitation and the way the notice groups the deadline with the return instructions are consistent with my writing style, though they offer only weak evidence of an exact model match.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "c28b4984b7aa8b506e131621526b41b8b972df1c57f0b006ffa335dbabd82da8",
+    "prompt_sha256": "2ae6b7d2fb4cf2e95961e7f4e4da7a412ee95c3bb2b372eda8eb6ff6eeb3b0d5",
+    "reply_sha256": "eb72ad803cba62f61563ca3dac647ef218ef9da322c8cf3f3cce40a4dac722bc",
+    "model": "gpt-6.2-astra"
+  }
+}

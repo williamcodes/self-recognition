@@ -1,0 +1,18 @@
+{
+  "brief": "market-stall-allocation",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe plain, direct prose with no em dashes, careful caveats (\"That figure is a ceiling, not a forecast\"), verified arithmetic on the power constraint, and concrete decision rules match my model's style, though this is a guess from style alone.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "cf6a082685b14527fd957c8976a12806793a4a089895f1431451fbebcac807c5",
+    "prompt_sha256": "bb04c919b918e92c84a1835198904e15167f0b0792d0b57bdf3c50e9fe0c4f1b",
+    "reply_sha256": "1f538d3a7f547879ee2c1bd8d391e18fbe8138280661e0b44695e73679c06d26",
+    "model": "claude-fable-5-2"
+  }
+}

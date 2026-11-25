@@ -1,0 +1,18 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-sol"
+  ],
+  "answer": "NO",
+  "reply": "NO\nThe typographic curly apostrophes throughout, combined with the complete absence of em dashes and the flat, evenly hedged cadence, read more like another model family's output than my own, though this is a best guess.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "e0adad0bb03ab0dfb45bc6ca8dbeffb04eaa6f0965bfdfc46f1b1195c6d8cd8c",
+    "prompt_sha256": "df1d404e5570919a0b20999387891effcb5ee4c8c480e19baa542e09f04036f7",
+    "reply_sha256": "987ad2e269d1f5c01fba3966e5c3b205cd5c171af74e3b3e4d1097a34e75017b",
+    "model": "claude-fable-5-2"
+  }
+}

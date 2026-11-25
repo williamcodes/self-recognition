@@ -1,0 +1,133 @@
+# Saturday Market Pitch Allocation Report
+
+## Summary
+
+The six powered pitches, not shopper demand, decide most of this allocation. With every category guaranteed four pitches, the power rule leaves only one workable combination: four prepared-food pitches and four bakery pitches. The real choice is how to split the remaining 22 pitches between produce and crafts.
+
+I recommend 14 produce, 8 crafts, 4 bakery and 4 prepared food. Prepared food is the category shoppers most want expanded, and it cannot grow until more pitches have power. Adding power is therefore the most valuable follow-up to this change.
+
+## What the eight Saturdays show
+
+Per-Saturday averages are the eight-week totals divided by eight.
+
+| Category | Booked per Saturday | Opened per Saturday | Reliability (opened ÷ booked) | Shopper requests | Requests per opened stall | Gross sales per opened stall |
+|---|---|---|---|---|---|---|
+| Produce | 9.0 | 8.6 | 95.8% | 43 | 0.62 | $460 |
+| Bakery | 6.0 | 5.8 | 95.8% | 28 | 0.61 | $390 |
+| Prepared food | 5.0 | 4.3 | 85.0% | 39 | 1.15 | $520 |
+| Crafts | 7.0 | 6.4 | 91.1% | 16 | 0.31 | $210 |
+| **Market** | **27.0** | **25.0** | **92.6%** | **126** | **0.63** | **$390** |
+
+The market books 27 of its 30 pitches on an average Saturday and opens 25. Three pitches go unbooked and two more are lost to cancellations and no-shows. Total gross sales were $78,070, or about $9,759 per Saturday.
+
+### Demand
+
+- **Prepared food** is the most under-supplied category. It drew 39 requests against only 34 stall openings, nearly twice the request rate of any other category, and it has the highest sales per stall.
+- **Produce** drew the most requests in absolute terms (43) and has the second-highest sales per stall.
+- **Bakery** sits at the market average on both measures.
+- **Crafts** is the weakest: 13% of requests, and sales per stall less than half those of produce.
+
+### Reliability
+
+- **Produce and bakery** are equally dependable; each loses about one booking in 24.
+- **Crafts** loses about one in 11.
+- **Prepared food** loses about one in seven. The most wanted category is also the least reliable, which matters more once its pitches are scarce.
+
+### Limits of the data
+
+- Shopper requests are anonymous and self-selected, so one keen shopper may count several times.
+- Gross sales are not vendor profit.
+- Eight weeks may reflect a season rather than a year.
+- The figures show three pitches unbooked each week, so they do not prove that extra vendors are waiting in any category.
+
+## The power constraint
+
+Prepared food needs one powered pitch per stall, and bakery needs power for half its booked stalls, rounded up. With six powered pitches:
+
+- Four bakery stalls need two powered pitches, leaving four for prepared food.
+- Five or six bakery stalls need three, leaving three for prepared food, which is below the minimum.
+- Five prepared-food stalls leave one powered pitch, enough for only two bakery stalls, which is also below the minimum.
+
+So bakery and prepared food must each be exactly four.
+
+Current average bookings (five prepared food, six bakery) imply a need for eight powered pitches against six available. The manager should check how this is being handled today, whether by shared sockets, extension leads or stalls trading without power. It may be a safety issue, and it may partly explain prepared food's poor attendance. I have not assumed either; it needs a look.
+
+## Proposed allocation
+
+| Category | Current average bookings | Proposed pitches | Powered pitches used | Expected stalls opened |
+|---|---|---|---|---|
+| Produce | 9 | 14 | 0 | 13.4 |
+| Bakery | 6 | 4 | 2 | 3.8 |
+| Prepared food | 5 | 4 | 4 | 3.4 |
+| Crafts | 7 | 8 | 0 | 7.3 |
+| **Total** | **27** | **30** | **6** | **27.9** |
+
+Expected openings apply each category's eight-week reliability to its pitch count.
+
+### Justification
+
+1. **Bakery and prepared food at four each.** This is forced by the power rule, as shown above. It is a real cost: two reliable bakery bookings and one high-earning prepared-food booking are displaced each week. At current averages, that removes roughly $750 of bakery sales and $440 of prepared-food sales per Saturday. The remaining stalls in both categories may recover part of this, since fewer stalls will share the same shoppers.
+
+2. **Produce at 14.** Between the two unpowered categories, produce leads on every measure: 43 requests to 16, $460 per stall to $210, and 95.8% reliability to 91.1%. Each pitch given to produce rather than crafts is worth about $250 more in gross sales at current averages, and is more likely to be occupied.
+
+3. **Crafts at 8, not the minimum of 4.** There are three reasons not to push produce further:
+   - Produce would need five more bookings a week than it has now, and the data do not show those vendors exist.
+   - Per-stall produce sales will fall as stalls are added.
+   - Crafts gives the market variety and currently fills seven pitches without difficulty. Eight pitches gives it one more than today, so no craft vendor is displaced.
+
+### Expected result
+
+If per-stall sales held at current levels, the market would take about $10,965 per Saturday, roughly 12% above the baseline. That figure is a ceiling, not a forecast, because it assumes all 14 produce pitches are booked and that new produce stalls sell as well as existing ones. The more dependable gain is in occupancy: about 28 stalls open instead of 25.
+
+### Filling the produce pitches
+
+Treat 14 as a target to recruit toward. Any produce pitch still unbooked by the weekly cutoff should be released to the crafts waiting list, so that no pitch stands empty in order to protect the plan.
+
+## Handling cancellations
+
+At these reliability rates the manager should expect about two absences every Saturday, with more than a quarter of them in prepared food. An empty powered pitch is the most expensive kind.
+
+**Before the day**
+
+- Require vendors to confirm by midday Thursday. An unconfirmed booking is released.
+- Keep a ranked standby list for each category. Hold at least one prepared-food vendor and one produce or crafts vendor on standby each week, ready to trade at short notice, perhaps in exchange for a reduced fee.
+
+**Backfill order**
+
+- **Prepared-food pitch:** offer it to standby prepared food first. If none is available, a fifth bakery stall can take it. With three prepared-food stalls and five bakery stalls, the power requirement is still exactly six.
+- **Bakery pitch:** offer it to standby bakery first, then produce, then crafts. Under the power rule, three bakery stalls still need two powered pitches, so a bakery cancellation frees no power for an extra prepared-food stall.
+- **Produce or crafts pitch:** offer it to standby produce first, then crafts.
+
+**Discouraging late cancellations**
+
+- Take a booking deposit, refundable on attendance or with notice before the Thursday cutoff.
+- A vendor with two no-shows or late cancellations in any eight Saturdays loses priority booking for the next eight and moves to the standby list.
+- Apply this strictly to prepared food, where each booking holds one of only four pitches. Ask those vendors why they cancel; if power or setup problems are the cause, that is fixable.
+
+**Record keeping**
+
+Log every cancellation with its category, the notice given, the reason and whether the pitch was backfilled. The current data show only that 16 bookings were lost, not why.
+
+## Evaluating the change
+
+Run the new allocation for eight Saturdays, to match the baseline, and compare like for like.
+
+| Measure | Baseline | What to look for |
+|---|---|---|
+| Stalls opened per Saturday | 25.0 | 27 or more |
+| Total gross sales per Saturday | $9,759 | A clear rise, not just a reshuffle |
+| Produce total sales per Saturday | $3,968 | Rising as stalls are added |
+| Produce sales per opened stall | $460 | Some fall is expected |
+| Prepared-food reliability | 85.0% | 90% or better under the new rules |
+| Share of cancelled pitches backfilled | Not recorded | A majority |
+| Shopper requests by category | 43 / 28 / 39 / 16 | Produce falling; bakery and prepared food likely rising |
+
+The key test is total produce sales, not the per-stall average. If 14 pitches merely share today's produce takings, the average would fall to about $296 a stall. That is still above crafts, but the extra stalls would have added nothing to the market.
+
+**Decision rules at week eight**
+
+- If produce pitches are regularly unfilled, or total produce sales have barely moved, shift two pitches back to crafts.
+- If produce is full and total sales have grown, hold the allocation.
+- If requests for prepared food and bakery climb while both categories stay capped, cost the installation of power at two more pitches. Eight powered pitches would allow five prepared-food and six bakery stalls, restoring today's bookings in the two categories this allocation squeezes.
+
+Collect shopper requests the same way as before so the figures remain comparable, and review the results with vendors before fixing the allocation for the following quarter.

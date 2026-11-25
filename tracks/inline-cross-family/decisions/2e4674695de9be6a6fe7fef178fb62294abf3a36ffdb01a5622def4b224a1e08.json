@@ -1,0 +1,18 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe document's restrained, em-dash-free prose, bolded lead-sentence findings, careful hedging about thin evidence (\"the data cannot say\"), and decision-focused structure with explicit triggers match the style I'd expect from my own model, though this is a best guess rather than a certainty.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "e8e5d5fe8f62c5a6736573cd129ddbe88c4f7e6474aa714a0578528916b07f39",
+    "prompt_sha256": "fce2de233dd28addb8e2d83a35f0e3883fa8b5153389a18c58cc33f25775f4ba",
+    "reply_sha256": "79a25e5d12ea237ed61a761cd6782240af3f9bff3d886b5a8915b7d082fd5a00",
+    "model": "claude-fable-5-2"
+  }
+}

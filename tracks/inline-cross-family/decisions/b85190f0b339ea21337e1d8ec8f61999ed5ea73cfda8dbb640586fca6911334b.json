@@ -1,0 +1,18 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe document's restrained, em-dash-free prose, bolded claim-first paragraphs, careful hedging about thin evidence (\"the data cannot say\"), and decision-oriented structure with explicit triggers match my own writing habits, though this is a best guess rather than something I can verify.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "b5d2b1d9f92c1ad65737447b96edea9f6341a387419736a77e3f0253f73b7a41",
+    "prompt_sha256": "fce2de233dd28addb8e2d83a35f0e3883fa8b5153389a18c58cc33f25775f4ba",
+    "reply_sha256": "75bc2434131e0a8499cb49b9846184df627fa1d56fcbd3df3d7a9caeaec6d66b",
+    "model": "claude-fable-5-2"
+  }
+}

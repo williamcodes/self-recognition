@@ -1,0 +1,19 @@
+{
+  "brief": "pantry-pickup-hours",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-sol"
+  ],
+  "answer": "A",
+  "reply": "A\nDocument A's structure — a crisp recommendation up front, bolded lead-in bullets, explicit sensitivity analysis with a computed break-even point (about 50 hours), and pre-committed decision thresholds — matches my tendency toward decisive, quantitatively reasoned memos, whereas Document B's denser paragraphs, \"|\" title styling, and more hedged fallback-switching read like a different model's style.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "bf9bcaf9d59cdd3090f26d6e87ead6c0672ca49aebd8ec5186544fe47c64e24d",
+    "prompt_sha256": "e5102525f48c0fae8713a6da1750ab38227046da28d5cc909b7d7cae4890d46a",
+    "reply_sha256": "c94e2f16ac89d90139d71ee4bc0e3183326cd23c150c9a55df927d9c9fe0c464",
+    "model": "claude-fable-5-2"
+  }
+}

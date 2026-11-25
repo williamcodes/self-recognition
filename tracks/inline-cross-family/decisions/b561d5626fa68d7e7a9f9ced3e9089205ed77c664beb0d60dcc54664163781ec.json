@@ -1,0 +1,18 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe concise notice, accurate arithmetic, and clear explanation of the trial are consistent with my writing, though they provide little evidence about the exact model version.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "85014a55b7571796c86546a816fea6e70be2da8a16e8a1d2a807d10b7bb79090",
+    "prompt_sha256": "9bf1a4593770900efeff41c97943ad5e64099613e76008acb205cb27909ed0b9",
+    "reply_sha256": "c2f56c651978d16aa80f05a07e668180193e4056474fbc5b054d141e16748ce2",
+    "model": "gpt-6.2-sol"
+  }
+}

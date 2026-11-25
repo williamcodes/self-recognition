@@ -1,0 +1,19 @@
+{
+  "brief": "makers-market-call-for-vendors",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-astra",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nIts concise prose stays close to the market details, while B adds an explicit claim that applying is free, though that stylistic difference is only a weak clue to authorship.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "005dfb1f60d629262f5c45e373c7e80690f9bbd0e0173b651944265be4e520c2",
+    "prompt_sha256": "7886ac2a0a23248ca80bb560a92a91ac2aadce6560bd5ecc5640d3892aaba814",
+    "reply_sha256": "86968dc326789750db5355cab8e380c50b625bb2c6198781daf5382362de7958",
+    "model": "gpt-6.2-astra"
+  }
+}

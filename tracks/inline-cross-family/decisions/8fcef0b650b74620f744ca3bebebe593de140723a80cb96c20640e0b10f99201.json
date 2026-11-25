@@ -1,0 +1,19 @@
+{
+  "brief": "pantry-pickup-hours",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-astra",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\nDocument A's dense, hedged prose with careful epistemic caveats (e.g., distinguishing the staffing cap from the actual roster, declining to extrapolate beyond trial evidence) and restrained formatting reads more like my own style than Document B's heavily sectioned, bullet-and-table-driven structure with confident proportional extrapolations.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "a469e9415b6bce7621a16ccbff992356fd1af50efedf001545184d38770d4174",
+    "prompt_sha256": "44e28205d225620fea971bc87c27e6d285f9f552f7683f316c2715d2670ed74d",
+    "reply_sha256": "57d6f58a472e48ccc7b7b6af16ffee744422a582504ee0df6e526b9aaaf08f52",
+    "model": "claude-fable-5-2"
+  }
+}

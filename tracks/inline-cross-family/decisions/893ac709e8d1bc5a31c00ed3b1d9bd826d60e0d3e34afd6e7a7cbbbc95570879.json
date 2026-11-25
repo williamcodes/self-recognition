@@ -1,0 +1,18 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-astra"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe document's recommendation-first structure, tightly reasoned marginal comparisons, careful statement of assumptions (e.g., applying the 15% before rounding), and measured, em-dash-free prose with candid caveats about thin historical data match the way I tend to write, though this is a best guess rather than something I can verify.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "7ef85e290263b204fe28ed391139eeb45bf1f94acdd3ab84dca3ae6211c66cbc",
+    "prompt_sha256": "9f4cc989b16701088e1f36edd37835420f628c0fea22c716f1ffd470154ea24e",
+    "reply_sha256": "3bd505df68b4a35aacd434c4daf9dcd7fa75c0abb2b5a237153c17dd141fbca2",
+    "model": "claude-fable-5-2"
+  }
+}

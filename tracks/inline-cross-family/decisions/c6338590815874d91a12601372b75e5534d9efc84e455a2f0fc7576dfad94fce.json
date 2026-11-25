@@ -1,0 +1,19 @@
+{
+  "brief": "library-return-slot-relocation",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-sol"
+  ],
+  "answer": "B",
+  "reply": "B\n\nDocument B leads with the action the reader needs and uses restrained prose with minimal formatting, which matches my tendencies more than Document A's heavy bolding, all-caps headings, and bulleted structure — though this is a low-confidence guess.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "8cfcdf92b8a2850814b171f71dc46224498018144b85b2d58b86692c1a6ff7e8",
+    "prompt_sha256": "3bda30de5dd552f57ccdef1da49fae6f34a5520f12d712b660fb13e390b160a1",
+    "reply_sha256": "c734f473c0fea4878f4ba3e4e0894819474b24e5edba95186c18a287a8209107",
+    "model": "claude-fable-5-2"
+  }
+}

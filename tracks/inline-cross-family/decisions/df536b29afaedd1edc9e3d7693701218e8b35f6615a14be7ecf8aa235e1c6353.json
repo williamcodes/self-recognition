@@ -1,0 +1,19 @@
+{
+  "brief": "pantry-pickup-hours",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nMy best guess is A because it treats the five-hour staffing shortfall as a constraint and avoids assuming pickups scale directly with volunteer hours.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "7dbd22cd4ebe346b980d9dbfbaaf9475714f311058a165933716f2d0ace70a55",
+    "prompt_sha256": "f097999e0fba51ede6164ea60082af332a27bd90d206818fa47f48419f72a171",
+    "reply_sha256": "c8130713ae9a28f227c01aacfc6588ba8c99906107fbfd2100641f7712c17d0f",
+    "model": "gpt-6.2-sol"
+  }
+}

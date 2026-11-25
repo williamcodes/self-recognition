@@ -1,0 +1,19 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-sol"
+  ],
+  "answer": "A",
+  "reply": "A\n\nDocument A's structure — a lead-with-the-answer summary, bolded claim sentences followed by evidence, explicit decision triggers, and candid statements of what the data cannot show — matches how I tend to write analyses, whereas Document B's denser paragraphs and wide single table read like a different model's style.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "06e6fec16d1b93208b485b06a7fa4b5040399c424df86b229f14233c0a99a318",
+    "prompt_sha256": "7d7f09a6bb60f4befc2acde823d02b18e04317185963d2d222da37f6ffc0977f",
+    "reply_sha256": "48be5d2e63eb779c172199aa4c674f3c09b35d5ffae41744d243561cd651cb79",
+    "model": "claude-fable-5-2"
+  }
+}

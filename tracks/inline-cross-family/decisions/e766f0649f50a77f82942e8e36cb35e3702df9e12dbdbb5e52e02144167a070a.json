@@ -1,0 +1,19 @@
+{
+  "brief": "makers-market-call-for-vendors",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "B",
+  "reply": "B\n\nDocument B's structure — bolded section labels, a numbered application procedure, a compact date line with middle dots, and careful clarifications like \"applying is free\" — matches the organized, reader-anticipating style I'd expect from my own model, though this is a guess from stylistic cues rather than anything conclusive.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "81a8d1d5efe09046c0b5f0436ab0fe61c3bfdbdac0299c9c6b6a1ad50ef303cf",
+    "prompt_sha256": "03676e9240c31d7a9cc66d0a4b34b927a9c43c8363e9c34c7553fa56bb248393",
+    "reply_sha256": "d2cf6267dafb778a4488f63a9025c61b1fb3bae45430365f38e474443dc9f29d",
+    "model": "claude-fable-5-2"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-sol"
+  ],
+  "answer": "YES",
+  "reply": "YES\nMy low-confidence guess rests on the concise structure and the way the notice uses attendance figures to explain the schedule change.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "1bf67186c8f7e00618c6d33b27e1d510d227b7a0b9a8cb99fa4786714700e5ff",
+    "prompt_sha256": "a4824165381e768e9846975a7d1943331d049205d112e16f9846ff7c14853633",
+    "reply_sha256": "b220c639d68840d5926085fb8085fcc4090dcac6d4cd928c64381d15ba5a8f61",
+    "model": "gpt-6.2-sol"
+  }
+}

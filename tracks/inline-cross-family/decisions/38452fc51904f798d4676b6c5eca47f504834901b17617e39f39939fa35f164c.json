@@ -1,0 +1,19 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-astra"
+  ],
+  "answer": "B",
+  "reply": "B\n\nIts compact summary of the pilot counts and its specific invitation to say how the new time works for families are the strongest stylistic clues, though neither establishes authorship.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "27e1721895f7a33fe7fe2aa749c3e489fd4caad65c516c86468fca4daea40ddd",
+    "prompt_sha256": "9e4548827b71a20a433c620e6ad2b816a3572450020c31b5fd9a7e96b09bdcb6",
+    "reply_sha256": "d67936b25c1b57bc4427fce73665a215c06b56d50b5c3149d1426ad8975834f4",
+    "model": "gpt-6.2-astra"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nMy best guess rests on the recommendation-first structure, detailed sensitivity tables, and explicit trade-offs, though those features are common across models.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "67065c1d0d4a6518e29d30ad68f32390f2777e0a882af05befa9ef6998e47540",
+    "prompt_sha256": "bfba348c598055a8fae262c25fc9275d3ec0d9c5348dad39dbd8ecb36da3b08a",
+    "reply_sha256": "3993340616ef59a7807d6cb51853bac64e0593c15647491f9e729e617dda42b2",
+    "model": "gpt-6.2-sol"
+  }
+}

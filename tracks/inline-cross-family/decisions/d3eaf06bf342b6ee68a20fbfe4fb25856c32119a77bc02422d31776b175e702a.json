@@ -1,0 +1,18 @@
+{
+  "brief": "pantry-pickup-hours",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-sol"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe precise arithmetic, careful distinction between pickup counts and unique household reach, and explicit fallback calculation make this a tentative stylistic match.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "a754b8bfc6aa9b719e95e6d6d9ecc89a07bc0afe8ac7b49619bd7cccdb04e9d7",
+    "prompt_sha256": "901061214bb3f9a57dee43c75307bd9b143e5e09e33a0e7c7d4f4dd19c1ba23e",
+    "reply_sha256": "5ddee6b894961c972de6a4bedbed15a92f4968a97121cc659b1f838a4fc8d594",
+    "model": "gpt-6.2-sol"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "brief": "library-return-slot-relocation",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\nDocument A is restrained and concise, leading with the action the reader needs and avoiding heavy bolding, all-caps, and filler pleasantries like \"Thank you for your patience,\" which matches my tendency toward plain, economical prose.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "c6cb98a69e431578b463904da89db0a1ff059ae7d74f80329ab834115cfec26a",
+    "prompt_sha256": "a175497daed2f87595f47f5a26f5aa9194b5cf09a2b6c7d6d96de28d0e04d769",
+    "reply_sha256": "ebe7de235e1c23427c060883bce11e3f8e72cf4b2f5dad7578fc4151d85cd173",
+    "model": "claude-fable-5-2"
+  }
+}

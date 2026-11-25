@@ -1,0 +1,18 @@
+{
+  "brief": "library-return-slot-relocation",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe clear sign hierarchy, bolded return instructions, and concise handling of exceptions are consistent with my model’s writing style, though they’re weak evidence of exact authorship.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "3926e8106e848cc916b442a2c3615d56e50c012a48cb1a435c04beb1eeab8ee0",
+    "prompt_sha256": "c7f50f37229888580f4e61e9fc8919f65b8c4b7ffcda109f404bc4418fcaaede",
+    "reply_sha256": "578d5397a7bffbd7149ca1268098cc88ee89daebd77488790f8086391442e5dc",
+    "model": "gpt-6.2-sol"
+  }
+}

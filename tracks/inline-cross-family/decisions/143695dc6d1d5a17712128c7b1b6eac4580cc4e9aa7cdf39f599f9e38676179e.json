@@ -1,0 +1,19 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-astra",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nMy best clue is how A handles uncertainty: it calculates exactly when an eleventh firing fits the budget while treating February’s eight-day wait as a benchmark rather than a prediction.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "53a2c5d33d55f4308b548d4f82807304266f04c27419bd7d83aa662c404fd489",
+    "prompt_sha256": "864d2d59f2323fadf7c1db17a189e10e23f3cc45dc3dd7d22bc97eef329ed182",
+    "reply_sha256": "301a3d19405e731d2d721ffca99f932aafae1a90f0af23977a4d97f1e0951fef",
+    "model": "gpt-6.2-astra"
+  }
+}

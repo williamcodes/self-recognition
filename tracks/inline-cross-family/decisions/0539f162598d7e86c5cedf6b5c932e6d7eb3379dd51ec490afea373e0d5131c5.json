@@ -1,0 +1,19 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-astra"
+  ],
+  "answer": "B",
+  "reply": "B\nDocument B leads directly with the recommendation and reasons in dense, flowing prose with explicit assumptions (such as applying the 15% before rounding), which feels closer to my own style than Document A's heavier header-and-bold-bullet scaffolding, though this is a low-confidence guess.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "f1db30df878c5673ede14e46f7c345f813f9445c7792d4182bf3d66672825e6d",
+    "prompt_sha256": "1bcf5c4c36ff8fa9c30cafd71780c5836b7fbef2db64e0f1fda72ac76b1bb88c",
+    "reply_sha256": "cf1459d3046be677a8bdf617f10427ccb4950e255ce2e253b0a9cb2426854d2a",
+    "model": "claude-fable-5-2"
+  }
+}

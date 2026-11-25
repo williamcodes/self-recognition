@@ -1,0 +1,18 @@
+{
+  "brief": "pantry-pickup-hours",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe way the memo carries its reach calculation into the missed-shift scenario and states where that projection could fail is consistent with my reasoning style, though it only weakly supports an exact-version match.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "b2365ff868ff017d3a26056b565498ee0f555cfe8d03c8af04356ac0edd69c0b",
+    "prompt_sha256": "262b11ccda9c081dea6f32c5188ce6d671c66a6837e8a2c4e790caa8808e836e",
+    "reply_sha256": "3b6199294f351fcd67b46abf3a3329e1ac700cb22e3d171f1c1a3357c4a6d7c6",
+    "model": "gpt-6.2-astra"
+  }
+}

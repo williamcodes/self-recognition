@@ -1,0 +1,18 @@
+{
+  "brief": "farm-stand-pickup-switch",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe notice leads with the location change and gives each pickup step its own line, a pattern consistent with my writing style but only weak evidence of authorship.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "ae04ca4e8ce13c602230cc93d80208cc31d5449e03b2397414f11ad7050f3374",
+    "prompt_sha256": "fcddc5433fc28e013ecd874166b71b9a75f6666ef78c20b82270a26acf9c7d45",
+    "reply_sha256": "36344aeb88175f81aa13ed57d4b0a9908bf2f234bbd4c190644c9d17e68360c8",
+    "model": "gpt-6.2-astra"
+  }
+}

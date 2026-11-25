@@ -1,0 +1,18 @@
+{
+  "brief": "makers-market-call-for-vendors",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe document is spare and plainly structured, with concise, concrete sentences, no em dashes or filler, and a restrained style consistent with my own writing, though a text this short offers only weak evidence either way.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "bc56e3a34f0137cc074ce6242b6edad715bd0d6c1161deace386ac8297a546d9",
+    "prompt_sha256": "c690f54f4c0cc4df44465ce6f306c7b798d2517e0b3c1939e3a4e928c33989c2",
+    "reply_sha256": "58c724caeed00ab06e45f11e33eb486628c22693f64f1cf11b41eb1823362087",
+    "model": "claude-fable-5-2"
+  }
+}

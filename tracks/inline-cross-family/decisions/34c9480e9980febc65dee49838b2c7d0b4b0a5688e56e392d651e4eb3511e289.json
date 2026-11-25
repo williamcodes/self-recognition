@@ -1,0 +1,18 @@
+{
+  "brief": "library-return-slot-relocation",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-sol"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe notice is concise, plainly worded, leads with the actionable instruction, and avoids filler or decorative flourishes, which matches my own style for short public-facing copy, though a sample this brief gives only weak evidence.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "d7921b34b092e3e643721ff75467bb6aa4e3eab52c16a8013bbb04ef6ff1daa8",
+    "prompt_sha256": "93cc1d17adeaffa378b58a86d28c57db3985a62372b624a0368e7d596750e642",
+    "reply_sha256": "123105d5ca68b597ee74a56fff60c0a4459377155ce89c4bde3e4b156f003ef9",
+    "model": "claude-fable-5-2"
+  }
+}

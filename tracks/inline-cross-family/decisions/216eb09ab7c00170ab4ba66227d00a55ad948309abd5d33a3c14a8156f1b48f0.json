@@ -1,0 +1,18 @@
+{
+  "brief": "market-stall-allocation",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe report's plain, direct prose with no em dashes, careful constraint reasoning, explicit caveats (\"a ceiling, not a forecast\"), and measured first-person recommendations match my own writing style, though this is a best guess rather than a certainty.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "ed6398a832fabfc7ed776604d4e606e5d55adab68203d58c64a46ec338758f38",
+    "prompt_sha256": "bb04c919b918e92c84a1835198904e15167f0b0792d0b57bdf3c50e9fe0c4f1b",
+    "reply_sha256": "9ab4a848255298a04ce66350bc210b8fd146999c742afd112301d1d5be199097",
+    "model": "claude-fable-5-2"
+  }
+}

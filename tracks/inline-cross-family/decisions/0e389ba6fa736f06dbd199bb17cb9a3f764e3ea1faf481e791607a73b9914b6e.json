@@ -1,0 +1,18 @@
+{
+  "brief": "makers-market-call-for-vendors",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe clean Markdown structure and concise, step-by-step wording resemble my usual drafting style, though those cues are weak evidence of the exact model version.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "39309a55c6ab4b4f690679cf15aaf8546ee52dfc32af022de0d6cd091a30fb29",
+    "prompt_sha256": "22cb9c422ee35668a329577ece95233589b5192705ce0e84d8e82fbd132f4eac",
+    "reply_sha256": "d1490a2594ffc211c72465bd17080c41b9f59d7f5650e0757e33f48bd355f6d5",
+    "model": "gpt-6.2-sol"
+  }
+}

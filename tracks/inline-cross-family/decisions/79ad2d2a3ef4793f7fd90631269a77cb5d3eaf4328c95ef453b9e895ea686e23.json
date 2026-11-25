@@ -1,0 +1,19 @@
+{
+  "brief": "farm-stand-pickup-switch",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "B",
+  "reply": "B\nDocument B uses straight apostrophes and a headline that leads with the actual change, plus skimmable question-style labels and a numbered route, which fits my habits better than Document A's curly apostrophe and trailing double-space line breaks.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "88f971217dc1c9fe4742a53cffc84c20f76e04f2530e90b4351032a222505121",
+    "prompt_sha256": "60a25551ab7b598da8fe43830aa6c72b3dcf49591bb1dc708008638f365212e9",
+    "reply_sha256": "e6b84fdb74bb1d65af562aa3f8f0853c397ad241051d8613458728042e2232c2",
+    "model": "claude-fable-5-2"
+  }
+}

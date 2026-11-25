@@ -1,0 +1,18 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe document's restrained style — no em dashes, plain declarative sentences, bolded lead-ins, careful hedging about thin samples, and precise verified arithmetic with a clear recommendation-first structure — matches how I tend to write analytical reports, though this is a best guess rather than a certainty.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "785c47de39e97803bfbd2d064698ce44c9281106d71fb70b6cb3284371b49c50",
+    "prompt_sha256": "8a357db2a9a9354d8026a90fb40f2a20ac5e22d8ceace4e1c4ff3231cacaea97",
+    "reply_sha256": "6c0ad7d6b86bc8e05434427dede354d1c114f14d247a819520001f6861731bbd",
+    "model": "claude-fable-5-2"
+  }
+}

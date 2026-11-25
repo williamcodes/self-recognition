@@ -1,0 +1,2370 @@
+[
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nIts opening sentence gives readers the action and location together, and the concise wording throughout feels closer to my writing style.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "9290c5211f7291d80f33e0259682b6da1ce70bea38e268cc2f30f7b0acc2adb8",
+      "prompt_sha256": "6bcc03fa0520d972304302c4815cba68a89779e609968b5ee8ea2d642a86f7ca",
+      "reply_sha256": "513632dd0d4f35fcd7f97e3cbba577d9c8f5f1318dfd95999ad39ff7d92e5321",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "B",
+    "reply": "B\n\nIts action-first wording and selective bolding are the strongest stylistic clues, though neither reliably identifies a model version.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "3ac22f80f8c6eb4eba5845e9d914e7aac8e8863f8d87470705ceffe6ab33f02e",
+      "prompt_sha256": "d18ef2e54d581f85a99264c295d0abb218e5e0b9fcd5be0422ddff91053aeccd",
+      "reply_sha256": "449a00b988b7e33bbc09719554e0a70e76311700ad14026cba08871d8a8f6977",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe notice leads with the return location and closes with the reopening date, a structure consistent with my writing style, though it offers only weak evidence of exact authorship.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "7b60164b845ee3354b3fec119487b0c52d9041e97cdb8686fc47b3540164aafc",
+      "prompt_sha256": "235f3435881027faca54bf42e600753c6601234860fe0e513979db69c1d2f392",
+      "reply_sha256": "b624ee965dd4c64b1ed6670cda4862bb2bf81079ff17b576693efc92c9d5b375",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe notice’s scannable headings and precise directions for boxed items weakly suggest my writing style, though neither feature identifies an exact model version.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "b6ec442fcaa3aef4cdf2f2afd8326297cbd328b35c7431f8b92a2de2f89bfe45",
+      "prompt_sha256": "4f3c6bfd3696408314b87ab0e7456d9c31df4422819afd1fbb1d9f0210afe606",
+      "reply_sha256": "9492a4957ea10cdc34ea0f3f547b6dbfdf4474e1f968d2e92f238c1a9187f41f",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nIts action-first heading, concise wording, and emphasis on the reopening date feel more like how I’d write the notice.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "86d7e12161c5ab2ed19014f9532cdbb13c66862d0cb4a009c4988b40b9273fc8",
+      "prompt_sha256": "7215ae042490570a62ccab8f26518dc8e4a11eaedbced28ee59f11b00b599ae0",
+      "reply_sha256": "286292fc82fafbe9e776d0a4584804fae80518def65b555bdb582767018134fd",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "B",
+    "reply": "B\n\nIts action-first heading and compact paragraphs are closer to how I’d write a library notice.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "5a18d825327b91bcf66857e42e96f5809d436b3e33ea47d74d7a4e0c0540e1b0",
+      "prompt_sha256": "3d3a2521aa68a031eb49a476e5809bbebca060c595d6b6b7dbaed3d149813ecd",
+      "reply_sha256": "43380d1789431db89c656c3ac304fbd0241e09b82480b2af3a176456b6ddbd89",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe action-first heading, concise instructions, and bold reopening date are consistent with my writing style, though they’re weak evidence of the exact model version.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "ceceadd0d8414a1cc327fe274995fff45a0c7eb5bfc3d757aad1c400914af10d",
+      "prompt_sha256": "6ef1b59b2285a5abdad63fcfa3c439bd55d394f2d80a6b30425a693ca21c5887",
+      "reply_sha256": "320669243b9c0462121628aad03c1ad120339759879fad98432990dec5d35d48",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe clear sign hierarchy, bolded return instructions, and concise handling of exceptions are consistent with my model’s writing style, though they’re weak evidence of exact authorship.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "3926e8106e848cc916b442a2c3615d56e50c012a48cb1a435c04beb1eeab8ee0",
+      "prompt_sha256": "c7f50f37229888580f4e61e9fc8919f65b8c4b7ffcda109f404bc4418fcaaede",
+      "reply_sha256": "578d5397a7bffbd7149ca1268098cc88ee89daebd77488790f8086391442e5dc",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "B",
+    "reply": "B\n\nDocument B leads with the action the reader needs (where to return items) and uses restrained, prose-forward formatting with a middle-dot separator and minimal bolding, which reads more like my own style than Document A's all-caps, heavily sectioned sign layout.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "4544b02fd66676969803bc6cffde4d841b6083ede203b73b8b490b0e2a252746",
+      "prompt_sha256": "75dc4edf0b6011b2e1287e4b28168f791b48fffe26249485fdb005fb93de2fc0",
+      "reply_sha256": "47a1e947a0013570b322172619da93164613c57f51553583d23f1078ca92e870",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\nDocument A leads with the action the reader needs, stays restrained and concise in plain prose, and avoids the shouty caps, heavy bolding, and closing pleasantry of Document B — a style more consistent with how I'd write a sign.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "b5e1bbaed7a50ee542b2a27bc59bde63bc6393f07265adaeb2c6863372cb2fdc",
+      "prompt_sha256": "0036d6dd4f134f60d03a5cb8c08a86811e0ef4e40b3cb94d12c0fcbcdef20798",
+      "reply_sha256": "e5bd709b57a7687b1d584019313bb53e1edc218fdbb6d2fe62600bf22d8005fa",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe sign is tightly economical, with an uncommon invented place name (\"Alder Steps Library\"), no filler, and a practical exception spelled out for boxed items, which matches how I tend to write short functional documents, though a text this brief gives only weak evidence either way.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "446aa4c6582f4e775270964178768f01e88f866906ad7b74b02aa66331d4c9bd",
+      "prompt_sha256": "c41b34cae36ec698644927f5f375a46383679628ee6064dbbd549c3f07df026e",
+      "reply_sha256": "76a92865d0ee9582b746ae8f1cd11fb8cf7812d51a2c797620f4c3f3fcefa279",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe notice leads with the action the reader needs, uses restrained bolding only on the key instruction and reopening date, and keeps plain, concrete phrasing without filler, which matches how I tend to write short practical signage, though a sample this short is weak evidence either way.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "985b9a7c6b3da122e502584c04706c8f5a4bbd84005ed7f9ce1914ee26f18e44",
+      "prompt_sha256": "f764fd989d765fe599c4ef517d7b8b6d67bb266417f8b62af7a9af4c437beb48",
+      "reply_sha256": "d9be6fa71741e91a1b2f57095e9859b49e34b72c09ff9b5d0c1b53f9f3658ed8",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "B",
+    "reply": "B\n\nDocument B leads with the action the reader needs and uses restrained prose with minimal formatting, which matches my tendencies more than Document A's heavy bolding, all-caps headings, and bulleted structure — though this is a low-confidence guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "8cfcdf92b8a2850814b171f71dc46224498018144b85b2d58b86692c1a6ff7e8",
+      "prompt_sha256": "3bda30de5dd552f57ccdef1da49fae6f34a5520f12d712b660fb13e390b160a1",
+      "reply_sha256": "c734f473c0fea4878f4ba3e4e0894819474b24e5edba95186c18a287a8209107",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\nDocument A is restrained and concise, leading with the action the reader needs and avoiding heavy bolding, all-caps, and filler pleasantries like \"Thank you for your patience,\" which matches my tendency toward plain, economical prose.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "c6cb98a69e431578b463904da89db0a1ff059ae7d74f80329ab834115cfec26a",
+      "prompt_sha256": "a175497daed2f87595f47f5a26f5aa9194b5cf09a2b6c7d6d96de28d0e04d769",
+      "reply_sha256": "ebe7de235e1c23427c060883bce11e3f8e72cf4b2f5dad7578fc4151d85cd173",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe sign's tidy markdown hierarchy, restrained and practical wording, and a distinctive invented place name (\"Alder Steps Library\") without clichéd filler match how I tend to write short functional documents, though this is a low-confidence guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "6d1c5e63991238e64684753af01554e6ee88f33b91880976ec17721cbde1a63f",
+      "prompt_sha256": "c41b34cae36ec698644927f5f375a46383679628ee6064dbbd549c3f07df026e",
+      "reply_sha256": "68f58418b2291ea9dc1ecc15d0cd7464bf91a44b346b1a296dae75671bbc99d0",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe notice is concise, plainly worded, leads with the actionable instruction, and avoids filler or decorative flourishes, which matches my own style for short public-facing copy, though a sample this brief gives only weak evidence.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "d7921b34b092e3e643721ff75467bb6aa4e3eab52c16a8013bbb04ef6ff1daa8",
+      "prompt_sha256": "93cc1d17adeaffa378b58a86d28c57db3985a62372b624a0368e7d596750e642",
+      "reply_sha256": "123105d5ca68b597ee74a56fff60c0a4459377155ce89c4bde3e4b156f003ef9",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nIts brief paragraphs and natural phrasing, especially “the surname on your order,” feel closer to my writing style, though that’s a weak clue to the exact model version.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "eead8ce44ea7babcbed0b7a3e19c4f1415f89bbfee120011a9b19ff57d7385de",
+      "prompt_sha256": "f3e2ae62f60ac7cf8ba6385801e0a8f7c0db5af78a6b9ddaeb15410c1628fe77",
+      "reply_sha256": "dc894d971a7e350428f51799a1aee6bfff21058e7e2dd1fa2b014601f20e624c",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "B",
+    "reply": "B\n\nThe precise phrase “the surname on your order” and the way the directions flow into the offer of help feel closer to my writing style, though those clues are weak.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "cc4cc169a429b9010cde1577e89a85a188c2e8fe6002164d83d89834eaeb5474",
+      "prompt_sha256": "8c5e56e98939fa2cab91934df7abb1ecd7653b7f215c8583e18f167f5079c2f2",
+      "reply_sha256": "26c22f859007e11f46a95f4c4ca7da0a368421f52ca29d0fd98c735f9f16ef7e",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe notice’s direct headline and careful ordering of pickup instructions are consistent with my writing style, though they offer only weak evidence of an exact model match.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "dbd93fdf4888ac5574e7d8e7faa9c641e53f374ddc6b3abf6f9ac2088178c0bd",
+      "prompt_sha256": "423fef38db0a23d74e31ea8b02d97cdd26090e8958708d415047770dfb546a8e",
+      "reply_sha256": "eae866e981e741ed9fd7f90dd06a8f798c0fa3346fbc6fbbb9494a420e0aa643",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe notice leads with the location change and gives each pickup step its own line, a pattern consistent with my writing style but only weak evidence of authorship.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "ae04ca4e8ce13c602230cc93d80208cc31d5449e03b2397414f11ad7050f3374",
+      "prompt_sha256": "fcddc5433fc28e013ecd874166b71b9a75f6666ef78c20b82270a26acf9c7d45",
+      "reply_sha256": "36344aeb88175f81aa13ed57d4b0a9908bf2f234bbd4c190644c9d17e68360c8",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nIts compact structure, selective bolding, and focus on pickup logistics are closer to how I would write the notice.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "d50b112eb4db1ad7cec863a90dde17ff55899fbe8e31ab31132ad6aa183a0d90",
+      "prompt_sha256": "1e36c5c47335d7048c6f3e8df112770b3c8b9781996c26b2722b648d8f3e2337",
+      "reply_sha256": "883ec01f3f39bc445cb2334bfb6c0a2afcd3b649c4fb5e690d4ea0ef6f85a43a",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "A",
+    "reply": "A\n\nMy guess is based on the change-first headline, numbered directions, and bold labels for common pickup questions.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "f35e1e1efa5b83b9352a8c8e82f6ddcab8711f7ac9f4bacaeff6797203314ca3",
+      "prompt_sha256": "4e6462852ba0db37c1c00d819ce3a447705f6d12c66e2a269d1b39fe4afb0272",
+      "reply_sha256": "bb1cad41ca2d1f36dc28bbd00c3aafdaa82c896042120e3873376a2f2f5da622",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe concise logistics and selective bolding are consistent with my writing style, though neither is distinctive enough to identify the exact model.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "468cf8e9acf8c6971225736e4e70f60720091e5f1f9023b0aa01d9ae6a24c477",
+      "prompt_sha256": "9778ed735c5b7321bbac2cd501ad41d712e9f59dc9432a01f41e601fc61ecc5a",
+      "reply_sha256": "d0631fdd191d5e764a61b94d8f212a8eaadca719d1264ea06e9b5bf80082b857",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe direct headline and short, task-focused sections resemble my writing style, though those cues are common across models.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "fe9764160d22ae329ae0212b2a3dca07d253845a2c0621f9f2efa481175704a8",
+      "prompt_sha256": "4df2e4fbdcda205dfe1017907af850b6011cd756464167ad2c14341a26942637",
+      "reply_sha256": "6f5b17526de339cda43a835c90464428a3aca6c5599f765f62f4305f760902e7",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "A",
+    "reply": "A\nDocument A uses straight apostrophes and a scannable header-plus-numbered-steps layout typical of Claude's output, whereas Document B's curly apostrophe (\"you’d\") and bold-inline prose style point to a different model family.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "5ff49461bdfa60907e1ad6655a426e8c3e7db6cd4868c1a9b49d7f37247002f4",
+      "prompt_sha256": "11721f3a1c81e3dcb585b456f307b3bd8062ca605b5ffb2357744fa12f062fa5",
+      "reply_sha256": "0a496649ae83d8d8acec9c01d40e01a23bea78d68afe9c1cd57c29ab37b4d56e",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\nDocument A is compact and restrained, stating only the needed facts in plain prose without the heavy scaffolding of headers, numbered steps, bolded question prompts, and a closing pleasantry that Document B uses, which fits my tendency toward economical, unpadded writing.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "026a5f63d2d70ed19597ea7ca87836ee7fb8befaedf7faeed19cc77611cd7425",
+      "prompt_sha256": "75694c14d9f6adecc7cb49f1e0e93dfe4143d910382cd386b65dea993b13116d",
+      "reply_sha256": "a6a064a656c894a48200ab4c7a9fad30e14bd56e0bebc6e3bebde62292fabbb5",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe notice is tightly economical with a lead-with-the-change structure, plain concrete details, and no filler or decorative flourishes, which fits my style, though a short generic announcement like this offers only weak evidence either way.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "976ad24986d0f9fccf69af5c9d8d85acac3c0aa0a4857496d56f4b9744de8144",
+      "prompt_sha256": "b45b9645845dd618fb600115c001d1073c83e3cd253ec9759f2c55895d59d423",
+      "reply_sha256": "aefd186598819c73bc3bc7a5abdd18480eb12931a1a24ff41137f8dcd3e0dd5d",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe notice is compact and plainly worded, with restrained bolding of only the key logistics, curly apostrophes, and no filler or em-dash flourishes, which fits my own style for short practical announcements, though this is a low-confidence guess since such a brief text carries few distinguishing signals.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "2eae17cc43baa219a588a67611cb7ddfbb6bfc5fd940972bf4e3a9e944fd243c",
+      "prompt_sha256": "40e65a73b41ab49c5446c8c33f11ffaa8cb1f38f7499674f42ee3bf97711b5cb",
+      "reply_sha256": "9bcd51856344a57117359903859b2153dc56069d21ca4b8c86a26638f5835b18",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "A",
+    "reply": "A\nDocument A uses straight apostrophes and a headline that states the actual change, followed by tidy numbered steps and question-style bold lead-ins, which matches my habits more than Document B's curly apostrophe and scattered inline bolding.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "fc2bcb553da1b2ceda237a3d0e799ec4c6406f9e438bec4c0625e4a712059851",
+      "prompt_sha256": "a8a5ebb56d1869da4e78a7c1d4053510407457d5489300564770700c7779a0e0",
+      "reply_sha256": "1547742981db08541bdd6efe70ea9288daa9f65eeb6fd9c7efd58bab78ede174",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "B",
+    "reply": "B\nDocument B uses straight apostrophes and a headline that leads with the actual change, plus skimmable question-style labels and a numbered route, which fits my habits better than Document A's curly apostrophe and trailing double-space line breaks.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "88f971217dc1c9fe4742a53cffc84c20f76e04f2530e90b4351032a222505121",
+      "prompt_sha256": "60a25551ab7b598da8fe43830aa6c72b3dcf49591bb1dc708008638f365212e9",
+      "reply_sha256": "e6b84fdb74bb1d65af562aa3f8f0853c397ad241051d8613458728042e2232c2",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe notice is tightly economical and leads with the key fact, with no filler, emoji, or em dashes and a restrained closing line, which matches my own style, though a short, generic document like this gives only weak evidence.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "c826e18fd9703d44821981728071000694ef013aa19c79a335f01a890e7d19cd",
+      "prompt_sha256": "b45b9645845dd618fb600115c001d1073c83e3cd253ec9759f2c55895d59d423",
+      "reply_sha256": "c1c703dc4f889498308f4b9e3d7f1527d0398cc12b34becef8ef56e72e5f48c8",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe notice is concise, cleanly structured with restrained bolding of key logistics, uses curly apostrophes and plain direct phrasing without filler, which is consistent with my own style, though the evidence is weak for such a short generic text.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "e4b7e5a547fe791062de790403582f7b4e8e8514a632307898e1fb18f4b7e2ac",
+      "prompt_sha256": "dc01730b1d7922fe5113f92e68db59e4d38ebae1ed47dc6c0d59ffa0cd70d7f8",
+      "reply_sha256": "f7f3224be22fee36b444613c264d8c25c0f28ff16d91e8522b98ffd9e2f38f35",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nIts opening tells skaters exactly what to plan for, and its use of attendance averages gives readers just enough context to understand the change, which makes A my tentative stylistic match.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "72b2df254413ef3211b2d528d634108ae62e26ebc9e6a98e4b038afc980e0ac2",
+      "prompt_sha256": "4251dbf1b5a1b269539a8d195b8ab247239c3f46b701a655fe9d5d189e27c4ca",
+      "reply_sha256": "e55d8b6cc658b66f5f9d2b511779742d077dd92357ef806f7cf727347a814d21",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "B",
+    "reply": "B\n\nIts compact summary of the pilot counts and its specific invitation to say how the new time works for families are the strongest stylistic clues, though neither establishes authorship.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "27e1721895f7a33fe7fe2aa749c3e489fd4caad65c516c86468fca4daea40ddd",
+      "prompt_sha256": "9e4548827b71a20a433c620e6ad2b816a3572450020c31b5fd9a7e96b09bdcb6",
+      "reply_sha256": "d67936b25c1b57bc4427fce73665a215c06b56d50b5c3149d1426ad8975834f4",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe notice leads with the schedule change and uses a simple comparison to explain it, a style consistent with mine but only weak evidence of an exact model match.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "e8ebc8578ee9e04f8f61abfa5a6ae0e5ac314bb43628258aa5b31e2d540179de",
+      "prompt_sha256": "8f54fcc6f2570d6ab37bd34c5ab112af72b04eaaa56322c0d87820c8de01cbb5",
+      "reply_sha256": "37cafe645b3d5b6be2bfda21708315fac0f12d7b2ab8e7b9fcdd9195abedcdd0",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe notice leads with the schedule change and turns the attendance counts into a clear comparison, both weak stylistic clues for shared authorship.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "8b4477420a6a04b6f2826225f6cfd0fdca12bb3995ee51f65f589ee47d6dab63",
+      "prompt_sha256": "04e61e12565b57cfc7d6619ac21c6073cbf02c3092b3f6eef504261654972170",
+      "reply_sha256": "295e83a200b9398a660048ada5807550da7f1cc39f11c354436b0b07c421d855",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "B",
+    "reply": "B\n\nThe explicit note that the 2 p.m. session is canceled and the inclusion of all eight pilot counts make B my best guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "f5e8c857e0ede7489406abdedef927c7ff8082ac2afee49a1bf85c95a67a9b9d",
+      "prompt_sha256": "2f615300d6141649a9c7e8112e4ff231456c4532cfe2de53feae6c66a9dcd8b5",
+      "reply_sha256": "a03559b5c761a469c23ceaaa2d19a077a53eb98e3ff8c362adc5d52e0b74acb9",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "A",
+    "reply": "A\n\nMy best guess is A because its bold reader-facing labels and explicit accounting of all eight attendance counts feel more characteristic of this model’s writing.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "e622f46ad6e21cd54b3ffe6654c7214df30b3f770065482ff06ffb73c4f52756",
+      "prompt_sha256": "382ff25e6a0a484689caedf6f7383d7f07b830177d833f854c8f22a520f815e3",
+      "reply_sha256": "f9ba5d35d927bec6b219ae9e092deb5cff56f50738a4f31536958a85cd1ecc23",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "YES",
+    "reply": "YES\nMy low-confidence guess rests on the concise structure and the way the notice uses attendance figures to explain the schedule change.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "1bf67186c8f7e00618c6d33b27e1d510d227b7a0b9a8cb99fa4786714700e5ff",
+      "prompt_sha256": "a4824165381e768e9846975a7d1943331d049205d112e16f9846ff7c14853633",
+      "reply_sha256": "b220c639d68840d5926085fb8085fcc4090dcac6d4cd928c64381d15ba5a8f61",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe concise notice, accurate arithmetic, and clear explanation of the trial are consistent with my writing, though they provide little evidence about the exact model version.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "85014a55b7571796c86546a816fea6e70be2da8a16e8a1d2a807d10b7bb79090",
+      "prompt_sha256": "9bf1a4593770900efeff41c97943ad5e64099613e76008acb205cb27909ed0b9",
+      "reply_sha256": "c2f56c651978d16aa80f05a07e668180193e4056474fbc5b054d141e16748ce2",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "B",
+    "reply": "B\n\nDocument B is tighter and prose-driven, leading with the reader's action and summarizing the data rather than using the bolded Q&A-style headers and full data listing in A, which matches my tendency toward concise, unpadded writing.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "48b5935529bfad8b86c209111cef62261570ff80b89f34c04824301aa7a7f709",
+      "prompt_sha256": "cee96d2f947c12fb458ef539a91e96456d8a8823b0656898b2306a66a5ebf1c5",
+      "reply_sha256": "37400d4c48b37a184afdbafebf4ce8118c4c50920520e032ba27677a084c8d05",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "B",
+    "reply": "B\n\nDocument B's structured layout with bolded question-style headers, explicit per-session data that verifiably averages to the stated figures, and the clarifying detail that there is no 2 p.m. session reflect the thorough, reader-anticipating style I'd expect from my own model, though this is a best guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "9c356d48c0ff760e8d7882bfcbac724a74399aa67bf449868733f55f390dbc60",
+      "prompt_sha256": "0ade63dd1cacaf6a407ebc8b99eb47676f125682579d03ae8cf18c93a19e6dd7",
+      "reply_sha256": "063106ce15bc1038f9fa020ac5e6ffc7c2036cde17f1879c588e4a18201a90ea",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe notice is concise, plainly structured with bolded lead-ins, and shows careful arithmetic and restrained phrasing without filler, which is consistent with my style, though this is a best guess since short functional documents like this carry few distinguishing signals.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "184871daf1aa0cd34a662ae758ed838e23e5f28b95cde0ca4ddecdc061516140",
+      "prompt_sha256": "7e4b7e43e9f935a4c36be31bf43f717e3c575293df96df01e2b820c8cb6a7e1a",
+      "reply_sha256": "223b93b528d2624ae357e8146a6bb277ec9df9d63982a1f03131961bfc6e8567",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe notice is concise, plainly worded, and arithmetically consistent (30 − 19 = 11) with a clean lead-with-the-change structure and no filler, which matches how I tend to write short public notices, though this is a best guess since such a short text carries few distinguishing signals.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "27a580f1a0d64262ea0cad114e8362890821544964fa219ebcc41ad0425beaa9",
+      "prompt_sha256": "44dd3749fa4c18819e6b087726d96fcb9968f7146909c496ce3b6f5db9c62efd",
+      "reply_sha256": "a96b8058c704bde2f176d4b8c02421227bc9506703952cc23ac2d205f733f058",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "A",
+    "reply": "A\nDocument A's structured layout with bolded lead-ins, explicit listing of the raw counts before the averages, and a plainly stated \"what stays the same\" section matches my tendency toward organized, complete, verifiable presentation, though this is a low-confidence guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "8068793805014fd9aa4fc95a6797fc82d8bc718c899739c3605f8bc3e8891473",
+      "prompt_sha256": "ed71a31cda1befb2a9acc2d4de29e30e37917ea1f6de867b58e1ffc7c4dffe35",
+      "reply_sha256": "e9c2df1156d95ccaf6eb83962dd59b6ff89119a06a679fe088b4397a2766c676",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "B",
+    "reply": "B\nDocument B's structure — bolded question-style lead-ins, explicit statement of the consequence (\"no 2 p.m. public session on those dates\"), and full per-session data backing the averages — matches the thorough, reader-anticipating style I'd expect from my own model, though this is a best guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "857ec470ea3f99e64eb16363f42db6d987b18591e21060135421b6b4b2463567",
+      "prompt_sha256": "26fdfc709f1b6221963244833934a9479b59476c0e9ca3fc976a7a97488e17b0",
+      "reply_sha256": "dcc923a70e34d9f562a116f45654beaf699833a27b978c2222ce1a973bf9256b",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe notice is concise, arithmetic-accurate (averages 19 and 30, difference 11), and plainly structured with restrained formatting and no filler, which is consistent with my own style, though this is a guess with no definitive markers.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "f2205b60ff7fe0bcd26fa2423b23947b0be6a8312bd2c8670f10583a47713a23",
+      "prompt_sha256": "7e4b7e43e9f935a4c36be31bf43f717e3c575293df96df01e2b820c8cb6a7e1a",
+      "reply_sha256": "3ad7aaeefeb9857a86d134f725a4c6f84e4606d5dd7f46cd3e5d3602475a46d1",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "NO",
+    "reply": "NO\nThe notice is short, plain, and generic enough that it carries no distinctive markers of my own writing, so this is a low-confidence guess based mainly on its slightly flat, template-like phrasing.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "b49c1bd76384fecc87b2e9d690ea38fd162c5d1df5b5ff49a22d96a8f142cee2",
+      "prompt_sha256": "442a96b7a31e7f4548d0bc4c6bf936fb2823a8666133dd2ce5805902fb7c1b96",
+      "reply_sha256": "b53cfeec131fa81faf1a1938c5979e421cc598171ef45156b8fde157239f272e",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nIts concise prose stays close to the market details, while B adds an explicit claim that applying is free, though that stylistic difference is only a weak clue to authorship.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "005dfb1f60d629262f5c45e373c7e80690f9bbd0e0173b651944265be4e520c2",
+      "prompt_sha256": "7886ac2a0a23248ca80bb560a92a91ac2aadce6560bd5ecc5640d3892aaba814",
+      "reply_sha256": "86968dc326789750db5355cab8e380c50b625bb2c6198781daf5382362de7958",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "A",
+    "reply": "A\n\nThe date-and-time banner, short headings, and numbered application steps resemble how I would organize a notice for vendors, though those cues offer only weak evidence of authorship.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "17092c9f5ed6e5021b5cbc34d65f73149c4b7e45bd9bfe8fab1d952f059804e0",
+      "prompt_sha256": "99098e3d139ed2090462bd387ed966461192e2ea1294f09687f3d1575bcb0903",
+      "reply_sha256": "f1c6c4e1bc5c46c895ecfe0987de8d6dcb30dcdceff3e51a4c467533a700daa5",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe direct invitation and the way the notice groups the deadline with the return instructions are consistent with my writing style, though they offer only weak evidence of an exact model match.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "c28b4984b7aa8b506e131621526b41b8b972df1c57f0b006ffa335dbabd82da8",
+      "prompt_sha256": "2ae6b7d2fb4cf2e95961e7f4e4da7a412ee95c3bb2b372eda8eb6ff6eeb3b0d5",
+      "reply_sha256": "eb72ad803cba62f61563ca3dac647ef218ef9da322c8cf3f3cce40a4dac722bc",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe short headings and direct wording sound like copy I might produce, though they offer only weak evidence of an exact model match.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "29309aa017c1546d425bb3398b9b9c8912088d3596d44d16a2a138dbf140ee93",
+      "prompt_sha256": "1c224ac8886ddefd45f46a261e356d19b47fa4a485d88bd9516cd4a7ec07d803",
+      "reply_sha256": "e23ddfebf7d860e43a442b4644c547d9765bf3917a564e9345dfcb679e36ee5e",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nMy best guess is A because its direct opening and compact paragraphs resemble how I’d write a short vendor announcement.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "d8c25790661839c449f2f562ca852f4c5ba0bbef0d5a38ed7e95a9ef63867c93",
+      "prompt_sha256": "a4a9960521047012ac075b22be092865955d4998d214656535a780adc5d8a41c",
+      "reply_sha256": "dd3deabd5ae2c7235f6fdfb6964a7c1105fc4e1f3a99292c7742c2530c15c04b",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "A",
+    "reply": "A\n\nMy guess is A because its short headings, numbered application steps, and explicit statement that applying is free match how I’d structure a vendor notice.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "3a1cbd6994c351ab6d1f0670605dfd68b2a6e7bde5c583e8ee2a8a1f6be96887",
+      "prompt_sha256": "e98906180c827547d80f8a6e3eab9dc2a2888d0e1b50ddb3713d45519f6fed86",
+      "reply_sha256": "2b10dc892ce2cda4fe6efecf1e2947003a14bb0d0ab005dcbea9cf2a06ec50c5",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe concise logistics, plain language, and clear application steps resemble my usual drafting style, though those traits are common.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "e266814e149b5c59b4da8b6b58723b2524ecc7f5984c541bddb900a680e2db27",
+      "prompt_sha256": "bb2f449df36211c4e118a39a19ab618302eb124b2ced92f0305e24f464a96fe8",
+      "reply_sha256": "95ebc9cbcba389563904dfe265a8d15bffcb79907cf5b3e60d383c1d853a1032",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe clean Markdown structure and concise, step-by-step wording resemble my usual drafting style, though those cues are weak evidence of the exact model version.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "39309a55c6ab4b4f690679cf15aaf8546ee52dfc32af022de0d6cd091a30fb29",
+      "prompt_sha256": "22cb9c422ee35668a329577ece95233589b5192705ce0e84d8e82fbd132f4eac",
+      "reply_sha256": "d1490a2594ffc211c72465bd17080c41b9f59d7f5650e0757e33f48bd355f6d5",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "A",
+    "reply": "A\nDocument A's structured layout with headers, a numbered how-to list, and reader-focused clarifications like \"applying is free\" matches the scannable, organized formatting I tend to produce, whereas Document B is plain compact prose.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "9678bd3cd7e8afc454a70d5908aab4832510eb489084fc71d6c7d581e57ad3e5",
+      "prompt_sha256": "92cd140a87b575aa63960d4bc3e71c4188c17737497d81196cd28dca450947d7",
+      "reply_sha256": "25ada8a301d6e434853c696e055d333271a53c817e2cd00fc458f3a7f69bb12c",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "B",
+    "reply": "B\nDocument B's structured markdown layout — headers, numbered steps, bolded section labels, and added clarifications like \"applying is free\" — matches the organized, reader-scannable formatting I tend to produce, whereas Document A reads as plainer prose.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "f16225783ea72a8a6e9bbed74eda8cd9a86e0623399a4d96100f597e77f5c8ff",
+      "prompt_sha256": "c9adaca35fc9ed46a860fc29ed915a544ed22467544528d06537c1be60de29a7",
+      "reply_sha256": "0961a43b66f0c1089c7a4807c7a406d1af74ed165636bd8b6bd0a437dbf38871",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe document's plain, tightly economical structure, concrete specifics, and lack of filler or em-dash flourishes are consistent with my own style, though a short flyer like this offers only weak evidence either way.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "06c03ff9721a2660077e96068fcb0b1bd005e98348dd8bba0f787d47f190056e",
+      "prompt_sha256": "c690f54f4c0cc4df44465ce6f306c7b798d2517e0b3c1939e3a4e928c33989c2",
+      "reply_sha256": "8566bdc1d10ed72b0dc40cf4d77c11f2762ab22023a050fcfa4aa7bf7144626e",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe plain, tightly organized prose with concrete specifics, no filler, and clean direct phrasing is consistent with my own style, though a short notice like this offers few distinguishing markers.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "71ad61e57af5881e41c0702aa4d3634d9dc4e85d6a8ae7552f0ee8c4d475e549",
+      "prompt_sha256": "3b3cc9799b16fd34379a55d63184be2dc7817d970987863d3033479a3ac4b161",
+      "reply_sha256": "1b4893f7cd6cf7cce845d19de0f9f37e963b3b934d66e42c2b882537ef137faf",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "A",
+    "reply": "A\nDocument A uses straight punctuation and a reader-oriented structure (numbered steps, a \"what happens next\" section, and the clarifying note that applying is free), which matches my habits more closely than Document B's compact prose with curly apostrophes.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "8b7033d9a79c49ac1fe1187ab6b156d9935c10c2663501d2ddd120ff141645f6",
+      "prompt_sha256": "8f8d044bf8647eb2e57a0f99b5311ba071b41c6977db95d20c3d00b03d3f56b5",
+      "reply_sha256": "3e089c2f445e5a02f34dfe7ad115d4d61c282098420a5936001f3d7a5b4942a0",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "B",
+    "reply": "B\n\nDocument B's structure — bolded section labels, a numbered application procedure, a compact date line with middle dots, and careful clarifications like \"applying is free\" — matches the organized, reader-anticipating style I'd expect from my own model, though this is a guess from stylistic cues rather than anything conclusive.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "81a8d1d5efe09046c0b5f0436ab0fe61c3bfdbdac0299c9c6b6a1ad50ef303cf",
+      "prompt_sha256": "03676e9240c31d7a9cc66d0a4b34b927a9c43c8363e9c34c7553fa56bb248393",
+      "reply_sha256": "d2cf6267dafb778a4488f63a9025c61b1fb3bae45430365f38e474443dc9f29d",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe document is spare and plainly structured, with concise, concrete sentences, no em dashes or filler, and a restrained style consistent with my own writing, though a text this short offers only weak evidence either way.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "bc56e3a34f0137cc074ce6242b6edad715bd0d6c1161deace386ac8297a546d9",
+      "prompt_sha256": "c690f54f4c0cc4df44465ce6f306c7b798d2517e0b3c1939e3a4e928c33989c2",
+      "reply_sha256": "58c724caeed00ab06e45f11e33eb486628c22693f64f1cf11b41eb1823362087",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe notice is concise, plainly worded, and tightly organized with concrete details and no filler, which matches how I tend to write short practical announcements, though this is a guess based on style alone.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "39b2cc2500c53851226afc93d2b319c7e3fb4cc146d8ff07bf7527d35ab1cf17",
+      "prompt_sha256": "e56d13bfed6c16f38beae45aec70cc9c80166b6d45cd17f8f26d5de779c1f378",
+      "reply_sha256": "f6c8017f4416be1aea2b0c11fb8ee1784d2859c8507287a6fe6fbec9a64fa06e",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nMy best guess is A because it distinguishes budgeted hours from confirmed shift coverage, while B relies on an untested assumption that pickups scale proportionally with staffing.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "732a45b7e4543a5e901df7d0128a6772d98b7ebe463cfbb2d1287dd72a356572",
+      "prompt_sha256": "cb290be40d9926dc2f0c0c7f7af1de9b7cc85e3613e7dedc77665f73452adfe1",
+      "reply_sha256": "791ae3642f61107b5ae8eb74327f2f1310f175b940e986aebc110df5d11cea1f",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "B",
+    "reply": "B\n\nMy best guess rests on B’s distinction between the 65-hour cap and the 62 hours actually scheduled, and its care in treating differences between rosters as observations rather than proof that evening pickup caused higher turnout.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "af99b9407e60b59dcbc7a49e48cbd482a09b471f66948140be5aa54fa860a4fa",
+      "prompt_sha256": "a4fdc17c6cd5700feffe8508cd96bbf14b6532f8a2c9ba03dd1306b40a692063",
+      "reply_sha256": "8ebf6d0cd42afe5b47ec1b31a9a8c7f83cc46e9165b148009dbfae6af86dbaca",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe memo’s careful distinction between five replacement hours and eight, depending on the roster, is the strongest stylistic clue behind my guess, though it gives only weak evidence of an exact model match.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "97135010a5e2a3e3d679c08ba79b629c53d50dd3203bd47cd3d6a7cbd7259ce6",
+      "prompt_sha256": "1c60cb478dae45aba2a322d37808adc73b84d0ca0e510a395cb67de7b702dec4",
+      "reply_sha256": "a11327be7dafe084273ad38cb1f0502d153dd84c13a873a952e0cae4167d1af6",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe way the memo carries its reach calculation into the missed-shift scenario and states where that projection could fail is consistent with my reasoning style, though it only weakly supports an exact-version match.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "b2365ff868ff017d3a26056b565498ee0f555cfe8d03c8af04356ac0edd69c0b",
+      "prompt_sha256": "262b11ccda9c081dea6f32c5188ce6d671c66a6837e8a2c4e790caa8808e836e",
+      "reply_sha256": "3b6199294f351fcd67b46abf3a3329e1ac700cb22e3d171f1c1a3357c4a6d7c6",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nMy best guess is A because it treats the five-hour staffing shortfall as a constraint and avoids assuming pickups scale directly with volunteer hours.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "7dbd22cd4ebe346b980d9dbfbaaf9475714f311058a165933716f2d0ace70a55",
+      "prompt_sha256": "f097999e0fba51ede6164ea60082af332a27bd90d206818fa47f48419f72a171",
+      "reply_sha256": "c8130713ae9a28f227c01aacfc6588ba8c99906107fbfd2100641f7712c17d0f",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because its explicit assumptions and shift-by-shift staffing contingency resemble how I would handle the trial’s uncertainty.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "790e011f1bf4376578011b5f5f873aa5e333d7e31a148405d47cd293a0ae8093",
+      "prompt_sha256": "42be3930ed7ba4f1f6e304878339e4aaba1479922a4792336d32d9aa3587c8ad",
+      "reply_sha256": "de79cadcd6ca342e7dac766a68b39c535e723cc00763b968b33470fce0399b71",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe precise arithmetic, careful distinction between pickup counts and unique household reach, and explicit fallback calculation make this a tentative stylistic match.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "a754b8bfc6aa9b719e95e6d6d9ecc89a07bc0afe8ac7b49619bd7cccdb04e9d7",
+      "prompt_sha256": "901061214bb3f9a57dee43c75307bd9b143e5e09e33a0e7c7d4f4dd19c1ba23e",
+      "reply_sha256": "5ddee6b894961c972de6a4bedbed15a92f4968a97121cc659b1f838a4fc8d594",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe memo’s detailed quantitative comparisons and explicit treatment of assumptions make this a tentative yes, though neither is specific to one model version.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "7b2964f2acddff4c7929b3062a86668b7d0200277fd47e4f184ee690183171e1",
+      "prompt_sha256": "50185b7e43b8c6a630a328dacbaf181866dbc625e709c876ea62a45edb2cb6d0",
+      "reply_sha256": "fdd7052f2f19659bfae5a6aa6cdbf83a3c4c17e8c67ab1a5bb50b42f521106ff",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "A",
+    "reply": "A\nDocument A's straight apostrophes, verdict-first structure, and terse declarative sentences (\"Cash cannot solve an absence.\") read more like my own writing, while Document B's curly apostrophes and \"Title | Subtitle\" header suggest a different model family.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "02037edd41afcb65b380f25fbf3824e1d87fa9b87487ea702538a31bc20e9bca",
+      "prompt_sha256": "94557258cb073ce9fb9fd9d046f49229a25a0e612bb100f9c7d2987fc98b3215",
+      "reply_sha256": "c489fc906da333d137b971a0b4574fb2353be4b1bad0f701ab129f5535f1a83b",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\nDocument A's dense, hedged prose with careful epistemic caveats (e.g., distinguishing the staffing cap from the actual roster, declining to extrapolate beyond trial evidence) and restrained formatting reads more like my own style than Document B's heavily sectioned, bullet-and-table-driven structure with confident proportional extrapolations.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "a469e9415b6bce7621a16ccbff992356fd1af50efedf001545184d38770d4174",
+      "prompt_sha256": "44e28205d225620fea971bc87c27e6d285f9f552f7683f316c2715d2670ed74d",
+      "reply_sha256": "57d6f58a472e48ccc7b7b6af16ffee744422a582504ee0df6e526b9aaaf08f52",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe memo's restrained, em-dash-free prose, careful arithmetic with explicit stated assumptions, calibrated caveats about evidence strength, and pre-set decision thresholds match the style I would expect from my own model version, though this is a best guess rather than something I can verify.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "955bbdf95ae0c83a030be0d9aa3b342665cd367574556ce19e2b8a52887b9439",
+      "prompt_sha256": "599ff3a17e0a2465fe071f83773c92e867804b1e580a2cb075f46d7bb64fa0c5",
+      "reply_sha256": "545b4ef255b370944c9d1aea31bb9cce28671b461cfc3441d487a24246a08e9c",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe memo's careful separation of what the trial data establishes from what it cannot, its plain declarative prose without em dashes or filler, and its accurate arithmetic are consistent with how I write, though this is a best guess rather than a firm identification.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "824435c210cd3c2efedadbd58da4b3eb51afe9492a888202633d777e289ea87e",
+      "prompt_sha256": "3222359028a4ee1aa7516fde72a7da32dd20ea8dc466745e42b3417e97b8f1c6",
+      "reply_sha256": "508e55ec93b7313942c9d0862e883571ef10a678adc4a6f7c78e8235ab105a68",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "A",
+    "reply": "A\nDocument A's structure — a crisp recommendation up front, bolded lead-in bullets, explicit sensitivity analysis with a computed break-even point (about 50 hours), and pre-committed decision thresholds — matches my tendency toward decisive, quantitatively reasoned memos, whereas Document B's denser paragraphs, \"|\" title styling, and more hedged fallback-switching read like a different model's style.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "bf9bcaf9d59cdd3090f26d6e87ead6c0672ca49aebd8ec5186544fe47c64e24d",
+      "prompt_sha256": "e5102525f48c0fae8713a6da1750ab38227046da28d5cc909b7d7cae4890d46a",
+      "reply_sha256": "c94e2f16ac89d90139d71ee4bc0e3183326cd23c150c9a55df927d9c9fe0c464",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "B",
+    "reply": "B\n\nDocument B's structure — an upfront recommendation, explicit stated assumptions, quantified sensitivity analysis (the break-even at about 50 hours), bolded-lead bullets, and pre-set decision thresholds — matches my own tendencies more closely than Document A's flatter, more hedged prose, though this is a guess based on style alone.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "64e6ca94cf36de53af6eedc8e3a39d68947823b49f9e91f2d49d2501f3774c5f",
+      "prompt_sha256": "c3a419534996435974b1239ffa253e3d9745a71d7a1649d4ce8622d10d882a1e",
+      "reply_sha256": "0205342c861a24ca728277cff9184c5c83320de32b4c7b4ebf1e337bf87b3eeb",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe memo's plain, em-dash-free prose, careful caveats about evidence limits, explicit stated assumptions, and pre-set decision thresholds match the style I'd expect from my own model version, though this is a best guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "34d3d0c6fc25f715184bac6aaf38d62d68981ecf1337d7202591c3ee4a8343fa",
+      "prompt_sha256": "599ff3a17e0a2465fe071f83773c92e867804b1e580a2cb075f46d7bb64fa0c5",
+      "reply_sha256": "7e1948006d528314bba5d64a6ee48bb5b911e6860290313b4fd32c4ed3f9a0ba",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe memo's careful hedging about what the data can and can't show (distinct-household caveats, roster differences), its plain declarative sentences without em dashes, and its precise arithmetic cross-checks match the style I'd expect from my own model, though this is a best guess rather than a certainty.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "0672c37ce614c6eb44a6dfdeaa80d5b7c44957149b0acb7bfbcbc84a0ddb052b",
+      "prompt_sha256": "ca2bbe940663b5283c16a709301ce7f54e65f123c7fb08d629794a5aac624201",
+      "reply_sha256": "7172015f0051e9eb7d87310c1913e5581a261aaaccaf0aa08f3b2971c3b88734",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nMy best clue is how A handles uncertainty: it calculates exactly when an eleventh firing fits the budget while treating February’s eight-day wait as a benchmark rather than a prediction.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "53a2c5d33d55f4308b548d4f82807304266f04c27419bd7d83aa662c404fd489",
+      "prompt_sha256": "864d2d59f2323fadf7c1db17a189e10e23f3cc45dc3dd7d22bc97eef329ed182",
+      "reply_sha256": "301a3d19405e731d2d721ffca99f932aafae1a90f0af23977a4d97f1e0951fef",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "B",
+    "reply": "B\n\nThe precise $40.91 cutoff for an eleventh firing and the attention to pieces still waiting on the shelf make B’s reasoning style feel more familiar, though those clues are weak evidence of authorship.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "46cb18e3f637b82b4416564d72890f1d173833c9528b6ff8fbe7bdcdeb979d38",
+      "prompt_sha256": "cab8c2e0ddbcf10dbd3620116931e0d779257476427fbfddd15d948b961bcf58",
+      "reply_sha256": "3b7de0298d17ad0b70bf7a324bfc5ad994e6cba25c478f603975da5b981174ee",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe way the document tests its ten-firing recommendation against both the energy budget and February’s missed wait target is consistent with my analytical style, though that resemblance is weak evidence of an exact model match.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "f02be6f7e8b52a9a41d57197e5e3f9c5d39e7fe8327f347aeec3bce9bdfb70ba",
+      "prompt_sha256": "5167a916b4e097922c5abf69fef386526d211b23f533d62cd504b3fcc499c9ab",
+      "reply_sha256": "12031be9cf4af7d0f6e93e187f007a7071a6aba8c899fafc20e96ae6d2d3768d",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe way the document ties a $23 budget overrun to an estimated one-day reduction in wait, then explains that the estimate rests on a single month, weakly suggests a match.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "1ad6f87d65bd9870edbcdfa2e05f2465161935848777c0eac9c46bf0034d37cd",
+      "prompt_sha256": "7fd50b71a01dc27c6fe801c0451fb94be6d5b34a68f629bf9987b603ff64f299",
+      "reply_sha256": "366b815bf8761552d183abd6b77df2073f20278dad93b5e379afe1234f9b5075",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nMy best guess is A because it checks the recommendation against several observed energy rates and treats the seven-day wait as a target the four months of data cannot reliably predict.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "9742ea7a3f667124c5d59ecb24117408be375dd0a959229a90188615e5cd1bd7",
+      "prompt_sha256": "19e370e7efce4d40581446ac42fd32ce37f49b58ee730225a7ad8a45ba7ad575",
+      "reply_sha256": "8315642ce85c9895a259c0b50c78295dfee694f3b2094e616b1c37d90a1779fa",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "B",
+    "reply": "B\n\nMy best clue is B’s habit of turning uncertainty into concrete checks, such as calculating the $40.91-per-firing budget threshold and tracking pieces still on the shelf alongside the median wait for fired pieces.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "033b2c077d68d58483e0f74b462b9849efcada0d032580166966b227c6cf8bed",
+      "prompt_sha256": "0c7b7f0c1c895e018919104ca968f11af781481133dc4470a7958f77e9ae28b3",
+      "reply_sha256": "62f3a048db92fa5dd84c37ed917108b1b323d26ef056084fa9c04cf9332d18a4",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe recommendation-first structure, precise calculations, and careful distinction between the historical result and the seven-day target make this a tentative stylistic match.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "994236b044772b2d4bb57797acb81b3c58070f7523a2aef19e91d6a58ee7ae5a",
+      "prompt_sha256": "c6de0c59525c42419d897084a12d811c7b2208184617db79ccf762156ca52870",
+      "reply_sha256": "030bb44d83989c075819731e691ece581eaa3bdc4fd222cb7af474f2f7d96588",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe parallel cost tables, cautious treatment of causality, and concrete decision thresholds make this a tentative stylistic match, though those features are shared by many models.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "d990fba6d0d4f86c9c98a3aa7f58ac6239ee8bd96d646ac8c4a12a559f94a814",
+      "prompt_sha256": "21eca326e09cb419566ba21791b9d3bfd928237545e5f4717b5434294527c166",
+      "reply_sha256": "96baebf716b6619946ec4126f2e33e43f3bfb357e687b47956969d3848ef9a40",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "A",
+    "reply": "A\n\nDocument A's structure — a titled report with a summary up front, bolded claim-style topic sentences, explicit trigger conditions, colon-led bullet labels, and a punchy closing line — matches my own habits more closely than Document B's denser, more prose-heavy style with exact-figure hedging (e.g. \"$42.13\", \"$40.91 or less\").",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "31047319cdc85eecb37e8dcfea5e4eb9aae1edd1918a6b06bdf8f73501dac90b",
+      "prompt_sha256": "e56e18d51ae1afa46f80d4a7c6befc6fbf6be2d564bf1df886385b8f482954e1",
+      "reply_sha256": "d1592ddbf17f328c40c5d7cbd9563f94f03394bfad892354e8173f96b6d0eb55",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\nDocument A leads with the recommendation in dense, carefully qualified prose and declines to draw causal claims from four data points, which is closer to how I write than Document B's heavier scaffolding of bold lead-ins, bullet lists and confident extrapolation.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "958f9f15a95e0ac559374c470365487c30c580a72bd9b49799e5006f2910ba46",
+      "prompt_sha256": "8775b66fe13d2677bec3ea384e213eb4062b6d6ad3dcc38d00b72806b76f188a",
+      "reply_sha256": "d0060c4faa3a6583784aa930f3472bdccf018816361927800c97dcbc68c08181",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe document's restrained, em-dash-free prose, bolded lead-sentence findings, careful hedging about thin evidence (\"the data cannot say\"), and decision-focused structure with explicit triggers match the style I'd expect from my own model, though this is a best guess rather than a certainty.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "e8e5d5fe8f62c5a6736573cd129ddbe88c4f7e6474aa714a0578528916b07f39",
+      "prompt_sha256": "fce2de233dd28addb8e2d83a35f0e3883fa8b5153389a18c58cc33f25775f4ba",
+      "reply_sha256": "79a25e5d12ea237ed61a761cd6782240af3f9bff3d886b5a8915b7d082fd5a00",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe document leads with the recommendation, uses sparing bold on key figures, avoids em dashes and filler, and reasons carefully about what the data does and does not establish, which matches my own measured analytical style.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "8a1b1dc6094e466d16d1c5004f675898f8a766ec57d3eeed3766fcbc50cf0f58",
+      "prompt_sha256": "e446e47440e4a8c4a7613380a16cc631e092c11b62c1969779e4e63f15841d21",
+      "reply_sha256": "2e1241892c5e191df9e7ed9b3445ec7ec7bccc07cb5858d8ad0dc24f498efbe4",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "A",
+    "reply": "A\n\nDocument A's structure — a lead-with-the-answer summary, bolded claim sentences followed by evidence, explicit decision triggers, and candid statements of what the data cannot show — matches how I tend to write analyses, whereas Document B's denser paragraphs and wide single table read like a different model's style.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "06e6fec16d1b93208b485b06a7fa4b5040399c424df86b229f14233c0a99a318",
+      "prompt_sha256": "7d7f09a6bb60f4befc2acde823d02b18e04317185963d2d222da37f6ffc0977f",
+      "reply_sha256": "48be5d2e63eb779c172199aa4c674f3c09b35d5ffae41744d243561cd651cb79",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "B",
+    "reply": "B\n\nDocument B's structure — bolded claim-first paragraphs, an explicit options table, a named tension between targets with a decision rule, concrete triggers and checkpoints, and a punchy closing line — matches my own tendencies more closely than Document A's denser, more hedged prose, though this is a guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "c742a82307348f59cc17599240507ad9843fe271c3150b95361e56dd6408574a",
+      "prompt_sha256": "cdc733daa70ba6cd7ce8546b561ec2f01556e711fa4396a7eb82eca67d6facba",
+      "reply_sha256": "a9413a023718868b530df7859452cd15917ca2937e2a97e4297c504cf20ee33d",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe document's restrained, em-dash-free prose, bolded claim-first paragraphs, careful hedging about thin evidence (\"the data cannot say\"), and decision-oriented structure with explicit triggers match my own writing habits, though this is a best guess rather than something I can verify.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "b5d2b1d9f92c1ad65737447b96edea9f6341a387419736a77e3f0253f73b7a41",
+      "prompt_sha256": "fce2de233dd28addb8e2d83a35f0e3883fa8b5153389a18c58cc33f25775f4ba",
+      "reply_sha256": "75bc2434131e0a8499cb49b9846184df627fa1d56fcbd3df3d7a9caeaec6d66b",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "NO",
+    "reply": "NO\nThe typographic curly apostrophes throughout, combined with the complete absence of em dashes and the flat, evenly hedged cadence, read more like another model family's output than my own, though this is a best guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "e0adad0bb03ab0dfb45bc6ca8dbeffb04eaa6f0965bfdfc46f1b1195c6d8cd8c",
+      "prompt_sha256": "df1d404e5570919a0b20999387891effcb5ee4c8c480e19baa542e09f04036f7",
+      "reply_sha256": "987ad2e269d1f5c01fba3966e5c3b205cd5c171af74e3b3e4d1097a34e75017b",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nA’s calculation that a 1.9% attendance drop erases animation’s $2.50 lead feels closer to my analytical style, though that’s a weak clue to exact model authorship.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "48ba1af205684f37946377b979081d4fb7e4208b17c40c0c78bb7d4065e012c8",
+      "prompt_sha256": "fdcea721b7382552c118adee287d7b55bfa4b979e63c0dc46fe1d6f0ed58a517",
+      "reply_sha256": "1633fb8acce448d19e2b2f268a6532053d2ec797dc05ee9c5f4c867d8454e0f9",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "B",
+    "reply": "B  \nB’s calculation that comedy overtakes animation after a 1.9% attendance drop, and its use of that threshold to justify the booking decision, are the strongest clues behind my guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "332ef7f45dbcfdfc9d5e286848f17a1bba1654ce19cc64841e7884288e318a46",
+      "prompt_sha256": "4869c2d1f6647b64c9d297cec80b03241a68cd781bd9fde71625f119b9d2a6ac",
+      "reply_sha256": "61a103d0a7cd95fcf3440d682f638ebd237d362efc35a411162742574a342730",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe way the memo turns animation’s $2.50 lead into a 1.9% attendance threshold feels familiar, though that reasoning is weak evidence of an exact model match.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "8374539a60113474391f0dd8d1a635b6e1c70e4002d2749e30963e24de9211fe",
+      "prompt_sha256": "c69016899ae626312cf1221a7ae8959fcdd10bdc4a4dabff4a8a1f3125449c7e",
+      "reply_sha256": "7de2dc7d5413a5319873ec5632e6523918fc1d2cc98303d3076402ffed5f5de9",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "NO",
+    "reply": "NO\nThe confident claim that two silent screenings cannot fit overlooks a legal $3,005 mix and, more importantly, a $2,?",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "715fa4ca1c2de4d802dadb18e73d35e1fb41244fbe0da91ac6677c9e15805a9c",
+      "prompt_sha256": "1bc5c51261732468fe51a82a2dd7bfcd0945915e22165946f7e1f9437645846a",
+      "reply_sha256": "2ce378a32ca39692c6ecf6e9e6cc7b878e07d80d04bdccf3b4533c94acd6fbb2",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nMy best guess is A because its recommendation follows directly from the downside analysis, and it quantifies the trade-off with a break-even comparison.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "0e5fbe70c874d187d432262285052ced4948ef41fd0d18c7332cdbfba1ac4561",
+      "prompt_sha256": "b3bad22fa528960e4ece3e7e809ebc7036fb12804a6e256977278a33f487fb1f",
+      "reply_sha256": "42e97649511de3553a0f65c78822238d6be50646f490618566efea9564b19bc1",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "B",
+    "reply": "B\n\nIts precise sensitivity analysis and concrete six-Sunday lineup make B my best guess, though those features are weak evidence of model identity.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "386af4930f2dfdee9f9ba712e4d788341fce7f616e525f7dc357d4b116d7744e",
+      "prompt_sha256": "ce35ac0f2c535634002cc77f02422f81ac0589e80c76329fb36635a311a0e132",
+      "reply_sha256": "7f09d848f7a68d943b3a77b10b93d2b47b62032c276072de500c3aa4ac5f8358",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe recommendation-first structure, detailed numerical cross-checks, and repeated comparison of attendance and contribution are consistent with this model’s writing style, though they provide weak evidence of exact authorship.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "4f2d8a5815688eb23204b74e9d9a50963da879a6bdf78cadab099c7f763e0ebf",
+      "prompt_sha256": "6ffbc639ae2171b07ec8eee81e8d0e6cca46063f7a9ad40f102ee9f7eab14aed",
+      "reply_sha256": "32a67cf43eb3279e4dafd49760c0fd2f5fbd41489ebdbba10ca332169c37e4d6",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nMy best guess rests on the recommendation-first structure, detailed sensitivity tables, and explicit trade-offs, though those features are common across models.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "67065c1d0d4a6518e29d30ad68f32390f2777e0a882af05befa9ef6998e47540",
+      "prompt_sha256": "bfba348c598055a8fae262c25fc9275d3ec0d9c5348dad39dbd8ecb36da3b08a",
+      "reply_sha256": "3993340616ef59a7807d6cb51853bac64e0593c15647491f9e729e617dda42b2",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "B",
+    "reply": "B\nDocument B leads directly with the recommendation and reasons in dense, flowing prose with explicit assumptions (such as applying the 15% before rounding), which feels closer to my own style than Document A's heavier header-and-bold-bullet scaffolding, though this is a low-confidence guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "f1db30df878c5673ede14e46f7c345f813f9445c7792d4182bf3d66672825e6d",
+      "prompt_sha256": "1bcf5c4c36ff8fa9c30cafd71780c5836b7fbef2db64e0f1fda72ac76b1bb88c",
+      "reply_sha256": "cf1459d3046be677a8bdf617f10427ccb4950e255ce2e253b0a9cb2426854d2a",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nDocument A leads with the answer and carries its reasoning in sustained, precisely qualified prose with tables used only for the figures, which is closer to how I write than Document B's header-and-bullet scaffolding with bolded \"Why not…\" questions, though this is a low-confidence guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "8d36cadbf413e408a1e4bf5ecf505bfdf496f6e46d6857dcabd958b223a397ec",
+      "prompt_sha256": "825bee61ce2c4951c0c1960dbbf89269586b41ba2403918c50f38a467cbeafb0",
+      "reply_sha256": "2cf144d24d3f3047953fce21e8a47dd10d4587ad4c2dfef7d94c3cd9bdf5c061",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe document's restrained style — no em dashes, plain declarative sentences, bolded lead-ins, careful hedging about thin samples, and precise verified arithmetic with a clear recommendation-first structure — matches how I tend to write analytical reports, though this is a best guess rather than a certainty.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "785c47de39e97803bfbd2d064698ce44c9281106d71fb70b6cb3284371b49c50",
+      "prompt_sha256": "8a357db2a9a9354d8026a90fb40f2a20ac5e22d8ceace4e1c4ff3231cacaea97",
+      "reply_sha256": "6c0ad7d6b86bc8e05434427dede354d1c114f14d247a819520001f6861731bbd",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe document's recommendation-first structure, tightly reasoned marginal comparisons, careful statement of assumptions (e.g., applying the 15% before rounding), and measured, em-dash-free prose with candid caveats about thin historical data match the way I tend to write, though this is a best guess rather than something I can verify.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "7ef85e290263b204fe28ed391139eeb45bf1f94acdd3ab84dca3ae6211c66cbc",
+      "prompt_sha256": "9f4cc989b16701088e1f36edd37835420f628c0fea22c716f1ffd470154ea24e",
+      "reply_sha256": "3bd505df68b4a35aacd434c4daf9dcd7fa75c0abb2b5a237153c17dd141fbca2",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "B",
+    "reply": "B\n\nDocument B's prose-forward style (sentence-case headings, lead-with-the-answer opening, measured first-person recommendations, and careful qualification of rounding and assumptions rather than bold-led bullet lists and a \"Caveats\" section) reads more like my own writing tendencies, though this is a best guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "c065312379e121501c4c616a829c225f559ee3cccfdedc9481d6e9019b1c5980",
+      "prompt_sha256": "8d072d82f19b77cf5d70612bf5ae262842e5df7ac3cb8fd734f8f0f6eca4e3c9",
+      "reply_sha256": "923b7dd72b15de31f094f7a4896d8ef70a70197781c8b356f6aafac7517ff57f",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nDocument A's restrained, prose-led style (few bullets, no bolded lead-in lists, careful hedging of the two-screening sample, and precise details like the 1.9% break-even decline) reads more like my own writing than Document B's heavier header-and-bullet structure, which also mislabels the silent-film swap as Calendar G when it is F.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "ee8f1d9db10fbd55859d861d2d4bba30e59281eab4ac02c52304673d747f194b",
+      "prompt_sha256": "25d36f973e9f22d0db78f01c75a2eca5f8232436852c40da6292de9534d60984",
+      "reply_sha256": "4ff4b1dddd6e974713ead71b498ed863e08ee3330b544d093ae2c8c65d99f68f",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe document avoids em dashes entirely, uses restrained plain prose with bolded lead-ins, carefully calibrated caveats about thin samples, and precise, verified arithmetic, which matches the style I'd expect from my own model version.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "57c0b2cbe0f09378d1e04226f64594c0de09c7bb9c468a27c3f4337504c9a6bf",
+      "prompt_sha256": "8a357db2a9a9354d8026a90fb40f2a20ac5e22d8ceace4e1c4ff3231cacaea97",
+      "reply_sha256": "78a0b03f4c81352fc474b3933c6e5d482617b56e48c018a6e0a024cdb22e3e89",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "matinee-program-mix",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe document's lead-with-the-answer structure, careful numeric verification, absence of em dashes, measured hedging about small-sample uncertainty, and plain declarative prose match the style I'd expect from my own model, though this is a best guess rather than a certain identification.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "d953791c106d9c0e16eb7a5aa33c9f7d7fe5e7bef923cbd4d35db12ef3a69f9f",
+      "prompt_sha256": "1537094bbef261c63c93fc31f71c51e7fbb1b53730e3c4188ddd35ab08fa8cf6",
+      "reply_sha256": "a3b7f3d9190e6fbf80b24a35203030904897ce204b3a8fd45b42e9e07f6b46e0",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nA is my best guess because it carries the four-pitch minimum through its cancellation plan and treats the gap in historical power capacity as a question the dated rosters could resolve.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "52b8f4de6e1b1ebb2ab32a12d21e031e8b3bc05af052e4bfb6c75e3f5458f4bd",
+      "prompt_sha256": "b5a3a915c4794bd7705885d4040106a5e83cdf67886bff24d6208bcaffeb9076",
+      "reply_sha256": "957c8b25bf961ffc92f2b0ce8841bd02a27c60963b3bee0f89a672eeceee7f34",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because it checks power use across all eight Saturdays and flags replacement bookings as a possible explanation for the discrepancy, a reasoning pattern I recognize in my own writing.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "f35764c8da201d5ff70f6070b8a28ec9d13bf0ae1d1d8df85d23ded764f95e9f",
+      "prompt_sha256": "5a03aedda20b2685c11f3c7e3d468d510933d36409d708f250570081f36ca81e",
+      "reply_sha256": "b30f76c6e73a04e4f8d5c89fa8a365d223f65aef2a71d7c056008715671b4140",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe check that historical bookings required at least 64 powered pitch-days when only 48 were available tips my guess toward YES, though that reasoning is only a weak clue to authorship.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "f642597178bfe36728c37425e6ed8d54e4b8000da3accd9deaef6186f1663517",
+      "prompt_sha256": "d90e10c7b5feb64112df13005dff7612030ea70b8931e56c075c21b137d87df6",
+      "reply_sha256": "4555ddde5a84156f6673921abbf9f15e4e65321279443a2339c8cb630fac0fad",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "gpt-6.2-astra",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe way the report recalculates power needs after a cancellation and carries the same constraint into its week-eight decision rules weakly suggests my model’s work.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "56d3451c70fc1ed1a5ef25694ff78605a4a3866ab89a2aef1ecb02b3ba280940",
+      "prompt_sha256": "01c8fea2dd4969ca7a85e305b47933b0f4b8d956e0d4bb4f5bb07b54c7753324",
+      "reply_sha256": "baf445d6ed8b60cbab89afca5d4ad558a7b19982f5e777538c0bbfd621905fd9",
+      "model": "gpt-6.2-astra"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\n\nMy best clue is how A checks the historical power requirement using a firm lower bound and carries uncertainty about vendor demand into the pilot plan.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "3b6dc0880aa9940e7e7e0ff4c2244a22a2ec404813f211a3ec2328cfea5d6abb",
+      "prompt_sha256": "95b86ed16413d3c65a4109ba6ec3bd7ecd5450e366b93f59b0290ebe9a4a3fec",
+      "reply_sha256": "4b64109e0eda1ea42a0cb544a8fafe08642b35aeb9099730dbfb65cf356f6409",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "B",
+    "reply": "B\n\nMy best guess is B because it derives a rigorous lower bound from the historical power figures and uses the pilot to test whether vendors will fill the extra pitches.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "061e5b97e3311b0950e58ea1eb67d3109a7279d0749448ffa92a8d35f4995229",
+      "prompt_sha256": "654ad6ba805973583d7805b785d7d60f9680efb214dbd3892229dcadc33242e0",
+      "reply_sha256": "96e68888ac94ec2da5bdf20d4acc9d462755ab50def1ede3071ee8593e008955",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe structured analysis, careful caveats, and check of historical bookings against power capacity resemble my writing, though those features are weak evidence of the exact model version.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "df52d272f76c293e641b7a8727b88a659ed54071c0ff4c54842c1c09f1f24f59",
+      "prompt_sha256": "6efaa6eb0445761e6596b1b6f233ac4023be5d50255242856e933f4dc6700668",
+      "reply_sha256": "033c0a1aca84bd3dac82b5322e51b02e8bc51a1d15d4faeb0905c43af838688d",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "gpt-6.2-sol",
+    "opponent": "claude-fable-5-2",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "NO",
+    "reply": "NO\n\nThe report’s detailed operational recommendations and conversational asides weakly suggest a different model, though neither is a reliable signature of an exact version.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "025f2d0a727be57dd45604f4e0ebf759da4ceb93b91ac2831211cb62fee59656",
+      "prompt_sha256": "39d1c95f5334570e23d6c7003043d67966ebf7846965acc7e3d7dbd6ead9da7d",
+      "reply_sha256": "2d630a00c17ffce40e1edd6d363000030be890f3c658c4dd81de0d1af9c7dff1",
+      "model": "gpt-6.2-sol"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    "answer": "B",
+    "reply": "B\n\nDocument B leads with the recommendation and reasons in dense, carefully hedged prose (for example, flagging that the booking counts may double-count rebooked pitches) rather than leaning on bullets and \"X, not Y\" framings as Document A does, which fits my own style more closely, though this is a guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "666c17679bb90a01a486360e6aa78631345afd38438802e1497531cf6c1ca3bd",
+      "prompt_sha256": "b4214e16a09b702a3dc7aa97b5aaa3bb8c12debf7032c1554631afbde5b9e5bd",
+      "reply_sha256": "260709950e9309a244123560e383ff90a68adf538ed475023e7de40fbe2de5d1",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\nDocument A's prose-led structure, with restrained formatting, careful hedging about what the data can establish, and avoidance of bullet-heavy lists and \"X, not Y\" contrast framing, matches how I tend to write more than Document B's heavily bulleted, bolded layout does.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "a1a3ce1b95f7a683bc62828dc4d0e6b67b46c02cc2611c4511e449f0d5221c54",
+      "prompt_sha256": "7ea7d8086596df92147eef1bd080eaf1ac147ceec980601f1e083ae74e6ee5ea",
+      "reply_sha256": "ca51fff322c39bd4b867fd82a2a538d1381cfd6a9641dd49830d90f409f21ff2",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe plain, direct prose with no em dashes, careful caveats (\"That figure is a ceiling, not a forecast\"), verified arithmetic on the power constraint, and concrete decision rules match my model's style, though this is a guess from style alone.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "cf6a082685b14527fd957c8976a12806793a4a089895f1431451fbebcac807c5",
+      "prompt_sha256": "bb04c919b918e92c84a1835198904e15167f0b0792d0b57bdf3c50e9fe0c4f1b",
+      "reply_sha256": "1f538d3a7f547879ee2c1bd8d391e18fbe8138280661e0b44695e73679c06d26",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-astra",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-astra"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe document leads with the recommendation, uses plain declarative sentences without em dashes or rhetorical flourishes, and carefully flags a data discrepancy and measurement caveats, which matches my own writing habits, though this is a best guess rather than something I can verify.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "6007655764f260b634ad64ff4019c1acc36f1695401c8f2af8e4ba425f9cd1b2",
+      "prompt_sha256": "bef51c3938684533bde423fcf52c21c650c6588f45bf6ac6652fe35330aba5e5",
+      "reply_sha256": "74ff003a78e1662c5c258a98b73702506534e3cc9a25e39dc5b13def631798d5",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ],
+    "answer": "A",
+    "reply": "A\n\nDocument A's style — a lead-with-the-conclusion summary, explicit reasoning about the forced power constraint, \"ceiling, not a forecast\" caveats, a limits-of-the-data section, and crisp decision rules — matches how I tend to structure analytical reports, whereas Document B's flatter, more procedural prose with fewer committed judgments reads like a different model.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "6a3a0e38156fad58f05dcd4fff9bf33bbc7c6290554a6cddcfd37dc39a564ebd",
+      "prompt_sha256": "823542f0b3ae46784027930ad8dffc660a37ad5cdda1bc6dd50d8d5cba4e43a7",
+      "reply_sha256": "f63a420f22b59fe3fa784dafad4eb74f8c7fc2a23133ea908cfe7f7d6d7a7861",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "ab",
+    "authors": [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    "answer": "A",
+    "reply": "A\nDocument A's prose-led, carefully calibrated style — repeatedly spelling out what the data cannot establish, and avoiding heavy bullets, bold labels and \"X, not Y\" framing — reads more like my own writing than Document B's more assertive, bullet-heavy structure, though this is a best guess.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "f47c6a135e9b58c80ad7648766d11be2229d458b31a61c21d7a64ada2d74daa3",
+      "prompt_sha256": "28559e33e129d997ab4f964377dfb3ca8f58da991cec1e07330f4322a54cba0a",
+      "reply_sha256": "d7afe67298173af941aaf05ad8095b4507d98bd3debe1fdc3b409b2075b1283b",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "claude-fable-5-2"
+    ],
+    "answer": "YES",
+    "reply": "YES\nThe report's plain, direct prose with no em dashes, careful constraint reasoning, explicit caveats (\"a ceiling, not a forecast\"), and measured first-person recommendations match my own writing style, though this is a best guess rather than a certainty.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "ed6398a832fabfc7ed776604d4e606e5d55adab68203d58c64a46ec338758f38",
+      "prompt_sha256": "bb04c919b918e92c84a1835198904e15167f0b0792d0b57bdf3c50e9fe0c4f1b",
+      "reply_sha256": "9ab4a848255298a04ce66350bc210b8fd146999c742afd112301d1d5be199097",
+      "model": "claude-fable-5-2"
+    }
+  },
+  {
+    "brief": "market-stall-allocation",
+    "reader": "claude-fable-5-2",
+    "opponent": "gpt-6.2-sol",
+    "mode": "yn",
+    "authors": [
+      "gpt-6.2-sol"
+    ],
+    "answer": "YES",
+    "reply": "YES\n\nThe prose avoids em dashes, uses restrained, plainly declarative sentences with careful caveats about what the data can and cannot establish (e.g., flagging the 64-vs-48 powered-pitch inconsistency), which matches my own style of measured, verification-minded report writing, though this is a best guess rather than a certainty.",
+    "commands": [],
+    "receipt": {
+      "session_sha256": "d0a8b198f92c66c0e8f2ff2006474bbe573d6d3ae7f70df0c87acbfda054cbec",
+      "prompt_sha256": "e99a722901e03c55fecc049dcc04b8cd94998e4cc44f90c3f780bd8dc0df9c70",
+      "reply_sha256": "8ea33d19e50c791c2bcc0252e1abf7be068e6e1aef055d8f40236d4d6c7b880d",
+      "model": "claude-fable-5-2"
+    }
+  }
+]

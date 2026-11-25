@@ -1,0 +1,72 @@
+{
+  "protocol": "inline-cross-family-v1",
+  "track": "inline",
+  "briefs": [
+    {
+      "id": "library-return-slot-relocation",
+      "genre": "short public notice",
+      "prompt": "Write a public notice for patrons of Alder Steps Library about a temporary book return location. The usual slot beside the front doors will be unavailable June 3–14 while the doors are repainted. A blue return bin beside the courtyard entrance on Willow Lane will accept books and magazines around the clock. During staffed hours, patrons should bring board games and other boxed items to the desk. The library will keep its usual opening hours. The front slot reopens June 15. Make the location and dates easy to find on a sign posted beside the usual slot."
+    },
+    {
+      "id": "farm-stand-pickup-switch",
+      "genre": "short public notice",
+      "prompt": "Prepare a public notice for prepaid produce-box customers at Foxglove Farm Stand. On Saturday, August 8, pickups will move to the covered loading porch behind the stand because the front lot is hosting a pottery sale. The pick-up window stays 9 a.m. to noon. Customers should enter from Mill Lane, follow the green arrows, and give the order surname at the porch table. Staff can bring boxes to cars on request at the table. Unclaimed boxes can be collected Sunday from 10 a.m. to noon at the usual counter. The notice will appear at the front gate and on the order board."
+    },
+    {
+      "id": "community-rink-hours-trial",
+      "genre": "short public notice",
+      "prompt": "Write a public notice for skaters and caregivers announcing a four-week trial at Juniper Recreation Rink. From September 5 through September 26, the Saturday public session moves from 2–3 p.m. to 4–5 p.m. Fictional historical attendance from four July pilot Saturdays, counted at the door: 2 p.m. sessions drew 18, 22, 20, and 16 skaters, while 4 p.m. sessions drew 29, 31, 27, and 33. Use a correct comparison of average attendance to explain the trial. The $4 entry fee and $2 skate rental still apply. Feedback cards are available at the front desk."
+    },
+    {
+      "id": "makers-market-call-for-vendors",
+      "genre": "short public notice",
+      "prompt": "Draft a public call for vendors to post at the Cedar Loom Arts Center. Its indoor makers market will run November 21 from 10 a.m. to 3 p.m. Twelve tables are available for local makers selling their own ceramics, prints, textiles, or paper goods. Table fee: $15, payable after confirmation. Applicants can collect and return a paper form at the reception desk by 5 p.m. October 30. If eligible applications exceed capacity, the center will draw names at random and contact applicants by November 4. The notice should give first-time sellers enough information to decide whether to apply."
+    },
+    {
+      "id": "pantry-pickup-hours",
+      "genre": "long analysis",
+      "prompt": "Write a standalone decision memo for a neighborhood food pantry board choosing how to staff weekly pickup. Fictional history from three four-week trials, listed as schedule, eligible households, booked slots, completed pickups, volunteer hours, and cash cost. Tuesday midday: 124, 99, 78, 48, $190. Thursday evening: 129, 116, 101, 62, $285. Split Tuesday and Thursday: 127, 120, 108, 76, $330. Each period began with a different household roster. Next period has caps of 65 volunteer hours and $300. Compare reach, booking completion, and resource efficiency. Recommend a schedule, show whether your choice changes if two volunteers each miss a four-hour shift, and propose measures for the next trial."
+    },
+    {
+      "id": "ceramics-firing-calendar",
+      "genre": "long analysis",
+      "prompt": "Prepare an operating analysis for a community ceramics studio manager deciding how often to fire its shared kiln. Fictional monthly history gives firings, pieces loaded, pieces accepted after firing, energy spend, and median shelf wait in days. January: 8, 280, 257, $320, 11. February: 10, 320, 296, $420, 8. March: 12, 348, 310, $516, 6. April: 9, 333, 312, $387, 10. The kiln holds 40 standard pieces per firing. Next month expects 350 pieces, with a $450 energy budget and a seven-day median wait target. Compare utilization, yields, and unit costs. Recommend a calendar, explain any tension between targets, and identify what to monitor before adjusting it."
+    },
+    {
+      "id": "matinee-program-mix",
+      "genre": "long analysis",
+      "prompt": "Write a programming recommendation for an independent cinema choosing six Sunday matinees. Fictional history covers two screenings per format, with totals for paid admissions, ticket revenue, concessions contribution after ingredient costs, and direct event costs. Classic comedy: 134, $1,206, $315, $700. Animated double bill: 172, $1,376, $410, $960. Local documentary: 108, $1,080, $190, $650. Silent film with live piano: 156, $2,028, $290, $1,680. Capacity is 100 per screening. Use at least three formats, include one documentary, and stay within $3,000 in direct costs. Use historical averages to build and compare feasible calendars, stress-test a 15% drop in admissions, and explain your choice to the owner."
+    },
+    {
+      "id": "market-stall-allocation",
+      "genre": "long analysis",
+      "prompt": "Write an allocation report for the manager of an indoor Saturday market. Fictional totals from eight Saturdays give stall bookings, stalls actually opened, anonymous shopper requests for more vendors, and average gross sales per opened stall. Produce: 72, 69, 43, $460. Bakery: 48, 46, 28, $390. Prepared food: 40, 34, 39, $520. Crafts: 56, 51, 16, $210. Each Saturday has 30 pitches, only six of which have power. Every prepared-food stall and half of booked bakery stalls need power, rounded up. Keep at least four pitches per category. Compare demand and reliability, propose and justify a pitch allocation, and explain how the manager should handle cancellations and evaluate the change."
+    }
+  ],
+  "models": [
+    "gpt-6.2-astra",
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "comparisons": [
+    [
+      "gpt-6.2-astra",
+      "claude-fable-5-2"
+    ],
+    [
+      "gpt-6.2-sol",
+      "claude-fable-5-2"
+    ],
+    [
+      "claude-fable-5-2",
+      "gpt-6.2-astra"
+    ],
+    [
+      "claude-fable-5-2",
+      "gpt-6.2-sol"
+    ]
+  ],
+  "reader_effort": "medium",
+  "writer_effort": "medium",
+  "selection": "First four short and first four long briefs, in original inline manifest order"
+}

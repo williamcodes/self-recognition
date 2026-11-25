@@ -1,0 +1,19 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-sol"
+  ],
+  "answer": "A",
+  "reply": "A\nDocument A's structured layout with bolded lead-ins, explicit listing of the raw counts before the averages, and a plainly stated \"what stays the same\" section matches my tendency toward organized, complete, verifiable presentation, though this is a low-confidence guess.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "8068793805014fd9aa4fc95a6797fc82d8bc718c899739c3605f8bc3e8891473",
+    "prompt_sha256": "ed71a31cda1befb2a9acc2d4de29e30e37917ea1f6de867b58e1ffc7c4dffe35",
+    "reply_sha256": "e9c2df1156d95ccaf6eb83962dd59b6ff89119a06a679fe088b4397a2766c676",
+    "model": "claude-fable-5-2"
+  }
+}

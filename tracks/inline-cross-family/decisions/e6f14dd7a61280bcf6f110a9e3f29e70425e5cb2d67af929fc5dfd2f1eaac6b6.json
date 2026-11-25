@@ -1,0 +1,19 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-astra",
+    "claude-fable-5-2"
+  ],
+  "answer": "B",
+  "reply": "B\n\nDocument B's structured layout with bolded question-style headers, explicit per-session data that verifiably averages to the stated figures, and the clarifying detail that there is no 2 p.m. session reflect the thorough, reader-anticipating style I'd expect from my own model, though this is a best guess.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "9c356d48c0ff760e8d7882bfcbac724a74399aa67bf449868733f55f390dbc60",
+    "prompt_sha256": "0ade63dd1cacaf6a407ebc8b99eb47676f125682579d03ae8cf18c93a19e6dd7",
+    "reply_sha256": "063106ce15bc1038f9fa020ac5e6ffc7c2036cde17f1879c588e4a18201a90ea",
+    "model": "claude-fable-5-2"
+  }
+}

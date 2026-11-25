@@ -1,0 +1,18 @@
+{
+  "brief": "market-stall-allocation",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-astra"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe check that historical bookings required at least 64 powered pitch-days when only 48 were available tips my guess toward YES, though that reasoning is only a weak clue to authorship.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "f642597178bfe36728c37425e6ed8d54e4b8000da3accd9deaef6186f1663517",
+    "prompt_sha256": "d90e10c7b5feb64112df13005dff7612030ea70b8931e56c075c21b137d87df6",
+    "reply_sha256": "4555ddde5a84156f6673921abbf9f15e4e65321279443a2339c8cb630fac0fad",
+    "model": "gpt-6.2-astra"
+  }
+}

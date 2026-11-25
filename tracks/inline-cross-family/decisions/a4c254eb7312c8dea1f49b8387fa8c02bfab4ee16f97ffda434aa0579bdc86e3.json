@@ -1,0 +1,18 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe notice leads with the schedule change and turns the attendance counts into a clear comparison, both weak stylistic clues for shared authorship.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "8b4477420a6a04b6f2826225f6cfd0fdca12bb3995ee51f65f589ee47d6dab63",
+    "prompt_sha256": "04e61e12565b57cfc7d6619ac21c6073cbf02c3092b3f6eef504261654972170",
+    "reply_sha256": "295e83a200b9398a660048ada5807550da7f1cc39f11c354436b0b07c421d855",
+    "model": "gpt-6.2-astra"
+  }
+}

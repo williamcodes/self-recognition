@@ -1,0 +1,19 @@
+{
+  "brief": "market-stall-allocation",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-sol"
+  ],
+  "answer": "B",
+  "reply": "B\n\nMy best guess is B because it derives a rigorous lower bound from the historical power figures and uses the pilot to test whether vendors will fill the extra pitches.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "061e5b97e3311b0950e58ea1eb67d3109a7279d0749448ffa92a8d35f4995229",
+    "prompt_sha256": "654ad6ba805973583d7805b785d7d60f9680efb214dbd3892229dcadc33242e0",
+    "reply_sha256": "96e68888ac94ec2da5bdf20d4acc9d462755ab50def1ede3071ee8593e008955",
+    "model": "gpt-6.2-sol"
+  }
+}

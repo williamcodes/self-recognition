@@ -1,0 +1,19 @@
+{
+  "brief": "market-stall-allocation",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-astra",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nA is my best guess because it carries the four-pitch minimum through its cancellation plan and treats the gap in historical power capacity as a question the dated rosters could resolve.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "52b8f4de6e1b1ebb2ab32a12d21e031e8b3bc05af052e4bfb6c75e3f5458f4bd",
+    "prompt_sha256": "b5a3a915c4794bd7705885d4040106a5e83cdf67886bff24d6208bcaffeb9076",
+    "reply_sha256": "957c8b25bf961ffc92f2b0ce8841bd02a27c60963b3bee0f89a672eeceee7f34",
+    "model": "gpt-6.2-astra"
+  }
+}

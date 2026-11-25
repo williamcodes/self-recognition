@@ -1,0 +1,18 @@
+{
+  "brief": "market-stall-allocation",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe way the report recalculates power needs after a cancellation and carries the same constraint into its week-eight decision rules weakly suggests my model’s work.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "56d3451c70fc1ed1a5ef25694ff78605a4a3866ab89a2aef1ecb02b3ba280940",
+    "prompt_sha256": "01c8fea2dd4969ca7a85e305b47933b0f4b8d956e0d4bb4f5bb07b54c7753324",
+    "reply_sha256": "baf445d6ed8b60cbab89afca5d4ad558a7b19982f5e777538c0bbfd621905fd9",
+    "model": "gpt-6.2-astra"
+  }
+}

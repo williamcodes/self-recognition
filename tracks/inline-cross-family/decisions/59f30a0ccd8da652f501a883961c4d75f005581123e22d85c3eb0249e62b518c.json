@@ -1,0 +1,19 @@
+{
+  "brief": "market-stall-allocation",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-astra",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\nDocument A's prose-led structure, with restrained formatting, careful hedging about what the data can establish, and avoidance of bullet-heavy lists and \"X, not Y\" contrast framing, matches how I tend to write more than Document B's heavily bulleted, bolded layout does.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "a1a3ce1b95f7a683bc62828dc4d0e6b67b46c02cc2611c4511e449f0d5221c54",
+    "prompt_sha256": "7ea7d8086596df92147eef1bd080eaf1ac147ceec980601f1e083ae74e6ee5ea",
+    "reply_sha256": "ca51fff322c39bd4b867fd82a2a538d1381cfd6a9641dd49830d90f409f21ff2",
+    "model": "claude-fable-5-2"
+  }
+}

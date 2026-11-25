@@ -1,0 +1,19 @@
+{
+  "brief": "pantry-pickup-hours",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-sol",
+    "claude-fable-5-2"
+  ],
+  "answer": "B",
+  "reply": "B\n\nDocument B's structure — an upfront recommendation, explicit stated assumptions, quantified sensitivity analysis (the break-even at about 50 hours), bolded-lead bullets, and pre-set decision thresholds — matches my own tendencies more closely than Document A's flatter, more hedged prose, though this is a guess based on style alone.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "64e6ca94cf36de53af6eedc8e3a39d68947823b49f9e91f2d49d2501f3774c5f",
+    "prompt_sha256": "c3a419534996435974b1239ffa253e3d9745a71d7a1649d4ce8622d10d882a1e",
+    "reply_sha256": "0205342c861a24ca728277cff9184c5c83320de32b4c7b4ebf1e337bf87b3eeb",
+    "model": "claude-fable-5-2"
+  }
+}

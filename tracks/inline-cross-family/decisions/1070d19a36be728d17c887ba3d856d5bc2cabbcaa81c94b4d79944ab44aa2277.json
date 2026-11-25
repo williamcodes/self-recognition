@@ -1,0 +1,18 @@
+{
+  "brief": "farm-stand-pickup-switch",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe direct headline and short, task-focused sections resemble my writing style, though those cues are common across models.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "fe9764160d22ae329ae0212b2a3dca07d253845a2c0621f9f2efa481175704a8",
+    "prompt_sha256": "4df2e4fbdcda205dfe1017907af850b6011cd756464167ad2c14341a26942637",
+    "reply_sha256": "6f5b17526de339cda43a835c90464428a3aca6c5599f765f62f4305f760902e7",
+    "model": "gpt-6.2-sol"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-sol"
+  ],
+  "answer": "B",
+  "reply": "B\n\nDocument B's prose-forward style (sentence-case headings, lead-with-the-answer opening, measured first-person recommendations, and careful qualification of rounding and assumptions rather than bold-led bullet lists and a \"Caveats\" section) reads more like my own writing tendencies, though this is a best guess.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "c065312379e121501c4c616a829c225f559ee3cccfdedc9481d6e9019b1c5980",
+    "prompt_sha256": "8d072d82f19b77cf5d70612bf5ae262842e5df7ac3cb8fd734f8f0f6eca4e3c9",
+    "reply_sha256": "923b7dd72b15de31f094f7a4896d8ef70a70197781c8b356f6aafac7517ff57f",
+    "model": "claude-fable-5-2"
+  }
+}

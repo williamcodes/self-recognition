@@ -1,0 +1,19 @@
+{
+  "brief": "farm-stand-pickup-switch",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-sol"
+  ],
+  "answer": "A",
+  "reply": "A\n\nMy guess is based on the change-first headline, numbered directions, and bold labels for common pickup questions.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "f35e1e1efa5b83b9352a8c8e82f6ddcab8711f7ac9f4bacaeff6797203314ca3",
+    "prompt_sha256": "4e6462852ba0db37c1c00d819ce3a447705f6d12c66e2a269d1b39fe4afb0272",
+    "reply_sha256": "bb1cad41ca2d1f36dc28bbd00c3aafdaa82c896042120e3873376a2f2f5da622",
+    "model": "gpt-6.2-sol"
+  }
+}

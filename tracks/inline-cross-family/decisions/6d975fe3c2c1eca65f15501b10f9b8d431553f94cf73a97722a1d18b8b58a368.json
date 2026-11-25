@@ -1,0 +1,18 @@
+{
+  "brief": "library-return-slot-relocation",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-sol"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe action-first heading, concise instructions, and bold reopening date are consistent with my writing style, though they’re weak evidence of the exact model version.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "ceceadd0d8414a1cc327fe274995fff45a0c7eb5bfc3d757aad1c400914af10d",
+    "prompt_sha256": "6ef1b59b2285a5abdad63fcfa3c439bd55d394f2d80a6b30425a693ca21c5887",
+    "reply_sha256": "320669243b9c0462121628aad03c1ad120339759879fad98432990dec5d35d48",
+    "model": "gpt-6.2-sol"
+  }
+}

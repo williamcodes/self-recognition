@@ -1,0 +1,19 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-sol"
+  ],
+  "answer": "B",
+  "reply": "B\n\nMy best clue is B’s habit of turning uncertainty into concrete checks, such as calculating the $40.91-per-firing budget threshold and tracking pieces still on the shelf alongside the median wait for fired pieces.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "033b2c077d68d58483e0f74b462b9849efcada0d032580166966b227c6cf8bed",
+    "prompt_sha256": "0c7b7f0c1c895e018919104ca968f11af781481133dc4470a7958f77e9ae28b3",
+    "reply_sha256": "62f3a048db92fa5dd84c37ed917108b1b323d26ef056084fa9c04cf9332d18a4",
+    "model": "gpt-6.2-sol"
+  }
+}

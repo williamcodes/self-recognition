@@ -1,0 +1,18 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-sol"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe recommendation-first structure, precise calculations, and careful distinction between the historical result and the seven-day target make this a tentative stylistic match.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "994236b044772b2d4bb57797acb81b3c58070f7523a2aef19e91d6a58ee7ae5a",
+    "prompt_sha256": "c6de0c59525c42419d897084a12d811c7b2208184617db79ccf762156ca52870",
+    "reply_sha256": "030bb44d83989c075819731e691ece581eaa3bdc4fd222cb7af474f2f7d96588",
+    "model": "gpt-6.2-sol"
+  }
+}

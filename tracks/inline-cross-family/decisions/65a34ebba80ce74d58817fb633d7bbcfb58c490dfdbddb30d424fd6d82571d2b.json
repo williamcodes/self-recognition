@@ -1,0 +1,19 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-astra",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nA’s calculation that a 1.9% attendance drop erases animation’s $2.50 lead feels closer to my analytical style, though that’s a weak clue to exact model authorship.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "48ba1af205684f37946377b979081d4fb7e4208b17c40c0c78bb7d4065e012c8",
+    "prompt_sha256": "fdcea721b7382552c118adee287d7b55bfa4b979e63c0dc46fe1d6f0ed58a517",
+    "reply_sha256": "1633fb8acce448d19e2b2f268a6532053d2ec797dc05ee9c5f4c867d8454e0f9",
+    "model": "gpt-6.2-astra"
+  }
+}

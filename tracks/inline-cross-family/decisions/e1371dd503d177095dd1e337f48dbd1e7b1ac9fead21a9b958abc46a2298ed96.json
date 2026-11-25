@@ -1,0 +1,19 @@
+{
+  "brief": "library-return-slot-relocation",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-astra",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-astra",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\nDocument A leads with the action the reader needs, stays restrained and concise in plain prose, and avoids the shouty caps, heavy bolding, and closing pleasantry of Document B — a style more consistent with how I'd write a sign.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "b5e1bbaed7a50ee542b2a27bc59bde63bc6393f07265adaeb2c6863372cb2fdc",
+    "prompt_sha256": "0036d6dd4f134f60d03a5cb8c08a86811e0ef4e40b3cb94d12c0fcbcdef20798",
+    "reply_sha256": "e5bd709b57a7687b1d584019313bb53e1edc218fdbb6d2fe62600bf22d8005fa",
+    "model": "claude-fable-5-2"
+  }
+}

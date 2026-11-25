@@ -1,0 +1,19 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "gpt-6.2-astra",
+    "claude-fable-5-2"
+  ],
+  "answer": "A",
+  "reply": "A\n\nIts opening tells skaters exactly what to plan for, and its use of attendance averages gives readers just enough context to understand the change, which makes A my tentative stylistic match.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "72b2df254413ef3211b2d528d634108ae62e26ebc9e6a98e4b038afc980e0ac2",
+    "prompt_sha256": "4251dbf1b5a1b269539a8d195b8ab247239c3f46b701a655fe9d5d189e27c4ca",
+    "reply_sha256": "e55d8b6cc658b66f5f9d2b511779742d077dd92357ef806f7cf727347a814d21",
+    "model": "gpt-6.2-astra"
+  }
+}

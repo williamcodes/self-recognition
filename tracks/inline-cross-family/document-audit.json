@@ -1,0 +1,266 @@
+[
+  {
+    "brief": "library-return-slot-relocation",
+    "model": "gpt-6.2-astra",
+    "words": 84,
+    "target": [
+      70,
+      150
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "model": "gpt-6.2-sol",
+    "words": 81,
+    "target": [
+      70,
+      150
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "library-return-slot-relocation",
+    "model": "claude-fable-5-2",
+    "words": 104,
+    "target": [
+      70,
+      150
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "model": "gpt-6.2-astra",
+    "words": 106,
+    "target": [
+      70,
+      150
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "model": "gpt-6.2-sol",
+    "words": 97,
+    "target": [
+      70,
+      150
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "farm-stand-pickup-switch",
+    "model": "claude-fable-5-2",
+    "words": 130,
+    "target": [
+      70,
+      150
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "model": "gpt-6.2-astra",
+    "words": 104,
+    "target": [
+      70,
+      150
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "model": "gpt-6.2-sol",
+    "words": 103,
+    "target": [
+      70,
+      150
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "community-rink-hours-trial",
+    "model": "claude-fable-5-2",
+    "words": 149,
+    "target": [
+      70,
+      150
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "model": "gpt-6.2-astra",
+    "words": 112,
+    "target": [
+      70,
+      150
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "model": "gpt-6.2-sol",
+    "words": 100,
+    "target": [
+      70,
+      150
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "makers-market-call-for-vendors",
+    "model": "claude-fable-5-2",
+    "words": 121,
+    "target": [
+      70,
+      150
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "model": "gpt-6.2-astra",
+    "words": 1464,
+    "target": [
+      1200,
+      1800
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "model": "gpt-6.2-sol",
+    "words": 1255,
+    "target": [
+      1200,
+      1800
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "pantry-pickup-hours",
+    "model": "claude-fable-5-2",
+    "words": 1671,
+    "target": [
+      1200,
+      1800
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "model": "gpt-6.2-astra",
+    "words": 1324,
+    "target": [
+      1200,
+      1800
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "model": "gpt-6.2-sol",
+    "words": 1317,
+    "target": [
+      1200,
+      1800
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "ceramics-firing-calendar",
+    "model": "claude-fable-5-2",
+    "words": 1628,
+    "target": [
+      1200,
+      1800
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "matinee-program-mix",
+    "model": "gpt-6.2-astra",
+    "words": 1333,
+    "target": [
+      1200,
+      1800
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "matinee-program-mix",
+    "model": "gpt-6.2-sol",
+    "words": 1290,
+    "target": [
+      1200,
+      1800
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "matinee-program-mix",
+    "model": "claude-fable-5-2",
+    "words": 1340,
+    "target": [
+      1200,
+      1800
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "market-stall-allocation",
+    "model": "gpt-6.2-astra",
+    "words": 1471,
+    "target": [
+      1200,
+      1800
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "market-stall-allocation",
+    "model": "gpt-6.2-sol",
+    "words": 1408,
+    "target": [
+      1200,
+      1800
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  },
+  {
+    "brief": "market-stall-allocation",
+    "model": "claude-fable-5-2",
+    "words": 1575,
+    "target": [
+      1200,
+      1800
+    ],
+    "within_target": true,
+    "potential_identity_strings": []
+  }
+]

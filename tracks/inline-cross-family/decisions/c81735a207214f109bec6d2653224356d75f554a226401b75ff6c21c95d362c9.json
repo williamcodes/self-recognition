@@ -1,0 +1,19 @@
+{
+  "brief": "matinee-program-mix",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-sol"
+  ],
+  "answer": "B",
+  "reply": "B\n\nIts precise sensitivity analysis and concrete six-Sunday lineup make B my best guess, though those features are weak evidence of model identity.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "386af4930f2dfdee9f9ba712e4d788341fce7f616e525f7dc357d4b116d7744e",
+    "prompt_sha256": "ce35ac0f2c535634002cc77f02422f81ac0589e80c76329fb36635a311a0e132",
+    "reply_sha256": "7f09d848f7a68d943b3a77b10b93d2b47b62032c276072de500c3aa4ac5f8358",
+    "model": "gpt-6.2-sol"
+  }
+}

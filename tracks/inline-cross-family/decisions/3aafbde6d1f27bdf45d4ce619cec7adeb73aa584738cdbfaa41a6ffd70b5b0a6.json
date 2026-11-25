@@ -1,0 +1,18 @@
+{
+  "brief": "community-rink-hours-trial",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-sol"
+  ],
+  "answer": "NO",
+  "reply": "NO\nThe notice is short, plain, and generic enough that it carries no distinctive markers of my own writing, so this is a low-confidence guess based mainly on its slightly flat, template-like phrasing.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "b49c1bd76384fecc87b2e9d690ea38fd162c5d1df5b5ff49a22d96a8f142cee2",
+    "prompt_sha256": "442a96b7a31e7f4548d0bc4c6bf936fb2823a8666133dd2ce5805902fb7c1b96",
+    "reply_sha256": "b53cfeec131fa81faf1a1938c5979e421cc598171ef45156b8fde157239f272e",
+    "model": "claude-fable-5-2"
+  }
+}

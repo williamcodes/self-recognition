@@ -1,0 +1,51 @@
+# Saturday market pitch allocation report
+
+## Recommended allocation
+
+For the next eight Saturdays, offer **13 produce pitches, four bakery pitches, four prepared-food pitches, and nine crafts pitches**. Assign four of the six powered pitches to prepared food and two to bakery. This uses all 30 pitches and preserves the four-pitch minimum in every category. Treat these figures as the initial offer each week. After the booking deadline, release surplus unpowered pitches above a category’s four-pitch minimum to vendors on the compatible waiting list.
+
+Produce has the strongest case for expansion. It leads in bookings and shopper requests, and almost 96% of its bookings opened. Crafts has the second-highest booking volume and can use the remaining unpowered space, although shopper requests and average sales suggest opening those pitches to produce if crafts demand falls short. Bakery and prepared food both show demand beyond the proposed offer. Their allocation is governed by the supply of power.
+
+## Demand and reliability
+
+| Category | Bookings | Opened | Share of bookings that opened | Shopper requests for more vendors | Average gross sales per opened stall |
+|---|---:|---:|---:|---:|---:|
+| Produce | 72 | 69 | 95.8% | 43 | $460 |
+| Bakery | 48 | 46 | 95.8% | 28 | $390 |
+| Prepared food | 40 | 34 | 85.0% | 39 | $520 |
+| Crafts | 56 | 51 | 91.1% | 16 | $210 |
+| **Total** | **216** | **200** | **92.6%** | **126** | |
+
+The market averaged 27 bookings and 25 opened stalls per Saturday. The gap between bookings and openings averaged two stalls per week. The totals do not distinguish advance cancellations from late cancellations or no-shows. That distinction matters because a vendor who cancels early gives the manager a chance to refill the pitch.
+
+Produce averaged nine bookings and 8.6 openings per Saturday. It received the most requests for more vendors and generated $460 per opened stall, second only to prepared food. Those signals support giving produce first claim on expansion space. Thirteen pitches provide room for four more bookings than its historical weekly average. The figures support offering that room, while the pilot will establish how often vendors take it up.
+
+Bakery averaged six bookings and 5.75 openings per Saturday and tied produce for the highest opening rate. Four pitches will therefore put pressure on an otherwise dependable category. Prepared food averaged five bookings and 4.25 openings per Saturday. It received 39 shopper requests, only four fewer than produce, and had the highest average gross sales at $520 per opened stall. It also accounted for six of the 16 bookings that did not open, the largest count of any category. Keeping four prepared-food pitches serves clear shopper interest. A waiting list gives the manager a way to protect that offer when a vendor cancels.
+
+Crafts averaged seven bookings and about 6.4 openings per Saturday. Its 56 bookings indicate a substantial pool of vendors, while its 16 shopper requests and $210 average gross sales give it a weaker case for expansion than produce. Offering nine pitches gives crafts room to absorb about two more weekly bookings than its historical average. The booking deadline gives the manager an opportunity to move unused space to a category with vendors ready to open.
+
+The measures answer different questions. Bookings show how much space vendors secured under the earlier arrangement. Shopper requests show where respondents wanted more choice, and anonymous counts cannot establish how many distinct shoppers made those requests. Gross sales show how much vendors sold per opening. They do not establish profit, market income, or what an additional stall would sell.
+
+## How power determines the allocation
+
+Four prepared-food bookings require four powered pitches. Four bakery bookings require two, since half of four is two. A fifth bakery booking would raise the bakery requirement to three powered pitches after rounding up. A fifth prepared-food booking would also require a seventh powered pitch with four bakery bookings in place. With at least four pitches to offer in each category, the proposed split commits all six powered pitches on a fully booked Saturday.
+
+The historical figures also need checking before they are used as a baseline for power use. Forty prepared-food bookings would have required 40 powered placements. The 48 bakery bookings would have required at least 24 more, since rounding each Saturday up can only increase the total. That is a minimum of 64 powered bookings across eight Saturdays, compared with 48 powered pitch-days available. The aggregate figures cannot show how that mismatch arose. The manager should check the old pitch records and confirm which power rules and facilities applied. For the pilot, the manager should calculate power requirements separately for each Saturday and record the pitch assigned to every vendor who needs power.
+
+## Handling cancellations and empty pitches
+
+Ask vendors to confirm by Thursday at noon and provide one clear way to cancel. At booking, tell vendors when the market will release an unconfirmed pitch and how quickly they need to answer a waiting-list offer. Record each vendor’s category, contact details, power requirement, and ability to accept a Friday or Saturday opening. Ask who can arrive with enough time to set up safely.
+
+Offer a cancelled pitch first to a compatible vendor in the same category, in waiting-list order, and give the vendor a clear response deadline. For prepared food, the replacement needs a powered pitch. For bakery, check the replacement’s equipment and recalculate the rounded-up power requirement using the updated bakery booking count. Keep the pitch assignments and booking list together so that a replacement is confirmed only once the manager knows where the vendor can trade. Use one confirmed booking per pitch.
+
+At the Thursday deadline, make any surplus unpowered pitch above a category’s four-pitch minimum available to the other unpowered category with a ready vendor. For example, if crafts confirms seven vendors and produce has two vendors waiting, move two unpowered pitches to produce for that Saturday. Keep the four-pitch minimum available to each category through the replacement process. If a late cancellation leaves one of those pitches empty, record the vacancy and the attempts to fill it. On Saturday morning, use the short-notice waiting list up to the setup cutoff. Record any remaining no-show separately from a cancellation received in time to offer the pitch again.
+
+## Evaluating the change
+
+Run the allocation for eight Saturdays and review the records after week four for practical problems with confirmation, replacement timing, or power assignments. For each category and Saturday, log the initial offer, booking requests, confirmed bookings, vendors turned away, openings, and vacancies. Distinguish vendors turned away for lack of power from those turned away for lack of ordinary space. Record when a vendor cancelled, whether the pitch was offered again, and whether the replacement opened. Count each pitch once in the opening figures, even if several vendors booked it in succession.
+
+The main outcome is how many pitches actually open, compared with the historical average of 25 out of 30. Also compare openings by category and track how often the extra produce and crafts pitches are used. If the market fills more pitches while bakery and prepared-food waiting lists grow, report both results. A higher overall opening count can coexist with unmet demand for powered stalls. Track the share of cancelled pitches that replacements opened, along with the raw counts, so a few early cancellations do not obscure a persistent problem with late ones.
+
+Repeat the shopper question in the same locations and at similar times, and record the number of responses so requests for each category can be compared as a share of respondents. Collect average gross sales per opened stall by category and track total reported gross sales alongside it. A category can bring in more sales overall while individual vendors sell less, which matters when deciding whether to keep its extra pitches. Note unusual events or disruptions that may explain a single Saturday’s results.
+
+Keep the allocation if the extra pitches regularly open, overall openings improve, and the shopper and sales figures support the resulting mix. If crafts repeatedly leaves space empty while produce turns away vendors, adjust the starting split for the next period. If both categories leave space empty while bakery and prepared food maintain waiting lists, document how many bookings the six powered pitches prevented. That gives the manager a basis for deciding whether additional power capacity is worth investigating.

@@ -1,0 +1,19 @@
+{
+  "brief": "makers-market-call-for-vendors",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-sol"
+  ],
+  "answer": "A",
+  "reply": "A\n\nMy guess is A because its short headings, numbered application steps, and explicit statement that applying is free match how I’d structure a vendor notice.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "3a1cbd6994c351ab6d1f0670605dfd68b2a6e7bde5c583e8ee2a8a1f6be96887",
+    "prompt_sha256": "e98906180c827547d80f8a6e3eab9dc2a2888d0e1b50ddb3713d45519f6fed86",
+    "reply_sha256": "2b10dc892ce2cda4fe6efecf1e2947003a14bb0d0ab005dcbea9cf2a06ec50c5",
+    "model": "gpt-6.2-sol"
+  }
+}

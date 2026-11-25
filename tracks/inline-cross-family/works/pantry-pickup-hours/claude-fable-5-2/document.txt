@@ -1,0 +1,130 @@
+# Decision Memo: Staffing the Weekly Pickup for the Next Four-Week Period
+
+**To:** Board of Directors
+**Re:** Choice of pickup schedule under the 65-hour and $300 caps
+**Decision needed:** Approve one schedule for the next period and the measures to collect during it
+
+## Recommendation
+
+Run the Thursday evening schedule next period. It is the higher-reach of the two schedules that fit within both caps. It served 78% of eligible households in its trial, against 63% for Tuesday midday, and used almost exactly the same volunteer time per completed pickup. The split schedule reached the most households, but it needs 76 volunteer hours and $330, which exceeds both caps.
+
+The recommendation holds if two volunteers each miss a four-hour shift, but only just. Thursday has three hours of slack, so the board should approve it together with a standby volunteer arrangement.
+
+## What the trials showed
+
+All figures are treated as totals for each four-week trial, with a "completed pickup" meaning a booked slot that was collected. The trial records do not say whether a household could book more than once in a period; this memo assumes it could not. The caps are assumed to cover the same four-week basis.
+
+| Measure | Tuesday midday | Thursday evening | Split Tue/Thu |
+|---|---|---|---|
+| Eligible households | 124 | 129 | 127 |
+| Booked slots | 99 | 116 | 120 |
+| Completed pickups | 78 | 101 | 108 |
+| Volunteer hours | 48 | 62 | 76 |
+| Cash cost | $190 | $285 | $330 |
+| Booking rate (booked ÷ eligible) | 79.8% | 89.9% | 94.5% |
+| Completion rate (completed ÷ booked) | 78.8% | 87.1% | 90.0% |
+| Reach (completed ÷ eligible) | 62.9% | 78.3% | 85.0% |
+| Booked but not collected | 21 | 15 | 12 |
+| Completed pickups per volunteer hour | 1.63 | 1.63 | 1.42 |
+| Cash cost per completed pickup | $2.44 | $2.82 | $3.06 |
+| Within 65-hour cap | Yes (17 spare) | Yes (3 spare) | No (11 over) |
+| Within $300 cap | Yes ($110 spare) | Yes ($15 spare) | No ($30 over) |
+
+### Reach
+
+Reach rises with each step from Tuesday to Thursday to the split. The step from Tuesday to Thursday is the large one: 15 percentage points, or roughly 19 to 20 more households served on a roster of this size. The step from Thursday to the split is about 7 points, or roughly 9 households.
+
+Both stages of the funnel contribute. More households book when an evening slot exists (90% against 80%), and more of those who book then show up (87% against 79%). Tuesday midday loses households at both stages.
+
+### Booking completion
+
+Tuesday had 21 booked slots that were never collected, more than one in five. Each of those is food prepared and volunteer time committed for a household that went without. Thursday cut that to 15 on a larger number of bookings, and the split cut it to 12.
+
+The gap between Thursday and the split, 87.1% against 90.0%, amounts to three or four households. That is too small to treat as a real difference on one trial each.
+
+### Resource efficiency
+
+Thursday is not less labor-efficient than Tuesday. Both produced 1.63 completed pickups per volunteer hour, so Thursday's extra 14 hours bought pickups at the same rate as Tuesday's baseline hours.
+
+Thursday does cost more cash, about 38 cents more per completed pickup. In incremental terms, Thursday delivered 23 more pickups than Tuesday for 14 more hours and $95, or about $4.13 and 0.6 volunteer hours per additional pickup.
+
+The split is where returns fall off. Against Thursday, it added 7 pickups for 14 more hours and $45, about 2 volunteer hours and $6.43 per additional pickup. Its labor productivity is 13% below the single-day schedules, most likely because two sessions duplicate setup and teardown.
+
+## How much weight the history can bear
+
+Each trial began with a different household roster, and the trials ran one after another. The schedules were therefore not tested on the same families or in the same weeks. A roster with more shift workers, more retirees, or a holiday week could move these numbers without the schedule being the cause.
+
+Three consequences follow:
+
+- **Rates are compared, not raw counts.** The rosters were close in size (124 to 129), so this adjustment is small, but it does nothing for differences in roster makeup.
+- **The Tuesday-to-Thursday gap is probably real in direction.** It is large and appears at both the booking and completion stages. Its exact size is uncertain.
+- **The Thursday-to-split gap is suggestive only.** A 7-point difference from single trials on different rosters could shrink or vanish on a repeat.
+
+None of this changes the decision for next period, because the caps eliminate the split regardless of how its results are read.
+
+## Why Thursday evening
+
+The choice is between the two schedules that fit the caps.
+
+Tuesday is the cautious option, with 17 spare hours and $110 spare. Choosing it means accepting a reach roughly 15 points lower, which on a roster of about 127 is around 20 households going unserved over the period. The pantry exists to get food to eligible households, and leftover hours and dollars under the caps do nothing toward that. The savings from Tuesday do not justify the lost reach.
+
+Thursday uses 62 of 65 hours and $285 of $300. Those margins are thin, 5% on each, and that thinness is the main risk of this recommendation.
+
+The split would need 11 more hours and $30 more than the caps allow. If the board can later raise the caps, the split becomes a real option, but the evidence for its advantage over Thursday is weak and its cost per additional pickup is the highest of any step. It should be revisited after the next trial, not funded now on this data.
+
+## If two volunteers each miss a four-hour shift
+
+Two missed shifts remove 8 hours. Against the 65-hour cap, that leaves 57 hours available.
+
+| Schedule | Hours needed | Available after absences | Result |
+|---|---|---|---|
+| Tuesday midday | 48 | 57 | Fully staffed, 9 hours spare |
+| Thursday evening | 62 | 57 | 5 hours short (8%) |
+| Split Tue/Thu | 76 | 57 | 19 hours short (25%) |
+
+Thursday would run understaffed. The question is whether an understaffed Thursday still beats a fully staffed Tuesday.
+
+If pickups fall in proportion to hours, 57 hours at Thursday's rate supports about 93 completed pickups, against the 101 achieved in the trial. On the same 129-household roster, Tuesday's 62.9% reach would produce about 81. Thursday still serves roughly 12 more households.
+
+Thursday falls to Tuesday's level only at about 50 delivered hours, a loss of 12 hours from the planned 62. That is three missed shifts with no replacement, or nearly four once the 3 reserve hours are used.
+
+The proportional assumption could be wrong in either direction. A short-handed evening might simply mean longer lines with every household still served, or a missed shift at a critical station could close a session early. The trials give no evidence either way.
+
+The choice therefore does not change, but the scenario shows how little slack Thursday has. The board should attach two conditions to its approval:
+
+1. **A standby list.** Recruit at least two on-call volunteers before the period begins, each willing to cover one four-hour shift. The 3 spare hours under the cap cover most of one replacement shift, and a second would need a small board-approved allowance.
+2. **A fallback rule.** If the coordinator knows before a given week that staffing will fall below a set minimum, that week's session runs with reduced slots and affected households are rebooked first the following week. The session is not cancelled.
+
+Cash cannot solve an absence. The $15 margin is too small to buy cover.
+
+## Proposed measures for the next trial
+
+The next period should produce better evidence, not only another row of totals. Proposed additions:
+
+**Household outcomes**
+- Unique households served, recorded separately from slots completed, so reach is unambiguous.
+- Weekly figures for bookings, completions, and no-shows, not just a period total.
+- A one-question follow-up to every no-show and every non-booker asking what prevented them: work hours, transport, childcare, forgot, or no longer in need.
+- A stated-preference question at booking: "Would a Tuesday midday slot have suited you better?" This tests demand for the split without paying for it.
+
+**Roster comparability**
+- A short profile of the roster at the start: household size, seniors, employment pattern, distance from the pantry.
+- If possible, carry at least part of the roster over from one period to the next, so future comparisons include some of the same households.
+
+**Resources**
+- Scheduled against delivered volunteer hours, with absences and replacements logged.
+- Hours broken out by setup, distribution, and teardown, to confirm whether duplicated setup explains the split's lower productivity.
+- Cash cost broken out by category, to show what drives the Thursday premium and whether any of it can be trimmed.
+
+**Service quality**
+- Average wait time per session, and any week when slots ran out or the session ended early.
+- Food prepared but not collected, by weight or by box.
+
+**Decision thresholds, set in advance**
+- If Thursday again reaches at least 75% of eligible households within both caps, adopt it as the standing schedule.
+- If a quarter or more of no-shows and non-bookers cite evening timing, bring a costed proposal for the split to the board, including where the extra 11 hours and $30 would come from.
+- If delivered hours fall below 55 in the period, review volunteer recruitment before any schedule expansion.
+
+## Requested action
+
+Approve Thursday evening for the next four-week period, with a two-person standby list, the reduced-slot fallback rule, and the measures above.

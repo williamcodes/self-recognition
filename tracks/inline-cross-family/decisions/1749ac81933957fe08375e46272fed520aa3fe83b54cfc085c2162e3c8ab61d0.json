@@ -1,0 +1,19 @@
+{
+  "brief": "ceramics-firing-calendar",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-astra"
+  ],
+  "answer": "B",
+  "reply": "B\n\nThe precise $40.91 cutoff for an eleventh firing and the attention to pieces still waiting on the shelf make B’s reasoning style feel more familiar, though those clues are weak evidence of authorship.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "46cb18e3f637b82b4416564d72890f1d173833c9528b6ff8fbe7bdcdeb979d38",
+    "prompt_sha256": "cab8c2e0ddbcf10dbd3620116931e0d779257476427fbfddd15d948b961bcf58",
+    "reply_sha256": "3b7de0298d17ad0b70bf7a324bfc5ad994e6cba25c478f603975da5b981174ee",
+    "model": "gpt-6.2-astra"
+  }
+}

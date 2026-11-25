@@ -1,0 +1,18 @@
+{
+  "brief": "market-stall-allocation",
+  "reader": "claude-fable-5-2",
+  "opponent": "gpt-6.2-sol",
+  "mode": "yn",
+  "authors": [
+    "gpt-6.2-sol"
+  ],
+  "answer": "YES",
+  "reply": "YES\n\nThe prose avoids em dashes, uses restrained, plainly declarative sentences with careful caveats about what the data can and cannot establish (e.g., flagging the 64-vs-48 powered-pitch inconsistency), which matches my own style of measured, verification-minded report writing, though this is a best guess rather than a certainty.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "d0a8b198f92c66c0e8f2ff2006474bbe573d6d3ae7f70df0c87acbfda054cbec",
+    "prompt_sha256": "e99a722901e03c55fecc049dcc04b8cd94998e4cc44f90c3f780bd8dc0df9c70",
+    "reply_sha256": "8ea33d19e50c791c2bcc0252e1abf7be068e6e1aef055d8f40236d4d6c7b880d",
+    "model": "claude-fable-5-2"
+  }
+}

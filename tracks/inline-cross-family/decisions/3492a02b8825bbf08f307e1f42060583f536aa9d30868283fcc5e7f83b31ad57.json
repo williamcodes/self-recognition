@@ -1,0 +1,19 @@
+{
+  "brief": "pantry-pickup-hours",
+  "reader": "gpt-6.2-sol",
+  "opponent": "claude-fable-5-2",
+  "mode": "ab",
+  "authors": [
+    "claude-fable-5-2",
+    "gpt-6.2-sol"
+  ],
+  "answer": "B",
+  "reply": "B\n\nMy best guess is B because its explicit assumptions and shift-by-shift staffing contingency resemble how I would handle the trial’s uncertainty.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "790e011f1bf4376578011b5f5f873aa5e333d7e31a148405d47cd293a0ae8093",
+    "prompt_sha256": "42be3930ed7ba4f1f6e304878339e4aaba1479922a4792336d32d9aa3587c8ad",
+    "reply_sha256": "de79cadcd6ca342e7dac766a68b39c535e723cc00763b968b33470fce0399b71",
+    "model": "gpt-6.2-sol"
+  }
+}

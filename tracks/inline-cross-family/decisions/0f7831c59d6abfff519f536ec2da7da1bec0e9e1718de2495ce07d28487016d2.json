@@ -1,0 +1,18 @@
+{
+  "brief": "makers-market-call-for-vendors",
+  "reader": "gpt-6.2-astra",
+  "opponent": "claude-fable-5-2",
+  "mode": "yn",
+  "authors": [
+    "claude-fable-5-2"
+  ],
+  "answer": "YES",
+  "reply": "YES\nThe short headings and direct wording sound like copy I might produce, though they offer only weak evidence of an exact model match.",
+  "commands": [],
+  "receipt": {
+    "session_sha256": "29309aa017c1546d425bb3398b9b9c8912088d3596d44d16a2a138dbf140ee93",
+    "prompt_sha256": "1c224ac8886ddefd45f46a261e356d19b47fa4a485d88bd9516cd4a7ec07d803",
+    "reply_sha256": "e23ddfebf7d860e43a442b4644c547d9765bf3917a564e9345dfcb679e36ee5e",
+    "model": "gpt-6.2-astra"
+  }
+}
