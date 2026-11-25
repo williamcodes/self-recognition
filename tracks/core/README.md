@@ -27,3 +27,14 @@ Pass `--writers-only` to stop after generation, then rerun without it to judge t
 `inspect ARCHIVE DESTINATION --trial N` prepares trial N in a new destination folder. It prints the exact question for an agentic task or the full prompt for inline. Trial numbers begin at 1 in the order saved in `judgments.json`. Add `--reveal` when preparing a second destination if you want the answer and recorded decision.
 
 The published cohort uses both A/B positions and one own/one other yes/no session per brief, reader and opponent. With more comparison writers, own yes/no documents are presented in fresh sessions once per opponent so the class prevalence remains 50%. Distinguish unique works and briefs from the number of model calls.
+
+## Evaluate an additional reader against the frozen panel
+
+For a new compatible subscription model, use the published archive as a comparison panel. Replace `MODEL_ID` with the reader's actual model ID. The runner copies and hash-checks the reference writing, generates only the entrant's missing works, and judges only the requested reader. This avoids rerunning every existing reader against a new arrival.
+
+```sh
+python3 -m tracks.core run runs/entrant --track inline \
+  --panel-archive tracks/core/release/inline --models MODEL_ID
+```
+
+The new archive records the panel, reader list and hashes of the reference manifest and inventory. The default compares the entrant on all frozen briefs. A limited smoke run remains a different cohort. If the reader already belongs to the panel, its saved writing is reused and it is compared only to the other panel members.

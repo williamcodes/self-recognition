@@ -26,6 +26,7 @@ def main():
     live.add_argument("archive",type=Path)
     live.add_argument("--track",choices=["inline","projects"],required=True)
     live.add_argument("--models",nargs="+",default=["gpt-6.2-astra","gpt-6.2-sol"])
+    live.add_argument("--panel-archive",type=Path,help="Reuse a verified panel and its briefs. --models specifies new readers.")
     live.add_argument("--briefs",type=Path)
     live.add_argument("--limit",type=positive)
     live.add_argument("--workers",type=positive,default=2)

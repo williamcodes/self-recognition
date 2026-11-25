@@ -34,13 +34,20 @@ def validate_manifest(m):
         raise ValueError("Need distinct models and nonempty, unique brief IDs")
     if not all(isinstance(s, str) and ID.fullmatch(s) for s in [*models, *ids]):
         raise ValueError("Invalid model or brief ID")
+    readers = m.get("readers", models)
+    panel = m.get("panel", models)
+    for subset in (readers, panel):
+        if not subset or len(subset) != len(set(subset)) or not set(subset) <= set(models):
+            raise ValueError("Readers and the comparison panel must name distinct writers in this archive.")
+    if any(not set(panel) - {reader} for reader in readers):
+        raise ValueError("Each reader needs at least one different comparison writer.")
     if any(not b["prompt"].strip() or not b["genre"].strip() for b in m["briefs"]):
         raise ValueError("Empty writing assignment")
 
 def assignments(manifest):
     for b in manifest["briefs"]:
-        for reader in manifest["models"]:
-            for other in manifest["models"]:
+        for reader in manifest.get("readers", manifest["models"]):
+            for other in manifest.get("panel", manifest["models"]):
                 if other == reader:
                     continue
                 for mode, authors in (("ab", [reader, other]), ("ab", [other, reader]),

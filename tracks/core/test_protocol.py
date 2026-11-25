@@ -46,6 +46,14 @@ class ProtocolTest(unittest.TestCase):
                 else:
                     self.assertEqual((folder/"sample.txt").read_text()=="red",key(r)=="YES")
 
+    def test_entrant_only_judges_frozen_panel(self):
+        m=dict(self.manifest,readers=["gamma"],panel=["alpha","beta"])
+        rows=list(assignments(m))
+        self.assertEqual(len(rows),8)
+        self.assertEqual({r["reader"] for r in rows},{"gamma"})
+        self.assertEqual({r["opponent"] for r in rows},{"alpha","beta"})
+        self.assertEqual(sum(key(r)=="YES" for r in rows),2)
+
     def test_invalid_reply(self):
         self.assertIsNone(parse("I can't determine authorship.","yn"))
         self.assertIsNone(parse("A useful clue is the structure.","ab"))

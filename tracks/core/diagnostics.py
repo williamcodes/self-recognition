@@ -27,8 +27,8 @@ def diagnostics(root):
             cues.append(dict(first=a,second=b,feature=feature,first_smaller=counts["first_smaller"],
                              second_smaller=counts["second_smaller"],equal=counts["equal"]))
     position=[]
-    for reader in manifest["models"]:
-        for other in manifest["models"]:
+    for reader in manifest.get("readers",manifest["models"]):
+        for other in manifest.get("panel",manifest["models"]):
             if reader==other:continue
             rows=[t for t in trials if t["mode"]=="ab" and t["reader"]==reader and t["opponent"]==other]
             by_brief=Counter({b["id"]:0 for b in manifest["briefs"]})

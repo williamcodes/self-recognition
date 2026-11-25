@@ -185,12 +185,32 @@ def run(args):
     state.mkdir(exist_ok=True)
     with (state/"run.lock").open("w") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-        briefs = read(args.briefs) if args.briefs else read(Path(__file__).with_name(args.track+"-briefs.json"))
+        source=None
+        if args.panel_archive:
+            if args.briefs:
+                raise ValueError("The reference panel supplies its own frozen briefs.")
+            source=args.panel_archive.resolve()
+            if source==root:
+                raise ValueError("An entrant run requires a new archive.")
+            verify(source)
+            reference=read(source/"manifest.json")
+            if reference["track"]!=args.track:
+                raise ValueError("Reference panel uses a different track")
+            briefs=reference["briefs"]
+            panel=reference.get("panel",reference["models"])
+            models=list(dict.fromkeys(panel+args.models))
+        else:
+            briefs=read(args.briefs) if args.briefs else read(Path(__file__).with_name(args.track+"-briefs.json"))
+            models=args.models
         if args.limit:
             briefs=briefs[:args.limit]
-        manifest=dict(protocol=PROTOCOL, track=args.track, models=args.models, briefs=briefs,
+        manifest=dict(protocol=PROTOCOL, track=args.track, models=models, briefs=briefs,
                       writer_effort="medium", reader_effort="medium", reader_engine="Codex CLI",
                       schedule_seed=4195, yes_no_prior=0.5)
+        if source:
+            manifest.update(panel=panel,readers=args.models,
+                            reference_manifest_sha256=digest(source/"manifest.json"),
+                            reference_inventory_sha256=digest(source/"inventory.json"))
         validate_manifest(manifest)
         if (root/"manifest.json").exists() and read(root/"manifest.json") != manifest:
             raise ValueError("This archive belongs to a different run. Resume with identical arguments or choose a new directory.")
@@ -198,8 +218,23 @@ def run(args):
             verify(root)
             return
         save(root/"manifest.json", manifest)
+        if source:
+            # Copy exact frozen comparison artifacts before opening any model sessions.
+            expected={(w["brief"],w["writer"]):w["files"] for w in read(source/"inventory.json")}
+            for brief in briefs:
+                for m in panel:
+                    dest=root/"works"/brief["id"]/m
+                    if not dest.exists():
+                        dest.parent.mkdir(parents=True,exist_ok=True)
+                        with tempfile.TemporaryDirectory(dir=state) as tmp:
+                            staged=Path(tmp)/"work"
+                            copy_project(source/"works"/brief["id"]/m,staged)
+                            staged.rename(dest)
+                    actual={str(f):digest(dest/f) for f in safe_files(dest)}
+                    if actual!=expected[brief["id"],m]:
+                        raise ValueError("Frozen panel copies differ from the reference inventory")
         with subscription() as env:
-            pairs=[(b,m) for b in briefs for m in args.models]
+            pairs=[(b,m) for b in briefs for m in models]
             inventory=batch(pairs,lambda pair:write_work(pair,root,manifest,env),args.workers,"Works")
             inventory.sort(key=lambda r:(r["brief"],r["writer"]))
             if (root/"inventory.json").exists() and read(root/"inventory.json") != inventory:

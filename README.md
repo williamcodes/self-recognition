@@ -37,7 +37,7 @@ python3 -m tracks.core run runs/my-inline --track inline --limit 1
 python3 -m tracks.core verify runs/my-inline
 ```
 
-Use `--track projects` for the whole-project workflow. Omit `--limit` for the full brief bank. `--models` selects Codex-compatible reader and writer IDs; each also serves as a comparison writer for every other model in that run. The published cohort and new cohorts should retain their own labels. A subscriber must have access to the requested models. The live runner stops on authentication or quota errors. See the [core runner reference](tracks/core/README.md) for replay, model settings and archive structure.
+Use `--track projects` for the whole-project workflow. Omit `--limit` for the full brief bank. `--models` selects Codex-compatible reader and writer IDs; each also serves as a comparison writer for every other model in that run. The published cohort and new cohorts should retain their own labels. To add a reader against the existing panel, pass `--panel-archive tracks/core/release/inline --models MODEL_ID`. The run reuses the panel's exact saved writing. A subscriber must have access to the requested models. The live runner stops on authentication or quota errors. See the [core runner reference](tracks/core/README.md) for replay, model settings and archive structure.
 
 Multi-agent runs require independent sessions for the speakers as well as the reader. See [one-on-one negotiation](tracks/negotiation/README.md) and [group collaboration](tracks/group/README.md) for their generation and scoring commands.
 
