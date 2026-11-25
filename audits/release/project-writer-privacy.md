@@ -38,3 +38,5 @@ The synthetic regression tests cover dry runs, repeat migrations, unchanged read
 ```sh
 python3 -m unittest tracks.core.test_protocol tracks.core.test_provenance tracks.core.test_writer_privacy
 ```
+
+The public archive also replaces operating-system temporary directory identifiers, randomized harness directory suffixes and generated-image cache session IDs in 48 writer receipts. The migration retains original command and reply checksums, records public command checksums and keeps private backups locally. The writer decisions and project files are unchanged. See [runtime path migration](../../tracks/core/runtime_privacy.py).
