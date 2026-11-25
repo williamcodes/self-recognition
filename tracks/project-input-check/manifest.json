@@ -1,0 +1,35 @@
+{
+  "protocol": "whole-project-input-check-1",
+  "selection": "Two completed Sol trials identified independently by the reviewer before repeat judgments. Each explicitly described the assigned directory or both candidates as empty. Preserve every primary grade. Repeat each exact task once in a fresh session after checking the staged files before and after. Report original, paired rerun, and sensitivity if reported-empty trials count as misses. Screen all final reader replies for comparable reports, irrespective of the label.",
+  "source_manifest_sha256": "0aafe73b196fb299ea7cb8b51c6d302f1ba39afac5f33c0886b4b99a19120464",
+  "source_inventory_sha256": "9ffe5de14c18a98c326304159c60d5ddc6c1f3a95581fb6f3d52926fd7c5414d",
+  "trials": [
+    {
+      "subject": {
+        "brief": "linen-workroom-anniversary",
+        "reader": "gpt-6.2-sol",
+        "opponent": "gpt-6.2-astra",
+        "mode": "yn",
+        "authors": [
+          "gpt-6.2-astra"
+        ]
+      },
+      "original_receipt": "provenance/attempts/reader/f6454218189151e896e5131911179506aa8b42f5fda71e731ee547fd295f4a48/000001.json",
+      "original_row_sha256": "bb453bc015dc75e1e3ef6dd9b505baa7c7ad41e058886a1c8300b8480d7d94ce"
+    },
+    {
+      "subject": {
+        "brief": "apartment-entry-storage",
+        "reader": "gpt-6.2-sol",
+        "opponent": "gpt-6.2-astra",
+        "mode": "ab",
+        "authors": [
+          "gpt-6.2-astra",
+          "gpt-6.2-sol"
+        ]
+      },
+      "original_receipt": "provenance/attempts/reader/3bf0f5f65e5fd34d236c0d622768bd59b4ac0c38b0b4a52a11c49c2ad9e6aca9/000001.json",
+      "original_row_sha256": "6c450493f7d0781ba2853fdce1fea92ab127be2207d8b84bc4f3712a316a5925"
+    }
+  ]
+}
