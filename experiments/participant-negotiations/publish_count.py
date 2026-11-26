@@ -4,6 +4,7 @@ import json
 from clone_count import OUT,HERE,CASES,PEERS,inputs,trials,score,answer
 from collections import Counter
 from independent_count import INSTRUCTION, evaluate
+from swap_fable import evaluate_swap, jobs as swap_jobs
 
 LABELS={"zero":"Zero to four","one":"One to four","exact":"Exactly one"}
 
@@ -32,6 +33,14 @@ def publish():
         empty=score([r for r in group if r["truth"]=="NONE"])
         present=score([r for r in group if r["truth"]!="NONE"])
         parts.append(f'<p><strong>{label}</strong> · Correct NONE answers: {empty["exact"]}/7. Nonempty lineups entirely correct: {present["exact"]}/28. Actual clones selected: {present["tp"]}/70.</p>')
+    parts.append('</section>')
+    swaps=evaluate_swap("verify")
+    correct=sum(answer(r)==set() for r in swaps)
+    parts.append(f'<section id="fable-swap"><h2>What if Fable is absent?</h2><p>We replaced the Astra/Fable conversation with an Astra/Qwen4 Max conversation on the same brief, in the same role and letter position. The other three conversations and the independent-judgment prompt stayed identical. Every correct answer was NONE.</p><p>With Fable: 0/7 correct. With Qwen4 Max: {correct}/7 correct.</p>')
+    for r,(_,prompt) in zip(swaps,swap_jobs(),strict=True):
+        c=next(c for c in CASES if c["id"]==r["case"])
+        slot=next(l for l,name in r["order"].items() if name=="qwen")
+        parts.append(f'<details><summary>{escape(c["title"])}</summary><p>Fable previously occupied position {slot}. New lineup: '+', '.join(f'{l}: {name}' for l,name in r["order"].items())+f'.</p><p class="chat-text">{escape(r["reply"])}</p><details><summary>Read the exact revised prompt</summary><p class="chat-text">{escape(prompt)}</p></details></details>')
     parts.append('</section>')
     cases={}
     false_positives=Counter()
