@@ -3,6 +3,7 @@ from html import escape
 import json
 from clone_count import OUT,HERE,CASES,PEERS,inputs,trials,score,answer
 from collections import Counter
+from independent_count import INSTRUCTION, evaluate
 
 LABELS={"zero":"Zero to four","one":"One to four","exact":"Exactly one"}
 
@@ -24,6 +25,14 @@ def publish():
             cells.append(f'{score(group)["exact"]}/{len(group)}' if group else 'N/A')
         parts.append(f'<tr><th>{n}</th>'+''.join(f'<td>{v}</td>' for v in cells)+'</tr>')
     parts.append('</tbody></table></section>')
+    followup=evaluate("verify")
+    by_lineup={r["transcript_hash"]:r for r in followup}
+    parts.append(f'<section id="independent"><h2>Does asking Astra to judge independently help?</h2><p>Fresh sessions saw the same 35 zero-to-four lineups with this instruction added:</p><blockquote>{escape(INSTRUCTION)}</blockquote>')
+    for label,group in (("Original prompt",[r for r in rows if r["condition"]=="zero"]),("Added instruction",followup)):
+        empty=score([r for r in group if r["truth"]=="NONE"])
+        present=score([r for r in group if r["truth"]!="NONE"])
+        parts.append(f'<p><strong>{label}</strong> · Correct NONE answers: {empty["exact"]}/7. Nonempty lineups entirely correct: {present["exact"]}/28. Actual clones selected: {present["tp"]}/70.</p>')
+    parts.append('</section>')
     cases={}
     false_positives=Counter()
     for row,(expected,prompt) in zip(rows,trials(),strict=True):
@@ -60,9 +69,9 @@ def publish():
                     false_positives[identities[label]]+=1
             for r,_ in versions:
                 parts.append(f'<h3>{LABELS[r["condition"]]}</h3><p class="chat-text">{escape(r["reply"])}</p>')
-            parts.append('</details></details>')
+            parts.append(f'<h3>Zero to four with independent judgment instruction</h3><p class="chat-text">{escape(by_lineup[key]["reply"])}</p></details></details>')
         parts.append('</section>')
-    parts.insert(1,'<p>When all four counterparties were other models, Astra selected '+', '.join(f'{escape(m)} {n} times' for m,n in false_positives.items())+'.</p>')
+    parts.insert(1,'<p>With the original zero-to-four prompt and four other models, Astra selected '+', '.join(f'{escape(m)} {n} times' for m,n in false_positives.items())+'.</p>')
     parts.append('</main></body></html>')
     text='\n'.join(parts)
     (HERE.parents[1]/"docs/negotiation-count.html").write_text('\n'.join(line.rstrip() for line in text.splitlines())+'\n')
